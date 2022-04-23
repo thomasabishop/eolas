@@ -1,0 +1,7 @@
+---
+tags:
+  - Programming_Languages
+  - typescript
+---
+
+You might think that a good use case for `any` is a scenario where you don't know in advance what the data type is going to be. In order to mark this, you put `any` there as a placeholder. Actually TS provides a type for this specific purpose: `unknown`. Like `any`, `unknown` is equivalent to every type in TS (it is a supertype) but it is deliberately inhibiting, in contrast to `any`. When you use `unknown` you have to use type narrowing to avoid it being returned. So if your code starts with `unknown`, you should filter out scenarios where it evaluates to each of the possible types otherwise if `unknown` is returned it will cause an error.
