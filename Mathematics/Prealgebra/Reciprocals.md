@@ -7,21 +7,22 @@ tags:
   - theorems-axioms-laws
 ---
 
+# Recipricols
+
 The [Property of Multiplicative Identity](Multiplicative%20identity.md) applies to fractions as well as to whole numbers:
 
 $$
-\\frac{a}{b} \cdot 1 = \frac{a}{b}
+\frac{a}{b} \cdot 1 = \frac{a}{b}
 $$
 
 With fractions there is a related property: the **Multiplicative Inverse**.
 
- > 
- > If $\frac{a}{b}$ is any fraction, the fraction $\frac{b}{a}$ is called the *multiplicative inverse* or *reciprocol* of $\frac{a}{b}$. The product of a fraction multiplied by its reciprocol will always be 1. $$ \frac{a}{b} \cdot \frac{b}{a} = 1$$
+> If $\frac{a}{b}$ is any fraction, the fraction $\frac{b}{a}$ is called the _multiplicative inverse_ or _reciprocol_ of $\frac{a}{b}$. The product of a fraction multiplied by its reciprocol will always be 1. $$ \frac{a}{b} \cdot \frac{b}{a} = 1$$
 
 For example:
 
 $$
-\\frac{3}{4} \cdot \frac{4}{3} = \frac{12}{12} = 1
+\frac{3}{4} \cdot \frac{4}{3} = \frac{12}{12} = 1
 $$
 
 In this case $\frac{4}{3}$ is the reciprocol or multiplicative inverse of $\frac{3}{4}$.
