@@ -89,5 +89,13 @@ With Morgan in place, every time we run a request it will be logged on the conso
 
 ```plain
 GET /api/courses 200 95 - 1.774 ms
-
 ```
+This uses the `tiny` default which logs the bare minimum giving us: request type; endpoint; response code; and time to execute.
+
+It defaults to logging on the console but can also be configured to write to a log file. 
+
+## Including middlewear based on environment 
+With a full-scale Node application you will typically run three environments:
+* Development
+* Testing
+* Production
