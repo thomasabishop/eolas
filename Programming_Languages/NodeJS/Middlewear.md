@@ -72,3 +72,22 @@ We can expose this to express with `app.use(static('public'))`. Then if we navig
  > `app.use(express.urlencoded())`
 
 Generally we handle the data of API requests via a JSON body and the `express.json()` middlewear. However, in cases where the data is sent from the client in the form of `key=value&key=value` appendages to the request URL, `urlencoded` allows us to parse them.
+
+
+## Third-party middlewear
+### Helmet
+
+Helmet is middlewear that makes it easier to set HTTP headers. 
+
+### Morgan
+
+Morgan is middlewear that is used to log HTTP requests to the Express instance. 
+```js
+app.use(morgan('dev'))
+```
+With Morgan in place, every time we run a request it will be logged on the console that is running our Node application, e.g:
+
+```plain
+GET /api/courses 200 95 - 1.774 ms
+
+```
