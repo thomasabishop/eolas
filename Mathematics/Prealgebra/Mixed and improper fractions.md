@@ -28,3 +28,21 @@ With the example $4 \frac{7}{8}$, we know this means $4 + \frac{7}{8}$. We need 
 $$
     \frac{8}{8} + \frac{8}{8} + \frac{8}{8} + \frac{8}{8} + \frac{7}{8}
 $$
+
+But we know that when we [add fractions with a common denominator](./Add_Subtract_Fractions.md#adding-subracting-fractions-with-common-denominators), we only add the numerators, not the denominators. Thus the calculation would actually be:
+
+$$
+\frac{8 + 8 + 8 + 8 + 7}{8} = \frac{39}{8}
+$$
+
+Addition helps to explain the concepts underlying the procedure but it is more efficient to use multiplication.
+
+The procedure is as follows:
+1. Multiply the whole number part by the denominator
+2. Add the numerator
+3. Place the result over the denominator
+
+Thus:
+$$
+    4 \frac{7}{8} = \frac{(4 \cdot 8) + 7 }{8}
+$$

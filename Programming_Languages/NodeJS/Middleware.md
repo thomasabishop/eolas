@@ -6,6 +6,7 @@ tags:
   - middleware
 ---
 
+# Middleware 
 ## What is middleware?
 
 * Anything that terminates the `req, res` cycle counts as middleware. It is basically anything that acts as an intermediary once the request is received but before the resource is sent. A good example would be the `app.use(express.json()` or `app.use(bodyParser.json)` functions we call in order to be able to parse JSON that is sent from the client. 
@@ -120,7 +121,7 @@ console.log(app.get("env")); // development
 We can set Morgan to run only in development with:
 
 ```js
-if (app.get("env")) {
+if (app.get("env") === 'development') {
   app.use(morgan("common"));
   console.log('Morgan enabled')
 }
