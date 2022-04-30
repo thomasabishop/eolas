@@ -129,9 +129,8 @@ app.get("/api/posts/:year/:month", (req, res) => {
 We would get the following back:
 
 ````json
-
 {
-	sortBy: "name"
+	"sortBy": "name"
 }
 ````
 
@@ -209,6 +208,5 @@ app.delete("/api/course/:id", (req, res) => {
 
   res.send(course);
 });
-
 
 ````
