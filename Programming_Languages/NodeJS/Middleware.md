@@ -117,7 +117,6 @@ console.log(app.get("env")); // development
 
 ```
 
-### 
 We can set Morgan to run only in development with:
 
 ```js
@@ -125,4 +124,11 @@ if (app.get("env") === 'development') {
   app.use(morgan("common"));
   console.log('Morgan enabled')
 }
+```
+
+### Setting the current environment
+We could test that the previous code block works by switching the environment to production. We would do this by setting the environment variable in the terminal:
+
+```
+export NODE_ENV=production
 ```
