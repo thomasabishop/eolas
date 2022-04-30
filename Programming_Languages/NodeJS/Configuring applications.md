@@ -47,7 +47,7 @@ We will need to store passwords, API keys and other kinds of authentication data
 
 We can do so securely by utilising [environmental variables](../Shell_Scripting/Environmental_and_shell_variables.md).
 
-We create a file called `custom-environment-variables` (must be called this) and map a property to an environmental environment we have already set.
+We create a file called `custom-environment-variables` (must be called this to work with the config package) and map a property to an environmental environment we have already set.
 
 Let's create an environmental variable for a password:
 ```bash
@@ -61,4 +61,9 @@ Then in our custom variable file:
     "password": "APP_PASSWORD"
 }
 
+```
+
+We can then safely reference this value in the course of our normal code:
+```js
+console.log(config.get('password'))
 ```
