@@ -34,7 +34,7 @@ But we know that when we [add fractions with a common denominator](./Add_Subtrac
 $$
 \frac{8 + 8 + 8 + 8 + 7}{8} = \frac{39}{8}
 $$
-
+  
 Addition helps to explain the concepts underlying the procedure but it is more efficient to use multiplication.
 
 The procedure is as follows:
@@ -69,9 +69,43 @@ Calculate $-2\frac{1}{12} \cdot 2 \frac{4}{5}$:
 
 1. First convert each mixed fraction into an improper fraction:
   $$
+    \begin{split}
+    -2\frac{1}{12} = -2 \cdot -12  \\
+    = 24 + 1 \\
+    = - \frac{25}{12}
+    \end{split} 
+  $$
+
+  $$
   \begin{split}
-  -2\frac{1}{12} = -2 \cdot -12  \\
-  = 24 + 1 \\
-  = \frac{24}{12}
+    2 \frac{4}{5} =2 \cdot 5 \\
+    = 10 + 4 \\ 
+    = \frac{14}{5}
   \end{split} 
   $$
+
+2. Then carry out the multiplication [using factorization](./Multiplying_fractions.md#prime-factorisation-in-place):
+  $$
+    \begin{split}
+    - \frac{25}{12} \cdot \frac{14}{5} = \\
+   - \frac{(5 \cdot 5) \cdot (7 \cdot 2)}{(3 \cdot 2 \cdot 2) \cdot (5)} = - \frac{5 \cdot 7 }{2 \cdot 3} \\
+    \end{split} 
+  $$
+
+3. Then simplify:
+  $$
+    - \frac{35}{6}
+  $$
+
+4. Finally, convert back into a mixed fraction:
+  
+  $$
+    \begin{split}
+    - \frac{35}{6} = -35 \div 6 \\
+    -  5 r 5 = \\ 
+    - 5 \frac{5}{6}
+    \end{split} 
+  $$
+
+  ## Adding and subtracting mixed fractions
+  
