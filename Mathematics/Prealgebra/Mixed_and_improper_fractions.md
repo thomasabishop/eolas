@@ -110,6 +110,14 @@ Calculate $-2\frac{1}{12} \cdot 2 \frac{4}{5}$:
 ## Demonstration of division
 Again we convert the mixed fraction into an improper fraction and then follow the requisite rule, in the case of division this is to [invert and multiply]('./../Dividing_fractions.md#formal-specification-of-how-to-divide-fractions').
 
-Calculate 
+Calculate $-4 \frac{4}{5} \div 5 \frac{3}{5}$.
 
-  ## Adding and subtracting mixed fractions
+1. Convert to improper fraction:
+   $$
+      \begin{split}
+        -4 \cdot 5 = \\
+    -20
+  \end{split} 
+   $$
+
+## Adding and subtracting mixed fractions
