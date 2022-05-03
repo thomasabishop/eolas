@@ -43,7 +43,8 @@ Note that we omit the numerator but that technically the answer would be $\frac{
 We combine the foregoing (that it is easier to divide by fractional amounts using multiplication) with the concept of a [reciprocol](Reciprocals.md) to arrive at a definitive method for dividing two fractions.
 It boils down to: _invert and multiply_:
 
-If $\frac{a}{b}$ and $\frac{c}{d}$ are fractions then: $$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}$$
+If $\frac{a}{b}$ and $\frac{c}{d}$ are fractions then: 
+$$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}$$
 
 We invert the divisor (the second factor) and change the operator from division to multiplication.
 

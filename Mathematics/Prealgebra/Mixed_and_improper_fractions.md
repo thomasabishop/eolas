@@ -63,7 +63,7 @@ $$
 ##  Multiplying and dividing by mixed fractions
 Now that we know how to convert mixed fractions into improper fractions, it is straight forward to multiply and divide with them. We convert the mixed fraction into an improper fraction and then divide and multiply as we would with a proper fraction. 
 
-### Demonstration
+### Demonstration of multiplication
 
 Calculate $-2\frac{1}{12} \cdot 2 \frac{4}{5}$:
 
@@ -107,5 +107,9 @@ Calculate $-2\frac{1}{12} \cdot 2 \frac{4}{5}$:
     \end{split} 
   $$
 
+## Demonstration of division
+Again we convert the mixed fraction into an improper fraction and then follow the requisite rule, in the case of division this is to [invert and multiply]('./../Dividing_fractions.md#formal-specification-of-how-to-divide-fractions').
+
+Calculate 
+
   ## Adding and subtracting mixed fractions
-  
