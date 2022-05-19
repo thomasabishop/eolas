@@ -33,7 +33,7 @@ Let's break down each column from the right:
 ### More examples to practise with
 
 ![Pasted image 20220319174839.png](../img/Pasted%20image%2020220319174839.png)
-
+![]()
 ## Binary multiplication
 
 Let's remind ourselves of how we do long multiplication within the denary number system:

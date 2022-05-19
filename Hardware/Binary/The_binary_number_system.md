@@ -17,7 +17,8 @@ When we have completed all the possible intervals between $0$ and $9$, we start 
 
 The principle of counting in decimal: 
 
-![denary.gif](../img/denary.gif)
+![denary.gif](../../img/denary.gif)
+
 Thus each column is ten times larger than the previous column:
 
 * Ten \[$10^1$\] is ten times larger than one \[$10^0$\]
@@ -53,7 +54,7 @@ $$ 0001, 0010, 0011, 0100 $$
 
 Counting in binary:
 
-![binary.gif](../img/binary.gif)
+![binary.gif](../../img/binary.gif)
 
 ## Relation to Turing Machines
 
@@ -66,10 +67,12 @@ Let's convert 6 and into binary:
 If we have before us the binary place values ($1, 2, 4, 8$). We know that 6 is equal to: **1 in the two column and 1 in the 4 column → 110**
 
 More clearly:
-![Pasted image 20220319135558.png](../img/Pasted%20image%2020220319135558.png) 
+
+![](../../img/Pasted_image_20220319135558.png)
 
 And for comparison:
-![Pasted image 20220319135805.png](../img/Pasted%20image%2020220319135805.png)
+
+![](../../img/Pasted_image_20220319135805.png)
 
 Or we can express the binary as:
 
@@ -83,6 +86,6 @@ $$ 2^1 + 2^2 $$
 
 Let's convert 23 into binary:
 
-![Pasted image 20220319135823.png](../img/Pasted%20image%2020220319135823.png)
+![](../../img/Pasted_image_20220319135823.png)
 
-![binary_to_denary.gif](../img/binary_to_denary.gif)
+![](../../img/binary_to_denary.gif)

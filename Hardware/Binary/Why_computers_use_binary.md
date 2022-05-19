@@ -9,7 +9,7 @@ tags:
 The reason is straight forward: it is the simplest way on the level of pure engineering of representing numerical and logical values; both of which are the basic foundations of programming. An electronic circuit or transistor only needs to represent two states: on (1) and off (0) which corresponds to the switch on an electrical circuit.
 A single circuit representing the binary values of 1 and 0:
 
-![multi_on_off 1.gif](../img/multi_on_off%201.gif)
+![multi_on_off 1.gif](../../img/multi_on_off.gif)
 
 It would be much more complicated to have to represent ten different states under the decimal number system, although denary computers do exist.
 
@@ -18,7 +18,7 @@ It would be much more complicated to have to represent ten different states unde
 
 If we want more digits, we just need to add in more circuits, and we can represent as large a binary number as we need. We just need one switch for every digit we want to represent. The switches used in modern computers are so cheap and so small that you can literally get billions of them on a single circuit board.
 
-![multiple_circuits.gif](../img/multiple_circuits.gif)
+![multiple_circuits.gif](../../img/multiple_circuits.gif)
 
 When we use the term 'switch' we actually mean the transistor components of a circuit. We don't need to know the physical details at this level but we can say that a transistor turns a current on and off. They can also be used to amplify the current.
 
