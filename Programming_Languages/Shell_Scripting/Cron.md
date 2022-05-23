@@ -4,8 +4,9 @@ tags:
   - shell
   - automation
 ---
+j
 
-In Arch Linux I use `cronie` for cron jobs 
+In Arch Linux I use `cronie` for cron jobs. (There is no cron service installed by default).
 
 ````bash
 
