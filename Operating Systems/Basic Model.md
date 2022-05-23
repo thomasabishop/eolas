@@ -1,6 +1,6 @@
 ---
 tags:
-  - os
+  - Operating_Systems
   - Linux
 ---
 
@@ -10,13 +10,14 @@ We can abstract the Linux OS into three operational levels or tiers, from the bo
 
 <dl>
 <dt>User processes</dt>
-<dd>The running programs that the kernel manages. Also known as the user space. Comprising</dd>
+<dd>The running programs that the kernel manages. Also known as the user space. Comprising:
 <ul>
     <li>Graphical user interface</li>
     <li>Servers</li> 
     <li>Shell</li>    
   </ul>
 <dt>Kernel</dt>
+</dd>
 <dd>The core of the operating system. Software residing in memory that tells the CPU where to look for its next task. Acts as a mediator and primary interface between the hardware and the user processes. Comprising:
   <ul>
     <li>System calls</li>
@@ -34,3 +35,6 @@ We can abstract the Linux OS into three operational levels or tiers, from the bo
     <li>Network ports</li>    
   </ul>
 </dl>
+
+!! Add info on kernel mode and user mode
+https://www.geeksforgeeks.org/user-mode-and-kernel-mode-switching/ 
