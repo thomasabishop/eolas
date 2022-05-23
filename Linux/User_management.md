@@ -3,6 +3,8 @@ tags:
   - Linux
 ---
 
+# User management
+
 ## Switch user
 
 If already logged in as a user you can switch users with the command `su - [username]`.

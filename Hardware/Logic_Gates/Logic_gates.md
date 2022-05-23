@@ -8,11 +8,11 @@ tags:
 
 ## Logic gates
 
-Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and is isomorphic with logical conditions that can be expressed in the form of truth-tables.
+Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and is isomorphic with [Boolean connectives](../../Logic/Truth-functional_connectives.md) defined in terms of [truth-tables](../../Logic/Truth-tables.md).
 
 ### Truth tables
 
-I know from my study of logic that truth tables enable us to present the conditions under which logical propositions are true or false. To take the `AND` operator: `AND` evaluates to `true` if both of its constituent expressions are `true` and `false` in any other circumstances (e.g. if one proposition is `true` and the other `false` (or vice versa) and if both propositions are `false` ).
+Truth-tables present the conditions under which logical propositions are true or false. To take the `AND` operator: `AND` evaluates to `true` if both of its constituent expressions are `true` and `false` in any other circumstances (e.g. if one proposition is `true` and the other `false` (or vice versa) and if both propositions are `false` ).
 
 This is most clearly expressed in the following truth table:
 
@@ -27,7 +27,7 @@ f    t     f
 f    f     f   
 ````
 
-Another example is the negation (`NOT`) operator in logic which is highly trivial. The negation operator (`¬` or `~` ) switches the value of a proposition from true to false. When we put `~` before `true` it becomes false and when we put `~` before `false` it becomes `true`. We will see shortly that this corresponds to a basic on/off switch.
+ The negation operator (`¬` or `~` ) switches the value of a proposition from true to false. When we put `~` before `true` it becomes false and when we put `~` before `false` it becomes `true`. We will see shortly that this corresponds to a basic on/off switch.
 
 **Truth table fo `NOT`**
 
@@ -40,56 +40,37 @@ f    t
 
 ## NAND gates
 
-A NAND gate is a logic gate that combines the truth conditions for `AND` and `NOT` . I
+A NAND gate is a logic gate that inverts the truth-conditions for `AND`.
 
-Let's first introduce the circuit:
+A real-life circuit showing two switches corresponding to two transistors which control the LED light: 
 
-The real-life circuit showing two switches corresponding to two transistors which control the LED light.
-![NAND_from_transitors.png](../img/NAND_from_transitors.png)
+![NAND_from_transitors.png](../../img/NAND_from_transitors.png)
 
 In this circuit, there are two transistors, each connected to a switch. The switches control the LED light. So the switches are the input and the LED is the output.
 
 For clarity, we are not going to draw both transistors, we will simplify the diagram with a symbol for them which stands for the NAND gate:
 
-![NAND.png](../img/NAND.png)
+![NAND.png](../../img/NAND.png)
 
  > 
  > Remember that a 'logic gate' is a logical abstraction of a physical process: the voltage passing through a transistor. The transistors register the charge and the switches control it's flow, the 'gate' is just the combination of transistors and how they are arranged. There is not a physical gate per se, there is only the transistor whose output we characterize in terms of logic.
 
-The diagram below shows how the circuit models the truth conditions for `AND`
+The diagram below shows how the circuit models the truth conditions for `NAND`
 
 Diagram representing NAND gate:
 
-![NAND.gif](../img/NAND.gif)
+![NAND.gif](../../img/NAND.gif)
 
 * When both switches are off (corresponding to `false` `false`) the output is on (the bulb lights up).
 * If either one of the switches are on, the output remains on (corresponding to `true` `false` or `false` `true` )
 * It is only when both switches are on, that the output is off (corresponding to `true` `true` )
 
- > 
- > Remember that switch circuitry is counter intuitive: the switches being on corresponds to the output ceasing to execute because the switches break the circuit, they don't join it.
+
+This is the exact opposite to the truth-conditions for `AND`.
 
 ## Transliterating the logic truth table to the switch behaviour
 
-We can now present a truth table for NAND alongside the truth conditions for `AND` and `NOT`
-
-````
-// AND 
-p    q   p & q
-_    _   _____
-
-t    t     t      (1)
-t    f     f      (2)
-f    t     f      (3)
-f    f     f      (4)  
-
-// NOT
-
-p    ~ p
-_    __
-t    f
-f    t
-````
+We can now present a truth table for NAND: 
 
 ````
 A    B   Output
@@ -101,8 +82,11 @@ _    _   _____
 1    1     0       (4)
 ````
 
-* So we can see that the binary representation of the circuit accords with `NOT` at rows (1) and (4): when both switches are off (`false` ), the bulb is on ( `true` ). And when both switches are on (`true` ), the bulb is off (`false` ).
-* Rows (2) and (3) of the binary truth table accord with rows (2) and (3) of the `AND` truth table: if one of the switches is `true` but the other is `false` , the output is `false` (the bulb remains on).
+## Significance of the NAND gate: functional completeness
+> **Equipped with just a NAND we can represent every other possible logical condition within a circuit.**
+
+In practice, it is more efficient to use specific dedicated gates for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
+
 
 ### More complex outputs from combining NANDS
 

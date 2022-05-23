@@ -6,6 +6,8 @@ tags:
   - truth-tables
 ---
 
+# Truth-tables
+
 We are already familiar with truth-tables from the previous entry on the *truth-functional connectives* and the relationship between sentences, connectives and the overall truth-value of a sentence. Here we will look in further depth at how to build truth-tables and on their mathematical relation to binary truth-values. We will also look at examples of complex truth-tables for large compound expressions and the systematic steps we follow to derive the truth conditions of compound sentences from their simple constituents.
 
 ## Formulae for constructing truth-tables

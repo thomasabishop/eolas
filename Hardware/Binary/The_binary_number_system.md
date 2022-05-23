@@ -58,7 +58,7 @@ Counting in binary:
 
 ## Relation to Turing Machines
 
-It's obvious that there is a clear relation between the binary number system and Turing Machines, since in their most basic instance, Turing Machines work with ones and zeros. In order for us to get Turing Machines to compute digital numbers we only need to convert from decimal to binary.
+It's obvious that there is a clear relation between the binary number system and Turing Machinees, since in their most basic instance, Turing Machines work with ones and zeros. In order for us to get Turing Machines to compute digital numbers we only need to convert from decimal to binary.
 
 ### Example decimal to binary conversion
 
