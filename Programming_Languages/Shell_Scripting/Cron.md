@@ -4,26 +4,34 @@ tags:
   - shell
   - automation
 ---
-j
+# Cron
 
 In Arch Linux I use `cronie` for cron jobs. (There is no cron service installed by default).
+## Commands
 
-````bash
-
-# View list of cron jobs 
+### List cron jobs
+```
 crontab -l
+```
 
-# Open cron file 
+### Open cron file
+```
 crontab -e
-````
+```
+### Check cron log
+```bash
 
-\*\*Syntax **
+journalctl | grep CRON
+# Different distros have different loggers
+```
 
+## Syntax
 ````bash
 m h d mon dow command
 # minute, hour, day of month, day of week, bash script/args
 # 0-59, 0-23, 1-31, 1-12, 0-6
 ````
+
 
 **Examples**
 
@@ -38,6 +46,12 @@ At 01:42 every day:
 ````
 42 1 * * * mysqlcheck --all-databases --check-only-changed --silent
 ````
+
+Every half hour: 
+```
+0,30 * * * * ${HOME}/bash_scripts/automate_commit.sh
+
+```
 
 **Shorthands**
 
