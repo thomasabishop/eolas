@@ -9,16 +9,16 @@ tags:
 We can abstract the Linux OS into three operational levels or tiers, from the bottom up:
 
 <dl>
-<dt>User processes</dt>
-<dd>The running programs that the kernel manages. Also known as the user space. Comprising:
+<dt>User processes: user space</dt>
+<dd>The running programs that the kernel manages. Also known as the user space which is the memory that the kernal assigns for user processes. Comprising:
 <ul>
     <li>Graphical user interface</li>
     <li>Servers</li> 
     <li>Shell</li>    
   </ul>
-<dt>Kernel</dt>
+<dt>Kernel: kernel space</dt>
 </dd>
-<dd>The core of the operating system. Software residing in memory that tells the CPU where to look for its next task. Acts as a mediator and primary interface between the hardware and the user processes. Comprising:
+<dd>The core of the operating system. Software residing in memory that tells the CPU where to look for its next task. Acts as a mediator and primary interface between the hardware and the user processes. Known as kernel space: the memory that the kernel allocates for itself. Comprising:
   <ul>
     <li>System calls</li>
     <li>Process management</li> 

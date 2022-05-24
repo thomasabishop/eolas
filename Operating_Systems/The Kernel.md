@@ -56,4 +56,4 @@ In Linux there are two particularly important system calls:
   * When a process calls exec it passes a program name as a parameter. Then the kernel loads and starts this program, replacing the current process.
 
 Example with a terminal program like `ls`: 
-> When you enter `ls` into the terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`. 
+> When you enter `ls` into the terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`.  (_Ibid._)
