@@ -18,7 +18,7 @@ The kernel acts as the primary mediator between the hardware (CPU, memory) and u
 
 On modern computers it appears that multiple processes can run simultaneously at once. This is only because the processor is so fast that we do not detect changes. In fact access to the CPU is always sequential. The sequence in which multiple programs are allowed to access the CPU is managed by the kernel. 
 
-> Consider a system with a one-core CPU. Many processes may be _able_ to use the CPU, but only one process can actually use the CPU at any given time..Each process uses the CPU for a fraction of a second, then pauses, then another process uses it for a fraction of a second and so on... (_How Linux Works: Third Edition_, Brian Ward 2021) 
+> Consider a system with a one-core CPU. Many processes may be _able_ to use the CPU, but only one process can actually use the CPU at any given time...Each process uses the CPU for a fraction of a second, then pauses, then another process uses it for a fraction of a second and so on... (_How Linux Works: Third Edition_, Brian Ward 2021) 
 
 This process of the CPU shuffling between multiple processes is called _context switching_. 
 
