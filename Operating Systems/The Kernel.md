@@ -44,3 +44,16 @@ During the context switch from CPU to user space, the kernel allocates memory. I
 ## Device drivers
 
 Devices are managed by the kernal and are not accessible directly via user space, since improper usage could crash the whole machine. There is little uniformity between devices and as a result drivers are needed. Thes are kernl code that enable different OS kernels to access and control the devices.
+
+## System calls 
+Syscalls are what enable programs to start and are required for the acts of opening, reading and writing files. System calls in Linux are typically managed via C. 
+
+In Linux there are two particularly important system calls:
+
+* `fork()`
+  * When a process calls fork, the kernel creates a nearly identical copy of this running process
+* `exec()`
+  * When a process calls exec it passes a program name as a parameter. Then the kernel loads and starts this program, replacing the current process.
+
+Example with a terminal program like `ls`: 
+> When you enter `ls` into the terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`. 
