@@ -3,6 +3,8 @@ tags:
   - Linux
 ---
 
+# Compile package from source
+
 1. Clone the repo from GitHub
-1. `cd` into the repo
-1. Run `makepkg -c`
+2. `cd` into the repo
+3. Run `makepkg -c`
