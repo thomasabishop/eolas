@@ -30,3 +30,17 @@ The role of the kernel in facilitating this, is as follows:
 5. Kernel prepares memory for this new process and prepares the CPU.
 6. Kernel tells CPU how long the time slice for the new process will last.
 7. Kernel switches the CPU into user mode and hands control of CPU to the process.
+
+## Memory management
+During the context switch from CPU to user space, the kernel allocates memory. It has the following jobs to manage:
+* Keeping its own private area in memory for itself that user processes cannot access
+* Assigning each user process its own section of memory 
+* Managing shared memory between processes and ensuring the private memory of processes is not accessed by others
+* Managing read-only memory 
+* Allowing for the use of disk space as auxiliary memory 
+
+> Modern CPUs include a memory management unit which provides the kernel with **virtual** memory. In this scenario, memory isn't directly accessed by the process instead it works on the assumption that is has access to the entire memory of the machine and this is then translated into a map that is applied to the real memory and managed by the kernel.
+
+## Device drivers
+
+Devices are managed by the kernal and are not accessible directly via user space, since improper usage could crash the whole machine. There is little uniformity between devices and as a result drivers are needed. Thes are kernl code that enable different OS kernels to access and control the devices.
