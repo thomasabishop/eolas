@@ -39,7 +39,7 @@ Within a specified directory:
 $ find i3 -type f
 ```
 
-### Filename
+#### Filename
 This is the most frequent use case: filter files by name with globbing.
 
 ```bash
@@ -56,4 +56,41 @@ The same, but case insensitive: `iname`
 
 ```bash
 $ find -iname "*.JS"
+```
+
+#### Path
+As above but this time includes directory names in the match. `ipath` is the case-insensitive version.
+
+```bash
+$ find -path "utils*"
+utils.js
+utils/do-something.js
+```
+
+### Operators
+We can combine `find` commands by using logical operators: `-and`, `-or`, `-not`. For example:
+
+```bash
+$ find -not -name "*.js" -type f
+./app/index.html
+./app/style.css
+./dist/index.html
+./dist/style.css
+```
+
+## Actions
+Using the `exec` keyword we can run a program against the files that are returned from `find`.
+
+In this syntax we use `{}` as a placeholder for the path of the file that is matched. We use `;` (escaped) to indicate the end of the operation.
+
+### Examples
+
+This script deletes the files that match the filter criteria:
+
+```bash
+$ find -name "*.js" -exec rm {} \;
+```
+This script finds all the files with the substring 'config' in their name and writes their file size to a file.
+```bash
+find -name '*config*' -exec wc -c {} \; > config-sizes 
 ```
