@@ -8,6 +8,9 @@ tags:
   - apis
 ---
 
+# RESTful APIs with Express
+We can use Express to easily create a [RESTful API](../../Databases/RESTful_APIs.md).
+
 ## Core Express methods
 
 The following Express methods correspond to the main [HTTP request types](../../Databases/HTTP%20request%20types.md):
@@ -27,14 +30,17 @@ const app = express()
 
 ## Nodemon
 
-We don't want to have to restart the server every time we make a change to our files. We can use `nodemon` instead of `node` when running our index file so that file-changes are immediately registered without the need for a restart. It's a good idea to set your NPM start script to `nodemon index.js`.
+We don't want to have to restart the server every time we make a change to our files. We can use `nodemon` instead of `node` when running our `index.js` file so that file-changes are immediately registered without the need for a restart. 
 
-## Creating GET requests
+> Once `nodemon` is installed, update your start script from `node index.js` to `nodemon index.js`.
 
-We are going return the following array in the GET examples:
+## Our data
+
+> Typically when you create a RESTful API you are going to be returning data from a database. For simplicity we are just going simulate this with a simple data array so that we can focus on the Express syntax rather than database handling.
+
+We will mainly work with the following array of objects:
 
 ````js
-
 const courses = [
   {
     id: 1,
@@ -49,8 +55,10 @@ const courses = [
     name: "Third course",
   },
 ];
-
 ````
+
+## Creating GET requests
+With our GET request we will simply return the array of objects.
 
 ### Basic GET without params
 
@@ -66,8 +74,7 @@ app.get('/api/courses', (req, res) => {
 app.listen(3000, () => console.log('Listening on port 30000...'))
 ````
 
-When creating our API this structure of creating handlers for specific routes will be iterated. Every endpoint will be specified with the `[app].[http_request_type]` syntax.
-
+When creating our API this structure of creating handlers for specific routes will be iterated. Every endpoint will be specified with `[app].[http_request_type]` and followed by a callback.
 ### GET with parameters and queries
 
 The previous example just serves an array. This corresponds to the entire set of our data. But we will also need to retrieve specific values, we do this by adding (and allowing for) parameters in our requests.
@@ -82,9 +89,9 @@ app.get("/api/courses/:id", (req, res) => {
 });
 ````
 
-We use the `:` symbol in the URI to indicate that we looking to parse for a specific value in the data.Now if we call `/api/courses/2`, we will get the second item in the array.
+We use the `:` symbol in the URI to indicate that we looking to parse for a specific value in the data. Now if we call `/api/courses/2`, we will get the second item in the array.
 
-Here is a more detailed example, this time with more than one parameter 
+Here is a more detailed example (with a more complex dummy dataset), this time with more than one parameter 
 
 ````js
 app.get("/api/posts/:year/:month", (req, res) => {
