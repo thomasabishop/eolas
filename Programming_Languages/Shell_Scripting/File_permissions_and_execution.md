@@ -4,6 +4,8 @@ tags:
   - shell
 ---
 
+# File permissions and executables
+Every Unix file has a set of permissions that determine whether you can read, write or run (execute) the file. 
 ## Viewing file permissions
 
 In order to see file permissions within the terminal, use the `-l` or `-rfl` with the `ls` command. Remember this command can be applied at both the directory and single-file level. For example:
@@ -17,7 +19,27 @@ drwxr-xr-x 12 thomas thomas 4096 Sep 19 17:41 thomas-bishop
 drwxr-xr-x  5 thomas thomas 4096 Sep  4 19:24 ts-kata
 ````
 
-## `chmod`
+### What the output means
+
+The first column of the permissions output is known as the file's *mode*. The sequence from left to right is as follows:
+```
+-       - - -                 - - -                 - - - 
+type    user permissions      group permissions     other permissions
+```
+<dl>
+  <dt>type</dt>
+  <dd>The file type. A dash just means an ordinary file. `d` means directory </dd>
+ 
+  <dt>user permissions</dt>
+  <dd>read, write or execute. A dash means 'nothing': the permissions for that slot in the set have not be assigned</dd>
+
+  <dt>group and other</dt>
+  <dd>group is obviously what anyone belonging to the current file's user group can do. Everyone else (outside of the user and the group) is covered by the other permissions, sometimes known as 'world' permissions</dd>
+</dl>
+
+
+
+## Modifying permissions: `chmod`
 
 We use `chmod` for transferring ownership and file permissions quickly from the command-line.
 
