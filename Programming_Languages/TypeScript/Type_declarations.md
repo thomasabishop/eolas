@@ -4,6 +4,7 @@ tags:
   - typescript
 ---
 
+# Type declarations
 ## Scalar data types
 
 The most basic type level is the one already present in JavaScript itself: the primitive data types: `boolean`, `string` and `number` . These are the types that will be returned from a `typeof` expression.

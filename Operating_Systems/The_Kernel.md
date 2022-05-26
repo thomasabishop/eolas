@@ -2,11 +2,12 @@
 tags:
   - Operating_Systems
   - Linux
+  - processes
 ---
 
 # The Kernel
 
-The kernel acts as the primary mediator between the hardware (CPU, memory) and user processes. Let's look at each of its responsibilities in greater depth:
+The kernel acts as the primary mediator between the hardware (CPU, memory) and user [processes](../Programming_Languages/Shell_Scripting/Processes.md). Let's look at each of its responsibilities in greater depth:
 * process management
 * memory management
 * device drivers
@@ -57,3 +58,6 @@ In Linux there are two particularly important system calls:
 
 Example with a terminal program like `ls`: 
 > When you enter `ls` into the terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`.  (_Ibid._)
+
+## Controlling processes
+In Linux we can view, kill, pause and resume processes using [ps](../Programming_Languages/Shell_Scripting/Processes.md).

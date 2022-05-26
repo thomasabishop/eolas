@@ -75,7 +75,10 @@ $ find -not -name "*.js" -type f
 ./app/index.html
 ./app/style.css
 ./dist/index.html
-./dist/style.css
+./dist/style.c
+
+
+dfdf
 ```
 
 ## Actions
