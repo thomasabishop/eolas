@@ -2,15 +2,34 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Inter';
 }
 
+
 h1 {
-    font-size: 16px;
+
+    font-size: 24px !important;
 }
 
-p, ul, li {
+h2 {
+    font-size: 20px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+}
+
+h5 {
+    font-size: 14px !important;
+}
+
+
+p, ul, li, dl, dd, dt {
     font-size: 14px;
 }
 
 pre, code {
     font-family: 'LigaLiberationMono';
-    font-size: 14px;
+    font-size: 12px p !important;
 }
