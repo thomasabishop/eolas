@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 p, ul, li {
@@ -12,4 +12,5 @@ p, ul, li {
 
 pre, code {
     font-family: 'LigaLiberationMono';
+    font-size: 14px;
 }
