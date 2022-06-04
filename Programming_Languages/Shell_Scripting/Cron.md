@@ -6,7 +6,13 @@ tags:
 ---
 # Cron
 
-In Arch Linux I use `cronie` for cron jobs. (There is no cron service installed by default).
+
+## `cronie` 
+In Arch Linux I use `cronie` for cron jobs. (There is no cron service installed by default). Install `cronie` and then enable it in systemd with: 
+
+```bash 
+systemctrl enable --now cronie.service
+```
 ## Commands
 
 ### List cron jobs
