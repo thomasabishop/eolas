@@ -1,18 +1,18 @@
 ---
 tags:
-  - Theory_of_Computation
-  - Logic
-  - Electronics
-  - binary
+- Logic
+- Electronics
+- Hardware
+- logic-gates
 ---
 
 # Logic gates
 
-Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and is isomorphic with [Boolean connectives](../../Logic/Truth-functional_connectives.md) defined in terms of [truth-tables](../../Logic/Truth-tables.md).
+Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and the logic is isomorphic with [Boolean connectives](../../Logic/Truth-functional_connectives.md) defined in terms of [truth-tables](../../Logic/Truth-tables.md).
 
 ### Truth tables
 
-Truth-tables present the conditions under which logical propositions are true or false. To take the `AND` operator: `AND` evaluates to `true` if both of its constituent expressions are `true` and `false` in any other circumstances (e.g. if one proposition is `true` and the other `false` (or vice versa) and if both propositions are `false` ).
+Truth-tables present the conditions under which logical propositions are true or false. To take the `AND` operator: `AND` evaluates to `true` if both of its constituent expressions are `true`, and `false` in any other circumstances (e.g. if one proposition is `true` and the other `false` (or vice versa) and if both propositions are `false` ).
 
 This is most clearly expressed in the following truth table:
 
@@ -37,89 +37,6 @@ _    __
 t    f
 f    t
 ````
-
-## NAND gates
-
-A NAND gate is a logic gate that inverts the truth-conditions for `AND`.
-
-A real-life circuit showing two switches corresponding to two transistors which control the LED light: 
-
-![NAND_from_transitors.png](../../img/NAND_from_transitors.png)
-
-In this circuit, there are two transistors, each connected to a switch. The switches control the LED light. So the switches are the input and the LED is the output.
-
-For clarity, we are not going to draw both transistors, we will simplify the diagram with a symbol for them which stands for the NAND gate:
-
-![NAND.png](../../img/NAND.png)
-
- > 
- > Remember that a 'logic gate' is a logical abstraction of a physical process: the voltage passing through a transistor. The transistors register the charge and the switches control it's flow, the 'gate' is just the combination of transistors and how they are arranged. There is not a physical gate per se, there is only the transistor whose output we characterize in terms of logic.
-
-The diagram below shows how the circuit models the truth conditions for `NAND`
-
-Diagram representing NAND gate:
-
-![NAND.gif](../../img/NAND.gif)
-
-* When both switches are off (corresponding to `false` `false`) the output is on (the bulb lights up).
-* If either one of the switches are on, the output remains on (corresponding to `true` `false` or `false` `true` )
-* It is only when both switches are on, that the output is off (corresponding to `true` `true` )
-
-
-This is the exact opposite to the truth-conditions for `AND`.
-
-## Transliterating the logic truth table to the switch behaviour
-
-We can now present a truth table for NAND: 
-
-````
-A    B   Output
-_    _   _____
-
-0    0     1       (1)
-1    0     1       (2)
-0    1     1       (3)
-1    1     0       (4)
-````
-
-## Significance of the NAND gate: functional completeness
-> **Equipped with just a NAND we can represent every other possible logical condition within a circuit.**
-
-In practice, it is more efficient to use specific dedicated gates for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
-
-
-### More complex outputs from combining NANDS
-
-The example we have looked at so far is fairly simple because there is just one NAND gate corresponding to two inputs (the two switches) and one output (the bulb).
-
-When we add more NAND gates and combine them with each other in different ways we can create more complex output sequences and these two will have corresponding truth tables.
-
-## `NOT` gate
-
-This gate corresponds to the `NOT` Boolean or negation logical connective. It is really simple and derived from the trivial logical fact that `true` is `true` and `false` is `false` also known as **logical identity**.
-
-### Natural language
-
- > 
- > The negation operator (`¬` or `~` ) switches the value of a proposition from `true` to `false`. When we put `~` before `true` it becomes `false` and when we put `~` before `false` it becomes `true` .
-
-### Truth table
-
-![1-w2ILS6M9pgmLcK6V1PEs3Q.png](../img/1-w2ILS6M9pgmLcK6V1PEs3Q.png)
-
-This corresponds to a simple on-off switch.
-
-In terms of logic gates we would create this by using a single NAND gate. Although it can take a total of two inputs, it would be controlled by a single switch, so both inputs would be set to `1 1` or `0 0` when the switch is activated and deactivated. This would remove the `AND` aspect of `NAND` and reduce it to `NOT` .
-
-A NAND gate simulating NOT logic
-
-![Screenshot_2020-08-25_at_15.09.01.png](../img/Screenshot_2020-08-25_at_15.09.01.png)
-
-### Symbol for `NOT` gate
-
-NOT has its own electrical signal to distinguish it from a NAND:
-
-![Screenshot_2020-08-25_at_15.18.34.png](../img/Screenshot_2020-08-25_at_15.18.34.png)
 
 ## `AND` gate
 
