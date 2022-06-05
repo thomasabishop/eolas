@@ -61,9 +61,4 @@ We can see that it inverts the value of AND.
 
 In practice, it is more efficient to use specific dedicated gates (i.e OR, AND, NOT etc) for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
 
-
-## More complex outputs from combining NANDS
-
-The example we have looked at so far is fairly simple because there is just one NAND gate corresponding to two inputs (the two switches) and one output (the bulb). These specific gates are detailed in the next section.
-
 When we add more NAND gates and combine them with each other in different ways we can create more complex output sequences and these too will have corresponding truth tables.
