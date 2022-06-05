@@ -5,8 +5,6 @@ tags:
   - truth-tables
 ---
 
-## Truth values: simple and compound sentences, symbolic representation of each
-
 ## Truth-functional connectives
 
 Sentences generated from other (simple) sentences by means of sentential connectives are [compound sentences](Atomic%20and%20molecular%20sentences.md).
@@ -267,7 +265,6 @@ The example above is a key equivalence that you will encounter a lot especially 
 
 ## Enforcing binary connectives through bracketing
 
----
 
 If we had a sentence of the form
 

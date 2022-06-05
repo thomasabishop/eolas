@@ -57,6 +57,7 @@ f    f     f
 We can see that it inverts the value of AND.
 
 ## Significance of the NAND gate: functional completeness
+
 > **Equipped with just a NAND we can represent every other possible logical condition within a circuit.**
 
 In practice, it is more efficient to use specific dedicated gates (i.e OR, AND, NOT etc) for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
