@@ -3,7 +3,7 @@ tags:
   - Logic
   - Electronics
   - Hardware
-  - logic-gates
+  - logic_gates
 ---
 
 # NAND gate
@@ -32,9 +32,9 @@ Diagram representing NAND gate:
 * It is only when both switches are on, that the output is off (corresponding to `true` `true` )
 
 
-This is the exact opposite to the truth-conditions for `AND`.
+This is the exact opposite to the truth-conditions for AND.
 
-## Transliterating the logic truth table to the switch behaviour
+## Transliterating the logic truth-table to the switch behaviour
 
 We can now present a truth table for NAND along side that for AND: 
 
@@ -59,7 +59,7 @@ We can see that it inverts the value of AND.
 ## Significance of the NAND gate: functional completeness
 > **Equipped with just a NAND we can represent every other possible logical condition within a circuit.**
 
-In practice, it is more efficient to use specific dedicated gates for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
+In practice, it is more efficient to use specific dedicated gates (i.e OR, AND, NOT etc) for the other Boolean connectives but in principle the same output can be achieved through NANDs alone.  
 
 
 ## More complex outputs from combining NANDS
