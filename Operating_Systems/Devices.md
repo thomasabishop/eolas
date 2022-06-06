@@ -32,9 +32,9 @@ brw-rw----   1 root   disk   259,     3 Jun  4 11:00 nvme0n1p3
 The [mode](../Programming_Languages/Shell_Scripting/File_permissions_and_execution.md#what-the-output-means) is different from ordinary files. Each device file is prepended with `b, p, c, s` before the standard permissions. These stand for the major types of devices: _block, character, pipe_ and _socket_. 
 <dl>
   <dt>block</dt>
-  <dd>These devices transfer data as large fixed-size blocks. These are the most common device type and include harddrives and filesystems. As the data can be split up into discrete blocks of data, this facilitates quick random access from the kernel. </dd>
+  <dd>Block devices transfer data as large fixed-size blocks. These are the most common device type and include harddrives and filesystems. As the data can be split up into discrete blocks of data, this facilitates quick random access from the kernel. </dd>
   <dt>character</dt>
-  <dd>These devices transfer data one character at a time.The data is not in discrete chunks, it is a continuous stream of characters. And example of a stream device file is a printer however many character devices (such as `/dev/null`) are not physically connected to the machine.</dd>
+  <dd>Character devices transfer data one character at a time.The data is not in discrete chunks, it is a continuous stream of characters. An example of a stream device file is a printer however many character devices (such as `/dev/null`) are not physically connected to the machine.</dd>
   <dt>pipe<dt>
   <dd></dd>
   <dt>socket<dt>
