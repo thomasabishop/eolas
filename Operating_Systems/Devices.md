@@ -6,7 +6,7 @@ tags:
 
 # Devices
 
-Devices pertain to disks and drives that either exist on the motherboard or that are plugged-in. 
+Devices pertain to [disks](./Disks.md) and drives that either exist on the motherboard or that are plugged-in. 
 
 Devices are files but they are different from ordinary files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
 
