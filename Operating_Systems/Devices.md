@@ -36,9 +36,13 @@ The [mode](../Programming_Languages/Shell_Scripting/File_permissions_and_executi
   <dt>character</dt>
   <dd>Character devices transfer data one character at a time.The data is not in discrete chunks, it is a continuous stream of characters. An example of a stream device file is a printer however many character devices (such as `/dev/null`) are not physically connected to the machine.</dd>
   <dt>pipe<dt>
-  <dd></dd>
+  <dd>Pipe devices allow two or more processes to communicate with each other. They work in the same way as character devices (transferring data as a stream) but instead of the output being sent to a device, it is sent to another process.</dd>
   <dt>socket<dt>
-  <dd></dd>
+  <dd>The same as pipe devices, facilitating communication between processes however they can communicate with many processes at once, not just a single process.</dd>
 </dl>
 
-TODO: Add details on pipes and sockets once I understand them. 
+
+## /dev/null
+
+`/dev/null` is a virtual device: it doesn't actually exist as a piece of hardware on the system. 
+Base on : https://linuxhint.com/what_is_dev_null/
