@@ -3,7 +3,7 @@ tags:
   - Programming_Languages
   - shell
 ---
-
+# Passing arguments to scripts
 ## Relation between commands and programs
 
 Whenever we issue a command in bash we are really running an executable program that is associated with the command. This is why when we create our own bash scripts we must run `chmod` to make them executables. When we issue a command like `./file.sh` we are running an executable program.
