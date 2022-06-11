@@ -16,9 +16,12 @@ A disk is a mass storage [device](./Devices.md) which we can write to and read f
 ## Disk schematic
 The following diagram represents the basic anatomy of a disk device.
 
+![](/img/harddisk.png)
+
+
 * A disk is divided up into *partitions* which are subsections of the overall disk. The kernel presents each partition as a [block device](./Devices.md#Devices.md) as it would with an entire disk.
 * The disk dedicates a small part of its contents to a *partition table*: this defines the different partitions that comprise the total disk space. 
-* The *filesystem* is a database of files and directories: this comprises the bulk of the partition and is of course what you interact with in [user space](./User_Space.md) when reading and writing data. 
+* The *filesystem* is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](./User_Space.md) when reading and writing data. 
 
  ## Partitioning disks 
 
@@ -56,8 +59,15 @@ Device            Start        End   Sectors   Size Type
 /dev/nvme0n1p2  1001472   59594751  58593280  27.9G Linux filesystem
 /dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem
 ```
+The two tools disclose the following information:
 
-So my main harddrive is `/dev/nvme0n1` and it has the standard three partitions:
+So my main harddrive is `/dev/nvme0n1`  (equivalent to and it has the standard three partitions:
 * Boot partition (`/dev/nvme0n1p1`)
 * Root dir (`/dev/nvme0n1p2`)
 * Home dir (`/dev/nvme0n1p3`)
+
+
+## ! To cover
+
+What is gpt/uefi/efi
+ext-4 and dos etc
