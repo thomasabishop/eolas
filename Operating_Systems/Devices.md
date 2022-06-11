@@ -6,10 +6,10 @@ tags:
 
 # Devices
 
-Devices are hardware that require access to the CPU in order to function. Devices can either be external and pluged-in or internal to the motherboard. The most common type of device that you will work with are 
+Devices are hardware that require access to the CPU in order to function. Devices can either be external and plugded-in or internal to the motherboard. The most common type of device that you will work with are 
 [disks](./Disks.md). 
 
-Devices are files but they have some different capabilities that ordinary files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
+Devices are files but they have some different capabilities than ordinary files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
 
 Some of the most important device files are:
 * `hda` : a harddisk on a port
