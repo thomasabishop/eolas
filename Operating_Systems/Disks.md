@@ -68,8 +68,29 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1`  (equivalent to
 
 
 ### Types of partition table
-In general there are two types of partition table: MBR and GPT however each operating system has its own variations on these core types. 
+In general there are two types of partition table: MBR and GPT however each operating system has its own variations on these core types. The type of table used determines how the OS boots. So although partition tables also partition non-bootable sectors of a disk, they are distinguished by the boot system they enact. 
 
+<dl>
+  <dt>MBR</dt>
+  <dd>Master Boot Record 
+    <ul>
+      <li>This is the first 512 bytes of a storage device, preceding the first partition.</li>
+      <li>MBR tables allow three types of partitions: primary, extended and logical. The primary partition contains the operating system and is thus bootable. During bootstrapping, this is what is injected into memory as the kernel. The extended partition is everything else. There is only one of these however it can be broken into multiple logical partitions.  </li>
+      <li>Don't understand what logical partitions are and whether they correspond to sda1, sda2 etc. 
+    </ul>
+
+  </dd>
+ 
+  <dt>GPT</dt>
+
+  <dd>GUID Partition Table
+  
+  <ul>
+      <li></li>
+      <li></li>
+    </ul>
+</dd>
+</dl>
 
 ## ! To cover
 
