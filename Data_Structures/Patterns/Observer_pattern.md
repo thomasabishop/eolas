@@ -5,7 +5,7 @@ tags:
   - oop
 ---
 
-# The observer pattern
+# Observer pattern
 
 The Observer design pattern is also known as the 'publish/subscribe' pattern.
 
