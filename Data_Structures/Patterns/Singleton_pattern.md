@@ -22,7 +22,7 @@ As the name suggests, the Singleton pattern is best used in scenarios where you 
 
 This pattern can be implemented either with a object or a class.
 
-In the example below a global store for a modern JS application is created using an object.
+In the example below, a global store for a modern JS application is created using an object.
 
 ### Using an object
 
