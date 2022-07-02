@@ -6,10 +6,9 @@ tags:
 
 # Devices
 
-Devices are hardware that require access to the CPU in order to function. Devices can either be external and plugded-in or internal to the motherboard. The most common type of device that you will work with are 
-[disks](./Disks.md). 
+Devices are hardware that require access to the CPU in order to function. Devices can either be external and plugged-in or internal to the motherboard. The most common type of device that you will work with are [disks](./Disks.md). 
 
-Devices are files but they have some different capabilities than ordinary files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
+Devices are files but they have some different capabilities than ordianry files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
 
 Some of the most important device files are:
 * `hda` : a harddisk on a port
@@ -21,7 +20,7 @@ So when you see  `sda` listed for example, this isn't the harddisk itself, it is
 
 ## Listing devices 
 
-The following `ls` within the `dev` directory shows my main harddrive partitions:
+The following `ls` within the `/dev/` directory shows my main harddrive partitions:
 ```
 brw-rw----   1 root   disk   259,     1 Jun  4 11:00 nvme0n1p1
 brw-rw----   1 root   disk   259,     2 Jun  4 11:00 nvme0n1p2
@@ -45,4 +44,5 @@ The [mode](../Programming_Languages/Shell_Scripting/File_permissions_and_executi
 ## /dev/null
 
 `/dev/null` is a virtual device: it doesn't actually exist as a piece of hardware on the system. 
-Base on : https://linuxhint.com/what_is_dev_null/
+
+> ! Make notes on this. Base on : https://linuxhint.com/what_is_dev_null/
