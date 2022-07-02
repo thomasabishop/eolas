@@ -43,8 +43,6 @@ In the example above, `aValue` could be edited in instantiations of the class. G
 
 ## Object modules
 
----
-
 If you want to use an object instead of a class, you have to take greater care to ensure that the objects are not overwritable. **Also you cannot use the `#` modifier to make properties private.** 
 
 - Use getters and setters for updating and retrieving values
