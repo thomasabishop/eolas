@@ -65,7 +65,7 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1`  (equivalent to
 * Root dir (`/dev/nvme0n1p2`)
   * This is the domain of the [superuser](./User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users 
 * Home dir (`/dev/nvme0n1p3`)
-
+  * The domain of the user(s)
 
 ### Types of partition table
 In general there are two types of partition table: MBR and GPT however each operating system has its own variations on these core types. The type of table used determines how the OS boots. So although partition tables also partition non-bootable sectors of a disk, they are distinguished by the boot system they enact. 
