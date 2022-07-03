@@ -10,11 +10,8 @@ tags:
 A disk is a mass storage [device](./Devices.md) which we can write to and read from.
 
 ## SCSI
-* Small Computer System Interface, responsible for handling disk access on most Linux systems.
-* Pronounced _scuzzy_. 
+* Small Computer System Interface, responsible for handli;w
 * It is a protocol that allows communicaton between printers, scanners and other peripherals in addition to harddisks. 
-* The `/sda/` device that is the most common designation for the harddisk in Linux systems stands for *SCSI disk*.
-
 ## Disk schematic
 The following diagram represents the basic anatomy of a disk device.
 
@@ -90,25 +87,35 @@ In our example above:
     <ul>
       <li>Stands for Master Boot Record</li> 
       <li>Uses BIOS in the boot process</li> 
-      <li>Can only works with disks up to 2TB in size<li> 
-      <li>Only supports 4 primary partitions. This means the number of operating systems you install is limitied to this number.<li> 
+      <li>Can only works with disks up to 2TB in size</li> 
+      <li>Only supports 4 primary partitions. This means the number of operating systems you install is limitied to this number.</li> 
       <li>This is the first 512 bytes of a storage device, preceding the first partition.</li>
     </ul> 
   </dd>
- 
   <dt>GPT</dt>
-
-  <dd>GUID Partition Table
-  
+  <dd>
   <ul>
-      <li></li>
-      <li></li>
+      <li>Stands for GUID Partition Table </li>
+      <li>Gradually replacing MBR</li>
+      <li>Uses UEFI instead of BIOS</li>
+      <li>As name indicates, every partition on disk has its own globally-unique identifier</li>
+      <li>Vastly more partitions available than with MBR (dependent on operating system)</li>
+      <li>Offers greater recovery options and anti-corruption safeguards</li> 
     </ul>
 </dd>
 </dl>
 
 ## BIOS and UEFI 
-## ! To cover
 
-What is gpt/uefi/efi
-ext-4 and dos etc
+BIOS and UEFI are both firmware that is installed directly on the motherboard of the computer. They are firmware because they are software that is permanent and programmed into read-only memory.
+
+In the context of disks, their most crucial role is locating the operating system on the harddisk and loading it into memory so that the bootstrapping process can begin. However they are also responsible for the computer clock and the management of peripherals. 
+
+As we can see from the `fdisk` readout, the boot partition uses EFI, the storage partition associated with UEFI. 
+
+Whilst UEFI is installed on the hardware, most of its configuration is stored in the EFI partition on the disk, whereas with BIOS, everything is on the chip. This make booting faster with UEFI.
+
+Even though most modern computers use UEFI, it may still be referred to as BIOS for user-continuity. This is like on Windows. With Linux you have to explicitly create your boot process so the two are clearly distinguishable. 
+## File systems
+
+File systems are what the computer relies on to ascertain the location and positioning of files on the disk. In Linux it is customary to use FAT-32 for the boot partition and ext-4 for the extended partition. In other operating systems you would do the same but most likely use NFTS for the extended partition.
