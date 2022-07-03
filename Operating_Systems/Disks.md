@@ -2,6 +2,8 @@
 tags:
   - Linux
   - Operating_Systems
+  - disks
+  - harddisk
 ---
 
 # Disks
@@ -68,17 +70,30 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1`  (equivalent to
   * The domain of the user(s)
 
 ### Types of partition table
-In general there are two types of partition table: MBR and GPT however each operating system has its own variations on these core types. The type of table used determines how the OS boots. So although partition tables also partition non-bootable sectors of a disk, they are distinguished by the boot system they enact. 
+In the Linux world there are two main types: MBR and GPT. The type of table used determines how the OS boots. So although partition tables are also responsible for the partitioning of non-bootable sectors of a disk, **they are distinguished by the boot system they implement**. 
+If we look at the output from `parted` and `fdisk` above we see that the harddrive uses the GPT partition type.
+
+#### Primary, extended and logical partitions
+Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](The_Kernel.md). 
+
+The extended partition is basically everything other than the primary partition. This is typically subdivided into other partitions that are called *logical* partitions. This is because they physically reside in the same sector of the disk (the extended partition) but are treated as virtual and independent disks.  
+
+In our example above:
+* `/dev/nvme0n1p1`  is the primary/boot partition
+* `/dev/nvme0n1p2` and `/dev/nvme0n1p3` comprise the extended partition and by themselves are each logical partitions.  
+
+ 
 
 <dl>
   <dt>MBR</dt>
-  <dd>Master Boot Record 
+  <dd> 
     <ul>
+      <li>Stands for Master Boot Record</li> 
+      <li>Uses BIOS in the boot process</li> 
+      <li>Can only works with disks up to 2TB in size<li> 
+      <li>Only supports 4 primary partitions. This means the number of operating systems you install is limitied to this number.<li> 
       <li>This is the first 512 bytes of a storage device, preceding the first partition.</li>
-      <li>MBR tables allow three types of partitions: primary, extended and logical. The primary partition contains the operating system and is thus bootable. During bootstrapping, this is what is injected into memory as the kernel. The extended partition is everything else. There is only one of these however it can be broken into multiple logical partitions.  </li>
-      <li>Don't understand what logical partitions are and whether they correspond to sda1, sda2 etc. 
-    </ul>
-
+    </ul> 
   </dd>
  
   <dt>GPT</dt>
@@ -92,6 +107,7 @@ In general there are two types of partition table: MBR and GPT however each oper
 </dd>
 </dl>
 
+## BIOS and UEFI 
 ## ! To cover
 
 What is gpt/uefi/efi
