@@ -4,11 +4,14 @@ tags:
   - typescript
 ---
 
-## Type declarations
+# Classes
+## Type declarations for classes
 
-TypeScript offers full type annotations for classes, as well as several TypeScript-specific options (control access modifiers, interfaces etc) that seek to bring JavaScript into closer alignment with more strict object-oriented languages like Java and C#. Here we just focus on the basics.
+TypeScript offers full type annotations for classes. It also introduces several TypeScript-specific options (control access modifiers, interfaces etc) that do not exist in JavaScript but which that seek to bring it into closer alignment with more strict object-oriented languages like Java and C#. 
 
-````jsx
+A class in JavaScript:
+
+```js
 class Age {
   constructor(name, birthYear) {
     this.name = name;
@@ -24,11 +27,13 @@ class Age {
 		return `${this.personName} is ${this.age} years old`;
 	}
 }
-````
+```
 
-````tsx
+The same class in TypeScript:
+
+```ts
 class Age {
-  personName: string; // check if we need to do this when NOT using a constructor
+  personName: string; 
   birthYear: number;
   constructor(personName: string, birthYear: number) {
     this.personName = personName;
@@ -44,11 +49,11 @@ class Age {
     return `${this.personName} is ${this.age} years old`;
   }
 }
-````
+```
 
 The main points to note are:
 
-* methods must specify their return type, as with functions
+* methods must specify their return type, as with [functions](Functions.md)
 * the constructor function must specify its parameters' types
 * we must declare the types of any properties we intend to use at the start of the class.
 
@@ -56,7 +61,7 @@ The main points to note are:
 
 In order to create an object instance of `Age`, we can use the standard constructor function, viz:
 
-````jsx
+```js
 const mum = new Age('Mary Jo', 1959);
 console.log(mum);
 
@@ -65,22 +70,22 @@ console.log(mum);
 
 But given that classes define objects, we can also now use `Age` as a new custom type and define an object that way
 
-````jsx
+```jsx
 const thomas: Age = new Age('Thomas', 1988); 
-````
+```
 
 ### Without constructor
 
 If your class does not use a constructor, you still need to define your class property types at the top:
 
-````tsx
+```tsx
 class Dummy {
   aNum: number = 4;
   get getSquare(): number {
     return this.aNum * this.aNum;
   }
 }
-````
+```
 
 ## Interfaces
 
@@ -90,18 +95,18 @@ When we use an interface with a class we are asserting that the class must have 
 
 Let's say we have the following interface:
 
-````tsx
+```ts
 interface Person {
 	firstName: string,
 	secondName: string,
 	age: number,
-  employed: () => boolean
+    employed: () => boolean
 }
-````
+```
 
 Now we want to create a class that must share this shape. We go ahead and create the class and say that it **implements** `Person` :
 
-````tsx
+```ts
 class Programmer implements Person {
 // If the below are not included, TS will generate an error 
 	firstName: string,
@@ -109,4 +114,4 @@ class Programmer implements Person {
 	age: number,
 	employed: () => boolean
 }
-````
+```
