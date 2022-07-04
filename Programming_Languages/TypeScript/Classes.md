@@ -5,9 +5,10 @@ tags:
 ---
 
 # Classes
+
 ## Type declarations for classes
 
-TypeScript offers full type annotations for classes. It also introduces several TypeScript-specific options (control access modifiers, interfaces etc) that do not exist in JavaScript but which that seek to bring it into closer alignment with more strict object-oriented languages like Java and C#. 
+TypeScript offers full type annotations for classes. It also introduces several TypeScript-specific options (control access modifiers, interfaces etc) that do not exist in JavaScript but which seek to bring it into closer alignment with more strict object-oriented languages like Java and C#.
 
 A class in JavaScript:
 
@@ -23,9 +24,9 @@ class Age {
   get age() {
     return this.currentYear() - this.birthYear;
   }
-	get dataOutput(){
-		return `${this.personName} is ${this.age} years old`;
-	}
+  get dataOutput() {
+    return `${this.personName} is ${this.age} years old`;
+  }
 }
 ```
 
@@ -33,7 +34,7 @@ The same class in TypeScript:
 
 ```ts
 class Age {
-  personName: string; 
+  personName: string;
   birthYear: number;
   constructor(personName: string, birthYear: number) {
     this.personName = personName;
@@ -53,9 +54,9 @@ class Age {
 
 The main points to note are:
 
-* methods must specify their return type, as with [functions](Functions.md)
-* the constructor function must specify its parameters' types
-* we must declare the types of any properties we intend to use at the start of the class.
+- methods must specify their return type, as with [functions](Functions.md)
+- the constructor function must specify its parameters' types
+- we must declare the types of any properties we intend to use at the start of the class.
 
 ### Instantiating a class
 
@@ -66,12 +67,12 @@ const mum = new Age('Mary Jo', 1959);
 console.log(mum);
 
 /* Age { personName: 'Mary Jo', birthYear: 1959 } */
-````
+```
 
 But given that classes define objects, we can also now use `Age` as a new custom type and define an object that way
 
 ```jsx
-const thomas: Age = new Age('Thomas', 1988); 
+const thomas: Age = new Age('Thomas', 1988);
 ```
 
 ### Without constructor
@@ -97,10 +98,10 @@ Let's say we have the following interface:
 
 ```ts
 interface Person {
-	firstName: string,
-	secondName: string,
-	age: number,
-    employed: () => boolean
+  firstName: string;
+  secondName: string;
+  age: number;
+  employed: () => boolean;
 }
 ```
 
@@ -108,7 +109,7 @@ Now we want to create a class that must share this shape. We go ahead and create
 
 ```ts
 class Programmer implements Person {
-// If the below are not included, TS will generate an error 
+// If the below are not included, TS will generate an error
 	firstName: string,
 	secondName: string,
 	age: number,
