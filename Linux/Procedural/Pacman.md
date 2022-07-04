@@ -10,7 +10,7 @@ tags:
 pacman -Qe
 ```
 
-# Uninstall, and list dependencies for package to be uninstalled
+## Uninstall, and list dependencies for package to be uninstalled
 
 ```
 pacman -Rcns
