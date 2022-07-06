@@ -2,6 +2,7 @@
 tags:
   - Programming_Languages
   - typescript
+  - functions
 ---
 
 # Functions

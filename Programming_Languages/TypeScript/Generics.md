@@ -61,70 +61,7 @@ Note that even though the function in question does not express any preference f
 
 > In the generic function we have used `T` as our placeholder for a generic type as this is the convention. However there is no compunction to do so. We could have used any letter or string, providing that the string is not a reserved term.
 
-## Second example
-
-This example extends the first and demonstrates how generics can help to reduce repetitive code whilst also providing type safety.
-
-Imagine we have a single object that can be classified against multiple data sets. For instance a book may be translated into different languages, be available in a variety of formats, and be published in multiple countries. Let's create custom types reflecting this:
-
-```ts
-type Translations = {
-  [english: string]: string;
-  german: string;
-  french: string;
-};
-
-type Publishers = {
-  [usa: string]: string;
-  uk: string;
-  germany: string;
-};
-
-type Formats = {
-  [hardback: string]: boolean;
-  paperback: boolean;
-  audio: boolean;
-};
-```
-
-Now let's say we have a book _Dune_ that is a database entry corresponding to the `Translations` type
-
-```ts
-const dune: Translations = {
-  english: 'https://www.amazon.com/dune',
-  german: 'https://www.amazon.de/dune',
-  french: 'https://www.amazon.fr/dune',
-};
-```
-
-Our users want to be able to quickly check different properties of a given book in the database. To allow them to check for specific translations we might write a utility function:
-
-```ts
-function isTranslationAvailable(
-  database: Translations,
-  translation: string | number,
-): translation is keyof Translations {
-  return translation in database;
-}
-```
-
-We would expect `isTranslationAvailable(dune, 'german')` to return `true` and `isTranslationAvailable(dune, 'hebrew')` to return `false`.
-
-Next we want to see if _Dune_ is available as audio book, we could adapt `isTranslationAvailable` :
-
-```tsx
-function isFormatAvailable(database: Formats, format: string | number): format is keyof Formats {
-  return format in database;
-}
-```
-
-This is clearly sub-optimal: we require a different lookup function for every property type yet the logic is identical. This is unnecessarily verbose and insufficiently abstracted. It is also not very adaptable in that for each new property set we need to create a different function. We can imagine that if the list of possible properties were to grow over time, additional code would need to be written and existing references updated.
-
-The solution then, is to genericise the utility function so tht
-
 ## Another example
-
----
 
 This example demonstrates how we can use generics to reduce repetition when writing functions and is also a more realistic use case.
 
@@ -144,16 +81,6 @@ type SubtitleFormatUrls = {
 };
 ```
 
-<aside>
-💡 `URL` is a built-in Object in JavaScript and can be accessed via the URL constructor.
-
-</aside>
-
-```tsx
-let m = 'https://developer.mozilla.org';
-let a = new URL('/', m);
-```
-
 An example of an object matching these type definitions:
 
 ```tsx
@@ -170,11 +97,6 @@ function isFormatAvailable(obj: VideoFormatUrls, format: string): format is keyo
   return format in obj;
 }
 ```
-
-<aside>
-💡 Note that in the above function we have used a **type predicate**  in the return signature → **add notes about this**.
-
-</aside>
 
 Now imagine that we need to do the same thing with subtitles, but given that `isFormatAvailable()` is typed to the `VideoFormatUrls` type we would get an error if we used this function for subtitles. But we also don't want to write a near identical function typed to `SubtitleFormatUrls` to subtitles just to ensure adequate type safety.
 
