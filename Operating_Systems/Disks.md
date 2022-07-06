@@ -7,6 +7,7 @@ tags:
 ---
 
 # Disks
+
 A disk is a mass storage [device](./Devices.md) which we can write to and read from.
 
 ## SCSI
@@ -22,7 +23,7 @@ The following diagram represents the basic anatomy of a disk device.
 * The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
 * The **filesystem** is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](./User_Space.md) when reading and writing data. 
 
- ## Partitioning disks 
+ ## Disk partitions
 
 ### Viewing current partitions
 Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
@@ -105,6 +106,31 @@ In our example above:
 </dd>
 </dl>
 
+### Creating a partition table
+
+To demonstrate the process of partitioning a harddrive I am going to repartition an external SATA drive as if it were being primed for a fresh Linux install.
+
+Let's take a look at the disk in its current form:
+
+```
+$ fdisk -l
+
+  Disk /dev/sda: 465.74 GiB, 500079525888 bytes, 976717824 sectors
+  Disk model: My Passport 071A
+  Units: sectors of 1 * 512 = 512 bytes
+  Sector size (logical/physical): 512 bytes / 512 bytes
+  I/O size (minimum/optimal): 512 bytes / 512 bytes
+  Disklabel type: gpt
+  Disk identifier: 9993F1BB-626C-485F-8542-3CC73BB40953
+
+  Device      Start       End   Sectors   Size Type
+  /dev/sda1      40    409639    409600   200M EFI System
+  /dev/sda2  409640 976455639 976046000 465.4G Apple HFS/HFS+
+```
+(This disk was previously used as a backup disk for MacOS so in addition to the extended partition which has a proprietary file system type (Apple HFS) it has a primary partition which would load the recovery OS. In contrast to my main harddrive this uses the standard SCSI prototcol and thus the partitions are prepended with `sda`.)
+
+
+
 ## BIOS and UEFI 
 
 BIOS and UEFI are both firmware that is installed directly on the motherboard of the computer. They are firmware because they are software that is permanent and programmed into read-only memory.
@@ -119,3 +145,8 @@ Even though most modern computers use UEFI, it may still be referred to as BIOS 
 ## File systems
 
 File systems are what the computer relies on to ascertain the location and positioning of files on the disk. In Linux it is customary to use FAT-32 for the boot partition and ext-4 for the extended partition. In other operating systems you would do the same but most likely use NFTS for the extended partition.
+
+
+## Stuff to add
+
+- The lsblk command 
