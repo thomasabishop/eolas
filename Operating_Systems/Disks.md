@@ -11,7 +11,7 @@ tags:
 A disk is a mass storage [device](./Devices.md) which we can write to and read from.
 
 ## SCSI
-* Small Computer System Interface, responsible for handli;w
+* Small Computer System Interface, responsible for handling disk access on most Linux systems.
 * It is a protocol that allows communicaton between printers, scanners and other peripherals in addition to harddisks. 
 ## Disk schematic
 The following diagram represents the basic anatomy of a disk device.
