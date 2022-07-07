@@ -28,6 +28,22 @@ The following diagram represents the basic anatomy of a disk device.
 ### Viewing current partitions
 Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
 
+For a top-level overview of your disks and their main partitions you can run `lsblk` (_list block devices_):
+
+```bash
+$ lsblk
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    0 465.7G  0 disk 
+├─sda1        8:1    0   200M  0 part 
+└─sda2        8:2    0 465.4G  0 part /run/media/thomas/ganesh
+nvme0n1     259:0    0 476.9G  0 disk 
+├─nvme0n1p1 259:1    0   488M  0 part 
+├─nvme0n1p2 259:2    0  27.9G  0 part /
+└─nvme0n1p3 259:3    0 448.5G  0 part /home
+```
+
+
 We can use `parted -l` to view the partition table for the current machine:
 
 ```bash
