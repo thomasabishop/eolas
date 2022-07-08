@@ -146,6 +146,43 @@ $ fdisk -l
 (This disk was previously used as a backup disk for MacOS so in addition to the extended partition which has a proprietary file system type (Apple HFS) it has a primary partition which would load the recovery OS. In contrast to my main harddrive this uses the standard SCSI prototcol and thus the partitions are prepended with `sda`.)
 
 
+#### 1. Unmount existing partitions
+
+```bash
+umount /dev/sda1
+umount /dev/sda2
+
+```
+#### 2. Deleting the existing partitions
+```bash
+# Load the disk into fdisk
+sudo fdisk /dev/sda
+
+# Select delete and run for each partition
+Command (m for help): d
+Partition number (1,2, default 2): 1
+
+Partition 1 has been deleted.
+
+Command (m for help): d
+Selected partition 2
+Partition 2 has been deleted.
+
+# Verify deletion with p command
+Command (m for help): p
+Disk /dev/sda: 465.74 GiB, 500079525888 bytes, 976717824 sectors
+Disk model: My Passport 071A
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 9993F1BB-626C-485F-8542-3CC73BB40953
+
+# Write the changes to disk with w
+
+```
+
+
 
 ## BIOS and UEFI 
 
