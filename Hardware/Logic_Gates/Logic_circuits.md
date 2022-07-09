@@ -1,20 +1,19 @@
 ---
 tags:
-  - Theory_of_Computation
   - Logic
   - Electronics
   - binary
 ---
 
+# Logic circuits
 
- > 
- > Now that we are familiar with the individual logic gates and their truth conditions we are in a position to create **logic circuits**. These are combinations of logic gates controlled by inputs that can provide a range of useful outputs.
+ > Now that we are familiar with the individual [logic gates](Logic_gates.md) and their truth conditions we are in a position to create **logic circuits**. These are combinations of logic gates controlled by inputs that can provide a range of useful outputs. The output of a logic gate is a function of the truth-values of the individual gates and their connections to each other.
 
 ## Basic example
 
 In the below circuit we have the following gates connected to two inputs with one output, moving through the following stages:
 
-1. `AND`, `NOT` , `NOT`
+1. `AND`, `NOT`, `NOT`
 1. `AND`, `NOR`
 
 This is equivalent to the following truth table:
@@ -29,12 +28,19 @@ _    _   _____
 1    1     0       (4)
 ````
 
-![Screenshot_2020-08-31_at_13.52.25.png](../img/Screenshot_2020-08-31_at_13.52.25.png)
+![](../img/../../img/Screenshot_2020-08-31_at_13.52.25.png)
+
 *Line 1 of the truth table*
 
-![Screenshot_2020-08-31_at_13.52.34.png](../img/Screenshot_2020-08-31_at_13.52.34.png)
+
+
+![](../img/../../img/Screenshot_2020-08-31_at_13.52.34.png)
+
 *Line 2 and 3 of the truth table (equivalent to each other)*
-![Screenshot_2020-08-31_at_13.52.42.png](../img/Screenshot_2020-08-31_at_13.52.42.png)
+
+
+![](../img/../../img/Screenshot_2020-08-31_at_13.52.42.png)
+
 *Line 4 of the truth table*
 
 ## Applied example
@@ -47,8 +53,10 @@ It corresponds to an automatic sliding door and has the following states
 * a proximity sensor that opens the doors when someone approaches from the inside
 * a manual override that locks both approaches (inside and out) meaning no one can enter of leave
 
-Here's a visual representation:!
-[logic_circuits_5.gif](../img/logic_circuits_5.gif)
+Here's a visual representation:
+
+![logic_circuits_5.gif](../img/../../img/logic_circuits_5.gif)
+
 The following truth table represents this behaviour, with A and B as the door states, C as the override and X as the door action (0 = open, 1 = closed)
 
 ````
@@ -65,5 +73,6 @@ _  _  _  _
 1  1  1  1
 ````
 
-![Screenshot_2020-08-31_at_14.12.48.png](../img/Screenshot_2020-08-31_at_14.12.48.png)
+![](../img/../../img/Screenshot_2020-08-31_at_14.12.48.png)
+
 *Automatic door sensor with manual override*
