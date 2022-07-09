@@ -4,6 +4,7 @@ tags:
   - binary
 ---
 
+# Why computers use binary 
 ## Now we know how binary works, how does it relate to computing?
 
 The reason is straight forward: it is the simplest way on the level of pure engineering of representing numerical and logical values; both of which are the basic foundations of programming. An electronic circuit or transistor only needs to represent two states: on (1) and off (0) which corresponds to the switch on an electrical circuit.
@@ -26,7 +27,7 @@ On the level of electrical engineering and in the subsequent examples using a li
 
 ## From circuits to programs
 
-The following (from my earlier notes) breaks down how we get from the binary number system → electrical circuits → to computer programs:
+The following breaks down how we get from the binary number system → electrical circuits → to computer programs:
 
 1. ”Data”= a piece or pieces of **information**
 

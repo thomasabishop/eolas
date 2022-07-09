@@ -1,9 +1,11 @@
 ---
 tags:
-  - Theory_of_Computation
   - electronics
   - binary
 ---
+
+# Binary arithmetic with circuits
+
 
 Now that we know how to add and multiply using binary numbers we can apply this knowledge to our previous understanding of circuits.
 
@@ -14,7 +16,8 @@ Our aim will to be have our inputs as the numbers that we will add or multiply o
 Let's start with the most basic example:
 
 *Half adder circuit*
-![maths_with_logic_gates_1.png](../img/maths_with_logic_gates_1.png)
+
+![maths_with_logic_gates_1.png](/img/maths_with_logic_gates_1.png)
 
 This circuit has the following possible range of outputs, where A and B are the input switches and X and Y are the output signals. The logic gates (an `XOR` and an `AND` ) are equivalent to the add function.
 
@@ -46,11 +49,12 @@ This is called a half adder because it cannot go higher than $2^1$.
 
 There are special output components that can represent the combination of binary inputs and logic gates as denary values. Here is an example using a **seven-segment display** :
 
-[maths_with_logic_gates_5.gif.crdownload](../img/maths_with_logic_gates_5.gif.crdownload)
 
+[](/img/recalc_img.gif)
 ## Full adder
 
 To represent numbers higher than the denary 2, we would need a carrying function so that we could represent numbers up to denary 3 and 4. The limit of a half adder is $2^1$.
 
 We do this by adding another switch input:
-![maths_with_logic_gates_7.gif](../img/maths_with_logic_gates_7.gif)
+
+![maths_with_logic_gates_7.gif](/img/maths_with_logic_gates_7.gif)

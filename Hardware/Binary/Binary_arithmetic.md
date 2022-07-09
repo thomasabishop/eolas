@@ -1,9 +1,10 @@
 ---
 tags:
-  - Theory_of_Computation
   - Mathematics
   - binary
 ---
+
+# Binary arithmetic
 
 ## Binary addition
 
@@ -32,8 +33,8 @@ Let's break down each column from the right:
 
 ### More examples to practise with
 
-![Pasted image 20220319174839.png](../img/Pasted%20image%2020220319174839.png)
-![]()
+![](../img/../../img/Pasted_image_20220319174839.png)
+
 ## Binary multiplication
 
 Let's remind ourselves of how we do long multiplication within the denary number system:
@@ -62,10 +63,11 @@ It is the same in binary multiplication but is actually easier because we are on
 When we multiply binary numbers in columns we multiply each of the top numbers by the bottom in sequence and then sum the results as in denary.
 
 An important difference is that when we move along the bottom row from the $2^0$, to $2^2$, to $2^4$ etc we must put a zero in the preceding column as a place holder. The sequence is shown below:
-![multiplication_01.gif](../img/multiplication_01.gif)
 
-![multiplication_02.gif](../img/multiplication_02.gif)
+![](/img/multiplication_01.gif)
 
-![multiplication_03.gif](../img/multiplication_03.gif)
+![](/img/multiplication_02.gif)
 
-![multiplication_04.gif](../img/multiplication_04.gif)
+![](/img/multiplication_03.gif)
+
+![](/img/multiplication_04.gif)

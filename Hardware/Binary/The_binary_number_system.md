@@ -1,9 +1,9 @@
 ---
 tags:
-  - Theory_of_Computation
   - Mathematics
   - binary
 ---
+# The binary number system
 
 ## Decimal (denary) number system
 
