@@ -13,16 +13,16 @@ A bus is a communication system that transfers data between components inside a 
 The primary pathway between the CPU and [memory](Memory/Basics.md).
 
 ### Internal bus
-Connects local devices for example disk to CPu 
+Connects local devices for example the harddisk to the CPU.
 
 ### External bus
-Connects peripheral devices such as disks and printers to the motherboard
+Connects peripheral devices such as disks and printers to the [motherboard](Motherboard.md)
 
 ### Expansion bus
 Allows expansion boards to access the CPU and memory. 
 
 ### Frontside bus
-Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other motherboard devices.
+Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](Motherboard.md) devices.
 
 ### Backside bus
 Transfers secondary cache (L2 cache) data at faster speeds, allowing more efficient CPU operations
