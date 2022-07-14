@@ -47,10 +47,10 @@ config/
 For example: 
 
 ```json
-    // default.json 
-    {
-        "name": "My Express app"
-    }
+// default.json 
+{
+    "name": "My Express app"
+}
 ```
 Then to utilise config variables:
 
@@ -88,7 +88,7 @@ We can then safely reference this value in the course of our normal code:
 console.log(config.get('password'))
 ```
 
-<p style="color:red">! But how would this be achieved in a production server></p>
+<p style="color:red">! But how would this be achieved in a production server?</p>
 
 
 <p style="color:red">! And how could we do this programmatically at the start of a local development session without manually setting each environment variable in the terminal?</p>

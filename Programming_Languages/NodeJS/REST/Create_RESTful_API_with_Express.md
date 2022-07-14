@@ -28,12 +28,6 @@ const app = express()
 
 ````
 
-## Nodemon
-
-We don't want to have to restart the server every time we make a change to our files. We can use `nodemon` instead of `node` when running our `index.js` file so that file-changes are immediately registered without the need for a restart. 
-
-> Once `nodemon` is installed, update your start script from `node index.js` to `nodemon index.js`.
-
 ## Our data
 
 > Typically when you create a RESTful API you are going to be returning data from a database. For simplicity we are just going simulate this with a simple data array so that we can focus on the Express syntax rather than database handling.

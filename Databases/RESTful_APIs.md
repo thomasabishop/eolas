@@ -5,9 +5,11 @@ tags:
   - apis
 ---
 
+# RESTful APIs
+
 ## Definition of an API
 
-An application programming interface is a set of definitions and protocols for building and integrating application software. It can be thought of as a contract between an information provider and an informational consumer. The API is a mediator between the clients and the resources they wish to acquire from a server or database. 
+An application programming interface (API) is a set of definitions and protocols for building and integrating application software. It can be thought of as a contract between an information provider and an informational consumer. The API is a mediator between the clients and the resources they wish to acquire from a server or database. 
 
 ## REST
 
@@ -32,12 +34,12 @@ In order to qualify as RESTful, an API must meet the following constraints:
 
 ## Example
 
-A basic example of a REST API would be a series of methods corresponding to the main [HTTP request types](HTTP%20request%20types.md).
+A basic example of a REST API would be a series of methods corresponding to the main [HTTP request types](/Databases/HTTP_request_types.md).
 
-\| HTTP request type 	| URI                 	| Action                       	| Body ?                   	|
-\|-------------------	|---------------------	|------------------------------	|--------------------------	|
-\| GET               	| /api/customers      	| Retrieve customers as array  	| No                       	|
-\| GET               	| /api/customers/guid 	| Get a specific customer      	| No, data comes from GUID 	|
-\| PUT               	| /api/customers/guid 	| Update an existing customer  	| Yes                      	|
-\| DELETE            	| /api/customers/1    	| Delete a customer            	| No, data comes from GUID 	|
-\| POST              	| /api/customers      	| Create a new customer        	| Yes                      	|
+| HTTP request type 	| URI                 	| Action                       	| Body ?                   	|
+|-------------------	|---------------------	|------------------------------	|--------------------------	|
+| GET               	| /api/customers      	| Retrieve customers as array  	| No                       	|
+| GET               	| /api/customers/guid 	| Get a specific customer      	| No, data comes from GUID 	|
+| PUT               	| /api/customers/guid 	| Update an existing customer  	| Yes                      	|
+| DELETE            	| /api/customers/1    	| Delete a customer            	| No, data comes from GUID 	|
+| POST              	| /api/customers      	| Create a new customer        	| Yes                      	|
