@@ -69,4 +69,8 @@ The phases are as follows:
    * This phase can be targetted via the `process.exit()` function or the close event of a web-socket.
 
 
-https://heynode.com/tutorial/how-event-loop-works-nodejs/
+## Event _loop_ and event _queue_
+
+The terms _event loop_ and _event queue_ are often used interchangeably in the literature but in fact they are distinct. 
+
+The Event Loop is the Node runtime's method of execution, the queue is the stack of tasks that are lined up and executed by the loop. We can think of the queue as being the input and the loop as what acts on the input. The queue obviously emerges from the program we write but it is scheduled, organised and sequenced by the loop. 

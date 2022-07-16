@@ -5,8 +5,8 @@ tags:
   - node-js
 ---
 
+# Global object
 
- > 
  > In Node every function and variable should be scoped to a module. We should not define functions and variables within the global scope.
 
 * In Node the equivalent to the browser's `Window` object is `global`. The properties and methods that belong to this method are available anywhere in a program. 

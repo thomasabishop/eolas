@@ -24,6 +24,7 @@ console.log("Bye");
 2. Goes to the definition of this function   (`function greet(who)...`) 
 3. Executes the `console.log` within this function
 4. Returns to the location that called it (`greet("Harry")`)
-5. Finds that there is nothing else to do in this function so moves to next function: the `console.log("bye")
+5. Finds that there is nothing else to do in this function so moves to next function: the `console.log("bye")`
 6. Executes
-7. Returns to line that called it. Finds nothing else to do. Exits program
+7. Returns to line that called it. Finds nothing else to do. Exits program.
+   

@@ -2,13 +2,11 @@
 tags:
   - Software_Engineering
 ---
+# Semantic versioning 
 
-
-````
-
+```
 3.4.1 === major.minor.patch
-
-````
+```
 
 * Major
   

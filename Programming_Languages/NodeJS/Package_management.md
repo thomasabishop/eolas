@@ -6,13 +6,13 @@ tags:
   - npm
 ---
 
+# Package management
 ## List installed packages
 
-````
+```bash
 npm list 
-````
-
-This will return a recursive tree that lists dependencies of dependencies, ... 
+```
+This will return a recursive tree that lists dependencies, dependences of dependencies, ... and so on. 
 To limit the depth you can add the `--depth=` flag. For example to see only your installed packages and their versions use `npm list --depth=0`.
 
 ## View `package.json` data for an installed package
@@ -24,7 +24,9 @@ We can pinpoint specific dependencies in the `package.json`, e.g. `npm view [pac
 ## View outdated modules
 
 See whether your dependency version is out of date use `npm outdated`. This gives us a table, for example: 
-![Pasted image 20220411082627.png](../../img/Pasted%20image%2020220411082627.png)
+
+![Pasted image 20220411082627.png](/img/Pasted_image_20220411082627.png)
+
 
 * *Latest* tells us the latest release available from the developers
 * *Wanted* tells us the version that our `package.json` rules target. To take the first dependency as an example. We must have set our SemVer syntax to `^0.4.x` since it is telling us that there is a minor release that is more recent than the one we have installed but is not advising that we update to the latest major release. 
@@ -32,4 +34,4 @@ See whether your dependency version is out of date use `npm outdated`. This give
 
 ## Updating
 
-`npm update` only updates from *current* to *wanted*. In other words it only updates in accordance with your caret and tilde rules applied to semantic versioning.
+`npm update` only updates from *current* to *wanted*. In other words it only updates in accordance with your caret and tilde rules applied to [semantic versioning](/Software_Engineering/Semantic_versioning.md).
