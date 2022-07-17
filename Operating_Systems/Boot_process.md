@@ -17,6 +17,8 @@ The boot loader loads the kernel into memory from the disk and then starts the k
 
 Like the kernel itself, the boot loader requires a driver in order to access the disk but it can't use the same one as the kernel since at this point, the kernel is not yet loaded into memory. So it has its own special driver: this is either the BIOS or the UEFI firmware. 
 
+> Here is something important
+
 A boot loader's core functionality includes the ability to do the following:
 * select from multiple kernels
 * switch between sets of kernel parameters
