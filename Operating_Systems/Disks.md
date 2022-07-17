@@ -23,7 +23,7 @@ The following diagram represents the basic anatomy of a disk device.
 * The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
 * The **filesystem** is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](./User_Space.md) when reading and writing data. 
 
- ## Disk partitions
+## Disk partitions
 
 ### Viewing current partitions
 Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
