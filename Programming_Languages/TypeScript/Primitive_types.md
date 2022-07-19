@@ -34,3 +34,29 @@ const store: string[] = []; // Empty array
 `Object` is a valid type declaration in TS but it is not particularly helpful since it becomes similar to using [any](./Any.md) given that most primitive types in JavaScripts prototypically inherit from an Object.
 
 Generally, when you use objects in TypeScript you type them as [custom types](./Custom_types.md).
+
+## Array of (untyped) objects
+
+If we just know that it is going to be an array of objects we can use:
+
+```ts
+const arrOfObj = {}[]
+```
+
+If we wish to define a particular shape but without defining a type:
+
+```ts
+const arrOfObj = { name: string, age: number }[]
+```
+
+But better for reusability to do:
+
+```ts
+type ArrayOfObj = {
+  name: string,
+  age: number
+}
+
+const arrOfObj: ArrayOfObj[] = [{}, ...]
+
+```
