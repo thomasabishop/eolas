@@ -3,9 +3,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 pre, code {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono' !important;
 }
 
+code, code {
+    font-family: 'Jetbrains mono';
+}
 /* 
 h1 {
 

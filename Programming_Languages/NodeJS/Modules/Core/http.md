@@ -6,6 +6,8 @@ tags:
   - node-modules
 ---
 
+# `http` module
+
 The HTTP Module allows us to create a web server that listens for HTTP requests on a given port. It is therefore perfect for creating backends for client-side JavaScript. 
 
 ## Creating a server
