@@ -6,15 +6,15 @@ tags:
   - node-modules
 ---
 # `events` module 
-In most case you won't interact with the `events` module directly since other modules and third-party modules are abstractions on top of this base-layer. For instance the `http` module is using events under the hood to handle requests and responses.
+In most cases you won't interact with the `events` module directly since other modules and third-party modules are abstractions on top of it. For instance the `http` module is using events under the hood to handle requests and responses.
 
 Another way of putting this is to say that all events in Node inherit from the `EventEmitter` constructor, which is the class you instantiate to create a new event. At bottom everything in Node is an event with a callback, created via event emitters.  
 
 Because Node's runtime is [event-driven](/Programming_Languages/NodeJS/Architecture/Event_loop.md), it is event-emitter cycles that are being processed by the Event Loop, although you may know them as `fs` or `http` (etc) events. The call stack that the Event Loop works through is just a series of event emissions and their associated callbacks. 
 ## Event Emitters
 
-* All objects that emit events are instances of the `EventEmitter` class. These objects expose an `eventEmitter.on()` function that allows one or more functions to be attached to named events emitted by the object. 
-* These functions are listeners of the emitter.
+* All objects that emit events are instances of the `EventEmitter` class. This object exposes an `eventEmitter.on()` function that allows one or more functions to be attached to named events emitted by the object. 
+* These functions are **listeners** of the emitter.
 
 ## Basic syntax
 
