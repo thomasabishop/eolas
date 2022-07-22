@@ -3,33 +3,17 @@ tags:
   - Linux
   - Operating_Systems
   - disks
-  - disk-partition
-  - filesystems
-  - harddisk
-  - BIOS
-  - UEFI
+  - devices
+  - disk-partions
 ---
 
-# Disks
+# Disk partitions
 
-A disk is a mass storage [device](./Devices.md) which we can write to and read from.
+A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices.md) as it would with an entire disk.
 
-## SCSI
-* Small Computer System Interface, responsible for handling disk access on most Linux systems.
-* It is a protocol that allows communicaton between printers, scanners and other peripherals in addition to harddisks. 
-## Disk schematic
-The following diagram represents the basic anatomy of a disk device.
+The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
 
-![](/img/harddisk.png)
-
-
-* A disk is divided up into **partitions** which are subsections of the overall disk. The kernel presents each partition as a [block device](./Devices.md#Devices.md) as it would with an entire disk.
-* The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
-* The **filesystem** is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](./User_Space.md) when reading and writing data. 
-
-## Disk partitions
-
-### Viewing current partitions
+## Viewing current partitions
 Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
 
 For a top-level overview of your disks and their main partitions you can run `lsblk` (_list block devices_):
@@ -83,16 +67,16 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1`  (equivalent to
 * Boot partition (`/dev/nvme0n1p1`)
   * This takes up the smallest amount of space and exists in order to bootstrap the operating system: to load the kernel into memory when the machine starts. This is where your bootloader is stored and that will be accessed by the BIOS. In Linux this will be GRUB.
 * Root dir (`/dev/nvme0n1p2`)
-  * This is the domain of the [superuser](./User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users 
+  * This is the domain of the [superuser](/Operating_Systems/User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users 
 * Home dir (`/dev/nvme0n1p3`)
   * The domain of the user(s)
 
-### Types of partition table
+## Types of partition table
 In the Linux world there are two main types: MBR and GPT. The type of table used determines how the OS boots. So although partition tables are also responsible for the partitioning of non-bootable sectors of a disk, **they are distinguished by the boot system they implement**. 
 If we look at the output from `parted` and `fdisk` above we see that the harddrive uses the GPT partition type.
 
 #### Primary, extended and logical partitions
-Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](The_Kernel.md). 
+Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](/Operating_Systems/The_Kernel.md). 
 
 The extended partition is basically everything other than the primary partition. This is typically subdivided into other partitions that are called *logical* partitions. This is because they physically reside in the same sector of the disk (the extended partition) but are treated as virtual and independent disks.  
 
@@ -126,7 +110,7 @@ In our example above:
 </dd>
 </dl>
 
-### Creating a partition table
+## Creating a partition table
 
 To demonstrate the process of partitioning a harddrive I am going to repartition an external SATA drive as if it were being primed for a fresh Linux install.
 
@@ -247,47 +231,3 @@ sda           8:0    0 465.7G  0 disk
 ```
 
 > Whilst we have created our partitions we cannot yet mount them. This is because we have not yet set up a filesystem on the partitions. This is the next step. 
-
-### Filesystems
-We cannot yet mount or interact with the partitions we have created. This is because we have not added a filesystem to each partition.
-
-> A filesytem is a form of [database](/Databases/Basic_database_concepts.md); it supplies the structure to transform a simple block device into the sophisticated hierarchy of files and subdirectories that users can understand.
-
-Linux recognises many types of filesystems. The native Linux filesystem is the **ext4** (Fourth Extended Filesystem). Another common filesystem is **FAT** (File Allocation Table). Instances of this include _MSDOS_,_EXFAT_,_FAT-32_. They originate from Microsoft systems 
-
-### Creating a filesystem
-
-Remember we have two partitions on our external drive: `sda1` and `sda2`. We are going to use the `mkfs` utility to create an EXT4 system on both.  
-
-```bash
-mkfs -t ext4 /dev/sda1
-mkfs -t ext4 /dev/sda2
-```
-
-### Mounting a filesystem 
-We can now mount our filesystems. Whem we mount, we must specify the following criteria with the request:
-
-* The name of the device we want to mount.
-  * This will be the name or the partition. However the names (`sda` etc) assigned by the OS can change. In these cases and with GPT-based partitions you can use the UUID.
-  * To see a list of devices and the corresponding filesystems and UUIDs on your system, you can use the **`blkid`** ('block id') program.
-    ```
-    /dev/nvme0n1p3: UUID="c53577b5-92ef-4a0a-9a19-e488bfdfa39c" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="e152b9f4-7ce8-e74b-94db-2731c6fce53d"
-    /dev/nvme0n1p1: UUID="9920-636A" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="50592521-d386-194a-a362-bc8562ed6c82"
-    /dev/nvme0n1p2: UUID="2ee6b834-0857-49dc-b8ba-a24d46d228ae" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="e08cc442-ef51-7b4f-9d55-e236c55c933c"
-    /dev/sda2: UUID="abac6e2e-e3bf-40d3-a5ba-317c53eb27ce" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="4ef1b0e8-3d5b-c940-a3b1-0f85cddeca42"
-    /dev/sda1: UUID="ba1e40c5-9b29-4309-a559-99bf8f68116f" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="b4983358-6036-df40-a1f8-793976f3dfb1"
-    ```
-* The filesystem type (optional)
-* The **mount point**  
-  * This is the place within the existing filesystem where you want to mount the partition.
-  * When you mount to a directory, this directory _becomes_ the disk you have mounted, you will not see it as a subdirectory within the the mount point, you will just see the contents of the disk itself 
-
-```bash
-mkdir mountpoint
-mount -t ext4 /dev/sda1 /mnt
-touch test.txt
-```
-
-Our `sda1` partition is now mounted at `mountpoint`. We can go ahead and create files. If we now look within the graphical file manager when we click on the `sda1` volume, we will see the new file we have created in `mountpoint`.
-
-![](/img/mount-directory.png)
