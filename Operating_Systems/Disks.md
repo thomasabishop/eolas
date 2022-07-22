@@ -268,11 +268,18 @@ mkfs -t ext4 /dev/sda2
 ```
 
 ### Mounting a filesystem 
-We can now mount our filesystems. Whem we mount, we must specify where we want to mount _to_
+We can now mount our filesystems. Whem we mount, we must specify the following criteria with the request:
+
+* The name of the device we want to mount.
+  * This will be the name or the partition. However the names (`sda` etc) assigned by the OS can change. In these cases and with GPT-based partitions you can use the UUID.
+* The filesystem type (optional)
+* The **mount point**  
+  * This is the place within the existing filesystem where you want to mount the partition.
+  * This can be anywhere, but in the example we will use the `/mnt' directory
+  * When you mount to a directory, this directory _becomes_ the disk you have mounted, you will not see it as a subdirectory within the the mount point, you will just see the contents of the disk itself 
 
 ```bash
-umount /dev/sda1
-umount /dev/sda2
+umount -t /dev/sda1 /mnt
 ```
 
 ## BIOS and UEFI 
