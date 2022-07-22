@@ -3,7 +3,11 @@ tags:
   - Linux
   - Operating_Systems
   - disks
+  - disk-partition
+  - filesystems
   - harddisk
+  - BIOS
+  - UEFI
 ---
 
 # Disks
@@ -247,6 +251,29 @@ sda           8:0    0 465.7G  0 disk
 
 > Whilst we have created our partitions we cannot yet mount them. This is because we have not yet set up a filesystem on the partitions. This is the next step. 
 
+### Filesystems
+We cannot yet mount or interact with the partitions we have created. This is because we have not added a filesystem to each partition.
+
+> A filesytem is a form of [database](/Databases/Basic_database_concepts.md); it supplies the structure to transform a simple block device into the sophisticated hierarchy of files and subdirectories that users can understand.
+
+Linux recognises many types of filesystems. The native Linux filesystem is the **ext4** (Fourth Extended Filesystem). Another common filesystem is **FAT** (File Allocation Table). Instances of this include _MSDOS_,_EXFAT_,_FAT-32_. They originate from Microsoft systems 
+
+### Creating a filesystem
+
+Remember we have two partitions on our external drive: `sda1` and `sda2`. We are going to use the `mkfs` utility to create an EXT4 system on both.  
+
+```bash
+mkfs -t ext4 /dev/sda1
+mkfs -t ext4 /dev/sda2
+```
+
+### Mounting a filesystem 
+We can now mount our filesystems. Whem we mount, we must specify where we want to mount _to_
+
+```bash
+umount /dev/sda1
+umount /dev/sda2
+```
 
 ## BIOS and UEFI 
 
@@ -259,6 +286,3 @@ As we can see from the `fdisk` readout, the boot partition uses EFI, the storage
 Whilst UEFI is installed on the hardware, most of its configuration is stored in the EFI partition on the disk, whereas with BIOS, everything is on the chip. This make booting faster with UEFI.
 
 Even though most modern computers use UEFI, it may still be referred to as BIOS for user-continuity. This is like on Windows. With Linux you have to explicitly create your boot process so the two are clearly distinguishable. 
-## File systems
-
-File systems are what the computer relies on to ascertain the location and positioning of files on the disk. In Linux it is customary to use FAT-32 for the boot partition and ext-4 for the extended partition. In other operating systems you would do the same but most likely use NFTS for the extended partition.
