@@ -136,10 +136,7 @@ Let's take a look at the disk in its current form:
 $ fdisk -l
 
   Disk /dev/sda: 465.74 GiB, 500079525888 bytes, 976717824 sectors
-  Disk model: My Passport 071A
-  Units: sectors of 1 * 512 = 512 bytes
-  Sector size (logical/physical): 512 bytes / 512 bytes
-  I/O size (minimum/optimal): 512 bytes / 512 bytes
+  Disk model: My Passport 071Aumount /dev/sda2
   Disklabel type: gpt
   Disk identifier: 9993F1BB-626C-485F-8542-3CC73BB40953
 
@@ -275,12 +272,17 @@ We can now mount our filesystems. Whem we mount, we must specify the following c
 * The filesystem type (optional)
 * The **mount point**  
   * This is the place within the existing filesystem where you want to mount the partition.
-  * This can be anywhere, but in the example we will use the `/mnt' directory
   * When you mount to a directory, this directory _becomes_ the disk you have mounted, you will not see it as a subdirectory within the the mount point, you will just see the contents of the disk itself 
 
 ```bash
-umount -t /dev/sda1 /mnt
+mkdir mountpoint
+mount -t ext4 /dev/sda1 /mnt
+touch test.txt
 ```
+
+Our `sda1` partition is now mounted at `mountpoint`. We can go ahead and create files. If we now look within the graphical file manager when we click on the `sda1` volume, we will see the new file we have created in `mountpoint`.
+
+![](/img/mount-directory.png)
 
 ## BIOS and UEFI 
 
