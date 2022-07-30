@@ -5,7 +5,7 @@ tags:
   - von-neumann
 ---
 
-# Von Neumann CPU architecture
+# CPU architecture
 
 At the core of a computer sits the Central Processing Unit. This is what manages and executes all computation.
 

@@ -46,6 +46,8 @@ Even though most modern computers use UEFI, it may still be referred to as BIOS 
 
 The de facto standard boot loader for Linux is GRUB: Grand Unified Boot Loader.  
 
+![](/img/grub.jpg)
+
 You see the GRUB default menu when you first start a Linux machine. It will offer you various options for loading your installed OS or other OSs. GRUB is a filesystem like the main disk. If you press `e` in this screen you can view and edit specific boot parameters. Pressing `c` gives you access to the GRUB command line interface. This allows you to interact with GRUB in the same way as you would with any other filesystem, allowing for advanced configuration. 
 
 ## The boot sequence 

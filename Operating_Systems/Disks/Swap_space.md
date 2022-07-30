@@ -32,3 +32,7 @@ You will want the swap to be activated every time the OS boots so add the follow
 ```bash
 /dev/sda3e none swap sw 0 0
 ```
+
+## Create a swap file
+
+// TODO: Add info
