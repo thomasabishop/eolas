@@ -51,3 +51,5 @@ touch test.txt
 Our `sda1` partition is now mounted at `mountpoint`. We can go ahead and create files. If we now look within the graphical file manager when we click on the `sda1` volume, we will see the new file we have created in `mountpoint`.
 
 ![](/img/mount-directory.png)
+
+## `fstab` 
