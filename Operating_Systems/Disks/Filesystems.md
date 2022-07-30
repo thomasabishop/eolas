@@ -52,4 +52,31 @@ Our `sda1` partition is now mounted at `mountpoint`. We can go ahead and create 
 
 ![](/img/mount-directory.png)
 
-## `fstab` 
+## fstab
+
+In most cases you want your filesystem to mount automatically on boot and always to the same mount point. You can do this via the specialised `fstab` file on Linux systems within the `/etc/` directory.
+
+This is my current `fstab`:
+
+```
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p2
+UUID=2ee6b834-0857-49dc-b8ba-a24d46d228ae	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p3
+UUID=c53577b5-92ef-4a0a-9a19-e488bfdfa39c	/home     	ext4      	rw,relatime	0 2
+
+/swapfile none swap sw 0 0
+
+```
+It shows my root and home filesystems and my [swap](/Operating_Systems/Disks/Swap_space.md) file. Note that we use the UUID to name the partition rather than its name in `/dev/`. The order of the parameters is as follows:
+
+- Device name or UUID
+- The mount point
+- The filesystem type (in the example there are two types (`ext4` and `swap`))
+- Options
+- Now largely irrelevant backup information, set to )
+- Filesystem integrity test order 
+  - Runs the `fsck` ('filesystem check') command against each filesystem 
+  - Put `1` against the root partition for this to be checked first
+  - Put `0` for no checks to take place
