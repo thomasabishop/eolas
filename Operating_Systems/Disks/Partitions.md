@@ -3,29 +3,17 @@ tags:
   - Linux
   - Operating_Systems
   - disks
-  - harddisk
+  - devices
+  - disk-partions
 ---
 
-# Disks
+# Disk partitions
 
-A disk is a mass storage [device](./Devices.md) which we can write to and read from.
+A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices.md) as it would with an entire disk.
 
-## SCSI
-* Small Computer System Interface, responsible for handling disk access on most Linux systems.
-* It is a protocol that allows communicaton between printers, scanners and other peripherals in addition to harddisks. 
-## Disk schematic
-The following diagram represents the basic anatomy of a disk device.
+The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
 
-![](/img/harddisk.png)
-
-
-* A disk is divided up into **partitions** which are subsections of the overall disk. The kernel presents each partition as a [block device](./Devices.md#Devices.md) as it would with an entire disk.
-* The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space. 
-* The **filesystem** is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](./User_Space.md) when reading and writing data. 
-
-## Disk partitions
-
-### Viewing current partitions
+## Viewing current partitions
 Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
 
 For a top-level overview of your disks and their main partitions you can run `lsblk` (_list block devices_):
@@ -79,16 +67,16 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1`  (equivalent to
 * Boot partition (`/dev/nvme0n1p1`)
   * This takes up the smallest amount of space and exists in order to bootstrap the operating system: to load the kernel into memory when the machine starts. This is where your bootloader is stored and that will be accessed by the BIOS. In Linux this will be GRUB.
 * Root dir (`/dev/nvme0n1p2`)
-  * This is the domain of the [superuser](./User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users 
+  * This is the domain of the [superuser](/Operating_Systems/User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users 
 * Home dir (`/dev/nvme0n1p3`)
   * The domain of the user(s)
 
-### Types of partition table
+## Types of partition table
 In the Linux world there are two main types: MBR and GPT. The type of table used determines how the OS boots. So although partition tables are also responsible for the partitioning of non-bootable sectors of a disk, **they are distinguished by the boot system they implement**. 
 If we look at the output from `parted` and `fdisk` above we see that the harddrive uses the GPT partition type.
 
 #### Primary, extended and logical partitions
-Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](The_Kernel.md). 
+Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](/Operating_Systems/The_Kernel.md). 
 
 The extended partition is basically everything other than the primary partition. This is typically subdivided into other partitions that are called *logical* partitions. This is because they physically reside in the same sector of the disk (the extended partition) but are treated as virtual and independent disks.  
 
@@ -122,7 +110,7 @@ In our example above:
 </dd>
 </dl>
 
-### Creating a partition table
+## Creating a partition table
 
 To demonstrate the process of partitioning a harddrive I am going to repartition an external SATA drive as if it were being primed for a fresh Linux install.
 
@@ -132,10 +120,7 @@ Let's take a look at the disk in its current form:
 $ fdisk -l
 
   Disk /dev/sda: 465.74 GiB, 500079525888 bytes, 976717824 sectors
-  Disk model: My Passport 071A
-  Units: sectors of 1 * 512 = 512 bytes
-  Sector size (logical/physical): 512 bytes / 512 bytes
-  I/O size (minimum/optimal): 512 bytes / 512 bytes
+  Disk model: My Passport 071Aumount /dev/sda2
   Disklabel type: gpt
   Disk identifier: 9993F1BB-626C-485F-8542-3CC73BB40953
 
@@ -246,19 +231,3 @@ sda           8:0    0 465.7G  0 disk
 ```
 
 > Whilst we have created our partitions we cannot yet mount them. This is because we have not yet set up a filesystem on the partitions. This is the next step. 
-
-
-## BIOS and UEFI 
-
-BIOS and UEFI are both firmware that is installed directly on the motherboard of the computer. They are firmware because they are software that is permanent and programmed into read-only memory.
-
-In the context of disks, their most crucial role is locating the operating system on the harddisk and loading it into memory so that the bootstrapping process can begin. However they are also responsible for the computer clock and the management of peripherals. 
-
-As we can see from the `fdisk` readout, the boot partition uses EFI, the storage partition associated with UEFI. 
-
-Whilst UEFI is installed on the hardware, most of its configuration is stored in the EFI partition on the disk, whereas with BIOS, everything is on the chip. This make booting faster with UEFI.
-
-Even though most modern computers use UEFI, it may still be referred to as BIOS for user-continuity. This is like on Windows. With Linux you have to explicitly create your boot process so the two are clearly distinguishable. 
-## File systems
-
-File systems are what the computer relies on to ascertain the location and positioning of files on the disk. In Linux it is customary to use FAT-32 for the boot partition and ext-4 for the extended partition. In other operating systems you would do the same but most likely use NFTS for the extended partition.

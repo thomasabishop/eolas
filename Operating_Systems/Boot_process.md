@@ -17,16 +17,36 @@ The boot loader loads the kernel into memory from the disk and then starts the k
 
 Like the kernel itself, the boot loader requires a driver in order to access the disk but it can't use the same one as the kernel since at this point, the kernel is not yet loaded into memory. So it has its own special driver: this is either the BIOS or the UEFI firmware. 
 
-> Here is something important
-
 A boot loader's core functionality includes the ability to do the following:
 * select from multiple kernels
 * switch between sets of kernel parameters
 * provide support for booting other operating systems
 
+### BIOS and UEFI 
+
+BIOS and UEFI are both firmware that is installed directly on the motherboard of the computer. They are firmware because they are software that is permanent and programmed into read-only memory.
+
+In the context of disks, their most crucial role is locating the operating system on the harddisk and loading it into memory so that the bootstrapping process can begin. However they are also responsible for the computer clock and the management of peripherals. 
+
+As we can see from the `fdisk` readout, the boot partition uses EFI, the storage partition associated with UEFI. 
+
+```bash
+Device            Start        End   Sectors   Size Type
+/dev/nvme0n1p1     2048    1001471    999424   488M EFI System
+/dev/nvme0n1p2  1001472   59594751  58593280  27.9G Linux filesystem
+/dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem
+```
+
+
+Whilst UEFI is installed on the hardware, most of its configuration is stored in the EFI partition on the disk, whereas with BIOS, everything is on the chip. This make booting faster with UEFI.
+
+Even though most modern computers use UEFI, it may still be referred to as BIOS for user-continuity. This is like on Windows. With Linux you have to explicitly create your boot process so the two are clearly distinguishable. 
+
 ### GRUB
 
 The de facto standard boot loader for Linux is GRUB: Grand Unified Boot Loader.  
+
+![](/img/grub.jpg)
 
 You see the GRUB default menu when you first start a Linux machine. It will offer you various options for loading your installed OS or other OSs. GRUB is a filesystem like the main disk. If you press `e` in this screen you can view and edit specific boot parameters. Pressing `c` gives you access to the GRUB command line interface. This allows you to interact with GRUB in the same way as you would with any other filesystem, allowing for advanced configuration. 
 
