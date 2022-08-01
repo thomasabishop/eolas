@@ -35,4 +35,4 @@ You will want the swap to be activated every time the OS boots so add the follow
 
 ## Create a swap file
 
-// TODO: Add info
+// TODO: Add info here 

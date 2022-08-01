@@ -6,9 +6,9 @@ tags:
   - node-modules
 ---
 
+# Modules
 
- > 
- > Modules are small files where we define our variables and functions. Values defined in modules are scoped to that specific module, constituting a unique name space. This avoids name clashes in large programs.
+> Modules are partitioned files where we define our variables and functions. Values defined in modules are scoped to that specific module, constituting a unique name space. This avoids name clashes in large programs.
 
 * Every file in a Node application is considered a module.
 
@@ -20,15 +20,13 @@ tags:
 
 Node keeps an internal record of the properties of a module. To see this we can log the property `module` to the console.
 
-````js
+```js
 // index.js
 console.log(module)
-
-````
-
+```
 This gives us:
 
-````json
+```plaintext
 Module {  
  id: '.',  
  path: '/home/thomas/repos/node-learning',  
@@ -44,8 +42,7 @@ Module {
    '/node_modules'  
  ]  
 }
-````
-
+```
 ## Exports
 
 * Whenever we export a property or method from a module we are directly targeting the `exports` property of the module object. 
@@ -131,61 +128,31 @@ Here the thing exported could be a composite function or an object that basicall
 
 *Export a composite single function*
 
-````js
+```js
 
 module.exports = () => { 
 	foo() {...} 
 	bar() {...} 
 }
-								
-````
+```
 
 *Export an object*
 
-````js
+```js
 
 module.exports = { 
 	foo : () => {...},
     bar: () => {...} 
 }
-
-
-````
+```
 
 **Both of these structures would be referred to in the same way when importing and using them**
 
 Or you could export an actual class as the default. This is practically the same as the two above other than that you would have to use `new` to initiate an instance of the class.
 
-````js
+```js
 export default class {
 	foo() {}
 	bar() {}
 } 
-````
-
-## Built-in modules
-
-Node has numerous built-in methods that provide helpful utility methods:
-
-* [File system module](File%20system%20module.md)
-* [Events module](Events%20module.md)
-
-## Structure of Node module methods
-
-Every method belonging to the in-built modules of Node has a callback structure: a callback function of which the first argument is an error-handler and the second is the (typically asynchronous) returned value. 
-
-For example 
-
-````js
-
-fs.readdir('./', function(err, files) {
-	if (err) {
-		console.error(err)
-	} else {
-		console.log(files)	
-	}
-})
-
-// ['files', 'that', 'were', 'returned']
-
-````
+```
