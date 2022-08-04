@@ -33,7 +33,7 @@ interface IProps {
     setPeople: React.Dispatch<React.SetStateAction<Props["people"]>>
 }
 
-const AddToList: React.FC<IProps> = () => {
+const AddToList = () => {
   const [people, setPeople] = useState<IState["people"]>({})
   const [formVals, setFormVals] = useState({});
 
@@ -62,7 +62,7 @@ return (
       <input type="text" name="age" value={input.age} onChange={handleChange} />
     </form>
     <button onClick={handleClick}>Add to list</button>
-);
+  );
 };
 ```
 
@@ -71,3 +71,24 @@ This follows standard practise for [controlled-components](/Programming_Language
 - We define the change event as being of the type `React.ChangeEvent` and state that it corresponds to a generic - `HTMLInputElement`. So we are saying that whenever this function is called we must be passing it an input element so that we can extract the event associated with its `target` property.
 
 - We are passing around variations on the `IState` interface in order to type the values that we are adding to the people array.
+
+## Further standard types for event handling
+
+### onClick
+
+```tsx
+handleClick(event: MouseEvent<HTMLButtonElement>) {
+  event.preventDefault();
+  alert(event.currentTarget.tagName);
+}
+```
+
+### onSubmit
+
+```tsx
+handleSubmit(e: React.SyntheticEvent) {
+  event.preventDefault();
+}
+```
+
+> Most event types and their associated generics will be revealed by VS Code Intellisense so you don't need to memorize them all
