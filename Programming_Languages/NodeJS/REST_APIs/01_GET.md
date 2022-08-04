@@ -66,4 +66,24 @@ app.get("/api/courses/:id", (req, res) => {
 
 We use the `:` symbol in the URI to indicate that we looking to parse for a specific value in the data. Now if we call `/api/courses/2`, we will get the second item in the array.
 
-Here is a more detailed example (with a more complex dummy dataset), this time with more than one parameter 
+## Queries
+
+Whereas parameters return specific data points, queries don't get data they aggregate or present the data that is returned in a certain way, such as for instance applying a search function. We indicate queries with a `?` in our URI.
+For example: `/api/posts/2018/1?sortBy=name`.
+To facilitate a request like  this we have to create a GET path that allows for it:
+
+````js
+app.get("/api/posts/:year/:month", (req, res) => {
+  res.send(req.query);
+})[]();
+````
+
+We would get the following back:
+
+````json
+{
+	"sortBy": "name"
+}
+````
+
+Again a JSON object with key-value pairs is returned.
