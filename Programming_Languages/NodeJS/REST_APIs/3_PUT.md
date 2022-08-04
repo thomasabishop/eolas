@@ -48,5 +48,5 @@ updateCourse({ name: "A new course" });
 Returns:
 
 ```js
-{ id: 1, name: { name: 'A new course' } }
+{ id: 1, name: 'A new course' }
 ```
