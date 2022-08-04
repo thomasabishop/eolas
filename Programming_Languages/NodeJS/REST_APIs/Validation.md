@@ -14,14 +14,14 @@ One of the most popular schema validators for NodeJS is [joi](https://www.npmjs.
 
 Let's say we have a POST request that expects a single field as the body that must be a string and greater than two characters long. First we define our schema:
 
-````js
+```js
   const schema = Joi.object({
     name: Joi.string().min(3).required(),
   });
 
   const { error } = schema.validate(req.body);
 
-````
+```
 
 The `schema` variable is an object whose keys should match those of the intended request body. Instead of actual values we provide Joi's in-built validators, concatenated as necessary. We then store the results of the validation in a variable. 
 

@@ -45,7 +45,6 @@ const addCourse = async (newCourse) => {
     console.error(err);
   }
 };
-
 addCourse("Biology and Life Sciences");
 ```
 
@@ -56,3 +55,33 @@ Which returns:
 ```
 
 The `id` is added by the server, not the client. Having created the new value we add it to our `courses` array. (In reality we would be creating a new entry in a database.) Then we follow the convention of returning the new value back to the client. 
+
+## Validation
+
+We should accept alterations to the database that are not first validated. We can use the [Joi validator](/Programming_Languages/NodeJS/REST_APIs/Validation.md) to vet the request:
+
+```js
+function validateCourse(course) {
+  const schema = Joi.object({
+    name: Joi.string().min(3).required(),
+  });
+
+  const { error } = schema.validate(course);
+  return error;
+}
+```
+We can then add the validation as part of our general error handling:
+
+```js
+app.post('/api/courses', (req, res) => {
+	const course = {
+		id: courses.length + 1,
+		name: req.body.name
+	}
+  const { error } = schema.validate(req.body);
+  if (error) return error.details.map((joiErr) => res.status(400).send(joiErr.message));
+  
+  courses.push(course);
+  res.send(course)
+})
+```
