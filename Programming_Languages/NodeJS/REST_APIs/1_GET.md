@@ -66,6 +66,17 @@ app.get("/api/courses/:id", (req, res) => {
 
 We use the `:` symbol in the URI to indicate that we looking to parse for a specific value in the data. Now if we call `/api/courses/2`, we will get the second item in the array.
 
+The block above is the most basic format but we would want to add some kind of error handling, for example:
+
+```js
+app.get("/api/courses/:id", (req, res) => {
+  const course = courses.find((c) => c.id === parseInt(req.params.id));
+  if (!course) res.status(404).send("A course with the given ID was not found");
+  res.send(course);
+});
+```
+
+
 ## Queries
 
 Whereas parameters return specific data points, queries don't get data they aggregate or present the data that is returned in a certain way, such as for instance applying a search function. We indicate queries with a `?` in our URI.
