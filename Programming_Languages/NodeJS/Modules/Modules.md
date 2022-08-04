@@ -146,7 +146,7 @@ module.exports = {
 }
 ```
 
-**Both of these structures would be referred to in the same way when importing and using them**
+**Both of these structures would be referred to in the same way when importing and using them.**
 
 Or you could export an actual class as the default. This is practically the same as the two above other than that you would have to use `new` to initiate an instance of the class.
 
@@ -156,3 +156,4 @@ export default class {
 	bar() {}
 } 
 ```
+Every method and property within the export will be public by default, whether it is an object, class or function. If you wanted to keep certain methods/properties private, the best approach is to define them as variables and functions within the module file but outside of the `export` block.

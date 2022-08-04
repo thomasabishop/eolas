@@ -25,7 +25,6 @@ The following Express methods correspond to the main [HTTP request types](../../
 ````js
 const express = require('express')
 const app = express()
-
 ````
 
 ## Our data
