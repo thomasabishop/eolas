@@ -5,13 +5,15 @@ tags:
   - sql
 ---
 
+# SQL syntax
+
 ## Demonstration database
 
-For the purposes of demonstration we will work from a made up database. This database stores information about computers, their manufacturers, properties and sale data:
+For the purposes of demonstration we will work from a made-up database. This database stores information about computers, their manufacturers, properties and sale data:
 
-* Overall database: **`computer_sales`**
-* Tables: `**manufacturer**` , `**model**` , `**sales**`
-* Example fields: `**manufacturer_id**` , `**model_id**` , `**name**`, `**year_founded**` , `**ram**` , `**sale_date**`
+* The overall database is `computer_sales`
+* It contains the following [tables](/Databases/Relational_database_architecture.md#table): `manufacturer` , `model` , `sales`
+* Example [fields](/Databases/Relational_database_architecture.md#field) that belong to these tables: `manufacturer_id` , `model_id` , `name`, `year_founded` , `ram` , `sale_date`
 
 Below are the `model` and `manufacturer` tables output from the SQLite terminal client.
 
