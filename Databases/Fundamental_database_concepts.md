@@ -26,7 +26,7 @@ To ensure the integrity of a database, each change or transaction must conform t
  > 
  > Databases will have mechanisms for **backup**, **distribution**, and **redundancy**, to ensure data is not lost.
 
-## Database management system
+## Database management system: DBMS
 
 A DBMS is software that can retrieve, add, and alter existing data in a database. MySQL, PostgreSQL, MongoDB, MariaDB are all examples of DBMSs. You can work with them via programming languages like PHP or through graphical clients such as PHPMyAdmin, MicrosoftSQL, Adminer etc. There is also SQLite which runs on the client not the server, so useful for learning and local development. SQLite is also useful when you need a database specific to a single device without networked communication, such as on mobile.
 

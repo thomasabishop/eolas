@@ -1,6 +1,7 @@
 ---
 tags:
   - Databases
+  - relational_databases
 ---
 
 # Relational database architecture
