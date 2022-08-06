@@ -26,6 +26,14 @@ SRAM (Static Random Access Memory) is also volatile memory but, in terms of the 
 ### Relative speeds
 The table below details the relative speeds of the different types of memory and those of other types of motherboard storage.
 
+| Storage type | Access speed (clock cycles) | Relative times slower |
+|--------------|-----------------------------|-----------------------|
+| CPU register | 2                           |                       |
+| L1 cache     | 4                           | 2x                    |
+| L2 cache     | 6-20                        | 3-10x                 |
+| DRAM memory  | 50                          | 25x                   |
+| Harddisk     | 2000                        | 1000x                 |
+
 
 ## References
 

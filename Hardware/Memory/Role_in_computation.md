@@ -15,6 +15,8 @@ The following steps outline the way in which memory interacts with the processor
 
 > This is a simplified account; it is not the case that only single requests are passed back and forth. This would be inefficient and time-wasting. The kernel sends to the CPU not just the first instruction in the requested file but also a number of instructions that immediately follow it. 
 
+![](/img/memory-flow.svg)
+
 Every part of the above process - the journey accross the bus, the lookup in the controller, the operations on the DRAM, the journey back accross the bus - takes muliple CPU clock cycles. 
 
 ## The role of the cache
