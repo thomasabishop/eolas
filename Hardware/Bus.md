@@ -1,7 +1,7 @@
 ---
 tags:
-  - Electronics
   - Hardware
+  - motherboard
 ---
 
 # Bus

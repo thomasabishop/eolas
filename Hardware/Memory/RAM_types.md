@@ -1,6 +1,8 @@
 ---
 tags:
-  - memory
+- Hardware
+- memory
+- motherboard
 ---
 
 # Memory
