@@ -22,7 +22,10 @@ When we think of memory we generally think of the _main_ memory: the 8GB or 16GB
 
 ### SRAM 
 
-SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_. It also uses multiple transistors  per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM.
+SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_. It also uses multiple transistors  per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM. SRAM is used as [cache memory](/Hardware/Memory/Role_in_computation.md#the-role-of-the-cache) on the [motherboard](/Hardware/Motherboard.md) of which there are two types: L1 (on the processor chip) and L2 (separate from the processor).
+### Relative speeds
+The table below details the relative speeds of the different types of memory and those of other types of motherboard storage.
+
 
 ## References
 

@@ -10,7 +10,7 @@ A bus is a communication system that transfers data between components inside a 
 ## Main buses 
 
 ### System bus
-The primary pathway between the CPU and [memory](Memory/Basics.md).
+The primary pathway between the CPU and [memory](Memory/Basics.md). It comprises the **data bus**  that transfers data from the memory to the CPU and the **address bus** which transmits requests from the CPU to memory.
 
 ### Internal bus
 Connects local devices for example the harddisk to the CPU.

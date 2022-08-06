@@ -7,6 +7,8 @@ tags:
 
 # CPU architecture
 
+// TO DO: explain about registers
+
 At the core of a computer sits the Central Processing Unit. This is what manages and executes all computation.
 
 The CPU comprises three core components:
@@ -15,8 +17,8 @@ The CPU comprises three core components:
 * the Arithmetic Logic Unit (ALU)
 * the Control Unit (CU)
 
- > 
  > This method of putting together a computer is known as the **Von Neumann Architecture**. It was devised by John von Neumann in about 1945, well before any of the components that would be needed to produce it had actually been invented.
+ 
 
 ## Registers
 

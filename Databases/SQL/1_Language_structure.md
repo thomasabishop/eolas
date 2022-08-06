@@ -11,7 +11,7 @@ Before we start using the syntax we need to understand the grammar:
 
 ![](/img/Pasted_image_20220314155028.png)
 
-Expressions differ from clauses and predicates in that they are not the mechanism for returning data (i.e. declaring a clause and a logical condition) they do something to the data, as part of the retrieval. This is a bit subtle: 
+Expressions differ from clauses and predicates in that they are not the mechanism for returning data (i.e. declaring a clause and a logical colllllndition) they do something to the data, as part of the retrieval. This is a bit subtle: 
 
 * `SELECT name FROM model WHERE cores = "4"`
   * This retrieves the models that have 4 cores 
