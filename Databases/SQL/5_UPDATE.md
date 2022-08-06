@@ -5,7 +5,7 @@ tags:
   - sql
 ---
 
-# SQL: The UPDATE clause
+# SQL: The UPDATE query
 
 With UPDATE we modify existing records.
 

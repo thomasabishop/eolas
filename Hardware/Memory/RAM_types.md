@@ -1,7 +1,6 @@
 ---
 tags:
   - memory
-  - bits
 ---
 
 # Memory
