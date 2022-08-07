@@ -32,4 +32,4 @@ There are two types of cache memory:
 
 The L1 cache is the fastest since the data has less distance to travel when moving to and from the CPU. This said, the L2 cache is still very fast when compared to the main memory, both because it is SRAM rather than DRAM and because it is closer to the processor than the main memory.
 
-Cache controllers use complex algorithms to determine what should go into the cache to facilitate the best performance, but generally they work on the principle that what has been previously used by the CPU will be requested again soon. 
+Cache controllers use complex algorithms to determine what should go into the cache to facilitate the best performance, but generally they work on the principle that what has been previously used by the CPU will be requested again soon. If the CPU has just asked for an instruction at memory location 555 it's very likely that it will next ask for the one at 556, and after that the one at 557 and so on. The cache's controller circuits therefore go ahead and fetch these from slow DRAM to fast SRAM>

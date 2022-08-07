@@ -38,7 +38,12 @@ Serial Transmission is the type of transmission in which a single communication 
 <img src="../img/parallel-transmission.jpg" width="800px"/>
 
 * Serial buses are cheaper to implement than parallel buses
-* Serial buses are slower than parallel buses
+* Serial buses operate at greater [latency](/Hardware/Bus.md#latency) than parallel buses
+## Latency 
+
+Latency means _delay_: the delay from the time the data is requested until the time it arrives. In the context of a microprocesser and buses a key locus of latency would be between the time a request takes to travel accross the system bus from the CPU to the memory.
+
+// TODO: Add explanation of bandwidth in the context of Hertz
 
 ## Standards
 The mode of transmission is used to distinguish the different bus standards.
