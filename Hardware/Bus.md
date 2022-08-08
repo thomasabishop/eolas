@@ -45,6 +45,7 @@ Latency means _delay_: the delay from the time the data is requested until the t
 
 // TODO: Add explanation of bandwidth in the context of Hertz
 
+
 ## Standards
 The mode of transmission is used to distinguish the different bus standards.
 
