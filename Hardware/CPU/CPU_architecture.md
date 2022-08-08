@@ -55,25 +55,6 @@ The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instr
 
 ## Fetch, decode, execute
 
-*Fetch, decode, execute* is the operating cycle of the CPU. We will run through how this works with reference to the CPU architecture. 
-
-### Fetch
-
-1. The Program Counter register needs to keep track and sequence the different instructions that the CPU will work on. The first place it will look for an instruction is at the DRAM address `0000`, equivalent to 0 in the Program Counter register: the starting point. This is address therefore copied to the Memory Address Register for future reference.
-2. This memory-storing event constitutes an instruction so it is copied to the Instruction Register.
-3. As the first instruction has been fetched, the system reaches the end of the first cycle. Thus the Program counter increments by 1 to log this.
-4. The next fetch cycle begins.
-
-### Decode
-
-1. Now that the instruction is fetched and stored in the RAM it needs to be decoded. It is therefore sent from the RAM to the Control Unit of the CPU. There are two parts to the instruction:
-    1. The operation code ("op code"): the command that the computer will carry out.
-    2. The operand: an address in RAM where the data will be read and written to as part of the execution
-2. The Control Unit converts the operation code and operand into an instruction that is fed to the next stage in the cycle: execution 
-
-### Execute 
-
-Now the command will be executed. The operand is copied to the Memory Address Register and then passed to the Memory Data Register and the command is carried out by the ALU.
 
 ## The system clock 
 

@@ -43,8 +43,10 @@ Serial Transmission is the type of transmission in which a single communication 
 
 Latency means _delay_: the delay from the time the data is requested until the time it arrives. In the context of a microprocesser and buses a key locus of latency would be between the time a request takes to travel accross the system bus from the CPU to the memory.
 
-// TODO: Add explanation of bandwidth in the context of Hertz
+### Bandwidth 
+In general, bandwidth is a measure of the capacity for a communications channel to transmit data. A bus is a channel between two components thus we can talk about the bandwidth of buses. The speed and efficiency of a bus is a function of its bandwidth,  although other factors such as its length and proximity to the source and receiver are also important. 
 
+Bandwidth can be calculated in terms of how many bits can be transferred per second. The wider the bus, the more bits that can be transferred. If we have a bus that can run at 66MHz and transfer 64 bits, 64 bits is 8Mb thus the bandwidth is 8 x 66 = 528Mb.
 
 ## Standards
 The mode of transmission is used to distinguish the different bus standards.
