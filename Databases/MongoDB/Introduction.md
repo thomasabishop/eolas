@@ -117,5 +117,6 @@ const course = new Course({
   tags: ["node", "backend"],
 });
 ```
+![](/img/mongohierarchy.svg)
 
 // TODO: diagram schema - model - object 
