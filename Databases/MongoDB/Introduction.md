@@ -18,3 +18,5 @@ Although Mongo is not a relational database it has a structure that we can under
 A document is a container comprising key-value pairs in the manner of an object. 
 
 ![](/img/mongo-db-structure.svg)
+
+The quick brown fox jumps 

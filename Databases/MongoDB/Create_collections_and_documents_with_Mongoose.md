@@ -3,23 +3,10 @@ tags:
 - Databases
 - mongo_db
 - node-js
+- mongoose
 ---
 
 # Create collections and documents with Mongoose
-
-## Connecting to our database with Mongoose
-Now that we have installed and configured MongoDB, we need to connect to it via Node.js. Mongoose is a simple API for interacting with a Mongo database via Node.
-
-With Mongoose installed we can connect to a database. We don't have any Mongo databases yet beyond the defaults but the following Mongoose connection logic will create and connect to a new database called `playground`:
-
-Providing the Mongo server is running (execture `mongod`), we will see the confirmation message in the console. 
-
-```js
-mongoose
-  .connect("mongodb://127.0.0.1/playground")
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error(err));
-```
 
 ## Collections and documents
 In order start adding collections and documents to our database, we use Mongoose's schema structure. This is specific to Mongoose and is not a structure that is a part of Mongo in general.
@@ -77,10 +64,10 @@ Having created a database, connected to it with Mongoose, and created a model we
 We have our database (`playground`) and collection (`courses`) established. We now need to add documents to our collection. We will move our previous code into a function since this will be an asynchronous process:
 
 ```js
-const nodeCourse = new Course({
+const pythonCourse = new Course({
   name: "Python Course",
   author: "Terry Ogleton",
-  tags: ["python"],
+  tags: ["python", "backend"],
   isPublished: true,
 });
 
