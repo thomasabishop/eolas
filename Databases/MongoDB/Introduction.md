@@ -12,7 +12,7 @@ Most of the notes on Mongo will introduce it within the context of Node.js backe
 
 ## Setting-up a MongoDB database
 
-First create a directory for the database and set permissions:
+First create a direc## Mongoose tory for the database and set permissions:
 ```bash
 $ mkdir /data/db
 $ sudo chown -R `id -un` /data/db
@@ -52,15 +52,14 @@ sudo systemctl start --now mongodb
 rm /tmp/mongodb-27017.sock
 ```
 
-## Databases, collections, documents
+## MongoDB data hierarchy: databases, collections, documents
 
 Although Mongo is not a relational database it has a structure that we can understand in relation to that paradigm. A **database** is obviously the overall structure. It comprises **collections** which are organised sets of data that are analagous to [tables](/Databases/Relational_database_architecture.md#table) in RDBs. Within each collection are a series of **documents** which we can think of as being equivalent to [rows](/Databases/Relational_database_architecture.md) in RDB table: units that comprise the collection.
 
 A document is a container comprising key-value pairs in the manner of an object. 
 
-## Mongoose 
 
-### Connecting to our database
+## Connecting to our database with Mongoose
 Now that we have installed and configured MongoDB, we need to connect from it via Node.js.Mongoose is a simple API for interacting with a Mongo database via Node.
 
 With this installed we can connect to a database. We don't have any Mongo databases yet beyond the defaults but the following Mongoose connection logic will create and connect to a new database called `playground`:
@@ -71,13 +70,13 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error(err));
 ```
-### Creating collections and documents 
+## Creating collections and documents 
 
 In order start adding collections and documents to our database, we use Mongoose's schema structure. (This is specific to the Mongoose wrapper and is not a structure that is a part of Mongo in general.)
 
 We use a schema to define the shape of documents in a MongoDB collection. To do this we instantiate an instance of the Mongoose `Schema` class and set our properties:
 
-#### Creating a schema
+### Creating a schema
 
 ```js
 const courseSchema = new mongoose.Schema({
@@ -101,7 +100,7 @@ The following data types are available:
 * `Buffer`
 * `ObjectID` (for UUIDs)
 
-#### Models
+### Models
 
 Once we have established our schema we can then create a **model** of it. A model is basically a class representation of the interface we define in the schema:
 
@@ -115,6 +114,44 @@ const course = new Course({
   name: "Node.js Course",
   author: "Ozzy Osbourne",
   tags: ["node", "backend"],
+  isPublished: true 
 });
 ```
 ![](/img/mongoose-hierarchy.svg)
+
+Having created a database, connected to it with Mongoose, and created a model we will see our collection reflected in Compass:
+
+![](img/../../../img/mongo-collection.png)
+
+### Adding a document
+We have our database (`lllplayground`) and collection (`courses`) established. We now need to add documents to our collection. We will move our previous code into a function since this will be an asynchronous process:
+
+```js
+const nodeCourse = new Course({
+  name: "Node.js Course",
+  author: "Ozzy Osbourne",
+  tags: ["node", "backend"],
+  isPublished: true,
+});
+
+async function addCourseDocToDb(courseDocument) {
+  const result = await courseDocument.save();
+  console.log(result);
+}
+
+addCourseDocToDb(nodeCourse);
+```
+
+When we run this we have the Mongo document outputted to the console:
+```
+{
+  name: 'Python Course',
+  author: 'Terry Ogleton',
+  tags: [ 'node', 'backend' ],
+  isPublished: true,
+  _id: new ObjectId("62f4ac989d2fec2f01596b9b"),
+  date: 2022-08-11T07:15:36.978Z,
+  __v: 0
+}
+
+```
