@@ -85,7 +85,7 @@ const courseSchema = new mongoose.Schema({
   author: String,
   tags: [String],
   data: {type: Date, default: Date.now}, // if unspecified, entry will default to current date
-  isPublished: boolean
+  isPublished: Boolean
 });
 
 ```
@@ -117,6 +117,4 @@ const course = new Course({
   tags: ["node", "backend"],
 });
 ```
-![](/img/mongohierarchy.svg)
-
-// TODO: diagram schema - model - object 
+![](/img/mongoose-hierarchy.svg)
