@@ -26,7 +26,7 @@ _Compass_ is a graphical interface for viewing and interacting with the data in 
 
 ![](/img/mongo-compass.png)
 
-## Arch Linux troublshooting
+## Arch Linux troubleshooting
 Most times any problems will be a result of a Mongo process that is already running. Resolve with:
 
 ```bash
