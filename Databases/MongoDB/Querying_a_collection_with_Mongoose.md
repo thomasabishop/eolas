@@ -117,8 +117,16 @@ The following comparison operators are available in MongoDB:
 | `in`     | In                        |
 | `nin`    | Not in                    |
 
-We can employ these comparators within a `.find` filter. For example let's imagine that our `courses` instances have a property of `price`. To filter prices $>= 10 \And \And <= 20$:
+We can employ these comparators within a `.find` filter. For example let's imagine that our `courses` instances have a property of `price`. 
+
+To filter course prices that are greater than or equal to 10 and less than or equal to 29: 
 
 ```js
 Course.find(({price: {$gte: 10, $lte: 20} }))
+```
+
+To filter course prices that are either 10, 15 or 20:
+
+```js
+Course.find(({price: {$in: [10, 15, 20] } }))
 ```
