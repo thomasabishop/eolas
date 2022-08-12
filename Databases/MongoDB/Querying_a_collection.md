@@ -102,8 +102,18 @@ This returns:
 
 > Note that the UUID is always returned, whether we specify it or not.
 
-## Comparison operators
+## Filtering with operators
+So far when filtering we have been doing so with reference to properties that exist on the document's model (`author`, `isPublished` etc) and we have applied tranformations on the data returned (sorting, limiting the number or matches etc.). However we can also apply **operators** within our queries. Operators allow us to perform computations on the data, for example: for a given numerical property on an object, return the objects for which this value is within a certain range.
 
+When we apply operators we use the `$` symbol before the operator and pass the operator function as an object.
+
+The schema:
+
+```
+Model.find( { property: { $operator: conditions } } )
+```
+
+### Comparison operators
 The following comparison operators are available in MongoDB:
 
 | Operator | Function                  |
