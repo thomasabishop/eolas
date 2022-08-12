@@ -20,6 +20,7 @@ We now have the following entries in our `courses` collection:
   date: 2022-08-11T11:04:50.750Z,
   __v: 0
 }
+
 {
   name: 'Javascript Course',
   author: 'Tosh Gnomay',
@@ -80,7 +81,6 @@ async function getCourses(){
   .select({name: 1, tags: 1})
   console.log(courses)
 }
-
 ```
 
 This returns: 
@@ -102,7 +102,7 @@ This returns:
 
 > Note that the UUID is always returned, whether we specify it or not.
 
-## Filtering with operators
+## Querying with operators
 So far when filtering we have been doing so with reference to properties that exist on the document's model (`author`, `isPublished` etc) and we have applied tranformations on the data returned (sorting, limiting the number or matches etc.). However we can also apply **operators** within our queries. Operators allow us to perform computations on the data, for example: for a given numerical property on an object, return the objects for which this value is within a certain range.
 
 When we apply operators we use the `$` symbol before the operator and pass the operator function as an object.
@@ -139,4 +139,73 @@ To filter course prices that are either 10, 15 or 20:
 
 ```js
 Course.find(({price: {$in: [10, 15, 20] } }))
+```
+
+### Logical operators
+
+When we apply logical operators, we do not apply the query within the main `find` method. We use a dedicated method that corresponds to the logical predicate. 
+
+For example to query by logical [OR](/Logic/Truth-functional_connectives.md#disjunction):
+
+```js
+async function getCourses(){
+  const courses = await Course
+  .find()
+  .or([ { author: "Tosh Gnomay"}, {isPublished: true} ]) 
+  console.log(courses)
+}
+```
+We write each disjunct as an object representing the conditions we are filtering for within an array that is passed to the `.or()` method.
+
+The same syntax applies for conjunction. 
+
+### Regular expressions
+
+When filtering by strings we can use Regex for greater power.
+
+Previously we filtered by the author name:
+
+```js
+.find({author: "Tosh Gnomay"})
+```
+To demonstrate regex we could filter by names beginning with `T`:
+
+```js
+.find({author: /^T*/})
+```
+
+```js
+async function getCourses(){
+  const courses = await Course
+  .find()
+  .or([ { author: "Tosh Gnomay"}, {isPublished: true} ]) 
+  .count()
+console.log(courses)
+}
+```
+
+This will return a number.
+
+### Pagination 
+
+We previously used the `limit()` method to control how many matches we return from a query. We can extend this functionality by creating pagination. This allows us to meter the return values into set chunks. This is used frequently when interacting with a database through a mediating RESTful API. For example to return values from endpoints such as:
+
+```
+/api/courses?pageNumber=2&pageSize=10
+```
+
+To do this you pass two values as query parameters 
+
+```js 
+
+const pageNumber = 2;
+const pageSize = 10;
+
+async function getCourses(){
+  const courses = await Course
+  .find()
+  .skip((pageNumber - 1 * pageSize))
+  .limit(pageSize)
+  console.log(courses)
+}
 ```
