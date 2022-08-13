@@ -49,3 +49,5 @@ sudo systemctl start --now mongodb
 # Remove the current socket
 rm /tmp/mongodb-27017.sock
 ```
+
+For additional command line utilities you will also need to install `mongodb-tools` from the AUR. 
