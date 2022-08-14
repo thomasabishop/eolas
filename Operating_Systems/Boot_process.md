@@ -1,7 +1,8 @@
 ---
-tags:
+categories: 
   - Linux
   - Operating_Systems
+tags:
   - disks
   - bootloader
 ---
