@@ -1,15 +1,15 @@
 ---
-tags:
-  - Programming_Languages
+categories:
   - Databases
-  - sql
+  - Programming_Languages
+tags: [SQL]
 ---
 
 # SQL: CREATE
 
 ## Create a table (`CREATE`)
 
-````sql
+```sql
 CREATE TABLE employee (
     employee_id text PRIMARY KEY,
     first_name text,
@@ -23,6 +23,6 @@ CREATE TABLE employee (
     phone_number text,
     days_per_week real
     );
-````
+```
 
 We specify the new table name first, then it's fields and their corresponding data types. We also set a primary key

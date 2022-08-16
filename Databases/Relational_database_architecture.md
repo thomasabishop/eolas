@@ -1,10 +1,11 @@
 ---
-tags:
+categories:
   - Databases
-  - relational_databases
+tags: [relational_databases]
 ---
 
 # Relational database architecture
+
 Tables, fields and records are the basic building blocks of databases
 
 ![](/img/FL-Databases-1.5_terminology.gif)

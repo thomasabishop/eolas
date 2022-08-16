@@ -1,9 +1,10 @@
 ---
-tags:
-  - Algorithms_Data_Structures
+tags: [data-structures]
 ---
 
-\_Visualization of the queue data structure _
+# Queues
+
+_Visualization of the queue data structure_
 
 ![queue.svg](../img/queue.svg)
 
@@ -23,22 +24,21 @@ As we are removing the first element added, we use an `array shift` method to re
 
 Removing an element from the queue is called **dequeuing**. Adding an element to the queue is called **enqueuing**. In terms of the tail/head nomenclature, the end of the queue where elements are enqueued is the **tail** and front of the queue, where elements are removed is the **head**.
 
-````js
+```js
 class Queue {
-  items = [] // array to store the elements comprising the queue
-  enqueue = (element) => this.items.push(element) // add element to back
-  dequeue = () => this.items.shift()  // remove element from the front
+  items = []; // array to store the elements comprising the queue
+  enqueue = (element) => this.items.push(element); // add element to back
+  dequeue = () => this.items.shift(); // remove element from the front
 
-	// Optional helper methods:
-  isEmpty = () => (this.items.length === 0) // return true if the queue is empty
-  clear = () => this.items.length = 0 // empty the queue
-  size = () => this.items.length // count elements in queue
-	peek = () => !this.isEmpty() ? this.items[0] : undefined; // check which element is next in line
+  // Optional helper methods:
+  isEmpty = () => this.items.length === 0; // return true if the queue is empty
+  clear = () => (this.items.length = 0); // empty the queue
+  size = () => this.items.length; // count elements in queue
+  peek = () => (!this.isEmpty() ? this.items[0] : undefined); // check which element is next in line
 }
-
-````
+```
 
 ## Use cases
 
-* A queue sequences data in the order that it was first received. Thus it is most beneficial in scenarios where receipt time is a factor. For example, imagine a service whereby tickets go on sale at a certain time for a limited period. You may want to prioritise those who sent their payment earliest over those who arrived later.
-* Serving requests on a single shared resource like a printer or CPU task scheduling.
+- A queue sequences data in the order that it was first received. Thus it is most beneficial in scenarios where receipt time is a factor. For example, imagine a service whereby tickets go on sale at a certain time for a limited period. You may want to prioritise those who sent their payment earliest over those who arrived later.
+- Serving requests on a single shared resource like a printer or CPU task scheduling.

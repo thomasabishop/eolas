@@ -1,6 +1,5 @@
 ---
-tags:
-  - Algorithms_Data_Structures
+tags: [data-structures]
 ---
 
 # Arrays

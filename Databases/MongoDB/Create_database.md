@@ -1,8 +1,7 @@
 ---
-tags:
-- Databases
-- mongo_db
-- node-js
+categories:
+  - Databases
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Creating a MongoDB database
@@ -15,10 +14,12 @@ $ sudo chown -R `id -un` /data/db
 ```
 
 Then start the Mongo daemon
+
 ```bash
 mongod
 ```
-This will run continuously in the terminal and should say somewhere that it is waiting for connections on port `27017`. This command must be executed before you run any backend that interacts with the Mongo database. 
+
+This will run continuously in the terminal and should say somewhere that it is waiting for connections on port `27017`. This command must be executed before you run any backend that interacts with the Mongo database.
 
 ## MongoDB Compass
 
@@ -27,6 +28,7 @@ _Compass_ is a graphical interface for viewing and interacting with the data in 
 ![](/img/mongo-compass.png)
 
 ## Arch Linux troubleshooting
+
 Most times any problems will be a result of a Mongo process that is already running. Resolve with:
 
 ```bash
@@ -35,6 +37,7 @@ Most times any problems will be a result of a Mongo process that is already runn
 sudo lsof -iTCP -sTCP:LISTEN -n -P
 sudo kill [pid]
 ```
+
 Otherwise try the below.
 
 ```bash
@@ -50,4 +53,4 @@ sudo systemctl start --now mongodb
 rm /tmp/mongodb-27017.sock
 ```
 
-For additional command line utilities you will also need to install `mongodb-tools` from the AUR. 
+For additional command line utilities you will also need to install `mongodb-tools` from the AUR.

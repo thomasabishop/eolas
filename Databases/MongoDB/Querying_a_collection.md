@@ -1,10 +1,7 @@
 ---
-catagories:
+categories:
   - Databases
-tags:
-  - mongo_db
-  - node-js
-  - mongoose
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Query a Mongo collection with Mongoose

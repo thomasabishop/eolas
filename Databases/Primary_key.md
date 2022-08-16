@@ -1,13 +1,12 @@
 ---
-tags:
-  - Programming_Languages
+categories:
   - Databases
-  - relational_databases
+tags: [relational_databases]
 ---
 
 # Primary key
 
- > Every table in a relational database should have a **primary key**. A primary key is one **field that uniquely identifies each record**.
+> Every table in a relational database should have a **primary key**. A primary key is one **field that uniquely identifies each record**.
 
 This is essential for carrying out operations across database tables and for creating and deleting database entires. It is also a safeguard: it means you can always identify a record by itself and don't have to rely on generic queries to identify it.
 

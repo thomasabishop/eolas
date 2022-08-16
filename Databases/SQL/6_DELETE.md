@@ -1,12 +1,12 @@
 ---
-tags:
-  - Programming_Languages
+categories:
   - Databases
-  - sql
+  - Programming_Languages
+tags: [SQL]
 ---
 
 # SQL: The DELETE query
 
-````sql
+```sql
 DELETE FROM sales WHERE sale_id = 1;
-````
+```

@@ -1,22 +1,22 @@
 ---
-tags:
+categories:
   - Databases
   - Networks
-  - http
+tags: [http]
 ---
 
 ## GET
 
-* Get data
+- Get data
 
 ## POST
 
-* Create data
+- Create data
 
 ## PUT
 
-* Update data
+- Update data
 
 ## DELETE
 
-* Remove data
+- Remove data

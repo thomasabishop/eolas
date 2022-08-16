@@ -1,10 +1,7 @@
 ---
-catagories:
+categories:
   - Databases
-tags:
-  - mongo_db
-  - node-js
-  - mongoose
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Modelling relationships between data

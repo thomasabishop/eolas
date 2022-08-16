@@ -1,12 +1,11 @@
 ---
-tags:
-  - Algorithms_Data_Structures
+tags: [data-structures]
 ---
 
-*A stack visualised vertically*
+_A stack visualised vertically_
 ![stack2.svg](../img/stack2.svg)
 
-*A stack visualised horizontally*
+_A stack visualised horizontally_
 ![stack1.svg](../img/stack1.svg)
 
 ## A stack is a linear data structure that observes LIFO
@@ -25,39 +24,39 @@ A stack is an example of a data structure that can be built by adapting an array
 
 Below we create a stack constructor, using a class. An object created from this template will have the following properties and methods:
 
-* `items[]` → an array to store the data
-* `push()` → a method to add an element to the end of the stack
-* `pop()` → a method to remove an element from the front
+- `items[]` → an array to store the data
+- `push()` → a method to add an element to the end of the stack
+- `pop()` → a method to remove an element from the front
 
 In addition we have the following helpers, which allow us to check the status of the stack and retrieve information about it:
 
-* `isEmpty()` → check if the stack is populated or not
-* `clear()` → empty the stack of its content (therefore making `isEmpty()` return `true`)
-* `size` → a property corresponding to the stack's length
+- `isEmpty()` → check if the stack is populated or not
+- `clear()` → empty the stack of its content (therefore making `isEmpty()` return `true`)
+- `size` → a property corresponding to the stack's length
 
-````js
+```js
 class Stack {
-  items = [] // the array that will store the elements that comprise the stack
-  push = (element) => this.items.push(element) // add an element to the end of the stack
-  pop = () => this.items.pop() // remove and return the last element from the stack
+  items = []; // the array that will store the elements that comprise the stack
+  push = (element) => this.items.push(element); // add an element to the end of the stack
+  pop = () => this.items.pop(); // remove and return the last element from the stack
 
   // We can add some useful helper methods, that return info about the state of the stack:
-  isEmpty = () => (this.items.length === 0) // return true if the stack is empty
-  clear = () => this.items.length = 0 // empty the stack
-  size = () => this.items.length // count elements in stack
+  isEmpty = () => this.items.length === 0; // return true if the stack is empty
+  clear = () => (this.items.length = 0); // empty the stack
+  size = () => this.items.length; // count elements in stack
 }
-````
+```
 
 ## Run through
 
-````js
+```js
 let stack = new Stack();
 test.push(1); // Add some elements to the stack
 test.push(2);
 test.push(3);
 
 // Stack now looks like:
-console.log(stack.items);  // [1, 2, 3]
+console.log(stack.items); // [1, 2, 3]
 
 // Let's try removing the last element
 stack.pop(); // 3 -> this was the last element we added, so it's the first one that comes out
@@ -66,14 +65,14 @@ stack.pop(); // 3 -> this was the last element we added, so it's the first one t
 // [1,2]
 
 // Let's add a new element
-test.push(true)
+test.push(true);
 
 // Now the stack looks like:
 // [1,2, true]
-````
+```
 
 ## Practical applications
 
-* Any application that wants to got 'back in time' must utilise a stack. For example, the 'undo' function in most software is a function of a stack. The most recent action is at the top, and under that is the second most recent and so on all the way back to the first action.
-* Recursive functions: a function that calls itself repeatedly until a boundary condition is met is using a stack structure. As you drill down through the function calls you start from the most recent down to the last.
-* Balancing parentheses. Say you want to check if the following string is balanced `[()]` . Every time you find an opening parentheses. You push that to the front of a stack. You then compare the closing parentheses with the order of the stack. The same could be done when seeking to find palindromes. This sort of thing could be a code challenge so build an example.
+- Any application that wants to got 'back in time' must utilise a stack. For example, the 'undo' function in most software is a function of a stack. The most recent action is at the top, and under that is the second most recent and so on all the way back to the first action.
+- Recursive functions: a function that calls itself repeatedly until a boundary condition is met is using a stack structure. As you drill down through the function calls you start from the most recent down to the last.
+- Balancing parentheses. Say you want to check if the following string is balanced `[()]` . Every time you find an opening parentheses. You push that to the front of a stack. You then compare the closing parentheses with the order of the stack. The same could be done when seeking to find palindromes. This sort of thing could be a code challenge so build an example.

@@ -1,8 +1,8 @@
 ---
-tags:
-  - Programming_Languages
+categories:
   - Databases
-  - sql
+  - Programming_Languages
+tags: [SQL]
 ---
 
 # SQL: Demonstration database
@@ -11,15 +11,15 @@ For the purposes of demonstration we will work from a made-up database. The exam
 
 This database stores information about computers, their manufacturers, properties and sale data:
 
-* The overall database is `computer_sales`
-* It contains the following [tables](/Databases/Relational_database_architecture.md#table): `manufacturer`, `model`, `sales`
-* Example [fields](/Databases/Relational_database_architecture.md#field) that belong to these tables: `manufacturer_id` , `model_id` , `name`, `year_founded` , `ram` , `sale_date`
+- The overall database is `computer_sales`
+- It contains the following [tables](/Databases/Relational_database_architecture.md#table): `manufacturer`, `model`, `sales`
+- Example [fields](/Databases/Relational_database_architecture.md#field) that belong to these tables: `manufacturer_id` , `model_id` , `name`, `year_founded` , `ram` , `sale_date`
 
 Below are the `model` and `manufacturer` tables output from the SQLite terminal client.
 
 The model table:
 
-````
+```
 model_id    manufacturer_id  name                    cpu_speed   ram         cores       wifi        release_date
 ----------  ---------------  ----------------------  ----------  ----------  ----------  ----------  ------------
 1           1                Raspberry Pi 1 Model A  0.7         256.0       1           0           2013-02-01
@@ -43,14 +43,14 @@ model_id    manufacturer_id  name                    cpu_speed   ram         cor
 19          3                Commodore VIC-20        0.00102     0.005       1           0           1980-01-01
 20          3                Commodore 64            0.001023    0.064       1           0           1982-08-01
 21          3                Amiga 500               0.00716     0.5         1           0           1987-04-01
-````
+```
 
-The manufacturer table: 
+The manufacturer table:
 
-````
+```
 manufacturer_id  name          url                      year_founded  trading
 ---------------  ------------  -----------------------  ------------  ----------
 1                Raspberry Pi  <https://raspberrypi.org>  2008          1
 2                Apple         <https://apple.com>        1976          1
 3                Commodore     <https://www.commodore.c>  1954          0
-````
+```

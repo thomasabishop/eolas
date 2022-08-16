@@ -1,9 +1,7 @@
 ---
-tags:
+categories:
   - Databases
-  - mongo_db
-  - node-js
-  - mongoose
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Create collections and documents with Mongoose

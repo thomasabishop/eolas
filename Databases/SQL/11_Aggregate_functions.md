@@ -1,37 +1,37 @@
 ---
-tags:
-  - Programming_Languages
+categories:
   - Databases
-  - sql
+  - Programming_Languages
+tags: [SQL]
 ---
 
 # SQL Aggregate functions
 
-## Count return with custom variable 
+## Count return with custom variable
 
-````sql
+```sql
 SELECT COUNT(*) AS total_sales
 FROM SALES
-````
+```
 
 ## Sum
 
-````sql
+```sql
 SELECT SUM(price) as total_value
 FROM sales
-````
+```
 
-## Average 
+## Average
 
-````sql
+```sql
 SELECT AVG(price) as average_income
 FROM sales
-````
+```
 
 ## Applying aggregate function with sorting applied
 
-````sql
+```sql
 SELECT COUNT(*) AS total_sales
 FROM sales
 GROUP BY employee_id
-````
+```

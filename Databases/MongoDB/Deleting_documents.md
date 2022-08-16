@@ -1,18 +1,15 @@
 ---
-tags:
-- Databases
-- mongo_db
-- node-js
-- mongoose
+categories:
+  - Databases
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # MongoDB: deleting a document from a collection
 
 ```js
-
 async function deleteCourse(id) {
-  const result = await Course.deleteOne({id: id})  
-  console.log(result)
+  const result = await Course.deleteOne({id: id});
+  console.log(result);
 }
 ```
 

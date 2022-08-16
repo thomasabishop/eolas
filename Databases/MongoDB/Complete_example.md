@@ -1,9 +1,7 @@
 ---
-tags:
-- Databases
-- mongo_db
-- node-js
-- mongoose
+categories:
+  - Databases
+tags: [Databases, mongo_db, node_js, mongoose]
 ---
 
 # MongoDB connection, set-up and data query: complete example
@@ -25,7 +23,7 @@ const courseSchema = new mongoose.Schema({
 const Course = mongoose.model("Course", courseSchema);
 
 async function getCourses(){
-    return await Course 
+    return await Course
         .find({isPublished: true, tags: "backend"})
         .sort({name: 1})
         .select({name: 1, author: 1});
