@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [Databases, mongo_db, node_js, mongoose]
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Connect to a database with Mongoose
