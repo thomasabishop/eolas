@@ -37,4 +37,4 @@ tags: [physics]
 ### Atomic weight
 * The atomic weight of an atom is its mass.
 * The mass is determined by the number of protons and neutrons in the nucleus.
-* An electron $\frac{1}{1845}$ the mass of a proton. It's mass is so neglible that it is not considered attributable to the atomic weight. 
+* An electron $\frac{1}{1845}$ the mass of a proton. Its mass is so neglible that it makes no marginal difference to the atomic weight and is not included. 
