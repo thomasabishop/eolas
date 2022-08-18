@@ -22,8 +22,19 @@ tags: [physics]
 
 ## Atomic particles
 
-* There are three particles comprising atoms: protons, neutrons and electrons.
+<img src="/home/thomas/repos/computer_science/img/atom-diagram.svg" width="400" align="right" />
 
-* Protons and neutrons comprise the nucleous of the atom. A proton is positively charged. A neutron has no charge.
+* There are three particles comprising atoms: **protons**, **neutrons** and **electrons**.
 
-* Electrons orbit around the nucleous in concentric rings. Electrons are negatively charged. Because of this protons and electrons attract each other.
+* Protons and neutrons comprise the nucleus of the atom. A proton is positively charged. A neutron has no charge.
+
+* Electrons orbit around the nucleus in concentric rings. Electrons are negatively charged. Because of this protons and electrons attract each other.
+
+### Atomic number
+* The number of protons in the nucleus is called the element's **atomic** number.
+* We use the atomic number of elements to distinguish one element from another. 
+
+### Atomic weight
+* The atomic weight of an atom is its mass.
+* The mass is determined by the number of protons and neutrons in the nucleus.
+* An electron $\frac{1}{1845}$ the mass of a proton. It's mass is so neglible that it is not considered attributable to the atomic weight. 
