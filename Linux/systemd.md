@@ -9,7 +9,7 @@ tags: [user_space, systems_programming]
 
 Once the [boot process](/Operating_Systems/Boot_process.md) has completed and  the bootloader has located the kernel and injected it into memory the first user space program runs: `init` (for _initialisation_). `init` is a [daemon](/Operating_Systems/Daemons.md) process that continues running until shutdown and is responsible for starting all the processes that are prerequisites for user space. For example: network connections, disk access, user logins etc.
 
-`init` is the parent of all processes. Whilst it does a lot of its work in quick succession at boot time it is not limited to the this stage of the lifescycle but runs continuously in reponse to new user events. 
+`init` is the parent of all processes: PID1. Whilst it does a lot of its work in quick succession at boot time it is not limited to the this stage of the lifescycle but runs continuously in reponse to new user events. 
  
  On Linux systems `systemd` is used to implement `init`.
 
@@ -23,20 +23,23 @@ Once the [boot process](/Operating_Systems/Boot_process.md) has completed and  t
 
 `systemd` works on the basis of _goals_. Each goal is system task defined as a **unit**. A unit contains instructions and a specification of dependencies to other units. 
 
-When activating a unit, `systemd` first activates the dependencies and then moves onto the details of the unit itself. `init` as implemented by `systemd` does not follow a rigid sequence every time, initialising units in the same sequence and waiting for one to complete before starting another. Instead it activates units whenever they are ready.
+When activating a unit, `systemd` first activates the dependencies and then moves onto the details of the unit itself. `init` as implemented by `systemd` does not follow a rigid sequence every time, initialising units in the same sequence and waiting for one to complete before starting another. Instead it activates units whenever they are ready. This, its parallelized nature, is one of the main advantages over previous programs that managed the `init` sequence on Linux (such as for example System V);
 
 ### Unit types 
 
 Units are organised into **unit types**. The main types that run at boot time are as follows:
 
-- service units
+- service units (`.service`)
   -  control service daemons
+- socket units (`.socket`)
+  - handle incoming network connection request locations
+- device units (`.device)
+  - disks and other devices
+- mount units (`.mount`)
+  - handle the attachment of filesystems to the system
 - target units
   - control other units by organising them into groups
-- socket units
-  - handle incoming network connection request locations
-- mount units
-  - handle the attachment of filesystems to the system
+
 
 For example, at boot, a target unit called `default.target` groups together a number of service and mount units as dependencies. These then run in a graph-like dependency structure where a unit that comes late in the boot process can depend on several previous units making earlier branches of a dependency tree join back together. 
 
@@ -54,7 +57,7 @@ _`systemd` global unit files_
 
 Local definitions that relate to the specific user and where the user herself can define units are located in the _system configuration_ directory: `/etc/systemd/system`.
 
-![](../../img/systemd-local-files.png)
+![](/img/systemd-local-files.png)
 
 _`systemd` local unit files, specific to the currently logged-in user_
 
@@ -96,6 +99,10 @@ Also=uuidd.socket
 
 The `systemctl` command is the chief way of interacting with `systemd`. You use it to activate and deactivate services, list their status, reload the configuration and so. 
 
+### View the dependency graph
+`systemctl status` by itself will print a long list of units grouped by their dependency relations. It will also provide some metadata about the current systemd boot context.
+
+
 ### Viewing active units 
 
 Below I have listed the running units pertaining to bluetooth:
@@ -126,6 +133,7 @@ mongodb.service - MongoDB Database Server
              └─931 /usr/bin/mongod --config /etc/mongodb.conf
 Aug 17 07:25:27 archbish systemd[1]: Started MongoDB Database Server.****
 ```
+In addition to the core info it tells us the unit type. In this case it is a service. 
 
 We can also view the journal entry for the given unit. This provides you with its diagnostic log messages:
 
@@ -157,8 +165,9 @@ This will most likely return `No jobs running` if the computer has been running 
 
 If a unit has dependencies it is necessary to _enable_ it before starting it. This installs the dependencies. 
 
-```
+```bash
 systemctl enable mongodb.service
+Created symlink /etc/systemd/system/multi-user.target.wants/mongodb.service → /usr/lib/systemd/system/mongodb.service.
 ```
 
 Then we can start: 
@@ -170,4 +179,11 @@ To stop the service:
 
 ```
 systemctl stop mongodb.service
+```
+
+After this we should disable it, in order to remove any symbolic links it has created on the system as part of the install process:
+
+```bash
+systemctl disable mongodb.service
+Removed "/etc/systemd/system/multi-user.target.wants/mongodb.service".
 ```
