@@ -1,7 +1,7 @@
 ---
 categories:
   - Electronics
-tags: [physics]
+tags: [physics, electricity]
 ---
 
 # Electrons
@@ -32,3 +32,11 @@ We call materials that contain a large number of free electrons **conductors**. 
 Semiconductive materials are midway between conductors and insulators: they are neither good conductors or insulators but can be altered to function in the manner of either. 
 
 ## Ionization
+
+Ionization is the process of atoms gaining and losing electrons. 
+
+When an atom has an equal number of protons and electrons it is said to be **electrically balanced**.
+
+A balanced atom that receives one or more extra electrons gives way to an overall negative charge. An atom in this state is a **negative ion**. Conversely if a balanced atom loses one or more electrons it becomes positively charged and is thus called a **positive ion**. 
+
+> The process of ionization is constitutive of the flow of current.
