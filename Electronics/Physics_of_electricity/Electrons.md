@@ -22,7 +22,7 @@ The outer shell called the **valence shell** and the number of electrons it cont
 
 ## Conductivity and insularity 
 
-The conductivity of a material is an expression of its capacity to channel electrical charge. Where electrical charge is the flow of free electrons from one atom to another. The insularity of a material is the opposite: its capacity to resist the flow of electrical charge. 
+The **conductivity** of a material is an expression of its capacity to channel electrical charge. Where electrical charge is the _flow of free electrons from one atom to another_. The **insularity** of a material is the opposite: its _capacity to resist the flow of electrical charge_. 
 
 Electrons in the valence shell can gain energy from external forces. If these electrons gain  enough energy, they can leave the atom and become **free electrons**, moving randomly from atom to atom.
 
@@ -39,4 +39,4 @@ When an atom has an equal number of protons and electrons it is said to be **ele
 
 A balanced atom that receives one or more extra electrons gives way to an overall negative charge. An atom in this state is a **negative ion**. Conversely if a balanced atom loses one or more electrons it becomes positively charged and is thus called a **positive ion**. 
 
-> The process of ionization is constitutive of the flow of current.
+> The process of ionization is a constitutive part of the flow of current but not the only part. We also must factor the force that triggers ionization and the resistance that impedes it. 
