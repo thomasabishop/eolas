@@ -2,7 +2,6 @@
 tags:
   - Programming_Languages
   - shell
-  - abracadabra
 ---
 # Cron
 
