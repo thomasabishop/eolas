@@ -1,7 +1,8 @@
 ---
-tags:
-  - electronics
-  - binary
+categories:
+  - Computer_Architecture
+  - Electronics
+tags: [binary]
 ---
 
 # Binary arithmetic with circuits

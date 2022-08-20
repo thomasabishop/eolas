@@ -1,8 +1,7 @@
 ---
-tags:
-  - Hardware
-  - cpu
-  - von_neumann
+categories:
+  - Computer_Architecture
+tags: [CPU]
 ---
 
 # CPU architecture

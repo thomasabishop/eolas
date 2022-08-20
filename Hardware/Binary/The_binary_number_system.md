@@ -1,8 +1,10 @@
 ---
-tags:
+categories:
   - Mathematics
-  - binary
+  - Computer_Architecture
+tags: [binary]
 ---
+
 # The binary number system
 
 ## Decimal (denary) number system

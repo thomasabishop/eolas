@@ -1,9 +1,7 @@
 ---
-title: Conditional introduction
-tags:
-  - Logic
-  - propositional-logic
-  - derivation-rules
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 If we can show that $Q$ follows from $P$ (typically via a subproof) than we can assert that P implies Q. This is also sometimes known as _Conditional Proof_

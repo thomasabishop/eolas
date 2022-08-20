@@ -1,8 +1,9 @@
 ---
-tags:
-  - Hardware
-  - cpu
+categories:
+  - Computer_Architecture
+tags: [CPU]
 ---
+
 
 # Fetch, decode, execute, store
 

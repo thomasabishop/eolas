@@ -1,8 +1,8 @@
 ---
-tags:
-- Hardware
-- memory
-- motherboard
+categories:
+  - Computer_Architecture
+  - Hardware
+tags: [memory, motherboard]
 ---
 
 # Memory

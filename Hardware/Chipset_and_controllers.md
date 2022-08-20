@@ -1,9 +1,10 @@
 ---
-tags:
-- Hardware
-- memory
-- motherboard
+categories:
+  - Computer_Architecture
+  - Hardware
+tags: [motherboard, chipset]
 ---
+
 
 # Chipset and controllers
 

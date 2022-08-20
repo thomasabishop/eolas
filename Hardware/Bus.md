@@ -1,9 +1,11 @@
 ---
-tags:
+categories:
+  - Computer_Architecture
   - Hardware
-  - motherboard
+tags: [motherboard]
 ---
 
+#
 # Bus
 A bus is a communication system that transfers data between components inside a computer, or between computers.  
 

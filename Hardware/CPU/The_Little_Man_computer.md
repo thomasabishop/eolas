@@ -1,3 +1,9 @@
+---
+categories:
+  - Computer_Architecture
+tags: [CPU, processors]
+
+---
 ## The Little Man Computer
 
 // TODO: Improve notes and learn how to use

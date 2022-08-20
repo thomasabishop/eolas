@@ -1,7 +1,9 @@
 ---
-tags:
-  - Linux
+categories:
+  - Linux 
+tags: []
 ---
+
 
 # Pacman
 

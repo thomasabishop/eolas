@@ -1,8 +1,8 @@
 ---
-tags:
-  - Linux
+categories:
+  - Linux 
+tags: [user_management]
 ---
-
 # User management
 
 ## Switch user

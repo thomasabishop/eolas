@@ -1,7 +1,7 @@
 ---
-tags:
-  - Hardware
-  - cpu
+categories:
+  - Computer_Architecture
+tags: [CPU]
 ---
 
 # CPU: Introduction 

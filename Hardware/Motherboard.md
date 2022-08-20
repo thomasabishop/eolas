@@ -1,9 +1,9 @@
 ---
-tags:
-  - Electronics
+categories:
+  - Computer_Architecture
   - Hardware
+tags: [motherboard]
 ---
-
 # Motherboard
 
 <img src="../img/motherboard-pi.jpg" width="400px"/>

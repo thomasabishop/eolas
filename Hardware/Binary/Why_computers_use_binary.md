@@ -1,7 +1,8 @@
 ---
-tags:
-  - Theory_of_Computation
-  - binary
+categories:
+  - Mathematics
+  - Computer_Architecture
+tags: [binary]
 ---
 
 # Why computers use binary 

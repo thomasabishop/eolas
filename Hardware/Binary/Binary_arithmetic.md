@@ -1,9 +1,9 @@
 ---
-tags:
+categories:
   - Mathematics
-  - binary
+  - Computer_Architecture
+tags: [binary]
 ---
-
 # Binary arithmetic
 
 ## Binary addition

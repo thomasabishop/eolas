@@ -1,7 +1,7 @@
 ---
-tags:
-- Hardware
-- memory
+categories:
+  - Computer_Architecture
+tags: [memory]
 ---
 
 # The role of memory in computation

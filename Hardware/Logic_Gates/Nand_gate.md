@@ -1,9 +1,9 @@
 ---
-tags:
-  - Logic
+categories:
+  - Computer_Architecture
   - Electronics
   - Hardware
-  - logic_gates
+tags: [logic_gates, binary]
 ---
 
 # NAND gate

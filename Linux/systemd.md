@@ -1,9 +1,9 @@
 ---
-categories: 
-  - Linux
-  - Operating_Systems
-tags: [user_space, systems_programming]
+categories:
+  - Linux 
+tags: [systems_programming, systemd]
 ---
+
 
 # `systemd`
 

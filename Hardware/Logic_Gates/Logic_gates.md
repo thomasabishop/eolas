@@ -1,9 +1,9 @@
 ---
-tags:
-- Logic
-- Electronics
-- Hardware
-- logic-gates
+categories:
+  - Computer_Architecture
+  - Electronics
+  - Hardware
+tags: [logic_gates, binary]
 ---
 
 # Logic gates

@@ -1,7 +1,7 @@
 ---
-tags:
-  - Linux
-  - networking
+categories:
+  - Linux 
+tags: []
 ---
 
 # Bluetooth 
