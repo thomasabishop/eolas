@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux 
-tags: [user_management]
+tags: [user-management]
 ---
 # User management
 

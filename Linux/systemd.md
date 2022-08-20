@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux 
-tags: [systems_programming, systemd]
+tags: [systems-programming, systemd]
 ---
 
 

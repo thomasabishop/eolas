@@ -3,7 +3,7 @@ categories:
   - Computer_Architecture
   - Electronics
   - Hardware
-tags: [logic_gates, binary]
+tags: [logic-gates, binary]
 ---
 
 # XOR gate
