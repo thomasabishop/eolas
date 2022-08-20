@@ -1,9 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 
  > 
  > Two sentences, P and Q, are truth-functionally equivalent if and only if there is no truth assignment in which P is true and Q is false

@@ -1,7 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 Sentences or propositions (we will use 'sentences' for consistency) are expressions **that have truth values**, either true or false.

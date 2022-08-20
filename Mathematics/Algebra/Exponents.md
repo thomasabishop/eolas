@@ -1,10 +1,8 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
-  - exponents
+categories:
+  - Mathematics 
+tags: [algebra, exponents]
 ---
-
 ## Equivalent equations
 
  > 

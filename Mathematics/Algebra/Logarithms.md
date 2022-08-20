@@ -1,10 +1,8 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
-  - logarithms
+categories:
+  - Mathematics 
+tags: [algebra]
 ---
-
 Most simply a logarithm is a way of answering the question:
 
  > 

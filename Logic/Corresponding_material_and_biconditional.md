@@ -1,9 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Corresponding material conditional to show validity
 
 To demonstrate *truth-functional validity* we have to construct a truth-table which contains each of the premises and the conclusion and then review each row to see if there is an assignment where both the premises and the conclusion are true.

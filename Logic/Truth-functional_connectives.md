@@ -1,10 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - truth-tables
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Truth-functional connectives
 
 Sentences generated from other (simple) sentences by means of sentential connectives are [compound sentences](Atomic%20and%20molecular%20sentences.md).

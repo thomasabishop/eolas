@@ -1,7 +1,7 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
+categories:
+  - Mathematics 
+tags: [algebra]
 ---
 
 * **Variable**

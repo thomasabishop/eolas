@@ -1,8 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - derivation-rules
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 ![negate-elim 1.png](../img/negate-elim%201.png) 

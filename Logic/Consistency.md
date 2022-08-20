@@ -1,10 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - consistency
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Informal definition
 
 A set of sentences is consistent if and only if **it is possible for all the members of the set to be true at the same time**. A set of sentences is inconsistent if and only if it is not consistent.

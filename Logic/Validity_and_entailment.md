@@ -1,11 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - validity
-  - entailment
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Validity
 
 ### Informal definition

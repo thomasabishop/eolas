@@ -1,11 +1,8 @@
 ---
-tags:
-  - Logic
-  - Philosophy
-  - propositional-logic
-  - modality
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Logical possibility
 
 In distinguishing the properties of [logical consistency](Consistency.md) and [validity](Validity%20and%20entailment.md#validity) we make tacit use of the notion of **possibility**. This is because when we consider the validity of an argument we are assessing truth-conditions and this consists in asking ourselves what could or could not be the case: were it such that *P*, then it would be the case that *Q*. It is important to understand what possibility means in the context of logic and how it differs from what we might mean ordinarily when we use the term.

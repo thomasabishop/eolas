@@ -1,7 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 We say of certain sentences that they are logically true or logically false.

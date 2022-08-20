@@ -1,8 +1,7 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
-  - exponents
+categories:
+  - Mathematics 
+tags: [algebra, exponents]
 ---
 
 When calculating the exponents of a negative number the answer will always will be positive:

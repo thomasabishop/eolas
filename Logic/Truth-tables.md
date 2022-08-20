@@ -1,9 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - recursion
-  - truth-tables
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 # Truth-tables

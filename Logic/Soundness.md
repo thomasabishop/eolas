@@ -1,7 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 ### Soundness

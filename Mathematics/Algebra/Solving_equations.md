@@ -1,10 +1,8 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
-  - operators
+categories:
+  - Mathematics 
+tags: [algebra]
 ---
-
 ## Use inversion of operators
 
 When solving equations we frequently make use of the [ operator inversion rules](../Prealgebra/Inversion%20of%20operators.md) to find the solutions.

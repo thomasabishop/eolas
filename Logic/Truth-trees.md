@@ -1,9 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Rationale
 
 Like [truth-tables](Truth-tables.md), truth-trees are a means of graphically representing the logical relationships that may obtain between propositions. Truth-trees and truth-tables complement each other and which method you choose depends on which logical property you are seeking to derive.

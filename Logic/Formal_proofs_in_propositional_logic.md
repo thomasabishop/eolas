@@ -1,8 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - proofs
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 When we construct a formal proof in logic we are seeking to show that a certain proposition is **derivable** from other propositions. We use the words *derivation* and *proof* interchangeably.

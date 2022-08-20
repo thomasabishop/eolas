@@ -1,9 +1,8 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
-
 ## Syntax of formal languages versus semantics
 
  > 

@@ -1,9 +1,8 @@
 ---
-tags:
-  - Mathematics
-  - Algebra
+categories:
+  - Mathematics 
+tags: [algebra]
 ---
-
 ## Equivalent equations
 
  > 

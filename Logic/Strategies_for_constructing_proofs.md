@@ -1,8 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - proofs
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 ## General strategy

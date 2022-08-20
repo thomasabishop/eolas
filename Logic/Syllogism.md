@@ -1,7 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 In order to make assertions about the relative [consistency](Consistency.md) or inconsistency of a set of propositions we advance arguments. Consider everyday life: if we are having an argument with someone, we believe that they are wrong. A more logical way to say this is that we believe that their beliefs are inconsistent. In order to change their viewpoint or point out why they are wrong we advance an argument intended to show that belief A conflicts with belief B. Or if C is true, then you cannot believe that D.

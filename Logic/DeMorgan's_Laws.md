@@ -1,9 +1,7 @@
 ---
-tags:
-  - Logic
-  - propositional-logic
-  - derivation-rules
-  - theorems-axioms-laws
+categories:
+  - Logic 
+tags: [propositional_logic]
 ---
 
 DeMorgan's laws express some fundamental equivalences that obtain between the Boolean [connectives](Truth-functional%20connectives.md):
