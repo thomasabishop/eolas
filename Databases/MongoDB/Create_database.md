@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [mongo_db, node_js, mongoose]
+tags: [mongo-db, node-js, mongoose]
 ---
 
 # Creating a MongoDB database

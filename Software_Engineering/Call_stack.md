@@ -1,7 +1,7 @@
 ---
 tags:
   - Software_Engineering
-  - call_stack
+  - call-stack
 ---
 
 # The call-stack

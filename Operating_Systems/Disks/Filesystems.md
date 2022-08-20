@@ -3,7 +3,6 @@ tags:
   - Linux
   - Operating_Systems
   - disks
-  - disk-partition
   - filesystems
 ---
 

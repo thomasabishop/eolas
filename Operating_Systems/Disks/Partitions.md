@@ -4,7 +4,6 @@ tags:
   - Operating_Systems
   - disks
   - devices
-  - disk-partions
 ---
 
 # Disk partitions

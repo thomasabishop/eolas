@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [mongo_db, node_js]
+tags: [mongo-db, node-js]
 ---
 
 # Importing data to MongoDB

@@ -2,7 +2,7 @@
 tags:
   - Programming_Languages
   - typescript
-  - data_types
+  - data-types
 ---
 
 # Primitive types

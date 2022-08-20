@@ -3,7 +3,7 @@ categories:
   - Computer_Architecture
   - Electronics
   - Hardware
-tags: [logic_gates]
+tags: [logic-gates]
 ---
 # AND gate
 
