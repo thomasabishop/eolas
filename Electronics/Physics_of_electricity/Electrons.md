@@ -12,6 +12,8 @@ Electrons orbit in concentric circuits around the nucleus of the atom. Each orbi
 
 Each shell can accomodate a maximum number of electrons. The shells are designated letters and filled in sequence moving out from the shell nearest to the nucleus. 
 
+_The diagram below demonstrates shell naming conventions and the maximum number of electrons per shell._
+
 ![](/img/electron-shells.svg.svg)
 
 ## Valence 

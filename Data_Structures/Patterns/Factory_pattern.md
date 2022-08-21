@@ -1,6 +1,6 @@
 ---
 tags:
-  - Data_Structures
+  - Data Structures
   - patterns
   - oop
 ---
