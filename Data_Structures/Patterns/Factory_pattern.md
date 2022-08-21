@@ -1,8 +1,8 @@
 ---
+categories: 
+  - DSA
 tags:
-  - Data Structures
-  - patterns
-  - oop
+  - OOP
 ---
 
 # Factory pattern

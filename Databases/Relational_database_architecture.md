@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [relational_databases]
+tags: [relational-databases]
 ---
 
 # Relational database architecture

@@ -1,10 +1,8 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
-  - oop
+categories: 
+  - DSA
+tags: [OOP]
 ---
-
 # Singleton pattern
 
 As the name suggests, the Singleton pattern is best used in scenarios where you only want to use a single, unique instance of a class. This is for functionality that should only be executed once in the lifecycle of an application. The canonical case would be some kind of bootstrapping process required at initialisation, or initial configuration for an app.

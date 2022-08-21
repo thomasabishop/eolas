@@ -1,9 +1,8 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
+categories: 
+  - DSA
+tags: []
 ---
-
 # Sliding window 
 
 Whereas the [multiple pointer](Multiple_pointers.md) pattern works by keeping two array indices running at once and comparing their values on each iteration, the sliding window

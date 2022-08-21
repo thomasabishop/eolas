@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-  - Programming_Languages
+  - Programming Languages
 tags: [SQL]
 ---
 

@@ -1,5 +1,9 @@
 ---
-tags: [algorithms, recursion]
+categories: 
+  - DSA
+tags:
+  - algorithms
+  - recursion
 ---
 
 > A recursive function is a function that calls itself in its definition.

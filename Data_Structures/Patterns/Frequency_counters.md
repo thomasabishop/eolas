@@ -1,7 +1,7 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
+categories: 
+  - DSA
+tags: []
 ---
 
 # Frequency counters

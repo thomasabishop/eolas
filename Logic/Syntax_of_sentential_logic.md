@@ -1,7 +1,7 @@
 ---
 categories:
   - Logic 
-tags: [propositional_logic]
+tags: [propositional-logic]
 ---
 ## Syntax of formal languages versus semantics
 

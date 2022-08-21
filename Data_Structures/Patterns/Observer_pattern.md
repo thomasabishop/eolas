@@ -1,8 +1,7 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
-  - oop
+categories: 
+  - DSA
+tags: [OOP]
 ---
 
 # Observer pattern

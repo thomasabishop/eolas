@@ -1,9 +1,8 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
+categories: 
+  - DSA
+tags: []
 ---
-
 # Multiple pointers
 
 The multiple pointers pattern can be useful for moving through an array and comparing elements against each other in a time-efficient manner and without costly multiple loops. 

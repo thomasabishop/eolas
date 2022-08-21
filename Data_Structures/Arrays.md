@@ -1,5 +1,8 @@
 ---
-tags: [data-structures]
+categories: 
+  - DSA
+tags:
+  - data-structures
 ---
 
 # Arrays

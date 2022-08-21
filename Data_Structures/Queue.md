@@ -1,7 +1,9 @@
 ---
-tags: [data-structures]
+categories: 
+  - DSA
+tags:
+  - data-structures
 ---
-
 # Queues
 
 _Visualization of the queue data structure_

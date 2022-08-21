@@ -1,7 +1,8 @@
 ---
-tags: [data-structures]
+categories: 
+  - DSA
+tags:
 ---
-
 _A stack visualised vertically_
 ![stack2.svg](../img/stack2.svg)
 

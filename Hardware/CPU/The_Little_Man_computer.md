@@ -1,6 +1,6 @@
 ---
 categories:
-  - Computer_Architecture
+  - Computer Architecture
 tags: [CPU, processors]
 
 ---

@@ -1,7 +1,7 @@
 ---
 categories:
   - Logic 
-tags: [propositional_logic]
+tags: [propositional-logic]
 ---
 
 If two conjuncts have each been independently derived then they can be conjoined. Also known more simply as *Conjunction*

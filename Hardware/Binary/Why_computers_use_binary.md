@@ -1,7 +1,7 @@
 ---
 categories:
   - Mathematics
-  - Computer_Architecture
+  - Computer Architecture
 tags: [binary]
 ---
 

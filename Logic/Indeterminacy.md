@@ -1,7 +1,7 @@
 ---
 categories:
   - Logic 
-tags: [propositional_logic]
+tags: [propositional-logic]
 ---
 
 The vast majority of sentences in natural and formal logical languages are neither [ logically true](Logical%20truth%20and%20falsity.md#logical-truth) or [\| logically false](Logical%20truth%20and%20falsity.md#logical-falsity). This makes sense because sentences of this form are all either tautologies or contradictions and as such do not express information about the state of events in the world. We call sentences that are neither logically true or logically false, logically indeterminate sentences.

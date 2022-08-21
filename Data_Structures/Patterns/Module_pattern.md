@@ -1,10 +1,8 @@
 ---
-tags:
-  - Data_Structures
-  - patterns
-  - oop
+categories: 
+  - DSA
+tags: [OOP]
 ---
-
 # Module pattern 
 
 > Come back and compare this with learning from Node.js
