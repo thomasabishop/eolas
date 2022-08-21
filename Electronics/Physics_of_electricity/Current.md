@@ -6,14 +6,17 @@ tags: [physics, electricity]
 
 # Current
 
-When an appropriate external force is applied, the movement of electrons is from negatively charged atoms (negative ions) to positively charged atoms (positive ions). We call this **electrical current**. 
+> Electrical current is the movement of electrons from negatively charged atoms to negatively charged atoms when an appropriate external force is applied.
 
-We use the symbol $I$ to stand for current in equations. 
+So current is the flow of electrons. Charge is the quantity that flows. Current exists because of the [first law of electrostatics](/Electronics/Physics_of_electricity/Coulombs_Law.md).
 
 > The amount of current is the sum of the charges of the moving electrons past a given point.
 
+We use the symbol $I$ to stand for current in equations. 
+
+
 ## Coulombs and amps
 
-We measure **charge** in Coulombs ($C$). A Coulomb is an aggregate of the charge of several electrons because their charge is so small: $6.24 \cdot 10 ^{18}$ electrons. 
+We measure **charge** in Coulombs ($C$). A Coulomb is an aggregate of the charge of several electrons because their individual charge is so small: $6.24 \cdot 10 ^{18}$ electrons. 
 
 We measure **current** in amps. When one coulomb of charge moves past a point in one second it is called an **ampere** (amp) represented as $A$. 
