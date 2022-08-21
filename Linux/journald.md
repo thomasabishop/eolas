@@ -46,3 +46,10 @@ journalctl -b
 journalctl --list-boots
 
 ```
+
+### List only kernel entries to the journal
+
+```bash
+journalctl -k
+
+```
