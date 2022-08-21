@@ -8,20 +8,18 @@ tags: [physics, electricity]
 
 > Electrical current is the movement of electrons from negatively charged atoms to negatively charged atoms when an appropriate external force is applied.
 
-So current is the flow of electrons. Charge is the quantity that flows. Current exists because of the [first law of electrostatics](/Electronics/Physics_of_electricity/Coulombs_Law.md).
+So current is the flow of electrons. Charge is the quantity that flows. 
 
 > The amount of current is the sum of the charges of the moving electrons past a given point.
-
-We use the symbol $I$ to stand for current in equations. 
 
 ## Why current exists
 Current exists because of the [first law of electrostatics](/Electronics/Physics_of_electricity/Coulombs_Law.md).
 
-When there is an excess of electrons at one terminal (i.e. negatively charged atoms) and a deficiency of electrons at the other terminal (i.e. positively charged atoms), a difference of potential exists between the two terminals.
+When there is an excess of electrons at one terminal (i.e. negatively charged atoms) and a deficiency of electrons at the other terminal (i.e. positively charged atoms), a _difference of potential_ exists between the two terminals.
 
-When the terminal are connected to each other via a conductor (e.g. copper wire) electrons will flow along the conductor. This is provided that there is a source to supply electrons at one end and remove them at the other. This is **voltage source**.
+When the terminals are connected to each other via a conductor (e.g. copper wire) electrons will flow along the conductor. This is provided that there is a source to supply electrons at one end and remove them at the other. We call this force the **voltage source**.
 
-_The diagram below illustrates the flow of current where the circles are electrons knocking into each other to generate current:_
+_The diagram below illustrates the flow of current where the circles are electrons knocking into each other and passing current:_
 
 ![](/img/charge-cylinder.svg)
 
