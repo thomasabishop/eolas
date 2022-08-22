@@ -23,6 +23,8 @@ _The diagram below illustrates the flow of current where the circles are electro
 
 ![](/img/charge-cylinder.svg)
 
+> Electrons travel very slowly through a conductor. This is in contrast to their intrinsic motion which of course equal to the speed of light (186, 000 miles per second).
+
 ## Formal expression
 
 We measure **charge** in Coulombs ($C$). A Coulomb is an aggregate of the charge of thousands of electrons because their individual charge is so small.
