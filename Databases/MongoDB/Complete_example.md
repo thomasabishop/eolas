@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [Databases, mongo-db, node-js, mongoose, ABBA]
+tags: [Databases, mongo-db, node-js, mongoose, Abba]
 ---
 
 # MongoDB connection, set-up and data query: complete example
