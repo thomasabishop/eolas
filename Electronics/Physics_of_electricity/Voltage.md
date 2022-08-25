@@ -18,6 +18,13 @@ Voltage is the application of this energy. Any form of energy that dislodges ele
 
 > It is important to realise that in this process energy is not 'created', rather there is a transfer of energy from one form to another. The force applied to generate the current is energy in one form that is converted to another form: electrical current.
 
+## Distinguishing _voltage_ from _electric field_
+
+It can be confusing that two different symbols often seemed to be used interchangeably when talking about voltage: $V$ and $E$. However, while they broadly point to the same phenomenon there is a difference in emphasis.
+
+- $V$ stands for volts or voltage conceived purely in terms of the difference in potential between two points: the positive and negative terminals
+- $E$ stands for electric field. This is the field that surround each electric charge and exerts force on all other charges in the field, attracting or repelling them. So it is more the physical process that the volatage represents rather than the numerical representation of the potential between the terminals.
+
 ## Voltage sources
 
 The following are the main sources of voltage:
