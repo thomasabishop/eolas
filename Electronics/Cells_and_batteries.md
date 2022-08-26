@@ -14,13 +14,17 @@ Cells are a [voltage source](/Electronics/Physics_of_electricity/Voltage.md#chem
 
 ## Connecting batteries
 
-Cells and batteries can be connected to each other in electrical ciruits to increase the overall voltage that is produced. There are three main connection types:
+Cells and batteries can be connected to each other in electrical ciruits to increase the overall voltage and current that is produced. There are three main connection types:
 
 - series
 - parallel
 - series-parallel
 
 > The key thing to remember: **cells configured in series increases the overall voltage available** and **cells configured in parallel increases the overall current available**
+
+The table below summarises the relative differences:
+
+![](/img/cell-comparison.svg)
 
 ### Series connections
 
@@ -31,7 +35,7 @@ In the case of **series aiding**, cells are connected one in front of another wi
 In this configuration the same current flows through all the cells, it is not accumulative. We represent this as follows:
 
 $$
-I_{T} = I_{1} + I_{2} + I_{3}
+I_{T} = I_{1} = I_{2} = I_{3}
 $$
 
 However the voltage is accumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
@@ -40,12 +44,26 @@ $$
 E_{T} = E_{1} + E_{2} + E_{3} \\
 $$
 
+Hence why series connections increase voltage but keep current constant.
+
 // TODO: Add image
 
 In the case of **series opposing**, negative terminals are connected to each other and positive terminals are connected to each other in a series. This doesn't have many applications.
 
 ### Parallel connections
 
-Parallel connections follow the series opposing (negative to negative, positive to positive) configuration but they are not connected in sequence.
+In parallel connections all positive terminals are connected to each other and all negative terminals are connected to each other.
 
-_The same current flows through all cells. This is represented mathematically as follows ($T$ stands for time)_:
+This time the voltage is the same of each individual cell but the current is the sum of the individual cell currents. So the voltage is constant but the current is accumulative:
+
+$$
+E_{T} = E_{1} = E_{2} = E_{3} \\
+$$
+
+$$
+I_{T} = I_{1} + I_{2} + I_{3}
+$$
+
+### Series-parrallel
+
+If we want both a higher voltage and a higher current we can use series-parallel configurations. Connecting cells in series increases the voltage and connecting cells in parellel increases the current so doint both boosts the amount of both quantities.
