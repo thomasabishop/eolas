@@ -38,6 +38,4 @@ $$
 E_{T} = E_{1} + E_{2} + E_{3} \\
 $$
 
-> Note here we use $E$ instead of $V$. Strictly, $V$ denotes the potential difference whereas $E$ denotes the **electric field**. The electric field is the physical field that surrounds each electric charge and exerts force on all other charges in the field, attracting or repelling them
-
 // TODO: Add image
