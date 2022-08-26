@@ -20,22 +20,32 @@ Cells and batteries can be connected to each other in electrical ciruits to incr
 - parallel
 - series-parallel
 
+> The key thing to remember: **cells configured in series increases the overall voltage available** and **cells configured in parallel increases the overall current available**
+
 ### Series connections
 
 With series connections we distinguish **series aiding** and **series opposing** configurations.
 
-In the case of series aiding, cells are connected one in front of another with the positive terminal connecting to the negative terminal of the other in a line.
+In the case of **series aiding**, cells are connected one in front of another with the positive terminal connecting to the negative terminal of the other in a line.
 
-In this configuration the **same current flows through all the cells**. This is represented mathematically as follows ($T$ stands for time):
+In this configuration the same current flows through all the cells, it is not accumulative. We represent this as follows:
 
 $$
-I_{T} = I_{1} + I_{2} + I_{3} \\
+I_{T} = I_{1} + I_{2} + I_{3}
 $$
 
-The voltage is the sum of the individual cell voltages (represented here as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field)).
+However the voltage is accumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
 
 $$
 E_{T} = E_{1} + E_{2} + E_{3} \\
 $$
 
 // TODO: Add image
+
+In the case of **series opposing**, negative terminals are connected to each other and positive terminals are connected to each other in a series. This doesn't have many applications.
+
+### Parallel connections
+
+Parallel connections follow the series opposing (negative to negative, positive to positive) configuration but they are not connected in sequence.
+
+_The same current flows through all cells. This is represented mathematically as follows ($T$ stands for time)_:
