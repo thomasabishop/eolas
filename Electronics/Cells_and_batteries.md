@@ -46,7 +46,8 @@ $$
 
 Hence why series connections increase voltage but keep current constant.
 
-// TODO: Add image
+_Series battery connection:_
+![](/img/seriesbatt-2.svg)
 
 In the case of **series opposing**, negative terminals are connected to each other and positive terminals are connected to each other in a series. This doesn't have many applications.
 
@@ -63,6 +64,10 @@ $$
 $$
 I_{T} = I_{1} + I_{2} + I_{3}
 $$
+
+_Parallel battery connection:_
+
+![](/img/parallel-batt2.svg)
 
 ### Series-parrallel
 
