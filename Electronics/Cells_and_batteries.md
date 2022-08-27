@@ -47,7 +47,7 @@ $$
 Hence why series connections increase voltage but keep current constant.
 
 _Series battery connection:_
-![](/img/seriesbatt-2.svg)
+![](/img/series-battery-diagram.svg)
 
 _Can be represented in a circuit diagram in one of the following two ways: as a series of celss or as a single battery:_
 
@@ -71,7 +71,7 @@ $$
 
 _Parallel battery connection:_
 
-![](/img/parallel-batt2.svg)
+![](/img/parallel-battery-diagram.svg)
 
 _Parallel battery circuit diagram:_
 
