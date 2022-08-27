@@ -49,6 +49,10 @@ Hence why series connections increase voltage but keep current constant.
 _Series battery connection:_
 ![](/img/seriesbatt-2.svg)
 
+_Can be represented in a circuit diagram in one of the following two ways: as a series of celss or as a single battery:_
+
+![](/img/series-battcircuit.svg)
+
 In the case of **series opposing**, negative terminals are connected to each other and positive terminals are connected to each other in a series. This doesn't have many applications.
 
 ### Parallel connections
@@ -68,6 +72,10 @@ $$
 _Parallel battery connection:_
 
 ![](/img/parallel-batt2.svg)
+
+_Parallel battery circuit diagram:_
+
+![](/img/circ-batt-final.svg)
 
 ### Series-parrallel
 
