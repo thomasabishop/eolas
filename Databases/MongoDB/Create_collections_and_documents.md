@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [mongo-db, node-js, mongoose]
+tags: [mongo_db, node_js, mongoose]
 ---
 
 # Create collections and documents with Mongoose
@@ -46,7 +46,7 @@ Note that we set our validation criteria as the second property for each schema 
 
 Note that this validation only occurs at the level of Mongoose. There is no mechanism for running the validation within the database itself. This is one of the ways that Mongo differs from an SQL database where you would be able to set the property of `required` for a cell in the table. If we didn't set any validation via Mongoose, Mongo would accept whatever we sent to it.
 
-What is the relationship between this Mongoose validation and the [Joi](/Programming_Languages/NodeJS/REST_APIs/Validation.md) validation that we use when validating API requests in Node/Express? They complement each other. We use Joi to validate the client request to the API. If this is valid, the process would then move onto the next stage which would be transforming the data from a REST request to a database request implemented through Mongoose.
+What is the relationship between this Mongoose validation and the [Joi](/Programming_Languages/NodeJS/REST_APIs/Validation.md) validation that we use when validating API requests in Node/Express? They complement each other. We use Joi to validate the client request to the API. If this is valid, the process would then move onto the next stage which would be transforming the data from a REST request to a database request implemented through Mongoose, where a second layer of validation would appy. We would also have validation on the client-side.
 
 #### Validator functions
 
