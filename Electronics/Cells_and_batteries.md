@@ -32,24 +32,25 @@ With series connections we distinguish **series aiding** and **series opposing**
 
 In the case of **series aiding**, cells are connected one in front of another with the positive terminal connecting to the negative terminal of the other in a line.
 
-In this configuration the same current flows through all the cells, it is not accumulative. We represent this as follows:
+In this configuration the same current flows through all the cells; it is not cumulative. We represent this as follows:
 
 $$
 I_{T} = I_{1} = I_{2} = I_{3}
 $$
 
-However the voltage is accumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
+However the voltage is cumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
 
 $$
 E_{T} = E_{1} + E_{2} + E_{3} \\
 $$
 
-Hence why series connections increase voltage but keep current constant.
+Thus series connections increase voltage but keep current constant.
 
 _Series battery connection:_
+
 ![](/img/series-battery-diagram.svg)
 
-_Can be represented in a circuit diagram in one of the following two ways: as a series of celss or as a single battery:_
+_Can be represented in a circuit diagram in one of the following two ways: as a series of cells or as a single battery:_
 
 ![](/img/series-battcircuit.svg)
 
@@ -59,7 +60,7 @@ In the case of **series opposing**, negative terminals are connected to each oth
 
 In parallel connections all positive terminals are connected to each other and all negative terminals are connected to each other.
 
-This time the voltage is the same of each individual cell but the current is the sum of the individual cell currents. So the voltage is constant but the current is accumulative:
+This time the voltage is the same as each individual cell but the current is the sum of the individual cell currents. So the voltage is constant but the current is cumulative:
 
 $$
 E_{T} = E_{1} = E_{2} = E_{3} \\
@@ -80,3 +81,5 @@ _Parallel battery circuit diagram:_
 ### Series-parrallel
 
 If we want both a higher voltage and a higher current we can use series-parallel configurations. Connecting cells in series increases the voltage and connecting cells in parellel increases the current so doint both boosts the amount of both quantities.
+
+// TODO: Add notes on series parallel once I have a better grasp of the basics of circuits.
