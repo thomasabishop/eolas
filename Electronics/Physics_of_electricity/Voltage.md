@@ -12,7 +12,7 @@ We noted in the discussion of [current](/Electronics/Physics_of_electricity/Curr
 
 'Difference of potential' is the same thing as voltage. We use the term 'voltage' to denote the potential for current to flow. Voltage is essential to current because it is the force that enables the current to flow.
 
-Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current energy must be imparted to the electrons so that they all flow in the same direction.
+Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current, energy must be imparted to the electrons so that they all flow in the same direction.
 
 Voltage is the application of this energy. Any form of energy that dislodges electrons from atoms can be used to produce current.
 
@@ -57,7 +57,7 @@ Depending on how it is wired, a generator can produce **directed current** (DC) 
 
 ### Chemicals (cells and batteries)
 
-The chemical creation of current is the physics behind batteries. Chemical current production produces currents on a smaller and less industrial scale than generators.
+The chemical creation of current is the physics behind [batteries](/Electronics/Cells_and_batteries.md). Chemical current production produces currents on a smaller and less industrial scale than generators.
 
 A chemical cell consists in two dissimilar metals such as copper and zinc. We call these the **electrodes**. They are immersed in a salt, acid or alkaline solution. We call these the **electrolytes**. The electrolyte pulls the free electrons from the copper electrode which leaves it imbalanced with a positive charge. The zinc electrode attracts the free electrons from the electrolyte giving it a negative charge, thus a difference of potential is achieved.
 
@@ -66,3 +66,44 @@ A chemical cell consists in two dissimilar metals such as copper and zinc. We ca
 Solar energy can be converted to electrical energy through solar panels which are large collections of **photovoltaic cells**.
 
 When the surfaces of these cells are exposed to light, it dislodges electrons from their orbits around the surface atoms of the cell material. For each cell this only produces a very small amount of energy, therefore large quantities must be used.
+
+## Voltage rise and voltage drops
+
+In circuits there are actually two types of voltage:
+
+1. Voltage rise
+2. Voltage drop
+
+### Voltage rise
+
+When we introduce potential energy into a ciruit in the form of voltage, this is a voltage rise. The current flows from the negative terminal of the voltage source and returns to the positive terminal of the voltage source.
+
+A 12V battery connected to a circuit gives it a voltage rise of 12 volts.
+
+### Voltage drop
+
+Voltage drop is the corrolary to voltage rise. It is the loss of energy that the electrons of the circuit current experience as a result of encountering resistance.
+
+As they move through the circuit the electrons encounter a **load** which is what we call resistance to the flow of electrons. As they run into this, they give up their energy. The relinquishing of energy happens in the form of a conversion of electrical energy to heat. The amount lost is equal to the amount of energy imparted by the voltage rise.
+
+> The voltage drop in a circuit equals the the voltage rise of the circuit because energy cannot be created or destroyed, only changed to another form. When a voltage rise is converted to a voltage drop we say that **the energy has been _consumed_ by the circuit**.
+
+#### Examples
+
+- If a 12V source is connected to a 12V lamp, the source supplies a 12V voltage rise and the lamp produces a 12V voltage drop.
+- If two identical 6V lamps are connected in series to the same 12V source, each lamp produces a 6V drop for a total of 12 volts
+- If two different lamps are connected in series to to a 12V source: a 3V and a 9V lamp, the 9V lamp produces a drop of 9V and the 3V lamp produces a drop of 3V. The sum of the voltage drops equals the voltage rise of 12 volts.
+
+These examples demonstrate that the voltage rise: voltage drop ratio always evens out.
+
+## Ground: zero potential
+
+We use the term **ground** to refer to zero potential - the point at which there is no difference of potential (voltage) that could generate current.
+
+We need ground to prevent electric shock from appliances and circuits. It keeps all devices at the same potential.
+
+In domestic settings appliances are **earth grounded**. The name comes from the fact that all appliances will ultimately connect to the earth to neutralise potential. This means there can be no difference of potential between circuits.
+
+In electronics ground doesn't refer to the specific appliance but is a concept of a zero reference point against which all voltages are measured. A measured voltage will be negative or positive with respect to ground. This said, all circuitry will also have a physical mechanism of discharging potential.
+
+// TODO: Don't really understand this so return to with better explanation
