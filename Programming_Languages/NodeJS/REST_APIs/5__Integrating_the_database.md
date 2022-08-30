@@ -80,7 +80,7 @@ const courseSchema = new mongoose.Schema({
 With this established we can remove our local array as we are ready to start getting our data from the database:
 
 ```diff
-const Course = new mongoose.model('Course', courseSchema);
+const Course = mongoose.model('Course', courseSchema);
 
 - const courses = [
 -  {
@@ -190,4 +190,18 @@ router.delete("/:id", (req, res) => {
   courses.splice(index, 1);
   res.send(course);
 });
+```
+
+```diff
+
+router.delete("/:id", async (req, res) => {
+ const courseToDelete = await Course.findByIdAndRemove(req.params.id)
+
+ if (!course) return res.status(404).send("A course with the given ID was not found");
+
+- courses.indexOf(course);
+- courses.splice(index, 1);
+
+res.send(course);
+})
 ```
