@@ -10,13 +10,15 @@ tags: [physics, electricity]
 
 We noted in the discussion of [current](/Electronics/Physics_of_electricity/Current.md) that current flows when there is difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
 
-'Difference of potential' is the same thing as voltage. We use the term 'voltage' to denote the potential for current to flow. Voltage is essential to current because it is the force that enables the current to flow.
+'Difference of potential' is the same thing as voltage. We use the term 'voltage' to denote the propensity for charge to flow from one place to another. Voltage is essential to current because it is the force that enables the current to flow.
+
+## Distinguishing _voltage_ from _electric field_
 
 Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current, energy must be imparted to the electrons so that they all flow in the same direction.
 
 Voltage is the application of this energy. Any form of energy that dislodges electrons from atoms can be used to produce current.
 
-> It is important to realise that in this process energy is not 'created', rather there is a transfer of energy from one form to another. The force applied to generate the current is energy in one form that is converted to another form: electrical current.
+> It is important to realise that in this process energy is not 'created', rather there is a transfer of energy from one form to another. The force applied to generate the currThe Expanse Season 4
 
 ## Distinguishing _voltage_ from _electric field_
 
@@ -43,6 +45,7 @@ Energy in these states can be transformed into energy as current. We will review
 Magnetism is used the voltage source in electrical generators by far the most common method of producing powerful and large currents at scale.
 
 If a conductive wire is passed through a magnetic field voltage will be produced so long as there is motion between the magnetic field and the conductor. A **generator** is a device that generates current in this manner. Generators themselves need to be powered. They can be powered by steam from a nuclear power plant, water, wind, coal or other fossil fuels.
+The Expanse Season 4
 
 #### AC/DC
 
