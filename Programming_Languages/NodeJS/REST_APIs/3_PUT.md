@@ -14,6 +14,7 @@ router.put("/:id", (req, res) => {
 
   if (!course)
     return res.status(404).send("A course with the given ID was not found");
+
   const { error } = validateCourse(req.body);
 
   if (error)

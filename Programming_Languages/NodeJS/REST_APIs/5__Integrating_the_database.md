@@ -94,3 +94,100 @@ const Course = new mongoose.model('Course', courseSchema);
 ## Rewriting the REST handlers
 
 Now we need to rewrite our RESTful request handlers so that the data is sourced from and added to the database. We will mainly be using the Mongo syntax defined at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and [Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md).
+
+### GET
+
+Instead of simply returning the array, we use the Mongoose `find` method.
+
+```diff
+- router.get("/", (req, res) => {
+-  res.send(courses);
+ });
+
++ router.get("/", async (res, res) => {
++  const courses = await Courses.find();
+  res.send(courses)
+})
+```
+
+### POST
+
+Now we make our new course an instance of the `Courses` model:
+
+```js
+// Original formulation
+
+router.post("/", (req, res) => {
+-  const course = {
+-    id: courses.length + 1,
+-    name: req.body.name,
+-  };
+  courses.push(course);
+  res.send(course);
+});
+```
+
+```diff
+router.post("/", async (req, res) => {
++  let course = new Course({ // make new course instance of Course model
+-   id: courses.length + 1, // not needed as DB automatically adds an id
+    name: req.body.name,
+  });
+- courses.push(course); // not pushing to the array anymore
++ await course.save() // save to Mongo
+  res.send(course);
+});
+
+```
+
+### PUT
+
+When updating a value in the database we are going to use the [query-first](/Databases/MongoDB/Update_document.md#query-first-document-update) approach to updating a Mongo document.
+
+```js
+router.put("/:id", (req, res) => {
+  const course = courses.find((c) => c.id === parseInt(req.params.id));
+
+  if (!course)
+    return res.status(404).send("A course with the given ID was not found");
+
+  const { error } = validateCourse(req.body);
+  if (error)
+    return error.details.map((joiErr) => res.status(400).send(joiErr.message));
+
+  course.name = req.body.name;
+  res.send(course);
+});
+```
+
+```diff
+router.put("/:id", async (req, res) => {
+- const course = courses.find((c) => c.id === parseInt(req.params.id));
+ const { error } = validateCourse(req.body);
+ if (!course) return res.status(404).send("A course with the given ID was not found");
++ const updatedCourse = await Course.findByIdAndUpdate(req.params.id,
++  { name: req.body.name },
++  { new: true}
++ )
+
+-   if (error)
+-   return error.details.map((joiErr) => res.status(400).send(joiErr.message));
+- })
+
+- course.name = req.body.name;
+  res.send(course);
+```
+
+### DELETE
+
+```js
+router.delete("/:id", (req, res) => {
+  const course = courses.find((c) => c.id === parseInt(req.params.id));
+  if (!course)
+    return res.status(404).send("A course with the given ID was not found");
+
+  courses.indexOf(course);
+  courses.splice(index, 1);
+  res.send(course);
+});
+```
