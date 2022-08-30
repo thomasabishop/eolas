@@ -4,12 +4,12 @@ categories:
 tags: [backend, node-js, REST, APIs]
 ---
 
-# RESTful API with Node, Express and MongoDB: `POST` requests
+# Creating a RESTful API: `POST` requests
 
 To demonstrate the handling of POST requests, we will create a handler that add a new element to the array of courses.
 
 ```js
-router.post('/', (req, res) => {
+router.post("/", (req, res) => {
   const course = {
     id: courses.length + 1,
     name: req.body.name,
@@ -32,7 +32,7 @@ To execute the PUT request from the frontend:
 ```js
 const addCourse = async (newCourse) => {
   try {
-    const resp = await axios.post('http://localhost:3000/api/courses', {
+    const resp = await axios.post("http://localhost:3000/api/courses", {
       name: newCourse,
     });
     console.log(resp.data);
@@ -40,7 +40,7 @@ const addCourse = async (newCourse) => {
     console.error(err);
   }
 };
-addCourse('Biology and Life Sciences');
+addCourse("Biology and Life Sciences");
 ```
 
 Which returns:
@@ -61,7 +61,7 @@ function validateCourse(course) {
     name: Joi.string().min(3).required(),
   });
 
-  const {error} = schema.validate(course);
+  const { error } = schema.validate(course);
   return error;
 }
 ```
@@ -69,13 +69,14 @@ function validateCourse(course) {
 We can then add the validation as part of our general error handling:
 
 ```js
-router.post('/', (req, res) => {
+router.post("/", (req, res) => {
   const course = {
     id: courses.length + 1,
     name: req.body.name,
   };
-  const {error} = schema.validate(req.body);
-  if (error) return error.details.map((joiErr) => res.status(400).send(joiErr.message));
+  const { error } = schema.validate(req.body);
+  if (error)
+    return error.details.map((joiErr) => res.status(400).send(joiErr.message));
 
   courses.push(course);
   res.send(course);

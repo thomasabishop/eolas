@@ -4,7 +4,7 @@ categories:
 tags: [backend, node-js, REST, APIs]
 ---
 
-# RESTful API with Node, Express and MongoDB: `GET` requests
+# Creating a RESTful API: `GET` requests
 
 With our GET request we will simply return the array of course objects.
 
@@ -12,7 +12,7 @@ We create an [event emitter](Events%20module.md#event-emitters) and listener tha
 
 ```js
 // Return a value as response from specified URI
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   res.send(courses);
 });
 ```
@@ -28,7 +28,7 @@ We can now call the endpoint:
 ```js
 const getAllCourses = async () => {
   try {
-    const resp = await axios.get('http://localhost:3000/api/courses');
+    const resp = await axios.get("http://localhost:3000/api/courses");
     console.log(resp.data);
   } catch (err) {
     console.error(err);
@@ -42,9 +42,9 @@ Returns:
 
 ```js
 [
-  {id: 1, name: 'First course'},
-  {id: 2, name: 'Second course'},
-  {id: 3, name: 'Third course'},
+  { id: 1, name: "First course" },
+  { id: 2, name: "Second course" },
+  { id: 3, name: "Third course" },
 ];
 ```
 
@@ -53,7 +53,7 @@ Returns:
 The previous example serves the entire set of our data. But we will also need to retrieve specific values, we do this by adapting the GET callback to accept parameters. These parameters will correspond to the specific entry in our main data array.
 
 ```js
-router.get('/:id', (req, res) => {
+router.get("/:id", (req, res) => {
   res.send(req.params.id);
 });
 ```
@@ -63,9 +63,9 @@ We use the `:` symbol in the URI to indicate that we looking to parse for a spec
 The block above is the most basic format but we would want to add some kind of error handling, for example:
 
 ```js
-router.get('/:id', (req, res) => {
+router.get("/:id", (req, res) => {
   const course = courses.find((c) => c.id === parseInt(req.params.id));
-  if (!course) res.status(404).send('A course with the given ID was not found');
+  if (!course) res.status(404).send("A course with the given ID was not found");
   res.send(course);
 });
 ```

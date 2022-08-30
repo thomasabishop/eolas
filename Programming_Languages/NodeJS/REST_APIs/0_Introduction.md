@@ -4,7 +4,7 @@ categories:
 tags: [backend, node-js, REST, APIs]
 ---
 
-# RESTful API with Node, Express and MongoDB: Introduction
+# Creating a RESTful API: Introduction
 
 We are going to use Express to create a [RESTful API](/Databases/RESTful_APIs.md) in Node.js.
 
@@ -27,15 +27,15 @@ We will mainly work with the following array of objects:
 const courses = [
   {
     id: 1,
-    name: 'First course',
+    name: "First course",
   },
   {
     id: 2,
-    name: 'Second course',
+    name: "Second course",
   },
   {
     id: 3,
-    name: 'Third course',
+    name: "Third course",
   },
 ];
 ```
@@ -45,19 +45,19 @@ const courses = [
 We first create an instance of Express within `index.js`. This will be the main coordinating file and we will aim to minimise the amount of business logic we have in this file. It should really just be for initialization and managing [middleware](/Programming_Languages/NodeJS/Architecture/Middleware.md).
 
 ```js
-const express = require('express');
+const express = require("express");
 const app = express();
 ```
 
 ## Routing
 
-We are going to receive all our HTTP requests at the path `/api/courses` and we will place all code related to this route in a dedicated Node module (`routes/courses.js`).
+We are going to receive all our HTTP requests at the path `/api/courses` and we will place all code related to this route in a dedicated Node module (`routes/courses.js`) rather than within `index.js` which should remain as uncluttered as possible.
 
 First we need to declare this in `index.js`:
 
 ```js
-const courses = require('./routes/courses');
-app.use('/api/courses', courses);
+const courses = require("./routes/courses");
+app.use("/api/courses", courses);
 ```
 
 Then within `courses.js` we instantiate an express router that `app.js` will route to:
@@ -69,7 +69,7 @@ const router = express.Router();
 Our REST requests will all follow the following pattern:
 
 ```js
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   res.send(courses);
 });
 ```
@@ -78,10 +78,10 @@ We target the `Router` instance we created and all paths will be expressed as `/
 
 ## Create listener
 
-With the routes setup and the Express instance created we can now listen for requests:
+With the routing established and the Express instance created we can now listen for requests:
 
 ```js
-app.listen(3000, () => console.log('Listening on port 30000...'));
+app.listen(3000, () => console.log("Listening on port 30000..."));
 ```
 
 ## REST endpoints
