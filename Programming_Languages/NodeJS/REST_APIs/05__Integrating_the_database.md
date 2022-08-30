@@ -76,3 +76,21 @@ const courseSchema = new mongoose.Schema({
 
 + const Course = new mongoose.model('Course', courseSchema);
 ```
+
+With this established we can remove our local array as we are ready to start getting our data from the database:
+
+```diff
+const Course = new mongoose.model('Course', courseSchema);
+
+- const courses = [
+-  {
+-    id: 1,
+-    name: "First course",
+-  },
+-  ...
+-];
+```
+
+## Rewriting the REST handlers
+
+Now we need to rewrite our RESTful request handlers so that the data is sourced from and added to the database. We will mainly be using the Mongo syntax defined at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and [Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md).
