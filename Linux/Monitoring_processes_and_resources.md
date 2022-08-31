@@ -51,3 +51,5 @@ $ uptime
 - The three numbers are load averages for the past 1 minute, 5 minutes and 15 minutes respectively.
 
 - A load average close to 0 is usually a good sign because it means that your processor isn't being challenged and you are conserving power. Anything equal to or above 1 means that a single process is using the CPU nearly all the time. You can identify that process with `htop` and it will obviously be near to the top. (This is often caused by Chrome and Electron-based software.)
+
+## Memory
