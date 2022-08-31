@@ -52,4 +52,23 @@ $ uptime
 
 - A load average close to 0 is usually a good sign because it means that your processor isn't being challenged and you are conserving power. Anything equal to or above 1 means that a single process is using the CPU nearly all the time. You can identify that process with `htop` and it will obviously be near to the top. (This is often caused by Chrome and Electron-based software.)
 
-## Memory
+## Memory status
+
+We know that processes primarily interact with virtual memory in the form of pages which are then translated to physical blocks by the kernel via the [MMU](/Operating_Systems/Virtual_memory_and_the_MMU.md). There are several tools which provide windows onto this process.
+
+### System page size
+
+We can view the overall system page size which is a representation of the amount of virtual memory available:
+
+```bash
+$ getconf PAGE_SIZE
+4096
+```
+
+This will typically be the same for all Linux systems.
+
+### Page faults
+
+There are two kinds of error that can occur with relation to paged memory:
+
+-
