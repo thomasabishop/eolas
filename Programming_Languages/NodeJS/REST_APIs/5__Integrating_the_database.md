@@ -91,6 +91,23 @@ const Course = mongoose.model('Course', courseSchema);
 -];
 ```
 
+We could actually simplify the syntax here and combine our schema and model declaration into a single block:
+
+```js
+const Course = mongoose.model(
+  "Course",
+  new mongoose.Schema({
+    name: { type: String, required: true, minlength: 5, maxlength: 255 },
+    author: String,
+    tags: [String],
+    data: { type: Date, default: Date.now }, // if unspecified, entry will default to current date
+    isPublished: Boolean,
+  })
+);
+```
+
+> N.B In a real project we wouldn't keep our models in the same file as our handlers. We would keep them in the dedicated `/models/` directory. We should stick to the single responsibility principle and keep `/routes/` for API handlers and `/model/` for schema declarations and models.
+
 ## Rewriting the REST handlers
 
 Now we need to rewrite our RESTful request handlers so that the data is sourced from and added to the database. We will mainly be using the Mongo syntax defined at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and [Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md).
