@@ -110,7 +110,7 @@ const Course = mongoose.model(
 
 ## Rewriting the REST handlers
 
-Now we need to rewrite our RESTful request handlers so that the data is sourced from and added to the database. We will mainly be using the Mongo syntax defined at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and [Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md).
+Now we need to rewrite our RESTful request handlers so that the data is sourced from and added to the database. We will mainly be using the Mongo syntax defined at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and [Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md). We will also keep API validation within the `/model/` file.
 
 ### GET
 
@@ -161,7 +161,13 @@ router.post("/", async (req, res) => {
 
 When updating a value in the database we are going to use the [query-first](/Databases/MongoDB/Update_document.md#query-first-document-update) approach to updating a Mongo document.
 
-```js
+```jsconst courseSchema = new mongoose.Schema({
+  name: {type: String, required: true, minlength: 5, maxlength: 255},
+  author: String,
+  tags: [String],
+  data: {type: Date, default: Date.now}, // if unspecified, entry will default to current date
+  isPublished: Boolean,
+ });
 router.put("/:id", (req, res) => {
   const course = courses.find((c) => c.id === parseInt(req.params.id));
 
@@ -171,7 +177,13 @@ router.put("/:id", (req, res) => {
   const { error } = validateCourse(req.body);
   if (error)
     return error.details.map((joiErr) => res.status(400).send(joiErr.message));
-
+const courseSchema = new mongoose.Schema({
+  name: {type: String, required: true, minlength: 5, maxlength: 255},
+  author: String,
+  tags: [String],
+  data: {type: Date, default: Date.now}, // if unspecified, entry will default to current date
+  isPublished: Boolean,
+ });
   course.name = req.body.name;
   res.send(course);
 });
