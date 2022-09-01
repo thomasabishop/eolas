@@ -86,7 +86,6 @@ function reducer(state, action) {
     default:
       throw new Error();
   }
-  return newState;
 }
 ```
 
@@ -115,6 +114,5 @@ function reducer(state, action) {
     default:
       throw new Error();
   }
-  return newState;
 }
 ```
