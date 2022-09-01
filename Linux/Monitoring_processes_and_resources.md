@@ -29,7 +29,22 @@ _Here I have pressed `u` to show only the processes associated with my user:_
 
 - `Main/IO`
   - The first covers all processes. The second focuses on input/output processes (i.e. reading and writing to disks and other devices)
--
+- `PRI`
+  - This stands for _priority_. This metric reflects the kernel's current schedule priority for the process. The higher the value, it is less likely that the kernel will schedule the process if there are competing processes that require CPU time. The lower the value, the greater priority this process has over others.
+- `NI`
+  - This stands for _nice value_. This metric exists in order to allow administrators to nudge or influence the priority of a given process. You cannot directly tell the kernel to _do x now instead of y_ but you can make what are effectively suggestions by manipulating the nice value.
+  - The kernel adds the nice value to the current priority value for the given process to determine its next time slot. When you increase the nice value of process _P_ you are being "nicer" to the other processes by influencing the priority of _P_ downwards so that the other processes receive greater precedence from the kernel.
+  - By default, the nice value will be 0. To reduce priority of PID 1234, you would use:
+    ```bash
+    $ renice 20 1234
+    ```
+- `VIRT`
+  - The total amoung of virtual memory used by the process including: program code, data, shared libraries, pages that have been swapped, pages that have been mapped but not used.
+- `RES`
+  - Stands for _resident size_
+  - The non swapped _physical_ memory the process has used
+
+Use `man htop` to get other cols
 
 ## Files being used by active processes: `lsof`
 
