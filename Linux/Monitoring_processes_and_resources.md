@@ -25,6 +25,12 @@ _Here I have pressed `u` to show only the processes associated with my user:_
 | P       | Sort by cumulative CPU usage    |
 | ?       | View key and explanation        |
 
+### Understanding the categories
+
+- `Main/IO`
+  - The first covers all processes. The second focuses on input/output processes (i.e. reading and writing to disks and other devices)
+-
+
 ## Files being used by active processes: `lsof`
 
 `lsof` stands for _list open files_. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:
@@ -71,4 +77,9 @@ This will typically be the same for all Linux systems.
 
 There are two kinds of error that can occur with relation to paged memory:
 
--
+- minor page faults
+  - The desired page is in main memory but the MMU doesn't currently know where it is
+- major page faults
+  - The desired page is not in main memory at all. Therefore the kernel must fetch it from disk
+
+Minor page faults are very common and are to be expected; they resolve quickly. On the other hand too many major page faults can slow the system down both because of the time-costly process of fetching data from disk and because it demands more kernel resources to locate the missing page, which puts other processes on hold.
