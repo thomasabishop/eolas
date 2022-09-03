@@ -45,7 +45,11 @@ _Here I have pressed `u` to show only the processes associated with my user:_
   - The non swapped _physical_ memory the process has used
 - `SHR`
   - The size of the process's [shared pages](/Operating_Systems/Virtual_memory_and_the_MMU.md#shared-pages)
-
+- `S`
+  - Status:
+    - S for sleeping (idle)
+    - R for running
+    - D for disk sleep 
 ## Files being used by active processes: `lsof`
 
 `lsof` stands for _list open files_. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:
@@ -88,6 +92,38 @@ $ getconf PAGE_SIZE
 
 This will typically be the same for all Linux systems.
 
+### `free` : available physical memory
+`free`  displays the total amount of free and¬used physical and swap memory in the system, as well as the [buffers and caches](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) used by the kernel.
+
+```bash
+$ free
+              total        used        free      shared  buff/cache   available
+Mem:        16099420     5931512     5039344     2046460     5128564     7781904
+Swap:        3145724           0     3145724
+```
+
+
+### `vmstat` : virtual memory statistics
+
+Pretty much the same as `free` but in the context of virtual memory. It also distinguishes between buffer and cache. 
+
+The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:
+```
+$ vmstat 5 
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  0      0 4326768 334228 5050952    0    0     8    19   80   10  4  1 94  0  0
+ 0  0      0 4365520 334260 5054468    0    0     0   125 2140 3434  4  1 94  0  0
+ 1  0      0 4382400 334276 5068940    0    0     0    77 2102 3988  3  1 95  0  0
+ 1  0      0 4434000 334288 5052908    0    0     0    25 2859 4278  6  1 92  0  0
+ 0  0      0 4391576 334304 5086484    0    0     0   110 2899 6480  8  3 90  0  0
+
+``` 
+
+* `r` stands for the number of runnable processes
+* `b` stands for the number of blocked processes: those waiting for I/O to complete before proceeding.
+* `si/so`: the amount of memory swapped in (from disk) and swapped out (to disk)
+* `bi/ bo`: the amount of blocks received from a device (`bi`), the amoung of blocks sent to a device (`bo`)
 ### Page faults
 
 There are two kinds of error that can occur with relation to paged memory:

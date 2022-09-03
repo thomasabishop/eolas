@@ -33,3 +33,7 @@ There are two types of cache memory:
 The L1 cache is the fastest since the data has less distance to travel when moving to and from the CPU. This said, the L2 cache is still very fast when compared to the main memory, both because it is SRAM rather than DRAM and because it is closer to the processor than the main memory.
 
 Cache controllers use complex algorithms to determine what should go into the cache to facilitate the best performance, but generally they work on the principle that what has been previously used by the CPU will be requested again soon. If the CPU has just asked for an instruction at memory location 555 it's very likely that it will next ask for the one at 556, and after that the one at 557 and so on. The cache's controller circuits therefore go ahead and fetch these from slow DRAM to fast SRAM.
+
+## Relation between cache and buffers
+
+The terms _cache_ and _buffer_ are often used interchangeably but there is a significant difference. Buffer 'size' refers to the amount of physical memory in RAM that is dedicated to a process where this size is measured in terms  of the amount of disk blocks it would take up in the harddrive. Cache is also a measure of memory but it is expressed in terms of [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md): the page size of the memory.
