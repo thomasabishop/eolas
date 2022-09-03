@@ -39,12 +39,12 @@ _Here I have pressed `u` to show only the processes associated with my user:_
     $ renice 20 1234
     ```
 - `VIRT`
-  - The total amoung of virtual memory used by the process including: program code, data, shared libraries, pages that have been swapped, pages that have been mapped but not used.
+  - The total amount of [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md) used by the process including: program code, data, shared libraries, pages that have been swapped, pages that have been mapped but not used.
 - `RES`
   - Stands for _resident size_
   - The non swapped _physical_ memory the process has used
-
-Use `man htop` to get other cols
+- `SHR`
+  - The size of the process's [shared pages](/Operating_Systems/Virtual_memory_and_the_MMU.md#shared-pages)
 
 ## Files being used by active processes: `lsof`
 
