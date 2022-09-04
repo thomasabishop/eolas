@@ -9,7 +9,7 @@ tags:
 
 Function overloading is not a feature of JavaScript but something close to it can be achieved with TypeScript. It proceeds by defining multiple function types (defined above the function) that may serve as the actual function's parameters. Then with the actual function, you leave the changeable parameters open as optional unions and/or `unknown` :
 
-````ts
+```ts
 // First oveload type:
 function logSearch(term: string, options?: string): void;
 
@@ -30,9 +30,9 @@ function logSearch(term: string, p2?: unknown) {
 
 logSearch("apples", "braeburn");
 logSearch("bananas", 3);
-````
+```
 
-````ts
+```ts
 // First overload type:
 function logSearchUnion(term: string, options?: string): void;
 
@@ -53,4 +53,4 @@ function logSearchUnion(term: string, p2?: string | number) {
 
 logSearchUnion("melon", "honey-dew");
 logSearchUnion("oranges", 4);
-````
+```
