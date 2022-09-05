@@ -6,7 +6,9 @@ tags: [sytems-programming]
 
 # Monitoring processes and resources
 
-## Processor time and memory usage: `top`, `htop` etc
+## General purpose diagnostic programs (memory, CPU, I/O)
+
+### `top`/`htop`
 
 We can use [ps](/Programming_Languages/Shell_Scripting/Processes.md) to list the currently running processes but it does not provide much information about the resource metrics or how the process changes over time. We can use `top` to get more information.
 
@@ -49,7 +51,8 @@ _Here I have pressed `u` to show only the processes associated with my user:_
   - Status:
     - S for sleeping (idle)
     - R for running
-    - D for disk sleep 
+    - D for disk sleep
+
 ## Files being used by active processes: `lsof`
 
 `lsof` stands for _list open files_. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:
@@ -93,7 +96,8 @@ $ getconf PAGE_SIZE
 This will typically be the same for all Linux systems.
 
 ### `free` : available physical memory
-`free`  displays the total amount of free and¬used physical and swap memory in the system, as well as the [buffers and caches](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) used by the kernel.
+
+`free` displays the total amount of free and¬used physical and swap memory in the system, as well as the [buffers and caches](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) used by the kernel.
 
 ```bash
 $ free
@@ -102,14 +106,14 @@ Mem:        16099420     5931512     5039344     2046460     5128564     7781904
 Swap:        3145724           0     3145724
 ```
 
-
 ### `vmstat` : virtual memory statistics
 
-Pretty much the same as `free` but in the context of virtual memory. It also distinguishes between buffer and cache. 
+Pretty much the same as `free` but in the context of virtual memory. It also distinguishes between buffer and cache.
 
 The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:
+
 ```
-$ vmstat 5 
+$ vmstat 5
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
  2  0      0 4326768 334228 5050952    0    0     8    19   80   10  4  1 94  0  0
@@ -118,19 +122,9 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  1  0      0 4434000 334288 5052908    0    0     0    25 2859 4278  6  1 92  0  0
  0  0      0 4391576 334304 5086484    0    0     0   110 2899 6480  8  3 90  0  0
 
-``` 
+```
 
-* `r` stands for the number of runnable processes
-* `b` stands for the number of blocked processes: those waiting for I/O to complete before proceeding.
-* `si/so`: the amount of memory swapped in (from disk) and swapped out (to disk)
-* `bi/ bo`: the amount of blocks received from a device (`bi`), the amoung of blocks sent to a device (`bo`)
-### Page faults
-
-There are two kinds of error that can occur with relation to paged memory:
-
-- minor page faults
-  - The desired page is in main memory but the MMU doesn't currently know where it is
-- major page faults
-  - The desired page is not in main memory at all. Therefore the kernel must fetch it from disk
-
-Minor page faults are very common and are to be expected; they resolve quickly. On the other hand too many major page faults can slow the system down both because of the time-costly process of fetching data from disk and because it demands more kernel resources to locate the missing page, which puts other processes on hold.
+- `r` stands for the number of runnable processes
+- `b` stands for the number of blocked processes: those waiting for I/O to complete before proceeding.
+- `si/so`: the amount of memory swapped in (from disk) and swapped out (to disk)
+- `bi/ bo`: the amount of blocks received from a device (`bi`), the amoung of blocks sent to a device (`bo`)
