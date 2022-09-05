@@ -53,6 +53,45 @@ _Here I have pressed `u` to show only the processes associated with my user:_
     - R for running
     - D for disk sleep
 
+### `vmstat`
+
+`vmstat` provides similar metrics to `htop` but tells you more about the memory state and the activities of the kernel in a single row.
+
+The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:
+
+```
+$ vmstat 5
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  0      0 4326768 334228 5050952    0    0     8    19   80   10  4  1 94  0  0
+ 0  0      0 4365520 334260 5054468    0    0     0   125 2140 3434  4  1 94  0  0
+ 1  0      0 4382400 334276 5068940    0    0     0    77 2102 3988  3  1 95  0  0
+ 1  0      0 4434000 334288 5052908    0    0     0    25 2859 4278  6  1 92  0  0
+ 0  0      0 4391576 334304 5086484    0    0     0   110 2899 6480  8  3 90  0  0
+
+```
+
+- `procs`
+  - The number of runnable processes (`r`) and the number of blocked (`b`) processes
+- `memory`
+  - The core memory output distinguishing:
+    - Total kbs swapped to disk
+    - Total kbs free
+    - Total kbs currently in [buffer](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) and not written
+    - Total amount of virtual memory in the [cache](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers)
+- `swap`
+  - Distinguishes amount of memory [swapped](/Operating_Systems/Disks/Swap_space.md) in (`si`) to memory and swapped out (`so`) to disk
+- `io`
+  - Disk actions
+  - Amount of data read from harddisk (`bi`)
+  - Amount of data written to harddisk (`bo`)
+- `system`
+  - The number of times the kernel switches to kernel code
+- `cpu`
+  - Percentage of the different CPU behaviours:
+    - Responding to user tasks (`us`)
+    - Time that it is idle (`id`)
+
 ## Files being used by active processes: `lsof`
 
 `lsof` stands for _list open files_. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:
@@ -105,26 +144,3 @@ $ free
 Mem:        16099420     5931512     5039344     2046460     5128564     7781904
 Swap:        3145724           0     3145724
 ```
-
-### `vmstat` : virtual memory statistics
-
-Pretty much the same as `free` but in the context of virtual memory. It also distinguishes between buffer and cache.
-
-The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:
-
-```
-$ vmstat 5
-procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
- r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
- 2  0      0 4326768 334228 5050952    0    0     8    19   80   10  4  1 94  0  0
- 0  0      0 4365520 334260 5054468    0    0     0   125 2140 3434  4  1 94  0  0
- 1  0      0 4382400 334276 5068940    0    0     0    77 2102 3988  3  1 95  0  0
- 1  0      0 4434000 334288 5052908    0    0     0    25 2859 4278  6  1 92  0  0
- 0  0      0 4391576 334304 5086484    0    0     0   110 2899 6480  8  3 90  0  0
-
-```
-
-- `r` stands for the number of runnable processes
-- `b` stands for the number of blocked processes: those waiting for I/O to complete before proceeding.
-- `si/so`: the amount of memory swapped in (from disk) and swapped out (to disk)
-- `bi/ bo`: the amount of blocks received from a device (`bi`), the amoung of blocks sent to a device (`bo`)
