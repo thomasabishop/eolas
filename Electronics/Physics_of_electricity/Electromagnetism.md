@@ -10,4 +10,32 @@ For a long time electricity and magnetism were thought to be separate forces. In
 
 The core of the relationship is that a changing magnetic field produces an electric field and conversely, a changing electric field produces a magnetic field.
 
-https://www.britannica.com/science/electromagnetism
+## Electric charge
+
+### Coulomb's Laws
+
+The electric force is already familiar to us: it is the force that is created by the movement of electrons from negatively charged atoms to positively charged atoms. The current is the flow of this moving charge.
+
+> Every constituent of matter has an electric charge with a value that can be positive, negative, or zero. For example, electrons are negatively charged, and atomic nuclei are positively charged. Most bulk matter has an equal amount of positive and negative charge and thus has zero net charge.
+
+The properties of charge as the embodiment of a law of nature are defined in [Coulomb's Laws](/Electronics/Physics_of_electricity/Coulombs_Laws.md).
+
+### Charge conservation
+
+In addition to Coulomb's Laws is the notion of **charge conservation**, another fundamental law of nature.
+
+This basically means that the overall charge of an isolated system cannot change. If you have a system that has a charge equillibrium and you introduce disequillibrium by adding a postively charged particle, a particle with a negative charge of the same magnitude will be created at the same time, thus the overall charge is conserved. (This is due to the way that radiation interacts with matter.)
+
+## Relation of forces to fields
+
+A field is a property of space and forces act within fields. A field quantity has a numerical value at each point of space and may vary over time.
+
+The value of the electric field is a **vector**: a quantity that has both a magnitude (a size value: being greater or smaller relative to something elese) and direction. The value of the electric field at a point in space equals the fore that would be exerted on a unit charge at that poisition in state.
+
+Every charged object sets up an electric field in the surrounding space. A second charge “feels” the presence of this field. The second charge is either attracted toward the initial charge or repelled from it, depending on the signs of the charges. Of course, since the second charge also has an electric field, the first charge feels its presence and is either attracted or repelled by the second charge too.
+
+The electric field from a charge is directed away from the charge when the charge is positive and toward the charge when it is negative.
+
+### Magnestism
+
+https://www.britannica.com/science/electromagnetism/Coulombs-law
