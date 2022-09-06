@@ -1,8 +1,9 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
-  - theorems-axioms-laws
+tags:
+  - prealgebra
+  - theorems
 ---
 
 **Let $a$ represent any member of $\mathbb{W}$ or $\mathbb{Z}$ then:**

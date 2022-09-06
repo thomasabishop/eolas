@@ -1,9 +1,9 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
   - fractions
-  - negative-numbers
 ---
 
 # Negative fractions

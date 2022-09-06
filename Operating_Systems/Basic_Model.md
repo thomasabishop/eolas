@@ -1,10 +1,11 @@
 ---
-tags:
+categories:
   - Operating_Systems
   - Linux
+tags:
 ---
 
-# Basic model of a *nix operating system
+# Basic model of a \*nix operating system
 
 We can abstract the Linux OS into three operational levels or tiers, from the bottom up:
 
@@ -37,4 +38,4 @@ We can abstract the Linux OS into three operational levels or tiers, from the bo
 </dl>
 
 !! Add info on kernel mode and user mode
-https://www.geeksforgeeks.org/user-mode-and-kernel-mode-switching/ 
+https://www.geeksforgeeks.org/user-mode-and-kernel-mode-switching/

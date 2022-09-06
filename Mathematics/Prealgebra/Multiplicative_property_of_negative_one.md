@@ -1,13 +1,13 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
-  - theorems-axioms-laws
+tags:
+  - prealgebra
+  - theorems
 ---
 
 # The Multiplicative Property of Negative One
 
- > 
- > **Let $a$ represent any member of $\mathbb{Z}$, then:**
+> **Let $a$ represent any member of $\mathbb{Z}$, then:**
 
 $$ (-1) \cdot a = -a $$

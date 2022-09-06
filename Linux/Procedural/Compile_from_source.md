@@ -1,8 +1,9 @@
 ---
 categories:
-  - Linux 
-tags: [make]
+  - Linux
+tags: [compilers]
 ---
+
 # Compile package from source
 
 1. Clone the repo from GitHub

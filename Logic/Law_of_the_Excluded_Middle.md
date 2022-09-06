@@ -1,11 +1,11 @@
 ---
 categories:
-  - Logic 
-tags: [propositional-logic]
+  - Mathematics
+tags: [theorems, logic]
 ---
 
- > 
- > Every proposition has to be either true or false. There can be no middle ground.
- > $$
- > P \lor \sim P
- > $$
+> Every proposition has to be either true or false. There can be no middle ground.
+>
+> $$
+> P \lor \sim P
+> $$

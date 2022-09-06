@@ -1,11 +1,11 @@
 ---
 categories:
-  - Logic 
-tags: [propositional-logic]
+  - Mathematics
+tags: [logic, theorems]
 ---
 
-
- > A proposition cannot be true and false at the same time. 
- > $$
- > \\sim (P & \sim P)
- > $$
+> A proposition cannot be true and false at the same time.
+>
+> $$
+> \\sim (P & \sim P)
+> $$

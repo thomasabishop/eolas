@@ -1,10 +1,11 @@
 ---
 categories:
-  - Linux 
+  - Linux
+  - Networks
 tags: []
 ---
 
-# Bluetooth 
+# Bluetooth
 
 ## Connect to devices with `bluetoothctl`
 
@@ -12,13 +13,15 @@ tags: []
 # Start bluetooth first
 bluetoothctl power on
 ```
-Then: 
+
+Then:
 
 ```bash
-# Launch bluetoothctl 
+# Launch bluetoothctl
 bluetoothctl
 ```
-This initiates `[bluetooth] #` prompt. Then follow this sequence: 
+
+This initiates `[bluetooth] #` prompt. Then follow this sequence:
 
 ```bash
 [bluetooth]# agent on

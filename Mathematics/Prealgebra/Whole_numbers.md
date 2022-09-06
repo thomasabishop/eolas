@@ -1,7 +1,8 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
 ---
 
 # The set of whole numbers
@@ -12,8 +13,7 @@ $$ \mathbb{W} = {0, 1, 2, 3, ...} $$
 
 # The properties of $\mathbb{W}$
 
- > 
- > In mathematics, a **property** is any characteristic that applies to a given set.
+> In mathematics, a **property** is any characteristic that applies to a given set.
 
 ## The commutative property
 

@@ -1,8 +1,9 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
-  - theorems-axioms-laws
+tags:
+  - theorems
+    - prealgebra
 ---
 
 # The Property of Additive Identity

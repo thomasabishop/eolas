@@ -1,7 +1,8 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
 ---
 
 ## The set of natural numbers

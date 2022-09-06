@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-tags: [sytems-programming]
+tags: [systems-programming]
 ---
 
 # Monitoring processes and resources

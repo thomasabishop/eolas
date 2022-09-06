@@ -1,7 +1,8 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
   - factors
   - divisors
 ---
@@ -12,26 +13,26 @@ The terms **factor** and **divisor** are used interchangeably. They are differen
 
 ### Divisors
 
- > 
- > For a number $n$, its divisor is any number that divides $n$ evenly without remainder: $$ \frac{a}{b} = 0 $$
+> For a number $n$, its divisor is any number that divides $n$ evenly without remainder: $$ \frac{a}{b} = 0 $$
 
 In this operation, $a$ is the **divisor**, $b$ is the **dividend** and $0$ is the **quotient**.
 
 ### Factors
 
- > 
- > For a given number $n$, its factors are any pair of numbers that when multiplied together return $n$ as the product: $$ a \cdot b = n $$
+> For a given number $n$, its factors are any pair of numbers that when multiplied together return $n$ as the product: $$ a \cdot b = n $$
 
 We can see the relationship consists in the fact that factors are associated with multiplication and divisors are associated with division: two different perspectives on the same number relationships.
 
 For example, 6 is both a factor and divisor of 18 and 24. To be precise, it is the greatest common divisor of these two numbers.
 
-As a divisor: 
+As a divisor:
+
 $$
 \\frac{18/6}{24/6} = \frac{3}{4}
 $$
 
 As a factor:
+
 $$
 \\frac{3 \cdot 6}{4 \cdot 6} = \frac{18}{24}
 $$
@@ -40,14 +41,13 @@ When we divide by the common divisor is acts as a divisor. When we multiply by t
 
 ## Greatest common divisor
 
- > 
- > For two two integers $a, b$, $D$ is a common divisor of $a$ and $b$ if it is a divisor of both. The greatest common divisor is the largest value that $D$ can be whilst remaining a divisor to both $a$ and $b$.
+> For two two integers $a, b$, $D$ is a common divisor of $a$ and $b$ if it is a divisor of both. The greatest common divisor is the largest value that $D$ can be whilst remaining a divisor to both $a$ and $b$.
 
 ### Demonstration
 
-*Find the greatest common divisor of $18$ and $24$* 
+_Find the greatest common divisor of $18$ and $24$_
 
-The divisors of 18: 
+The divisors of 18:
 $$1, 2, 3, 6, 9, 18$$
 
 The divisors of 24:
@@ -56,7 +56,7 @@ $$ 1, 2, 3, 4, 6, 8, 12, 24$$
 Thus the common divisors are:
 $$ 1, 2, 3, 6 $$
 
-The largest value in the above set is 6, thus 6 is the greatest common divisor. 
+The largest value in the above set is 6, thus 6 is the greatest common divisor.
 
 ## Heuristics for finding divisors
 

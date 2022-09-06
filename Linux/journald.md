@@ -1,9 +1,8 @@
 ---
 categories:
-  - Linux 
-tags: [journal, systemd, sytems-programming]
+  - Linux
+tags: [journaling, systemd, systems-programming]
 ---
-
 
 # `journald`
 
@@ -11,11 +10,9 @@ tags: [journal, systemd, sytems-programming]
 
 ![](/img/journald.png)
 
-
-## `journalctl` 
+## `journalctl`
 
 We use `journalctl` to access the logs. The command by itself outputs the entire log which will be huge and hard to scroll through. We can refine the results with modifiers.
-
 
 ### View logs for a specific process with pid
 
@@ -24,6 +21,7 @@ journalctl _PID=1234
 ```
 
 ### View logs for a specific time period
+
 This can be really helpful since you can bracket the most recent events which will be more memorable.
 
 ```bash
@@ -31,16 +29,18 @@ journalctl -S -1h
 ```
 
 ### View logs for a specfic systemd unit
+
 ```bash
 journalctl -u cronie.service
 ```
 
-### View boot logs 
+### View boot logs
+
 ```bash
 journalctl -b
 ```
 
-#### Identify specific boot 
+#### Identify specific boot
 
 ```bash
 journalctl --list-boots

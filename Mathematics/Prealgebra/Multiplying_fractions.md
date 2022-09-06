@@ -1,18 +1,19 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
   - fractions
   - multiplication
 ---
 
-# Multiplying fractions 
+# Multiplying fractions
 
- To find the product of two fractions $\frac{a}{b}$ and $\frac{c}{d}$ multiply their numerators and denominators and then reduce: 
- 
- $$\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}$$
+To find the product of two fractions $\frac{a}{b}$ and $\frac{c}{d}$ multiply their numerators and denominators and then reduce:
 
-###  Example
+$$\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}$$
+
+### Example
 
 $$
 \frac{1}{3} \cdot \frac{2}{5} = \frac{1 \cdot 2}{3 \cdot 5} = \frac{2}{15}
@@ -23,17 +24,17 @@ $$
 The example above did not require a reduction, so here is a more complex example:
 
 $$
-\frac{14}{15} \cdot \frac{30}{140} = \frac{420}{2100} 
+\frac{14}{15} \cdot \frac{30}{140} = \frac{420}{2100}
 $$
 
-It would be laborious to reduce such a large product using factor trees or the repeated application of divisors, as defined in [reducing fractions](./Reducing_fractions.md).  We can use a more efficient method.
+It would be laborious to reduce such a large product using factor trees or the repeated application of divisors, as defined in [reducing fractions](./Reducing_fractions.md). We can use a more efficient method.
 This method can be applied at the point at which we conduct the multiplication rather than afterwards once we have the product. We express the the initial multiplicands as prime factors:
 
 $$
-\frac{14}{15} \cdot \frac{30}{140} = \frac{(2 \cdot 7) \cdot (2 \cdot 3 \cdot 5) }{(3 \cdot 5) \cdot (2 \cdot  2 \cdot 7 \cdot 5)} 
+\frac{14}{15} \cdot \frac{30}{140} = \frac{(2 \cdot 7) \cdot (2 \cdot 3 \cdot 5) }{(3 \cdot 5) \cdot (2 \cdot  2 \cdot 7 \cdot 5)}
 $$
 
-We now have the product in factorised form before we have applied the multiplication so we can go ahead and cancel: 
+We now have the product in factorised form before we have applied the multiplication so we can go ahead and cancel:
 
 $$
 \frac{\cancel{2}, \cancel{7}, \cancel{2}, \cancel{3}, \cancel{5}}{\cancel{3}, \cancel{5}, \cancel{2}, \cancel{2}, \cancel{7}, 5} = \frac{1}{5}
@@ -43,23 +44,24 @@ $$
 
 ## Example of multiplying fractions with negative fractions containing variables
 
-Calculate: 
+Calculate:
 $$- \frac{6x}{55y} \cdot - \frac{110y^2}{105x^2}$$
 
-First multiply in place: 
-$$ 
+First multiply in place:
+
+$$
 \frac{(3 \cdot 2 \cdot x) \cdot (5  \cdot 2 \cdot 11 \cdot y \cdot y)}{(5 \cdot 11 \cdot y) \cdot (7 \cdot 5 \cdot 3 \cdot x \cdot x)}
 $$
 
-Then cancel: 
+Then cancel:
 
-$$ 
-\frac{(\cancel{3} \cdot 2 \cdot \cancel{x}) \cdot (\cancel{5}  \cdot 2 \cdot \cancel{11} \cdot \cancel{y} \cdot y)}{(\cancel{5} \cdot \cancel{11} \cdot \cancel{y}) \cdot (7 \cdot 5 \cdot \cancel{3} \cdot \cancel{x} \cdot x)} = 
+$$
+\frac{(\cancel{3} \cdot 2 \cdot \cancel{x}) \cdot (\cancel{5}  \cdot 2 \cdot \cancel{11} \cdot \cancel{y} \cdot y)}{(\cancel{5} \cdot \cancel{11} \cdot \cancel{y}) \cdot (7 \cdot 5 \cdot \cancel{3} \cdot \cancel{x} \cdot x)} =
 \frac{2  \cdot 2 \cdot y}{7 \cdot 5 \cdot x}
 $$
 
-Then reduce: 
+Then reduce:
 
 $$
-\frac{2  \cdot 2 \cdot y}{7 \cdot 5 \cdot x} = \frac{4y}{35x} 
+\frac{2  \cdot 2 \cdot y}{7 \cdot 5 \cdot x} = \frac{4y}{35x}
 $$

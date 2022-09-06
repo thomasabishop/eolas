@@ -1,10 +1,11 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
   - fractions
   - division
-  - theorems-axioms-laws
+  - theorems
 ---
 
 # Recipricols

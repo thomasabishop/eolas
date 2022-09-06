@@ -1,13 +1,13 @@
 ---
 categories:
-  - Linux 
-tags: []
+  - Linux
+tags: [package-management]
 ---
-
 
 # Pacman
 
 ## List all installed packages
+
 ```
 pacman -Qe
 ```

@@ -1,15 +1,16 @@
 ---
 categories:
-  - Logic 
-tags: [propositional-logic]
+  - Mathematics
+tags: [logic]
 ---
+
 ## Rationale
 
 Like [truth-tables](Truth-tables.md), truth-trees are a means of graphically representing the logical relationships that may obtain between propositions. Truth-trees and truth-tables complement each other and which method you choose depends on which logical property you are seeking to derive.
 
 Whilst truth-tables have the benefit of being exhaustive - every possible truth assignment is factored into the representation - their complexity grows exponentially with each additional proposition they contain. This can make manually constructing truth tables long-winded and prone to mistakes.
 
-Truth-trees are less onerous but they lack the exhaustive scope of a truth-table. They are more targeted and are best used for demonstrating *that something is the case* rather than *all the possible states that could be the case*. For example, a truth tree will tell us that a set *S is logically consistent* whereas a truth-table will tell us that *S is consistent on the following three assignments.*
+Truth-trees are less onerous but they lack the exhaustive scope of a truth-table. They are more targeted and are best used for demonstrating _that something is the case_ rather than _all the possible states that could be the case_. For example, a truth tree will tell us that a set _S is logically consistent_ whereas a truth-table will tell us that _S is consistent on the following three assignments._
 
 ## Logical consistency
 
@@ -53,11 +54,9 @@ A tree with at least one completed open branch
 
 Using the definitions above, we can now define truth-functional consistency and inconsistency in terms of truth trees:
 
- > 
- > A finite set ($\Gamma$ ) of sentences is truth-functionally inconsistent if $\Gamma$ is a closed tree
+> A finite set ($\Gamma$ ) of sentences is truth-functionally inconsistent if $\Gamma$ is a closed tree
 
- > 
- > A finite set ($\Gamma$ ) of sentences is truth-functionally consistent if $\Gamma$ is an open tree
+> A finite set ($\Gamma$ ) of sentences is truth-functionally consistent if $\Gamma$ is an open tree
 
 ## Examples
 
@@ -69,19 +68,19 @@ The following is a truth tree for the set ${P \lor Q, \sim P }$:
 
 ### Interpretation
 
-* We decompose the disjunction at line 1 on line 3. We tick off the compound sentence to indicate that it is now decomposed and no longer under consideration.
-* Both P and its negation exist on a single branch (at line 2 and line 3). This makes it a closed branch. We indicate this by the X beneath the branch that is closed, citing the source of the closure by line number.
-* The rightward branch is a completed open branch given the decomposition at 3 and the lack of negation of Q. Overall this makes the tree an open tree.
+- We decompose the disjunction at line 1 on line 3. We tick off the compound sentence to indicate that it is now decomposed and no longer under consideration.
+- Both P and its negation exist on a single branch (at line 2 and line 3). This makes it a closed branch. We indicate this by the X beneath the branch that is closed, citing the source of the closure by line number.
+- The rightward branch is a completed open branch given the decomposition at 3 and the lack of negation of Q. Overall this makes the tree an open tree.
 
 As the set gives us an open tree, it must be truth-functionally consistent. If this is the case we should be able to determine the partial assignment in which each set member is true. Given that Q is not negated the assignment of consistency will contain Q but we have both P and ~P. This means there are two possible assignments where the set is consistent: $P, Q$ and $\sim P, Q$. This is confirmed by the truth-table:
 
-````
+```
 P	Q				P	∨	~	P				Q
 T	T					T						T     *
 T	F					T						F
 F	T					T						T     *
 F	F					T						F
-````
+```
 
 **Any time there is an open tree with a closed branch it will be the case that the negated sentences of the closed branch will appear both as** $S$ and $\sim S$ i**n the resultant assignment.**
 
@@ -95,22 +94,22 @@ The following is a truth tree for the set ${A & \sim B, C, \sim A \lor \sim B }$
 
 ### Interpretation
 
-* The two molecular set members are decomposed. The disjunction (line 3) results in a branching tree. The conjunction (line 1) results in the continuation of the trunk.
-* Both branches are completed making it a completed tree. As each branch is closed this is a closed tree.
+- The two molecular set members are decomposed. The disjunction (line 3) results in a branching tree. The conjunction (line 1) results in the continuation of the trunk.
+- Both branches are completed making it a completed tree. As each branch is closed this is a closed tree.
 
 As this is a closed tree, the set is not truth-functionally consistent. This is confirmed by the truth table where there is no partial assignment where all set members are true.
 
-````
-A	B	C				A	&	~	B				C				~	A	∨	~	C	
-T	T	T					F						T						F			
-T	T	F					F						F						T			
-T	F	T					T						T						F			
-T	F	F					T						F						T			
-F	T	T					F						T						T			
-F	T	F					F						F						T			
-F	F	T					F						T						T			
+```
+A	B	C				A	&	~	B				C				~	A	∨	~	C
+T	T	T					F						T						F
+T	T	F					F						F						T
+T	F	T					T						T						F
+T	F	F					T						F						T
+F	T	T					F						T						T
+F	T	F					F						F						T
+F	F	T					F						T						T
 F	F	F					F						F						T
-````
+```
 
 ## Truth tree decomposition rules
 
@@ -196,8 +195,7 @@ For a given finite set $\Gamma$, $\Gamma$ is logically consistent just if all of
 
 When we wish to assess [logical falsity](Logical%20truth%20and%20falsity.md#logical-falsity) we are not focused on sets however, we are interested in a property of a sentence. However we can easily construe single sentences as unit sets: sets with a single member. With this in mind and the above accounts of consistency and logical falsity we are equipped to express logical falsity in terms of truth-trees with the following rule:
 
- > 
- > A sentence $P$ is logically false if and only if the unit set ${ P }$ has a closed tree
+> A sentence $P$ is logically false if and only if the unit set ${ P }$ has a closed tree
 
 A logically false sentence cannot be true on any assignment. This is the same thing as an inconsistent set. Thus it will be represented in a truth tree as inconsistency which is disclosed via a closed tree.
 
@@ -205,26 +203,23 @@ A logically false sentence cannot be true on any assignment. This is the same th
 
 ### Logical truth
 
-For a sentence $P$ to be [logically true](Logical%20truth%20and%20falsity.md#logical-truth), there must be no possible assignment in which $P$ is false. We express this informally by saying *it is not possible to consistently deny $P$.* We know that in terms of truth trees an inconsistent set is a closed tree therefore a unit set of ${ P }$ is logically true if ${ \sim P }$ is a closed tree. This is to say: if the negation of $P$ is inconsistent.
+For a sentence $P$ to be [logically true](Logical%20truth%20and%20falsity.md#logical-truth), there must be no possible assignment in which $P$ is false. We express this informally by saying _it is not possible to consistently deny $P$._ We know that in terms of truth trees an inconsistent set is a closed tree therefore a unit set of ${ P }$ is logically true if ${ \sim P }$ is a closed tree. This is to say: if the negation of $P$ is inconsistent.
 
- > 
- > A sentence $P$ is logically true if and only if the set ${ \sim P }$ has a closed tree
+> A sentence $P$ is logically true if and only if the set ${ \sim P }$ has a closed tree
 
 ### Logical indeterminacy
 
 [Indeterminacy](Indeterminacy.md) follows from the two definitions above; we do not require any additional apparatus. We recall that a sentence $P$ is logically indeterminate just if it is neither logically true or logically false. Thus the truth tree for an indeterminate sentence is straightforward:
 
- > 
- > A sentence $P$ is logically indeterminate if and only if neither the set  ${ P }$ nor the set ${ \sim P }$ has a closed tree
+> A sentence $P$ is logically indeterminate if and only if neither the set  ${ P }$ nor the set ${ \sim P }$ has a closed tree
 
 This follows because a closed tree for  ${ P }$ means it is not logically false and an open tree for ${ \sim P }$ means it is not logically true. So if it is neither of these things, $P$ must be indeterminate.
 
 ### Logical equivalence
 
-Recall that $P$ and $Q$ are [logically equivalent](Logical%20equivalence.md)  just if there is no truth assignment on which one is true and the other is false. We know from the [material biconditional shorthand](Corresponding%20material%20and%20biconditional.md#corresponding-material-biconditional) that this state of affairs can be expressed as $P \equiv Q$ and that if this compound sentence is true on every assignment then both simple sentences are equivalent. But ‘true on every assignment’ is another way of saying *logically true* since there is no possibility of a false assignment. We already know what logical truth looks like as a truth tree: it is a closed tree for the negation of the sentence being tested. Therefore, to test the logical equivalence of two sentences it is necessary to construct a truth tree for the negation of the sentences conjoined by the biconditional (i.e. $\sim (P \equiv Q)$ )and see if this results in a closed tree. If it does, the two sentences are logically equivalent.
+Recall that $P$ and $Q$ are [logically equivalent](Logical%20equivalence.md) just if there is no truth assignment on which one is true and the other is false. We know from the [material biconditional shorthand](Corresponding%20material%20and%20biconditional.md#corresponding-material-biconditional) that this state of affairs can be expressed as $P \equiv Q$ and that if this compound sentence is true on every assignment then both simple sentences are equivalent. But ‘true on every assignment’ is another way of saying _logically true_ since there is no possibility of a false assignment. We already know what logical truth looks like as a truth tree: it is a closed tree for the negation of the sentence being tested. Therefore, to test the logical equivalence of two sentences it is necessary to construct a truth tree for the negation of the sentences conjoined by the biconditional (i.e. $\sim (P \equiv Q)$ )and see if this results in a closed tree. If it does, the two sentences are logically equivalent.
 
- > 
- > Sentences $P$ and $Q$ are truth-functionally equivalent if and only if the set $\sim (P \equiv Q)$ has a closed tree
+> Sentences $P$ and $Q$ are truth-functionally equivalent if and only if the set $\sim (P \equiv Q)$ has a closed tree
 
 ![logical-equivalence-tree.svg](../img/logical-equivalence-tree.svg)
 
@@ -234,8 +229,6 @@ Let’s remind ourselves of the meaning of truth-functional [entailment](Validit
 
 As with the previous properties, to express validity and entailment in terms of truth trees we need to express these concepts in the language of logical consistency. $\Gamma$ entails $P$ just if one cannot consistently assert $\Gamma$ whilst denying $P$. This is to say that the set $\Gamma \cup {\sim P}$ is inconsistent. So we just need a closed truth tree for $\Gamma \cup {\sim P}$ to demonstrate the validity of this set.
 
- > 
- > A finite set of sentences $\Gamma$ truth-functionally entails a sentence $P$ if and only if the set $\Gamma \cup {\sim P}$ has a closed truth tree.
+> A finite set of sentences $\Gamma$ truth-functionally entails a sentence $P$ if and only if the set $\Gamma \cup {\sim P}$ has a closed truth tree.
 
- > 
- > An argument is truth functionally valid if and only if the set consisting of the premises and the negation of the conclusion has a closed truth tree.
+> An argument is truth functionally valid if and only if the set consisting of the premises and the negation of the conclusion has a closed truth tree.

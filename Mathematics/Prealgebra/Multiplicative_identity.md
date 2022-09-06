@@ -1,8 +1,9 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
-  - theorems-axioms-laws
+tags:
+  - prealgebra
+  - theorems
 ---
 
 # The Property of Multiplicative Identity

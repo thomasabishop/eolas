@@ -1,7 +1,8 @@
 ---
-tags:
+categories:
   - Mathematics
-  - Prealgebra
+tags:
+  - prealgebra
 ---
 
 ## Grouping symbols
