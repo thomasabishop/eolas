@@ -1,6 +1,8 @@
 ---
+categories:
+  - Computer Architecture
 tags:
-  - Theory_of_Computation
+  - theory-of-computation
   - turing
 ---
 
@@ -17,14 +19,14 @@ For example:
 
 ### State 2
 
-* If 0 then erase
-* Write 1 then move right
-* Go to state 5
+- If 0 then erase
+- Write 1 then move right
+- Go to state 5
 
 ### State 5
 
-* If 1, then erase
-* Write 0 then move left
-* Go to state *n*
+- If 1, then erase
+- Write 0 then move left
+- Go to state _n_
 
 Alan Turing proved that **any problem that is computable** can be computed by a Turing Machine using this simple system.

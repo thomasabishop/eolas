@@ -1,28 +1,32 @@
 ---
-tags:
-  - Software_Engineering
+categories:
+  - Software Engineering
+tags: [semver]
 ---
-# Semantic versioning 
+
+# Semantic versioning
 
 ```
 3.4.1 === major.minor.patch
 ```
 
-* Major
-  
-  * New feature which may potentially cause breaking changes to applications dependent on the previous major version.
-* Minor
-  
-  * New features that do not break the existing API 
-* Patch
-  
-  * Bug fixes for the current minor version 
+- Major
+
+  - New feature which may potentially cause breaking changes to applications dependent on the previous major version.
+
+- Minor
+
+  - New features that do not break the existing API
+
+- Patch
+
+  - Bug fixes for the current minor version
 
 ## Glob patterns for versioning
 
 ### Caret
 
-Interested in any version so long as the major version remains at $n$. E.g if we are at `^4.2.1` and we upgrade, we are ok with `4.5.3` or `4.8.2`. We are not bothered about the minor or patch version. 
+Interested in any version so long as the major version remains at $n$. E.g if we are at `^4.2.1` and we upgrade, we are ok with `4.5.3` or `4.8.2`. We are not bothered about the minor or patch version.
 
 This is equivalent to `4.x`
 
@@ -32,4 +36,4 @@ Interested in any patch version within set major and minor parameters. For examp
 
 ### No tilde or caret
 
-Use the *exact* version specified
+Use the _exact_ version specified

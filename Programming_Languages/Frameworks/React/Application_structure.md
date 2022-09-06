@@ -1,6 +1,7 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - javascript
   - react
 ---

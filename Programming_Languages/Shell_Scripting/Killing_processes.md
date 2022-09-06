@@ -1,6 +1,7 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - shell
 ---
 
@@ -8,7 +9,7 @@ tags:
 
 For example a local server.
 
-````bash
+```bash
 sudo lsof -t -i:8000
 # List files and proces ID (-t) and internet connections (-i) on port number
 
@@ -17,4 +18,4 @@ $ 7890
 
 sudo kill -9 7890
 # Kill the process that is running there
-````
+```

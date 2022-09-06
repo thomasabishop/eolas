@@ -1,6 +1,7 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - shell
 ---
 
@@ -11,9 +12,11 @@ tags:
 ## Main syntax
 
 ### No options
+
 Without options specified, `find` alone will return a recursive index of all the files in the directory from which it is run.
 
 ### Sub-directory
+
 If we pass a directory to `find` it will repeat the above process but specifically for that directory.
 
 ```bash
@@ -23,9 +26,11 @@ i3/config
 ```
 
 ### Filters
+
 We can specify flags as filters (known as 'tests' within the program).
 
 #### Type
+
 Filter by type: file or directory
 
 ```
@@ -40,6 +45,7 @@ $ find i3 -type f
 ```
 
 #### Filename
+
 This is the most frequent use case: filter files by name with globbing.
 
 ```bash
@@ -59,6 +65,7 @@ $ find -iname "*.JS"
 ```
 
 #### Path
+
 As above but this time includes directory names in the match. `ipath` is the case-insensitive version.
 
 ```bash
@@ -68,6 +75,7 @@ utils/do-something.js
 ```
 
 ### Operators
+
 We can combine `find` commands by using logical operators: `-and`, `-or`, `-not`. For example:
 
 ```bash
@@ -82,6 +90,7 @@ dfdf
 ```
 
 ## Actions
+
 Using the `exec` keyword we can run a program against the files that are returned from `find`.
 
 In this syntax we use `{}` as a placeholder for the path of the file that is matched. We use `;` (escaped) to indicate the end of the operation.
@@ -93,7 +102,9 @@ This script deletes the files that match the filter criteria:
 ```bash
 $ find -name "*.js" -exec rm {} \;
 ```
+
 This script finds all the files with the substring 'config' in their name and writes their file size to a file.
+
 ```bash
-find -name '*config*' -exec wc -c {} \; > config-sizes 
+find -name '*config*' -exec wc -c {} \; > config-sizes
 ```

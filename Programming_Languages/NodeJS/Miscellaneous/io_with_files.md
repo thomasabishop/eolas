@@ -1,49 +1,50 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - backend
   - node-js
 ---
 
 # I/O with files
+
 ## Read file from directory (JSON)
 
-````js
-const fs = require("fs");
+```js
+const fs = require('fs');
 
 // Get raw JSON
-let inputJson = fs.readFileSync("source.json");
+let inputJson = fs.readFileSync('source.json');
 
 // Convert to JS
 let data = JSON.parse(inputJson);
-````
+```
 
 ## Write file to directory (JSON)
 
-````js
+```js
 let newFile = 'new.json';
 
-// Write JS object to JSON file as JSON 
+// Write JS object to JSON file as JSON
 fs.writeFileSync(writePath, JSON.stringify(alienblood));
-
-````
+```
 
 ## Delete file from directory
 
-````js
+```js
 let filePath = 'file-to-delete.json';
 fs.unlinkSync(filePath);
-````
+```
 
 ## Applications
 
 ### Overwrite file
 
-````js
+```js
 if (fs.existsSync(writePath)) {
-    fs.unlinkSync(writePath);
-    fs.writeFileSync(writePath, JSON.stringify(someJS));
-  } else {
-    fs.writeFileSync(writePath, JSON.stringif(someJS));
-  }
-````
+  fs.unlinkSync(writePath);
+  fs.writeFileSync(writePath, JSON.stringify(someJS));
+} else {
+  fs.writeFileSync(writePath, JSON.stringif(someJS));
+}
+```

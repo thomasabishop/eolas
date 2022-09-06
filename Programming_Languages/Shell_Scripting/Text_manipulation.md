@@ -1,6 +1,7 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - shell
 ---
 
@@ -8,30 +9,30 @@ tags:
 
 If you have a `.txt` file containing text strings, each on a new line you can use the sort function to quickly put them in alphabetical order:
 
-````bash
+```bash
 sort file.txt
-````
+```
 
 Note that this will not save the sort, it only presents it as a standard output. To save the sort you need to direct the sort to a file in the standard way:
 
-````bash
+```bash
 sort file.txt > output.txt
-````
+```
 
 ### Options
 
-* `-r`
-  * reverse sort
-* `c`
-  * check if file is already sorted. If not, it will highlight the strings which are not sorted
+- `-r`
+  - reverse sort
+- `c`
+  - check if file is already sorted. If not, it will highlight the strings which are not sorted
 
 ## Find and replace: `sed`
 
 The `sed` programme can be used to implement find and replace procedures. In `sed`, find and replace are covered by the substitution option: `/s` :
 
-````bash
+```bash
 sed ‘s/word/replacement word/’ file.txt
-````
+```
 
 This however will only change the first instance of word to be replaced, in order to apply to every instance you need to add the global option: `-g` .
 
@@ -41,9 +42,9 @@ Alternatively, you can use the `-i` option which will make the changes take plac
 
 Note that this will overwrite the original version of the file and it cannot be regained. If this is an issue then it is recommended to include a backup command in the overall argument like so:
 
-````bash
+```bash
 sed -i.bak ‘s/word/replacement word/’ file.txt
-````
+```
 
 This will create the file `file.txt.bak` in the directory you are working within which is the original file before the replacement was carried out.
 
@@ -51,9 +52,9 @@ This will create the file `file.txt.bak` in the directory you are working within
 
 We can use the `sort -u` command can be used to remove duplicates:
 
-````bash
+```bash
 sort -u file.txt
-````
+```
 
 It is important to sort before attempting to remove duplicates since the `-u` flag works on the basis of the strings being adjacent.
 
@@ -61,17 +62,17 @@ It is important to sort before attempting to remove duplicates since the `-u` fl
 
 Suppose you have a file containing 1000 lines. You want to break the file up into five separate files, each containing two hundred lines. You can use `split` to accomplish this, like so:
 
-````bash
+```bash
 split -l 200 big-file.txt new-files
-````
+```
 
 `split` will categorise the resulting five files as follows:
 
-* new-file-aa,
-* new-file-ab
-* new-file-ac,
-* newfile-ad,
-* new-file-ae.
+- new-file-aa,
+- new-file-ab
+- new-file-ac,
+- newfile-ad,
+- new-file-ae.
 
 If you would rather have numeric suffixes, use the option `-d` . You can also split a file by its number of bytes, using the option `-b` and specifying a constituent file size.
 
@@ -79,17 +80,17 @@ If you would rather have numeric suffixes, use the option `-d` . You can also sp
 
 We can use `cat` read multiple files at once and then append a redirect to save them to a file:
 
-````bash
+```bash
 cat file_a.txt file_b.txt file_c.txt > merged-file.txt
-````
+```
 
 ## Count lines, words, etc: `wc`
 
 To count words:
 
-````bash
+```bash
 wc file.txt
-````
+```
 
 When we use the command three numbers are outputted, in order: lines, words, bytes.
 

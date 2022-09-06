@@ -1,6 +1,7 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - backend
   - node-js
   - node-modules
@@ -10,10 +11,10 @@ tags:
 
 When Node runs each of our module files are wrapped within an immediately-invoked function expression that has the following parameters:
 
-````js
+```js
 (function (exports, require, module, __filename, __dirname))
 
-````
+```
 
 This is called the **module wrapper function**
 

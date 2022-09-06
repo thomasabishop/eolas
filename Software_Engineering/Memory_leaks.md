@@ -1,6 +1,7 @@
 ---
-tags:
-  - Software_Engineering
+categories:
+  - Software Engineering
+tags: [memory]
 ---
 
 # Memory leaks

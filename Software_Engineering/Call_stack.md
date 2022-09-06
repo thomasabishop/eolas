@@ -1,7 +1,7 @@
 ---
+category: Software Engineering
 tags:
-  - Software_Engineering
-  - call-stack
+  - callstack
 ---
 
 # The call-stack
@@ -11,20 +11,21 @@ A [stack](/Data_Structures/Stacks.md) data structure that holds the information 
 ## Example
 
 ```js
-function greet(who){
-	console.log("Hello " + who);
+function greet(who) {
+  console.log('Hello ' + who);
 }
 
-greet("Harry");
+greet('Harry');
 
-console.log("Bye");
+console.log('Bye');
 ```
-### Breakdown 
+
+### Breakdown
+
 1. Interpreter receives call to `greet()`
-2. Goes to the definition of this function   (`function greet(who)...`) 
+2. Goes to the definition of this function (`function greet(who)...`)
 3. Executes the `console.log` within this function
 4. Returns to the location that called it (`greet("Harry")`)
 5. Finds that there is nothing else to do in this function so moves to next function: the `console.log("bye")`
 6. Executes
 7. Returns to line that called it. Finds nothing else to do. Exits program.
-   

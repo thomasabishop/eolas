@@ -1,22 +1,21 @@
 ---
+categories:
+  - Software Engineering
 tags:
-  - Software_Engineering
-  - publication
+  - resources
 ---
 
 ## General
 
 ### Meyer's Uniform Access Principle
 
- > 
- > All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation
+> All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation
 
 This is a clear recommendation for using getters and setters with classes. You should not see method calls outside of the class, they should appear as properties of the object.
 
 ## Don't Repeat Yourself
 
- > 
- > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system
+> Every piece of knowledge must have a single, unambiguous, authoritative representation within a system
 
 ## The Principle of Orthogonality
 
@@ -24,28 +23,25 @@ This notion comes from geometry. Two lines are orthogonal to each other if they 
 
 Their meeting isn't the important part. Think of a simple x, y graph:
 
- > 
- > If you move along one of the lines, **your position projected onto the other doesn't change**
+> If you move along one of the lines, **your position projected onto the other doesn't change**
 
 In computing this is expressed in terms of **decoupling** and is implemented through modular, component-based architectures. As much as possible code should be scoped narrowly so that a change in one area does not cause changes in others. By keeping components discrete it is easier to make changes, refactor, improve and extend the codebase.
 
- > 
- > We want to design components that are self-contained: independent and with a single, well-defined purpose. When components are isolated from one another, you know that you can change one without having to worry about the rest. As long as you don't change that component's external interfaces, you can be comfortable that you won't cause problems that ripple through the entire system.
+> We want to design components that are self-contained: independent and with a single, well-defined purpose. When components are isolated from one another, you know that you can change one without having to worry about the rest. As long as you don't change that component's external interfaces, you can be comfortable that you won't cause problems that ripple through the entire system.
 
 ### Benefits of orthogonality: productivity
 
-* Changes are localised so development time and testing time are reduced
-* Orthogonality promotes reuse: if components have specific, well-defined responsibilities, they can be combined with new components in ways that were not envisioned by their original implementors. The more loosely coupled your systems, the easier they are to reconfigure and reengineer.
-* Assume that one component does *M* distinct things and another does *N* things. If they are orthogonal and you combine them, the result does *M x N* things. However if the two components are not orthogonal, there will be overlap, and the result will do less. You get more functionality per unit effort by combining orthogonal components.
+- Changes are localised so development time and testing time are reduced
+- Orthogonality promotes reuse: if components have specific, well-defined responsibilities, they can be combined with new components in ways that were not envisioned by their original implementors. The more loosely coupled your systems, the easier they are to reconfigure and reengineer.
+- Assume that one component does _M_ distinct things and another does _N_ things. If they are orthogonal and you combine them, the result does _M x N_ things. However if the two components are not orthogonal, there will be overlap, and the result will do less. You get more functionality per unit effort by combining orthogonal components.
 
 ### Benefits of orthogonality: reduced risk
 
-* Diseased sections of code are isolated. If a module is sick, it is less likely to spread the symptoms around the rest of the system.
-* Overall the system is less fragile: make small changes to a particular area and any problems you generate will be restricted to that area.
-* Orthogonal systems are better tested because it is easier to run and design discrete tests on modularised components.
+- Diseased sections of code are isolated. If a module is sick, it is less likely to spread the symptoms around the rest of the system.
+- Overall the system is less fragile: make small changes to a particular area and any problems you generate will be restricted to that area.
+- Orthogonal systems are better tested because it is easier to run and design discrete tests on modularised components.
 
- > 
- > Building a unit test us itself a an interesting test of orthogonality: what does it take to build and link a unit test? Do you have to drag in a large percentage of the rest of the system just to get a test to compile or link? **If so, you've found a module that is not well decoupled from the rest of the system**
+> Building a unit test us itself a an interesting test of orthogonality: what does it take to build and link a unit test? Do you have to drag in a large percentage of the rest of the system just to get a test to compile or link? **If so, you've found a module that is not well decoupled from the rest of the system**
 
 ### Relationship between DRY and orthogonality
 
@@ -63,28 +59,25 @@ The authors use the notion of tracer bullets as a metaphor for developing softwa
 
 They differ from prototypes in that they include integrated overall functionality but in a rough state. Whereas prototypes are more for singular, specific subcomponents of the project. Because tracer bullet models are joined-up in this way, even if they turn out to be inappropriate in some regard, they can be adapted and developed into a better form, without losing the core functionality.
 
- > 
- > Tracer bullets work because they operate in the same environment and under the same constraints as the real bullets. They get to the target fast, so the gunner gets immediate feedback. And from a practical standpoint they are a relatively cheap solution. To get the same effect in code, we're looking for something that gets us from a requirement to some aspect of the final system quickly, visibly and repeatably.
+> Tracer bullets work because they operate in the same environment and under the same constraints as the real bullets. They get to the target fast, so the gunner gets immediate feedback. And from a practical standpoint they are a relatively cheap solution. To get the same effect in code, we're looking for something that gets us from a requirement to some aspect of the final system quickly, visibly and repeatably.
 
- > 
- > Tracer code is not disposable: you write it for keeps. It contains all the error-checking, structuring, documentation and self-checking that a piece of production code has. It simply is not fully functional. However, once you have made an end-to-end connection among the components of your system, you can check how close to the target you are, adjusting as necessary.
+> Tracer code is not disposable: you write it for keeps. It contains all the error-checking, structuring, documentation and self-checking that a piece of production code has. It simply is not fully functional. However, once you have made an end-to-end connection among the components of your system, you can check how close to the target you are, adjusting as necessary.
 
 ### Distinguishing from prototyping
 
- > 
- > Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system. Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired.
+> Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system. Think of prototyping as the reconnaissance and intelligence gathering that takes place before a single tracer bullet is fired.
 
 ## Design by contract
 
 To understand DBC we have to think of a computational process as involving two stages: the call and the execution of the routine that happens in response to the call (henceforth **caller** and **routine**).
 
-* the caller could be a function expression that invokes a function and passes arguments to it expecting a given output. The function that executes is the routine
-* the caller could be an object instantiation that calls a method belonging to its parent class
-* the caller could be a parent React component that passes props to a child component
+- the caller could be a function expression that invokes a function and passes arguments to it expecting a given output. The function that executes is the routine
+- the caller could be an object instantiation that calls a method belonging to its parent class
+- the caller could be a parent React component that passes props to a child component
 
 Design by contract means specifying clear and inviolable rules detailing what must obtain at both the call stage and the routine stage if the process is to execute.
 
-Every function and method in a software system does something. Before it starts that something, the routine may have some expectation of the state of the world and it may be able to make a statement about the state of the world when it concludes. These expectations are defined in terms of preconditions, postconditions, and invariants. They form that basis of a **contract** between the caller and the routine. Hence *design by contract**.*\*\*
+Every function and method in a software system does something. Before it starts that something, the routine may have some expectation of the state of the world and it may be able to make a statement about the state of the world when it concludes. These expectations are defined in terms of preconditions, postconditions, and invariants. They form that basis of a **contract** between the caller and the routine. Hence _design by contract\*\*._\*\*
 
 ### Preconditions
 
@@ -102,13 +95,11 @@ There is an analogue here with functional programming philosophy: the function s
 
 One way to achieve this is to be miserly when setting up the contract, which overlaps with orthogonality. Only specify the minimum return on a contract rather than multiple postconditions. This only increases the likelihood that the contract will be breached at some point. If you need multiple postconditions, spread them out an achieve them in a compositional way, with multiple separate and modular processes.
 
- > 
- > Be strict in what you will accept before you begin, and promise as little as possible in return. If your contract indicates that you'll accept anything and promise the world in return, then you've got a lot of code to write!
+> Be strict in what you will accept before you begin, and promise as little as possible in return. If your contract indicates that you'll accept anything and promise the world in return, then you've got a lot of code to write!
 
 ### Division of responsibilities
 
- > 
- > If all the routine's preconditions are met by the caller, the routine shall guarantee that all postconditions and invariants will be true when it completes.
+> If all the routine's preconditions are met by the caller, the routine shall guarantee that all postconditions and invariants will be true when it completes.
 
 Note that the emphasis of responsibilities is on the caller.
 
@@ -132,50 +123,48 @@ It's a fancy name for a simple principle summarised by 'don't talk to strangers'
 
 ### Formal
 
-A method *m* of object *O* may only invoke the methods of the following kinds of objects:
+A method _m_ of object _O_ may only invoke the methods of the following kinds of objects:
 
-* *O* itself
-* *m*'s parameters
-* any objects created or instantiated within *m*
-* *O*'s direct component objects (in other words nested objects)
-* a global variable (over and above *O*) accessible by *O*, within the scope of *m*
+- _O_ itself
+- _m_'s parameters
+- any objects created or instantiated within _m_
+- _O_'s direct component objects (in other words nested objects)
+- a global variable (over and above _O_) accessible by _O_, within the scope of _m_
 
 ## Model, View, Controller design pattern
 
 The key concept behind the MVC idiom is separating the model from both the GUI that represents it and the controls that manage the view.
 
-* **Model**
-  * The abstract data model representing the target object
-  * The model has no direct knowledge of any views or controllers
-* **View**
-  * A way to interpret the model. It subscribes to changes in the model and logical events from the controller
-* **Controller**
-  * A way to control the view and provide the model with new data. It publishes events to both the model and the view
+- **Model**
+  - The abstract data model representing the target object
+  - The model has no direct knowledge of any views or controllers
+- **View**
+  - A way to interpret the model. It subscribes to changes in the model and logical events from the controller
+- **Controller**
+  - A way to control the view and provide the model with new data. It publishes events to both the model and the view
 
 For comparison, distinguish React from MVC. In React data is unidirectional: the JSX component as controller cannot change the state. The state is passed down to the controller. Also MVC lends itself to separation of technologies: code used to create the View is different from Code that manages Controller and data Model. In React it's all one integrated system.
 
 ## Refactoring
 
- > 
- > Rewriting, reworking, and re-architecting code is collectively known as refactoring
+> Rewriting, reworking, and re-architecting code is collectively known as refactoring
 
 ### When to refactor
 
-* **Duplication**: you've discovered a violation of the DRY principle
-* **Non-orthogonal design**: you've discovered some code or design that could be made more orthogonal
-* **Outdated knowledge**: your knowledge about the problem and you skills at implementing a solution have changed since the code was first written. Update and improve the code to reflect these changes
-* **Performance: y**ou need to move functionality from one area of the system to another to improve performance
+- **Duplication**: you've discovered a violation of the DRY principle
+- **Non-orthogonal design**: you've discovered some code or design that could be made more orthogonal
+- **Outdated knowledge**: your knowledge about the problem and you skills at implementing a solution have changed since the code was first written. Update and improve the code to reflect these changes
+- **Performance: y**ou need to move functionality from one area of the system to another to improve performance
 
 ### Tips when refactoring
 
-* Don't try to refactor and add new functionality at the same time!
-* Make sure you have good tests before you begin refactoring. Run the tests as you refactor. That way you will know quickly if your changes have broken anything
-* Take short, deliberative steps. Refactoring often involves making many localised changes that result in a larger-scale change.
+- Don't try to refactor and add new functionality at the same time!
+- Make sure you have good tests before you begin refactoring. Run the tests as you refactor. That way you will know quickly if your changes have broken anything
+- Take short, deliberative steps. Refactoring often involves making many localised changes that result in a larger-scale change.
 
 ## Testing
 
- > 
- > Most developers hate testing. They tend to test-gently, subconsciously knowing where the code will break and avoiding the weak spots. Pragmatic Programmers are different. We are *driven* to find our bugs *now*, so we don't have to endure the shame of others finding our bugs later.
+> Most developers hate testing. They tend to test-gently, subconsciously knowing where the code will break and avoiding the weak spots. Pragmatic Programmers are different. We are _driven_ to find our bugs _now_, so we don't have to endure the shame of others finding our bugs later.
 
 ### Unit testing
 
@@ -185,15 +174,15 @@ We can think of unit testing as **testing against contract** (detailed above). W
 
 Scope for unit testing should cover:
 
-* Obviously, returning the expected value/outcome
-* Ensuring that faulty arguments/ types are rejected and initiate error handling (deliberately breaking your code to ensure it is handled appropriately)
-* Pass in the boundary and maximum value
-* Pass in values between the zero and the maximum expressible argument to cover a range of cases
+- Obviously, returning the expected value/outcome
+- Ensuring that faulty arguments/ types are rejected and initiate error handling (deliberately breaking your code to ensure it is handled appropriately)
+- Pass in the boundary and maximum value
+- Pass in values between the zero and the maximum expressible argument to cover a range of cases
 
 Benefits of unit testing include:
 
-* It creates an example to other developers how to use all of the functionality of a given module
-* It is a means to build **regression tests** which can be used to validate any future changes to the code. In other words, the future changes should pass the older tests to prove they are consistent with the code base
+- It creates an example to other developers how to use all of the functionality of a given module
+- It is a means to build **regression tests** which can be used to validate any future changes to the code. In other words, the future changes should pass the older tests to prove they are consistent with the code base
 
 ### Integration testing
 
@@ -203,12 +192,11 @@ Integration testing is really just an extension of the unit testing described, o
 
 ## Commenting your code
 
-In general, comments should detail **why** something is done, its purpose and its goal. The code already shows *how* it's done, so commenting on this is redundant, and violates the DRY principle.
+In general, comments should detail **why** something is done, its purpose and its goal. The code already shows _how_ it's done, so commenting on this is redundant, and violates the DRY principle.
 
- > 
- > We like to see a simple module-level comment, comments for significant data and type declarations, and a brief class and per-method header describing how the function is used and anything it does that is not obvious
+> We like to see a simple module-level comment, comments for significant data and type declarations, and a brief class and per-method header describing how the function is used and anything it does that is not obvious
 
-````js
+```js
 /*
 Find the highest value within a specified data range of samples
 
@@ -217,4 +205,4 @@ Parameter: aThreshold = minimum value to consider
 
 Return: the value, or null if no value found that is greater than or equal to the threshold
 */
-````
+```

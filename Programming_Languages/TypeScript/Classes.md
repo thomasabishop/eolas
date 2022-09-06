@@ -1,6 +1,8 @@
 ---
+categories:
+  - Programming Languages
+
 tags:
-  - Programming_Languages
   - typescript
 ---
 

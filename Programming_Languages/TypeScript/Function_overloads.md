@@ -1,8 +1,8 @@
 ---
+categories:
+  - Programming Languages
 tags:
-  - Programming_Languages
   - typescript
-  - functions
 ---
 
 ## Function overloads
@@ -19,7 +19,7 @@ function logSearch(term: string, options?: number): void;
 // Implementation:
 function logSearch(term: string, p2?: unknown) {
   let query = `https://searchdatabase/${term}`;
-  if (typeof p2 === "string") {
+  if (typeof p2 === 'string') {
     query = `${query}/tag=${p2}`;
     console.log(query);
   } else {
@@ -28,8 +28,8 @@ function logSearch(term: string, p2?: unknown) {
   }
 }
 
-logSearch("apples", "braeburn");
-logSearch("bananas", 3);
+logSearch('apples', 'braeburn');
+logSearch('bananas', 3);
 ```
 
 ```ts
@@ -42,7 +42,7 @@ function logSearchUnion(term: string, options?: number): void;
 // Implementation:
 function logSearchUnion(term: string, p2?: string | number) {
   let query = `https://searchdatabase/${term}`;
-  if (typeof p2 === "string") {
+  if (typeof p2 === 'string') {
     query = `${query}/tag=${p2}`;
     console.log(query);
   } else {
@@ -51,6 +51,6 @@ function logSearchUnion(term: string, p2?: string | number) {
   }
 }
 
-logSearchUnion("melon", "honey-dew");
-logSearchUnion("oranges", 4);
+logSearchUnion('melon', 'honey-dew');
+logSearchUnion('oranges', 4);
 ```
