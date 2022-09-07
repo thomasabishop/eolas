@@ -36,4 +36,8 @@ Cache controllers use complex algorithms to determine what should go into the ca
 
 ## Relation between cache and buffers
 
-The terms _cache_ and _buffer_ are often used interchangeably but there is a significant difference. Buffer 'size' refers to the amount of physical memory in RAM that is dedicated to a process where this size is measured in terms  of the amount of disk blocks it would take up in the harddrive. Cache is also a measure of memory but it is expressed in terms of [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md): the page size of the memory.
+The terms _cache_ and _buffer_ are often used interchangeably but there is a significant difference. Buffer 'size' refers to the amount of physical memory in RAM that is dedicated to a process where this size is measured in terms of the amount of disk blocks it would take up in the harddrive. Cache is also a measure of memory but it is expressed in terms of [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md): the page size of the memory.
+
+Buffers and caches are both mechanisms for avoiding writing data to a storage device in the midst of active computation. Every time data is saved, the OS doesn't immediately write it to disk. It keeps it in the most short term memory in case it is edited again or until the processor is free. In this state it is kept in buffers. When written to disk it becomes blocks. This is why you shouldn't immediately remove a disk device without first saving / syncing int.
+
+Similarly with transferring memory to and from the RAM. The OS keeps occurent memory in the processor caches to enable reuse and not to overburden the CPU, this page data is then moved to RAM when convenient.
