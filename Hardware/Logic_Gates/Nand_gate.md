@@ -17,9 +17,10 @@ Diagram representing NAND gate:
 The diagram below shows how the circuit models the truth conditions for `NAND`
 
 <img src="/home/thomas/repos/computer_science/img/NAND.gif" width="400" />
-* When both switches are off (corresponding to `false` `false`) the output is on (the bulb lights up).
-* If either one of the switches are on, the output remains on (corresponding to `true` `false` or `false` `true` )
-* It is only when both switches are on, that the output is off (corresponding to `true` `true` )
+
+- When both switches are off (corresponding to `false` `false`) the output is on (the bulb lights up).
+- If either one of the switches are on, the output remains on (corresponding to `true` `false` or `false` `true` )
+- It is only when both switches are on, that the output is off (corresponding to `true` `true` )
 
 This is the exact opposite to the truth-conditions for AND.
 
