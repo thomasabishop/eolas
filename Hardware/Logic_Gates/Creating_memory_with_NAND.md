@@ -9,4 +9,4 @@ tags: [logic-gates, binary]
 
 # Creating memory with NAND gates
 
-![](/img/diagrams-Nand%20Memory.svg)
+![](/img/nand-memory.svg)

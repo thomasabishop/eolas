@@ -28,13 +28,16 @@ This basically means that the overall charge of an isolated system cannot change
 
 ## Relation of forces to fields
 
-A field is a property of space and forces act within fields. A field quantity has a numerical value at each point of space and may vary over time.
+A field is a property of space. It means that a physical quantity is assigned to every point in space. This quantity has a numerical value and may vary over time.
 
-The value of the electric field is a **vector**: a quantity that has both a magnitude (a size value: being greater or smaller relative to something elese) and direction. The value of the electric field at a point in space equals the fore that would be exerted on a unit charge at that poisition in state.
+There are different types of field. The electric field is an instance of a **vector field**. With vector fields there is more than one number for each point in space:
 
-Every charged object sets up an electric field in the surrounding space. A second charge “feels” the presence of this field. The second charge is either attracted toward the initial charge or repelled from it, depending on the signs of the charges. Of course, since the second charge also has an electric field, the first charge feels its presence and is either attracted or repelled by the second charge too.
+- a **magnitude**: a size value, i.e. being larger or greater than something else
+- a **direction**
 
-The electric field from a charge is directed away from the charge when the charge is positive and toward the charge when it is negative.
+> The value of the electric field at a point in space equals the fore that would be exerted on a unit charge at that poisition in state.
+
+Every charged object sets up an electric field in the surrounding space. A second charge “feels” the presence of this field. The second charge is either attracted toward the initial charge or repelled from it, depending on the signs of the charges. Of course, since the second charge also has an electric field, the first charge feels its presence and is either attracted or repelled by the second charge too. The electric field from a charge is directed away from the charge when the charge is positive and toward the charge when it is negative.
 
 ### Magnestism
 
