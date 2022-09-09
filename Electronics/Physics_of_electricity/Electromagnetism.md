@@ -30,15 +30,11 @@ This behaviour is a function of the **magnetic force** which is **_transmitted_*
 
 Magnetism, understood as the effect of a magnetic field, arises from the properties of the electrons in an atom. We know that atoms 'orbit' the nucleus of the atom but as they circle the nucleus they also spin or rotate on their own axis.
 
-As they spin they produce a **magnetic dipole**: the two poles noted above. We call this the **intrinsic magnetic moment** of the electron. It is aggregates of these miniature magnetic behaviours that produce the overall magnetic property of the substance comprised of atoms with this magnetic property.
+As they spin they produce a **magnetic dipole**: the two poles noted above. We call this propensity of electrons the **intrinsic magnetic moment** of the electron. It is aggregates of these miniature magnetic behaviours that produce the overall magnetic property of the material.
 
-![](/img/magnetic-spin.svg)
+![](/img/dipole-again.svg)
 
-As electrons circle the nucleus they have a _direction of spin_. In most materials, equal numbers of electrons spin in opposite directions; for instance 50% spin north and 50% spin south. As a result, their magentic effects are cancelled out. However in other materials (those which are magnetic), a majority of electrons spin in one direction thus the overall equillibrium is lost.
-
-This makes them strongly _magnetic_ but they are not yet _magnetised_. For them to become magnetised another strongly magnetic material must enter into their magnetic field.
-
-The propensity for an electron to have a direction of spin is its **intrinsic magnetic moment**.
+In most materials, equal numbers of electrons spin in opposite directions. As a result, their magentic effects are cancelled out. However **in strongly magnetic materials an overall majority of electrons spin in one particular direction**. This breaks the equilibrium and produces the magnetic field.
 
 ## Electromagnetic field
 
@@ -53,7 +49,7 @@ There are different types of field. The electric field is an instance of a **vec
 - a **magnitude**: a size value, i.e. being larger or greater than something else
 - a **direction**
 
-> The value of the electric field at a point in space equals the fore that would be exerted on a unit of charge at that position in space.
+> The value of the electric field at a point in space equals the force that would be exerted on a unit of charge at that position in space.
 
 Every charged object sets up an electric field in the surrounding space. A second charge “feels” the presence of this field. The second charge is either attracted toward the initial charge or repelled from it, depending on the signs of the charges. Of course, since the second charge also has an electric field, the first charge feels its presence and is either attracted or repelled by the second charge too. The electric field from a charge is directed away from the charge when the charge is positive and toward the charge when it is negative.
 
