@@ -16,11 +16,25 @@ The core of the relationship is that a changing magnetic field produces an elect
 
 We know that charge is an innate property of all charged fundamental particles. If a particle is charged it has a positive or negative charge. The most common charged particles in the universe are negatively charged electrons or positively charged protons. When charged particles are moving, they are known as electric currents.
 
-## Intrinsic magenetic moment
+## Magnetism
 
-A **magnet** is a material or object that produces a magnetic field. The field is invisible but visible by its effects: pulling on other magnetic materials such as iron, steel, nickel, cobalt etc and attracting or repelling other magnets.
+> Magnetism is a physical property produced by the _motion_ of electric charge, which of course, is the same thing as [electric current](/Electronics/Physics_of_electricity/Current.md)
 
-Magnetism, understood as the effect of a magnetic field, arises from the properties of the electrons in an atom. As electrons circle the nucleus they have a _direction of spin_. In most materials, equal numbers of electrons spin in opposite directions; for instance 50% spin north and 50% spin south. As a result, their magentic effects are cancelled out. However in other materials (those which are magnetic), a majority of electrons spin in one direction thus the overall equillibrium is lost.
+A **magnet** is a material or object that produces a magnetic field. This field is invisible but visible by its effects: pulling on other magnetic materials such as iron, steel, nickel, cobalt etc and attracting or repelling other magnets.
+
+All magnets have two ends where their magnetic effects are strongest. These regions are called the **poles** of the magnet. Materials can be _magnetic_ but they are not _magnetized_ until another magnetic material has entered into their field. At this point, the attraction and repulsion behaviour can be observed.
+
+This behaviour is a function of the **magnetic force** which is **_transmitted_** via the **magnetic field**.
+
+### Relation to electrons
+
+Magnetism, understood as the effect of a magnetic field, arises from the properties of the electrons in an atom. We know that atoms 'orbit' the nucleus of the atom but as they circle the nucleus they also spin or rotate on their own axis.
+
+As they spin they produce a **magnetic dipole**: the two poles noted above. We call this the **intrinsic magnetic moment** of the electron. It is aggregates of these miniature magnetic behaviours that produce the overall magnetic property of the substance comprised of atoms with this magnetic property.
+
+![](/img/magnetic-spin.svg)
+
+As electrons circle the nucleus they have a _direction of spin_. In most materials, equal numbers of electrons spin in opposite directions; for instance 50% spin north and 50% spin south. As a result, their magentic effects are cancelled out. However in other materials (those which are magnetic), a majority of electrons spin in one direction thus the overall equillibrium is lost.
 
 This makes them strongly _magnetic_ but they are not yet _magnetised_. For them to become magnetised another strongly magnetic material must enter into their magnetic field.
 
@@ -49,7 +63,12 @@ As already noted, the magnetic field is the field created by a magnetic material
 
 > Crucially the magnetic force influences only those charges that are already in motion.
 
-The magnetic field and force is more complex than the electric field/force. Whereas the electric field and force point either towards or away from the charge, the magnetic field does not point along the direction of the source of the field, it points perpendicular to it. This is illustrated below which shows the magnetic field operating at right angles to the flow of charge within a wire. Obviously this presupposes an external voltage force. vo
+The magnetic field and force is more complex than the electric field/force. Whereas the electric field and force point either towards or away from the charge, the magnetic field is different:
+
+- The magnetic field points perpendicular to its source
+- The magentic force points perpendicular to the magnentic field
+
+This is illustrated below which shows the magnetic field operating at right angles to the flow of charge within a wire.
 
 <img src="/home/thomas/repos/computer_science/img/magnetic_field.png" width="300" />
 
