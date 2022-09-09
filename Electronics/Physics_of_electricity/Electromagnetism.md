@@ -49,13 +49,15 @@ As already noted, the magnetic field is the field created by a magnetic material
 
 > Crucially the magnetic force influences only those charges that are already in motion.
 
+The magnetic field and force is more complex than the electric field/force. Whereas the electric field and force point either towards or away from the charge, the magnetic field does not point along the direction of the source of the field, it points perpendicular to it. This is illustrated below which shows the magnetic field operating at right angles to the flow of charge within a wire. Obviously this presupposes an external voltage force. vo
+
+<img src="/home/thomas/repos/computer_science/img/magnetic_field.png" width="300" />
+
 ### The electromagnetic field
 
 Although we have described the electric and magnetic fields separately, they are in fact a single unified and inseparable field created by charged particles and particles with a magentic moment.
 
 The electromagnetic field does not carry charge or magnetic moment, it carries energy and momentum. This energy and momentum can be transferred to charged particles and particles with magnetic moment.
-
-The magnetic field and force is more complex than the electric field/force. Whereas the electric field and force point either towards or away from the charge, the magnetic field does not point along the direction of the source of the fielse
 
 #### Electromagnetic waves
 
