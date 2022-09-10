@@ -36,6 +36,8 @@ As they spin they produce a **magnetic dipole**: the two poles noted above. We c
 
 In most materials, equal numbers of electrons spin in opposite directions. As a result, their magentic effects are cancelled out. However **in strongly magnetic materials an overall majority of electrons spin in one particular direction**. This breaks the equilibrium and produces the magnetic field.
 
+If you have material A where the electrons all spin in one direction and material B where the electrons all spin in a direction opposite to A, then B will be attracted to A and you can observe the effects of the magnetic force in action.
+
 ## Electromagnetic field
 
 ### What is a field
