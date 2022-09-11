@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-  - Operating_Systems
+  - Operating Systems
 tags:
   - disks
   - filesystems

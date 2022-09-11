@@ -1,6 +1,6 @@
 ---
 categories:
-  - Operating systems
+  - Operating Systems
 tags: [sytems-programming, processes, memory]
 ---
 

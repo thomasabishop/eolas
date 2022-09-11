@@ -1,7 +1,7 @@
 ---
-categories: 
+categories:
   - Linux
-  - Operating_Systems
+  - Operating Systems
   - Hardware
 tags:
   - kernel
@@ -16,7 +16,6 @@ However as a process, the kernel is the 'first amongst equals' given that it is 
 
 ![](/img/kernel-cpu-interaction.svg)
 
-
 > Fetch decode and execute refer to processor pipeline stages. They occur automatically as part of normal processor operation, the kernel doesn’t generally have any direct control over how that happens...When the boot loader loads the kernel, it points the CPU’s program counter to an entry point in the kernel’s code. From there, the CPU will continue executing (fetching decoding and executing) kernel code until you point the program counter to a userspace program, where it will continue executing userspace code until an interrupt points the program counter back into kernel code. That’s basically what the CPU will be doing from boot up to shut down; switching between executing kernel code and executing userspace code ([Reddit](https://www.reddit.com/r/osdev/comments/wdskj5/how_does_kernel_decide_if_use_cpu_or_gpu_after/))
 
-This is because of [context switching](), when the CPU is running its cycle, the kernel is idle waiting for it to complete. Once control switches back to the kernel it can then run its next duty which will be either process, memory or device management or system calls. Then it will hand control over to either the processor or user space. 
+This is because of [context switching](), when the CPU is running its cycle, the kernel is idle waiting for it to complete. Once control switches back to the kernel it can then run its next duty which will be either process, memory or device management or system calls. Then it will hand control over to either the processor or user space.
