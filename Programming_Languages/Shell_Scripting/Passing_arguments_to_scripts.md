@@ -2,7 +2,6 @@
 categories:
   - Programming Languages
 tags:
-  - Programming_Languages
   - shell
 ---
 

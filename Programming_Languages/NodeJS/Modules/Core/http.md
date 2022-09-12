@@ -2,7 +2,6 @@
 categories:
   - Programming Languages
 tags:
-  - Programming_Languages
   - backend
   - node-js
   - node-modules
@@ -19,28 +18,28 @@ An HTTP server is another instance of an [event emitter](/Programming_Languages/
 _Creating a server_
 
 ```js
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer(); // Create server as emitter
 
 // Register functions to run when listener is triggered
-server.on('connection', (socket) => {
-  console.log('new connection...');
+server.on("connection", (socket) => {
+  console.log("new connection...");
 });
 
 server.listen(3000);
-console.log('Listening on port 3000');
+console.log("Listening on port 3000");
 ```
 
 This server is functionally equivalent to a generic event emitter:
 
 ```js
 // Raise an event
-const emitter = new EventEmitter('messageLogged');
+const emitter = new EventEmitter("messageLogged");
 
 // Register a listener
-emitter.on('messagedLogged', function () {
-  console.log('The listener was called.');
+emitter.on("messagedLogged", function () {
+  console.log("The listener was called.");
 });
 ```
 
@@ -54,8 +53,8 @@ A socket is a generic protocol for client-server communication. Crucially it **a
 
 ```js
 const server = http.createServer((req, res) => {
-  if (req.url === '/') {
-    res.write('hello');
+  if (req.url === "/") {
+    res.write("hello");
     res.end();
   }
 });
@@ -67,8 +66,8 @@ Below is an example of using this architecture to return JSON to the client:
 
 ```js
 const server = http.createServer((req, res) => {
-  if (req.url === '/products') {
-    res.write(JSON.stringify(['shoes', 'lipstick', 'cups']));
+  if (req.url === "/products") {
+    res.write(JSON.stringify(["shoes", "lipstick", "cups"]));
     res.end();
   }
 });
