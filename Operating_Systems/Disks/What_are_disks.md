@@ -22,6 +22,6 @@ The following diagram represents the basic anatomy of a disk device.
 
 ![](/img/harddisk.png)
 
-- A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices.md) as it would with an entire disk.
+- A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md) as it would with an entire disk.
 - The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space.
 - The **filesystem** is a database of files and directories: this comprises the bulk of the partition and is what you interact with in [user space](/Operating_Systems/User_Space.md) when reading and writing data.
