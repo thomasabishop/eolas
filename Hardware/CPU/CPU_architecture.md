@@ -73,3 +73,5 @@ Hertz was the scientist who detected electromagentic waves and more broadly in s
 ![](/img/hertz_wave_freq.gif)
 
 As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles the greater the Hertz.
+
+[new link](/Logic/Atomic_and_molecular_sentences.md)
