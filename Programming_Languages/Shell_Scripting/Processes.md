@@ -8,7 +8,7 @@ tags:
 
 # Processes (`ps`)
 
-`ps` allows us to control [user processes](../../Operating_Systems/The_Kernel.md) from the shell.
+`ps` allows us to control [user processes](/Operating_Systems/The_Kernel.md) from the shell.
 
 The command in its most minimal application returns the following
 
