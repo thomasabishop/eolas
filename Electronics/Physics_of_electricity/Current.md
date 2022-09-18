@@ -14,7 +14,7 @@ So current is the flow of electrons. Charge is the quantity that flows.
 
 ## Why current exists
 
-Current exists because of the [first law of electrostatics](/Electronics/Physics_of_electricity/Coulombs_Law.md).
+Current exists because of the [first law of electrostatics](/Electronics/Physics_of_electricity/Coulombs_Laws.md).
 
 When there is an excess of electrons at one terminal (i.e. negatively charged atoms) and a deficiency of electrons at the other terminal (i.e. positively charged atoms), a \*\*difference of potential\_ exists between the two terminals.
 

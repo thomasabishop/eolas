@@ -43,7 +43,7 @@ During the context switch from CPU to user space, the kernel allocates memory. I
 - Managing read-only memory
 - Allowing for the use of disk space as auxiliary memory
 
-> Modern CPUs include a [memory management unit](/Hardware/Memory/Virtual_memory_and_the_MMU.md) which provides the kernel with **virtual** memory. In this scenario, memory isn't directly accessed by the process instead it works on the assumption that is has access to the entire memory of the machine and this is then translated into a map that is applied to the real memory and managed by the kernel.
+> Modern CPUs include a [memory management unit](/Operating_Systems/Virtual_memory_and_the_MMU.md#the-memory-management-unit-mmu) which provides the kernel with **virtual** memory. In this scenario, memory isn't directly accessed by the process instead it works on the assumption that is has access to the entire memory of the machine and this is then translated into a map that is applied to the real memory and managed by the kernel.
 
 ## Device drivers
 
