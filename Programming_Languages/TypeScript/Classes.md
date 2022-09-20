@@ -2,8 +2,7 @@
 categories:
   - Programming Languages
 
-tags:
-  - typescript
+tags: [typescript, OOP]
 ---
 
 # Classes
@@ -65,7 +64,7 @@ The main points to note are:
 In order to create an object instance of `Age`, we can use the standard constructor function, viz:
 
 ```js
-const mum = new Age('Mary Jo', 1959);
+const mum = new Age("Mary Jo", 1959);
 console.log(mum);
 
 /* Age { personName: 'Mary Jo', birthYear: 1959 } */
@@ -74,7 +73,7 @@ console.log(mum);
 But given that classes define objects, we can also now use `Age` as a new custom type and define an object that way
 
 ```jsx
-const thomas: Age = new Age('Thomas', 1988);
+const thomas: Age = new Age("Thomas", 1988);
 ```
 
 ### Without constructor
@@ -118,3 +117,7 @@ class Programmer implements Person {
 	employed: () => boolean
 }
 ```
+
+## Inheritance
+
+### `implements` vs `extends`
