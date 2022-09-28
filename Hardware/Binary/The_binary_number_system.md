@@ -1,8 +1,9 @@
 ---
+title: The binary number system
 categories:
   - Mathematics
   - Computer Architecture
-tags: [binary]
+tags: [binary, number-systems]
 ---
 
 # The binary number system
@@ -17,22 +18,30 @@ $1, 2, 3, 4, 5, 6, 7, 8, 9$
 
 When we have completed all the possible intervals between $0$ and $9$, we start again in a new column.
 
-The principle of counting in decimal: 
+The principle of counting in decimal:
 
-![denary.gif](../../img/denary.gif)
+```
+0009
+0010
+0011
+0012
+0013
+...
+0019
+0020
+0021
+```
 
 Thus each column is ten times larger than the previous column:
 
-* Ten \[$10^1$\] is ten times larger than one \[$10^0$\]
-* A hundred \[$10^2$\] is ten times larger than ten \[$10^1$\]
+- Ten ($10^1$) is ten times larger than one ($10^0$)
+- A hundred ($10^2$) is ten times larger than ten ($10^1$)
 
 We use this knowledge of the exponents of the base of 10 to read integers that contain multiple digits (i.e. any number greater than 9).
 
 Thus 264 is the sum of
 
-* $4 * (10^0)$
-* $6 * (10^1)$
-* $2 * (10^2)$
+$$[4 \cdot (10^0)] + [6 \cdot (10^1)] + [2 \cdot 10^2]  $$
 
 ## Binary number system
 
@@ -56,15 +65,19 @@ $$ 0001, 0010, 0011, 0100 $$
 
 Counting in binary:
 
-![binary.gif](../../img/binary.gif)
+```
+000000
+000001
+000010
+000011
+000100
+000101
+000111
+```
 
-## Relation to Turing Machines
+## Converting decimal to binary
 
-It's obvious that there is a clear relation between the binary number system and Turing Machinees, since in their most basic instance, Turing Machines work with ones and zeros. In order for us to get Turing Machines to compute digital numbers we only need to convert from decimal to binary.
-
-### Example decimal to binary conversion
-
-Let's convert 6 and into binary:
+Let's convert 6 into binary:
 
 If we have before us the binary place values ($1, 2, 4, 8$). We know that 6 is equal to: **1 in the two column and 1 in the 4 column → 110**
 
@@ -78,7 +91,7 @@ And for comparison:
 
 Or we can express the binary as:
 
-$$ (1 * 2) + (1 * 4) $$
+$$ (1 _ 2) + (1 _ 4) $$
 
 Or more concisely as:
 
@@ -89,5 +102,3 @@ $$ 2^1 + 2^2 $$
 Let's convert 23 into binary:
 
 ![](../../img/Pasted_image_20220319135823.png)
-
-![](../../img/binary_to_denary.gif)
