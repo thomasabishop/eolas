@@ -3,7 +3,7 @@ title: Why computers use binary
 categories:
   - Mathematics
   - Computer Architecture
-tags: [binary]
+tags: [binary, bits]
 ---
 
 # Why computers use binary
@@ -17,9 +17,7 @@ A single circuit representing the binary values of 1 and 0:
 
 It would be much more complicated to have to represent ten different states under the decimal number system, although denary computers do exist.
 
-> We will see later that 1/0 also corresponds to the basic values of logic: true and false. This is what allows us to build up complex circuits and programs based on primitive truth conditions.
-
-If we want more digits, we just need to add in more circuits, and we can represent as large a binary number as we need. We just need one switch for every digit we want to represent. The switches used in modern computers are so cheap and so small that you can literally get billions of them on a single circuit board.
+If we want more digits, we just need to add in more circuits, and we can represent as large a binary number as we need. We just need one switch for every digit we want to represent. The switches used in modern computers are so cheap and so small that billions can be fitted on a single circuit board.
 
 ![multiple_circuits.gif](../../img/multiple_circuits.gif)
 
@@ -29,7 +27,7 @@ On the level of electrical engineering and in the subsequent examples using a li
 
 ## From circuits to programs
 
-The following breaks down how we get from the binary number system → electrical circuits → to computer programs:
+The following breaks down how we get from the binary number system to electrical circuits to computer programs:
 
 1. ”Data”= a piece or pieces of **information**
 
