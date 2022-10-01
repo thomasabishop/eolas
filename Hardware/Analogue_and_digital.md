@@ -45,6 +45,6 @@ A digital system represents data as a sequence of symbols where each symbol is o
 
 Computers only use two symbols for each value: 0 and 1.
 
-Although a digital system could use more than two symbols, adding more would increase the complexity and cost of the system. A set of only two symbols allows for simplified hardware and improved reliability.
+Although a digital system could use more than two symbols, adding more would [increase the complexity](/Hardware/Binary/Why_computers_use_binary.md#from-circuits-to-programs) and cost of the system. A set of only two symbols allows for simplified hardware and improved reliability.
 
 All data within a computer from images to sounds are sequences of 0s and 1s. In practice, the sequences are stored in various ways. On a CD, the binary digits are stored as bumps (0) or flat spaces (1). On a flash drive, the 1s and 0s are electrical charges etc.
