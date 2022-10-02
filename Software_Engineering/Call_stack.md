@@ -1,5 +1,6 @@
 ---
-category: Software Engineering
+categories:
+  - Software Engineering
 tags:
   - callstack
 ---
@@ -12,12 +13,12 @@ A [stack](/Data_Structures/Stacks.md) data structure that holds the information 
 
 ```js
 function greet(who) {
-  console.log('Hello ' + who);
+  console.log("Hello " + who);
 }
 
-greet('Harry');
+greet("Harry");
 
-console.log('Bye');
+console.log("Bye");
 ```
 
 ### Breakdown
