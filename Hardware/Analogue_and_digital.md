@@ -1,7 +1,7 @@
 ---
 title: Analogue and digital
 categories:
-  - Computer Architecture
+  - Hardware
 tags: [analogue, digital]
 ---
 
