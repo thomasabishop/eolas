@@ -18,23 +18,34 @@ The equivalent entity in the [binary number system](/Hardware/Binary/The_binary_
 
 The informational complexity of digit is much larger than a bit: it can represent one of 10 states whereas a bit can only represent one of two states.
 
-Consider how much data can be stored in a three digit digital number compared to a three bit binary number. For the decimal number each digit can represent one of ten states, hence the total number of unique states is equal to $3^{10} (59049)$:
+We can think of how much data can be stored in a number in terms of the total number of unique arrangemnets of bits or digits. With this in mind, compare a two digit digital number to a two bit binary number. For the decimal number each digit can represent one of ten states, hence the total number of unique states is equal to $2^{10} (1024)$:
+
+With the binary number we have $2^{2} (4)$, giving us far fewer possible unique states. They are so few we can easily list them:
 
 ```
-001
-002
-003
-...
-010
-011
-012
-013
-...
+00
+01
+10
+11
 ```
 
-With the binary number we have $3^{10} (59049)$
-Therefore to express greater complexity we work with sequences of bits.
+### Bytes
+
+In order to express larger binary numbers and greater complexity we work with sequences of bits.
 
 The standard **base sequence** of bits is called a **byte**. This is a binary number comprising **eight bits**. For example the number `11001110` is a byte equivalent to 206 in decimal.
 
-Every time we add a bit to the sequence of bits comprising a binary number we increase complexity of the number by a factor of 2, i.e. `1, 2, 4, 8, 16, 32, 64, 128` etc.
+A byte allows for a complexity of up to 256 possible states: $2^{8} = 256$
+
+## Metric units: kilobytes, megabytes etc
+
+Having established that the core quantity of information is the byte, the convention is to apply the [standard metric prefixes](/Electronics/Physics_of_electricity/Prefixes_for_units_of_electrical_measurement.md) to the byte to establish units:
+
+| Prefix | Symbol | Expression as exponent | Expression as decimal value | English word |
+| ------ | ------ | ---------------------- | --------------------------- | ------------ |
+| Terra- | T      | $10^12$                | 1,000,000,000,000           | trillion     |
+| Giga-  | G      | $10^9$                 | 1,000,000,000               | billion      |
+| Mega-  | M      | $10^6$                 | 1,000,000                   | million      |
+| Kilo-  | k      | $10^3$                 | 1,000                       | thousand     |
+
+Hence 2MB is two million bytes, 4kb is four thousand bytes etc.
