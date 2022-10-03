@@ -1,7 +1,7 @@
 ---
 title: Binary units of measurement
 categories:
-  - Hardware
+  - Computer Architecture
   - Mathematics
 tags: [bits, binary]
 ---
@@ -41,11 +41,24 @@ A byte allows for a complexity of up to 256 possible states: $2^{8} = 256$
 
 Having established that the core quantity of information is the byte, the convention is to apply the [standard metric prefixes](/Electronics/Physics_of_electricity/Prefixes_for_units_of_electrical_measurement.md) to the byte to establish units:
 
-| Prefix | Symbol | Expression as exponent | Expression as decimal value | English word |
-| ------ | ------ | ---------------------- | --------------------------- | ------------ |
-| Terra- | T      | $10^12$                | 1,000,000,000,000           | trillion     |
-| Giga-  | G      | $10^9$                 | 1,000,000,000               | billion      |
-| Mega-  | M      | $10^6$                 | 1,000,000                   | million      |
-| Kilo-  | k      | $10^3$                 | 1,000                       | thousand     |
+| Prefix | Symbol | Expression as base ten exponent | Value             | English word |
+| ------ | ------ | ------------------------------- | ----------------- | ------------ |
+| Terra- | T      | $10^{12}$                       | 1,000,000,000,000 | trillion     |
+| Giga-  | G      | $10^9$                          | 1,000,000,000     | billion      |
+| Mega-  | M      | $10^6$                          | 1,000,000         | million      |
+| Kilo-  | k      | $10^3$                          | 1,000             | thousand     |
 
 Hence 2MB is two million bytes, 4kb is four thousand bytes etc.
+
+Whilst the metric prefixes are conventionally used to refer to aggregates of bytes, they are only approximate values due to the fact that metric is base ten whereas bytes are base two. Hence 1MB is not 1,000,000 bytes it is 1,048,576 bytes.
+
+This is usually fine as a shorthand but an accurate representation of byte values is as follows:
+
+| Prefix | Symbol | Expression as base two exponent | Value             | English word |
+| ------ | ------ | ------------------------------- | ----------------- | ------------ |
+| Terra- | T / Ti | $2^{40}$                        | 1,099,511,627,776 | trillion     |
+| Giga-  | G / Gi | $2^{30}$                        | 1,073,741,824     | billion      |
+| Mega-  | M / Mi | $2^{20}$                        | 1,048,576         | million      |
+| Kilo-  | k / Ki | $2^{10}$                        | 1,024             | thousand     |
+
+> A special IEEE standard was introduced to distinguish base two within the metric nomenclature: kibi, mebi, gibi etc but this was not widely adopted. The symbols for this are included above as they are sometimes used by Linux programs (Gi, Mi, Ki etc)
