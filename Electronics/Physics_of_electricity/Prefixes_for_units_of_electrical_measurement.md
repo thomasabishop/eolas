@@ -14,8 +14,9 @@ In electronics we are often dealing with units that are very large or very small
 | Giga-  | G      | $10^9$                 | 1,000,000,000               | billion      |
 | Mega-  | M      | $10^6$                 | 1,000,000                   | million      |
 | Kilo-  | k      | $10^3$                 | 1,000                       | thousand     |
-| Milli- | m      | $10^{-3}$              | 0.001                       | hundredth    |
-| Micro- | $\mu$  | $10^{-6}$              | 0.0000001                   | thousandth   |
+| Centi- | c      | $10^{-2}$              | 0.01                        | hundredth    |
+| Milli- | m      | $10^{-3}$              | 0.001                       | thousandth   |
+| Micro- | $\mu$  | $10^{-6}$              | 0.0000001                   | millionth    |
 | Nano-  | n      | $10^{-9}$              | 0.0000000001                | billionth    |
 | Pico-  | p      | $10^{-12}$             | 0.0000000000001             | trillionth   |
 

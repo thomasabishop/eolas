@@ -10,7 +10,7 @@ tags: [bits, binary]
 
 A single place or symbol in a decimal number is called a **digit**. For example the number 343 is a number containing three digits. A digit can be any numeral through 0-9.
 
-The equivalent entity in the [binary number system](/Hardware/Binary/The_binary_number_system.md) is the **bit**. For example the binary number 110 has three bits. A bit can only have one of two values in contrast to a digit which can have one of ten values: 0 or 1.
+The equivalent entity in the [binary number system](/Hardware/Binary/Binary_number_system.md) is the **bit**. For example the binary number 110 has three bits. A bit can only have one of two values in contrast to a digit which can have one of ten values: 0 or 1.
 
 ## Sequences of bits
 

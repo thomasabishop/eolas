@@ -1,12 +1,12 @@
 ---
-title: The binary number system
+title: Binary number system
 categories:
   - Mathematics
   - Computer Architecture
 tags: [binary, number-systems]
 ---
 
-# The binary number system
+# Binary number system
 
 ## Decimal (denary) number system
 
