@@ -61,12 +61,41 @@ $$
 
 As applied to `1A5`:
 
-| $16^{2}$              | $16^{1}$                   | $16^{0}$            |
-| --------------------- | -------------------------- | ------------------- |
-| $1\cdot 16^{2} = 256$ | $A (10)\cdot 16^{1} = 160$ | $5\cdot 16^{0} = 5$ |
+| $16^{3}$               | $16^{2}$              | $16^{1}$                   | $16^{0}$            |
+| ---------------------- | --------------------- | -------------------------- | ------------------- |
+| $1\cdot 16^{3} = 4096$ | $1\cdot 16^{2} = 256$ | $A (10)\cdot 16^{1} = 160$ | $5\cdot 16^{0} = 5$ |
 
 Another example for `F00F`:
 
 $(15 \cdot 4096 = 61440) + (0 \cdot 256 = 0) + (0 \cdot 16 = 0) + (15 \cdot 1 = 15) = 61455$
+
+## Using hexadecimal to simplify binary numbers
+
+Whilst computers themselves do not use the hexadecimal number system (everything is binary), hexadecimal offers advantages for humans who must work with binary:
+
+1. It is much easier to read a hexadecimal number than long sequences of binary numbers
+2. It is easier to quickly convert binary numbers to hexadecimal than to convert binary numbers to decimal
+
+Look at the following equivalences
+
+| Number system   | Example 1           | Example 2           |
+| --------------- | ------------------- | ------------------- |
+| **Binary**      | 1111 0000 0000 1111 | 1000 1000 1000 0001 |
+| **Hexadecimal** | F00F                | 8881                |
+| **Decimal**     | 61,455              | 34,945              |
+
+It is obvious that a pattern is maintained between the hexadecimal and binary numbers and that this pattern is obscured by the decimal conversion. In the first example the binary half-byte `1111` is matched by the hexadecimal `F00F`.
+
+Mathematically comparing hex `F` and binary `1111`
+
+$$
+  \textsf{1111} = (2^{3} + 2^{2} + 2^{1} + 2^{0}) \\
+  = 8 + 4 + 2 + 1
+$$
+
+$$
+  \textsf{F00F} = (15 \cdot 16^{4}) + (15 \cdot 16^{0})  \\
+  = 8 + 4 + 2 + 1
+$$
 
 // TODO: Relation to binary and bytes
