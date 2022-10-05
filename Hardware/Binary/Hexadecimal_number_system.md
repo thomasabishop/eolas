@@ -86,16 +86,19 @@ Look at the following equivalences
 
 It is obvious that a pattern is maintained between the hexadecimal and binary numbers and that this pattern is obscured by the decimal conversion. In the first example the binary half-byte `1111` is matched by the hexadecimal `F00F`.
 
-Mathematically comparing hex `F` and binary `1111`
+Mathematically comparing hex `F` and binary `1111`:
 
 $$
-  \textsf{1111} = (2^{3} + 2^{2} + 2^{1} + 2^{0}) \\
-  = 8 + 4 + 2 + 1
+  \textsf{1111} = ((1 \cdot 2^{3}) + (1 \cdot 2^{2}) + (1 \cdot 2^{1}) + (1 \cdot 2^{0})) \\
+  = 8 + 4 + 2 + 1 \\
+  = 15
 $$
 
 $$
-  \textsf{F00F} = (15 \cdot 16^{4}) + (15 \cdot 16^{0})  \\
-  = 8 + 4 + 2 + 1
+  \textsf{F} = 15 \cdot 16^{0}  \\
+  = 15
 $$
 
-// TODO: Relation to binary and bytes
+![](/img/hexadecimal-to-bytes.svg)
+
+> Every four bits (or half byte) in binary corresponds to one symbol in hexadecimal. Therefore **a byte can be easily represented with two hexadecimal symbols, a 16-bit number can be represented with four hex symbols, a 32-bit number can represented with eight hex symbols and so on.**
