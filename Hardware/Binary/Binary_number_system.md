@@ -75,6 +75,10 @@ Counting in binary:
 000111
 ```
 
+## Binary prefix
+
+To distinguish numbers in binary from decimal or [hexadecimal](/Hardware/Binary/Hexadecimal_number_system.md) numbers, it is common to use the prefix `0b`. Thus, e.g, `0b110` for decimal `6`.
+
 ## Converting decimal to binary
 
 Let's convert 6 into binary:
