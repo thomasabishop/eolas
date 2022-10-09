@@ -45,6 +45,10 @@ This table shows the raw value of each hexadecimal place value:
 | -------- | -------- | -------- | -------- |
 | 4096     | 256      | 16       | 1        |
 
+## Hexadecimal prefix
+
+The custom is to prefix a hexadecimal number with `0x` to indicate that the number is hexadecimal.
+
 ## Converting hexadecimal numbers
 
 Using the previous table we can convert hexadecimal values to decimal.
@@ -59,13 +63,13 @@ $$
   16^{n} \cdot 1,2,...F
 $$
 
-As applied to `1A5`:
+As applied to `0x1A5`:
 
 | $16^{3}$               | $16^{2}$              | $16^{1}$                   | $16^{0}$            |
 | ---------------------- | --------------------- | -------------------------- | ------------------- |
 | $1\cdot 16^{3} = 4096$ | $1\cdot 16^{2} = 256$ | $A (10)\cdot 16^{1} = 160$ | $5\cdot 16^{0} = 5$ |
 
-Another example for `F00F`:
+Another example for `0xF00F`:
 
 $(15 \cdot 4096 = 61440) + (0 \cdot 256 = 0) + (0 \cdot 16 = 0) + (15 \cdot 1 = 15) = 61455$
 
