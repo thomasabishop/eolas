@@ -7,13 +7,13 @@ tags: [binary]
 
 # Binary encoding
 
-We know that everything going on in a computer is the manipulation of binary digits. Thus all data must ultimately reduce to binary numbers controlled through logic circuits.
+We know that everything going on in a computer is the manipulation of binary digits. Thus all data must ultimately reduce to binary numbers manipulated through logic circuits.
 
-_Encoding_ is the process of establishing a correspondence between certain binary numbers and symbols. For certain essential data types, for instance alphanumeric characters and colours, there are agreed standards of encoding such that, for example, that `111111` (binary) and `3F` (hex) always corresponds to the character `?`. The reverse is obviously _decoding_: deriving the data/ symbol from the binary format.
+_Encoding_ is the process of establishing a correspondence between sets of binary numbers and sets of symbols that are representative of a given type of data. For certain fundamental data types, for example alphanumeric characters and colours, there are agreed standards of encoding such that, for example, that `111111` (binary) and `3F` (hex) always corresponds to the character `?`. The reverse is obviously _decoding_: deriving the data/ symbol from the binary format.
 
-The length of the binary number is determined by the number of variations that you require to capture a given dataset. For example, say we know that there are 18 levels to a computer game. To encode a reference for each level we would need a binary number that is capable of at least 18 total variations.
+> An encoding system maps each symbol to a unique sequence of bits. A computer then interprets that sequence of bits and displays the apppropriate symbol to the user.
 
-Here, a 32-bit ($2^{5}$) number would be best because the next smallest (16-bit) would not be sufficient. Our levels would have representations as follows:
+The length of the binary number (bytes, 16-bit, 32-bit etc) that is used to represent a given data set is determined by the number of variations that you require to capture the entire range of the dataset. For example, say we know that there are 18 levels to a computer game. To encode a reference for each level we would need a binary number that is capable of at least 18 total variations. In this instance a 16-bit number would not suffice because it would give us only 16 variants. Thus 32-bit ($2^{5}$) would be the right choice
 
 ```
 00001 (1)
@@ -22,8 +22,6 @@ Here, a 32-bit ($2^{5}$) number would be best because the next smallest (16-bit)
 00100 (4)
 ...
 ```
-
-> An encoding system maps each symbol to a unique sequence of bits. A computer then interprets that sequence of bits and displays the apppropriate symbol to the user.
 
 ## Related points
 
