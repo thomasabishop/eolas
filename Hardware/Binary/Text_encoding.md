@@ -2,7 +2,7 @@
 title: Text encoding
 categories:
   - Computer Architecture
-tags: [binary, ascii, unicode, utf-8]
+tags: [binary, binary-encoding, ascii, unicode, utf-8]
 ---
 
 # Text encoding
