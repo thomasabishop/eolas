@@ -23,6 +23,17 @@ The opposite to resistance is **conductance**. Again conductance is not the same
 ### Resistance
 
 - We use $R$ to represent resistance
-- Resistance is measured in **ohms** ($\Omega$)
+- The unit of resistance is **ohms** ($\Omega$)
 
 > One ohm is the resistance of a circuit or circuit element that permits a steady current flow of one [amp](/Electronics/Physics_of_electricity/Current.md#formal-expression) (one coulomb/second) when one [volt](/Electronics/Physics_of_electricity/Voltage.md#voltage) is applied to the circuit.
+
+### Conductance
+
+- We use $G$ to represent conductance
+- The unit of conductance is **Mho** (ohm spelled backwards) ($\mho$)
+
+> Conductance is the ability of a material to pass electrons
+
+> Given that resistance is the opposite of conductance, the relation between the two quantities can be expressed via a recipricol: $R = 1/G$ and $G = 1/R$
+
+## Resistor components
