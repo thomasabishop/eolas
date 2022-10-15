@@ -4,7 +4,7 @@ categories:
   - Computer Architecture
   - Electronics
   - Hardware
-tags: [logic-gates, binary]
+tags: [logic-gates, binary, memory]
 ---
 
 # Creating memory with NAND gates

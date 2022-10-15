@@ -20,7 +20,7 @@ There are three main implementations:
 - CPython
   - The default implementation, written in C
 - Jython
-  - Java
+  - Python implemented by Java and running on the JVM
 - PyPy
   - A subset of Python which is faster due to machine code compilation
 
@@ -32,7 +32,14 @@ When Python runs in this implementation, code written in C converts it to byteco
 
 The fact that Python does not compile to binary means that it can run on a greater variety of hardwares however it is slower than a language that compiles to machine code. PyPy is a solution for this because it is both interpreted and compiled to optimised machine code at run time.
 
-// TODO:
+Where CPython is the interpreter, Python extensions can be written in C.
 
-- Notes on Jython and PyPy
-- What are the benefits of using one over the other? e.g. how you write C modules that are understood by Python.
+## PyPy
+
+PyPy is an alternative implementation to CPython. The main difference is that it uses a JIT-compiler and doesn't convert Python to the intermediary byte code. It is also written in Python itself, specifically RPython ('restricted Python'). This is capable of converting Python directly to machine code without the CPython virtual machine.
+
+## Jython
+
+Jython is an implementation of Python written in Java. Like CPython it converts Python to bytecode but this runs on the JVM. As it is written in Java, a Jython program can import and use any Java class.
+
+Where Jython is the interpreter, Python extension can be written in Java.
