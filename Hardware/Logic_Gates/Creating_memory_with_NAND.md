@@ -11,6 +11,10 @@ tags: [logic-gates, binary, memory]
 
 The [logic circuit](/Hardware/Logic_Gates/Logic_circuits.md) below demonstrates how memory can be created using [NAND](/Hardware/Logic_Gates/Nand_gate.md) gates. A single bit is stored in memory.
 
+Interactive version of circuit:
+
+<iframe src="https://circuitverse.org/simulator/edit/nand-mem" title="NAND memory"></iframe>
+
 ![](/img/nand-memory.svg)
 
 ## Components
@@ -53,4 +57,4 @@ The [logic circuit](/Hardware/Logic_Gates/Logic_circuits.md) below demonstrates 
 
 When **S** is `ON`, **0** will mirror whatever state **I** is in. However if you turn **S** `OFF`, **O** will remain in whatever state it was when **S** was turned `OFF`. You can toggle **I** as much as you like, **O** will remain in its previous state. Hence creating a memory store of the past value of **I**.
 
-The specific reason for this is that, if **S** is `OFF`, both **A** and **B** are `ON`
+The specific reason for this is that, if **S** is `OFF`, both **A** and **B** are `ON` since `ON + OFF` at A equals `ON` and `
