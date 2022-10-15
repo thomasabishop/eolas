@@ -11,9 +11,7 @@ tags: [logic-gates, binary, memory]
 
 The [logic circuit](/Hardware/Logic_Gates/Logic_circuits.md) below demonstrates how memory can be created using [NAND](/Hardware/Logic_Gates/Nand_gate.md) gates. A single bit is stored in memory.
 
-Interactive version of circuit:
-
-<iframe src="https://circuitverse.org/simulator/edit/nand-mem" title="NAND memory"></iframe>
+Interactive version of circuit: [https://circuitverse.org/simulator/edit/nand-mem](https://circuitverse.org/simulator/edit/nand-mem)
 
 ![](/img/nand-memory.svg)
 
@@ -32,7 +30,7 @@ Interactive version of circuit:
 - Given the logic of NAND, **A** will be on.
 - This means **Gate 2** is receiving `ON` from **A** and `ON` from **S** therefore `B` is `OFF`
 - Moving to **Gate 4** it is receiving `OFF` from **B** and it's other input is not activated so is therefore also `OFF`. Consequently **C** is `ON`
-- `C` is fed as the second input into **Gate 3**, thus we have both inputs (**A** and **C**) as `ON`, therefore the output will make `O` `OFF`
+- `C` is fed as the second input into **Gate 3**, thus we have both inputs (**A** and **C**) as `ON`, therefore the output will make **O** `OFF`
 
 > Upshot: With **S** `ON`, output is the same as input
 
@@ -55,6 +53,10 @@ Interactive version of circuit:
 
 ### Memory
 
-When **S** is `ON`, **0** will mirror whatever state **I** is in. However if you turn **S** `OFF`, **O** will remain in whatever state it was when **S** was turned `OFF`. You can toggle **I** as much as you like, **O** will remain in its previous state. Hence creating a memory store of the past value of **I**.
+When **S** is `ON`, **O** will mirror whatever state **I** is in. However if you turn **S** `OFF`, **O** will remain in whatever state it was when **S** was turned `OFF`. You can toggle **I** as much as you like, **O** will remain in its previous state. Hence creating a memory store of the past value of **I**.
 
-The specific reason for this is that, if **S** is `OFF`, both **A** and **B** are `ON` since `ON + OFF` at A equals `ON` and `
+The specific reason for this is that, if **S** is `OFF`, both **A** and **B** are `ON` since at Gate 1: `ON (I) + OFF (S) = ON` and `OFF (I) + OFF (S) = OFF` and at Gate 2: `OFF (Gate 1) + OFF (S) = OFF`
+
+This is illustrated in the diagram below. The space occupied by **A** and **B** remains on regardless of the state of **I**.
+
+![](/img/nand-mem-demonstrated.gif)
