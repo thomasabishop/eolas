@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [Databases, mongo-db, node-js, mongoose]
+tags: [mongo-db, node-js, mongoose]
 ---
 
 # MongoDB connection, set-up and data query: complete example
