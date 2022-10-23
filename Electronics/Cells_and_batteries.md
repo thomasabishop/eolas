@@ -32,12 +32,7 @@ With series connections we distinguish **series aiding** and **series opposing**
 
 In the case of **series aiding**, cells are connected one in front of another with the positive terminal connecting to the negative terminal of the other in a line.
 
-In this configuration the same current flows through all the cells; it is not cumulative. We represent this as follows:
-
-$$
-I_{T} = I_{1} = I_{2} = I_{3}
-$$
-
+In this configuration the same current flows through all the cells; it is not cumulative. We represent this as follow>
 However the voltage is cumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
 
 $$
