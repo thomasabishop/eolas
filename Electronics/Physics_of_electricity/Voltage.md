@@ -9,67 +9,19 @@ tags: [physics, electricity]
 
 ## Difference of potential and the tranfer of energy
 
-We noted in the discussion of [current](/Electronics/Physics_of_electricity/Current.md) that current flows when there is difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
+We noted in the discussion of [current](/Electronics/Physics_of_electricity/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
 
-'Difference of potential' is the same thing as voltage. We use the term 'voltage' to denote the propensity for charge to flow from one place to another. Voltage is essential to current because it is the force that enables the current to flow.
-
-## Distinguishing _voltage_ from _electric field_
+_Difference of potential_ is the same thing as voltage. Voltage is essential to current because it is the force that enables the current to flow.
 
 Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current, energy must be imparted to the electrons so that they all flow in the same direction.
 
-Voltage is the application of this energy. Any form of energy that dislodges electrons from atoms can be used to produce current.
+Voltage is the application of this energy. Any [form of energy](/Electronics/Physics_of_electricity/Voltage_sources.md) that dislodges electrons from atoms can be used to produce current. Thus:
 
-> It is important to realise that in this process energy is not 'created', rather there is a transfer of energy from one form to another. The force applied to generate the currThe Expanse Season 4
+> Voltage is the work required per coulomb to move a charge from one point to another.
 
-## Distinguishing _voltage_ from _electric field_
+### Voltage exists even without current
 
-It can be confusing that two different symbols often seemed to be used interchangeably when talking about voltage: $V$ and $E$. However, while they broadly point to the same phenomenon there is a difference in emphasis.
-
-- $V$ stands for volts or voltage conceived purely in terms of the difference in potential between two points: the positive and negative terminals
-- $E$ stands for electric field. This is the field that surround each electric charge and exerts force on all other charges in the field, attracting or repelling them. So it is more the physical process that the volatage represents rather than the numerical representation of the potential between the terminals.
-
-## Voltage sources
-
-The following are the main sources of voltage:
-
-- friction
-- magnetism
-- chemicals
-- light
-- heat
-- pressure
-
-Energy in these states can be transformed into energy as current. We will review the most common sources below.
-
-### Magentism (electrical generators)
-
-Magnetism is used the voltage source in electrical generators by far the most common method of producing powerful and large currents at scale.
-
-If a conductive wire is passed through a magnetic field voltage will be produced so long as there is motion between the magnetic field and the conductor. A **generator** is a device that generates current in this manner. Generators themselves need to be powered. They can be powered by steam from a nuclear power plant, water, wind, coal or other fossil fuels.
-The Expanse Season 4
-
-#### AC/DC
-
-Depending on how it is wired, a generator can produce **directed current** (DC) or **alternating current** (AC):
-
-- **Directed current**
-
-  - The electrons flow in only one direction
-
-- **Alternating current**
-  - The electrons flow in one direction and then the other
-
-### Chemicals (cells and batteries)
-
-The chemical creation of current is the physics behind [batteries](/Electronics/Cells_and_batteries.md). Chemical current production produces currents on a smaller and less industrial scale than generators.
-
-A chemical cell consists in two dissimilar metals such as copper and zinc. We call these the **electrodes**. They are immersed in a salt, acid or alkaline solution. We call these the **electrolytes**. The electrolyte pulls the free electrons from the copper electrode which leaves it imbalanced with a positive charge. The zinc electrode attracts the free electrons from the electrolyte giving it a negative charge, thus a difference of potential is achieved.
-
-### Light (photovoltaic cells)
-
-Solar energy can be converted to electrical energy through solar panels which are large collections of **photovoltaic cells**.
-
-When the surfaces of these cells are exposed to light, it dislodges electrons from their orbits around the surface atoms of the cell material. For each cell this only produces a very small amount of energy, therefore large quantities must be used.
+Given that voltage is the force that generates current, it would be natural to think that voltage only exists when a voltage source (such as a [battery](/Electronics/Cells_and_batteries.m`)) is connected to a circuit. This however is not the case. Even if a 9V battery isn't connected to anything it still has a difference of potential of 9-volts accross its terminals. Remember voltage is _potential energy_ not just the actualisation of that energy.
 
 ## Voltage rise and voltage drops
 
@@ -111,3 +63,10 @@ In domestic settings appliances are **earth grounded**. The name comes from the 
 In electronics ground doesn't refer to the specific appliance but is a concept of a zero reference point against which all voltages are measured. A measured voltage will be negative or positive with respect to ground. This said, all circuitry will also have a physical mechanism of discharging potential.
 
 // TODO: Don't really understand this so return to with better explanation
+
+## Distinguishing _voltage_ from _electric field_
+
+It can be confusing that two different symbols often seemed to be used interchangeably when talking about voltage: $V$ and $E$. However, while they broadly point to the same phenomenon there is a difference in emphasis.
+
+- $V$ stands for volts or voltage conceived purely in terms of the difference in potential between two points: the positive and negative terminals
+- $E$ stands for electric field. This is the field that surround each electric charge and exerts force on all other charges in the field, attracting or repelling them. So it is more the physical process that the volatage represents rather than the numerical representation of the potential between the terminals.
