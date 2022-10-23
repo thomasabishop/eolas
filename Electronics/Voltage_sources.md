@@ -16,7 +16,7 @@ The following phenomena are the main sources that we use to generat evoltage:
 - heat
 - pressure
 
-> In each case, energy in one state is transformed into energy as current. No energy is lost or gained, it simply changes its form.
+> In each case, energy in one state is transferred into energy as current. No energy is lost or gained, it simply changes its form.
 
 ### Magentism (electrical generators)
 

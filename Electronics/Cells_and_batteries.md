@@ -6,7 +6,7 @@ tags: [physics, electricity]
 
 # Cells and batteries
 
-Cells are a [voltage source](/Electronics/Physics_of_electricity/Voltage.md#chemicals-cells-and-batteries) that generate a difference of potential via a positive and negative electrode separated by an electrolytic solution. The electrolytes pull free electrons from one of the materials which creates a positive charge. The other material gains the free electrons creating a negative charge.
+Cells are a [voltage source](/Electronics/Voltage.md#chemicals-cells-and-batteries) that generate a difference of potential via a positive and negative electrode separated by an electrolytic solution. The electrolytes pull free electrons from one of the materials which creates a positive charge. The other material gains the free electrons creating a negative charge.
 
 > A battery is a combination of two or more cells.
 
@@ -33,7 +33,7 @@ With series connections we distinguish **series aiding** and **series opposing**
 In the case of **series aiding**, cells are connected one in front of another with the positive terminal connecting to the negative terminal of the other in a line.
 
 In this configuration the same current flows through all the cells; it is not cumulative. We represent this as follow>
-However the voltage is cumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Physics_of_electricity/Voltage.md#distinguishing-voltage-from-electric-field):
+However the voltage is cumulative: it is the _sum_ of the individual cell voltages, represented below as [electrical field](/Electronics/Voltage.md#distinguishing-voltage-from-electric-field):
 
 $$
 E_{T} = E_{1} + E_{2} + E_{3} \\

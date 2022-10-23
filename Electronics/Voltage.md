@@ -9,13 +9,13 @@ tags: [physics, electricity]
 
 ## Difference of potential and the tranfer of energy
 
-We noted in the discussion of [current](/Electronics/Physics_of_electricity/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
+We noted in the discussion of [current](/Electronics/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
 
 _Difference of potential_ is the same thing as voltage. Voltage is essential to current because it is the force that enables the current to flow.
 
 Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current, energy must be imparted to the electrons so that they all flow in the same direction.
 
-Voltage is the application of this energy. Any [form of energy](/Electronics/Physics_of_electricity/Voltage_sources.md) that dislodges electrons from atoms can be used to produce current. Thus:
+Voltage is the application of this energy. Any [form of energy](/Electronics/Voltage_sources.md) that dislodges electrons from atoms can be used to produce current. Thus:
 
 > Voltage is the work required per coulomb to move a charge from one point to another.
 

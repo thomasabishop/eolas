@@ -39,7 +39,7 @@ A byte allows for a complexity of up to 256 possible states: $2^{8} = 256$
 
 ## Metric units: kilobytes, megabytes etc
 
-Having established that the core quantity of information is the byte, the convention is to apply the [standard metric prefixes](/Electronics/Physics_of_electricity/Prefixes_for_units_of_electrical_measurement.md) to the byte to establish units:
+Having established that the core quantity of information is the byte, the convention is to apply the [standard metric prefixes](/Electronics/Prefixes_for_units_of_electrical_measurement.md) to the byte to establish units:
 
 | Prefix | Symbol | Expression as base ten exponent | Value             | English word |
 | ------ | ------ | ------------------------------- | ----------------- | ------------ |
