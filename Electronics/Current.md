@@ -51,3 +51,9 @@ $$
 I = \frac{9}{3} \\
 I = 3  A
 $$
+
+## Direction of current
+
+In terms of the physics, current flows due to the movement of charged particles from atoms which are negatively charged to atoms which are positively charged. However when it comes to the representation of current in electrical circuits the convention is to view current as flowing from the positive to the negative terminal.
+
+This is obviously physically inaccurate however it became the convention before electrons were properly understood when charge was thought to be a property of protons. So we are stuck with this convention in electronics.
