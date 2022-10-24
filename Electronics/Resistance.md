@@ -11,9 +11,7 @@ Resistance is opposition to the flow of current. Different materials have differ
 
 ## Relationship between _resistance_ and _insulation_
 
-Resistance and insulation are not the same thing although they relate to the same natural phenomena. Resistance is a propery of an electrical circuit whereas insularity is a property of substances found in the world. Similarly, inulators are naturally occuring materials that resist the flow of current to different degrees whereas a resistor is a man-made electrical component that is used to _control_ the flow of current in a circuit.
-
-The opposite to resistance is **conductance**. Again conductance is not the same thing as a [conductor](/Electronics/Physics_of_electricity/Electrons.md#conductivity-and-insularity): it is a measure of the capacity for current to flow through an electrical component and is function of the fact that certain materials are better conductors than others.
+Resistance and insulation are not the same thing although they relate to the same natural phenomena. Resistance is a property of an electrical circuit whereas insularity is a property of substances found in the world. Similarly, insulators are naturally occuring materials that resist the flow of current to different degrees whereas a resistor is a man-made electrical component that is used to _control_ the flow of current in a circuit.
 
 ## Factors affecting resistance
 
@@ -37,6 +35,10 @@ The opposite to resistance is **conductance**. Again conductance is not the same
 > Conductance is the ability of a material to pass electrons
 
 > Given that resistance is the opposite of conductance, the relation between the two quantities can be expressed via a recipricol: $R = 1/G$ and $G = 1/R$
+
+## Ohm's Law
+
+The relationship between current, resistance and voltage is expressed in [Ohm's Law](/Electronics/Physics_of_electricity/Ohms_Law.md).
 
 ## Resistors
 
