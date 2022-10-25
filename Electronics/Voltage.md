@@ -40,7 +40,7 @@ A 12V battery connected to a circuit gives it a voltage rise of 12 volts.
 
 Voltage drop is the corrolary to voltage rise. It is the loss of energy that the electrons of the circuit current experience as a result of encountering resistance.
 
-As they move through the circuit the electrons encounter a **load** which is what we call resistance to the flow of electrons. As they run into this, they give up their energy. The relinquishing of energy happens in the form of a conversion of electrical energy to heat. The amount lost is equal to the amount of energy imparted by the voltage rise.
+As they move through the circuit the electrons encounter a **load** which is what we call resistance to the flow of current. As they run into this, they give up their energy. The relinquishing of energy happens in the form of a conversion of electrical energy to heat. The amount lost is equal to the amount of energy imparted by the voltage rise.
 
 > The voltage drop in a circuit equals the the voltage rise of the circuit because energy cannot be created or destroyed, only changed to another form. When a voltage rise is converted to a voltage drop we say that **the energy has been _consumed_ by the circuit**.
 
@@ -51,6 +51,34 @@ As they move through the circuit the electrons encounter a **load** which is wha
 - If two different lamps are connected in series to to a 12V source: a 3V and a 9V lamp, the 9V lamp produces a drop of 9V and the 3V lamp produces a drop of 3V. The sum of the voltage drops equals the voltage rise of 12 volts.
 
 These examples demonstrate that the voltage rise: voltage drop ratio always evens out.
+
+### Kirchoff's Voltage Law
+
+The relationship between voltage rise and voltage drop is expressed in Kirchoff's Voltage Law:
+
+> The sum of the voltages around any closed loop in a circuit must be zero.
+
+The application of the Law is illustrated in the following diagram:
+
+![](/img/voltage-drop.png)
+
+The explanation for the voltage drop at the positions $V^{A}$ and $V^{D}$ are obvious enough: they are at the beginning and end of the loop so are equal to the maximal voltage rise and minimal voltage drop, respectively.
+
+We can work out the voltage of the remaining voltage points by inverting [Ohm's Law](/Electronics/Physics_of_electricity/Ohms_Law.md): $V = I \times R$:
+
+For the voltage at $V^{B}$:
+
+$$
+  0.5\textsf{mA} \times \textsf{4}k\Omega = 2 \textsf{V}
+$$
+
+For the voltage at $V^{C}$:
+
+$$
+  0.5\textsf{mA} \times \textsf{6}k\Omega = 3 \textsf{V}
+$$
+
+The total drops (2V, 3V, 5V) are equal to the initial volatage rise (10V)
 
 ## Distinguishing _voltage_ from _electric field_
 
