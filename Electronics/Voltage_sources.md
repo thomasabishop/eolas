@@ -23,7 +23,6 @@ The following phenomena are the main sources that we use to generat evoltage:
 Magnetism is used the voltage source in electrical generators by far the most common method of producing powerful and large currents at scale.
 
 If a conductive wire is passed through a magnetic field voltage will be produced so long as there is motion between the magnetic field and the conductor. A **generator** is a device that generates current in this manner. Generators themselves need to be powered. They can be powered by steam from a nuclear power plant, water, wind, coal or other fossil fuels.
-The Expanse Season 4
 
 #### AC/DC
 
