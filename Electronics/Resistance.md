@@ -2,8 +2,6 @@
 title: Resistance
 categories:
   - Electronics
-  - something new
-  - new again
 tags: [physics, electricity]
 ---
 
