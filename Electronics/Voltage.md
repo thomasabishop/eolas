@@ -52,18 +52,6 @@ As they move through the circuit the electrons encounter a **load** which is wha
 
 These examples demonstrate that the voltage rise: voltage drop ratio always evens out.
 
-## Ground: zero potential
-
-We use the term **ground** to refer to zero potential - the point at which there is no difference of potential (voltage) that could generate current.
-
-We need ground to prevent electric shock from appliances and circuits. It keeps all devices at the same potential.
-
-In domestic settings appliances are **earth grounded**. The name comes from the fact that all appliances will ultimately connect to the earth to neutralise potential. This means there can be no difference of potential between circuits.
-
-In electronics ground doesn't refer to the specific appliance but is a concept of a zero reference point against which all voltages are measured. A measured voltage will be negative or positive with respect to ground. This said, all circuitry will also have a physical mechanism of discharging potential.
-
-// TODO: Don't really understand this so return to with better explanation
-
 ## Distinguishing _voltage_ from _electric field_
 
 It can be confusing that two different symbols often seemed to be used interchangeably when talking about voltage: $V$ and $E$. However, while they broadly point to the same phenomenon there is a difference in emphasis.
