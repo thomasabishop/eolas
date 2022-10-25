@@ -46,3 +46,5 @@ A chemical cell consists in two dissimilar metals such as copper and zinc. We ca
 Solar energy can be converted to electrical energy through solar panels which are large collections of **photovoltaic cells**.
 
 When the surfaces of these cells are exposed to light, it dislodges electrons from their orbits around the surface atoms of the cell material. For each cell this only produces a very small amount of energy, therefore large quantities must be used.
+
+[a new link](/Data_Structures/Arrays.md)
