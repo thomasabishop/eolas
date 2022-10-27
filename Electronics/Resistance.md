@@ -2,7 +2,6 @@
 title: Resistance
 categories:
   - Electronics
-  - test
 tags: [physics, electricity]
 ---
 
