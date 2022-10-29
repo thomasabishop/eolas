@@ -44,4 +44,4 @@ The relationship between current, resistance and voltage is expressed in [Ohm's 
 
 A resistor is an electrical component that can be used in circuits to introduce specific amounts to resistance where needed. This is typically done in order to temper the total voltage and so keep the current flowing within certain set parameters.
 
-[new link](/Mathematics/Algebra/Algebra_key_terms.md)
+[link](/Algorithms/Algorithmic_complexity.md)
