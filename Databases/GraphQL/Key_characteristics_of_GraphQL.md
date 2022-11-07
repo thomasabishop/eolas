@@ -41,10 +41,14 @@ There is a third request type called a **subscription**. This is used for real-t
 
 ### Structure and behaviour
 
-A schema is strongly typed and is basically a graph of fields that have types, e.g
+We define the structure of a GraphQL API through the schema. A schema is strongly typed and is basically a graph of fields that have types, e.g
 
 ```graphql
 {
   name: String
 }
 ```
+
+We implement the behaviour of the API through functions called **resolver functions**. Each field in a GraphQL schema is backed by a resolver function. A resolver function defines what data to fetch for its field.
+
+> A resolver function represents the instructions on how and where to access raw data. For example, a resolver function might issue a SQL statement to a relational database, read a file’s data directly from the operating system, or update some cached data in a document database. A resolver function is directly related to a field in a GraphQL request, and it can represent a single primitive value, an object, or a list of values or objects.
