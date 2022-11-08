@@ -7,6 +7,7 @@ tags: [CPU, electromagnetism]
 # CPU architecture
 
 At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the system bus from the memory. The [kernel](/Operating_Systems/The_Kernel.md), also residing in memory sequences and schedules the sending of data to the CPU and manages requests from the CPU for data in memory.
+
 The CPU comprises three core components:
 
 - Registers (a form of memory that are positioned on the same chip as the CPU )
@@ -17,9 +18,9 @@ The CPU comprises three core components:
 
 ## Registers
 
-This is the part of the CPU that stores data. The memory cells that comprise it do not have capacitors (unlike RAM) so they cannot store very much data but they work faster, which is what is important.
+This is the part of the CPU that stores data. The memory cells that comprise it do not have [capacitors](/Hardware/Memory/Memory.md) (unlike RAM) so they cannot store very much data but they work faster, which is what is important.
 
-In terms of speed, registers sit at the top part of the overall memory hierarchy...
+In terms of speed, registers sit at the top part of the overall [memory hierarchy](/Hardware/Memory/Memory.md#the-memory-hierarchy).
 
 There are five main types of register in the CPU:
 
@@ -33,9 +34,9 @@ There are five main types of register in the CPU:
 
 ## Arithmetic Logic Unit
 
-This is the hub of the CPU, where the binary calculations occur. It comprises [logic gates](/Hardware/Logic_Gates/Logic_gates.md) that execute the instructions passed from memory. This is where the data stored by the registers is acted upon..
+This is the hub of the CPU, where the binary calculations occur. It comprises [logic gates](/Hardware/Logic_Gates/Logic_gates.md) that execute the instructions passed from memory. This is where the data stored by the registers is acted upon.
 
-It can execute arithmetic on binary numbers and logical operations.
+It can execute arithmetic on binary numbers and logical operations. This is where you will find operations conducted by adders and half-adders etc.
 
 This is the heart of the CPU; all the other components on the CPU chip are appendanges to the execution that occures within the ALU. It is also what is meant by the **core** processor that is referred to in hardware specs of computers, for instance _dual-core_, _quad core_ etc.
 
@@ -52,8 +53,6 @@ With Intel processors the two main consumer processors are the i5 and i7. The la
 ## Control Unit
 
 The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instructions in binary form from RAM memory (separate from the CPU, but connected) and then signals to the to ALU and memory registers what it is supposed to do to execute the instructions. Think of it as the overseer that gets the ALU and registers to work together to run program instructions.
-
-## Fetch, decode, execute
 
 ## The system clock
 
