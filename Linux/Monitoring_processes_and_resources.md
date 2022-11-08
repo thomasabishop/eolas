@@ -77,8 +77,8 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
   - The core memory output distinguishing:
     - Total kbs swapped to disk
     - Total kbs free
-    - Total kbs currently in [buffer](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) and not written
-    - Total amount of virtual memory in the [cache](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers)
+    - Total kbs currently in [buffer](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers) and not written
+    - Total amount of virtual memory in the [cache](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
 - `swap`
   - Distinguishes amount of memory [swapped](/Operating_Systems/Disks/Swap_space.md) in (`si`) to memory and swapped out (`so`) to disk
 - `io`
@@ -136,7 +136,7 @@ This will typically be the same for all Linux systems.
 
 ### `free` : available physical memory
 
-`free` displays the total amount of free and¬used physical and swap memory in the system, as well as the [buffers and caches](/Hardware/Memory/Role_in_computation.md#relation-between-cache-and-buffers) used by the kernel.
+`free` displays the total amount of free and¬used physical and swap memory in the system, as well as the [buffers and caches](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers) used by the kernel.
 
 ```bash
 $ free

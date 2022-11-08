@@ -56,7 +56,7 @@ The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instr
 
 ## The system clock
 
-Whilst modern CPUs and threading make it appears as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
+Whilst modern CPUs and multithreading make it appear[] as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
 
 The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Hardware/Logic_Gates/Logic_gates.md) or between logic gates and [registers](/Hardware/CPU/CPU_architecture.md#registers).
 
@@ -64,12 +64,16 @@ Simple instructions such as add can often be executed in just one clock cycle, w
 
 We measure the speed of a chip process within the CPU in **Hertz (Hz)**. One Hertz is equivalent to _1 cycle per second_ where a "cycle" is equivalent to a single clock **tick**. Thus a tick covers a period of 1 second.
 
-A speed of 2GHz for example means two billion cycles per second. This would mean that the clock was completing two billion cycles at each tick.
+A speed of 2GHz for example means two billion cycles per second. This would mean that the clock was completing two billion cycles at each tick. It is clock speed that is being referred to when computers are marketed in terms of the number of Hz a processor possesses.
+
+## Processing cycles
+
+Each "cycle" is the execution of a process that commences once the [kernel](/Operating_Systems/The_Kernel.md) hands control to the CPU. Each cycle follows a sequence of events known as [fetch, decode, and execute](/Hardware/CPU/Fetch_decode_execute.md).
 
 ## Electromagnetism: broader scientific context
 
-Hertz was the scientist who detected electromagentic waves and more broadly in science, we use Hertz to measure the number of electromatic waves (cycles) in a signal.
+Hertz was the scientist who detected electromagentic waves and more broadly in science, we use Hertz to measure the frequency of electromatic wave cycles in a signal.
 
 ![](/img/hertz_wave_freq.gif)
 
-As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles the greater the Hertz.
+As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles per time unit, the greater the Hertz. We see the Hz increase as the number of cycles increases over time.
