@@ -9,12 +9,16 @@ tags: [logic-gates, binary, memory]
 
 # Switches and transistors
 
-Ultimately every process in a computer is the product of a digital [circuit](/Electronics/Circuits.md) that is working on binary values. In contrast to electrical circuits, digital circuits are not represented in an [analogue](/Hardware/Analogue_and_digital.md) fashion.
+In the discussion of [digital circuits](/Electronics/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typically a value between 2V - 5V for the 'on' state and 0V - 0.8V.
 
-In a standard electrical circuit, voltage, current and resistance can vary over a wide range of values however in the binary context we want to deal with discrete values (zeros and ones) which can be fed into the various [logic gates](/Hardware/Logic_Gates/Logic_gates.md).
-
-We therefore need a way to represent 'on' and 'off' as single quantities. We do this by stipulating that a given voltage corresponds to 'on' (high) and another corresponds to 'off' (low). Of course these are not really discrete values since voltage is inherently analogue but we basically binary-encode them. Formally 'on' has a voltage of 1 and 'off' has a voltage of 0. In reality 'on' tends to be within 2-5V depending on the circuit design and anything between 0 - 0.8V is considered off.
+We will look at two ways to achieve this. Firstly with literal switches which are impractical but useful for understanding the concept and then with transistors which are what are actually used in computers.
 
 ## Implementing binary logic with mechanical switches
+
+An electrical switch is inherently binary. When the switch is on, it acts like a simple copper wire through which current flows freely. When the switch is off, it acts like an open circuit and no current can flow.
+
+We can combine switches in a circuit to create analogs to logic gates.
+
+- Example of AND and OR
 
 ## Transistors

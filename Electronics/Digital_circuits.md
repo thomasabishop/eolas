@@ -14,4 +14,4 @@ In a standard electrical circuit, voltage, current and resistance can vary over 
 
 We therefore need a way to represent 'on' and 'off' as single quantities. We do this by stipulating that a given voltage corresponds to 'on' (high) and another corresponds to 'off' (low). Of course these are not really discrete values since voltage is inherently analogue but we basically binary-encode them. Formally 'on' has a voltage of 1 and 'off' has a voltage of 0. In reality 'on' tends to be within 2-5V depending on the circuit design and anything between 0 - 0.8V is considered off.
 
-The [transistor]() is the electrical component that enables us to represent given voltage ranges as being 'on' or 'off'.
+The [transistor](/Electronics/Switches_and_transistors.md) is the electrical component that enables us to represent given voltage ranges as being 'on' or 'off'.
