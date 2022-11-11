@@ -7,7 +7,7 @@ tags: [graph-ql]
 
 # Creating a GraphQL server
 
-> We will use Node.js to create a basic GraphQL server that will serve data from a product database
+> We will use Node.js to create a basic GraphQL server that will serve data from a product database.
 
 Our server will allow us to add products to a database through a mutatation and to query the products that we have added. We will use a JS object instead of a real database.
 
@@ -226,7 +226,11 @@ mutation {
       soldout: false
       stores: [{ store: "London" }]
     }
-  )
+  ) {
+    price
+    name
+    soldout
+  }
 }
 ```
 
@@ -234,11 +238,12 @@ This is represented in GraphiQL as follows:
 
 ![](/img/graphql3.png)
 
-// TODO: Add bit about the value we want returned see 8:20 and explain what is returned
+We should always return something, even if we are applying  mutation, hence we add the properties at the bottom as the ones we want to return.
 
 ### Returning a product through a query
 
 ```graphql
+
 
 ```
 
