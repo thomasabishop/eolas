@@ -12,6 +12,7 @@ User space is the portion of the main memory that the kernel allocates for user 
 There is a hierarchy within the user space with several different groups of user processes:
 
 <dl>
+
 <dt>Basic services</dt>
 <dd>Run at the bottom level and therefore are closest to ther kernel. Comprises small components that perform single, uncomplicated tasks. Examples include network configuration, the communication bus, and diagnostic logging</dd> 
 <dt>Utiility services</dt>

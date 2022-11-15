@@ -10,7 +10,7 @@ tags:
 
 # Disk partitions
 
-A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices.md) as it would with an entire disk.
+A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices) as it would with an entire disk.
 
 The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space.
 
