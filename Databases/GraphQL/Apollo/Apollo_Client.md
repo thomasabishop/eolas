@@ -20,7 +20,7 @@ const client = new ApolloClient({
 });
 ```
 
-> The uri property must match the location of our Apollo server.
+> The `uri` property must match the location of our Apollo server.
 
 ## Utilising the provider
 
@@ -62,6 +62,7 @@ const TRACKS = gql`
 ```
 
 The convention is to name the query constant in `ALL_CAPS`.
+> Note that the name of the query on the client doesn't have to match the query type defined in the schema however it should reference it on the second line (`tracksFormHome)
 
 ### `useQuery` hook
 
@@ -86,3 +87,4 @@ const Tracks = () => {
 - We destructure the `loading, error, data` variables that are returned from the hook
 - We pass in our query constant as an argument.
 - In the example we just render the serialized data but we could of course pass the data as a prop and map through it in an embedded child component.
+

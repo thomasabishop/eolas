@@ -111,3 +111,35 @@ const mocks = {
 
 const server = new ApolloServer({ typeDefs, mocks });
 ```
+We can now [run queries](/Databases/GraphQL/Apollo/Apollo_Client.md#running-a-query) against our server. 
+
+## Implementing resolvers
+A resolver is a [function](/Databases/GraphQL/Creating_a_GraphQL_server.md#resolvers)
+
+
+### `RESTDataSource`
+
+This is something you can apply to your server to improve the efficiency of working with REST APIs in your resolvers. 
+
+REST APIs fall victim to the "n + 1" problem: say you want to get one resource, then for each element returned of this resource you need to send another request using a property of this resource to get another resource. For each of the first requests you need to send another request once they resolve. 
+
+Here is an example of `RESTDataSource` being used. It is just a class that can be extended and which provides inbuilt methods for running fetches against a REST API:
+
+```js
+const {RESTDataSource} = require('apollo-datasource-rest');
+
+class TrackAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = 'https://odyssey-lift-off-rest-api.herokuapp.com/';
+  }
+
+  getTracksForHome() {
+    return this.get('tracks');
+  }
+
+  getAuthor(authorId) {
+    return this.get(`author/${authorId}`);
+  }
+}
+```
