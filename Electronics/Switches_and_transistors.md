@@ -19,6 +19,8 @@ An electrical switch is inherently binary. When the switch is on, it acts like a
 
 We can combine switches in a circuit to create analogs to logic gates.
 
+[]
+
 - Example of AND and OR
 
 ## Transistors
