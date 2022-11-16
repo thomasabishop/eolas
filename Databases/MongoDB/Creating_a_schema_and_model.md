@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [mongo_db, node_js, mongoose]
+tags: [mongo_db, node-js, mongoose]
 ---
 
 # Creating a schema and model

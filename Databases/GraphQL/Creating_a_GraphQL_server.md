@@ -50,8 +50,7 @@ app.use(
 
 ## Resolvers
 
-
-We will specify our resolvers in a dedicate resolver file. In GraphQL you need to define resolvers for both your queries and your mutations.
+We will specify our resolvers in a dedicated resolver file. In GraphQL you need to define resolvers for both your queries and your mutations.
 
 To achieve this we will have a dummy object as the database containing our products and a class working as a generator function that will create a product object with certain properties, individuated by an id. We will invoke this class to create new products for the database and to retrieve existing products from the database.
 

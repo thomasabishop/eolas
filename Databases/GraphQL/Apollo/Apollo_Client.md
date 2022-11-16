@@ -9,9 +9,11 @@ tags: [graph-ql, apollo]
 
 Apollo Client is the client-side counterpart to [Apollo Server](/Databases/GraphQL/Apollo/Apollo_Server.md). We use it for managing queries and mutations from the frontend to our Apollo GraphQL server. It is specifically designed to work with React.
 
+> We will be working with the [schema](/Databases/GraphQL/Apollo/Apollo_Server.md#example-schema) we defined when working on the server
+
 ## Initializing the client
 
-We initialise the client and set-up in memory caching to reduce network requests:
+We initialise the client and set-up in memory kcaching to reduce network requests:
 
 ```js
 const client = new ApolloClient({
@@ -62,6 +64,7 @@ const TRACKS = gql`
 ```
 
 The convention is to name the query constant in `ALL_CAPS`.
+
 > Note that the name of the query on the client doesn't have to match the query type defined in the schema however it should reference it on the second line (`tracksFormHome)
 
 ### `useQuery` hook
@@ -87,4 +90,3 @@ const Tracks = () => {
 - We destructure the `loading, error, data` variables that are returned from the hook
 - We pass in our query constant as an argument.
 - In the example we just render the serialized data but we could of course pass the data as a prop and map through it in an embedded child component.
-

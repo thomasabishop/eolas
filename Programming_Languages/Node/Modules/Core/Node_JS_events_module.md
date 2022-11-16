@@ -7,7 +7,7 @@ tags:
   - node-modules
 ---
 
-# `events` module
+# Node.js `events` module
 
 In most cases you won't interact with the `events` module directly since other modules and third-party modules are abstractions on top of it. For instance the `http` module is using events under the hood to handle requests and responses.
 
@@ -23,14 +23,14 @@ Because Node's runtime is [event-driven](/Programming_Languages/NodeJS/Architect
 ## Basic syntax
 
 ```js
-const EventEmitter = require('events'); // import the module
+const EventEmitter = require("events"); // import the module
 
 // Raise an event
-const emitter = new EventEmitter('messageLogged');
+const emitter = new EventEmitter("messageLogged");
 
 // Register a listener
-emitter.on('messagedLogged', function () {
-  console.log('The listener was called.');
+emitter.on("messagedLogged", function () {
+  console.log("The listener was called.");
 });
 ```
 
@@ -45,12 +45,12 @@ emitter.on('messagedLogged', function () {
 
 ```js
 // Raise an event
-const emitter = new EventEmitter('messageLogged', function (eventArg) {
-  console.log('Listener called', eventArg);
+const emitter = new EventEmitter("messageLogged", function (eventArg) {
+  console.log("Listener called", eventArg);
 });
 
 // Register a listener
-emitter.on('messagedLogged', {id: 1, url: 'http://www.example.com'});
+emitter.on("messagedLogged", { id: 1, url: "http://www.example.com" });
 ```
 
 ## Extending the `EventEmitter` class
@@ -61,12 +61,12 @@ emitter.on('messagedLogged', {id: 1, url: 'http://www.example.com'});
 ```js
 // File: Logger.js
 
-const EventEmitter = require('events');
+const EventEmitter = require("events");
 
 class Logger extends EventEmitter {
   log(message) {
     console.log(message);
-    this.emit('messageLogged', {id: 1, url: 'http://www.example.com'});
+    this.emit("messageLogged", { id: 1, url: "http://www.example.com" });
   }
 }
 ```
