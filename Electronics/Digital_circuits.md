@@ -8,7 +8,7 @@ tags: [electrical-circuits]
 
 Ultimately every process in a computer is the product of a digital [circuit](/Electronics/Circuits.md) that is working on binary values. In contrast to electrical circuits, digital circuits are not represented in an [analogue](/Hardware/Analogue_and_digital.md) fashion.
 
-Analogue circuits work on the basis of real continuous phenomena in the world: charges and currents. As a result, the key properties of a circuit - voltage, current and resistance - can vary over a wide range of values. This is the reason that we require components like batteries and resistors: to control the natural flow of current and ensure that it only runs within desired parameters.
+Analogue circuits work on the basis of real continuous phenomena in the world: charges and currents. As a result, the key properties of a circuit - voltage, current and resistance - can vary over a wide range of values. This is the reason that we require) components like batteries and resistors: to control the natural flow of current and ensure that it only runs within desired parameters.
 
 In a standard electrical circuit, voltage, current and resistance can vary over a wide range of values however in the binary context we want to deal with discrete values (zeros and ones) which can be fed into the various [logic gates](/Hardware/Logic_Gates/Logic_gates.md).
 

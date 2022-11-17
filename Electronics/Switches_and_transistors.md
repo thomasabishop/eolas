@@ -31,10 +31,26 @@ In the example above is a circuit implementing an OR gate. The current flows jus
 
 In real digital circuits, mechanical switches would be totally impractical. The number of switches required is too numerous and we need to be able to connect and interconnect the output of many circuits together. The output of one circuit needs to be fed into another and there is no way to do this with switches.
 
-Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by [voltage](/Electronics/Voltage.md) values within set paramters.
+Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by [voltage](/Electronics/Voltage.md) values within set parameters.
 
 There are different types of transistors but the simplest for the purposes of explanation are **bipolar junction transistors**.
 
 ![](/img/transistor-diag.svg)
 
 A transistor works as follows: applying a small amount of current at the base allows a larger current to flow from the collector to the emitter. Relating this back to switches, applying current to the base is like turning the switch on. Removing this current is like turning the switch off.
+
+The diagrams below show a transistor being used in a circuit to create 'on' and 'off' switch states alongside a switch based circuit.
+
+![](/img/transistor-off.png)
+
+![](/img/transistor-on.png)
+
+- $V^{in}$ is the voltage that electrically controls the switch-as-transistor
+- $V^{out}$ is the voltage we want to control: it will be high when the transistor is in the 'on' state and low otherwise
+- $V^{cc}$ stands for "common collector" and is the positive supply voltage appliced to the collector terminal
+
+We recall that voltage is the potential difference between two points or terminals in a circuit. High voltage increases the flow of current, low voltage restricts or reduces it.
+
+When the voltage at the base () is high a current flows from the collector to the emitter and the transistor is "on".
+
+When the voltate at the base is low (in the diagram it is grounded to ensure this) no current flows from the collector to the emitter and the transistor is "off".
