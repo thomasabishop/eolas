@@ -29,9 +29,9 @@ In the example above is a circuit implementing an OR gate. The current flows jus
 
 ## Transistors
 
-In real digital circuits, mechanical switches would be totally impracticable. The number of switches required is too numerous and we need to be able to connect and interconnect the output of many circuits together. The output of one circuit needs to be fed into another and there is no way to do this with switches.
+In real digital circuits, mechanical switches would be totally impractical. The number of switches required is too numerous and we need to be able to connect and interconnect the output of many circuits together. The output of one circuit needs to be fed into another and there is no way to do this with switches.
 
-Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by voltage values within set paramters.
+Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by [voltage](/Electronics/Voltage.md) values within set paramters.
 
 There are different types of transistors but the simplest for the purposes of explanation are **bipolar junction transistors**.
 
