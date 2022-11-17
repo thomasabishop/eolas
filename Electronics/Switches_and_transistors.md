@@ -51,6 +51,16 @@ The diagrams below show a transistor being used in a circuit to create 'on' and 
 
 We recall that voltage is the potential difference between two points or terminals in a circuit. High voltage increases the flow of current, low voltage restricts or reduces it.
 
-When the voltage at the base () is high a current flows from the collector to the emitter and the transistor is "on".
+When the voltage at the base is high a current flows from the collector to the emitter and the transistor is "on".
 
 When the voltate at the base is low (in the diagram it is grounded to ensure this) no current flows from the collector to the emitter and the transistor is "off".
+
+## Transistors and logic gates
+
+With the basic element of the transistor established, we can combine transistors to create logic gates. A logic gate is a combination/sequence of transistors where the logical function is represented by the characteristic input and output voltages.
+
+For example to create an AND gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low and there is no current flowing, and vice versa for the "on" state:
+
+![](/img/and-transistor.png)
+
+![](/img/or-transistor.svg)
