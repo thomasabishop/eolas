@@ -40,6 +40,12 @@ ReactDOM.render(
 
 ## Running a query
 
+### Queries as entry points
+
+From the client point of view, the queries in the schema are _entry points_. Although the queries exist in the schema, this alone is not sufficient for them to be entry points. Remember a schema is just a specification or contract between the frontend and the backend, it is not itself executable code.
+
+Therefore, for each query in the schema we must write a frontend implementation. We do this with **query constants**. The frontend implementation has a backend analogue: the [resolver](/Databases/GraphQL/Apollo/Apollo_Server.md#implementing-resolvers) that is invoked when the frontend issues a query. The schema standardises this relationship so that every query on the client must have a corresponding resolver on the backend.
+
 ### Query constants
 
 To run a query against our server we must define a query contant first. We use a `gql` literal again:
@@ -65,7 +71,7 @@ const TRACKS = gql`
 
 The convention is to name the query constant in `ALL_CAPS`.
 
-> Note that the name of the query on the client doesn't have to match the query type defined in the schema however it should reference it on the second line (`tracksFormHome)
+> Note that the name of the query on the client doesn't have to match the query type defined in the schema (there is no `GetTracks` in the schema), this is just a client-side designator. However it should reference the schema on the second line (`tracksForHome`).
 
 ### `useQuery` hook
 

@@ -18,43 +18,34 @@ It is able to do the following:
 
 ## Example schema
 
-We will use the following schema in the examples
-
-//
+We will use the following schema in the examples.
 
 ```js
 const typeDefs = gql`
-  type Query {
-    "Get tracks array for homepage grid"
-    tracksForHome: [Track!]!
-  }
-
-// TODO, rewrite this so I can get syntax highlighting
-  "A track is a group of Modules that teaches about a specific topic"
-  type Track {
-    id: ID!
-    "The track's title"
-    title: String!
-    "The track's main author"
-    author: Author!
-    "The track's main illustration to display in track card or track page detail"
-    thumbnail: String
-    "The track's approximate length to complete, in minutes"
-    length: Int
-    "The number of modules this track contains"
-    modulesCount: Int
-  }
-
-  "Author of a complete Track"
-  type Author {
-    id: ID!
-    "Author's first and last name"
-    name: String!
-    "Author's profile picture url"
-    photo: String
-  }
+  " Our schema types will be nested here
 `;
 module.exports = typeDefs;
+```
+
+```js
+type Query {
+  tracksForHome: [Track!]!
+}
+
+type Track {
+  id: ID!
+  title: String!
+  author: Author!
+  thumbnail: String
+  length: Int
+  modulesCount: Int
+}
+
+type Author {
+  id: ID!
+  name: String!
+  photo: String
+}
 ```
 
 ## Setting up the server
@@ -241,6 +232,6 @@ const resolvers = {
 };
 ```
 
-- We keep `Track` outside of `Query` because it has no corresponding query in the schema and we must always match the schema. `Track` is a self-standing field so the resolver must **match this schema shape**. The query `getTracksForHome` references `Track` but it is a separate field.
+- We keep `Track` outside of `Query` because it has no corresponding query in the schema and we must always match the schema.
 - We invoke the `context` again when we destructure `dataSources`.
-- This time we utilise the `args` parameter in the resolver since an `id` will be provided from the client to return a specific author.
+- This time we utilise the `args` parameter in the resolver since an `id` will be provided as a client-side [argument](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md) to return a specific author.
