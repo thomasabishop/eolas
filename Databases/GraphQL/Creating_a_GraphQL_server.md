@@ -248,3 +248,7 @@ We should always return something, even if we are applying  mutation, hence we 
 ```
 
 // Add new image of this working in GraphiQL
+
+// TODO: Explain input types (https://graphql.org/graphql-js/mutations-and-input-types/)
+
+// TODO: Explain enums
