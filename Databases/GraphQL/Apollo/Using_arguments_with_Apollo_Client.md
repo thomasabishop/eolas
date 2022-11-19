@@ -134,3 +134,25 @@ query track(id: 'xyz'){
   }
 }
 ```
+
+It's not obvious how the resolver should respond to the nested query here since author name is not a field on `Track`, it is a field on `Author`:
+
+```gql
+type Track {
+  id: ID!
+  title: String!
+  author: Author!
+  thumbnail: String
+  length: Int
+  modulesCount: Int
+  description: String
+  numberOfViews: Int
+  modules: [Module!]!
+}
+
+type Author {
+  id: ID!
+  name: String!
+  photo: String
+}
+```

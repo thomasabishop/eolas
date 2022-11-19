@@ -112,11 +112,11 @@ We can now [run queries](/Databases/GraphQL/Apollo/Apollo_Client.md#running-a-qu
 
 ## Implementing resolvers
 
-A resolver is a [function](/Databases/GraphQL/Creating_a_GraphQL_server.md#resolvers) that populates data for a given query. It should have **the same name as the field for the query**. So far we have one query in our schema: `tracksForHome` which returns the tracks to be listed on the home page. We must therefore we must also name our resolver for this query `tracksForHome`.
+A resolver is a [function](/Trash/Creating_a_GraphQL_server.md#resolvers) that populates data for a given query. It should have **the same name as the field for the query**. So far we have one query in our schema: `tracksForHome` which returns the tracks to be listed on the home page. We must therefore we must also name our resolver for this query `tracksForHome`.
 
 It can fetch data from any data source or multiple data sources (other servers, databases, REST APIs) and then presents this as a single integrated resouce to the client, matching the shape requested.
 
-As per the [generic example](/Databases/GraphQL/Creating_a_GraphQL_server.md#resolvers), you write write your resolvers as keys on a `resolvers` object, e.g:
+As per the [generic example](/Trash/Creating_a_GraphQL_server.md#resolvers), you write write your resolvers as keys on a `resolvers` object, e.g:
 
 ```js
 const resolvers = {};
