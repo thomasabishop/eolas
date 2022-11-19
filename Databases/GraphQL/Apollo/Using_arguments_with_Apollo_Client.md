@@ -2,7 +2,7 @@
 title: Using arguments with Apollo Client
 categories:
   - Databases
-tags: [graph-ql, apollo]
+tags: [graphql]
 ---
 
 # Using arguments with Apollo Client
@@ -114,7 +114,7 @@ const resolvers = {
 
 With the server changes complete, we can now issue a query with an argument from the client:
 
-```gql
+```js
 query track(id: 'xyz'){
   title
 }
@@ -126,7 +126,7 @@ This will return the `title` field from the track with the specific id. This que
 
 What about the following query:
 
-```gql
+```js
 query track(id: 'xyz'){
   title
   author {
@@ -137,7 +137,7 @@ query track(id: 'xyz'){
 
 It's not obvious how the resolver should respond to the nested query here since author name is not a field on `Track`, it is a field on `Author`:
 
-```gql
+```js
 type Track {
   id: ID!
   title: String!
@@ -159,7 +159,7 @@ type Author {
 
 This is where we use a **resolver chain**. Because `authorId` exists on `Track` we can use this to get the `name` part of the query. We already have a resolver for `author` under the `Track` resolver:
 
-```gql
+```js
 Track: {
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackApi.getAuthor(authorId);
@@ -167,8 +167,56 @@ Track: {
   },
 ```
 
-Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` that we return from the query. So this can be invoked to fulfill `author` and thereby access the author name from the `graph`.
+Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` type that wraps. So this can be invoked to fulfill `author` and thereby access the author name from the graph.
 
 > I don't really understand this but the general point seems to be that the resolvers outside of the main `Query` block in the resolver are tied to a data type and can be used to magically populate query requests for nested fields providing a key is on the main datatype returned.
 
 Now repeat this example with `modules`
+
+This process is also required for our extended schema. The `Track` type now has a `modules` field that comprises an array of the `Module` type.
+
+Here's a reminder of the `Module` type:
+
+```js
+type Module {
+    id: ID!
+    title: String!
+    length: Int
+}
+```
+
+The modules for a `Track` can be sourced from the track `id`. So we can again add a resolver chain function to the resolvers file:
+
+```js
+const resolvers = {
+  Query: {
+    tracksForHome: (_, __, { dataSources }) => {
+      return dataSources.trackApi.getTracksForHome();
+    },
+    track: (_, { id }, { dataSources }) => {
+      return dataSources.trackAPI.getTrack(id);
+    },
+  },
+  Track: {
+    author: ({ authorId }, _, { dataSources }) => {
+      return dataSources.trackApi.getAuthor(authorId);
+    },
+    modules: ({ id }, _, { dataSources }) => {
+      return dataSources.trackAPI.getTrackModules(id);
+    },
+  },
+};
+```
+
+Once again we are using a property on the parent `Track` type to use as a parameter in the resolver function.
+
+This setup would enables like the following to be run:
+
+```js
+query track(id: 'xyz'){
+  title
+  modules
+}
+```
+
+The '

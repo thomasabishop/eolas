@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [graph-ql]
+tags: [graphql]
 ---
 
 # The journey of a GraphQL query

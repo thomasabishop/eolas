@@ -2,7 +2,7 @@
 title: Using GraphQL with Node.js
 categories:
   - Databases
-tags: [graph-ql, node-js]
+tags: [graphql, node-js]
 ---
 
 # Using GraphQL with Node.js

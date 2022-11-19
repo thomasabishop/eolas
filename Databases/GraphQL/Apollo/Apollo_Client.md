@@ -2,7 +2,7 @@
 title: Apollo Client
 categories:
   - Databases
-tags: [graph-ql, apollo]
+tags: [graphql]
 ---
 
 # Apollo Client

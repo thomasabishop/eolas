@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [graph-ql]
+tags: [graphql]
 ---
 
 # Schema Definition Language
