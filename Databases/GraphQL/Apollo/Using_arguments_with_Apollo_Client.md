@@ -35,7 +35,7 @@ type Query {
 type Track {
     id: ID!
     title: String!
-    author: Author!
+    authorId: String! // They added this on the sly
     thumbnail: String
     length: Int
     modulesCount: Int
@@ -141,7 +141,7 @@ It's not obvious how the resolver should respond to the nested query here since 
 type Track {
   id: ID!
   title: String!
-  author: Author!
+  authorId: String!
   thumbnail: String
   length: Int
   modulesCount: Int
@@ -156,3 +156,19 @@ type Author {
   photo: String
 }
 ```
+
+This is where we use a **resolver chain**. Because `authorId` exists on `Track` we can use this to get the `name` part of the query. We already have a resolver for `author` under the `Track` resolver:
+
+```gql
+Track: {
+    author: ({ authorId }, _, { dataSources }) => {
+      return dataSources.trackApi.getAuthor(authorId);
+    },
+  },
+```
+
+Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` that we return from the query. So this can be invoked to fulfill `author` and thereby access the author name from the `graph`.
+
+> I don't really understand this but the general point seems to be that the resolvers outside of the main `Query` block in the resolver are tied to a data type and can be used to magically populate query requests for nested fields providing a key is on the main datatype returned.
+
+Now repeat this example with `modules`
