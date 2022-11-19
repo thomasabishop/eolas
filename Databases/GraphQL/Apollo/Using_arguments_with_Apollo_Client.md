@@ -219,4 +219,66 @@ query track(id: 'xyz'){
 }
 ```
 
-The '
+The `id` parameter would be used by the `modules` resolver to return the array of the `Modules` type.
+
+## Variables in arguments
+
+Instead of writing the following within our query constants on the client-side:
+
+```js
+query GetTrack {
+  track(id: 'xyz'){
+    title
+  }
+}
+```
+
+We can make the code more reusable by using variables instead of the hardcoded `id` argument:
+
+```js
+query GetTrack($trackId: ID!) {
+  track(id: $trackId){
+    title
+  }
+}
+```
+
+This way we do not need to write a new query constant every time we want to return a specific track.
+
+## Send query with arguments using Apollo `useQuery`
+
+We can now write a proper query using the [useQuery hook](/Databases/GraphQL/Apollo/Apollo_Client.md#usequery-hook) from Apollo Client, with variables.
+
+First define our query constant:
+
+```js
+export const GET_TRACK = gql`
+  query GetTrack($trackId: ID!) {
+    track(id: $trackId) {
+      id
+      title
+      author {
+        name
+      }
+      description
+      modules {
+        id
+        title
+        length
+      }
+    }
+  }
+`;
+```
+
+Then to employ in React:
+
+```jsx
+const trackId = "xyz";
+
+const { loading, error, data } = useQuery(GET_TRACK, {
+  variables: trackId,
+});
+```
+
+Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)

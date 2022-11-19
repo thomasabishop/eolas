@@ -2,7 +2,7 @@
 categories:
   - Computer Architecture
 tags:
-  - theory-of-omputation
+  - theory-of-computation
   - history
 ---
 

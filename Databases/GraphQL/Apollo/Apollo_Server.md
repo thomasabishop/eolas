@@ -2,7 +2,7 @@
 title: Apollo Server
 categories:
   - Databases
-tags: [graphql]
+tags: [graphql, REST, APIs]
 ---
 
 # Apollo Server

@@ -2,7 +2,7 @@
 title: Creating a GraphQL server
 categories:
   - Databases
-tags: [graph-ql]
+tags: [graphql]
 ---
 
 # Creating a GraphQL server
