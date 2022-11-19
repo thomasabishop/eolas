@@ -281,4 +281,6 @@ const { loading, error, data } = useQuery(GET_TRACK, {
 });
 ```
 
-Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)
+Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants) because we are using variables, we have to pass-in an additional object with the query constant that specifies our variables.
+
+// TODO: Find examples of using more than one variable.
