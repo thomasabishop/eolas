@@ -1,5 +1,5 @@
 ---
-title: Switches and transistors
+title: Transistors
 categories:
   - Computer Architecture
   - Electronics
@@ -7,7 +7,7 @@ categories:
 tags: [logic-gates, binary, memory]
 ---
 
-# Switches and transistors
+# Transistors
 
 In the discussion of [digital circuits](/Electronics/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typically a voltage between 2V - 5V for the 'on' state and a voltage between 0V - 0.8V for the 'off' state.
 
@@ -59,8 +59,10 @@ When the voltate at the base is low (in the diagram it is grounded to ensure thi
 
 With the basic element of the transistor established, we can combine transistors to create logic gates. A logic gate is a combination/sequence of transistors where the logical function is represented by the characteristic input and output voltages.
 
-For example to create an AND gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low and there is no current flowing, and vice versa for the "on" state:
+For example to create an [AND](/Hardware/Logic_Gates/And_gate.md) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
 
 ![](/img/and-transistor.png)
+
+Below, an [OR](/Hardware/Logic_Gates/Or_gate.md) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
 
 ![](/img/or-transistor.svg)
