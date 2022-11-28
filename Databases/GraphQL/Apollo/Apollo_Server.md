@@ -13,7 +13,7 @@ It is able to do the following:
 
 - Receive an incoming GraphQL query from a client
 - Validate that query against the server schema
-- Populate the queried schema fieldsj
+- Populate the queried schema fields
 - Return the fields as a JSON response object
 
 ## Example schema
@@ -21,6 +21,8 @@ It is able to do the following:
 We will use the following schema in the examples.
 
 ```js
+// schema.js
+
 const typeDefs = gql`
   " Our schema types will be nested here
 `;
@@ -53,6 +55,8 @@ type Author {
 We instantiate an `ApolloServer` instance and pass our schema to it. We then subscribe to it with a [listener](/Programming_Languages/Node/Modules/Core/Node_JS_events_module.md#extending-the-eventemitter-class).
 
 ```js
+// index.js
+
 const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 const server = new ApolloServer({ typeDefs });
@@ -112,9 +116,9 @@ We can now [run queries](/Databases/GraphQL/Apollo/Apollo_Client.md#running-a-qu
 
 ## Implementing resolvers
 
-A resolver is a [function](/Trash/Creating_a_GraphQL_server.md#resolvers) that populates data for a given query. It should have **the same name as the field for the query**. So far we have one query in our schema: `tracksForHome` which returns the tracks to be listed on the home page. We must therefore we must also name our resolver for this query `tracksForHome`.
+A resolver is a [function](/Trash/Creating_a_GraphQL_server.md#resolvers) that populates data for a given query. It should have **the same name as the field for the query**. So far we have one query in our schema: `tracksForHome` which returns the tracks to be listed on the home page. We must therefore also name our resolver for this query `tracksForHome`.
 
-It can fetch data from any data source or multiple data sources (other servers, databases, REST APIs) and then presents this as a single integrated resouce to the client, matching the shape requested.
+It can fetch data from a single data source or multiple data sources (other servers, databases, REST APIs) and present this as a single integrated resource to the client, matching the shape requested.
 
 As per the [generic example](/Trash/Creating_a_GraphQL_server.md#resolvers), you write write your resolvers as keys on a `resolvers` object, e.g:
 
@@ -122,7 +126,7 @@ As per the [generic example](/Trash/Creating_a_GraphQL_server.md#resolvers), you
 const resolvers = {};
 ```
 
-The `resolvers` object's keys will correspond to the schema's types and fields. For some reason Apollo requires extra scaffolding around the keys, you have to wrap the key in `Query` like so:
+The `resolvers` object's keys will correspond to the schema's types and fields. You distinguish resolves which directly correspond to a query in the schema from other resolver types by wraping them in `Query {}`.
 
 ```js
 const resolvers = {
@@ -134,27 +138,26 @@ const resolvers = {
 
 ### Resolver parameters
 
-The resolver function has standard parameters that you draw on when implementing the resolution:
+Each resolver function has the same standard parameters that you can invoke when implementing the resolution: `resolverFunction(parent, args, context, info)`.
 
 - `parent`
-  - something to do with resolver chains //TODO: return to
+  - Used with [resolver chains](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md#resolver-chains) ---add example
 - `args`
-  - an object containing the argments that were provided for the field by the client. For instance if the client requests a field with an accompanying `id` argument, `id` will show up in the `args` object
+  - an object comprising arguments provided for the given field by the client. For instance if the client requests a field with an accompanying `id` argument, `id` can be parsed via the `args` object
 - `context`
-  - shared state between different resolvers that contains essential connection parameters such as authentication, a database connection, or a `RESTDataSource` (see below)
+  - shared state between different resolvers that contains essential connection parameters such as authentication, a database connection, or a `RESTDataSource` (see below). This will be typically instantiated via a class which is then invoked within the `ApolloServer` instance under the `dataSources` key.
 - `info`
-  - least essential, used for caching
+  - not used so frequently but employed as part of caching
 
 Typically you won't use every parameter with every resolver. You can ommit them with `_, __`; the number of dashes indicating the argument placement.
 
 ### `RESTDataSource`
 
-This is something you can apply to your server to improve the efficiency of working with REST APIs in your resolvers.
+A resolver can return data from multiple sources. One of the most common sources is a RESTful endpoint. Apollo provides a specific class for handling REST endpoints in your resolvers: `RESTDataSource`.
 
 REST APIs fall victim to the "n + 1" problem: say you want to get an array of one resource type, then for each element returned you need to send another request using one of its properties to fetch a related resource.
 
-This is implicit in the case of the `Track` type in the schema. Each `Track` has an `author` key but the `Author` type isn't embedded in `Track` it has to be fetched using an `id`. In a REST API, this would require a request to
-a separate end point for each `Track` returned.
+This is implicit in the case of the `Track` type in the schema. Each `Track` has an `author` key but the `Author` type isn't embedded in `Track` it has to be fetched using an `id`. In a REST API, this would require a request to a separate end point for each `Track` returned, increasing the time complexity of the request.
 
 Here is an example of `RESTDataSource` being used. It is just a class that can be extended and which provides inbuilt methods for running fetches against a REST API:
 
@@ -232,6 +235,13 @@ const resolvers = {
 };
 ```
 
-- We keep `Track` outside of `Query` because it has no corresponding query in the schema and we must always match the schema.
-- We invoke the `context` again when we destructure `dataSources`.
-- This time we utilise the `args` parameter in the resolver since an `id` will be provided as a client-side [argument](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md) to return a specific author.
+- Just as we nest the `tracksForHome` resolver under `Query`, we must nest `author` under `Track` to match the structure of the schema. This resolver doesn't respond to a query that is exposed to the client so it shouldn't go under `Query`.
+
+* We invoke the `context` again when we destructure `dataSources` from the `ApolloServer` instance.
+* This time we utilise the `args` parameter in the resolver since an `id` will be provided as a client-side [argument](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md) to return a specific author.
+
+## The `useMutation` hook
+
+We invoke the `useMutation` hook to issue mutations from the client-side.
+
+As with queries and [query constants](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)

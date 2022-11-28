@@ -167,11 +167,7 @@ Track: {
   },
 ```
 
-Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` type that wraps. So this can be invoked to fulfill `author` and thereby access the author name from the graph.
-
-> I don't really understand this but the general point seems to be that the resolvers outside of the main `Query` block in the resolver are tied to a data type and can be used to magically populate query requests for nested fields providing a key is on the main datatype returned.
-
-Now repeat this example with `modules`
+Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` type that wraps the resolver. So this can be invoked to fulfill `author` and thereby access the author name from the graph.
 
 This process is also required for our extended schema. The `Track` type now has a `modules` field that comprises an array of the `Module` type.
 
@@ -277,10 +273,10 @@ Then to employ in React:
 const trackId = "xyz";
 
 const { loading, error, data } = useQuery(GET_TRACK, {
-  variables: trackId,
+  variables: {
+    id: trackId,
+  },
 });
 ```
 
-Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants) because we are using variables, we have to pass-in an additional object with the query constant that specifies our variables.
-
-// TODO: Find examples of using more than one variable.
+Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants) because we are using variables, we have to pass-in an additional options object with the query constant that specifies our variables.

@@ -13,7 +13,7 @@ Apollo Client is the client-side counterpart to [Apollo Server](/Databases/Graph
 
 ## Initializing the client
 
-We initialise the client and set-up in memory kcaching to reduce network requests:
+We initialise the client and set-up in memory caching to reduce network requests:
 
 ```js
 const client = new ApolloClient({
@@ -26,7 +26,7 @@ const client = new ApolloClient({
 
 ## Utilising the provider
 
-Apollo Provides a top level application context that we can wrap our React app in. This will provide access to the client object from anywhere within the app, eg:
+Apollo provides a top level application context that we can wrap our React app in. This will provide access to the client object from anywhere within the app, eg:
 
 ```jsx
 ReactDOM.render(
