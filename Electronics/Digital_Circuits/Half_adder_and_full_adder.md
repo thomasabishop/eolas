@@ -41,7 +41,7 @@ The two types of adders are distinguished by which bits of the calculation they 
 
 ## Half adder
 
-The half adder receives two bits (A and B) which are to be added together.It outputs this value as the **sum bit**. If this value exceeds $1$, the sum bit will be $0$ and the **carry-out** ($c_{out}$) bit will be $1$. In cases where the sum bit does not exceed $1$ the carry-out bit will be $0$.
+The half adder receives two bits (A and B) which are to be added together. It outputs this value as the **sum bit**. If there is a bit to be carried to the next column in the binary calculation this will be output as the **carry-out** bit.
 
 | A                            | B                             | S           | C_out             |
 | ---------------------------- | ----------------------------- | ----------- | ----------------- |
@@ -52,3 +52,37 @@ The diagram below shows the circuit representation of a half-adder and an exampl
 ![](/img/half-adder-new.png)
 
 ### Implementation with logic gates
+
+If we think about it, the possible inputs and outputs of a half adder are highly circumscribed:
+
+- If the sum exceeds $1$, the sum bit will be $0$ and the carry-out bit will be $1$
+- In all other cases the carry-out bit will be $0$. These other cases are when the sum bit is either $0$ or $1$, e.g: $1 + 0$ or $0 + 0$.
+
+We can represent this with a simple truth-table:
+
+| A   | B   | S   | C_out |
+| --- | --- | --- | ----- |
+| 0   | 0   | 0   | 0     |
+| 0   | 1   | 1   | 0     |
+| 1   | 0   | 1   | 0     |
+| 1   | 1   | 0   | 1     |
+
+We can see that the sum bit column replicates the truth-conditions of [XOR](/Hardware/Logic_Gates/Xor_gate.md):
+
+| P   | Q   | P V Q |
+| --- | --- | ----- |
+| T   | T   | F     |
+| T   | F   | T     |
+| F   | T   | T     |
+| F   | F   | F     |
+
+And the carry-out bit replicates the truth conditions of [AND](/Hardware/Logic_Gates/And_gate.md):
+
+| P   | Q   | ~(P & Q) |
+| --- | --- | -------- |
+| T   | T   | F        |
+| T   | F   | F        |
+| F   | T   | F        |
+| F   | F   | T        |
+
+It is therefore possible to implement a half-adder with just these two logic gates:
