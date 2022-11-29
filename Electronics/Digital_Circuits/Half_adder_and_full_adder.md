@@ -35,20 +35,20 @@ From the previous example we can identified the following repeated actions:
 - For calculations of the form $1 + 0$ or $0 + 0$ there will be no carried digit
 - For calculations of the form $1 + 1$ there will be a carried digit
 
-In the context of adders the digits are bits. We distinguish the **least significant bit** and **most significant bit**. The least significant bit is the right-most digit in the calculation. The most significant bit is the leftmost:
-
-// TODO: Add diagram highlighting least and most significant bits.
+In the context of adders the digits are bits. We distinguish three core bits by their role in the calculation: the carry, the **least significant bit** and the **most significant bit**. The least significant bit is the right-most digit in the calculation. The most significant bit is the leftmost.
 
 The two types of adders are distinguished by which bits of the calculation they operate on. The half adder focuses on the least significant bit whereas the full adder focuses on the most significant bit.
 
 ## Half adder
 
-The symbol for the half adder is displayed below
-
-// TODO: Add diagram of half adder
-
-It has two inputs and two ouputs:
+The half adder receives two bits (A and B) which are to be added together.It outputs this value as the **sum bit**. If this value exceeds $1$, the sum bit will be $0$ and the **carry-out** ($c_{out}$) bit will be $1$. In cases where the sum bit does not exceed $1$ the carry-out bit will be $0$.
 
 | A                            | B                             | S           | C_out             |
 | ---------------------------- | ----------------------------- | ----------- | ----------------- |
 | The first number to be added | The second number to be added | The sum bit | The carry-out bit |
+
+The diagram below shows the circuit representation of a half-adder and an example calculation. This calculation matches the ones column of the earlier binary addition example: $0011 + 0010$.
+
+![](/img/half-adder-new.png)
+
+### Implementation with logic gates
