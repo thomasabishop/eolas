@@ -49,7 +49,6 @@ The symbol for the half adder is displayed below
 
 It has two inputs and two ouputs:
 
-| Input                        | Input                         | Output      | Output            |
-| ---------------------------- | ----------------------------- | ----------- | ----------------- |
 | A                            | B                             | S           | C_out             |
+| ---------------------------- | ----------------------------- | ----------- | ----------------- |
 | The first number to be added | The second number to be added | The sum bit | The carry-out bit |
