@@ -95,4 +95,29 @@ The digital circuit above has the same inputs and outputs as the half adder diag
 
 As the half adder only calculates the least significant bit, it is not sufficient by itself to complete a binary addition; it cannot account for movements in binary place value. To carry out full calculations it must be supplemented with the full adder.
 
-The full adder takes in three inputs and has two inputs. It is identical to the half-adder apart from the fact that one of its inputs is **carry-in**. This is obviously equivalent to the value that is designated as **carry-out** in a half adder
+The full adder takes in three inputs and has two inputs. It is identical to the half-adder apart from the fact that one of its inputs is **carry-in**. This is obviously equivalent to the value that is designated as **carry-out** in a half adder. It is an incoming value that is the product of a previous operation that resulted in a carry-out. This is added together with its own two inputs (A and B) and generates a sum bit and a carry-out bit.
+
+| A                            | B                             | C_in                     | S                      | C_out                        |
+| ---------------------------- | ----------------------------- | ------------------------ | ---------------------- | ---------------------------- |
+| The first number to be added | The second number to be added | The incoming carried bit | The sum bit (A+B+C_in) | The carry-out bit (A+B+C_in) |
+
+![](/img/full-adder-new.png)
+
+The diagram above is equivalent to the calculation taking place in the fours column
+
+```
+  c_1
+0   0   1   0
+0   0   1   1
+_____________
+0   1   0   1
+```
+
+### Implementation with logic gates
+
+With the full adder we can allow ourselves greater abstraction as we already have the half adder to work with. We don't need to create a half adder from scratch, we can reuse it.
+
+We are adding three bits: $1$, $0$ and $0$. This can be achieved with two half adders:
+
+- One half adder for the sum of $0 + 0$
+- One half adder for the sum of $(0 + 0) + 1$ (the previous sum plus the third bit)
