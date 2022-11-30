@@ -86,3 +86,13 @@ And the carry-out bit replicates the truth conditions of [AND](/Hardware/Logic_G
 | F   | F   | T        |
 
 It is therefore possible to implement a half-adder with just these two logic gates:
+
+The digital circuit above has the same inputs and outputs as the half adder diagram above.
+
+<iframe src="https://circuitverse.org/simulator/embed/half-adder-67b14a9f-d1ed-4240-ab19-1d753f18a40d" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+
+## Full adder
+
+As the half adder only calculates the least significant bit, it is not sufficient by itself to complete a binary addition; it cannot account for movements in binary place value. To carry out full calculations it must be supplemented with the full adder.
+
+The full adder takes in three inputs and has two inputs. It is identical to the half-adder apart from the fact that one of its inputs is **carry-in**. This is obviously equivalent to the value that is designated as **carry-out** in a half adder
