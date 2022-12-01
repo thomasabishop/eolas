@@ -95,7 +95,7 @@ The digital circuit above has the same inputs and outputs as the half adder diag
 
 As the half adder only calculates the least significant bit, it is not sufficient by itself to complete a binary addition; it cannot account for movements in binary place value. To carry out full calculations it must be supplemented with the full adder.
 
-The full adder takes in three inputs and has two inputs. It is identical to the half-adder apart from the fact that one of its inputs is **carry-in**. This is obviously equivalent to the value that is designated as **carry-out** in a half adder. It is an incoming value that is the product of a previous operation that resulted in a carry-out. This is added together with its own two inputs (A and B) and generates a sum bit and a carry-out bit.
+The full adder takes in three inputs and has two outputs. It is identical to the half-adder apart from the fact that one of its inputs is **carry-in**. This is equivalent to the value that is designated as **carry-out** in a half adder. It is an incoming value that is the product of a previous operation that resulted in a carry-out. This is added together with the full adders own two inputs (A and B) and like the half adder, generates a sum bit and a carry-out bit.
 
 | A                            | B                             | C_in                     | S                      | C_out                        |
 | ---------------------------- | ----------------------------- | ------------------------ | ---------------------- | ---------------------------- |
