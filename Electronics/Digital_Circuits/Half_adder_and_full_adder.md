@@ -87,9 +87,11 @@ And the carry-out bit replicates the truth conditions of [AND](/Hardware/Logic_G
 
 It is therefore possible to implement a half-adder with just these two logic gates:
 
+![](/img/half-adder-gates-three.png)
+
 The digital circuit above has the same inputs and outputs as the half adder diagram above.
 
-<iframe src="https://circuitverse.org/simulator/embed/half-adder-67b14a9f-d1ed-4240-ab19-1d753f18a40d" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="800" allowFullScreen></iframe>
+<iframe src="https://circuitverse.org/simulator/embed/half-adder-67b14a9f-d1ed-4240-ab19-1d753f18a40d" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="600" allowFullScreen></iframe>
 
 ## Full adder
 
@@ -126,4 +128,4 @@ The sume of HA1 ($0 + 0$) is passed in to the B input on HA2 and the $1$ is pass
 
 At this point we have completed the addition and have successfully added the three bits: $1$, $0$, and $0$ to get $1$ as ths sum. However we also have to account for the fact that the addition may result in its own carry-out bit. What if the inputs were $1, 1, 0$ for example?
 
-<iframe src="https://circuitverse.org/simulator/embed/full-adder-674f8ddf-c5aa-42fa-9c0f-4349ffabe723" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="800" allowFullScreen></iframe>
+<iframe src="https://circuitverse.org/simulator/embed/full-adder-674f8ddf-c5aa-42fa-9c0f-4349ffabe723" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="700" allowFullScreen></iframe>
