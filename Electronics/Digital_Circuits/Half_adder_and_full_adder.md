@@ -89,7 +89,7 @@ It is therefore possible to implement a half-adder with just these two logic gat
 
 The digital circuit above has the same inputs and outputs as the half adder diagram above.
 
-<iframe src="https://circuitverse.org/simulator/embed/half-adder-67b14a9f-d1ed-4240-ab19-1d753f18a40d" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
+<iframe src="https://circuitverse.org/simulator/embed/half-adder-67b14a9f-d1ed-4240-ab19-1d753f18a40d" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="800" allowFullScreen></iframe>
 
 ## Full adder
 
@@ -103,7 +103,7 @@ The full adder takes in three inputs and has two outputs. It is identical to the
 
 ![](/img/full-adder-new.png)
 
-The diagram above is equivalent to the calculation taking place in the fours column
+The diagram above is equivalent to the calculation taking place in the fours column. It has received a carry from the twos column ($1 + 1$ results in $1$ as a carry) and then adds this together with its own inputs ($0$ and $0$).
 
 ```
   c_1
@@ -115,9 +115,15 @@ _____________
 
 ### Implementation with logic gates
 
-With the full adder we can allow ourselves greater abstraction as we already have the half adder to work with. We don't need to create a half adder from scratch, we can reuse it.
+When it comes to implementing the full adder with logic gates we can allow ourselves greater abstraction as we already have the half adder to work with. We don't need to create a half adder from scratch, we can reuse it.
 
 We are adding three bits: $1$, $0$ and $0$. This can be achieved with two half adders:
 
-- One half adder for the sum of $0 + 0$
-- One half adder for the sum of $(0 + 0) + 1$ (the previous sum plus the third bit)
+- One half adder (HA1) for the sum of $0 + 0$
+- One half adder (HA2) for the sum of $(0 + 0) + 1$ (the previous sum plus the third bit)
+
+The sume of HA1 ($0 + 0$) is passed in to the B input on HA2 and the $1$ is passed in as the A input of HA2. This gives us $1$ as the sum bit of HA2.
+
+At this point we have completed the addition and have successfully added the three bits: $1$, $0$, and $0$ to get $1$ as ths sum. However we also have to account for the fact that the addition may result in its own carry-out bit. What if the inputs were $1, 1, 0$ for example?
+
+<iframe src="https://circuitverse.org/simulator/embed/full-adder-674f8ddf-c5aa-42fa-9c0f-4349ffabe723" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="800" allowFullScreen></iframe>
