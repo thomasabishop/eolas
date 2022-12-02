@@ -1,0 +1,3 @@
+- Investigate AWS Amplify, specifically how it relates to local development
+- VSCode plugin for AWS
+- VSCode plugin for Mongo
