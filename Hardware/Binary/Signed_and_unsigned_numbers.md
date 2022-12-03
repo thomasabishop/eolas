@@ -52,6 +52,24 @@ $$
 0100
 $$
 
-Which is 4.
+Which is 4. This means the calculation above would be identical whether we were calculating $7 + -3$ or $7 + 13$.
 
-The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md#binary-arithmetic)
+The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md#binary-arithmetic) is a 0 then the number is positive. If it is 1 then it is negative.
+
+This works but it requires extra complexity to in a system's design to account for the bit that has a special meaning. Adder components would need to be modified to account for it.
+
+## Shorthand for deriving two's complement
+
+A simple way to work out the value of a signed number as contrasted with an unsigned number is to schematize it as follows: _the most significant place has a weight equal to the negative value of that place, and all other places have weights equal to the positive values of those places_.
+
+Thus for a 4-bit number:
+
+// INSERT PLACE VALUE DIAGRAM HERE
+
+Then if we add the decimal equivalents of the place value together, we get our signed number. So in the case of $-3$:
+
+// INSERT DIAGRAM HERE
+
+## Considerations
+
+A limitation of signed numbers via two's complement is that it reduces the total informational capacity of a 4-bit number. Instead 16 permutations of bits giving you sixteen integers you instead have 8 integers and 8 of their negative equivalents. So if you wanted to represent integers greater than decimal 8 you would need to increase the bit length.
