@@ -21,3 +21,5 @@ An example application of this would be to set up an SQS queue that receives mes
 > SNS: Simple Notification Service
 
 Similar to SQS but the focus is on notifications rather than messages, i.e events that fire when something specific happens, not just a message-send event. It can be used for passing notifications between applications or to persons through SMS, text, push notifications and email.
+
+**SNS pushes messages out to subscribers while SQS stores the messages until someone reads them.**
