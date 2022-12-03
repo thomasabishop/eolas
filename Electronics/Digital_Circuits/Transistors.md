@@ -8,9 +8,7 @@ tags: [logic-gates, binary, memory]
 
 # Transistors
 
-In the discussion of [digital circuits](/Electronics/Digital_Circuits/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typically a voltage between 2V - 5V for the 'on' state and a voltage between 0V - 0.8V for the 'off' state.
-
-We will look at two ways to achieve this. Firstly with literal switches which are impractical but useful for understanding the concept and then with transistors which are what are actually used in computers.
+In the discussion of [digital circuits](/Electronics/Digital_Circuits/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typi>understanding the concept and then with transistors which are what are actually used in computers.
 
 ## Implementing binary logic with mechanical switches
 
