@@ -27,4 +27,31 @@ To translate a signed number to an unsigned number you flip them back and still 
 
 ### Advantages
 
-The chief advantage of the two's complement technique of signing numbers is that its circuit implementation is no different from the adding of two unsigned numbers. Once the signing algorithm is applied the addition can be passed through an [adder](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md) comp
+The chief advantage of the two's complement technique of signing numbers is that its circuit implementation is no different from the adding of two unsigned numbers. Once the signing algorithm is applied the addition can be passed through an [adder](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md) component without any special handling or additional hardware.
+
+Let's demonstrate this with the following addition:
+
+$$
+    7 + -3 = 4
+$$
+
+First we convert $7$ to binary: $0111$.
+
+Then we convert $-3$ to unsigned binary, by converting $3$ to its two's complement
+
+$$
+0011 \rArr 1100 \rArr 1101
+$$
+
+Then we simply add the binary numbers regardless of whether they happen to be positive or negative integers in decimal:
+
+$$
+0111 \\
+1101 \\
+====\\
+0100
+$$
+
+Which is 4.
+
+The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md#binary-arithmetic)
