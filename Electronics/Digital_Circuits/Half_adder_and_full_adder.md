@@ -79,12 +79,12 @@ We can see that the sum bit column replicates the truth-conditions of [XOR](/Har
 
 And the carry-out bit replicates the truth conditions of [AND](/Hardware/Logic_Gates/And_gate.md):
 
-| P   | Q   | ~(P & Q) |
-| --- | --- | -------- |
-| T   | T   | F        |
-| T   | F   | F        |
-| F   | T   | F        |
-| F   | F   | T        |
+| P   | Q   | P & Q |
+| --- | --- | ----- |
+| T   | T   | F     |
+| T   | F   | F     |
+| F   | T   | F     |
+| F   | F   | T     |
 
 It is therefore possible to implement a half-adder with just these two logic gates:
 
