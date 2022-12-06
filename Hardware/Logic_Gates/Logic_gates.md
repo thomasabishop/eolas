@@ -19,6 +19,8 @@ Physically, what 'travels through' the gates is electrical current and what cons
 
 ### Symbol
 
+![](/img/not-gate-new.png)
+
 ### Truth conditions
 
 | P   | ~ P |
@@ -33,6 +35,8 @@ Physically, what 'travels through' the gates is electrical current and what cons
 > The AND gate represents the truth conditions of the [conjunction](/Logic/Truth-functional_connectives.md#conjunction) truth functional connective
 
 ### Symbol
+
+![](/img/and-gate-new-2.png)
 
 ### Truth conditions
 
@@ -50,6 +54,8 @@ Physically, what 'travels through' the gates is electrical current and what cons
 > The NAND gate inverts the truth conditions of AND.
 
 ### Symbol
+
+![](/img/nand-gate-new.png)
 
 ### Truth conditions
 
@@ -70,6 +76,8 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Symbol
 
+![](/img/or-gate-new.png)
+
 ### Truth conditions
 
 | P   | Q   | P v Q |
@@ -87,6 +95,8 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Symbol
 
+![](/img/xor-gate-new.png)
+
 ### Truth conditions
 
 | P   | Q   | ~(P <> Q) |
@@ -103,6 +113,8 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 > The NOR gate inverts the function of an OR gate
 
 ### Symbol
+
+![](/img/nor-gate-new.png)
 
 ### Truth conditions
 
