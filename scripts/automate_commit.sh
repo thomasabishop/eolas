@@ -1,0 +1,1 @@
+/home/thomas/repos/bash_scripts/automate_commit.sh
