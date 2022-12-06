@@ -69,5 +69,3 @@ SELECT name FROM models ORDER BY name, cores DESC
 ```
 
 > `ORDER BY` always comes last, after the selection and any filtering clauses but _before_ a `WHERE` clause
-
-![](/img/sql-select-example.png)
