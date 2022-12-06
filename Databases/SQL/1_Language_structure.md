@@ -7,45 +7,29 @@ tags: [SQL]
 
 # SQL: Language structure
 
-Before we start using the syntax we need to understand the grammar:
+The structure or syntax of SQL is composite and mirrors that of a natural or logical language. There are overall statements (queries) which subdivide hierarchially into clauses, predicates, and expressions.
 
-![](/img/Pasted_image_20220314155028.png)
+## Query
 
-Expressions differ from clauses and predicates in that they are not the mechanism for returning data (i.e. declaring a clause and a logical colllllndition) they do something to the data, as part of the retrieval. This is a bit subtle:
+- A statement that updates or retrieves data from a table based on passed-in criteria
+- The highest level in the syntax tree, equivalent to a sentence in natural language
+- Examples:
+  - `SELECT`
+  - `UPDATE`
+  - `DELETE`
+- Applied example:
+  - `SELECT name FROM model`
 
-- `SELECT name FROM model WHERE cores = "4"`
-  - This retrieves the models that have 4 cores
-- `SELECT count(*) FROM model WHERE cores = "4" `
-  - This counts the number of models that are returned where the counting is a function over and above the retrieval itself.
+## Clause
 
-### Examples from `computer_sales.db`
+- Typically provides parameters for a given query
+- For example running a query against a specific table (`FROM`) that satisfies certain conditions (`WHERE`)
 
-`sqlite> SELECT * from model WHERE cpu_speed=0.7` : return all models with a CPU speed equal to 0.7:
+## Predicates
 
-```
-model_id    manufacturer_id  name                    cpu_speed   ram         cores       wifi        release_date
-----------  ---------------  ----------------------  ----------  ----------  ----------  ----------  ------------
-1           1                Raspberry Pi 1 Model A  0.7         256.0       1           0           2013-02-01
-2           1                Raspberry Pi 1 Model B  0.7         256.0       1           0           2012-04-01
-3           1                Raspberry Pi 1 Model B  0.7         512.0       1           0           2012-10-01
-4           1                Raspberry Pi 1 Model A  0.7         512.0       1           0           2014-11-01
-5           1                Raspberry Pi 1 Model B  0.7         512.0       1           0           2014-07-01
-```
+- A logical or numerical condition which is passed to a given clause.
+- For example `WHERE` a given condition obtains
 
-```
-count(*)
-----------
-5
-```
+### Expression
 
-> Any value that is not a number should be in single-quotes, never double quotes
-
-## Main commands
-
-There are obviously many SQL commands but most standard CRUD actions can be executed with a small number of commands:
-
-- `SELECT`
-- `UPDATE`
-- `CREATE`
-- `INSERT`
-- `DELETE`
+- The lowest level of the hierarchy: field, row names etc

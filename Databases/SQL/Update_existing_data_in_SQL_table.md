@@ -5,9 +5,9 @@ categories:
 tags: [SQL]
 ---
 
-# SQL: The UPDATE query
+# Update existing data with the SQL `UPDATE` command
 
-With UPDATE we modify existing records.
+We use `UPDATE` to modify existing records in our table.
 
 ## Schematic syntax
 
@@ -17,7 +17,7 @@ SET [field]
 WHERE [conditional expression/filter]
 ```
 
-## Real example
+## Example
 
 ```sql
 UPDATE manufacturer
@@ -25,7 +25,7 @@ SET url = '<http://www.hp.co.uk>'
 WHERE manufacturer_id = 4; --typically this will be the primary key as you are updating and existing record and need to identify it uniquely
 ```
 
-## Multiple fields
+## Update multiple fields
 
 ```sql
 UPDATE manufacturer
