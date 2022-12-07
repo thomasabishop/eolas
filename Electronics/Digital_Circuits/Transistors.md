@@ -3,7 +3,7 @@ title: Transistors
 categories:
   - Electronics
   - Hardware
-tags: [logic-gates, binary, memory]
+tags: [logic-gates, binary]
 ---
 
 # Transistors
