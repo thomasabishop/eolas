@@ -11,7 +11,7 @@ tags:
 
 Whenever we issue a command in bash we are really running an executable program that is associated with the command. This is why when we create our own bash scripts we must run `chmod` to make them executables. When we issue a command like `./file.sh` we are running an executable program.
 
-How come, however that when we use a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh` ? Remember from our discussion of the `PATH` environment variable that whenever we use inbuilt commands like `ls` and `cd` we are automatically sourcing them from the binary directory because we have these directories in our `PATH` . Hence the shell knows in advance what these commands mean. In the case of custom scripts, these aren’t typically added to the `PATH` so we have to source them in order to run them.
+How come, however, that when we use a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh` ? Remember from our discussion of the `PATH` environment variable that whenever we use inbuilt commands like `ls` and `cd` we are automatically sourcing them from the binary directory because we have these directories in our `PATH` . Hence the shell knows in advance what these commands mean. In the case of custom scripts, these aren’t typically added to the `PATH` so we have to source them in order to run them.
 
 ## Passing arguments
 
