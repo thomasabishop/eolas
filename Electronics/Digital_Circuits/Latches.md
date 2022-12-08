@@ -33,4 +33,6 @@ This is represented more clearly in the table below:
 
 ## Creating a latch circuit
 
-There is more than one way of implementing a latch with logic gates. We will look at two formulations which both use a single type of gate: [NANDs](/Hardware/Logic_Gates/Logic_gates.md#nand-gate)) and [NORs](/Hardware/Logic_Gates/Logic_gates.md#nor-gate) (both universal logic gates). Both methods arrange the gates in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other but separate from the overall output of the collective component. (This becomes clearer just by looking at the circuits.)
+There is more than one way of implementing a latch with logic gates. We will look at two formulations which both use a single type of gate: [NANDs](/Hardware/Logic_Gates/Logic_gates.md#nand-gate) and [NORs](/Hardware/Logic_Gates/Logic_gates.md#nor-gate) (both universal logic gates).
+
+In each case, the gates are in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.
