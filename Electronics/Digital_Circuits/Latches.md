@@ -14,7 +14,7 @@ In contrast, a sequential digital circuit's output depends not only on its prese
 
 ## What is a latch
 
-A latch is a circuit component that works as a very basic memory device. It is capable of setting and resetting a single bit.
+A latch is a circuit component that works as a very basic memory device. It is capable of setting and resetting a single bit. We can remember what it does by thinking of a door latch: once you turn the key the lock is set, when you turn it back it is unset.
 
 The **SR Latch** (for "set/reset") has two inputs: S (for set) and R (for reset) and one output, Q. Q stands for the bit that is remembered. There is also not-Q which is the opposite of whatever Q is currently set to.
 
@@ -33,4 +33,4 @@ This is represented more clearly in the table below:
 
 ## Creating a latch circuit
 
-There is more than one way of implementing a latch with logic gates. We will look at two formulations which both use a single type of gate: NANDs and NORs. Both methods arrange the gates in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other but separate from the overall output of the collective component. (This becomes clearer just by looking at the circuits.)
+There is more than one way of implementing a latch with logic gates. We will look at two formulations which both use a single type of gate: [NANDs](/Hardware/Logic_Gates/Logic_gates.md#nand-gate)) and [NORs](/Hardware/Logic_Gates/Logic_gates.md#nor-gate) (both universal logic gates). Both methods arrange the gates in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other but separate from the overall output of the collective component. (This becomes clearer just by looking at the circuits.)
