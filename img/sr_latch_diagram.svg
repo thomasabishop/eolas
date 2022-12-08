@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="219px" height="250px" viewBox="0 0 219 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="219" height="250"></rect>
+        <g id="Group" transform="translate(26.000000, 31.000000)">
+            <polygon id="Fill-3" fill="#FFFFFF" points="25 189 143 189 143 0 25 0"></polygon>
+            <polygon id="Stroke-4" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="25 0 143 0 143 189 25 189"></polygon>
+            <polygon id="Fill-5" fill="#FFFFFF" points="143 59.6116531 168 59.6116531 168 59.3883469 143 59.3883469"></polygon>
+            <polygon id="Stroke-6" stroke="#000000" stroke-width="3" stroke-linecap="round" points="143 59.38835 168 59.38835 168 59.61165 143 59.61165"></polygon>
+            <polygon id="Fill-7" fill="#FFFFFF" points="143 135.611653 168 135.611653 168 135.388347 143 135.388347"></polygon>
+            <polygon id="Stroke-8" stroke="#000000" stroke-width="3" stroke-linecap="round" points="143 135.388345 168 135.388345 168 135.611655 143 135.611655"></polygon>
+            <polygon id="Fill-9" fill="#FFFFFF" points="0 59.6116531 25 59.6116531 25 59.3883469 0 59.3883469"></polygon>
+            <polygon id="Stroke-10" stroke="#000000" stroke-width="3" stroke-linecap="round" points="0 59.38835 25 59.38835 25 59.61165 0 59.61165"></polygon>
+            <polygon id="Fill-11" fill="#FFFFFF" points="0 135.611653 25 135.611653 25 135.388347 0 135.388347"></polygon>
+            <polygon id="Stroke-12" stroke="#000000" stroke-width="3" stroke-linecap="round" points="0 135.388345 25 135.388345 25 135.611655 0 135.611655"></polygon>
+            <text id="SR" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="72" y="23">SR</tspan>
+            </text>
+            <text id="S" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="40" y="64">S</tspan>
+            </text>
+            <text id="R" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="39" y="141">R</tspan>
+            </text>
+            <text id="Q" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="117" y="64">Q</tspan>
+            </text>
+            <text id="Q" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="115" y="141">Q</tspan>
+            </text>
+            <line x1="117.5" y1="47.5" x2="128.5" y2="47.5" id="Line-3" stroke="#000000" stroke-width="2" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

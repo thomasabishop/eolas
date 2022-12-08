@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Programming Languages
-tags: [SQL]
+tags: [SQL, relational-database]
 ---
 
 # Update existing data with the SQL `UPDATE` command

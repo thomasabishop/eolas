@@ -3,7 +3,6 @@ categories:
   - Mathematics
 tags:
   - theorems
-    - prealgebra
 ---
 
 # The Commutative Property of Addition and Multiplication

@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Programming Languages
-tags: [SQL]
+tags: [SQL, relational-database]
 ---
 
 # Insert data into table with SQL `INSERT` statement

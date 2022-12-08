@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [relational-databases]
+tags: [relational-database]
 ---
 
 # Relational database architecture
@@ -16,9 +16,9 @@ A group of similar data with rows for **records** and columns for each **field**
 
 ## Record
 
-A horizontal row: a collection of items which may be of different data types all relating to the individual or object that the record describes
+A horizontal row: a collection of items which may be of different data types all relating to the individual or object that the record describes. A single _entry_ in the table.
 
-### Field
+## Field
 
 A vertical column: stores a single particular unit of data for each record. Each field must use the same data type.
 

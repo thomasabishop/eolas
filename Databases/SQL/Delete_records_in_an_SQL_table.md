@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Programming Languages
-tags: [SQL]
+tags: [SQL, relational-database]
 ---
 
 # Deleting data in SQL

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="225px" viewBox="0 0 383 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="383" height="225"></rect>
+        <g id="Group" transform="translate(31.000000, 32.000000)">
+            <g id="Group-7" transform="translate(154.000000, 27.500000) rotate(90.000000) translate(-154.000000, -27.500000) translate(129.500000, -100.000000)" stroke="#000000" stroke-width="3">
+                <line x1="-42.7646901" y1="68.0004713" x2="92.7357811" y2="68.2651614" id="use2208" stroke-linecap="round" transform="translate(25.235310, 68.500471) rotate(-90.000000) translate(-25.235310, -68.500471) "></line>
+                <path d="M31.1275314,126.063765 C31.1275314,129.412691 28.4126916,132.127531 25.0637672,132.127531 C21.7148399,132.127531 19,129.412691 19,126.063765 C19,122.71484 21.7148399,120 25.0637672,120 C28.4126916,120 31.1275314,122.71484 31.1275314,126.063765 Z" id="path3355-copy" fill="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" transform="translate(25.063766, 126.063765) rotate(-90.000000) translate(-25.063766, -126.063765) "></path>
+                <line x1="-33.8507464" y1="208.148311" x2="58.5014138" y2="208.148782" id="path3349" stroke-linecap="square" transform="translate(12.500471, 207.648782) rotate(-90.000000) translate(-12.500471, -207.648782) "></line>
+                <line x1="19.4696772" y1="178.648311" x2="53.4706197" y2="178.648311" id="use1318" stroke-linecap="square" transform="translate(36.470148, 178.648311) rotate(-90.000000) translate(-36.470148, -178.648311) "></line>
+                <path d="M3.44545848,179.045832 C3.40794308,179.047478 14.7118939,176.808473 14.7118939,155.200046 C14.7118939,133.378895 3.44472209,131.354262 3.44545848,131.354262 C21.6457393,133.539957 33.4990702,130.444575 46.0251622,155.200048 C36.6851168,177.088837 24.4360342,178.127802 3.44545848,179.045832 Z" id="path3353" fill="#EAEAEA" stroke-linejoin="round" transform="translate(24.735310, 155.200047) rotate(-90.000000) translate(-24.735310, -155.200047) "></path>
+            </g>
+            <g id="Group-7" transform="translate(154.500000, 137.000000) rotate(90.000000) translate(-154.500000, -137.000000) translate(130.000000, 9.500000)" stroke="#000000" stroke-width="3">
+                <line x1="-43.2646901" y1="68.5004713" x2="93.2357811" y2="68.7651614" id="use2208" stroke-linecap="round" transform="translate(25.235310, 69.000471) rotate(-90.000000) translate(-25.235310, -69.000471) "></line>
+                <path d="M31.1275314,127.063765 C31.1275314,130.412691 28.4126916,133.127531 25.0637672,133.127531 C21.7148399,133.127531 19,130.412691 19,127.063765 C19,123.71484 21.7148399,121 25.0637672,121 C28.4126916,121 31.1275314,123.71484 31.1275314,127.063765 Z" id="path3355-copy" fill="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" transform="translate(25.063766, 127.063765) rotate(-90.000000) translate(-25.063766, -127.063765) "></path>
+                <line x1="-4" y1="179.648311" x2="30.0009426" y2="179.648311" id="path3349" stroke-linecap="square" transform="translate(13.000471, 179.648311) rotate(-90.000000) translate(-13.000471, -179.648311) "></line>
+                <line x1="-9.38106923" y1="207.678634" x2="82.471091" y2="207.648782" id="use1318" stroke-linecap="square" transform="translate(36.970148, 208.148782) rotate(-90.000000) translate(-36.970148, -208.148782) "></line>
+                <path d="M3.44545848,180.045832 C3.40794308,180.047478 14.7118939,177.808473 14.7118939,156.200046 C14.7118939,134.378895 3.44472209,132.354262 3.44545848,132.354262 C21.6457393,134.539957 33.4990702,131.444575 46.0251622,156.200048 C36.6851168,178.088837 24.4360342,179.127802 3.44545848,180.045832 Z" id="path3353" fill="#EAEAEA" stroke-linejoin="round" transform="translate(24.735310, 156.200047) rotate(-90.000000) translate(-24.735310, -156.200047) "></path>
+            </g>
+            <line x1="85.25" y1="101.75" x2="85.75" y2="127.25" id="Line" stroke="#000000" stroke-width="3" stroke-linejoin="round"></line>
+            <line x1="85.4375" y1="39.9375" x2="85.5625" y2="62.0625" id="Line" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-linejoin="round"></line>
+            <line x1="217.25" y1="31.75" x2="217.75" y2="57.25" id="Line" stroke="#000000" stroke-width="3" stroke-linejoin="round"></line>
+            <line x1="216.25" y1="109.75" x2="216.75" y2="135.25" id="Line" stroke="#000000" stroke-width="3" stroke-linejoin="round"></line>
+            <line x1="218.5" y1="56" x2="84.5" y2="103" id="Line" stroke="#000000" stroke-width="3" stroke-linejoin="round"></line>
+            <line x1="85" y1="62.5" x2="217.5" y2="111" id="Line" stroke="#000000" stroke-width="3" stroke-linejoin="round"></line>
+            <circle id="Oval" fill="#000000" cx="217" cy="27.5" r="5"></circle>
+            <circle id="Oval" fill="#000000" cx="217" cy="137.5" r="5"></circle>
+            <text id="S" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="1" y="20.5">S</tspan>
+            </text>
+            <text id="R" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="0" y="155.5">R</tspan>
+            </text>
+            <text id="Q" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="301" y="144.5">Q</tspan>
+            </text>
+            <text id="N1" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="120" y="32.5">N1</tspan>
+            </text>
+            <text id="N2" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="119" y="143.5">N2</tspan>
+            </text>
+            <text id="~Q" font-family="BalsamiqSans-Regular, Balsamiq Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="295" y="29.5">~Q</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

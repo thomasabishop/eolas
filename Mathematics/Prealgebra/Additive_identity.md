@@ -3,7 +3,6 @@ categories:
   - Mathematics
 tags:
   - theorems
-    - prealgebra
 ---
 
 # The Property of Additive Identity
