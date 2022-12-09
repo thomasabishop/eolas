@@ -19,5 +19,5 @@ fi
 
 git pull
 git add .
-git commit -q -m "Last Sync: $(date +"%Y-%m-%d %H:%M:%S")"
+git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push -q
