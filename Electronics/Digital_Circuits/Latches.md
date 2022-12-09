@@ -34,6 +34,8 @@ This is represented more clearly in the table below:
 | 1   | 0   | 1                       | Set           |
 | 1   | 1   | X                       | Invalid, null |
 
+Important to note that this works if we set 1 or 0 as the bit to be remembered, not just if S is set to 1. Either way, the remembered bit will be represented by _Q_ regardless of how many times we toggle _S_ after the initial setting.
+
 _The representation of an SR Latch in a digital circuit diagram_:
 
 ![](/img/sr_latch_diagram.png)
@@ -57,7 +59,7 @@ Let's talk through the logic at each state change:
   - N1 is receiving 1 from S and 0 from R by way of N2. This is the inversion of OR so TF equals F.
   - Hence N2 (which is the state of Q) is receiving 0 from N1 as its top input and 0 from R as its bottom input. In NOR, FF equals T hence Q is 1
 - When _S_ goes to 0, _Q_ remains 1
-  - N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the overall input is FF which means NT is outputting T and Q remains 1
+  - N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the ohverall input is FF which means NT is outputting T and Q remains 1
   - N1 is outputting 0 because it is receiving 0 as its top input and 1 from its bottom input
 - When _R_ is set to 1, the memory bit is cleared and _Q_ becomes 0.
   - N2 is receiving 1 from R as its bottom input and 1 from the output of N1 as its top input. Therefore it is outputting TT which in NOR evaluates to F hence Q is 0
@@ -68,4 +70,7 @@ Let's talk through the logic at each state change:
 
 ### NAND latch
 
+With a NAND-based memory implementation we have two inputs: _I_ which is the bit we want to store in memory and _S_ which sets it. There is a single output _O_ which  
 ![](/img/nand_latch_logic_circuit.png)
+
+<iframe src="https://circuitverse.org/simulator/embed/nand-mem?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="600" allowFullScreen></iframe>
