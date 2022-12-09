@@ -18,7 +18,7 @@ A latch is a circuit component that works as a very basic memory device. It is c
 
 The **SR Latch** (for "set/reset") has two inputs: _S_ (for "set") and _R_ (for "reset") and one output, _Q_. _Q_ stands for the bit that is remembered. (There is also _not-Q_ which is the opposite of whatever _Q_ is currently set to.)
 
-The SR Latch has the following functionality:
+The SR Latch goes through the following state changes:
 
 - When _S_ is set to 1, output _Q_ becomes 1 also
 - When _S_ goes to 0, _Q_ remains 1
@@ -47,6 +47,24 @@ In each case, the gates are in a **cross-coupled configuration**. This basically
 ### NOR latch
 
 ![](/img/sr_latch_logic_circuit.png)
+
+<iframe src="https://circuitverse.org/simulator/embed/nor-latch-0869192c-7d7b-4161-b13f-3f72c1bce8e9" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="600" allowFullScreen></iframe>
+
+<br />
+Let's talk through the logic at each state change:
+
+- When _S_ is set to 1, output _Q_ becomes 1 also
+  - N1 is receiving 1 from S and 0 from R by way of N2. This is the inversion of OR so TF equals F.
+  - Hence N2 (which is the state of Q) is receiving 0 from N1 as its top input and 0 from R as its bottom input. In NOR, FF equals T hence Q is 1
+- When _S_ goes to 0, _Q_ remains 1
+  - N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the overall input is FF which means NT is outputting T and Q remains 1
+  - N1 is outputting 0 because it is receiving 0 as its top input and 1 from its bottom input
+- When _R_ is set to 1, the memory bit is cleared and _Q_ becomes 0.
+  - N2 is receiving 1 from R as its bottom input and 1 from the output of N1 as its top input. Therefore it is outputting TT which in NOR evaluates to F hence Q is 0
+  - N1 is outputting 1 because it is receiving 0 from S as its top input and 0 from its bottom input coming from N2. FF equals T in NOR therefore 1 is outputting 1
+- _Q_ remains at 0 even if _R_ goes back to 0
+  - N2 is receiving 0 as its bottom input from R and 1 as its top input from N1. TF equals F in NOR hence the output of N2 is 0 and Q remains 0
+  - N1 is outputting 1 because it is receiving 0 as its top input from S and 0 as its bottom input from N2. FF equals T in NOR hence N1 is 1
 
 ### NAND latch
 
