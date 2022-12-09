@@ -10,13 +10,13 @@ tags: [logic-gates, binary, memory]
 
 The combinatorial digital circuits we have looked at so far have been non-sequential. The outcome is a function of its immediate set of inputs and everything happens at once: there is no means of storing state for future use. In other words there is no _[memory](/Hardware/Memory/Memory.md)_.
 
-In contrast, a sequential digital circuit's output depends not only on its present set of inputs but also on past inputs to the circuit. It has some knowledge of its own previous state through the existence of memory - a component that allows for the **storage and retrieval of binary data**.
+In contrast, a sequential digital circuit's output depends not only on its present set of inputs but also on past inputs to the circuit. It has some knowledge of its own previous state through the existence of memory. This can be implemented via components that allow for the **storage and retrieval of binary data**.
 
 ## What is a latch?
 
 A latch is a circuit component that works as a very basic memory device. It is capable of setting and resetting a single bit. We can remember what it does by thinking of a door latch: once you turn the key the lock is set, when you turn it back it is unset.
 
-The **SR Latch** (for "set/reset") has two inputs: S (for set) and R (for reset) and one output, Q. Q stands for the bit that is remembered. There is also not-Q which is the opposite of whatever Q is currfently set to.
+The **SR Latch** (for "set/reset") has two inputs: _S_ (for "set") and _R_ (for "reset") and one output, _Q_. _Q_ stands for the bit that is remembered. (There is also not-Q which is the opposite of whatever Q is currently set to.)
 
 > When S is set to 1, output Q becomes 1 also. When S goes to 0, Q remains 1. When R is set to 1, this clears the memory bit and Q becomes 0. Q remains at 0 even if R goes back to 0.
 
