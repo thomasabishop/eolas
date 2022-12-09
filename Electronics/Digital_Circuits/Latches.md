@@ -16,9 +16,14 @@ In contrast, a sequential digital circuit's output depends not only on its prese
 
 A latch is a circuit component that works as a very basic memory device. It is capable of setting and resetting a single bit. We can remember what it does by thinking of a door latch: once you turn the key the lock is set, when you turn it back it is unset.
 
-The **SR Latch** (for "set/reset") has two inputs: _S_ (for "set") and _R_ (for "reset") and one output, _Q_. _Q_ stands for the bit that is remembered. (There is also not-Q which is the opposite of whatever Q is currently set to.)
+The **SR Latch** (for "set/reset") has two inputs: _S_ (for "set") and _R_ (for "reset") and one output, _Q_. _Q_ stands for the bit that is remembered. (There is also _not-Q_ which is the opposite of whatever _Q_ is currently set to.)
 
-> When S is set to 1, output Q becomes 1 also. When S goes to 0, Q remains 1. When R is set to 1, this clears the memory bit and Q becomes 0. Q remains at 0 even if R goes back to 0.
+The SR Latch has the following functionality:
+
+- When _S_ is set to 1, output _Q_ becomes 1 also
+- When _S_ goes to 0, _Q_ remains 1
+- When _R_ is set to 1, the memory bit is cleared and _Q_ becomes 0.
+- _Q_ remains at 0 even if _R_ goes back to 0
 
 This is represented more clearly in the table below:
 
@@ -29,6 +34,8 @@ This is represented more clearly in the table below:
 | 1   | 0   | 1                       | Set           |
 | 1   | 1   | X                       | Invalid, null |
 
+_The representation of an SR Latch in a digital circuit diagram_:
+
 ![](/img/sr_latch_diagram.png)
 
 ## Creating a latch circuit
@@ -37,5 +44,10 @@ There is more than one way of implementing a latch with logic gates. We will loo
 
 In each case, the gates are in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.
 
+### NOR latch
+
 ![](/img/sr_latch_logic_circuit.png)
+
+### NAND latch
+
 ![](/img/nand_latch_logic_circuit.png)
