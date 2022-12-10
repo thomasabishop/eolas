@@ -11,8 +11,7 @@ tags: [logic-gates, binary, memory]
 
 The [logic circuit](/Hardware/Logic_Gates/Logic_circuits.md) below demonstrates how memory can be created using [NAND](/Hardware/Logic_Gates/Nand_gate.md) gates. A single bit is stored in memory.
 
-![](/img/nand-memory.svg)
-
+![](/img/nand_latch_logic_circuit.png)
 Interactive version of circuit:
 
 <iframe src="https://circuitverse.org/simulator/embed/nand-mem?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>

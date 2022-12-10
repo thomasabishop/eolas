@@ -34,7 +34,9 @@ This is represented more clearly in the table below:
 | 1   | 0   | 1                       | Set           |
 | 1   | 1   | X                       | Invalid, null |
 
-Important to note that this works if we set 1 or 0 as the bit to be remembered, not just if S is set to 1. Either way, the remembered bit will be represented by _Q_ regardless of how many times we toggle _S_ after the initial setting.
+The most succinct account of a latch:
+
+> A latch is a 1-bit memory device that has a state _Q_ of either 1 or 0. The _S_ input sets _Q_ to 1 and the _R_ input resets _Q_ to 0.
 
 _The representation of an SR Latch in a digital circuit diagram_:
 
@@ -42,13 +44,15 @@ _The representation of an SR Latch in a digital circuit diagram_:
 
 ## Creating a latch circuit
 
-There is more than one way of implementing a latch with logic gates. We will look at two formulations which both use a single type of gate: [NANDs](/Hardware/Logic_Gates/Logic_gates.md#nand-gate) and [NORs](/Hardware/Logic_Gates/Logic_gates.md#nor-gate) (both universal logic gates).
+The circuit diagram latch symbol obviously encapsulates more complex functionality that occurs at the sub-circuit level. We will demonstrate how this functionality can be achieved with two [NOR](/Hardware/Logic_Gates/Logic_gates.md#nor-gate) gates.
 
-In each case, the gates are in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.
+The two gates are in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.
 
-### NOR latch
+The circuit is created as follows:
 
 ![](/img/sr_latch_logic_circuit.png)
+
+Interactive version:
 
 <iframe src="https://circuitverse.org/simulator/embed/nor-latch-0869192c-7d7b-4161-b13f-3f72c1bce8e9" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="600" allowFullScreen></iframe>
 
@@ -67,10 +71,3 @@ Let's talk through the logic at each state change:
 - _Q_ remains at 0 even if _R_ goes back to 0
   - N2 is receiving 0 as its bottom input from R and 1 as its top input from N1. TF equals F in NOR hence the output of N2 is 0 and Q remains 0
   - N1 is outputting 1 because it is receiving 0 as its top input from S and 0 as its bottom input from N2. FF equals T in NOR hence N1 is 1
-
-### NAND latch
-
-With a NAND-based memory implementation we have two inputs: _I_ which is the bit we want to store in memory and _S_ which sets it. There is a single output _O_ which  
-![](/img/nand_latch_logic_circuit.png)
-
-<iframe src="https://circuitverse.org/simulator/embed/nand-mem?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="600" allowFullScreen></iframe>
