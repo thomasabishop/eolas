@@ -19,13 +19,13 @@ Programs that are executing are loaded into memory because the chips that compri
 
 ### DRAM
 
-When we think of memory we generally think of the _main_ memory: the 8GB or 16GB+ slots of volatile, non-permanent storage that is utilised by the CPU during the runtime of programs. This is DRAM memory: Dynamic Random Access memory. DRAM uses capacitors that lose [charge](/Electronics/Current.md) over time due to leaks. As a result DRAM is memory that needs to be refreshed (recharged) frequently. For this reason and because it only uses one transistor and capacitor per bit, DRAM is the less expensive form of volatile memory.
+When we think of memory we generally think of the _main_ memory: the 8GB or 16GB+ slots of volatile, non-permanent storage that is utilised by the CPU during the runtime of programs. This is DRAM memory: Dynamic Random Access memory. DRAM uses capacitors that lose [charge](/Electronics_and_Hardware/Analogue_circuits/Current.md) over time due to leaks. As a result DRAM is memory that needs to be refreshed (recharged) frequently. For this reason and because it only uses one transistor and capacitor per bit, DRAM is the less expensive form of volatile memory.
 
 // TODO: Add notes in Electronics on capacitors
 
 ### SRAM
 
-SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_. It also uses multiple transistors per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM. SRAM is used as [cache memory](/Hardware/Memory/Role_of_memory_in_computation.md#the-role-of-the-cache) on the [motherboard](/Electronics_and_Hardware/Motherboard.md) of which there are two types: L1 (on the processor chip) and L2 (separate from the processor).
+SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_. It also uses multiple transistors per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM. SRAM is used as [cache memory](/Computer_Architecture/Memory/Role_of_memory_in_computation.md#the-role-of-the-cache) on the [motherboard](/Electronics_and_Hardware/Motherboard.md) of which there are two types: L1 (on the processor chip) and L2 (separate from the processor).
 
 ### Relative speeds
 

@@ -10,8 +10,8 @@ The following steps outline the way in which memory interacts with the processor
 
 1. A file is loaded from the harddisk into memory.
 2. The instruction at the first address is sent to the CPU, travelling accross the data bus part of the [system bus](/Hardware/Bus.md#system-bus).
-3. The CPU processes this instruction and then sends a request accross the address bus part of the system bus for the next instruction to the memory controller within the [chipset](/Hardware/Chipset_and_controllers.md).
-4. The chipset finds where this instruction is stored within the [DRAM](/Hardware/Memory/Memory.md#dram) and issues a request to have it read out and send to the CPU over the data bus.
+3. The CPU processes this instruction and then sends a request accross the address bus part of the system bus for the next instruction to the memory controller within the [chipset](/Computer_Architecture/Chipset_and_controllers.md).
+4. The chipset finds where this instruction is stored within the [DRAM](/Computer_Architecture/Memory/Memory.md#dram) and issues a request to have it read out and send to the CPU over the data bus.
 
 > This is a simplified account; it is not the case that only single requests are passed back and forth. This would be inefficient and time-wasting. The kernel sends to the CPU not just the first instruction in the requested file but also a number of instructions that immediately follow it.
 

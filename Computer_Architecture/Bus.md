@@ -15,7 +15,7 @@ A bus is a communication system that transfers data between components inside a 
 
 ### System bus
 
-The primary pathway between the CPU and [memory](Memory/Basics.md). It comprises the **data bus** that transfers data from the memory to the CPU and the **address bus** which transmits requests from the CPU to memory.
+The primary pathway between the CPU and [memory](/Computer_Architecture/Memory/Memory.md). It comprises the **data bus** that transfers data from the memory to the CPU and the **address bus** which transmits requests from the CPU to memory.
 
 ### Internal bus
 
@@ -31,7 +31,7 @@ Allows expansion boards to access the CPU and memory.
 
 ### Frontside bus
 
-Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](../Electronics_and_Hardware/Motherboard.md) devices.
+Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](Electronics_and_Hardware/Motherboard.md) devices.
 
 ### Backside bus
 
@@ -49,7 +49,7 @@ Serial Transmission is the type of transmission in which a single communication 
 <img src="../img/parallel-transmission.jpg" width="800px"/>
 
 - Serial buses are cheaper to implement than parallel buses
-- Serial buses operate at greater [latency](/Hardware/Bus.md#latency) than parallel buses
+- Serial buses operate at greater [latency](/Computer_Architecture/Bus.md#latency) than parallel buses
 
 ## Latency
 
