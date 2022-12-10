@@ -4,9 +4,7 @@ categories:
 tags: [binary, binary-encoding]
 ---
 
-# Image encoding
-
-## Binary encoding of colours
+# Binary encoding of colours
 
 The approach to encoding binary representations of colour is very similar to the approach we explored when looking at the encoding of [alphanumeric values](/Hardware/Binary/Text_encoding.md).
 

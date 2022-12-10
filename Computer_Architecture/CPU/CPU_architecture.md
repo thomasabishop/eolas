@@ -58,7 +58,7 @@ The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instr
 
 Whilst modern CPUs and multithreading make it appear[] as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
 
-The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Hardware/Logic_Gates/Logic_gates.md) or between logic gates and [registers](/Hardware/CPU/CPU_architecture.md#registers).
+The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Hardware/Logic_Gates/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers).
 
 Simple instructions such as add can often be executed in just one clock cycle, whilst complex operations such as divide will require a number of smaller steps, each using one cycle.
 
@@ -68,7 +68,7 @@ A speed of 2GHz for example means two billion cycles per second. This would mean
 
 ## Processing cycles
 
-Each "cycle" is the execution of a process that commences once the [kernel](/Operating_Systems/The_Kernel.md) hands control to the CPU. Each cycle follows a sequence of events known as [fetch, decode, and execute](/Hardware/CPU/Fetch_decode_execute.md).
+Each "cycle" is the execution of a process that commences once the [kernel](/Operating_Systems/The_Kernel.md) hands control to the CPU. Each cycle follows a sequence of events known as [fetch, decode, and execute](/Computer_Architecture/CPU/Fetch_decode_execute.md).
 
 ## Electromagnetism: broader scientific context
 

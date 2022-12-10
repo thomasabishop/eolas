@@ -23,7 +23,7 @@ Connects local devices for example the harddisk to the CPU.
 
 ### External bus
 
-Connects peripheral devices such as disks and printers to the [motherboard](/Hardware/Motherboard.md)
+Connects peripheral devices such as disks and printers to the [motherboard](/Electronics_and_Hardware/Motherboard.md)
 
 ### Expansion bus
 
@@ -31,7 +31,7 @@ Allows expansion boards to access the CPU and memory.
 
 ### Frontside bus
 
-Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](Motherboard.md) devices.
+Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](../Electronics_and_Hardware/Motherboard.md) devices.
 
 ### Backside bus
 
