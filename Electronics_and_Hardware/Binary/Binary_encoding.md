@@ -2,7 +2,7 @@
 title: Binary encoding
 categories:
   - Computer Architecture
-tags: [binary]
+tags: [binary, binary-encoding]
 ---
 
 # Binary encoding

@@ -44,6 +44,8 @@ _Computer Systems: A Programmer's Perspective Third Ed._ (2016) Bryant and O'Hal
 
 [How do transistors work, anyway?](https://lcamtuf.substack.com/p/how-do-transistors-work-anyway)
 
+[NAND latch](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/nandlatch.html)
+
 ## Linux
 
 _How Linux Works: What Every Superuser Should Know_ (2021) Brian Ward

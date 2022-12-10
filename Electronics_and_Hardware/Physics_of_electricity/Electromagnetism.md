@@ -18,7 +18,7 @@ We know that charge is an innate property of all charged fundamental particles. 
 
 ## Magnetism
 
-> Magnetism is a physical property produced by the _motion_ of electric charge, which of course, is the same thing as [electric current](/Electronics/Current.md)
+> Magnetism is a physical property produced by the _motion_ of electric charge, which of course, is the same thing as [electric current](/Electronics_and_Hardware/Analogue_circuits/Current.md)
 
 A **magnet** is a material or object that produces a magnetic field. This field is invisible but visible by its effects: pulling on other magnetic materials such as iron, steel, nickel, cobalt etc and attracting or repelling other magnets.
 
