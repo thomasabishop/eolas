@@ -27,7 +27,7 @@ To translate a signed number to an unsigned number you flip them back and still 
 
 ### Advantages
 
-The chief advantage of the two's complement technique of signing numbers is that its circuit implementation is no different from the adding of two unsigned numbers. Once the signing algorithm is applied the addition can be passed through an [adder](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md) component without any special handling or additional hardware.
+The chief advantage of the two's complement technique of signing numbers is that its circuit implementation is no different from the adding of two unsigned numbers. Once the signing algorithm is applied the addition can be passed through an [adder](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) component without any special handling or additional hardware.
 
 Let's demonstrate this with the following addition:
 
@@ -54,7 +54,7 @@ $$
 
 Which is 4. This means the calculation above would be identical whether we were calculating $7 + -3$ or $7 + 13$.
 
-The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics/Digital_Circuits/Half_adder_and_full_adder.md#binary-arithmetic) is a 0 then the number is positive. If it is 1 then it is negative.
+The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md#binary-arithmetic) is a 0 then the number is positive. If it is 1 then it is negative.
 
 This works but it requires extra complexity to in a system's design to account for the bit that has a special meaning. Adder components would need to be modified to account for it.
 

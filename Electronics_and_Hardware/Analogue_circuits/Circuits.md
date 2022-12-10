@@ -8,7 +8,7 @@ tags: [electricity, electrical-circuits]
 
 An electrical circuit is a set of electrical components connected in such a way that current flows in a loop from a voltage source, through the circuit elements and back to the voltage source.
 
-Below is a basic circuit representing a 9-volt [battery](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md#cells-and-batteries) with a 10,000$\Omega$ [resistor](/Electronics_and_Hardware/Analogue_circuits/Resistance.md) attached accross its terminals. Through the application of [Ohm's Law](/Electronics/Physics_of_electricity/Ohms_Law.md) we can determine that the maximum current will be 0.9 miliamps.
+Below is a basic circuit representing a 9-volt [battery](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md#cells-and-batteries) with a 10,000$\Omega$ [resistor](/Electronics_and_Hardware/Analogue_circuits/Resistance.md) attached accross its terminals. Through the application of [Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md) we can determine that the maximum current will be 0.9 miliamps.
 
 ![](/img/basic-circuit.png)
 

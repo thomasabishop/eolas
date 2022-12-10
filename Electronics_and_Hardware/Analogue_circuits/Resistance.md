@@ -25,7 +25,7 @@ Resistance and insulation are not the same thing although they relate to the sam
 - We use $R$ to represent resistance
 - The unit of resistance is **ohms** ($\Omega$)
 
-> One ohm is the resistance of a circuit or circuit element that permits a steady current flow of one [amp](/Electronics/Current.md#formal-expression) (one coulomb/second) when one [volt](/Electronics/Physics_of_electricity/Voltage.md#voltage) is applied to the circuit.
+> One ohm is the resistance of a circuit or circuit element that permits a steady current flow of one [amp](/Electronics_and_Hardware/Analogue_circuits/Current.md#formal-expression) (one coulomb/second) when one [volt](/Electronics_and_Hardware/Analogue_circuits/Voltage.md#voltage) is applied to the circuit.
 
 ### Conductance
 
@@ -38,7 +38,7 @@ Resistance and insulation are not the same thing although they relate to the sam
 
 ## Ohm's Law
 
-The relationship between current, resistance and voltage is expressed in [Ohm's Law](/Electronics/Physics_of_electricity/Ohms_Law.md).
+The relationship between current, resistance and voltage is expressed in [Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md).
 
 ## Resistors
 

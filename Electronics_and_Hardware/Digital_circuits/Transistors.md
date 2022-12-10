@@ -8,7 +8,7 @@ tags: [logic-gates, binary]
 
 # Transistors
 
-In the discussion of [digital circuits](/Electronics/Digital_Circuits/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typi>understanding the concept and then with transistors which are what are actually used in computers.
+In the discussion of [digital circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md) we noted that a digital circuit requires that electrical phenomena be treated as discrete rather than continuous values. Although a given voltage at a point in the circuit can vary widely, in order to represent the binary states of 'on' and 'off' we need it to remain fixed within certain narrow parameters. Typi>understanding the concept and then with transistors which are what are actually used in computers.
 
 ## Implementing binary logic with mechanical switches
 
@@ -28,7 +28,7 @@ In the example above is a circuit implementing an OR gate. The current flows jus
 
 In real digital circuits, mechanical switches would be totally impractical. The number of switches required is too numerous and we need to be able to connect and interconnect the output of many circuits together. The output of one circuit needs to be fed into another and there is no way to do this with switches.
 
-Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by [voltage](/Electronics/Voltage.md) values within set parameters.
+Thus instead of switches, modern digital circuits use transistors, a special electrical component that controls the flow of current in the manner of a switch where the 'off' and 'on' states are represented by [voltage](/Electronics_and_Hardware/Analogue_circuits/Voltage.md) values within set parameters.
 
 There are different types of transistors but the simplest for the purposes of explanation are **bipolar junction transistors**.
 
@@ -58,10 +58,10 @@ When the voltate at the base is low (in the diagram it is grounded to ensure thi
 
 With the basic element of the transistor established, we can combine transistors to create logic gates. A logic gate is a combination/sequence of transistors where the logical function is represented by the characteristic input and output voltages.
 
-For example to create an [AND](/Hardware/Logic_Gates/And_gate.md) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
+For example to create an [AND](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#and-gate) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
 
 ![](/img/and-transistor.png)
 
-Below, an [OR](/Hardware/Logic_Gates/Or_gate.md) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
+Below, an [OR](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#or-gate) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
 
 ![](/img/or-transistor.svg)

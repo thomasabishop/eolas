@@ -14,4 +14,4 @@ A **diode** is a special kind of component that only permits current to flow thr
 
 ![](/img/diode.png)
 
-An LED diode lights up when the right amount of current flows through it. A standard LED has a maximum current of 20mA. An appropriate [resistor](/Electronics/Resistance.md#resistors) must therefore be added to the circuit to ensure the current doesn't exeedd this amount.
+An LED diode lights up when the right amount of current flows through it. A standard LED has a maximum current of 20mA. An appropriate [resistor](/Electronics_and_Hardware/Analogue_circuits/Resistance.md#resistors) must therefore be added to the circuit to ensure the current doesn't exeedd this amount.

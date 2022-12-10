@@ -68,7 +68,7 @@ We can represent this with a simple truth-table:
 | 1   | 0   | 1   | 0     |
 | 1   | 1   | 0   | 1     |
 
-We can see that the sum bit column replicates the truth-conditions of [XOR](/Hardware/Logic_Gates/Xor_gate.md):
+We can see that the sum bit column replicates the truth-conditions of [XOR](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#xor-gate):
 
 | P   | Q   | P V Q |
 | --- | --- | ----- |
@@ -77,7 +77,7 @@ We can see that the sum bit column replicates the truth-conditions of [XOR](/Har
 | F   | T   | T     |
 | F   | F   | F     |
 
-And the carry-out bit replicates the truth conditions of [AND](/Hardware/Logic_Gates/And_gate.md):
+And the carry-out bit replicates the truth conditions of [AND](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#and-gate):
 
 | P   | Q   | P & Q |
 | --- | --- | ----- |

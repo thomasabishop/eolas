@@ -9,19 +9,19 @@ tags: [physics, electricity]
 
 ## Difference of potential and the tranfer of energy
 
-We noted in the discussion of [current](/Electronics/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
+We noted in the discussion of [current](/Electronics_and_Hardware/Analogue_circuits/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
 
 _Difference of potential_ is the same thing as voltage. Voltage is essential to current because it is the force that enables the current to flow.
 
 Without voltage there can be no current because in their natural state, the electrons in an atom are in random motion with no direction. To produce a current, energy must be imparted to the electrons so that they all flow in the same direction.
 
-Voltage is the application of this energy. Any [form of energy](/Electronics/Voltage_sources.md) that dislodges electrons from atoms can be used to produce current. Thus:
+Voltage is the application of this energy. Any [form of energy](/Electronics_and_Hardware/Analogue_circuits/Voltage_sources.md) that dislodges electrons from atoms can be used to produce current. Thus:
 
 > Voltage is the work required per coulomb to move a charge from one point to another.
 
 ### Voltage exists even without current
 
-Given that voltage is the force that generates current, it would be natural to think that voltage only exists when a voltage source (such as a [battery](/Electronics/Cells_and_batteries.m`)) is connected to a circuit. This however is not the case. Even if a 9V battery isn't connected to anything it still has a difference of potential of 9-volts accross its terminals. Remember voltage is _potential energy_ not just the actualisation of that energy.
+Given that voltage is the force that generates current, it would be natural to think that voltage only exists when a voltage source (such as a [battery](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md)) is connected to a circuit. This however is not the case. Even if a 9V battery isn't connected to anything it still has a difference of potential of 9-volts accross its terminals. Remember voltage is _potential energy_ not just the actualisation of that energy.
 
 ## Voltage rise and voltage drops
 
@@ -64,7 +64,7 @@ The application of the Law is illustrated in the following diagram:
 
 The explanation for the voltage drop at the positions $V^{A}$ and $V^{D}$ are obvious enough: they are at the beginning and end of the loop so are equal to the maximal voltage rise and minimal voltage drop, respectively.
 
-We can work out the voltage of the remaining voltage points by inverting [Ohm's Law](/Electronics/Physics_of_electricity/Ohms_Law.md): $V = I \times R$:
+We can work out the voltage of the remaining voltage points by inverting [Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md): $V = I \times R$:
 
 For the voltage at $V^{B}$:
 
