@@ -1,5 +1,13 @@
 # Resources
 
+## Algorithms and Data Structures
+
+_A Common Sense Guide to Data Structures and Algorithms_ (2017) Jay Wengrow
+
+_The Algorithm Design Manual_ (2011) S. Skienna
+
+_Cracking the Coding Interview_ (2009) McDowell [for useful algorithm exercises]
+
 ## Backend (CPD)
 
 [roadmap.sh/backend](https://roadmap.sh/backend)
@@ -8,25 +16,17 @@
 
 [roadmap.sh/software-design-architecture](https://roadmap.sh/software-design-architecture)
 
-_Clean Code_ (2008) R.C Martin
-
-_The Pragmatic Programmer_ (1999) Hunt and Thomas
-
 ## C
 
 [Everything I wish I knew when I started learning C](https://tmewett.com/c-tips/)
 
-## Computer Science
+## Computer Science (general)
 
 [Welcome to CS](https://runestone.academy/ns/books/published/welcomecs/index.html)
 
 [roadmap.sh/computer-science](https://roadmap.sh/computer-science)
 
 _Structure and Interpretation of Computer Programs_ (1998) Abelson, Sussman
-
-_A Common Sense Guide to Data Structures and Algorithms_ (2017) Jay Wengrow
-
-_Cracking the Coding Interview_ (2009) McDowell [for useful algorithm exercises]
 
 ## Electronics, hardware, computer architecture
 
@@ -45,6 +45,12 @@ _Computer Systems: A Programmer's Perspective Third Ed._ (2016) Bryant and O'Hal
 [How do transistors work, anyway?](https://lcamtuf.substack.com/p/how-do-transistors-work-anyway)
 
 [NAND latch](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/nandlatch.html)
+
+## Generic
+
+_Clean Code_ (2008) R.C Martin
+
+_The Pragmatic Programmer_ (1999) Hunt and Thomas
 
 ## Linux
 
