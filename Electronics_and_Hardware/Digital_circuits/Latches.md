@@ -44,7 +44,7 @@ _The representation of an SR Latch in a digital circuit diagram_:
 
 ## Creating a latch circuit
 
-The circuit diagram latch symbol obviously encapsulates more complex functionality that occurs at the sub-circuit level. We will demonstrate how this functionality can be achieved with two [NOR](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#nor-gate) gates.
+The circuit diagram latch symbol obviously encapsulates more complex functionality that occurs at the sub-circuit level. We will demonstrate how this functionality can be achieved with two [NOR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nor-gate) gates.
 
 The two gates are in a **cross-coupled configuration**. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.
 

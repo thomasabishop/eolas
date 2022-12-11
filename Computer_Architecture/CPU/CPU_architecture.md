@@ -34,7 +34,7 @@ There are five main types of register in the CPU:
 
 ## Arithmetic Logic Unit
 
-This is the hub of the CPU, where the binary calculations occur. It comprises [logic gates](/Electronics_and_Hardware/Logic_gates/Logic_gates.md) that execute the instructions passed from memory. This is where the data stored by the registers is acted upon.
+This is the hub of the CPU, where the binary calculations occur. It comprises [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) that execute the instructions passed from memory. This is where the data stored by the registers is acted upon.
 
 It can execute arithmetic on binary numbers and logical operations. This is where you will find operations conducted by adders and half-adders etc.
 
@@ -58,7 +58,7 @@ The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instr
 
 Whilst modern CPUs and multithreading make it appear[] as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
 
-The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Logic_Gates/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers).
+The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers).
 
 Simple instructions such as add can often be executed in just one clock cycle, whilst complex operations such as divide will require a number of smaller steps, each using one cycle.
 

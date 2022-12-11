@@ -9,7 +9,7 @@ tags: [logic-gates, binary]
 
 ## Binary arithmetic
 
-The half adder and full adder are components of digital circuits that enable us to carry out binary addition. Using adders and half adders we can add two binary numbers together. Adders are a type of [integrated circuit]() comprising certain [logic gates](/Hardware/Logic_Gates/Logic_gates.md) where the arrangement allows for the representation of the addition of bits.
+The half adder and full adder are components of digital circuits that enable us to carry out binary addition. Using adders and half adders we can add two binary numbers together. Adders are a type of [integrated circuit]() comprising certain [logic gates](/Hardware/Digital_circuits/Logic_gates.md) where the arrangement allows for the representation of the addition of bits.
 
 ### Example addition
 
@@ -68,7 +68,7 @@ We can represent this with a simple truth-table:
 | 1   | 0   | 1   | 0     |
 | 1   | 1   | 0   | 1     |
 
-We can see that the sum bit column replicates the truth-conditions of [XOR](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#xor-gate):
+We can see that the sum bit column replicates the truth-conditions of [XOR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#xor-gate):
 
 | P   | Q   | P V Q |
 | --- | --- | ----- |
@@ -77,7 +77,7 @@ We can see that the sum bit column replicates the truth-conditions of [XOR](/Ele
 | F   | T   | T     |
 | F   | F   | F     |
 
-And the carry-out bit replicates the truth conditions of [AND](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#and-gate):
+And the carry-out bit replicates the truth conditions of [AND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#and-gate):
 
 | P   | Q   | P & Q |
 | --- | --- | ----- |

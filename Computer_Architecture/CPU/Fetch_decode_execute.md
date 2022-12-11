@@ -37,7 +37,7 @@ Once the CPU has received the instruction, the CPU controller chip analyses it t
 ## Execute
 
 Now the command will be executed. The operand is copied to the Memory Address Register and then passed to the Memory Data Register and the command is carried out by the ALU.
-The activities of ALU are covered in [CPU Architecture](/Computer_Architecture/CPU/CPU_architecture.md#arithmetic-logic-unit) and the notes on [Logic Gates](/Electronics_and_Hardware/Logic_gates/Logic_gates.md).
+The activities of ALU are covered in [CPU Architecture](/Computer_Architecture/CPU/CPU_architecture.md#arithmetic-logic-unit) and the notes on [Logic Gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
 
 ## Store
 

@@ -58,10 +58,10 @@ When the voltate at the base is low (in the diagram it is grounded to ensure thi
 
 With the basic element of the transistor established, we can combine transistors to create logic gates. A logic gate is a combination/sequence of transistors where the logical function is represented by the characteristic input and output voltages.
 
-For example to create an [AND](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#and-gate) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
+For example to create an [AND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#and-gate) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
 
 ![](/img/and-transistor.png)
 
-Below, an [OR](/Electronics_and_Hardware/Logic_gates/Logic_gates.md#or-gate) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
+Below, an [OR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
 
 ![](/img/or-transistor.svg)
