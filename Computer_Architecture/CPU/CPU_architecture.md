@@ -1,7 +1,7 @@
 ---
 categories:
   - Computer Architecture
-tags: [CPU, electromagnetism]
+tags: [CPU, electromagnetism, clock]
 ---
 
 # CPU architecture
