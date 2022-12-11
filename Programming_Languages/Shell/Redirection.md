@@ -21,6 +21,12 @@ It is common practice to combine redirection with the [file descriptors](/Progra
 
 ## Redirecting inputs
 
+We can also switch the direction of the redirection symbol and pass in a file to a command rather than command ouput to a file:
+
+```bash
+sql-processing-program < data.sql
+```
+
 ## Appending 
 
 We use `>>` to append contents on the next available line of a pre-existing file. Continuing on from the example above:
