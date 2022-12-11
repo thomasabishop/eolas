@@ -56,9 +56,9 @@ The CPU's [controller](/Hardware/Chipset_and_controllers.md). It takes the instr
 
 ## The system clock
 
-Whilst modern CPUs and multithreading make it appear[] as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
+Whilst modern CPUs and multithreading make it appear as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
 
-The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers).
+The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers). This is covered in greater detail in the discussion of [clock signals in digital circuits](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md)
 
 Simple instructions such as add can often be executed in just one clock cycle, whilst complex operations such as divide will require a number of smaller steps, each using one cycle.
 
