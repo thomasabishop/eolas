@@ -2,19 +2,27 @@
 
 ## Algorithms and Data Structures
 
-_A Common Sense Guide to Data Structures and Algorithms_ (2017) Jay Wengrow
+J.Wengrow. 2017. **A Common Sense Guide to Data Structures and Algorithms**
 
-_The Algorithm Design Manual_ (2011) S. Skienna
+S. Skienna. 2011. **The Algorithm Design Manual**
 
-_Cracking the Coding Interview_ (2009) McDowell [for useful algorithm exercises]
+A. Bhargava. 2016. **Grokking Algorithms: An Illustrated Guide**
+
+McDowell. 2009. **Cracking the Coding Interview** [for useful algorithm exercises]
+
+## Artificial Intelligence
+
+P. Norvig, S. Russell. 2020. **Artificial Intelligence: A Modern Approach**
+
+N. Weiner. 1948. **Cybernetics**
 
 ## Backend (CPD)
 
-[roadmap.sh/backend](https://roadmap.sh/backend)
+[Backend Roadmap](https://roadmap.sh/backend)
 
-[roadmap.sh/devops](https://roadmap.sh/devops)
+[DevOps Roadmap](https://roadmap.sh/devops)
 
-[roadmap.sh/software-design-architecture](https://roadmap.sh/software-design-architecture)
+[Software Design Roadmap](https://roadmap.sh/software-design-architecture)
 
 ## C
 
@@ -22,50 +30,66 @@ _Cracking the Coding Interview_ (2009) McDowell [for useful algorithm exercises]
 
 ## Computer Science (general)
 
+Abelson, Sussman. 1998. **Structure and Interpretation of Computer Programs**
+
 [Welcome to CS](https://runestone.academy/ns/books/published/welcomecs/index.html)
 
 [roadmap.sh/computer-science](https://roadmap.sh/computer-science)
 
-_Structure and Interpretation of Computer Programs_ (1998) Abelson, Sussman
-
 ## Electronics, hardware, computer architecture
 
-_How Computers Really Work_ (2020) Matthew Justice
+M.Justice. 2020. **How Computers Really Work**
 
-_But How Do It Know? The Basics of Computers for Everyone_ (2009)
+J.C. Scott. 2009. **But How Do It Know? The Basics of Computers for Everyone**
 
-_The Essential Guide to Computing_ (2001) Garrison Walters
+G. Walters. 2001. **The Essential Guide to Computing**
 
-_Fundamental Electrical and Electronic Principles_ (2008) Christopher Robertson
+C. Roberton. 1008. **Fundamental Electrical and Electronic Principles**
 
-[Computer Organisation and Design](https://learning.oreilly.com/library/view/computer-organization-and/9781483221182/) (2020) Hennesy and Patterson [O'Reilly]
+Hennesy, Patterson. 2020. **Computer Organization and Design** ([BBC O'Reilly Link](https://learning.oreilly.com/library/view/computer-organization-and/9781483221182/))
 
-_Computer Systems: A Programmer's Perspective Third Ed._ (2016) Bryant and O'Halloran
+Bryant, O'Halloran. 2016. **Computer Systems: A Programmer's Perspective**
 
 [How do transistors work, anyway?](https://lcamtuf.substack.com/p/how-do-transistors-work-anyway)
 
 [NAND latch](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/nandlatch.html)
 
-## Generic
+## General programming
 
-_Clean Code_ (2008) R.C Martin
+R.C.Martin. 2008. **Clean Code**
 
-_The Pragmatic Programmer_ (1999) Hunt and Thomas
+Hunt, Thomas. 1999. **The Pragmatic Programmer**
 
 ## Linux
 
-_How Linux Works: What Every Superuser Should Know_ (2021) Brian Ward
+B.Ward. 2021. **How Linux Works**
 
-## Mathematics
+## Mathematics and Logic
 
-_The Logic Book_
+M. Bergmann, J. Moor, J.Nelson. 1990. **The Logic Book**
 
-_Foundation Mathematics for Computer Science_ (2015) John Vince
+J. Vince. 2015. **Foundation Mathematics for Computer Science**
 
-_Algebra_ (2004) Gelfand and Shen
+Gelfand, Shen. 2004. **Algebra**
+
+J.Kun. 2018. **A Programmer's Introduction to Mathematics**
+
+E. Lehman, F. Thomson Leighton, A.R. Meyer 2017. **Mathematics for Computer Science**
+
+## Networks
+
+G. Caldarelli, M. Catanzaro. 2012. **Networks: A Very Short Introduction**
 
 ## Python
+
+A. Sweighart. 2020. **Beyond the Basic Stuff with Python**
+
+A. Sweighart. 2015. **Automate the Boring Stuff with Python**
 
 [Tiny Python Projects (O'Reilly)](https://learning.oreilly.com/library/view/tiny-python-projects/9781617297519/)
 
 [Learning Arduino with Python](https://realpython.com/arduino-python/)
+
+## Shell
+
+B. Perry, D. Taylor. 2015. **Wicked Cool Shell Scripts**
