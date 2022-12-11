@@ -47,6 +47,6 @@ The [mode](/Programming_Languages/Shell_Scripting/File_permissions_and_execution
 
 ## /dev/null
 
-`/dev/null` is a virtual device: it doesn't actually exist as a piece of hardware on the system.
+`/dev/null` is a virtual device: it doesn't actually exist as a piece of hardware on the system. It can be useful when [bash scripting](/Programming_Languages/Shell/Redirect_to_dev_null.md) as a place to direct output that you don't care about, for example errors or verbose program read-outs.
 
 > ! Make notes on this. Base on : https://linuxhint.com/what_is_dev_null/
