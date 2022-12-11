@@ -5,12 +5,12 @@ tags:
   - shell
 ---
 
-## Redirection operator
+# Redirection
 
 The symbol `>` is called the **redirection operator** because it redirects the output of a command to another location. You most frequently use this when you want to save contents to a file rather than standard output.
 
 ```bash
-ls | grep d* >> result.txt
+ls | grep d* > result.txt
 ```
 
 ## Appending operator

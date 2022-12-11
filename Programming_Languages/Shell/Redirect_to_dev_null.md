@@ -16,7 +16,7 @@ You'll see the following a lot when reading shell scripts:
 
 This is a redirection statement. It is redirecting data to the `null` device on Unix systems. Basically to a black hole or shredder where you can't access it because you don't want it to be output to stout.
 
-The `2>&1` argument is the content: any errors that the program may generate and try to show in stout.
+The `2>&1` argument is the content: any errors that the program may generate and try to show in stout. Notice we are using the [file descriptors](/Programming_Languages/Shell/File_descriptors_and_redirection.md) `1` and `2`.
 
 ## Example
 
