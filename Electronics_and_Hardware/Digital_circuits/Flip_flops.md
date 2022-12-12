@@ -7,7 +7,25 @@ tags: [logic-gates, binary, memory, clock]
 
 # Flip-Flops
 
-A flip-flop is a type of [latch](/Electronics_and_Hardware/Digital_circuits/Latches.md) that is connected to a clock signal and which executes in time with the clock's pulse[^1].
+A flip-flop is a type of [latch](/Electronics_and_Hardware/Digital_circuits/Latches.md) that is connected to a [clock signal](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md) and which executes in time with the clock's pulse. (Sometimes "latch" and "flip-flop" are used interchangeably but technically a latch is flip-flop without a clock connection.)
 
+## JK Flip-Flop
 
-[^1]: Here is a footnote 
+The JK Flip-Flop (the letters are meaningless) is basically an SR latch in functionality. It has a "set" input (_J_) and a "reset" input (_K_) and _Q_ and inverted-_Q_ outputs.
+
+Where it differs from the SR is that it the SR will change state just if the voltage is high (this, afterall, is all that a bit is) whereas for the JK to set it **must receive a clock pulse** and it will only set on the pulse. 
+
+In addition the JK Flip-Flop has a **toggle** function. When this is executed, whatever _Q_ currently is will be flipped to its opposite value: $1 \rightarrow 0$,  $0 \rightarrow 1$. The toggle executes when both _J_ and _K_ are set to high.
+
+The possible state changes for the JK Flip-Flop are detailed below:
+
+| J 	| K 	| Clock 	| Q state                   	| Operation 	|
+|---	|---	|-------	|---------------------------	|-----------	|
+| 0 	| 0 	| Pulse 	| Maintain previous value   	| Hold      	|
+| 0 	| 1 	| Pulse 	| 0                         	| Reset     	|
+| 1 	| 0 	| Pulse 	| 1                         	| Set       	|
+| 1 	| 1 	| Pulse 	| Inverse of previous value 	| Toggle    	|
+
+A JK Flip-Flop can execute on either the positive or negative pulse. Below are the diagrams fora rising and falling pulse respectively:
+
+// TODO diagram of JK Flipflop 
