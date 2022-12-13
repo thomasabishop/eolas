@@ -45,11 +45,17 @@ Here's our `returns` table:
 | 7899     | 1      | 2020-11-218 | New device issued under warranty due to defect |
 | 6711     | 2      | 2022-09-02  | Returned gift                                  |
 
-n this table `saleId` is identical to `saleId` in sales. It is the primary key in `sales` but a foreign key in `returns`. There is a one-to-one correspondance at work here. If a device has been returned it must have an entry in `returns` and the `salesId` of the entry in `returns` must match the `salesId` in `sales`.
+In this table `saleId` is identical to `saleId` in sales. It is the primary key in `sales` but a foreign key in `returns`. If a device has been returned it must have an entry in `returns` and the `salesId` of the entry in `returns` must match the `salesId` in `sales`.
 
-We already have the `sales` table. We want to create new table called `returns` that will sustain a one-to-one relationship with `sales`. We are going to use the `sale_id` as our foreign key in `returns`. This is the primary key in `sales`.
+This is the primary benefit of utilising foreign keys: they add a restriction. Entries to the table with a foreign key **must** have a value that corresponds with the foreign key column. 
 
-We establish this with the following SQL:
+We call this a **foreign key contraint**. More explicitly, our contraint is as follows:
+
+> Any value entered into returns.saleId must already exist in sales.salesId
+
+A secondary benefit is that they save us the trouble of repeating data. Without foreign keys we would have to input `saleId` twice in two different tables.
+
+We establish the foreign key reference with ther following SQL:
 
 ```sql
 CREATE TABLE returns (
@@ -60,21 +66,6 @@ CREATE TABLE returns (
 	FOREIGN KEY (sale_id) REFERENCES sales(sale_id)
 	);
 ```
+A table can have more than one foreign key.
 
-https://www.cockroachlabs.com/blog/what-is-a-foreign-key/
-
----
-
-Here's an example with more than one foreign key:
-
-```sql
-CREATE TABLE returns (
-    return_id integer PRIMARY KEY,
-    sale_id integer NOT NULL,
-    employee_id text NOT NULL,
-    date_returned text,
-    reason text,
-    FOREIGN KEY(sale_id) REFERENCES sales(sale_id),
-    FOREIGN KEY(employee_id) REFERENCES employee(employee_id)
-    );
-```
+If you delete the source of the foreign key, you also delete its references in tables for which it is a foreign key. This is important to remember. So if a row was deleted from `sales` the row in `returns` with the corresponding `saleId` would also be deleted.

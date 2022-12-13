@@ -26,9 +26,11 @@ The possible state changes for the JK Flip-Flop are detailed below:
 | 1 	| 0 	| Pulse 	| 1                         	| Set       	|
 | 1 	| 1 	| Pulse 	| Inverse of previous value 	| Toggle    	|
 
-A JK Flip-Flop can execute on either the positive or negative pulse. Below are the diagrams fora rising and falling pulse respectively:
+A JK Flip-Flop can execute on either the positive or negative pulse. Below are the diagrams for a rising and falling pulse respectively:
 
-// TODO diagram of JK Flipflop 
+![](/img/jk-flip-flops.png)
+
+
 
 ## T Flip-Flops
 
@@ -41,4 +43,4 @@ Thus the state table for the T Flip-Flop is:
 | 0 	| Pulse 	| Maintain previous value   	| Hold      	|
 | 0 	| Pulse 	| Inverse of previous value 	| Toggle    	|
 
-// TODO: Add diagram
+![](/img/t-flip-flops.png)

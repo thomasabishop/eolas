@@ -5,7 +5,9 @@ categories:
 tags: [SQL]
 ---
 
-# SQL Aggregate functions
+# Aggregate functions in SQL
+
+Aggregate functions enable us to return data about the data that a table holds. For example the sum of a given column or its average. 
 
 ## Count return with custom variable
 
