@@ -48,6 +48,8 @@ Using these pulse patterns we can construct a circuit as follows:
 
 <iframe src="https://circuitverse.org/simulator/embed/3-bit-counter-d33846e3-7538-427d-b4cc-dc64fdaf0af3?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="600" allowFullScreen></iframe>
 
+<br />
+
 > Remember from the table: Q2 is the most significant bit and Q0 is the least significant bit so we should read the output in the interactive circuit backwards, reversing the order. Then we will see that the cicuit is cyling through 0-7 
 
 
