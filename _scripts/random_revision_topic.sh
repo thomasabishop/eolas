@@ -3,15 +3,9 @@
 DIRS_TO_PARSE="../Algorithms ../Computer_Architecture ../Databases"
 
 for ele in $DIRS_TO_PARSE; do
-    MATCHES+=( $(find $ele -name "*.md" -type f) )
+    FILE_MATCHES+=( $(find $ele -name "*.md" -type f) )
 done
 
-for i in ${MATCHES[@]}
-do
-    echo $i
-done
+RANDOM_FILE_INDEX=$(( $RANDOM % ${#FILE_MATCHES[@]} + 0 ))
 
-# Next steps:
-#     - Generate random number
-#     - Specify the range of the random number from 0 to length of $MATCHES
-#     - Return that index
+echo "Revise this topic: ${FILE_MATCHES[$RANDOM_FILE_INDEX]}"
