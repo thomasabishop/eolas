@@ -6,6 +6,7 @@
 - How to handle the return value of a command
   - If it returns multiple values, how to isolate and loop through them
 - What the weird variable symbols mean like errors and stuff
+- Read up properly about `find` and `read`
 
 ## SQL
 
