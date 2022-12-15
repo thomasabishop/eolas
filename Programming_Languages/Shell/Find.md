@@ -84,12 +84,15 @@ $ find -not -name "*.js" -type f
 ./app/style.css
 ./dist/index.html
 ./dist/style.c
-
-
-dfdf
 ```
 
-## Actions
+Applied to a directory:
+
+```bash
+find . -type -f -not -path "./.git/"
+```
+
+## Run programs against results 
 
 Using the `exec` keyword we can run a program against the files that are returned from `find`.
 
