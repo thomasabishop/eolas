@@ -3,22 +3,22 @@ title: Binary units of measurement
 categories:
   - Computer Architecture
   - Mathematics
-tags: [bits, binary]
+tags: [binary]
 ---
 
 # Binary units of measurement
 
-A single place or symbol in a decimal number is called a **digit**. For example the number 343 is a number containing three digits. A digit can be any numeral through 0-9.
+A single place or symbol in a decimal number is called a **digit**. For example the number 343 is a number containing three digits. A digit can be any one of the ten numerals   through 0-9.
 
-The equivalent entity in the [binary number system](/Electronics_and_Hardware/Binary/Binary_number_system.md) is the **bit**. For example the binary number 110 has three bits. A bit can only have one of two values in contrast to a digit which can have one of ten values: 0 or 1.
+The equivalent entity in the [binary number system](/Electronics_and_Hardware/Binary/Binary_number_system.md) is the **bit**. For example the binary number 110 has three bits. A bit can only have one of two values in contrast to a digit which can have one of ten values. These values are 0 and 1.
 
 ## Sequences of bits
 
 ### Informational complexity
 
-The informational complexity of digit is much larger than a bit: it can represent one of 10 states whereas a bit can only represent one of two states.
+The informational complexity of a single digit is much larger than a single bit: it can represent one of 10 states whereas a bit can only represent one of two states.
 
-We can think of how much data can be stored in a number in terms of the total number of unique arrangemnets of bits or digits. With this in mind, compare a two digit digital number to a two bit binary number. For the decimal number each digit can represent one of ten states, hence the total number of unique states is equal to $2^{10} (1024)$:
+We can think of how much data can be stored in a number in terms of the total number of unique arrangements of bits or digits. With this in mind, compare a two digit digital number to a two bit binary number. For the decimal number each digit can represent one of ten states, hence the total number of unique states is equal to $2^{10} (1024)$:
 
 With the binary number we have $2^{2} (4)$, giving us far fewer possible unique states. They are so few we can easily list them:
 
