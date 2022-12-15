@@ -76,38 +76,147 @@ ON model.model_id = sales.model_id; -- Specify the match criteria
 
 We can represent the logical relationship that obtains between the `sales` and `model` tables as follows:
 
-![](/img/sql-inner-join-venn.png)
+![](/img/sql-inner-join.png)
 
 
 ## Outer joins
 
 Outer joins are joins that return matched values **and unmatched** values from either or both tables. 
 
+To explain outer joins we need to expand our data set:
+
+_The `sales` table_:
+
+| saleId | modelId | saleDate   | employeeId | price  |
+| ------ | ------- | ---------- | ---------- | ------ |
+| 1      | 44      | 2020-07-27 | tbishop    | 40.99  |
+| 2      | 22      | 2021-02-05 | tbishop    | 986.99 |
+| 3      | 14      | 2022-11-16 | tgnomay    | 1248.99|
+| 4      |         | 2020-03-01 | msmelk     | 699.99|
+
+_The `model` table_:
+
+| modelId | modelName            | 
+| ------ | --------------------- | 
+| 44      | Raspberry Pi Model A  | 
+| 22      | Apple MacBook Air     | 
+| 14      | Lenovo ThinkPad P15   |
+| 66      | Google Chromebook     |
+
+> We will assume that `sales` is our left table and `model` our right. 
 ### Left outer join 
 A left outer join returns all records from the left or first table and the matching records from the right or second table. If there are not matches on the right then only the left data is returned. 
+
+In the context of our dataset, in the _sales_ database we have a row where there is a sale with no corresponding `modelId`. If we performed a left outer join this would give us the following table in return:
+
+| modelName            | sale_date |
+| -------------------  |-----------|
+| Raspberry Pi Model A | 2015-02-01|
+| Apple Macbook Air    | 2018-11-01|
+| Lenovo ThinkPad P15  | 2018-11-01|
+|                      | 2020-03-01|
+
+The logical relationship sustained between `sales` and `model` by a left inner join is represented in the following diagram:
+
+![](/img/sql-left-outer-join.png)
+
+#### Implementation
+
+The schematic form:
+
+```sql
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+Applied to our data set:
+
+```sql
+SELECT model.modelName, sales.saleDate
+FROM sales.saleDate
+LEFT JOIN model
+ON sales.modelId = model.modelId
+```
 
 ### Right outer join 
 This is the inverse of the right outer join. A right outer join returns all records from the right or second table and the matching records from the left or first table. If there are not matches on the left then only the right data is returned.
 
+In the context of our dataset, in the _model_ database we have a row where there is a `modelId` without a corresponding entry in the `sales` table. If we performed a right outer join this would give us the following table in return:
+
+| modelName            | sale_date |
+| -------------------  |-----------|
+| Raspberry Pi Model A | 2015-02-01|
+| Apple Macbook Air    | 2018-11-01|
+| Lenovo ThinkPad P15  | 2018-11-01|
+| Google Chromebook    |           |
+
+The logical relationship sustained between `sales` and `model` by a right inner join is represented in the following diagram:
+
+![](/img/sql-right-outer-join.png)
+
+#### Implementation
+
+The schematic form:
+
+```sql
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+Applied to our data set:
+
+```sql
+SELECT model.modelName, sales.saleDate
+FROM sales.saleDate
+RIGHT JOIN model
+ON sales.modelId = model.modelId
+```
+
+
 ### Full outer join 
 
-The full outer join returns all rows when there is a match in either the left or the right table. So, for table A and table B the full join returns all rows in A and all rows in B
+The full outer join returns all rows when there is a match in either the left or the right table. So, for table A and table B the full join returns all rows in A and all rows in B including those where there is a match between A and B. This is the broadest type of join and can often result in large data sets.
+
+In the context of our dataset it would result in the following table being generated:
+
+| modelName            | sale_date |
+| -------------------  |-----------|
+| Raspberry Pi Model A | 2015-02-01|
+| Apple Macbook Air    | 2018-11-01|
+| Lenovo ThinkPad P15  | 2018-11-01|
+|                      | 2020-03-01|
+| Google Chromebook    |           |
+
+Represented by the following diagram:
+
+![](/img/sql-full-outer-join.png)
 
 
-The logical state that obtains in the case of **left outer joins**
-![](/img/2_3.7-Inner_Join_Left.png)
+#### Implementation
 
-The logical state that obtains in the case of **right outer joins**:
+The schematic form:
 
-![3_3.7-Inner_Join_Right.png](/img/3_3.7-Inner_Join_Right.png)
+```sql
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name;
+```
+Applied to our data set:
 
-The logical state that obtains in the case of **full outer joins**:
-
-![4_3.7-Full_Outer_Join.png](/img/4_3.7-Full_Outer_Join.png)
+```sql
+SELECT model.modelName, sales.saleDate
+FROM sales.saleDate
+FULL OUTER JOIN model
+ON sales.modelId = model.modelId
+```
 
 This type of join is used when you want to discern when there is _not_ a match between two fields across tables. For example: imagine that you wanted a list of computers that had never been sold. In this case, you would be interested in rows where there is a `model_id` without a corresponding `sales_id` .
 
 In SQL this would be achieved with:
+
 
 ```sql
 SELECT model.name, sales.sale_date

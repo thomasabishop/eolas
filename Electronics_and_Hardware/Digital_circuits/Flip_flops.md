@@ -44,3 +44,9 @@ Thus the state table for the T Flip-Flop is:
 | 0 	| Pulse 	| Inverse of previous value 	| Toggle    	|
 
 ![](/img/t-flip-flops.png)
+
+
+<iframe src="https://withdiode.com/embed/4f015341-dc37-49e6-912a-42a580a1c92e" style="width:100%; height:500px; border:1px solid rgba(0,0,0,0.1); border-radius: 0.5rem; overflow:hidden;" title="LED & Switch" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" ></iframe>
+
+
+https://wokwi.com/
