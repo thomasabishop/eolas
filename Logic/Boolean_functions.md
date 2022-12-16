@@ -15,3 +15,5 @@ $$
 Here is a work through where $f(1, 0, 1)$:
 
 // Insert diagram
+
+We can compute all possible outputs of the function by constructing a truth-table with each possible variable value as the
