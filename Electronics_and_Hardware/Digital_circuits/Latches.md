@@ -8,9 +8,9 @@ tags: [logic-gates, binary, memory]
 
 # Latches
 
-The combinatorial digital circuits we have looked at so far have been non-sequential. The outcome is a function of its immediate set of inputs and everything happens at once: there is no means of storing state for future use. In other words there is no _[memory](/Computer_Architecture/Memory/Memory.md)_.
+The **combinatorial digital circuits** we have looked at so far have been non-sequential. The outcome is a function of its immediate set of inputs and everything happens at once: there is no means of storing state for future use. In other words there is no _[memory](/Computer_Architecture/Memory/Memory.md)_.
 
-In contrast, a sequential digital circuit's output depends not only on its present set of inputs but also on past inputs to the circuit. It has some knowledge of its own previous state through the existence of memory. This can be implemented via components that allow for the **storage and retrieval of binary data**.
+In contrast, the output of a **sequential digital circuit** depends not only on its present set of inputs but also on past inputs to the circuit. It has some knowledge of its own previous state through the existence of memory. This can be implemented via components that allow for the **storage and retrieval of binary data**.
 
 ## What is a latch?
 
@@ -60,10 +60,10 @@ Interactive version:
 Let's talk through the logic at each state change:
 
 - When _S_ is set to 1, output _Q_ becomes 1 also
-  - N1 is receiving 1 from S and 0 from R by way of N2. This is the inversion of OR so TF equals F.
-  - Hence N2 (which is the state of Q) is receiving 0 from N1 as its top input and 0 from R as its bottom input. In NOR, FF equals T hence Q is 1
+  - N1 is receiving 1 from S and 0 from R by way of N2. This is the inversion of OR so TF equals F. Thus N1 is outputting 0.
+  - Thus N2 is receiving 0 from N1 as its top input and 0 from R as its bottom input. It is therefore outputting 1 because with NOR, FF equals T. For this reason, _Q_ is 1 because is directly connected to _R_.
 - When _S_ goes to 0, _Q_ remains 1
-  - N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the ohverall input is FF which means NT is outputting T and Q remains 1
+  - N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the overall input is FF which means N2 is outputting T and Q remains 1
   - N1 is outputting 0 because it is receiving 0 as its top input and 1 from its bottom input
 - When _R_ is set to 1, the memory bit is cleared and _Q_ becomes 0.
   - N2 is receiving 1 from R as its bottom input and 1 from the output of N1 as its top input. Therefore it is outputting TT which in NOR evaluates to F hence Q is 0
