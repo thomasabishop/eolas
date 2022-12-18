@@ -1,7 +1,7 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [logic, propositional-logic]
 ---
 
 # Boolean functions
@@ -14,9 +14,9 @@ $$
 
 Here is a work through where $f(1, 0, 1)$:
 
-- The first disjunction : $ \lnot(x) \land z $ is false because $x$ is 1 and $z$ is 1
-- The second disjunction: $x \land y$ is true because $x$ is 1 and $y$ is 1
-- The overall function returns true because the main connective is disjunction and one of the disjuncts (the second) evaluates to 1. Thus the output is 1.
+- The first disjunction : $ \lnot(x) \land z $ is false because $x$ is 1 and $z$ is 0
+- The second disjunction: $x \land y$ is false because $x$ is 1 and $y$ is 1
+- The overall function returns false because the main connective is disjunction and both of its disjuncts are false
 
 We can compute all possible outputs of the function by constructing a [truth-table](/Logic/Propositional_logic/Truth-tables.md) with each possible variable as the truth conditions and the output of the function as the truth value:
 
