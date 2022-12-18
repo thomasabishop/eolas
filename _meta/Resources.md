@@ -50,6 +50,8 @@ Hennesy, Patterson. 2020. **Computer Organization and Design** ([BBC O'Reilly Li
 
 Bryant, O'Halloran. 2016. **Computer Systems: A Programmer's Perspective**
 
+N.Nisan, S.Schoken. 2021. **The Elements of Computing Systems** (Second Edition)
+
 [How do transistors work, anyway?](https://lcamtuf.substack.com/p/how-do-transistors-work-anyway)
 
 [NAND latch](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/nandlatch.html)
@@ -93,3 +95,5 @@ A. Sweighart. 2015. **Automate the Boring Stuff with Python**
 ## Shell
 
 B. Perry, D. Taylor. 2015. **Wicked Cool Shell Scripts**
+
+[What is the difference between `${var}`, `"$var"`, and `"${var}"` in the Bash shell? (Stack Overflow)](https://stackoverflow.com/q/18135451/10484600)
