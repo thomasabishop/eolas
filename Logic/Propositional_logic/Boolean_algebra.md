@@ -45,13 +45,37 @@ $$
     x \lor (y \land z) = (x \lor y) \land (x \lor z)
 $$
 
-Compare for instance how this applies in the case of [multiplication](/Mathematics/Prealgebra/Distributivity.md):
+Compare how the [Distributive Law applies in the case of algebra based on arithmetic](/Mathematics/Prealgebra/Distributivity.md):
 
 $$
     a \cdot (b + c) = a \cdot b + a \cdot c
 $$
 
-In addition we have [DeMorgan's Laws](/Logic/Laws_and_theorems.md/DeMorgan's_Laws.md) which express the relationship that obtains between the negations of conjunctive and disjunctive expressions
+### Double Negation Elimination
+
+$$
+    \lnot \lnot x = x
+$$
+
+### Idempotent Law
+
+$$
+    x \land x = x
+$$
+
+> Combining a quantity with itself either by logical addition or logical multiplication will result in a logical sum or product that is the equivalent of the quantity
+
+### DeMorgan's Laws
+
+In addition we have [DeMorgan's Laws](/Logic/Laws_and_theorems.md/DeMorgan's_Laws.md) which express the relationship that obtains between the negations of conjunctive and disjunctive expressions:
+
+$$
+\lnot(x \land y)  = \lnot x \lor \lnot y
+$$
+
+$$
+    \lnot (x \lor y) = \lnot x \land \lnot y
+$$
 
 ## Applying the laws to simplify complex Boolean expressions
 
@@ -110,11 +134,4 @@ Whenever we simplify an algebraic expression the value of the resulting expressi
 
 ### Significance for computer architecture
 
-The fact that we can take a complex Boolean function and reduce it to a simpler formulation has great significance for the development of computer architectures, specifically [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md). It would be rather resource intensive and inefficient to create a gate that is representative of the complex function. Whereas the simplified version only requires a single [OR gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate)
-
-// TO DO:
-
-- Use truth tables to show equivalence
-- Explicitly add implicit laws
-- Link to deductive rules
-- Link to digital circuits and NANDs as universal gates
+The fact that we can take a complex Boolean function and reduce it to a simpler formulation has great significance for the development of computer architectures, specifically [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md). It would be rather resource intensive and inefficient to create a gate that is representative of the complex function. Whereas the simplified version only requires a single [OR gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate).
