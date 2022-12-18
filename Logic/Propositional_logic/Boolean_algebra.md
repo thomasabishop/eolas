@@ -91,11 +91,26 @@ $$
 \lnot(\lnot(x)) \lor \lnot(\lnot(y))
 $$
 
-Of course now we have two double negatives. We can apply the double negation law to:
+Of course now we have two double negatives. We can apply the double negation law to get:
 
 $$
     x \lor y
 $$
+
+### Truth table
+
+Whenever we simplify an algebraic expression the value of the resulting expression should match that of the complex expression. We can demonstrate this with a truth table:
+
+| $x$ | $y$ | $\lnot(\lnot(x) \land \lnot (x \lor y))$ | $x \lor y$ |
+| --- | --- | ---------------------------------------- | ---------- |
+| 0   | 0   | 0                                        | 0          |
+| 0   | 1   | 1                                        | 1          |
+| 1   | 0   | 1                                        | 1          |
+| 1   | 1   | 1                                        | 1          |
+
+### Significance for computer architecture
+
+The fact that we can take a complex Boolean function and reduce it to a simpler formulation has great significance for the development of computer architectures, specifically [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md). It would be rather resource intensive and inefficient to create a gate that is representative of the complex function. Whereas the simplified version only requires a single [OR gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate)
 
 // TO DO:
 
