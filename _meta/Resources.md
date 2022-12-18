@@ -16,7 +16,7 @@ P. Norvig, S. Russell. 2020. **Artificial Intelligence: A Modern Approach**
 
 N. Weiner. 1948. **Cybernetics**
 
-## Backend (CPD)
+## Backend (general)
 
 [Backend Roadmap](https://roadmap.sh/backend)
 
@@ -82,6 +82,10 @@ E. Lehman, F. Thomson Leighton, A.R. Meyer 2017. **Mathematics for Computer Scie
 
 G. Caldarelli, M. Catanzaro. 2012. **Networks: A Very Short Introduction**
 
+[Course: NodeJS Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/node-js-essential-training-14888164)
+
+[Course: Building RESTful APIs with Node.js and Express](https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express-16069959)
+
 ## Python
 
 A. Sweighart. 2020. **Beyond the Basic Stuff with Python**
@@ -97,3 +101,9 @@ A. Sweighart. 2015. **Automate the Boring Stuff with Python**
 B. Perry, D. Taylor. 2015. **Wicked Cool Shell Scripts**
 
 [What is the difference between `${var}`, `"$var"`, and `"${var}"` in the Bash shell? (Stack Overflow)](https://stackoverflow.com/q/18135451/10484600)
+
+## SQL
+
+[Course: MySQL Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/mysql-essential-training-2)
+
+[Course: MySQL Advanced Topics (LinkedIn Learning)](https://www.linkedin.com/learning/mysql-advanced-topics)
