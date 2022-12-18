@@ -1,8 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic, theorems]
+  - Logic
+tags: [logic, laws]
 ---
+
+# DeMorgan's Laws
 
 DeMorgan's laws express some fundamental equivalences that obtain between the Boolean [connectives](Truth-functional%20connectives.md):
 
@@ -16,14 +18,14 @@ $$
 
 The equivalence is demonstrated with the following truth-table
 
-![demorgan-1.png](../img/demorgan-1.png)
+![demorgan-1.png](/img/demorgan-1.png)
 
 ## Second Law
 
 > The negation of a disjunction is equivalent to the conjunction of the negation of the original disjuncts.
 
 $$
-\sim (P \lor Q) \equiv \sim P & \sim Q
+\sim (P \lor Q) \equiv \sim P \& \sim Q
 $$
 
-![demorgan-2.png](../img/demorgan-2.png)
+![demorgan-2.png](/img/demorgan-2.png)
