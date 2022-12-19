@@ -1,6 +1,7 @@
 ---
 categories:
   - Logic
+  - Computer Architecture
 tags: [logic, propositional-logic]
 ---
 
