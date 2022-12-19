@@ -55,7 +55,30 @@ For each line we construct a Boolean expression that would result in the value i
 We can now join each expression to create a complex expression that covers the entire truth table. Since 1 will be output for any one of these sub-expressions we can just join them up with OR:
 
 $$
-(\lnot(x) \land \lnot (y) \land \lnot(z)) \lor \lnot(x) \land y \land \lnot(z) \lor  x \land \lnot(y) \land \lnot(z)
+(\lnot(x) \land \lnot (y) \land \lnot(z)) \lor (\lnot(x) \land y \land \lnot(z)) \lor  (x \land \lnot(y) \land \lnot(z))
 $$
 
-It's clear that we have transcribed the truth conditions accurately but that we are doing so in a rather verbose way. Let's simplify:
+It's clear that we have transcribed the truth conditions accurately but that we are doing so in a rather verbose way. We can simplify by just looking at the position of the 1s in the truth table. Notice:
+
+- $z$ is always 0
+- $x$ and $y$ are either 0 or 1 but never both 1 in the same row
+
+So we simplify:
+
+$$
+    (\lnot(x) \land \lnot(z)) \lor (\lnot(y) \land \lnot(z))
+$$
+
+Notice that $\lnot(z)$ is repeated so we can remove the repetition:
+
+$$
+    \lnot z \land (\lnot(x) \lor \lnot(y))
+$$
+
+The upshot is that we now have a simpler expression that uses only NOT, OR and AND. We could therefore construct a circuit that just uses these gates to construct the conditions we specified in the first truth table.
+
+> This is important and is an instance of the general theorem that _any Boolean function_ can be represented using an expression containing AND, OR and NOT operations
+
+But even this is too complex. We could get rid of the OR and just use AND and NOT, in other words, NAND:
+
+stopped at 6:38
