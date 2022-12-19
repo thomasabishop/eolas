@@ -9,9 +9,7 @@ tags: [SQL, relational-database]
 
 We utilise **foreign** and [primary keys](/Databases/Relational_Databases/Primary_key.md) to create relationships between tables in SQL. Foreign keys link data in one table to the data in another table and are how we cross-reference data in SQL.
 
-<!-- We can use this technique to create new tables from existing tables in the database or to generate [views](/Databases/Relational_Databases/Views_in_relational_databases.md). -->
-
-In essence you use the primary key of one table to access data in another table.
+In essence you use the primary key of one table to access data in another table. When one table _A_ contains the primary key of another table _B_ as a field, that key is "foreign" to _A_ hence the name.
 
 Let's say we have a `sales` table:
 
@@ -47,7 +45,7 @@ Here's our `returns` table:
 
 In this table `saleId` is identical to `saleId` in sales. It is the primary key in `sales` but a foreign key in `returns`. If a device has been returned it must have an entry in `returns` and the `salesId` of the entry in `returns` must match the `salesId` in `sales`.
 
-This is the primary benefit of utilising foreign keys: they add a restriction. Entries to the table with a foreign key **must** have a value that corresponds with the foreign key column. 
+This is the primary benefit of utilising foreign keys: they add a restriction. Entries to the table with a foreign key **must** have a value that corresponds with the foreign key column.
 
 We call this a **foreign key contraint**. More explicitly, our contraint is as follows:
 
@@ -66,6 +64,7 @@ CREATE TABLE returns (
 	FOREIGN KEY (sale_id) REFERENCES sales(sale_id)
 	);
 ```
+
 A table can have more than one foreign key.
 
 If you delete the source of the foreign key, you also delete its references in tables for which it is a foreign key. This is important to remember. So if a row was deleted from `sales` the row in `returns` with the corresponding `saleId` would also be deleted.

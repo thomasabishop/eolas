@@ -13,5 +13,3 @@ f(x,y,z) = (x \land y) \lor (\lnot(x) \land z )
 $$
 
 Here is a work through where $f(1, 0, 1)$:
-
-// Insert diagram
