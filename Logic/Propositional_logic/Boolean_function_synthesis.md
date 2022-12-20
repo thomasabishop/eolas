@@ -9,7 +9,9 @@ tags: [logic, propositional-logic, nand-to-tetris]
 
 When we looked at [boolean functions](/Logic/Propositional_logic/Boolean_functions.md) we were working in a particular direction: from a function to a truth table. When we do Boolean function synthesis we work in the opposite direction: from a truth table to a function.
 
-This is an important skill that we will use when constructing [logic circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md). We will go from truth conditions (i.e. what we want the circuit to do and when we want it to do it) to a function expression which is then reduced to its simplest form and implemented with [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
+This is an important skill that we will use when constructing [logic circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md). We will go from truth conditions (i.e. what we want the circuit to do and when we want it to do it) to a function expression which is then reduced to its simplest form and implemented with [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md). Specifically, NAND gates.
+
+We will show here that a complex logical expression can be reduced to an equivalent expression that uses only the NAND operator.
 
 ## The process
 
@@ -81,7 +83,7 @@ The upshot is that we now have a simpler expression that uses only NOT, OR and A
 
 But even this is too complex. We could get rid of the OR and just use AND and NOT:
 
-We can prove this theorem with the following transformation:
+We can prove this theorem by showing that an expression with AND, NOT, and OR can be formulated as an equivalent expression using just NOT and AND:
 
 $$
   x \lor y = \lnot(\lnot(x) \land \lnot(y))
@@ -94,8 +96,18 @@ $$
 | 1   | 0   | 1          | 1                               |
 | 1   | 1   | 1          | 1                               |
 
-Finally, we can simplify even further by doing away with AND and NOT and using a single [NAND gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate) which embodies the logic of both, being true in all instances where AND would be false:
+Finally, we can simplify even further by doing away with AND and NOT and using a single [NAND gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate) which embodies the logic of both, being true in all instances where AND would be false: $\lnot (x \land  y)$.
+
+Let's prove the theorem that every logical expression can be formulated as a NAND function. To do this we need to show that both NOT and AND can be converted to NAND.
+
+NOT:
 
 $$
-  \lnot (x \land  y)
+  \lnot(x) = x \lnot\land x
+$$
+
+AND:
+
+$$
+  x \land y = \lnot(x \lnot\land y)
 $$

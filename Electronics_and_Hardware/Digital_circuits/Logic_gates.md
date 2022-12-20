@@ -8,9 +8,12 @@ tags: [logic-gates, binary]
 
 # Logic gates
 
-> [A logic gate consists in] three connections where there may or may not be some electricity. Two of those connections are places where electricity may be put into the device, and the third connection is a place where electricity may come out of the device. (Scott, 2009 p.21)
+> [A logic gate consists in] three connections where there may or may not be some electricity. Two of those connections are places where electricity may be put into the device, and the third connection is a place where electricity may come out of the device.
 
-Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and the logic determining which types of input (on/off) lead to specific outputs (on/off) is identical to the truth-conditions of the [Boolean connectives](/Logic/Truth-functional_connectives.md) specifiable in terms of [truth-tables](/Logic/Truth-tables.md).
+[J.C. Scott. 2009. **But How Do It Know? The Basics of Computers for Everyone**, 21]
+
+Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and the logic determining which types of input (on/off) lead to specific outputs (on/off) is identical to the truth-conditions of the [Boolean connectives](/Logic/Truth-functional_connectives.md) specifiable in terms of [truth tables](/Logic/Truth-tables.md).
+
 Physically, what 'travels through' the gates is electrical current and what constitutes the 'gate' is a [transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) responding to the current. At the next level of abstraction it is bits that go into the gate and bits which come out: binary information that may be either 1 or 0.
 
 ## NOT gate
@@ -23,10 +26,10 @@ Physically, what 'travels through' the gates is electrical current and what cons
 
 ### Truth conditions
 
-| P   | ~ P |
-| --- | --- |
-| T   | F   |
-| F   | T   |
+| $P$ | $\lnot P$ |
+| --- | --------- |
+| 1   | 0         |
+| 0   | 1         |
 
 ### Interactive circuit
 
@@ -40,12 +43,12 @@ Physically, what 'travels through' the gates is electrical current and what cons
 
 ### Truth conditions
 
-| P   | Q   | P & Q |
-| --- | --- | ----- |
-| T   | T   | T     |
-| T   | F   | F     |
-| F   | T   | F     |
-| F   | F   | F     |
+| $P$ | $Q$ | $P \land Q$ |
+| --- | --- | ----------- |
+| 1   | 1   | 1           |
+| 1   | 0   | 0           |
+| 0   | 0   | 0           |
+| 0   | 0   | 0           |
 
 ### Interactive circuit
 
@@ -59,12 +62,12 @@ Physically, what 'travels through' the gates is electrical current and what cons
 
 ### Truth conditions
 
-| P   | Q   | ~(P & Q) |
-| --- | --- | -------- |
-| T   | T   | F        |
-| T   | F   | F        |
-| F   | T   | F        |
-| F   | F   | T        |
+| $P$ | $Q$ | $\lnot(P \land Q)$ |
+| --- | --- | ------------------ |
+| 1   | 1   | 0                  |
+| 1   | 0   | 0                  |
+| 0   | 1   | 0                  |
+| 0   | 0   | 1                  |
 
 ### Interactive circuit
 
@@ -80,12 +83,12 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Truth conditions
 
-| P   | Q   | P v Q |
-| --- | --- | ----- |
-| T   | T   | T     |
-| T   | F   | T     |
-| F   | T   | T     |
-| F   | F   | F     |
+| $P$ | $Q$ | $P \lor Q$ |
+| --- | --- | ---------- |
+| 1   | 1   | 1          |
+| 1   | 0   | 1          |
+| 0   | 1   | 1          |
+| 0   | 0   | 0          |
 
 ### Interactive circuit
 
@@ -99,12 +102,12 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Truth conditions
 
-| P   | Q   | ~(P <> Q) |
-| --- | --- | --------- |
-| T   | T   | F         |
-| T   | F   | T         |
-| F   | T   | T         |
-| F   | F   | F         |
+| $P$ | $Q$ | $\lnot(P \Leftrightarrow Q)$ |
+| --- | --- | ---------------------------- |
+| 1   | 1   | 0                            |
+| 1   | 0   | 1                            |
+| 0   | 1   | 1                            |
+| 0   | 0   | 0                            |
 
 ### Interactive circuit
 
@@ -118,15 +121,11 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Truth conditions
 
-| P   | Q   | P v Q |
-| --- | --- | ----- |
-| T   | T   | F     |
-| T   | F   | F     |
-| F   | T   | F     |
-| F   | F   | T     |
+| $P$ | $Q$ | $P \lor Q$ |
+| --- | --- | ---------- |
+| 1   | 1   | 0          |
+| 1   | 0   | 0          |
+| 0   | 1   | 0          |
+| 0   | 0   | 1          |
 
 ### Interactive circuit
-
-## References
-
-Scott, J. Clark. 2009. _But how do it know?: the basic principles of computers for everyone_. Self-published.
