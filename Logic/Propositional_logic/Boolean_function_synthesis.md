@@ -7,9 +7,9 @@ tags: [logic, propositional-logic, nand-to-tetris]
 
 # Boolean function synthesis
 
-When we looked at [boolean functions](/Logic/Propositional_logic/Boolean_functions.md) we were working in a particular direction: from a function to a truth table. When we do Boolean function synthesis we work in the opposite direction: from a function to a truth table.
+When we looked at [boolean functions](/Logic/Propositional_logic/Boolean_functions.md) we were working in a particular direction: from a function to a truth table. When we do Boolean function synthesis we work in the opposite direction: from a truth table to a function.
 
-This is an important skill that we will use when constructing [logic circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md). We will go from truth conditions (i.e. what we want the circuit to do and when we want it to do it) to a function expression which is then reduced and implemented with [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
+This is an important skill that we will use when constructing [logic circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md). We will go from truth conditions (i.e. what we want the circuit to do and when we want it to do it) to a function expression which is then reduced to its simplest form and implemented with [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
 
 ## The process
 
@@ -52,7 +52,7 @@ For each line we construct a Boolean expression that would result in the value i
 | 3    | 0   | 1   | 0   | $ \lnot(x) \land y \land \lnot(z) $         |
 | 5    | 1   | 0   | 0   | $ x \land \lnot(y) \land \lnot(z) $         |
 
-We can now join each expression to create a complex expression that covers the entire truth table. Since 1 will be output for any one of these sub-expressions we can just join them up with OR:
+We can now join each expression to create a complex expression that covers the entire truth table using OR:
 
 $$
 (\lnot(x) \land \lnot (y) \land \lnot(z)) \lor (\lnot(x) \land y \land \lnot(z)) \lor  (x \land \lnot(y) \land \lnot(z))
@@ -69,7 +69,7 @@ $$
     (\lnot(x) \land \lnot(z)) \lor (\lnot(y) \land \lnot(z))
 $$
 
-Notice that $\lnot(z)$ is repeated so we can remove the repetition:
+Notice that $\lnot(z)$ is repeated so we can remove the repetition through [idempotence](/Logic/Propositional_logic/Boolean_algebra.md#idempotent-law):
 
 $$
     \lnot z \land (\lnot(x) \lor \lnot(y))
