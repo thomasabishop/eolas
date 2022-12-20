@@ -75,10 +75,27 @@ $$
     \lnot z \land (\lnot(x) \lor \lnot(y))
 $$
 
-The upshot is that we now have a simpler expression that uses only NOT, OR and AND. We could therefore construct a circuit that just uses these gates to construct the conditions we specified in the first truth table.
+The upshot is that we now have a simpler expression that uses only NOT, OR and AND. These are the fundamental logic gates thus we are able to construct a circuit that embodies the logic of the expression.
 
 > This is important and is an instance of the general theorem that _any Boolean function_ can be represented using an expression containing AND, OR and NOT operations
 
-But even this is too complex. We could get rid of the OR and just use AND and NOT, in other words, NAND:
+But even this is too complex. We could get rid of the OR and just use AND and NOT:
 
-stopped at 6:38
+We can prove this theorem with the following transformation:
+
+$$
+  x \lor y = \lnot(\lnot(x) \land \lnot(y))
+$$
+
+| $x$ | $y$ | $x \lor y$ | $\lnot(\lnot(x) \land \lnot(y)$ |
+| --- | --- | ---------- | ------------------------------- |
+| 0   | 0   | 0          | 0                               |
+| 0   | 1   | 1          | 1                               |
+| 1   | 0   | 1          | 1                               |
+| 1   | 1   | 1          | 1                               |
+
+Finally, we can simplify even further by doing away with AND and NOT and using a single [NAND gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate) which embodies the logic of both, being true in all instances where AND would be false:
+
+$$
+  \lnot (x \land  y)
+$$
