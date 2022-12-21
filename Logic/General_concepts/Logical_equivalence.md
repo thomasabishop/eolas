@@ -4,14 +4,15 @@ categories:
 tags: [logic]
 ---
 
+# Logical equivalence
+
 > Two sentences, P and Q, are truth-functionally equivalent if and only if there is no truth assignment in which P is true and Q is false
 
 ### Informal expression
 
-```
 P: If it is raining then the pavement will be wet.
+
 Q: The pavement is not wet unless it is raining.
-```
 
 ### Formal expression
 
