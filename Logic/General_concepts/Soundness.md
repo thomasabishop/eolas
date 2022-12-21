@@ -6,7 +6,7 @@ tags: [propositional-logic]
 
 # Soundness
 
-Recall that in the definition of [deductive validity](Validity%20and%20entailment.md#validity) we do not say: an argument is valid iff if the premises _are true_ and the conclusion _is true_. We say _if it is possible for the premises to be true_. This is important: we are not interested in the actual truth of the premises or the conclusion.
+Recall that in the definition of [deductive validity](/Logic/General_concepts/Validity_and_entailment.md#validity) we do not say: an argument is valid iff if the premises _are true_ and the conclusion _is true_. We say _if it is possible for the premises to be true_. This is important: we are not interested in the actual truth of the premises or the conclusion.
 
 #### Demonstration
 
@@ -39,7 +39,6 @@ We must not forget that truth alone is not the sole condition for soundness. We 
 ```
 (P1) London is the capital of the United Kingdom
 (P2) The capital of the United Kingdom is in the southern part of the United Kingdom.
-    Can
 (P3) Cambridge is not the capital of the United Kingdom
 ____________________________________________
 (C) London is south of Cambridge
