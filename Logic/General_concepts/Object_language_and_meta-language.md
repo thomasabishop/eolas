@@ -1,10 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
 
-## Object and metalanguages
+# Object and metalanguages
 
 When we talk about a language we call that language the **object language**. A **metalanguage** is a language used to describe some object language.
 

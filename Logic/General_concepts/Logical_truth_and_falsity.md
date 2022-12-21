@@ -1,8 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
+
+# Logical truth and falsity
 
 We say of certain sentences that they are logically true or logically false.
 
@@ -19,7 +21,7 @@ There is a country that is not a country.
 Apples are fruits and apples are not fruits
 ```
 
-Neither sentence can be true because the truth of the first clause is contradicted by the second. By the principle of [consistency](Consistency.md), it is not possible for both clauses to be true at once therefore the sentence, overall has the truth value of falsity
+Neither sentence can be true because the truth of the first clause is contradicted by the second. By the principle of [consistency](/Logic/General_concepts/Logical_consistency.md), it is not possible for both clauses to be true at once therefore the sentence, overall has the truth value of falsity
 
 The examples above are simple sentences but logical falsity also applies to compound sentences and it is actually easier to see the logical principle at work with compound sentences since once simple sentence of the compound contradicts the other such that the overall sentence cannot be consistently asserted:
 
@@ -33,24 +35,20 @@ It is raining and it is not raining.
 
 ### Formal expression
 
-```
-P & ~ P
-```
+$$ P \& \sim P $$
 
 ### Truth-table
 
-```
-    Can
-P				P	&	~	P
-T					F
-F					F
-```
+| $P$ | $P \& \sim P$ |
+| --- | ------------- |
+| T   | F             |
+| T   | F             |
 
 ## Logical truth
 
 ### Informal definition
 
-A sentence is logically true if and only if it is not possible for the sentence to be false. The sentence itself cannot be [consistently](Consistency.md) denied.
+A sentence is logically true if and only if it is not possible for the sentence to be false. The sentence itself cannot be consistently denied.
 
 **Demonstration**
 
@@ -71,17 +69,14 @@ It is Monday and Monday is a day of the week.
 
 > A sentence P is truth-functionally true if and only if P is true on every truth-value assignment
 
-```
-P v ~P
-```
+$$ P \lor \sim P$$
 
 ### Truth-table
 
-```
-P				P	∨	¬	P
-T					T
-F					T
-```
+| $P$ | $P \lor \sim P$ |
+| --- | --------------- |
+| T   | T               |
+| F   | T               |
 
 ### Consequences
 
