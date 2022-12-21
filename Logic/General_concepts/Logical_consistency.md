@@ -38,7 +38,7 @@ $$
 \{P \lor Q, Q\}
 $$
 
-### Truth-table
+### Truth table
 
 $ \{P, Q\} $ form a consistent set because there is at least one assignment when both propositions are true. In fact there are two (corresponding to each disjunct) but one is sufficient.
 
@@ -52,14 +52,14 @@ F	F					F               F
 
 ## Derivation
 
-> In terms of logical derivation, a finite $\Gamma$ of propositions is **inconsistent** in a system of derivation for propositional logic if and only if a proposition of the $P & \sim P$ is derivable from $\Gamma$. It is **consistent** just if this is not the case.
+> In terms of logical derivation, a finite $\Gamma$ of propositions is **inconsistent** in a system of derivation for propositional logic if and only if a proposition of the form $P \& \sim P$ is derivable from $\Gamma$. It is **consistent** just if this is not the case.
 
 In other terms, if you can derive a contradiction from the set, the set is logically inconsistent.
 
-A [contradiction](Logical%20truth%20and%20falsity.md#logical-falsity) contradiction has very important consequences for reasoning because if a set of propositions is inconsistent, every and all other propositions are derivable from that set.
+A [contradiction](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-falsity) has very important consequences for reasoning because if a set of propositions is inconsistent, any other proposition is derivable from it.
 
-![proofs-drawio-Page-5.drawio 3.png](../img/proofs-drawio-Page-5.drawio%203.png)
+![](/img/derivation_from_contradiction.png)
 
 _A demonstration of the the consequences of deriving a contradiction in a sequence of reasoning._
 
-Here we want to derive some proposition $Q$. If we can derive a contradiction from its negation as an assumption then, by the [negation elimination](Negation%20Elimination.md) rule, we can assert $Q$. This is why contradictions should be avoided in arguments, they 'prove' everything which, by association, undermines any particular premise you are trying to assert.
+Here we want to derive some proposition $Q$. If we can derive a contradiction from its negation as an assumption then, by the [negation elimination](/Logic/Proofs/Negation_Elimination.md)) rule, we can assert $Q$. This is why contradictions should be avoided in arguments, they 'prove' everything which, by association, undermines any particular premise you are trying to assert.
