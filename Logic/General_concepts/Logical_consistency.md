@@ -42,20 +42,12 @@ $$
 
 $ \{P, Q\} $ form a consistent set because there is at least one assignment when both propositions are true. In fact there are two (corresponding to each disjunct) but one is sufficient.
 
-```
-P	Q				P	∨	Q	        Q
-T	T					T		        T    *
-T	F					T		        F
-F	T					T		        T    *
-F	F					F               F
-```
-
 | $P$ | $Q$ | $ P \lor Q $ | $Q$ |
 | --- | --- | ------------ | --- |
-| 0   | 0   | 0            | 0   |
-| 0   | 1   | 1            | 1   |
-| 1   | 0   | 1            | 1   |
-| 1   | 1   | 1            | 1   |
+| T   | T   | T            | T   |
+| T   | F   | T            | F   |
+| F   | T   | T            | T   |
+| F   | F   | F            | F   |
 
 ## Derivation
 

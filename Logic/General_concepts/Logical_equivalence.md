@@ -22,28 +22,19 @@ $$
 
 ### Truth-tables
 
-```
-P	Q				P	⊃	Q
-T	T					T
-T	F					F
-F	T					T
-F	F					T
-```
-
-```
-P	Q				~	P	∨	Q
-T	T						T
-T	F						F
-F	T						T
-F	F						T
-```
+| $P$ | $Q$ | $ P \supset Q $ | $ \sim P \lor Q$ |
+| --- | --- | --------------- | ---------------- |
+| T   | T   | T               | T                |
+| T   | F   | T               | F                |
+| F   | T   | T               | T                |
+| F   | F   | F               | T                |
 
 ### Derivation
 
 > Propositions $P$ and $Q$ are equivalent in a system of [derivation](Formal%20proofs%20in%20propositional%20logic.md) for propositional logic if $Q$ is derivable from $P$ and $P$ is derivable from $Q$.
 
-Note that the property of equivalence stated in terms of derivablity above is identical to the derivation rule for the [material biconditional](Biconditional%20Introduction.md):
+Note that the property of equivalence stated in terms of derivablity above is identical to the derivation rule for the [material biconditional](/Logic/Proofs/Biconditional_Introduction.md):
 
-![bi-intro.png](../img/bi-intro.png)
+![bi-intro.png](/img/bi-intro.png)
 
 //TODO: Add demonstration of this by deriving two equivalents from one of DeMorgan's Laws
