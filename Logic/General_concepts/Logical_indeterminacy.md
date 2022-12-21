@@ -24,7 +24,7 @@ May be true or false thus it can it both be asserted and denied quite consistent
 It is raining and it is not raining.
 ```
 
-Cannot be consistently asserted as there is no possibility of the proposition being true. It is either raining or it isn't raining. Given the law for conjunction both conjuncts must be true for the proposition as a whole to be true. But in the case of this proposition if one conjunct is true, the other must be false and vice versa, hence it is not possible for the proposition to be true at all. It can _only_ be false.
+Cannot be consistently asserted as there is no possibility of the proposition being true. It is either raining or it isn't raining. Given the law for conjunction, both conjuncts must be true for the proposition as a whole to be true. But in the case of this proposition if one conjunct is true, the other must be false and vice versa, hence it is not possible for the proposition to be true at all. It can _only_ be false.
 
 Contrariwise the proposition:
 

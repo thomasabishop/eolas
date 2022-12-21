@@ -50,6 +50,13 @@ F	T					T		        T    *
 F	F					F               F
 ```
 
+| $P$ | $Q$ | $ P \lor Q $ | $Q$ |
+| --- | --- | ------------ | --- |
+| 0   | 0   | 0            | 0   |
+| 0   | 1   | 1            | 1   |
+| 1   | 0   | 1            | 1   |
+| 1   | 1   | 1            | 1   |
+
 ## Derivation
 
 > In terms of logical derivation, a finite $\Gamma$ of propositions is **inconsistent** in a system of derivation for propositional logic if and only if a proposition of the form $P \& \sim P$ is derivable from $\Gamma$. It is **consistent** just if this is not the case.
