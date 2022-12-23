@@ -77,16 +77,14 @@ The pavement is wet.
 
 #### Formal demonstration
 
-```
-{P, P ⊃ Q} ⊨ Q
-```
+$$
+  \{ P, P\rightarrow Q   \} \vdash Q
+$$
 
 #### Truth-table
 
-```
-P	Q				P	⊃	Q     P      Q
-T	T					T		    T      T     *
-T	F					F		    T      F
-F	T					T		    F      T
-F	F					T       F      F
-```
+| $P$ | $Q$ | $P \rightarrow Q$ | $P$ | $Q$ | Assessment |
+| --- | --- | ----------------- | --- | --- | ---------- |
+| T   | T   | T                 | T   | T   | Valid      |
+| T   | F   | F                 | T   | F   |            |
+| F   | T   | T                 | F   | T   |            |
