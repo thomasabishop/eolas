@@ -33,14 +33,14 @@ It is raining and it is not raining.
 
 ### Formal expression
 
-$$ P \& \sim P $$
+$$ P \land \lnot P $$
 
 ### Truth-table
 
-| $P$ | $P \& \sim P$ |
-| --- | ------------- |
-| T   | F             |
-| T   | F             |
+| $P$ | $P \land \lnot P$ |
+| --- | ----------------- |
+| T   | F                 |
+| T   | F                 |
 
 ## Logical truth
 
@@ -55,32 +55,32 @@ A rose is a rose.
 Today is Tuesday unless today is not Tuesday.
 ```
 
-Regardless of any facts obtaining in the world, these propositions cannot be false.
+Regardless of any facts obtaining in the world, these propositions cannot be false.should be avoided in arguments, they 'prove' everything whi
 
 As with logically false propositions, logical truth can also apply to compound propositions:
 
 ```
-It is Monday and Monday is a day of the week.
+A rose is a rose and a shoe is a shoe
 ```
 
 ### Formal definition
 
 > A proposition P is truth-functionally true if and only if P is true on every truth-value assignment
 
-$$ P \lor \sim P$$
+$$ P \lor \lnot P$$
 
 ### Truth-table
 
-| $P$ | $P \lor \sim P$ |
-| --- | --------------- |
-| T   | T               |
-| F   | T               |
+| $P$ | $P \lor \lnot P$ |
+| --- | ---------------- |
+| T   | T                |
+| F   | T                |
 
 ### Consequences
 
 The existence of logically false and logically true propositions affects the validity and soundness of arguments in which they are used. These are technicalities that have philosophically interesting consequences.
 
-- If an argument contains premises which are logically false than this argument will perforce be valid. This is because one cannot consistently assert the premises and deny the conclusion which is the definition of validity. However the _reason_ why one cannot consistently assert the premises and deny the conclusions is because one cannot consistently assert the premises - they conflict with each other. Furthermore as the argument contains false premises, it cannot be sound.
+- If an argument contains premises which are logically false than this argument will perforce be valid. This is because one cannot consistently assert the premises and deny the conclusion which is the definition of [validity](/Logic/General_concepts/Validity_and_entailment.md). However the _reason_ why one cannot consistently assert the premises and deny the conclusions is because one cannot consistently assert the premises - they conflict with each other. Furthermore as the argument contains false premises, it cannot be sound.
 
   ```
   (P1) Russia is a country.

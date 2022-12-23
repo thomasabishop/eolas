@@ -51,7 +51,7 @@ $ \{P, Q\} $ form a consistent set because there is at least one assignment when
 
 ## Derivation
 
-> In terms of logical derivation, a finite $\Gamma$ of propositions is **inconsistent** in a system of derivation for propositional logic if and only if a proposition of the form $P \& \sim P$ is derivable from $\Gamma$. It is **consistent** just if this is not the case.
+> In terms of logical derivation, a finite $\Gamma$ of propositions is **inconsistent** in a system of derivation for propositional logic if and only if a proposition of the form $P \& \lnot P$ is derivable from $\Gamma$. It is **consistent** just if this is not the case.
 
 In other terms, if you can derive a contradiction from the set, the set is logically inconsistent.
 

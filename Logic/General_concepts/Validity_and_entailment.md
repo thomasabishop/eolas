@@ -39,23 +39,21 @@ The test for a strong inductive argument is not whether the conclusion is true, 
 
 > An argument is truth-functionally valid if and only if there is no truth-assignment on which all the premises are true and the conclusion is false.
 
-Linking this to [derivation](Formal%20proofs%20in%20propositional%20logic.md), we say:
+Linking this to derivation, we say:
 
 > In a system of derivation in propositional logic, an argument is valid if the conclusion of the argument is derivable within the system of derivation from the set consisting of the premises, and invalid otherwise.
 
 ### Demonstration
 
-The inference from the set ${P, P \supset Q}$ to $Q$ is valid
+The inference from the set ${P, P \rightarrow Q}$ to $Q$ is valid
 
 ### Truth-table
 
-```
-P	Q				P	⊃	Q     P      Q
-T	T				    T		  T      T     *
-T	F					F		  T      F
-F	T					T		  F      T
-F	F					T         F      F
-```
+| $P$ | $Q$ | $P \rightarrow Q$ | $P$ | $Q$ | Assessment |
+| --- | --- | ----------------- | --- | --- | ---------- |
+| T   | T   | T                 | T   | T   | Valid      |
+| T   | F   | F                 | T   | F   |            |
+| F   | T   | T                 | F   | T   |            |
 
 ## Entailment
 

@@ -17,17 +17,17 @@ Q: The pavement is not wet unless it is raining.
 ### Formal expression
 
 $$
-P \supset Q \equiv \sim P \lor Q
+(P \rightarrow Q) \Leftrightarrow (\lnot P \lor Q)
 $$
 
 ### Truth-tables
 
-| $P$ | $Q$ | $ P \supset Q $ | $ \sim P \lor Q$ |
-| --- | --- | --------------- | ---------------- |
-| T   | T   | T               | T                |
-| T   | F   | T               | F                |
-| F   | T   | T               | T                |
-| F   | F   | F               | T                |
+| $P$ | $Q$ | $ P \rightarrow Q $ | $ \lnot P \lor Q$ |
+| --- | --- | ------------------- | ----------------- |
+| T   | T   | T                   | T                 |
+| T   | F   | T                   | F                 |
+| F   | T   | T                   | T                 |
+| F   | F   | F                   | T                 |
 
 ### Derivation
 
