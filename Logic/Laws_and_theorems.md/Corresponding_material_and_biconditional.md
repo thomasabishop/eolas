@@ -1,7 +1,7 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
 
 ## Corresponding material conditional to show validity
