@@ -23,12 +23,12 @@ $$ \{ P \leftrightarrow Q, P \lor Q, P \land Q \} $$
 | F   | T   | F                     | T          |
 | F   | F   | T                     | F          |
 
-| $P$ | $Q$ | $(P \leftrightarrow Q) \land (P \lor Q)) \leftrightarrow (P \lor Q)$ |
-| --- | --- | -------------------------------------------------------------------- |
-| T   | T   | T                                                                    |
-| T   | F   | T                                                                    |
-| F   | T   | T                                                                    |
-| F   | F   | T                                                                    |
+| $P$ | $Q$ | $(P \leftrightarrow Q) \land (P \lor Q)) \leftrightarrow (P \land Q)$ |
+| --- | --- | --------------------------------------------------------------------- |
+| T   | T   | T                                                                     |
+| T   | F   | T                                                                     |
+| F   | T   | T                                                                     |
+| F   | F   | T                                                                     |
 
 We see above that the main connective, the material conditional returns true for every truth-functional assignment. In other words it is logically true. Consequently the argument is valid
 

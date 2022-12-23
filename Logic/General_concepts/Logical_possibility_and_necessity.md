@@ -34,6 +34,6 @@ From this we can derive the following property of logical possibility:
 
 ## Logical necessity
 
-A sentence is _logically necessary_ if it is true in every logically possible circumstance which is to say: true on every possible truth functional assignment. Necessity and [logical truth](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-truth) are therefore synonyms: anything that is logically true (a tautology) is true by necessity (could not be otherwise.)
+A proposition is _logically necessary_ if it is true in every logically possible circumstance which is to say: true on every possible truth functional assignment. Necessity and [logical truth](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-truth) are therefore synonyms: anything that is logically true (a tautology) is true by necessity (could not be otherwise.)
 
 Further, every logical truth is logically possible but not everything that is logically possible is logically true. It is possible that it is raining but this is not logically necessary - it could be otherwise, i.e not raining. However it is not possible that it could be both raining and not raining.

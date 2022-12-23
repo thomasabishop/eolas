@@ -37,6 +37,7 @@ Cannot be consistently denied as there is no possibility of it being false. It i
 ## Formal definition
 
 > A proposition P is truth-functionally indeterminate if and only if it is neither truth-functionally true or truth-functionally false.
+> should be avoided in arguments, they 'prove' everything whi
 
 ```
 P
