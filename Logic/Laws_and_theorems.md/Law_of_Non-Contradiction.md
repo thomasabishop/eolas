@@ -1,11 +1,13 @@
 ---
 categories:
-  - Mathematics
-tags: [logic, theorems]
+  - Logic
+tags: [propositional-logic]
 ---
 
+# Law of Non-Contradiction
+
 > A proposition cannot be true and false at the same time.
->
-> $$
-> \\sim (P & \sim P)
-> $$
+
+$$
+\lnot (P \land  \lnot P)
+$$
