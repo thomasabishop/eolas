@@ -33,4 +33,9 @@ $$
 \lnot (P \lor Q) \leftrightarrow \lnot P \land \lnot Q
 $$
 
-![demorgan-2.png](/img/demorgan-2.png)
+| $P$ | $Q$ | $ \lnot (P \lor Q)$ | $ \lnot P \land \lnot Q$ |
+| --- | --- | ------------------- | ------------------------ |
+| T   | T   | F                   | F                        |
+| T   | F   | F                   | F                        |
+| F   | T   | F                   | F                        |
+| F   | F   | T                   | T                        |
