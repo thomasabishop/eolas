@@ -1,8 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic, proofs]
+  - Logic
+tags: [propositional-logic]
 ---
+
+# Strategies for constructing proofs in propositional logic
 
 ## General strategy
 
@@ -13,17 +15,17 @@ tags: [logic, proofs]
 
 The approach above describes the general form of a proof but of course it will not always work and there will be cases where the route to the desired derivation is more circuitous. In these instances it is to best to combine this general top level strategy with goal analysis.
 
-Goal analysis is a [recursive](../Algorithms%20&%20Data%20Structures/Recursion.md) strategy which proceeds by using a 'goal' proposition to guide the construction of intermediary derivations.
+Goal analysis is a [recursive](/Data_Structures/Recursion.md) strategy which proceeds by using a 'goal' proposition to guide the construction of intermediary derivations.
 
-Assume that we want to show that an argument is [valid](Validity%20and%20entailment.md#validity). Then our ultimate goal is to derive the conclusion from the premises we are given. We first ask ourselves: _which propositions if we could derive them, would allow us to easily derive the conclusion_? (For example, these propositions might be two simple propositions that when combined with [Conjunction Introduction](Conjunction%20Introduction.md) give us the conclusion.) Deriving these propositions then becomes the new intermediate goal.
+Assume that we want to show that an argument is [valid](/Logic/General_concepts/Validity_and_entailment.md#validity). Then our ultimate goal is to derive the conclusion from the premises we are given. We first ask ourselves: _which propositions if we could derive them, would allow us to easily derive the conclusion_? (For example, these propositions might be two simple propositions that when combined with [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) give us the conclusion.) Deriving these propositions then becomes the new intermediate goal.
 
 If arriving at these propositions is not trivial, we then ask ourselves the question again: _which propositions would permit us to derive the intermediary propositions we need_? You keep working back in this manner until you reach a base level. Then it is just a matter or working upwards from each set of derived intermediary propositions until you reach the ultimate goal.
 
 ### Demonstration
 
-Let's say we want to prove $(L \lor A) & D$ from the propositions $\sim N$ and $(\sim N \supset L) & (D \equiv \sim N)$.
+Let's say we want to prove $(L \lor A) \land D$ from the propositions $\lnot N$ and $((\lnot N \rightarrow L) \land (D \leftrightarrow \lnot N))$.
 
-First, we consider what is the easiest possible way of achieving the proposition $(L \lor A) & D$. Clearly it is to separately derive each disjunct ($L \lor A$ and $D$) and then combine them with [Conjunction Introduction](Conjunction%20Introduction.md). This provides us with our first goal: to derive each of the separate conjuncts.
+First, we consider what is the easiest possible way of achieving the proposition $(L \lor A) \land D$. Clearly it is to separately derive each disjunct ($L \lor A$ and $D$) and then combine them with [Conjunction Introduction](/Logic/Proofs/Conditional_Introduction.md). This provides us with our first goal: to derive each of the separate conjuncts.
 
 Let's start with $D$: where does it occur in the assumptions? It occurs in the compound $(\sim N \supset L) & (D \equiv \sim N)$, but only in the first conjunct. We can get this simply bu applying [Conjunction Elimination](Conjunction%20Elimination.md).
 
