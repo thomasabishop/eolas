@@ -36,4 +36,4 @@ We see above that the main connective, the material conditional returns true for
 
 We can use the corresponding material biconditional as a shorthand for demonstrating logical equivalence between two propositions.
 
-For two putatively equivalent propositions $P$ and $Q$, $P$ and $Q$ are logically equivalent if the compound proposition $P \equiv Q$ is logically true.
+For two putatively equivalent propositions $P$ and $Q$, $P$ and $Q$ are logically equivalent if the compound proposition $P \leftrightarrow Q$ is logically true.

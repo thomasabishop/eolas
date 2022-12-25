@@ -17,7 +17,7 @@ Q: The pavement is not wet unless it is raining.
 ### Formal expression
 
 $$
-(P \rightarrow Q) \Leftrightarrow (\lnot P \lor Q)
+(P \rightarrow Q) \longleftrightarrow (\lnot P \lor Q)
 $$
 
 ### Truth-tables
@@ -36,5 +36,3 @@ $$
 Note that the property of equivalence stated in terms of derivablity above is identical to the derivation rule for the [material biconditional](/Logic/Proofs/Biconditional_Introduction.md):
 
 ![bi-intro.png](/img/bi-intro.png)
-
-//TODO: Add demonstration of this by deriving two equivalents from one of DeMorgan's Laws

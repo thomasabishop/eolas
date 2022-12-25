@@ -1,8 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
+
+# Formal proofs in propositional logic
 
 When we construct a formal proof in logic we are seeking to show that a certain proposition is **derivable** from other propositions. We use the words _derivation_ and _proof_ interchangeably.
 
@@ -15,7 +17,7 @@ Derivability is therefore a property that a proposition can possess relative to 
 For instance to demonstrate derivability for:
 
 $$
-{\sim F \lor D, F, D \supset (G & H)} \vdash G &H
+\{ \lnot F \lor D, F, D \rightarrow (G \land H) \} \vdash G \land H
 $$
 
 We would establish $\sim F \lor D, F, D \supset (G & H)$ as primary assumptions and then, using the derivation rules of the system conclude with $G&H$. Every sentence in the derivation is either a **primary assumption** or an **auxiliary** assumption or justified by the rules of the derivation. An auxiliary assumption is one belonging to a sub-derivation. The primary assumptions belong to the main derivation.
