@@ -27,63 +27,63 @@ Let's say we want to prove $(L \lor A) \land D$ from the propositions $\lnot N$ 
 
 First, we consider what is the easiest possible way of achieving the proposition $(L \lor A) \land D$. Clearly it is to separately derive each disjunct ($L \lor A$ and $D$) and then combine them with [Conjunction Introduction](/Logic/Proofs/Conditional_Introduction.md). This provides us with our first goal: to derive each of the separate conjuncts.
 
-Let's start with $D$: where does it occur in the assumptions? It occurs in the compound $(\sim N \supset L) & (D \equiv \sim N)$, but only in the first conjunct. We can get this simply bu applying [Conjunction Elimination](Conjunction%20Elimination.md).
+Let's start with $D$: where does it occur in the assumptions? It occurs in the compound $(\lnot N \rightarrow L) \land (D \leftrightarrow \lnot N)$, but only in the first conjunct. We can get this simply but applying [Conjunction Elimination](Conjunction%20Elimination.md).
 
 So far we have:
 
-![step1.png](../img/step1.png)
+![](/img/step1.png)
 
-Now we just need to get $D$ from the proposition at line 3. This is easy since we already have access to the consequent of the biconditional at line 1. Therefore we can apply [Biconditional Elimination](Biconditional%20Elimination.md) at line 3 to get $D$. We are now halfway there:
+Now we just need to get $D$ from the proposition at line 3. This is easy since we already have access to the consequent of the biconditional at line 1. Therefore we can apply [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md)) at line 3 to get $D$. We are now halfway there:
 
-![step2.png](../img/step2.png)
+![](/img/step2.png)
 
-Next we need to turn our attention to deriving $L \lor A$. How can we obtain $L$ ? Well it is contained within the first conjunct of the assumption on line 2. Again, we can get this through the application of [Conjunction Elimination](Conjunction%20Elimination.md).
-Now, how do we get $L$ from $(\sim N \supset L)$? Well, we already have the antecedent $\sim N$ as an assumption on the first line, so we can use [Conditional Elimination](Conditional%20Elimination.md) to derive $L$. These two steps give us:
+Next we need to turn our attention to deriving $L \lor A$. How can we obtain $L$ ? Well it is contained within the first conjunct of the assumption on line 2. Again, we can get this through the application of [Conjunction Elimination](/Logic/Proofs/Conjunction_Elimination.md).
+Now, how do we get $L$ from $(\lnot N \rightarrow L)$? Well, we already have the antecedent $\lnot N$ as an assumption on the first line, so we can use [Conditional Elimination](/Logic/Proofs/Conditional_Elimination.md) to derive $L$. These two steps give us:
 
-![step3.png](../img/step3.png)
+![](/img/step3.png)
 
-Now we need to get from $L$ to $L \lor A$. This is really straightforward because by using [Disjunction Introduction](Disjunction%20Introduction.md) we can get from any sentence to a disjunction. Finally, having assembled all the constituent parts of the conjunction that is the conclusion, we can combine them with [Conjunction Introduction](Conjunction%20Introduction.md) as we had planned at the outset.
+Now we need to get from $L$ to $L \lor A$. This is really straightforward because by using [Disjunction Introduction](/Logic/Proofs/Disjunction_Introduction.md)) we can get from any sentence to a disjunction. Finally, having assembled all the constituent parts of the conjunction that is the conclusion, we can combine them with [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) as we had planned at the outset.
 
-![step4.png](../img/step4.png)
+![](/img/step4.png)
 
 ### A further example
 
 We will seek to prove the following:
 
 $$
-{ \sim L \equiv \[X & (\sim S \lor B)\], (E & C) \supset \sim L, (E & R) & C} \vdash X & (\sim S \lor B)
+\{ \lnot L \leftrightarrow [X \land (\lnot S \lor B) ], (E \land C) \rightarrow \lnot L, (E \land R) \land C \} \vdash X \land (\lnot S \lor B)
 $$
 
-The requirements here could easily mislead us. We see that the target proposition is a conjunction so we might think that the best strategy is to seek to derive each conjunct and then combine them via [Conjunction Introduction](Conjunction%20Introduction.md).
+The requirements here could easily mislead us. We see that the target proposition is a conjunction so we might think that the best strategy is to seek to derive each conjunct and then combine them via [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md)).
 
-Actually, if we look more closely, there is a better approach. The target proposition is contained in the first premise as the consequent to the biconditional ($\sim L \equiv \[X & (\sim S \lor B)\]$). A better approach is therefore to seek to derive the antecedent ($\sim L$) and then use [Biconditional Elimination](Biconditional%20Elimination.md) to extract the target sentence which is the consequent.
+Actually, if we look more closely, there is a better approach. The target proposition is contained in the first premise as the consequent to the biconditional ($\lnot L \leftrightarrow [X \land (\lnot S \lor B)]$). A better approach is therefore to seek to derive the antecedent ($\lnot L$) and then use [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md) to extract the target sentence which is the consequent.
 
-![proof.png](../img/proof.png)
+![proof.png](/img/proof.png)
 
 ## Proving theorems
 
-When we are proving [theorems](Theorems%20and%20empty%20sets.md) we do not have a set of assumptions to work from when constructing the proof. We must derive the target sentence from the 'empty set' which is the target sentence itself. It is therefore like a process of reverse engineering.
+When we are proving [theorems](/Logic/Laws_and_theorems.md/Theorems_and_empty_sets.md#theorems-and-empty-sets) we do not have a set of assumptions to work from when constructing the proof. We must derive the target sentence from the 'empty set' which is the target sentence itself. It is therefore like a process of reverse engineering.
 
 ### Demonstration
 
-\_Prove \_ $\vdash (U & Y) \supset \[L \supset (U & L)\]$
+_Prove:_ $\vdash (U \land Y) \rightarrow [L \rightarrow (U \land L)]$
 
-Our strategy here is to identify the main connective in the proposition we want to derive (the [material conditional](Truth-functional%20connectives.md#material-conditional-a-k-a-implication)). We then assume the antecedent and attempt to derive the consequent from it.
+Our strategy here is to identify the main connective in the proposition we want to derive (the material conditional). We then assume the antecedent and attempt to derive the consequent from it.
 
-![proofs-drawio-Page-5.drawio 4.png](../img/proofs-drawio-Page-5.drawio%204.png)
+![](/img/theoremproof.png)
 
 ## A complex theorem proof
 
-_Prove_ $\vdash (\sim A \lor \sim B) \equiv \sim(A & B)$
+_Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
 
-![dsfdsfsdfwe.png](../img/dsfdsfsdfwe.png)
+![](/img/dsfdsfsdfwe.png)
 
 ### Walkthrough
 
 **Lines 1-12**
 
-- Our auxiliary goal is to prove $\sim (A \lor B) \supset \sim (A & B)$.
-- Our starting assumption is to a disjunction. Thus we can apply [Disjunction Elimination](Disjunction%20Elimination.md) to show that our goal sentence $\sim(A & B)$ follows from each of the disjuncts ($\sim A$ and $\sim B$) in dedicated subproofs. If we can do this, we have the right to derive $\sim (A & B$).
+- Our auxiliary goal is to prove $\lnot (A \lor B) \rightarrow \lnot (A \land B)$.
+- Our starting assumption is to a disjunction. Thus we can apply [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) to show that our goal sentence $\sim(A & B)$ follows from each of the disjuncts ($\sim A$ and $\sim B$) in dedicated subproofs. If we can do this, we have the right to derive $\sim (A & B$).
 - In both cases($\sim A \vdash \sim (A & B$) and ($\sim B \vdash \sim (A & B$) we require another subproof to reach the target as there is no easy path available. So we derive a negation from $A & B$ so that we can negate it as $\sim (A & B$).
 - Having done this, we can discharge the [Disjunction Elimination](Disjunction%20Elimination.md) subproofs and derive $\sim (A & B$) from $\sim A \lor \sim B$
 
