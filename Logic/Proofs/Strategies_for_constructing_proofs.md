@@ -83,12 +83,15 @@ _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
 **Lines 1-12**
 
 - Our auxiliary goal is to prove $\lnot (A \lor B) \rightarrow \lnot (A \land B)$.
-- Our starting assumption is to a disjunction. Thus we can apply [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) to show that our goal sentence $\sim(A & B)$ follows from each of the disjuncts ($\sim A$ and $\sim B$) in dedicated subproofs. If we can do this, we have the right to derive $\sim (A & B$).
-- In both cases($\sim A \vdash \sim (A & B$) and ($\sim B \vdash \sim (A & B$) we require another subproof to reach the target as there is no easy path available. So we derive a negation from $A & B$ so that we can negate it as $\sim (A & B$).
-- Having done this, we can discharge the [Disjunction Elimination](Disjunction%20Elimination.md) subproofs and derive $\sim (A & B$) from $\sim A \lor \sim B$
+
+- Our starting assumption is to a disjunction. Thus we can apply [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) to show that our goal sentence $\lnot(A \land B)$ follows from each of the disjuncts ($\lnot A$ and $\lnot B$) in dedicated sub-proofs. If we can do this, we have the right to derive $\lnot (A \land B)$.
+
+- In both cases($\lnot A \vdash \lnot (A \land B)$) and ($\lnot B \vdash \lnot (A \land B)$ we require another sub-proof to reach the target as there is no easy path available. So we derive a negation from $A \land  B$ so that we can negate it as $\lnot (A \land B)$.
+
+- Having done this, we can discharge the [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) sub-proofs and derive $\lnot (A \land B)$ from $\lnot A \lor \lnot B$
 
 **Lines 13-26**
 
-- Our auxiliary goal is to prove $\sim (A & B) \supset \sim A \lor  \sim B$. This will require a different approach to the above because we are not working from a disjunction anymore, we have a negated conjunction.
-- We will do this by assuming the negation of what we want to prove ($\sim (\sim A \lor \sim B)$) and then apply [Negation Elimination](Negation%20Elimination.md) to get $\sim A \lor \sim B$.
-- This requires us to derive a contradiction. We get this on lines 23 and 24. This requires as previous steps that we have two subproofs that use [Negation Elimination](Negation%20Elimination.md) to release $A$ and $B$
+- Our auxiliary goal is to prove $\lnot (A \land B) \rightarrow \lnot A \lor  \lnot B$. This will require a different approach to the above because we are not working from a disjunction anymore, we have a negated conjunction.
+- We will do this by assuming the negation of what we want to prove ($\lnot (\lnot A \lor \lnot B)$) and then apply [Negation Elimination](/Logic/Proofs/Negation_Elimination.md) to get $\lnot A \lor \lnot B$.
+- This requires us to derive a contradiction. We get this on lines 23 and 24. This requires as previous steps that we have two sub-proofs that use [Negation Elimination](/Logic/Proofs/Negation_Elimination.md) to release $A$ and $B$
