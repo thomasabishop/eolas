@@ -16,6 +16,18 @@ Logic gates are the basic building blocks of digital computing. **A logic gate i
 
 Physically, what 'travels through' the gates is electrical current and what constitutes the 'gate' is a [transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) responding to the current. Going up a level of abstraction, the current/ charge is identified with a [bit](/Electronics_and_Hardware/Binary/Binary_units_of_measurement.md#binary-units-of-measurement). It is bits that go into the gate and bits which come out: binary information that may be either 1 or 0.
 
+## Elementary and composite gates
+
+We distinguish elementary from composite logic gates. An elementary gate is a single gate embodying a single logical connective. It cannot be reduced any lower as a logical abstraction. A composite gate is a gate made up of more than one elementary gate and/or other composite gates.
+
+An example of a composite gate would be a three-way AND. An AND with three inputs rather than the standard two that furnish the elementary AND gate. This gate would output 1 when all three gates have the value 1 and 0 otherwise. [Adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) and [latches](/Electronics_and_Hardware/Digital_circuits/Latches.md) whilst being [integrated circuits](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md) are also, technically speaking, composite gates.
+
+## Gate interface / gate implementation
+
+The gate _interface_ is an abstraction that the enables the user to think of the gate simply in terms of inputs and outputs, without being concerned with the technical details of how this is achieved. How it is achieved is the gate _implementation_.
+
+We can
+
 ## NOT gate
 
 > The NOT gate inverts the value of whatever input it receives
@@ -98,6 +110,8 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Interactive circuit
 
+<iframe src="https://circuitverse.org/simulator/embed/or-gate-087e4933-7963-482d-b4bf-9e130ef05706?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="250" width="500" allowFullScreen></iframe>
+
 ## XOR gate
 
 > The OR gate represents the truth conditions of the exclusive OR
@@ -117,6 +131,8 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Interactive circuit
 
+<iframe src="https://circuitverse.org/simulator/embed/xor-gate-a240131e-a9c3-4240-a52b-e14412fdd654?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="250" width="500" allowFullScreen></iframe>
+
 ## NOR gate
 
 > The NOR gate inverts the function of an OR gate
@@ -135,3 +151,5 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 | 0   | 0   | 1          |
 
 ### Interactive circuit
+
+<iframe src="https://circuitverse.org/simulator/embed/nor-gate-ac7946b4-f5d0-4c87-afd1-a2e92326d006?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="250" width="500" allowFullScreen></iframe>

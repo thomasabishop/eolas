@@ -48,11 +48,11 @@ We only need to focus on lines 1, 3, and 5 since they have the output 1:
 
 For each line we construct a Boolean expression that would result in the value in the $f$ column. In other words we construct the function:
 
-| Line | $x$ | $y$ | $z$ | $f$                                         |
-| ---- | --- | --- | --- | ------------------------------------------- |
-| 1    | 0   | 0   | 0   | $ \lnot(x) \land \lnot (y) \land \lnot(z) $ |
-| 3    | 0   | 1   | 0   | $ \lnot(x) \land y \land \lnot(z) $         |
-| 5    | 1   | 0   | 0   | $ x \land \lnot(y) \land \lnot(z) $         |
+| Line | $x$ | $y$ | $z$ | $f$                                       |
+| ---- | --- | --- | --- | ----------------------------------------- |
+| 1    | 0   | 0   | 0   | $\lnot(x) \land \lnot (y) \land \lnot(z)$ |
+| 3    | 0   | 1   | 0   | $\lnot(x) \land y \land \lnot(z)$         |
+| 5    | 1   | 0   | 0   | $x \land \lnot(y) \land \lnot(z)$         |
 
 We can now join each expression to create a complex expression that covers the entire truth table using OR:
 

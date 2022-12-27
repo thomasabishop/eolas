@@ -2,7 +2,7 @@
 categories:
   - Computer Architecture
   - Hardware
-tags: [abstraction, modules]
+tags: [abstraction, modules, nand-to-tetris]
 ---
 
 # Hardware abstraction and modularity
