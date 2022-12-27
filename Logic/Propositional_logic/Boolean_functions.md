@@ -15,7 +15,7 @@ $$
 
 Here is a work through where $f(1, 0, 1)$:
 
-- The first disjunction : $ \lnot(x) \land z $ is false because $x$ is 1 and $z$ is 0
+- The first disjunction : $\lnot(x) \land z$ is false because $x$ is 1 and $z$ is 0
 - The second disjunction: $x \land y$ is false because $x$ is 1 and $y$ is 1
 - The overall function returns false because the main connective is disjunction and both of its disjuncts are false
 
