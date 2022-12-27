@@ -2,7 +2,7 @@
 categories:
   - Logic
   - Computer Architecture
-tags: [propositional-logic, algebra]
+tags: [propositional-logic, algebra, nand-to-tetris]
 ---
 
 # Boolean algebra
