@@ -12,9 +12,9 @@ tags: [logic-gates, binary]
 
 [J.C. Scott. 2009. **But How Do It Know? The Basics of Computers for Everyone**, 21]
 
-Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and the logic determining which types of input (on/off) lead to specific outputs (on/off) is identical to the truth-conditions of the [Boolean connectives](/Logic/Truth-functional_connectives.md) specifiable in terms of [truth tables](/Logic/Truth-tables.md).
+Logic gates are the basic building blocks of digital computing. **A logic gate is an electrical circuit that has one or more than one input and only one output.** The input controls the output and the logic determining which types of input (on/off) lead to specific outputs (on/off) is isomorphic with the truth-conditions of the [Boolean connectives](/Logic/Truth-functional_connectives.md) specifiable in terms of [truth tables](/Logic/Truth-tables.md).
 
-Physically, what 'travels through' the gates is electrical current and what constitutes the 'gate' is a [transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) responding to the current. At the next level of abstraction it is bits that go into the gate and bits which come out: binary information that may be either 1 or 0.
+Physically, what 'travels through' the gates is electrical current and what constitutes the 'gate' is a [transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) responding to the current. Going up a level of abstraction, the current/ charge is identified with a bit. It is bits that go into the gate and bits which come out: binary information that may be either 1 or 0.
 
 ## NOT gate
 

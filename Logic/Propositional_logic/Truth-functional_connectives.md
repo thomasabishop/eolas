@@ -1,26 +1,26 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
 
-## Truth-functional connectives
+# Truth-functional connectives
 
-Sentences generated from other (simple) sentences by means of sentential connectives are [compound sentences](Atomic%20and%20molecular%20sentences.md).
+Propositions generated from other (simple) propositions by means of propositional connectives are [compound propositions](/Logic/Propositional_logic/Atomic_and_molecular_propositions.md).
 
-We know that logically determinant sentences express a truth value. When simple sentences are joined with a connective to make a compound sentence they also have a truth value. This is determined by the nature of the connective and the truth value of the constituent sentences. We therefore call connectives of this nature truth _functional_ connectives since the **truth value of the compound is a function of the truth values of its components**.
+We know that [logically determinant](/Logic/General_concepts/Logical_indeterminacy.md) propositions express a truth value. When simple propositions are joined with a connective to make a compound proposition they also have a truth value. This is determined by the nature of the connective and the truth value of the constituent propositions. We therefore call connectives of this nature truth _functional_ connectives since the **truth value of the compound is a function of the truth values of its components**.
 
-> A sentential connective is used truth-functionally if and only if it is used to generate a compound sentence from one or more sentences in such a way that the truth value of the generated compound is wholly determined by the truth-values of those one or more sentences from which the compound is generated, no matter what the truth values may be.
+> A propositional connective is used truth-functionally if and only if it is used to generate a compound proposition from one or more propositions in such a way that the truth value of the generated compound is wholly determined by the truth-values of those one or more propositions from which the compound is generated, no matter what the truth values may be.
 
-Each truth-functional connective has a characteristic **truth-table**. This discloses the conditions under which the constituent sentences have a given truth value when combined with one or more connectives.
+Each truth-functional connective has a characteristic **truth table**. This discloses the conditions under which the constituent propositions have a given truth value when combined with one or more connectives.
 
 We shall now review each of the truth-functional connectives in detail.
 
 ### Conjunction
 
-Conjunction is equivalent to the word AND in natural language. We use `&` as the symbol for this connective.
+Conjunction is equivalent to the word AND in natural language. We use $\land$ as the symbol for this connective.
 
-A molecular sentence joining two conjuncts P and Q is true iff both conjuncts are true and false otherwise:
+A molecular proposition joining two conjuncts P and Q is true iff both conjuncts are true and false otherwise:
 
 ```
 P	Q				P	&	Q
@@ -34,7 +34,7 @@ F	F					F
 
 Conjunction is equivalent to the word OR in natural language. We use `v` as the symbol of this connective.
 
-A molecular sentence joining two disjuncts P and Q is true if either disjunct is true or if both disjuncts are true and false otherwise. This corresponds to the inclusive sense of OR in natural language.
+A molecular proposition joining two disjuncts P and Q is true if either disjunct is true or if both disjuncts are true and false otherwise. This corresponds to the inclusive sense of OR in natural language.
 
 ```
 P	Q				P	∨	Q
@@ -46,7 +46,7 @@ F	F					F
 
 ### Negation
 
-In contrast to the two previous connectives, negation is a unary connective not a binary connective. We use `~` to symbolise negation. It does not join two or more sentences, it applies to one sentence as a whole. This can be a simple sentence or a complex sentence. It simply negates the truth-value of whichever sentence it is applied to. Hence applied to P, it is true if P is false. And if P is false, it is true when P is true. !
+In contrast to the two previous connectives, negation is a unary connective not a binary connective. We use `~` to symbolise negation. It does not join two or more propositions, it applies to one proposition as a whole. This can be a simple proposition or a complex proposition. It simply negates the truth-value of whichever proposition it is applied to. Hence applied to P, it is true if P is false. And if P is false, it is true when P is true. !
 
 ```
 P			~	P
@@ -62,7 +62,7 @@ The material conditional approximates the meaning expressed in natural language 
 If it rains today the pavement will be wet.
 ```
 
-We call the proposition that expresses the 'if' sentence the **antecedent** and the proposition that expresses the 'then' statement the **consequent**. The symbol we use to represent the material conditional is `⊃` although you may see `→` used as well.
+We call the proposition that expresses the 'if' proposition the **antecedent** and the proposition that expresses the 'then' statement the **consequent**. The symbol we use to represent the material conditional is `⊃` although you may see `→` used as well.
 
 The truth table is as follows:
 
@@ -74,7 +74,7 @@ F	T					T
 F	F					T
 ```
 
-The material conditional is perhaps the least intuitive of the logical connectives. The first case (TT) closely matches what we expect the connective to mean: it has rained so the pavement is wet. The antecedent is true and therefore the consequent is true. This chimes with what we tend to mean by 'if' in natural language. In the second case (TF) it also makes sense: the complex sentence is false because it rained and the pavement wasn't wet: this negates the truth of the expression. The final case (FF) is also straight forward. It didn't rain therefore the pavement wasn't wet, thus the overall assertion that rain implies wet pavements is retained.
+The material conditional is perhaps the least intuitive of the logical connectives. The first case (TT) closely matches what we expect the connective to mean: it has rained so the pavement is wet. The antecedent is true and therefore the consequent is true. This chimes with what we tend to mean by 'if' in natural language. In the second case (TF) it also makes sense: the complex proposition is false because it rained and the pavement wasn't wet: this negates the truth of the expression. The final case (FF) is also straight forward. It didn't rain therefore the pavement wasn't wet, thus the overall assertion that rain implies wet pavements is retained.
 
 FT is less intuitive:
 
@@ -84,7 +84,7 @@ It did not rain today. The pavement was wet.
 
 To some degree one just has to take these statements as axioms, whether or not they have intuitive sense is a secondary, more philosophical question. The semantic issues arise because we tacitly assume the material conditional to be a causal connective: there is something about the nature of **P** that _engenders_ or _brings about_ **Q** but causality is not a logical concern.
 
-If we instead just focus on the simple sentences that comprise the truth value it is more plausible. In the case of FT we can say it didn't rain yet the pavement was wet does not stop the pavement being wet when it rains. The fact that I can pour a beer on the pavement thereby making it wet doesn't stop or render false the idea that the rain can also make the pavement wet. The same explanation covers the FF case: it hasn't rained and so the pavement is not wet does not contradict the assertion that when it rains the pavement will be wet.
+If we instead just focus on the simple propositions that comprise the truth value it is more plausible. In the case of FT we can say it didn't rain yet the pavement was wet does not stop the pavement being wet when it rains. The fact that I can pour a beer on the pavement thereby making it wet doesn't stop or render false the idea that the rain can also make the pavement wet. The same explanation covers the FF case: it hasn't rained and so the pavement is not wet does not contradict the assertion that when it rains the pavement will be wet.
 
 Things are elucidated when we look at an equivalent expression of P ⊃ Q, ~P v Q:
 
@@ -100,7 +100,7 @@ A disjunction is true whenever either disjunct is true so when both are false th
 
 ### Material biconditional (a.k.a equivalence)
 
-The material biconditional equates to the English expression 'if and only if', as a conditional connective it therefore avoids some of the perplexity aroused by its material cousin. In this scenario both antecedent and consequent have to be true for the overall expression to be true. If either is false the complex sentence is false. Other ways of expressing the semantics of this connective is to say that one sentence implies the other or that **P** and **Q** are equivalent.
+The material biconditional equates to the English expression 'if and only if', as a conditional connective it therefore avoids some of the perplexity aroused by its material cousin. In this scenario both antecedent and consequent have to be true for the overall expression to be true. If either is false the complex proposition is false. Other ways of expressing the semantics of this connective is to say that one proposition implies the other or that **P** and **Q** are equivalent.
 
 ```
 If and only if James studies every day he will pass the exam.
@@ -122,9 +122,9 @@ The last condition (FF) maybe requires some explanation: if he has not studied e
 
 ---
 
-So far we have applied connectives to simple sentences. In so doing we generate complex sentences. However sentences and connectives are inherently generative: we can build more complex expressions from less complex parts, using more than one type of connective or several different connectives to make larger complex sentences and express more detailed logical conditions ans statements about the world.
+So far we have applied connectives to simple propositions. In so doing we generate complex propositions. However propositions and connectives are inherently generative: we can build more complex expressions from less complex parts, using more than one type of connective or several different connectives to make larger complex propositions and express more detailed logical conditions ans statements about the world.
 
-For example the sentence:
+For example the proposition:
 
 ```
 Socrates was either a philosopher or a drinker but he wasn't a politician.
@@ -156,7 +156,7 @@ F	F	T									F
 F	F	F									F
 ```
 
-Let's walk through each case where S stands for the overall sentence.
+Let's walk through each case where S stands for the overall proposition.
 
 1. S is false if Socrates was a philosopher, a drinker and a politician.
 1. **S is true if Socrates was a philosopher, a drinker but not a politician.**
@@ -169,13 +169,13 @@ Let's walk through each case where S stands for the overall sentence.
 
 If we look just at the true cases for simplicity, it becomes obvious that the truth value of the whole is a function of the truth-values of the parts.
 
-At the highest level of generality the sentence is a conjunction with two disjuncts: `P v Q` and `~R` . Therefore, for the sentence to be true both conjuncts must be true. The first conjunct is true just if one of the subordinate disjuncts is true (Socrates is either a philosopher, a drinker, or both). The second conjunct is true just if Socrates is not a politician. Thus there is only one variation for the second conjunct (not being a politician) and two variations for the first conjunct (being a drinker/being a philosopher) hence there are three cases where the overall sentence is true.
+At the highest level of generality the proposition is a conjunction with two disjuncts: `P v Q` and `~R` . Therefore, for the proposition to be true both conjuncts must be true. The first conjunct is true just if one of the subordinate disjuncts is true (Socrates is either a philosopher, a drinker, or both). The second conjunct is true just if Socrates is not a politician. Thus there is only one variation for the second conjunct (not being a politician) and two variations for the first conjunct (being a drinker/being a philosopher) hence there are three cases where the overall proposition is true.
 
 ### Logical equivalence
 
-Once we start working with complex sentences with more than one truth-functional connective it becomes clear that the same sentence expressed in natural language can be expressed formally more than one way and thus that in logical terms, both formal expressions are equivalent. We can prove this equivalence by comparing truth tables.
+Once we start working with complex propositions with more than one truth-functional connective it becomes clear that the same proposition expressed in natural language can be expressed formally more than one way and thus that in logical terms, both formal expressions are equivalent. We can prove this equivalence by comparing truth tables.
 
-For example the sentence:
+For example the proposition:
 
 ```
 I am going to the shops and the gym.
@@ -263,7 +263,7 @@ The example above is a key equivalence that you will encounter a lot especially 
 
 ## Enforcing binary connectives through bracketing
 
-If we had a sentence of the form
+If we had a proposition of the form
 
 ```
 Socrates is man, is mortal and a philosopher.
@@ -275,7 +275,7 @@ We could not write this as:
 P & Q & R
 ```
 
-This would not be a well-formed sentence because at most truth functional connectives can only connect two simple sentences. It would not be possible to generate truth conditions for this sentence in its current form. Instead we introduce brackets to enforce a binary grouping of simple sentences. In this instance, the placement of the brackets does not affect the accurate interpretation of the truth conditions of the compound, so the following two formalisations are equivalent:
+This would not be a well-formed proposition because at most truth functional connectives can only connect two simple propositions. It would not be possible to generate truth conditions for this proposition in its current form. Instead we introduce brackets to enforce a binary grouping of simple propositions. In this instance, the placement of the brackets does not affect the accurate interpretation of the truth conditions of the compound, so the following two formalisations are equivalent:
 
 ```
 (P & Q) & R
