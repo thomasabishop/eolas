@@ -89,7 +89,7 @@ $$
 We can employ DeMorgan's Laws to convert the second conjunct to a different form:
 
 $$
-    \lnot (x \lor x) = \lnot x \land \lnot y
+    \lnot (x \lor y) = \lnot x \land \lnot y
 $$
 
 So now we have:
