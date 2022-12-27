@@ -1,6 +1,6 @@
 ---
 categories:
-  -
+  - Logic
 tags: [derivation-rules]
 ---
 

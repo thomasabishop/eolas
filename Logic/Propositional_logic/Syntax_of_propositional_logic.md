@@ -18,30 +18,30 @@ Syntax is talking about the order and placement of propositions relative to conn
 
 Propositions in SL are capitalised Roman letters (non-bold) with or without natural number subscripts. We may call these proposition letters. For example:
 
-```plain
-P, Q, R...P1, Q1, R1...
-```
+$$
+  P, Q, R,... P_{1}, Q_{1}, R_{1}, ...
+$$
 
 The connectives of SL are the five truth-functional connectives:
 
-```
-~, &, v, ⊃, ≡
-```
+$$
+  \lnot, \land, \lor, \rightarrow, \leftrightarrow
+$$
 
 The punctuation marks of SL consist in the left and right parentheses:
 
-```
-(  )
-```
+$$
+  ( )
+$$
 
 ### Grammar
 
-1. Every proposition letter is a proposition.
-1. If **P** is a proposition then **~P** is a proposition.
-1. If **P** and **Q** are propositions, then **(P & Q)** is a proposition
-1. If **P** and **Q** are propositions, then **(P v Q)** is a proposition
-1. If **P** and **Q** are propositions, then **(P ⊃ Q)** is a proposition
-1. If **P** and **Q** are propositions, then **(P ≡ Q)** is a proposition
+1. Every letter in a statement is a proposition.
+1. If $P$ is a proposition then $\lnot P$ is a proposition.
+1. If $P$ and $Q$ are propositions, then $P \land Q$ is a proposition
+1. If $P$ and $Q$ are propositions, then $P \lor Q$ is a proposition
+1. If $P$ and $Q$ are propositions, then $P \rightarrow Q$ is a proposition
+1. If $P$ and $Q$ are propositions, then $P \leftri **(P ≡ Q)** is a proposition
 1. Nothing is a proposition unless it can be formed by repeated application of clauses 1-6
 
 ### Additional syntactic concepts
