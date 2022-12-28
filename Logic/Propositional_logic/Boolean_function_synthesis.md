@@ -29,7 +29,7 @@ Let's say we have the following truth table:
 
 | Line | $x$ | $y$ | $z$ | $f$ |
 | ---- | --- | --- | --- | --- |
-| 1    | 0   | 0   | 0   | 1   |
+| 1    | 0   | 0   | 0   | 0   |
 | 2    | 0   | 0   | 1   | 0   |
 | 3    | 0   | 1   | 0   | 1   |
 | 4    | 0   | 1   | 1   | 0   |
@@ -57,7 +57,7 @@ For each line we construct a Boolean expression that would result in the value i
 We can now join each expression to create a complex expression that covers the entire truth table using OR:
 
 $$
-(\lnot(x) \land \lnot (y) \land \lnot(z)) \lor (\lnot(x) \land y \land \lnot(z)) \lor  (x \land \lnot(y) \land \lnot(z))
+(\lnot(x) \land \lnot (y) \land \lnot(z)) \\ \lor \\ (\lnot(x) \land y \land \lnot(z)) \\ \lor \\  (x \land \lnot(y) \land \lnot(z))
 $$
 
 It's clear that we have transcribed the truth conditions accurately but that we are doing so in a rather verbose way. We can simplify by just looking at the position of the 1s in the truth table. Notice:
