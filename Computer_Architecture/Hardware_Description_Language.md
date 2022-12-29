@@ -59,7 +59,7 @@ In an HDL program we distinguish internal pins along with the standard [input an
 
 ### Test file (`Xor.tst`)
 
-Along with the HDL file we also create a test file. This runs the chip against the inputs we supply, these will typically be equivalent to the (left-hand) truth-values column in a truth table which is the same as the parameters passed to a [Boolean function](/Logic/Propositional_logic/Boolean_functions.md)
+Along with the HDL file we also create a test file. This runs the chip against the inputs we supply, these will typically be equivalent to the (left-hand) truth-values column in a truth table which is the same as the parameters passed to a [Boolean function](/Logic/Propositional_logic/Boolean_functions.md), for example:
 
 ```vhdl
 load Xor.hdl
@@ -67,4 +67,18 @@ output-list a, b, out;
 set a 0, set b 0, eval, output;
 set a 0, set b 1, eval, output;
 set a 1, set b 0, eval, output;
+set a 1, set b =, eval, output;
+```
+
+### Output file (`Xor.out`)
+
+When the test file is run against the HDL file it will generate an output file. This is effectively the result of the unit test. And will take the form of a truth table:
+
+```
+a | b | out
+-----------
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0
 ```
