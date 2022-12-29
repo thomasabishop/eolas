@@ -24,4 +24,4 @@ When using a module as a building block you are to focus exclusively on the modu
 
 The design of the diagram below emphasises the role of abstraction and modularity in the movement from transistors to chips:
 
-![](/img/hardware-abstraction-hierarchy.png)
+![](/_img/hardware-abstraction-hierarchy.png)

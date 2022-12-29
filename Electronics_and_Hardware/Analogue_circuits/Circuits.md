@@ -10,7 +10,7 @@ An electrical circuit is a set of electrical components connected in such a way 
 
 Below is a basic circuit representing a 9-volt [battery](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md#cells-and-batteries) with a 10,000$\Omega$ [resistor](/Electronics_and_Hardware/Analogue_circuits/Resistance.md) attached accross its terminals. Through the application of [Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md) we can determine that the maximum current will be 0.9 miliamps.
 
-![](/img/basic-circuit.png)
+![](/_img/basic-circuit.png)
 
 ## Open and short circuits
 
@@ -24,4 +24,4 @@ Sometimes circuits can be represented in a vertical manner rather than in an act
 
 The circuit below is functionally identical to the previous circuit but represented vertically:
 
-![](/img/vertical-circuit.png)
+![](/_img/vertical-circuit.png)

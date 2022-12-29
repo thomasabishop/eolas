@@ -61,10 +61,10 @@ const course = new Course({
 });
 ```
 
-![](/img/mongoose-hierarchy.svg)
+![](/_img/mongoose-hierarchy.svg)
 
 ## Outcome
 
 Having created a database, connected to it with Mongoose, and created a model we will see our collection reflected in Compass:
 
-![](img/../../../img/mongo-collection.png)
+![](img/../../../_img/mongo-collection.png)

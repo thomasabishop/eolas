@@ -37,7 +37,7 @@ The final phase is unmounting: when the component is removed from the DOM:
 
 6. `componentWillUnmount()`
 
-![React component lifecycle](../../../img/react-lifecycle.png)
+![React component lifecycle](../../../_img/react-lifecycle.png)
 
 ## Side-effects: why lifecycle phases matter
 

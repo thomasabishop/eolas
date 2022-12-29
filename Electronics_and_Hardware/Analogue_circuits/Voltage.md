@@ -60,7 +60,7 @@ The relationship between voltage rise and voltage drop is expressed in Kirchoff'
 
 The application of the Law is illustrated in the following diagram:
 
-![](/img/voltage-drop.png)
+![](/_img/voltage-drop.png)
 
 The explanation for the voltage drop at the positions $V^{A}$ and $V^{D}$ are obvious enough: they are at the beginning and end of the loop so are equal to the maximal voltage rise and minimal voltage drop, respectively.
 

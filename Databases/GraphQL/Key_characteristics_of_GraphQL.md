@@ -26,7 +26,7 @@ From the point of view of the backend, GraphQL is a **runtime** that provides a 
 
 Client requests are sent over HTTPS and the data is typically returned in the form of JSON:
 
-![](/img/graphql-architecture.png)
+![](/_img/graphql-architecture.png)
 
 ## Implementation overview
 
@@ -83,15 +83,15 @@ With a REST API if you require multiple resources you have to make multiple requ
 
 The REST scenario:
 
-![](/img/REST_request-load.png)
+![](/_img/REST_request-load.png)
 
 The GraphQL scenario:
 
-![](/img/graphQL_request_load.png)
+![](/_img/graphQL_request_load.png)
 
 ### Abstraction of multiple services
 
-![](/img/graphql_multiple_resources.png)
+![](/_img/graphql_multiple_resources.png)
 
 ### Stops overfetching
 

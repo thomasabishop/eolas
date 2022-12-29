@@ -16,7 +16,7 @@ We can use [ps](/Programming_Languages/Shell_Scripting/Processes.md) to list the
 
 _Here I have pressed `u` to show only the processes associated with my user:_
 
-![](/img/htop.png)
+![](/_img/htop.png)
 
 ### Main commands
 
@@ -96,7 +96,7 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 
 `lsof` stands for _list open files_. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:
 
-![](/img/lsof.png)
+![](/_img/lsof.png)
 
 ## System calls: `strace`
 

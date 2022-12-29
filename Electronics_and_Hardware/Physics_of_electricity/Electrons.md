@@ -14,7 +14,7 @@ Each shell can accomodate a maximum number of electrons. The shells are designat
 
 _The diagram below demonstrates shell naming conventions and the maximum number of electrons per shell._
 
-![](/img/valence-shell.svg)
+![](/_img/valence-shell.svg)
 
 ## Valence
 

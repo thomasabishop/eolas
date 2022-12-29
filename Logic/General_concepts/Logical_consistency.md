@@ -57,7 +57,7 @@ In other terms, if you can derive a contradiction from the set, the set is logic
 
 A [contradiction](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-falsity) has very important consequences for reasoning because if a set of propositions is inconsistent, any other proposition is derivable from it.
 
-![](/img/derivation_from_contradiction.png)
+![](/_img/derivation_from_contradiction.png)
 
 _A demonstration of the the consequences of deriving a contradiction in a sequence of reasoning._
 

@@ -32,7 +32,7 @@ Magnetism, understood as the effect of a magnetic field, arises from the propert
 
 As they spin they produce a **magnetic dipole**: the two poles noted above. We call this propensity of electrons the **intrinsic magnetic moment** of the electron. It is aggregates of these miniature magnetic behaviours that produce the overall magnetic property of the material.
 
-![](/img/dipole-again.svg)
+![](/_img/dipole-again.svg)
 
 In most materials, equal numbers of electrons spin in opposite directions. As a result, their magentic effects are cancelled out. However **in strongly magnetic materials an overall majority of electrons spin in one particular direction**. This breaks the equilibrium and produces the magnetic field.
 
@@ -72,7 +72,7 @@ The magnetic field and force is more complex than the electric field/force. Wher
 
 This is illustrated below which shows the magnetic field operating at right angles to the flow of charge within a wire.
 
-<img src="/home/thomas/repos/computer_science/img/magnetic_field.png" width="300" />
+<img src="/home/thomas/repos/computer_science/_img/magnetic_field.png" width="300" />
 
 ## The electromagnetic field
 
@@ -101,7 +101,7 @@ Maxwell's Equations describe how electromagnetic fields are generated and behave
 
 Electromagnetic waves consist of rapidly changing electric and magnetic fields. They are emitted any time an electrically charged particle accelerates. These waves are generally referred to as light. However, more accurately, 'light' refers to the types of electromagnetic wave that we can see. Electromagnetic waves form a spectrum based on their frequency and wavelength. For example, 'radio waves' are low-frequency / long wavelength electromagnetic waves and gamma rays are high-frequency / short wavelength waves:
 
-![](/img/em-spectrum.jpg)
+![](/_img/em-spectrum.jpg)
 
 The image below shows the propagation of an electromagnetic wave through space. We can identify the core components as follows
 
@@ -109,7 +109,7 @@ The image below shows the propagation of an electromagnetic wave through space. 
 - The magenetic field is perpendicular to the vector of the electric field $E$ which propagates upward along the $y$ axis
 - The directionality of both waves is forward along the $x$ axis
 
-![](/img/em-wave.gif)
+![](/_img/em-wave.gif)
 
 ## Using magnetism to generate electricity
 

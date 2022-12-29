@@ -31,20 +31,20 @@ Let's start with $D$: where does it occur in the assumptions? It occurs in the c
 
 So far we have:
 
-![](/img/step1.png)
+![](/_img/step1.png)
 
 Now we just need to get $D$ from the proposition at line 3. This is easy since we already have access to the consequent of the biconditional at line 1. Therefore we can apply [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md)) at line 3 to get $D$. We are now halfway there:
 
-![](/img/step2.png)
+![](/_img/step2.png)
 
 Next we need to turn our attention to deriving $L \lor A$. How can we obtain $L$ ? Well it is contained within the first conjunct of the assumption on line 2. Again, we can get this through the application of [Conjunction Elimination](/Logic/Proofs/Conjunction_Elimination.md).
 Now, how do we get $L$ from $(\lnot N \rightarrow L)$? Well, we already have the antecedent $\lnot N$ as an assumption on the first line, so we can use [Conditional Elimination](/Logic/Proofs/Conditional_Elimination.md) to derive $L$. These two steps give us:
 
-![](/img/step3.png)
+![](/_img/step3.png)
 
 Now we need to get from $L$ to $L \lor A$. This is really straightforward because by using [Disjunction Introduction](/Logic/Proofs/Disjunction_Introduction.md)) we can get from any sentence to a disjunction. Finally, having assembled all the constituent parts of the conjunction that is the conclusion, we can combine them with [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) as we had planned at the outset.
 
-![](/img/step4.png)
+![](/_img/step4.png)
 
 ### A further example
 
@@ -58,7 +58,7 @@ The requirements here could easily mislead us. We see that the target propositio
 
 Actually, if we look more closely, there is a better approach. The target proposition is contained in the first premise as the consequent to the biconditional ($\lnot L \leftrightarrow [X \land (\lnot S \lor B)]$). A better approach is therefore to seek to derive the antecedent ($\lnot L$) and then use [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md) to extract the target sentence which is the consequent.
 
-![proof.png](/img/proof.png)
+![proof.png](/_img/proof.png)
 
 ## Proving theorems
 
@@ -70,13 +70,13 @@ _Prove:_ $\vdash (U \land Y) \rightarrow [L \rightarrow (U \land L)]$
 
 Our strategy here is to identify the main connective in the proposition we want to derive (the material conditional). We then assume the antecedent and attempt to derive the consequent from it.
 
-![](/img/theoremproof.png)
+![](/_img/theoremproof.png)
 
 ## A complex theorem proof
 
 _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
 
-![](/img/dsfdsfsdfwe.png)
+![](/_img/dsfdsfsdfwe.png)
 
 ### Walkthrough
 

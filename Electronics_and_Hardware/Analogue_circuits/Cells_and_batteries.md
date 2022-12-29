@@ -24,7 +24,7 @@ Cells and batteries can be connected to each other in electrical ciruits to incr
 
 The table below summarises the relative differences:
 
-![](/img/cell-comparison.svg)
+![](/_img/cell-comparison.svg)
 
 ### Series connections
 
@@ -43,11 +43,11 @@ Thus series connections increase voltage but keep current constant.
 
 _Series battery connection:_
 
-![](/img/series-battery-diagram.svg)
+![](/_img/series-battery-diagram.svg)
 
 _Can be represented in a circuit diagram in one of the following two ways: as a series of cells or as a single battery:_
 
-![](/img/series-battcircuit.svg)
+![](/_img/series-battcircuit.svg)
 
 In the case of **series opposing**, negative terminals are connected to each other and positive terminals are connected to each other in a series. This doesn't have many applications.
 
@@ -67,11 +67,11 @@ $$
 
 _Parallel battery connection:_
 
-![](/img/parallel-battery-diagram.svg)
+![](/_img/parallel-battery-diagram.svg)
 
 _Parallel battery circuit diagram:_
 
-![](/img/circ-batt-final.svg)
+![](/_img/circ-batt-final.svg)
 
 ### Series-parrallel
 

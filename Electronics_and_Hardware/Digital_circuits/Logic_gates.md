@@ -42,7 +42,7 @@ Whereas this diagram presents the implementation of the gate: it shows the speci
 
 ### Symbol
 
-![](/img/not-gate-new.png)
+![](/_img/not-gate-new.png)
 
 ### Truth conditions
 
@@ -61,7 +61,7 @@ Whereas this diagram presents the implementation of the gate: it shows the speci
 
 ### Symbol
 
-![](/img/and-gate-new-2.png)
+![](/_img/and-gate-new-2.png)
 
 ### Truth conditions
 
@@ -82,7 +82,7 @@ Whereas this diagram presents the implementation of the gate: it shows the speci
 
 ### Symbol
 
-![](/img/nand-gate-new.png)
+![](/_img/nand-gate-new.png)
 
 ### Truth conditions
 
@@ -105,7 +105,7 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Symbol
 
-![](/img/or-gate-new.png)
+![](/_img/or-gate-new.png)
 
 ### Truth conditions
 
@@ -126,7 +126,7 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Symbol
 
-![](/img/xor-gate-new.png)
+![](/_img/xor-gate-new.png)
 
 ### Truth conditions
 
@@ -147,7 +147,7 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ### Symbol
 
-![](/img/nor-gate-new.png)
+![](/_img/nor-gate-new.png)
 
 ### Truth conditions
 

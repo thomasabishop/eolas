@@ -44,4 +44,4 @@ When we run this, we call the `save` method on the Mongoose schema. We will then
 
 This will also be reflected in Compass:
 
-![](/img/mongo-doc-added.png)
+![](/_img/mongo-doc-added.png)

@@ -20,7 +20,7 @@ A single iteration of the volatage rising and falling is a **pulse**. A complete
 
 The diagram below shows a pulse cycle of 2Hz.
 
-![](/img/clock_pulses.png)
+![](/_img/clock_pulses.png)
 
 ## Linking components to the clock
 

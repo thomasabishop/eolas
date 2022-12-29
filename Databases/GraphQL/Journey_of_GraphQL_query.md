@@ -6,4 +6,4 @@ tags: [graphql]
 
 # The journey of a GraphQL query
 
-![](/img/graphql-journey-two.svg)
+![](/_img/graphql-journey-two.svg)

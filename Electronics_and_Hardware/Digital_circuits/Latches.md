@@ -40,7 +40,7 @@ The most succinct account of a latch:
 
 _The representation of an SR Latch in a digital circuit diagram_:
 
-![](/img/sr_latch_diagram.png)
+![](/_img/sr_latch_diagram.png)
 
 ## Creating a latch circuit
 
@@ -50,7 +50,7 @@ The two gates are in a **cross-coupled configuration**. This basically means tha
 
 The circuit is created as follows:
 
-![](/img/sr_latch_logic_circuit.png)
+![](/_img/sr_latch_logic_circuit.png)
 
 Interactive version:
 

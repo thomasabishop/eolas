@@ -19,11 +19,11 @@ For example the two's complement of $0101$ (binary 5) is $1011$. There is a simp
 1. Take the unsigned number, and flip the bits. In other words: invert the values, so $0$ becomes $1$ and $1$ becomes $0$.
 2. Add one
 
-![](/img/unsigned-to-signed.png)
+![](/_img/unsigned-to-signed.png)
 
 To translate a signed number to an unsigned number you flip them back and still add one:
 
-![](/img/signed-to-unsigned.png)
+![](/_img/signed-to-unsigned.png)
 
 ### Advantages
 
@@ -66,7 +66,7 @@ Thus for a 4-bit number:
 
 Then if we add the decimal equivalents of the place value together, we get our signed number. So in the case of $-3$:
 
-![](/img/signed-conversion.png)
+![](/_img/signed-conversion.png)
 
 ## Considerations
 

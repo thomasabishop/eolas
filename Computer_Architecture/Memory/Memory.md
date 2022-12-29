@@ -43,7 +43,7 @@ The table below details the relative speeds of the different types of memory and
 
 The diagram below compares the different forms of memory within a computing device in terms of speed, monetary cost and capacity:
 
-![](/img/Memory-Hierarchy.jpg)
+![](/_img/Memory-Hierarchy.jpg)
 
 ## References
 

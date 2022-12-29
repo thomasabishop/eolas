@@ -6,10 +6,10 @@ tags:
 ---
 
 _A stack visualised vertically_
-![stack2.svg](../img/stack2.svg)
+![stack2.svg](../_img/stack2.svg)
 
 _A stack visualised horizontally_
-![stack1.svg](../img/stack1.svg)
+![stack1.svg](../_img/stack1.svg)
 
 ## A stack is a linear data structure that observes LIFO
 

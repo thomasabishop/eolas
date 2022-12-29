@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
 
 Our server is now set up:
 
-![](/img/server-listening.png)
+![](/_img/server-listening.png)
 
 > When creating our API this structure of creating handlers for specific routes will be iterated. Every endpoint will be specified with `[app].[http_request_type]` and followed by a callback.
 

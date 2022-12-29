@@ -17,4 +17,4 @@ In circuit diagrams with simple DC current, ground is taken to be the negative t
 
 The symbol for ground in circuit diagrams:
 
-<img src="/home/thomas/repos/computer_science/img/ground-symbol.png" width="300px">
+<img src="/home/thomas/repos/computer_science/_img/ground-symbol.png" width="300px">

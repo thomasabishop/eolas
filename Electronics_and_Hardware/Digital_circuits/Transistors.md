@@ -16,11 +16,11 @@ An electrical switch is inherently binary. When the switch is on, it acts like a
 
 We can combine switches in a circuit to create analogs to logic gates.
 
-![](/img/switch-and-gate.png)
+![](/_img/switch-and-gate.png)
 
 In the example above a simple AND gate is implemented with switches. Each switch is a conjunct and the current only flows if both switches are on, closing the circuit.
 
-![](/img/switch-or-gate.png)
+![](/_img/switch-or-gate.png)
 
 In the example above is a circuit implementing an OR gate. The current flows just if one of the switches are on or if both of the switches are on but not if both switches are off.
 
@@ -32,15 +32,15 @@ Thus instead of switches, modern digital circuits use transistors, a special ele
 
 There are different types of transistors but the simplest for the purposes of explanation are **bipolar junction transistors**.
 
-![](/img/transistor-diag.svg)
+![](/_img/transistor-diag.svg)
 
 A transistor works as follows: applying a small amount of current at the base allows a larger current to flow from the collector to the emitter. Relating this back to switches, applying current to the base is like turning the switch on. Removing this current is like turning the switch off.
 
 The diagrams below show a transistor being used in a circuit to create 'on' and 'off' switch states alongside a switch based circuit.
 
-![](/img/transistor-off.png)
+![](/_img/transistor-off.png)
 
-![](/img/transistor-on.png)
+![](/_img/transistor-on.png)
 
 - $V^{in}$ is the voltage that electrically controls the switch-as-transistor
 - $V^{out}$ is the voltage we want to control: it will be high when the transistor is in the 'on' state and low otherwise
@@ -60,8 +60,8 @@ With the basic element of the transistor established, we can combine transistors
 
 For example to create an [AND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#and-gate) gate we would have two voltage inputs going into two transistors that are connected in sequence. The two transistors create a continuous line going from the collector of one to the emitter of the other. If either voltage input is low then the voltage of the combined line is low (equivalent to the circuit being broken) and there is no current flowing.
 
-![](/img/and-transistor.png)
+![](/_img/and-transistor.png)
 
 Below, an [OR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate) has been constructed with transistors. If a voltage is applied to the base of either transistor, the current reaches the V-out terminal.
 
-![](/img/or-transistor.svg)
+![](/_img/or-transistor.svg)

@@ -8,7 +8,7 @@ We know that when we construct a [derivation](/Logic/Proofs/Formal_proofs_in_pro
 
 _Demonstration_
 
-![](/img/proofs-drawio-Page-5.drawio_2.png)
+![](/_img/proofs-drawio-Page-5.drawio_2.png)
 
 We see in this example that there is no starting set and thus no primary assumptions. Instead we start with nothing other than the proposition we wish to derive. The proposition is effectively derived from itself. In these scenarios we say that we are constructing a derivation from an **empty set**.
 

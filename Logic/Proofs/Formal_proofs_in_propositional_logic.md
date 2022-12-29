@@ -35,11 +35,11 @@ This is known as _Fitch notation_
 
 _Schematically_:
 
-![](/img/proofs-drawio-Page-5.drawio.png)
+![](/_img/proofs-drawio-Page-5.drawio.png)
 
 _Applied example_:
 
-![](/img/proofs-drawio-Page-6.drawio.png)
+![](/_img/proofs-drawio-Page-6.drawio.png)
 
 ## Sub-proofs
 

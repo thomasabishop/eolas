@@ -8,7 +8,7 @@ tags: [relational-database]
 
 Tables, fields and records are the basic building blocks of databases
 
-![](/img/FL-Databases-1.5_terminology.gif)
+![](/_img/FL-Databases-1.5_terminology.gif)
 
 ## Table
 

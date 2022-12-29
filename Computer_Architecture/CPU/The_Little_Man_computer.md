@@ -10,7 +10,7 @@ tags: [CPU, processors]
 
 The [Little Man Computer](https://peterhigginson.co.uk/lmc/) is a simplified computer that works on Von Neuman principles. It has all the CPU components we have detailed above. It is programmed in machine code but for simplicity it uses the denary rather than the binary number system.
 
-![LMC_5.gif](/img/LMC_5.gif)
+![LMC_5.gif](/_img/LMC_5.gif)
 
 On the left is the instruction set. Each number constitutes and execution routine and the `xx` stand for the address in RAM that the execution will work on.
 

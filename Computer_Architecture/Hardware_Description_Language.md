@@ -23,7 +23,7 @@ We won't use an actual HDL language, instead we will use a simplified toy langua
 
 We will create an HDL program for an XOR gate that is implemented through the following arrangement of NOT, AND, and OR gates:
 
-![](/img/xor-hdl.png)
+![](/_img/xor-hdl.png)
 
 ### HDL file (`Xor.hdl`):
 
