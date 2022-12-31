@@ -17,7 +17,7 @@ There are several simulation options:
 - script-based (where we load a test script into the simulator along with the HDL file
 - comparative (running the HDL program against our intended output specified in the `.cmp` file)
 
-The use-cases for each mode are based on the complexity of the chip you are evaluating
+The use-cases for each mode are based on the complexity of the chip you are evaluating. For a small chip, interactive and script-based testing would be sufficient but for much larger components like an ALU a comparative approach would be more manageable and efficient.
 
 ## Interactive
 
@@ -32,3 +32,16 @@ This time we have clicked the script icon to load `Xor.tst`. This loads the test
 When this is run it automatically generates an output file in the source directory at `Xor.out`. This can be viewed within the simulator via the 'View' drop down.
 
 ![](/_img/hd-sim-test.png)
+
+## Comparison-based
+
+With a comparison-based approach to chip testing we run a comparison against the `.out` file that the simulator generates when running the HDL program against a `.cmp` comparison file that we provide. Both are simply truth-tables. For XOR if the program matched the comparison specification both `Xor.out` and `Xor.cmp` would look like the following:
+
+```
+a | b | out
+-----------
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0
+```
