@@ -26,12 +26,7 @@ The diagram below shows a pulse cycle of 2Hz.
 
 - All components that need to be synchronised are connected to the clock
 - State changes in the component occur only when a clock pulse occurs
-- Clock-driven components will typically trigger their state c| J 	| K 	| Clock 	| Q state                   	| Operation 	|
-|---	|---	|-------	|---------------------------	|-----------	|
-| 0 	| 0 	| Pulse 	| Maintain previous value   	| Hold      	|
-| 0 	| 1 	| Pulse 	| 0                         	| Reset     	|
-| 1 	| 0 	| Pulse 	| 1                         	| Set       	|
-| 1 	| 1 	| Pulse 	| Inverse of previous value 	| Toggle    	|hanges on either the rising edge or the falling edge of the pulse.
+- | Clock-driven components will typically trigger their state changes on either the rising edge or the falling edge of the pulse. |
 - Components that trigger state changes on the rising pulse are **positive edge-triggered**
 - Components that trigger state changes on the falling pulse are **negative edge-triggered**
 
