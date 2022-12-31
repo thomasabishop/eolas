@@ -45,3 +45,21 @@ a | b | out
 1 | 0 | 1
 1 | 1 | 0
 ```
+
+You don't have to do anything to apply the comparison since the compare file will already be loaded as part of the test file's set up:
+
+```vhdl
+load Xor.hdl
+output file Xor.out
+compare-to Xor.cmp
+output-list a, b, out;
+set ...
+```
+
+## Relation to _Nand to Tetris_ projects
+
+You are provided with:
+
+- An `.hdl` stub file that will specify the interface but leave the implementation up to you
+- A completed `.tst` file that you will load as a script to run alongside your program
+- A completed `.cmp` file that is invoked by the test file and which will run alongside it, throwing errors if there is a variance in prescribed output.
