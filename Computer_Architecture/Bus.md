@@ -15,6 +15,8 @@ Note that the use of the word "bus" varies somewhat in points of emphasis. A bus
 - The logical communication channel that is established over those wires
 - The collection of bits themselves that travel along the wires conceived as a single entity
 
+This last definition is closes to the Latin origin of the term: _omnibus_ which means _for many_.
+
 ## Main buses
 
 | Bus type      | Description                                                                                                                                                                                                                                      |
@@ -30,7 +32,7 @@ Note that the use of the word "bus" varies somewhat in points of emphasis. A bus
 
 ### Parallel and serial transmission types
 
-There is a distinction between buses that use serial and buses that use parallel transmission. They are distinguished by the way in which data in the form of bits is transferred from one point to another, along the bus.
+There is a distinction between buses that use **serial** and buses that use **parallel transmission**. They are distinguished by the way in which the bits are transferred from one point to another, along the bus.
 
 Serial Transmission is the type of transmission in which a single communication link is used to transfer the data from an end to another. On other hand Parallel Transmission is the transmission in which multiple parallel links are used that transmit each bit of data simultaneously.
 
