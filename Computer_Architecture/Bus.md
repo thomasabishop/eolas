@@ -13,9 +13,7 @@ Note that the use of the word "bus" varies somewhat in points of emphasis. A bus
 
 - The physical wires that make up the bus
 - The logical communication channel that is established over those wires
-- The collection of bits themselves that travel along the wires conceived as a single entity
-
-This last definition is closes to the Latin origin of the term: _omnibus_ which means _for many_.
+- TheBany\_.
 
 ## Main buses
 
