@@ -10,28 +10,18 @@ tags: [binary, memory, clock, electromagnetism]
 
 In the examples of digital circuits so far (i.e [adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) and [latches](/Electronics_and_Hardware/Digital_circuits/Latches.md)) everything happens in a single instant or over several repeated instances. This is because of how simple the circuits are. In the case of latches only a single bit is updated. And even with rippled adders they are just a series of 1-bit updaters in a chain.
 
-With more complex circuits that use multiple memory devices which store a series of bits at once, we need a way to ensure that the bits are set at the same time.
-
-We synchronize multiple circuit components with a **clock signal**.
-
-A clock signal alternates its voltage level from high to low on a regular cadence where it is high half the time and low the rest of the time. This gives the wave form a squared appearence.
-
+With more complex circuits that use multiple memory devices which store a series of bits at once, we need a way to ensure that the bits are set at theB
 A single iteration of the volatage rising and falling is a **pulse**. A complete oscillation from low to high and back to low is a **cycle**. As with all [electromagnetic](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md) signals we measure the frequency of the wave in Hertz: cylcles per second. We also further distinguish the rising and falling edge of a pulse. Rising represents the signal passing from ground to its maximum voltage and falling is the reverse (the electrons moving from the voltage source to ground).
 
 The diagram below shows a pulse cycle of 2Hz.
 
-![](/img/clock_pulses.png)
+![](/_img/clock_pulses.png)
 
 ## Linking components to the clock
 
 - All components that need to be synchronised are connected to the clock
 - State changes in the component occur only when a clock pulse occurs
-- Clock-driven components will typically trigger their state c| J 	| K 	| Clock 	| Q state                   	| Operation 	|
-|---	|---	|-------	|---------------------------	|-----------	|
-| 0 	| 0 	| Pulse 	| Maintain previous value   	| Hold      	|
-| 0 	| 1 	| Pulse 	| 0                         	| Reset     	|
-| 1 	| 0 	| Pulse 	| 1                         	| Set       	|
-| 1 	| 1 	| Pulse 	| Inverse of previous value 	| Toggle    	|hanges on either the rising edge or the falling edge of the pulse.
+- | Clock-driven components will typically trigger their state changes on either the rising edge or the falling edge of the pulse. |
 - Components that trigger state changes on the rising pulse are **positive edge-triggered**
 - Components that trigger state changes on the falling pulse are **negative edge-triggered**
 

@@ -28,7 +28,7 @@ We can pinpoint specific dependencies in the `package.json`, e.g. `npm view [pac
 
 See whether your dependency version is out of date use `npm outdated`. This gives us a table, for example:
 
-![Pasted image 20220411082627.png](/img/Pasted_image_20220411082627.png)
+![Pasted image 20220411082627.png](/_img/Pasted_image_20220411082627.png)
 
 - _Latest_ tells us the latest release available from the developers
 - _Wanted_ tells us the version that our `package.json` rules target. To take the first dependency as an example. We must have set our SemVer syntax to `^0.4.x` since it is telling us that there is a minor release that is more recent than the one we have installed but is not advising that we update to the latest major release.

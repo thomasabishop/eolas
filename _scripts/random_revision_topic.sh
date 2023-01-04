@@ -3,7 +3,7 @@
 # This script returns a random topic for me to revise
 
 # Choose source directories...
-DIRS_TO_PARSE="../Computer_Architecture ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell "
+DIRS_TO_PARSE="../Computer_Architecture ../Databases ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell ../Logic"
 
 # Return array of all files belonging to source dirs...
 for ele in $DIRS_TO_PARSE; do

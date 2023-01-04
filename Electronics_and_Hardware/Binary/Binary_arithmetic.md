@@ -33,7 +33,7 @@ Let's break down each column from the right:
 
 ### More examples to practise with
 
-![](../img/../../img/Pasted_image_20220319174839.png)
+![](../_img/../../_img/Pasted_image_20220319174839.png)
 
 ## Binary multiplication
 
@@ -64,10 +64,10 @@ When we multiply binary numbers in columns we multiply each of the top numbers b
 
 An important difference is that when we move along the bottom row from the $2^0$, to $2^2$, to $2^4$ etc we must put a zero in the preceding column as a place holder. The sequence is shown below:
 
-![](/img/multiplication_01.gif)
+![](/_img/multiplication_01.gif)
 
-![](/img/multiplication_02.gif)
+![](/_img/multiplication_02.gif)
 
-![](/img/multiplication_03.gif)
+![](/_img/multiplication_03.gif)
 
-![](/img/multiplication_04.gif)
+![](/_img/multiplication_04.gif)

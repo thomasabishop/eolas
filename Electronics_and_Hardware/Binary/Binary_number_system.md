@@ -87,11 +87,11 @@ If we have before us the binary place values ($1, 2, 4, 8$). We know that 6 is e
 
 More clearly:
 
-![](../../img/Pasted_image_20220319135558.png)
+![](../../_img/Pasted_image_20220319135558.png)
 
 And for comparison:
 
-![](../../img/Pasted_image_20220319135805.png)
+![](../../_img/Pasted_image_20220319135805.png)
 
 Or we can express the binary as:
 
@@ -105,4 +105,4 @@ $$ 2^1 + 2^2 $$
 
 Let's convert 23 into binary:
 
-![](../../img/Pasted_image_20220319135823.png)
+![](../../_img/Pasted_image_20220319135823.png)

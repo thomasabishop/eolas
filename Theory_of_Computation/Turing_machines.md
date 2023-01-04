@@ -10,7 +10,7 @@ tags:
 
 A Turing Machine consists of an infinitely long tape, that has been divided up into cells. Each cell can contain either a 1, a 0 or an empty space. Above one cell of the tape is a head, which can either move left or right, and can read the symbols written in the cells. The head is also capable of erasing symbols and writing new symbols into the cells.
 
-![Turing_machines_01.gif](../img/Turing_machines_01.gif)
+![Turing_machines_01.gif](../_img/Turing_machines_01.gif)
 The direction that the head moves, which values it erases, and which values it writes in, are dependent on a set of instructions provided to the machine.0
 
 Different sets of instructions can be divided into **states.** States are like sub-routines and can themselves feature as part of instructions.

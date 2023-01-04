@@ -68,7 +68,7 @@ This is still a bit long-winded however particularly when finding the factors of
 A better method is to utilise [prime factorization](Prime%20factorization.md) combined with the canceling technique.
 
 First we find the prime factors of both the numerator and denominator:
-![drawio-Page-7.drawio.png](../../img/drawio-Page-7.drawio.png)
+![drawio-Page-7.drawio.png](../../_img/drawio-Page-7.drawio.png)
 
 This gives us:
 
@@ -133,7 +133,7 @@ _Reduce the following fraction to its lowest terms: $$\frac{14y^5}{-35y^3}$$_
 
 - Apply [Prime factorization](Prime%20factorization.md):
 
-  ![draw.io-Page-8.drawio.png](../../img/draw.io-Page-8.drawio.png)
+  ![draw.io-Page-8.drawio.png](../../_img/draw.io-Page-8.drawio.png)
 
 - Cancel the coefficients and variable parts
 
@@ -148,7 +148,7 @@ $$\frac{- 12xy^2}{ - 18xy^2}$$_
 
 - Apply [Prime factorization](Prime%20factorization.md):
 
-![draw.io-Page-8.drawio 1.png](../../img/draw.io-Page-8.drawio%201.png)
+![draw.io-Page-8.drawio 1.png](../../_img/draw.io-Page-8.drawio%201.png)
 
 - Cancel the coefficients and variable parts
 

@@ -13,7 +13,7 @@ Virtual memory is implemented at the level of the operating system and is an abs
 
 When virtual memory is used, the CPU handles physical memory allocation and presents this to the kernel as an idealised representation. This means that the kernel and, by extension, programs and processes do not need to think about accessing the real memory blocks. This reduces complexity because often memory will be allocated in places that are non-contiguous with similar running processes or be located in the cache or swap memory on the disk.
 
-![](/img/virtual-memory-diagram.jpg)
+![](/_img/virtual-memory-diagram.jpg)
 
 It would require considerable processing work for the kernel to be tracing these disparate memory sources at every instance. By working on an idealised (contiguous, unlimited) memory set the kernel can focus on task management and CPU sequencing as its primary task.
 

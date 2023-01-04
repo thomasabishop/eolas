@@ -22,7 +22,7 @@ When the terminals are connected to each other via a conductor (e.g. copper wire
 
 _The diagram below illustrates the flow of current where the circles are electrons knocking into each other and passing current:_
 
-![](/img/charge-cylinder.svg)
+![](/_img/charge-cylinder.svg)
 
 > Electrons travel very slowly through a conductor. This is in contrast to their intrinsic motion which of course equal to the speed of light (186, 000 miles per second).
 

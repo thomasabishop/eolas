@@ -42,7 +42,7 @@ This is the heart of the CPU; all the other components on the CPU chip are appen
 
 Below is a schematic of a series of logical circuits within the CPU core:
 
-![74181aluschematic.png](/img/74181aluschematic.png)
+![74181aluschematic.png](/_img/74181aluschematic.png)
 
 ### Processor cores
 
@@ -74,6 +74,6 @@ Each "cycle" is the execution of a process that commences once the [kernel](/Ope
 
 Hertz was the scientist who detected electromagentic waves and more broadly in science, we use Hertz to measure the frequency of electromatic wave cycles in a signal.
 
-![](/img/hertz_wave_freq.gif)
+![](/_img/hertz_wave_freq.gif)
 
 As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles per time unit, the greater the Hertz. We see the Hz increase as the number of cycles increases over time.

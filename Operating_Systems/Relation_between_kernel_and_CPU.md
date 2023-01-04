@@ -14,7 +14,7 @@ It can be confusing to understand how the kernel and CPU interact with one anoth
 
 However as a process, the kernel is the 'first amongst equals' given that it is the core embodiment of the operating system. At boot time, the kernel is injected into memory and at this point the CPU _looks to this address_ in memory in order to source its first instruction. That's how the kernel gets going. It is the first instruction that the CPU fetches and this is what allows the kernel to play its mediatory role. However most of the fetch, decode, execute cycles of the CPU take place independently of the kernel.
 
-![](/img/kernel-cpu-interaction.svg)
+![](/_img/kernel-cpu-interaction.svg)
 
 > Fetch decode and execute refer to processor pipeline stages. They occur automatically as part of normal processor operation, the kernel doesn’t generally have any direct control over how that happens...When the boot loader loads the kernel, it points the CPU’s program counter to an entry point in the kernel’s code. From there, the CPU will continue executing (fetching decoding and executing) kernel code until you point the program counter to a userspace program, where it will continue executing userspace code until an interrupt points the program counter back into kernel code. That’s basically what the CPU will be doing from boot up to shut down; switching between executing kernel code and executing userspace code ([Reddit](https://www.reddit.com/r/osdev/comments/wdskj5/how_does_kernel_decide_if_use_cpu_or_gpu_after/))
 

@@ -50,7 +50,7 @@ The half adder receives two bits (A and B) which are to be added together. It ou
 
 The diagram below shows the circuit representation of a half-adder and an example calculation. This calculation matches the ones column of the earlier binary addition example: $0011 + 0010$.
 
-![](/img/half-adder-new.png)
+![](/_img/half-adder-new.png)
 
 ### Implementation with logic gates
 
@@ -88,7 +88,7 @@ And the carry-out bit replicates the truth conditions of [AND](/Electronics_and_
 
 It is therefore possible to implement a half-adder with just these two logic gates:
 
-![](/img/half-adder-gates-three.png)
+![](/_img/half-adder-gates-three.png)
 
 The digital circuit above has the same inputs and outputs as the half adder diagram above.
 
@@ -104,7 +104,7 @@ The full adder takes in three inputs and has two outputs. It is identical to the
 | ---------------------------- | ----------------------------- | ------------------------ | ---------------------- | ---------------------------- |
 | The first number to be added | The second number to be added | The incoming carried bit | The sum bit (A+B+C_in) | The carry-out bit (A+B+C_in) |
 
-![](/img/full-adder-new.png)
+![](/_img/full-adder-new.png)
 
 The diagram above is equivalent to the calculation taking place in the fours column. It has received a carry from the twos column ($1 + 1$ results in $1$ as a carry) and then adds this together with its own inputs ($0$ and $0$).
 

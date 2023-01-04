@@ -1,16 +1,18 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
 
-We say of certain sentences that they are logically true or logically false.
+# Logical truth and falsity
+
+We say of certain propositions that they are logically true or logically false.
 
 ## Logical falsity
 
 ### Informal definition
 
-A sentence is logically false if and only if **it is not possible for the sentence to be true**. The sentence itself cannot be consistently asserted.
+A proposition is logically false if and only if **it is not possible for the proposition to be true**. The proposition itself cannot be consistently asserted.
 
 **Demonstration**
 
@@ -19,9 +21,7 @@ There is a country that is not a country.
 Apples are fruits and apples are not fruits
 ```
 
-Neither sentence can be true because the truth of the first clause is contradicted by the second. By the principle of [consistency](Consistency.md), it is not possible for both clauses to be true at once therefore the sentence, overall has the truth value of falsity
-
-The examples above are simple sentences but logical falsity also applies to compound sentences and it is actually easier to see the logical principle at work with compound sentences since once simple sentence of the compound contradicts the other such that the overall sentence cannot be consistently asserted:
+Neither proposition can be true because the truth of the first clause is contradicted by the second. By the principle of [consistency](/Logic/General_concepts/Logical_consistency.md), it is not possible for both clauses to be true at once therefore the proposition, overall has the truth value of false.
 
 ```
 It is raining and it is not raining.
@@ -29,28 +29,24 @@ It is raining and it is not raining.
 
 ### Formal definition
 
-> A sentence P is truth-functionally false if and only if P is false on every truth-value assignment
+> A proposition P is truth-functionally false if and only if P is false on every truth-value assignment
 
 ### Formal expression
 
-```
-P & ~ P
-```
+$$ P \land \lnot P $$
 
 ### Truth-table
 
-```
-    Can
-P				P	&	~	P
-T					F
-F					F
-```
+| $P$ | $P \land \lnot P$ |
+| --- | ----------------- |
+| T   | F                 |
+| T   | F                 |
 
 ## Logical truth
 
 ### Informal definition
 
-A sentence is logically true if and only if it is not possible for the sentence to be false. The sentence itself cannot be [consistently](Consistency.md) denied.
+A proposition is logically true if and only if it is not possible for the proposition to be false. The proposition itself cannot be consistently denied.
 
 **Demonstration**
 
@@ -59,35 +55,32 @@ A rose is a rose.
 Today is Tuesday unless today is not Tuesday.
 ```
 
-Regardless of any facts obtaining in the world, these sentences cannot be false.
+Regardless of any facts obtaining in the world, these propositions cannot be false.should be avoided in arguments, they 'prove' everything whi
 
-As with logically false sentences, logical truth can also apply to compound sentences:
+As with logically false propositions, logical truth can also apply to compound propositions:
 
 ```
-It is Monday and Monday is a day of the week.
+A rose is a rose and a shoe is a shoe
 ```
 
 ### Formal definition
 
-> A sentence P is truth-functionally true if and only if P is true on every truth-value assignment
+> A proposition P is truth-functionally true if and only if P is true on every truth-value assignment
 
-```
-P v ~P
-```
+$$ P \lor \lnot P$$
 
 ### Truth-table
 
-```
-P				P	∨	¬	P
-T					T
-F					T
-```
+| $P$ | $P \lor \lnot P$ |
+| --- | ---------------- |
+| T   | T                |
+| F   | T                |
 
 ### Consequences
 
-The existence of logically false and logically true sentences affects the validity and soundness of arguments in which they are used. These are technicalities that have philosophically interesting consequences.
+The existence of logically false and logically true propositions affects the validity and soundness of arguments in which they are used. These are technicalities that have philosophically interesting consequences.
 
-- If an argument contains premises which are logically false than this argument will perforce be valid. This is because one cannot consistently assert the premises and deny the conclusion which is the definition of validity. However the _reason_ why one cannot consistently assert the premises and deny the conclusions is because one cannot consistently assert the premises - they conflict with each other. Furthermore as the argument contains false premises, it cannot be sound.
+- If an argument contains premises which are logically false than this argument will perforce be valid. This is because one cannot consistently assert the premises and deny the conclusion which is the definition of [validity](/Logic/General_concepts/Validity_and_entailment.md). However the _reason_ why one cannot consistently assert the premises and deny the conclusions is because one cannot consistently assert the premises - they conflict with each other. Furthermore as the argument contains false premises, it cannot be sound.
 
   ```
   (P1) Russia is a country.

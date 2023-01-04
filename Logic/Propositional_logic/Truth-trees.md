@@ -64,7 +64,7 @@ Using the definitions above, we can now define truth-functional consistency and 
 
 The following is a truth tree for the set ${P \lor Q, \sim P }$:
 
-![basic-open-tree 1.svg](../img/basic-open-tree%201.svg)
+![basic-open-tree 1.svg](../_img/basic-open-tree%201.svg)
 
 ### Interpretation
 
@@ -90,7 +90,7 @@ Invoking the truth-table highlights the differences between the two techniques. 
 
 The following is a truth tree for the set ${A & \sim B, C, \sim A \lor \sim B }$.
 
-![basic-closed-tree 1.svg](../img/basic-closed-tree%201.svg)
+![basic-closed-tree 1.svg](../_img/basic-closed-tree%201.svg)
 
 ### Interpretation
 
@@ -119,37 +119,37 @@ So far we have encountered the decomposition rules for conjunction (`&D`) and di
 
 ### Negated negation decomposition: `~~D`
 
-![negated-negation-decomposition-rule 2.svg](../img/negated-negation-decomposition-rule%202.svg)
+![negated-negation-decomposition-rule 2.svg](../_img/negated-negation-decomposition-rule%202.svg)
 
 Truth passes only if $P$ is true
 
 ### Conjunction decomposition: `&D`
 
-![conjunction-decomposition-rule.svg](../img/conjunction-decomposition-rule.svg)
+![conjunction-decomposition-rule.svg](../_img/conjunction-decomposition-rule.svg)
 
 Truth passes only $P$ and $Q$ are both true.
 
 ### Negated Conjunction decomposition: `~&D`
 
-![negated-conjunction-decomposition-rule.svg](../img/negated-conjunction-decomposition-rule.svg)
+![negated-conjunction-decomposition-rule.svg](../_img/negated-conjunction-decomposition-rule.svg)
 
 Truth passes if either $\sim P$ or $\sim Q$ is true. This rule is a consequence of the equivalence between $\sim (P & Q)$ and $\sim P \lor \sim Q$ , the first of DeMorgan’s Laws.
 
 ### Disjunction decomposition: `vD`
 
-![disjunction-decomposition-rule.svg](../img/disjunction-decomposition-rule.svg)
+![disjunction-decomposition-rule.svg](../_img/disjunction-decomposition-rule.svg)
 
 Truth passes if either $P$or $Q$ are true.
 
 ### Negated Disjunction decomposition: `~vD`
 
-![negated-disjunction-decomposition-rule.svg](../img/negated-disjunction-decomposition-rule.svg)
+![negated-disjunction-decomposition-rule.svg](../_img/negated-disjunction-decomposition-rule.svg)
 
 Truth passes if both $P$ and $Q$ are false. This rule is a consequence of the equivalence between $\sim (P \lor Q)$ and $\sim P & \sim Q$, the second of DeMorgan’s Laws.
 
 ### Conditional decomposition: `⊃D`
 
-![conditional-decomposition-rule.svg](../img/conditional-decomposition-rule.svg)
+![conditional-decomposition-rule.svg](../_img/conditional-decomposition-rule.svg)
 
 Truth passes if either $\sim P$ or $Q$ are true. This rule is a consequence of the equivalence between $P \supset Q$ and $\sim P \lor Q$ therefore this branch has the shape of a disjunction with $\sim P$ , $Q$ as its disjuncts.
 
@@ -157,17 +157,17 @@ Truth passes if either $\sim P$ or $Q$ are true. This rule is a consequence of t
 
 Truth passes if both $P$ and $\sim Q$ are true. This is a consequence of the equivalence between $\sim (P \supset Q)$ and $P & \sim Q$.
 
-![negated-conditional-decomposition-rule.svg](../img/negated-conditional-decomposition-rule.svg)
+![negated-conditional-decomposition-rule.svg](../_img/negated-conditional-decomposition-rule.svg)
 
 ### Biconditional decomposition: `≡D`
 
-![biconditional-decomposition-rule.drawio(1).svg](../img/biconditional-decomposition-rule.drawio%281%29.svg)
+![biconditional-decomposition-rule.drawio(1).svg](../_img/biconditional-decomposition-rule.drawio%281%29.svg)
 
 Truth passes if either $P$ and $Q$ are true or $\sim P & \sim Q$ are true. This is an interesting rule because it combines the disjunction and conjunction tree shapes.
 
 ### Negated biconditional decomposition: `~≡D`
 
-![negated-biconditional-decomposition-rule.drawio.svg](../img/negated-biconditional-decomposition-rule.drawio.svg)
+![negated-biconditional-decomposition-rule.drawio.svg](../_img/negated-biconditional-decomposition-rule.drawio.svg)
 
 Truth passes if either $P$ and $\sim Q$ is true or if $\sim P$ and $Q$ is true.
 
@@ -181,7 +181,7 @@ With truth-trees regardless of which order you decompose the set members, the co
 
 Here are some examples of these rules applied:
 
-![complex-tree.svg](../img/complex-tree.svg)
+![complex-tree.svg](../_img/complex-tree.svg)
 
 Observe that here we don’t bother to decompose the sentence on line 1. This is because, having decomposed the sentences on lines 2 and 3 we have arrived at a closed tree. It is therefore unnecessary to go any further for if two sentences in the set are inconsistent with each other, adding another sentence is not going to change the overall assignment of inconsistency.
 
@@ -199,7 +199,7 @@ When we wish to assess [logical falsity](Logical%20truth%20and%20falsity.md#logi
 
 A logically false sentence cannot be true on any assignment. This is the same thing as an inconsistent set. Thus it will be represented in a truth tree as inconsistency which is disclosed via a closed tree.
 
-![logical-falsity-tree.svg](../img/logical-falsity-tree.svg)
+![logical-falsity-tree.svg](../_img/logical-falsity-tree.svg)
 
 ### Logical truth
 
@@ -221,7 +221,7 @@ Recall that $P$ and $Q$ are [logically equivalent](Logical%20equivalence.md) jus
 
 > Sentences $P$ and $Q$ are truth-functionally equivalent if and only if the set $\sim (P \equiv Q)$ has a closed tree
 
-![logical-equivalence-tree.svg](../img/logical-equivalence-tree.svg)
+![logical-equivalence-tree.svg](../_img/logical-equivalence-tree.svg)
 
 ### Logical entailment and validity
 

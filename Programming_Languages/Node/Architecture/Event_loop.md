@@ -21,7 +21,7 @@ Many backend frameworks are synchronous but multithreaded. This means that a thr
 
 If there was only one thread, this would be inefficient and unworkable. Therefore the framework will be multi-threaded: multiple request-response cycles can be executed at once by different threads.
 
-![sync-thread.svg](/img/sync-thread.svg)
+![sync-thread.svg](/_img/sync-thread.svg)
 
 To accomodate the ability to increase the scale of synchronous applications you need to be able to spawn more threads commensurate to increased demand. This increases the resource consumption of the framework (more cores, more memory etc). Moreover it is possible to reach a point where all threads are active and no more can be spawned. In this case there will simply be delays in the return of data.
 
@@ -29,7 +29,7 @@ To accomodate the ability to increase the scale of synchronous applications you 
 
 In contrast, Node only has a single thread but it works asynchronously, not synchronously. Thus it has a **single-threaded asynchronous architecture**. This means whilst there is only a single thread it can juggle responses by dispatching them asynchronously. When a request is made it sends it off and continues with its execution and handling new requests. Once these resolve, the data is returned to the main thread.
 
-![async.svg](/img/async.svg)
+![async.svg](/_img/async.svg)
 
 ## The Event Loop
 
@@ -45,7 +45,7 @@ A running Node application is a single running process. Like everything that hap
 
 The Event Loop comprises six phases. The Event Loop starts at the moment Node begins to execute your `index.js` file or any other application entry point. These six phases create one cycle, or loop, equal to one **tick**. A Node.js process exits when there is no more pending work in the Event Loop, or when `process.exit()` is called manually. A program only runs for as long as there are tasks queued in the Event Loop, or present on the [call stack](/Software_Engineering/Call_stack.md).
 
-![](/img/node-event-loop.svg)
+![](/_img/node-event-loop.svg)
 
 The phases are as follows:
 

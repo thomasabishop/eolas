@@ -103,6 +103,6 @@ $$
   = 15
 $$
 
-![](/img/hexadecimal-to-bytes.svg)
+![](/_img/hexadecimal-to-bytes.svg)
 
 > Every four bits (or half byte) in binary corresponds to one symbol in hexadecimal. Therefore **a byte can be easily represented with two hexadecimal symbols, a 16-bit number can be represented with four hex symbols, a 32-bit number can represented with eight hex symbols and so on.**

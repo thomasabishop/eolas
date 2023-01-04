@@ -1,10 +1,10 @@
 ---
 categories:
-  - Mathematics
-tags: [logic]
+  - Logic
+tags: [propositional-logic]
 ---
 
-## Object and metalanguages
+# Object and metalanguages
 
 When we talk about a language we call that language the **object language**. A **metalanguage** is a language used to describe some object language.
 
@@ -28,4 +28,4 @@ When we create an expression in a language we are said to _use_ that language. W
 
 A metalinguistic variable (metavariable for short) is an expression in the metalanguage that is used to talk generally about expressions of the object language. The convention in these notes will be to embolden single letters when these letters are used as metavariables.
 
-For example, instead of saying _'P & Q' is an expression comprising two atomic sentences and a conjunction_ we might say **\*P** is an expression comprising two atomic sentences and a conjunction.\* In this instance **P** is a metavariable in the metalanguage mentioning the expression P & Q in the object language
+For example, instead of saying _'P & Q' is an expression comprising two atomic sentences and a conjunction_ we might say **\*P** is an expression comprising two atomic sentences and a conjunction. In this instance **P** is a metavariable in the metalanguage mentioning the expression P & Q in the object language

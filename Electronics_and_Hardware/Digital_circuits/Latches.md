@@ -27,12 +27,9 @@ The SR Latch goes through the following state changes:
 
 This is represented more clearly in the table below:
 
-| S   | R   | Q                       | Operation     |
-| --- | --- | ----------------------- | ------------- |
-| 0   | 0   | Maintain previous value | Hold          |
-| 0   | 1   | 0                       | Reset         |
-| 1   | 0   | 1                       | Set           |
-| 1   | 1   | X                       | Invalid, null |
+| S | R | Q | Operation |
+| --- | --- | ----------------------- | ---------<iframe src="https://circuitverse.org/simulator/embed/multiplexor-5406f205-8ac7-4c5b-a1ba-861c5face8d3?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe> |
+| 1 | 1 | X | Invalid, null |
 
 The most succinct account of a latch:
 
@@ -40,7 +37,7 @@ The most succinct account of a latch:
 
 _The representation of an SR Latch in a digital circuit diagram_:
 
-![](/img/sr_latch_diagram.png)
+![](/_img/sr_latch_diagram.png)
 
 ## Creating a latch circuit
 
@@ -50,7 +47,7 @@ The two gates are in a **cross-coupled configuration**. This basically means tha
 
 The circuit is created as follows:
 
-![](/img/sr_latch_logic_circuit.png)
+![](/_img/sr_latch_logic_circuit.png)
 
 Interactive version:
 

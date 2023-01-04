@@ -16,7 +16,7 @@ We can start with a limited palette: greyscale. Here there is black and white an
 
 In decimal, 0 is equal to black (zero light intensity) and 255 is equal to white (full light intensity). Some examples of this (including binary and hex representations are below):
 
-![](/img/greyscale-encoding.svg)
+![](/_img/greyscale-encoding.svg)
 
 ### Colour encoding
 
@@ -28,12 +28,12 @@ Some examples below
 
 Red is represented in RGB with all 8 red bits to set to 1 and the remaining 16 bits for the other two colours set to 0.
 
-![](/img/red-encoding.svg)
+![](/_img/red-encoding.svg)
 
 #### Yellow
 
 Yellow is represented in RGB with both red and blue set to 1 and the remaining 8 green bits set to ):
 
-![](/img/yellow-encoding.svg)
+![](/_img/yellow-encoding.svg)
 
 ## Binary encoding of images

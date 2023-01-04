@@ -11,15 +11,15 @@ tags:
 
 Suppose you have the following shape:
 
-![draw.io-Page-9.drawio 1.png](../../img/draw.io-Page-9.drawio.png)
+![draw.io-Page-9.drawio 1.png](../../_img/draw.io-Page-9.drawio.png)
 
 One part is shaded. This represents one-eighth of the original shape.
 
-![one-eighth-a.png](../../img/one-eighth-a.png)
+![one-eighth-a.png](../../_img/one-eighth-a.png)
 
 Now imagine there are four instances of the shape and one-eighth remains shaded. How man one-eighths are there in four?
 
-![draw.io-Page-9.drawio 2.png](../../img/draw.io-Page-9.drawio.png)
+![draw.io-Page-9.drawio 2.png](../../_img/draw.io-Page-9.drawio.png)
 
 The shaded proportion represents $\frac{1}{8}$ of the shape. Imagine four of these shapes, how many eighths are there?
 

@@ -76,7 +76,7 @@ ON model.model_id = sales.model_id; -- Specify the match criteria
 
 We can represent the logical relationship that obtains between the `sales` and `model` tables as follows:
 
-![](/img/sql-inner-join.png)
+![](/_img/sql-inner-join.png)
 
 
 ## Outer joins
@@ -118,7 +118,7 @@ In the context of our dataset, in the _sales_ database we have a row where there
 
 The logical relationship sustained between `sales` and `model` by a left inner join is represented in the following diagram:
 
-![](/img/sql-left-outer-join.png)
+![](/_img/sql-left-outer-join.png)
 
 #### Implementation
 
@@ -153,7 +153,7 @@ In the context of our dataset, in the _model_ database we have a row where there
 
 The logical relationship sustained between `sales` and `model` by a right inner join is represented in the following diagram:
 
-![](/img/sql-right-outer-join.png)
+![](/_img/sql-right-outer-join.png)
 
 #### Implementation
 
@@ -191,7 +191,7 @@ In the context of our dataset it would result in the following table being gener
 
 Represented by the following diagram:
 
-![](/img/sql-full-outer-join.png)
+![](/_img/sql-full-outer-join.png)
 
 
 #### Implementation
