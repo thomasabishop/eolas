@@ -5,7 +5,7 @@ categories:
 tags: [logic-gates, binary, nand-to-tetris]
 ---
 
-# Multiplexors (MUX)
+# Multiplexers (MUX)
 
 A multiplexor takes two inputs (A,B) plus a third input SEL (for "select"). Applying a value to SEL toggles the output between A and B.
 
