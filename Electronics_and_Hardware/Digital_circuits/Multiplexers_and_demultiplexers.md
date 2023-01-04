@@ -15,9 +15,9 @@ A multiplexer selects one of several input signals and forwards ths selected inp
 
 We have two inputs (A,B) plus a third input SEL (for "select"). Applying a value to SEL toggles the output between A and B.
 
-Multiplexers can be used to build larger circuits by connecting the output of one multiplexer to the input of another. They are often used to implement data selection and switching in digital systems
+![](/_img/MUX.png)
 
-// TODO: Add component diagram
+Multiplexers can be used to build larger circuits by connecting the output of one multiplexer to the input of another. They are often used to implement data selection and switching in digital systems
 
 ### Programable gates
 
@@ -27,6 +27,6 @@ One of the main use cases of multiplexers is to implement programmable gates. Th
 
 As the name suggests, a demultiplexer reverses the functionality of a multiplexer. It receives a single input and based on the selection of the SEL input it channels it to either an A or a B output.
 
-We can think of it as a distributor of a value into one of several possible channels.
+![](/_img/DMUX.png)
 
-// TODO: Add component diagram
+We can think of it as a distributor of a value into one of several possible channels.
