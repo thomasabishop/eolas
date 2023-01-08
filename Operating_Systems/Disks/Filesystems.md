@@ -26,7 +26,7 @@ mkfs -t ext4 /dev/sda2
 
 ## Mounting a filesystem
 
-We can now mount our filesystems. Whem we mount, we must specify the following criteria with the request:
+We can now mount our filesystems. When we mount, we must specify the following criteria with the request:
 
 - The name of the device we want to mount.
   - This will be the name or the partition. However the names (`sda` etc) assigned by the OS can change. In these cases and with GPT-based partitions you can use the UUID.

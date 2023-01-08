@@ -238,4 +238,12 @@ sda           8:0    0 465.7G  0 disk
 └─sda2        8:2    0 365.7G  0 part
 ```
 
+#### Naming a partition
+
+By default each partition will have its GUID as its name, but you can add a human friendly name with:
+
+```bash
+sudo e2label /dev/sda1 my_human_name
+```
+
 > Whilst we have created our partitions we cannot yet mount them. This is because we have not yet set up a filesystem on the partitions. This is the next step.
