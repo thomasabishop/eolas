@@ -101,7 +101,7 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ## OR gate
 
-> The OR gate represents the truth conditions of the [disjunction](/Logic/Truth-functional_connectives.md#disjunction) truth functional connective
+> The OR gate represents the truth conditions of the [disjunction](/Logic/Truth-functional_connectives### Truth conditions.md#disjunction) truth functional connective
 
 ### Symbol
 

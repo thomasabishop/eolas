@@ -23,9 +23,7 @@ The equivalence is demonstrated with the following truth-table
 | T   | T   | F                    | F                       |
 | T   | F   | T                    | T                       |
 | F   | T   | T                    | T                       |
-| F   | F   | T                    | T                       |
-
-## Second Law
+| F   | F   | T                    | T ### Truth conditions  |
 
 > The negation of a disjunction is equivalent to the conjunction of the negation of the original disjuncts.
 
