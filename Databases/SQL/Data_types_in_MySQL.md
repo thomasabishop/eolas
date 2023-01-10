@@ -13,15 +13,16 @@ An understanding of the differences between data types is important because it o
 
 ### Integer (`INT`)
 
-No fractional part, fixed number of digits
+- No fractional part, fixed number of digits
+- `TINYINT`, `BIGINT` etc are all instances of `INT`, the difference is the size of the number stored.
 
-### Fixed point
+### Fixed point (`DECIMAL`)
 
-Contains decimal point. Use when accuracy is more important that representing very large or very small values
+Contains decimal point. Use when accuracy is more important that representing very large or very small values. Hence you would use this for monetary amounts.
 
-### Floating point
+### Floating point (`FLOAT`)
 
-Contains decimal point. Use when the ability to represent very large and very small values is more important than precision
+Contains decimal point. Use when the ability to represent very large and very small values is more important than precision. Hence you would not use this for monetary amounts.
 
 ## String
 
@@ -29,7 +30,7 @@ Contains decimal point. Use when the ability to represent very large and very sm
 
 Spaces are stripped in storage but represented with a character set.
 
-An example would be `CHAR(10)` or `CHAR(3)`. Here we set the upper limit but it must be the case that no string exceeds it.
+An example would be `CHAR(10)` or `CHAR(3)`. Here we set the upper limit but it must be the case that no string exceeds it. For either of these, if you add a value that is, e.g, two characters in length, it will add spaces to pad it out and make up the upper limit.
 
 ### Variable-length character strings
 

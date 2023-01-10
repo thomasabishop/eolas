@@ -10,9 +10,12 @@ tags: [SQL]
 ```sql
 SHOW DATABASES
 
-USE [database_name]
-
 SHOW TABLES
 
+-- View column names and data types
 DESCRIBE [table_name]
+
+-- View disk usage per column
+SHOW TABLE STATUS
+
 ```
