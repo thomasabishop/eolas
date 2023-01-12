@@ -1,0 +1,5 @@
+{
+  "meridian": {
+    "dirsToIgnore": ["_img", "_scripts", "_meta"]
+  }
+}
