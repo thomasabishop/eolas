@@ -1,0 +1,4 @@
+{
+  "ignoreDirs": ["_img", "_scripts", "_meta"],
+  "ignoreFiles": []
+}
