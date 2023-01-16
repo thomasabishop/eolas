@@ -7,8 +7,8 @@
   - If it returns multiple values, how to isolate and loop through them
 - What the weird variable symbols mean like errors and stuff
 - Read up properly about `find` and `read`
-- `.list` file extension 
-- Error handling 
+- `.list` file extension
+- Error handling
 
 ## SQL
 
@@ -35,3 +35,15 @@
 - How can you rollback without a hard-reset, i.e. how can you keep the future state (from the point of view of the rolled-back branch) accessible?
 - Tagging (also in relation to Git flow)
 - See if there is an advanced Git course on LinkedIn
+
+## JavaScript
+
+Look into these new features:
+
+- Proxy object
+- `Object.hasOwn()`
+- Top level `await`
+- `Error.Prototype.cause()`
+- Dynamic import
+- Temporal
+- `Promise.allSettled()`, `Promise.any()`

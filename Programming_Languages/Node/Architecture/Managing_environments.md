@@ -16,7 +16,7 @@ With a full-scale Node application you will typically run three environments:
 
 ## Accessing the current environment
 
-To determine the current environment we can use the variable **`process.env.NODE_ENV`**. This works globally regardless of the kind of Node app we are building.
+To determine the current environment we can use the variable **`process.env.NODE_ENV`** from the [global process object](/Programming_Languages/Node/Architecture/Process_object.md). This works universally regardless of the kind of Node app we are building.
 
 If you have not manually set up your environments, **`process.env.NODE_ENV`** will return `undefined`.
 
@@ -61,8 +61,8 @@ For example:
 Then to utilise config variables:
 
 ```js
-const config = require('config');
-console.log('Application name:' + config.get('name'));
+const config = require("config");
+console.log("Application name:" + config.get("name"));
 ```
 
 If we toggled the different environments, we would see different outputs from the above code (assuming we had different config files in `/config` with different names).
@@ -92,7 +92,7 @@ Then in our custom variable file:
 We can then safely reference this value in the course of our normal code:
 
 ```js
-console.log(config.get('password'));
+console.log(config.get("password"));
 ```
 
 <p style="color:red">! But how would this be achieved in a production server?</p>

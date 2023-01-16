@@ -56,6 +56,8 @@ N.Nisan, S.Schoken. 2021. **The Elements of Computing Systems** (Second Edition)
 
 [NAND latch](http://hyperphysics.phy-astr.gsu.edu/hbase/Electronic/nandlatch.html)
 
+[Lessons in Electric Circuits](https://www.allaboutcircuits.com/textbook/) [full textbook]
+
 ## General programming
 
 R.C.Martin. 2008. **Clean Code**

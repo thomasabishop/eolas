@@ -36,7 +36,7 @@ An example would be `CHAR(10)` or `CHAR(3)`. Here we set the upper limit but it 
 
 As above but allowing for variable-length strings.
 
-A common example is `VARCHAR(255)`. The 255 refers to the maximal character length, not the byte length. We must put `255` as the parameter even if our character lengths will be below this but where we don't know the minimum and maximum length.
+A common example is `VARCHAR(255)`. The 255 refers to the maximal character length, not the byte length. It is the largest number of characters that can be accommodated by an 8-bit number (byte). We must put `255` as the parameter even if our character lengths will be below this but where we don't know the minimum and maximum length.
 
 ## Large object storage
 
