@@ -22,7 +22,7 @@ We will achieve this by using three full adders and one half adder, moving from 
 
 Let's walk through the process:
 
-![](/_img/four-bit-adder.png)
+>
 
 1. HA receives the bits $0$ and $1$ as inputs. It outputs $1$ as the sum bit and $0$ as the carry-out.
 2. FA1 receives $0$ as the carry-in bit plus $1$ and $1$ as its input. This means it has the following calculation to execute: $1 + 1 + 0$. This gives $0$ as the sum bit and $1$ as the carry-out bit.

@@ -18,13 +18,13 @@ Physically, what 'travels through' the gates is electrical current and what cons
 
 ## Elementary and composite gates
 
-We distinguish elementary from composite logic gates. An elementary gate is a single gate embodying a single logical connective. It cannot be reduced any lower as a logical abstraction. A composite gate is a gate made up of more than one elementary gate and/or other composite gates.
+We distinguish elementary from composite logic gates. An elementary gate is a single gate embodying a single logical connective. It cannot be reduced any lower as a logical abstraction. A composite gate is a gate made up of more than one elemen>tary gate and/or other composite gates.
 
-An example of a composite gate would be a three-way AND. An AND with three inputs rather than the standard two that furnish the elementary AND gate. This gate would output 1 when all three gates have the value 1 and 0 otherwise. [Adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) and [latches](/Electronics_and_Hardware/Digital_circuits/Latches.md) whilst being [integrated circuits](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md) are also, technically speaking, composite gates.
+An example of a composite gate would be a three-way AND. An AND with three inputs rather than the standard two that furnish the elementary AND gate. This gate would output 1 when all three gates have the value 1 and 0 otherwise. [Adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) and [latche>s](/Electronics_and_Hardware/Digital_circuits/Latches.md) whilst being [integrated circuits](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md) are also, technically speaking, composite gates.
 
 ## Gate interface / gate implementation
 
-The gate _interface_ is an abstraction that the enables the user to think of the gate simply in terms of inputs and outputs, without being concerned with the technical details of how this is achieved. How it is achieved is the gate _implementation_.
+The gate _interface_ is an abstraction that the enables the user to think of the gate simply in terms of inputs and outputs, without being conc>erned with the technical details of how this is achieved. How it is achieved is the gate _implementation_.
 
 We can demonstrate this with the earlier example of a three-way AND. The diagram below represents the gate as an interface:
 
@@ -32,17 +32,13 @@ We can demonstrate this with the earlier example of a three-way AND. The diagram
 
 Whereas this diagram presents the implementation of the gate: it shows the specific combination of gates which creates the enables the behaviour represented in the interface diagram.
 
-// TODO: Implementation diagram
+// TODO: Implementation diagra>m
 
 > Importantly, a single interface may be implemented in a variety of ways. There is a one-to-many relationship at work here. From the point of view of the user interface these differences should not be detectable. This is another example of [hardware abstraction](/Computer_Architecture/Hardware_abstraction_and_modularity.md)
 
 ## NOT gate
 
 > The NOT gate inverts the value of whatever input it receives
-
-### Symbol
-
-![](/_img/not-gate-new.png)
 
 ### Truth conditions
 
@@ -53,11 +49,11 @@ Whereas this diagram presents the implementation of the gate: it shows the speci
 
 ### Interactive circuit
 
-<iframe src="https://circuitverse.org/simulator/embed/not-gate-aeb5f9e5-9f58-4883-b8e5-d70f6d023185?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="250" width="500" allowFullScreen></iframe>
+<iframe src="https://circuitverse.org/simulator/embed/not-gate-aeb5f9e5-9f58-4883-b8e5-d70f6d023185?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginhe
 
-## AND gate
+### Truth conditions
 
-> The AND gate represents the truth conditions of the [conjunction](/Logic/Truth-functional_connectives.md#conjunction) truth functional connective
+tion) truth functional connective
 
 ### Symbol
 
@@ -65,12 +61,11 @@ Whereas this diagram presents the implementation of the gate: it shows the speci
 
 ### Truth conditions
 
-| $P$ | $Q$ | $P \land Q$ |
-| --- | --- | ----------- |
-| 1   | 1   | 1           |
-| 1   | 0   | 0           |
-| 0   | 0   | 0           |
-| 0   | 0   | 0           |
+### Truth conditions
+
+| 1 | 0 | 0 |
+| 0 | 0 | 0 |
+| 0 | 0 | 0 |
 
 ### Interactive circuit
 
@@ -107,7 +102,11 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 
 ![](/_img/or-gate-new.png)
 
+### Truth condition
+
 ### Truth conditions
+
+s
 
 | $P$ | $Q$ | $P \lor Q$ |
 | --- | --- | ---------- |
@@ -116,7 +115,11 @@ NAND is a **universal logic gate**: equipped with just a NAND we can represent e
 | 0   | 1   | 1          |
 | 0   | 0   | 0          |
 
-### Interactive circuit
+### Interactive circui
+
+### Truth conditions
+
+t
 
 <iframe src="https://circuitverse.org/simulator/embed/or-gate-087e4933-7963-482d-b4bf-9e130ef05706?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="250" width="500" allowFullScreen></iframe>
 

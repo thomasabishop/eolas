@@ -31,7 +31,7 @@ journalctl -S -1h
 ### View logs for a specfic systemd unit
 
 ```bash
-journalctl -u cronie.service
+journalctl -u [unit_name] -e
 ```
 
 ### View boot logs

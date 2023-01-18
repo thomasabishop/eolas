@@ -14,7 +14,7 @@ In contrast, the output of a **sequential digital circuit** depends not only on 
 
 ## What is a latch?
 
-A latch is a circuit component that works as a very basic memory device. It is capable of setting and resetting a single bit. We can remember what it does by thinking of a door latch: once you turn the key the lock is set, when you turn it back it is unset.
+A latch is a circuit component that wor
 
 The **SR Latch** (for "set/reset") has two inputs: _S_ (for "set") and _R_ (for "reset") and one output, _Q_. _Q_ stands for the bit that is remembered. (There is also _not-Q_ which is the opposite of whatever _Q_ is currently set to.)
 
@@ -27,9 +27,9 @@ The SR Latch goes through the following state changes:
 
 This is represented more clearly in the table below:
 
-| S | R | Q | Operation |
-| --- | --- | ----------------------- | ---------<iframe src="https://circuitverse.org/simulator/embed/multiplexor-5406f205-8ac7-4c5b-a1ba-861c5face8d3?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe> |
-| 1 | 1 | X | Invalid, null |
+| S   | R   | Q   | Operation     |
+| --- | --- | --- | ------------- |
+| 1   | 1   | X   | Invalid, null |
 
 The most succinct account of a latch:
 
