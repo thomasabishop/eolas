@@ -47,7 +47,7 @@ The diagrams below show a transistor being used in a circuit to create 'on' and 
 - $V^{cc}$ stands for "common collector" and is the positive supply voltage appliced to the collector terminal
   is "on".
 
-When the voltate at the base is low (in the diagram it is grounded to ensure this) no current flows from the c
+When the voltage at the base is low (in the diagram it is grounded to ensure this) no current flows from the c
 We recall that voltage is the potential difference between two points or terminals in a circuit. High voltage increases the flow of current, low voltage restricts or reduces it.
 
 When the voltage at the base is high a current flows from the collector to the emitter and the transistor is "on".
