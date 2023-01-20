@@ -52,7 +52,7 @@ We recall that voltage is the potential difference between two points or termina
 
 When the voltage at the base is high a current flows from the collector to the emitter and the transistor is "on".
 
-When the voltate at the base is low (in the diagram it is grounded to ensure this) no current flows from the collector to the emitter and the transistor is "off".
+When the voltage at the base is low (in the diagram it is grounded to ensure this) no current flows from the collector to the emitter and the transistor is "off".
 
 ## Transistors and logic gates
 
