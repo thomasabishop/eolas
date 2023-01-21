@@ -14,7 +14,7 @@ cd "$NOTES_PATH"
 source ${SPACE_TO_UNDERSCORE}
 source ${CLEAN_IMAGE_DIRECTORY}
 
-git pull
+git pull >/dev/null 2>&1
 
 CHANGES_EXIST="$(git status --porcelain | wc -l)"
 
@@ -23,7 +23,7 @@ if [ "$CHANGES_EXIST" -eq 0 ]; then
     exit 0
 fi
 
-git pull | grep -v "Already up to date."
+git pull >/dev/null 2>&1
 git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push -q
