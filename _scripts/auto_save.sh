@@ -16,7 +16,7 @@ source ${CLEAN_IMAGE_DIRECTORY}
 
 git pull
 
-CHANGES_EXIST="$(git status --porcelain | wc -l)" >/dev/null 2>$1
+CHANGES_EXIST="$(git status --porcelain | wc -l)"
 
 # If no changes, exit. Else commit and push with timestamp
 if [ "$CHANGES_EXIST" -eq 0 ]; then
