@@ -2,6 +2,8 @@
 
 # This script returns a random topic for me to revise
 
+# It is aliased to cs-revise in .zshrc
+
 # Choose source directories...
 DIRS_TO_PARSE="../Computer_Architecture ../Databases ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell ../Logic"
 

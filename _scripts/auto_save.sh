@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# This script runs as a cron job in half-hour intervals to automatically commit changes to the remote repository
+# This script automatically commits/pull changes to the remote repository with a generic commit message.
 
-NOTES_PATH="${HOME}/repos/computer_science"
-SPACE_TO_UNDERSCORE="${HOME}/repos/bash_scripts/space_to_underscore_filename.sh"
+# It is aliased to `cs-update` in .zshrc
+
+NOTES_PATH="/home/thomas/repos/computer_science"
+SPACE_TO_UNDERSCORE="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
+CLEAN_IMAGE_DIRECTORY="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
 
 cd "$NOTES_PATH"
 
