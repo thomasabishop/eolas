@@ -23,7 +23,7 @@ if [ "$CHANGES_EXIST" -eq 0 ]; then
     exit 0
 fi
 
-git pull -q
+git pull | grep -v "already up to date"
 git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push -q
