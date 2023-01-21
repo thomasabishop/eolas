@@ -12,6 +12,8 @@ cd "$NOTES_PATH"
 
 # Loop through directories and convert spaces in filenames to underscores
 source ${SPACE_TO_UNDERSCORE}
+source ${CLEAN_IMAGE_DIRECTORY}
+
 git pull
 CHANGES_EXIST="$(git status --porcelain | wc -l)"
 
