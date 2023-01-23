@@ -5,14 +5,14 @@
 # It is aliased to `cs-update` in .zshrc
 
 NOTES_PATH="/Users/thomasbishop/prepos/computer_science"
-SPACE_TO_UNDERSCORE="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
-CLEAN_IMAGE_DIRECTORY="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
+# SPACE_TO_UNDERSCORE="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
+# CLEAN_IMAGE_DIRECTORY="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
 
 cd "$NOTES_PATH"
 
 # Loop through directories and convert spaces in filenames to underscores
-source ${SPACE_TO_UNDERSCORE}
-source ${CLEAN_IMAGE_DIRECTORY}
+# source ${SPACE_TO_UNDERSCORE}
+# source ${CLEAN_IMAGE_DIRECTORY}
 
 git pull >/dev/null 2>&1
 
