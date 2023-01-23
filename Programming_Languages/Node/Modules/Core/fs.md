@@ -96,9 +96,3 @@ fs.rmSync("/dir", { recursive: true, force: true });
 ## Streams
 
 See [Handling streams with fs](/Programming_Languages/Node/Streams.md)
-
-In the examples above of reading from a file, the `fs.readFile()` method waits until the entire file has been read before executing the callback. It's obvious why this might not be ideal in certain cases. If the file is very large you are utilising a lot of memory for a single process. Additionally, the data you need might appear early in the file, in which case, once you find the data you want, there is no need to read to the end of the file.
-
-This is why the ability to read files and data as streams exists in Node.js. Streams increase memory and time efficiency. As you are not necessarily reading the whole file,
-
-Streams are more memory efficient since you are not waiting for the whole file to be read before acting. This also means you can start execution quicker.
