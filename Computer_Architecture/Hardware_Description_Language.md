@@ -29,7 +29,7 @@ We will create an HDL program for an XOR gate that is implemented through the fo
 
 Here is our HDL file:
 
-```vhdl
+```
 /* Xor gate
    If a!=b out=1 else out=0
 */
