@@ -10,6 +10,9 @@
 - `.list` file extension
 - Error handling
 
+- Awk
+  - https://dane-bulat.medium.com/the-awk-programming-language-an-introduction-7035d343cd30
+
 ## SQL
 
 - What is a _schema_ in MySQL/ SQL ?
@@ -26,6 +29,10 @@
 - Elastic Beanstalk and how it differs from using multiple different services at once
 - AWS Amplify
 - Deploy my own website on AWS
+
+## NodeJS
+
+- Build examples of read stream and write stream
 
 ## Git
 
