@@ -9,7 +9,7 @@ tags:
 
 Devices are hardware that require access to the CPU in order to function. Devices can either be external and plugged-in or internal to the motherboard. The most common type of device that you will work with are [disks](./Disks.md).
 
-Devices are files but they have some different capabilities than ordianry files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
+Devices are files but they have some different capabilities than ordinaryq files. There are two types: **block** and **stream**. Device files reside in the `/dev/` directory.
 
 Some of the most important device files are:
 
@@ -48,5 +48,7 @@ The [mode](/Programming_Languages/Shell_Scripting/File_permissions_and_execution
 ## /dev/null
 
 `/dev/null` is a virtual device: it doesn't actually exist as a piece of hardware on the system. It can be useful when [bash scripting](/Programming_Languages/Shell/Redirect_to_dev_null.md) as a place to direct output that you don't care about, for example errors or verbose program read-outs.
+
+I like to think of `/dev/null` as being like earth in a circuit. It's an outlet to safely dispose of things you are not interested in.
 
 > ! Make notes on this. Base on : https://linuxhint.com/what_is_dev_null/

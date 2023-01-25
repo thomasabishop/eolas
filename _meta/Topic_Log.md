@@ -9,9 +9,13 @@
 - Read up properly about `find` and `read`
 - `.list` file extension
 - Error handling
-
+- Splitting strings
 - Awk
   - https://dane-bulat.medium.com/the-awk-programming-language-an-introduction-7035d343cd30
+
+## Linux
+
+- `/dev/null` in greater depth
 
 ## SQL
 
