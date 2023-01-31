@@ -15,7 +15,7 @@ The symbol `>` is called the **redirection operator** because it redirects `stdo
 ls | grep d* > result.txt
 ```
 
-### Combining redirection with file descriptors
+### Combining redirection with file escriptors
 
 It is common practice to combine redirection with the [file descriptors](/Programming_Languages/Shell/File_descriptors.md) to redirect the output of `stdout` and `stderr`. A common case is to [redirect error output to `/dev/null`](/Programming_Languages/Shell/Redirect_to_dev_null.md).
 

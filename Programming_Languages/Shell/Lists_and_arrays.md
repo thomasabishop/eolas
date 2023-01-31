@@ -22,24 +22,6 @@ for ele in $A_STR_LIST; do
 done
 ```
 
-## Brace expansion for listed variables
-
-With a sequence of variables that follow a pattern, for example the natural numbers (1, 2, 3, 4, ...) we can represent them in a condensed format using something called **brace expansion**. For instance to represent the natural numbers from 1 through 10:
-
-```bash
-{1..10}
-```
-
-Here the **two dots** stand for the intervening values.
-
-We can iterate through brace expanded variables just the same:
-
-```bash
-for num in {1..4}; do
-    echo $num
-done
-```
-
 ## Arrays
 
 We define an array as follows:
