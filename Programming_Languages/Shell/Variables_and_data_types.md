@@ -38,22 +38,6 @@ echo ${PRIM_VAR_BOOL} # true
 - there is no compunction to use capitals for variables but it can be helpful to distinguish custom variables from program variables (see below)
 - quotation marks at declaration are also not strictly necessary however they can help avoid bugs. Also serves as a reminder that every type is basically a string at the end of the day
 
-### Variables that hold references to programs
-
-We can store a reference to a bash program with slightly different syntax:
-
-```bash
-user="$(whoami)"
-```
-
-When we want to invoke a program variable we don't need to use brackets:
-
-```bash
-echo $user # thomasbishop
-```
-
-> Note that when we declare anything in bash (any time `=` is used) we **do not use spaces!** If you do, the variable will not be set.
-
 ## Declarations
 
 You can achieve a sort of typing through the `declare` keyword, although bear in mind this is not enforced and you do not have to use it.

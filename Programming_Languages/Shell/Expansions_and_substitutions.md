@@ -14,12 +14,12 @@ Below are the main forms of expansion and substitution:
 | Representation | Name                 |
 | -------------- | -------------------- |
 | `~` .          | Tilde expansion      |
-| `{...}`        | Brace expansion      |
+| `{..}`         | Brace expansion      |
 | `${...}`       | Parameter expansion  |
 | `$(...)`       | Command substitution |
 | `$((...))`     | Arithmetic expansion |
 
-## Brace expansion
+## Brace expansion: `{..}`
 
 Brace expansion is for changing a smaller part of a greater whole programmatically. This is best understood by looking at examples:
 
@@ -44,7 +44,7 @@ echo {a...c}
 a b c
 ```
 
-We can also set sequences. If we wanted to count to twenty in intervals of two:
+We can also set sequences. If we wanted to count to twenty in intervals of two
 
 ```
 echo {1..20..2}
@@ -53,9 +53,9 @@ echo {1..20..2}
 
 > Note that we type _two_ dots **not** an elipsis
 
-## Example use case
+### Example use case
 
-We might use brace expansion to generate sequential file names, eg.
+We might use brace expansion to generate sequential file names using a pre-defined naming scheme, eg.
 
 ```
 touch file_{01..12}{a..d}
@@ -69,6 +69,28 @@ file_02a
 file_02b
 ...
 file_12d
-
-
 ```
+
+The syntax here basically means: for each of the elements in the first list, run the second list against them.
+
+## Parameter expansion: `${...}`
+
+We use most frequently for returning the value of stored [variables](/Programming_Languages/Shell/Variables_and_data_types.md). Techically we do not have to use the braces, we can retrieve with just `$var` however it's better to use them to minimise interpretation fuck-ups which happen a lot.
+
+When the braces are used, this allows us to transform the values before they are returned such as only returning from the 6th character: `${var:6}`.
+
+## Command substition: `$(...)`
+
+Command substitution (circle-brackets) allows us to put the output of one command inside another. Bash runs the bracketed command in a [sub-shell](/Programming_Languages/Shell/Shell_sessions.md) and then returns it to the main user shell.
+
+For example:
+
+```bash
+echo "The current directory is $(pwd)."
+```
+
+## Arithemtic expansion: `$((...))`
+
+We use arithmetic expansion when we want to calculate numerical values
+
+See [Working with numbers in Bash](/Programming_Languages/Shell/Working_with_numbers_in_Bash.md) for more.
