@@ -9,8 +9,7 @@ tags:
 
 ## `readarray`
 
-`readarray` makes it really easy to split input into an array.
-
+`readarray` makes it really easy to split input into an array based on new lines.
 Say we have this file as input:
 
 ```
@@ -48,3 +47,18 @@ is
 > The _-t_ flag removes the trailing newline
 
 Add more: https://linuxhint.com/split-string-array-bash/
+
+## `read`
+
+For different delimiters we have to use `read`, combined with `IFS` the **Internal Field Separator**.
+
+For example, to split by comma:
+
+```plaintext
+# comma-input.txt
+something, something else, something more
+```
+
+```bash
+IFS=',' read -a arr < ./comma_inputs.txt
+```
