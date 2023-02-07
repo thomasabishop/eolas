@@ -5,13 +5,15 @@
 - Best way to run a command in a script - is it to `echo` it?
 - How to handle the return value of a command
   - If it returns multiple values, how to isolate and loop through them
-- What the weird variable symbols mean like errors and stuff
-- Read up properly about `find` and `read`
+- ~~What the weird variable symbols mean like errors and stuff~~
+- ~~Read up properly about `find` and `read`~~
 - `.list` file extension
 - Error handling
-- Splitting strings
+- ~~Splitting strings~~
 - Awk
   - https://dane-bulat.medium.com/the-awk-programming-language-an-introduction-7035d343cd30
+- Why do we have to do `"$var"` instead of `$var` or `${var}` at times
+- The `test` program (does it actually use the word 'test' or is this implicit?) and its use of `-z` and and `-e` flags
 
 ## Linux
 

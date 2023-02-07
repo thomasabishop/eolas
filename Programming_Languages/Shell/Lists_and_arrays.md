@@ -59,6 +59,18 @@ done
 
 Note that `@` here is a special symbol standing for all the members of the `words` array.
 
+### Sorting arrays
+
+#### Sorting an integer array highests to lowest
+
+```bash
+sorted_array=($(echo "${array[@]}" | tr " " "\n" | sort -nr))
+```
+
+Where `array` is the name of the original array. The sorted array will be stored in the `sorted_array` array.
+
+The `sort` command sorts the input in reverse numerical order (`-n` for numerical sort and `-r` for reverse sort). The `tr` command is used to convert the spaces in the array to newline characters so that each element is sorted on a separate line.
+
 ## Looping through file system
 
 The following script loops through all files in a directory that begin with `l` and which are of the bash file type (`.sh`) :
