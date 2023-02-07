@@ -34,6 +34,8 @@ Abelson, Sussman. 1998. **Structure and Interpretation of Computer Programs**
 
 [Welcome to CS](https://runestone.academy/ns/books/published/welcomecs/index.html)
 
+[Open Source self-taught CS course](https://github.com/ossu/computer-science)
+
 [roadmap.sh/computer-science](https://roadmap.sh/computer-science)
 
 ## Electronics, hardware, computer architecture
