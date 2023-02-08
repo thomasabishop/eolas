@@ -106,6 +106,8 @@ B. Perry, D. Taylor. 2015. **Wicked Cool Shell Scripts**
 
 [What is the difference between `${var}`, `"$var"`, and `"${var}"` in the Bash shell? (Stack Overflow)](https://stackoverflow.com/q/18135451/10484600)
 
+[AWK tutorial](https://zetcode.com/lang/awk/)
+
 ## SQL
 
 [Course: MySQL Essential Training (LinkedIn Learning)](https://www.linkedin.com/learning/mysql-essential-training-2)
