@@ -68,6 +68,6 @@ When we use **double brackets** we are using _extended_ `test`.
 The extended test supports the standard `test` comparisons and adds other features:
 
 - The use of Boolean operators:
-  ```bash
+  ```
   [[ -d ~ || -a /bin/mash ]]; echo $?
   ```

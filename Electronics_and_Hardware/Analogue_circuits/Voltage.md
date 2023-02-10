@@ -5,8 +5,6 @@ categories:
 tags: [physics, electricity]
 ---
 
-# Voltage
-
 ## Difference of potential and the tranfer of energy
 
 We noted in the discussion of [current](/Electronics_and_Hardware/Analogue_circuits/Current.md) that current flows when there is a difference of potential between two points with negatively charged atoms at one point and positively charged atoms at the other.
