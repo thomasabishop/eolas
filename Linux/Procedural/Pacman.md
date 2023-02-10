@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-tags: [package-management]
+tags: []
 ---
 
 # Pacman

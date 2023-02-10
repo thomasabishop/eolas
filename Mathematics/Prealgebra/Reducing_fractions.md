@@ -4,7 +4,6 @@ categories:
 tags:
   - prealgebra
   - fractions
-  - divisors
 ---
 
 ## Reducing fractions to their lowest terms

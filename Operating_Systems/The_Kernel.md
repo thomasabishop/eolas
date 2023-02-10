@@ -1,7 +1,7 @@
 ---
 categories:
   - Operating Systems
-tags: [systems-programming, processes, memory]
+tags: [systems-programming, memory]
 ---
 
 # The Kernel

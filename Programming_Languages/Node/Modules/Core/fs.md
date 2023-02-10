@@ -4,7 +4,6 @@ categories:
 tags:
   - backend
   - node-js
-  - node-modules
 ---
 
 # `fs` module

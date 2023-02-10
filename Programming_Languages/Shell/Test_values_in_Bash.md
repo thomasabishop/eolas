@@ -5,7 +5,7 @@ tags:
   - shell
 ---
 
-# Test in bash
+# Test values in Bash
 
 `test` is a built-in command that is used to compare values or determine whether something is the case.
 

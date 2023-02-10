@@ -1,7 +1,7 @@
 ---
 categories:
   - Electronics
-tags: [electricity, electrical-circuits]
+tags: [electricity, circuits]
 ---
 
 # Circuits

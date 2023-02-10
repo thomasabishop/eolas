@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Networks
-tags: [http]
+tags: []
 ---
 
 ## GET

@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Programming Languages
-tags: [SQL, relational-database]
+tags: [SQL, relational-databases]
 ---
 
 # Wildcards in SQL

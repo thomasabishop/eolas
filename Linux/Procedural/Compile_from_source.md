@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-tags: [compilers]
+tags: []
 ---
 
 # Compile package from source

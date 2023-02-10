@@ -1,7 +1,7 @@
 ---
 categories:
   - Logic
-tags: [logic, laws]
+tags: []
 ---
 
 # DeMorgan's Laws

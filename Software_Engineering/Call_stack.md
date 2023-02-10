@@ -1,8 +1,7 @@
 ---
 categories:
   - Software Engineering
-tags:
-  - callstack
+tags: []
 ---
 
 # The call-stack

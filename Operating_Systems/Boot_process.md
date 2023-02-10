@@ -4,7 +4,6 @@ categories:
   - Operating Systems
 tags:
   - disks
-  - bootloader
 ---
 
 # The boot process

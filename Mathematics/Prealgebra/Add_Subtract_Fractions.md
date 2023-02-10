@@ -4,7 +4,6 @@ categories:
 tags:
   - prealgebra
   - fractions
-  - division
 ---
 
 # Adding and subtracting fractions

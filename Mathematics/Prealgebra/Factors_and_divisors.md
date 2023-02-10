@@ -3,8 +3,6 @@ categories:
   - Mathematics
 tags:
   - prealgebra
-  - factors
-  - divisors
 ---
 
 ## Factors and divisors

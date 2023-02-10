@@ -1,7 +1,7 @@
 ---
 categories:
   - Programming Languages
-tags: [backend, node-js, REST, APIs, validation]
+tags: [backend, node-js, REST, APIs]
 ---
 
 # Creating a RESTful API: Validation

@@ -2,7 +2,7 @@
 title: Ohm's Law
 categories:
   - Electronics
-tags: [physics, electricity, electrical-resistance]
+tags: [physics, electricity]
 ---
 
 # Ohm's Law

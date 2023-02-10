@@ -1,8 +1,7 @@
 ---
 categories:
   - Software Engineering
-tags:
-  - resources
+tags: []
 ---
 
 ## General

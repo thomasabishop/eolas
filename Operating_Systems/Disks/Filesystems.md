@@ -4,7 +4,6 @@ categories:
   - Operating Systems
 tags:
   - disks
-  - filesystems
 ---
 
 # Filesystems

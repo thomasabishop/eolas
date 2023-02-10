@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [relational-database]
+tags: [relational-databases]
 ---
 
 # ACID principle

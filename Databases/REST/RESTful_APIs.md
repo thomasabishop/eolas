@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [apis, REST]
+tags: [APIs, REST]
 ---
 
 # RESTful APIs

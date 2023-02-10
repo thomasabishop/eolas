@@ -4,7 +4,7 @@ categories:
 tags:
   - prealgebra
   - fractions
-  - multiplication
+  - arithmetic
 ---
 
 # Multiplying fractions

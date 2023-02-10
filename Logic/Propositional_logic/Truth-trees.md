@@ -1,7 +1,7 @@
 ---
 categories:
   - Mathematics
-tags: [logic]
+tags: []
 ---
 
 ## Rationale

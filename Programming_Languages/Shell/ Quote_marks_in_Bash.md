@@ -5,7 +5,7 @@ tags:
   - shell
 ---
 
-# Quote marks
+# Quote marks in Bash
 
 ## Single-quotes (aka _strong_ quotes)
 

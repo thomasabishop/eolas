@@ -3,7 +3,6 @@ categories:
   - Mathematics
 tags:
   - prealgebra
-  - operators
 ---
 
 ## Addition, subtraction

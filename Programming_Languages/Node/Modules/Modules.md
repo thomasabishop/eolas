@@ -4,7 +4,6 @@ categories:
 tags:
   - backend
   - node-js
-  - node-modules
 ---
 
 # Modules
@@ -65,7 +64,7 @@ module.exports = function (...params) {
 Note the module is unnamed. We would name it when we import:
 
 ```js
-const myFunction = require('./filenme');
+const myFunction = require("./filenme");
 ```
 
 ### Exporting sub-components from a module
@@ -85,7 +84,7 @@ var nonExportedVar = true;
 This time the exports are already name so we would import with the following:
 
 ```js
-const {myFunc, aVar} = require('./filename');
+const { myFunc, aVar } = require("./filename");
 ```
 
 We can also do the exporting at the bottom when the individual components are named:
@@ -104,13 +103,13 @@ exports.myNamedFunc = myNamedFunc;
 exports.differentName = anotherNamedFunc; // We can use different names
 
 // Or we could export them together
-module.exports = {myNamedFunc, anotherNamedFunc};
+module.exports = { myNamedFunc, anotherNamedFunc };
 ```
 
 The import is the same:
 
 ```js
-const {myNamedFunc, anotherNamedFunc} = require('./modules/multiExports');
+const { myNamedFunc, anotherNamedFunc } = require("./modules/multiExports");
 ```
 
 ## Structuring modules

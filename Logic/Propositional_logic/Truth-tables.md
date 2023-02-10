@@ -1,7 +1,8 @@
 ---
 categories:
   - Mathematics
-tags: [logic]
+  - Logic
+tags: []
 ---
 
 # Truth-tables

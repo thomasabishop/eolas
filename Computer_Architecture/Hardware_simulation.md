@@ -2,7 +2,7 @@
 categories:
   - Computer Architecture
   - Hardware
-tags: [HDL, nand-to-tetris]
+tags: [nand-to-tetris]
 ---
 
 # Hardware simulation

@@ -3,8 +3,9 @@ categories:
   - Computer Architecture
 tags:
   - theory-of-computation
-  - history
 ---
+
+# Defining a computer
 
 > A general-purpose computer is one that, given the appropriate instructions and required time, should be able to perform most common computing tasks.
 

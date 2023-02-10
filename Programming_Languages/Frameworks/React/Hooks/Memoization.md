@@ -5,7 +5,6 @@ tags:
   - javascript
   - react
   - react-hooks
-  - memoization
 ---
 
 # Memoization with `useCallback` and `useMemo`
@@ -49,7 +48,7 @@ const handleSubmit = useCallback(
       .finally(() => setPendSaveConfig(false))
       .catch((err) => console.error(err));
   },
-  [blockId, project_id],
+  [blockId, project_id]
 );
 ```
 
@@ -103,6 +102,6 @@ const List = React.useMemo(
       itemProp1: expensiveFunction(props.first),
       itemProp2: anotherPriceyFunction(props.second),
     })),
-  [listOfItems],
+  [listOfItems]
 );
 ```

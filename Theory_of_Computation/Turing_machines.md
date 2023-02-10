@@ -3,7 +3,6 @@ categories:
   - Computer Architecture
 tags:
   - theory-of-computation
-  - turing
 ---
 
 ## What is a Turing Machine?

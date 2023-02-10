@@ -2,7 +2,7 @@
 categories:
   - Computer Architecture
   - Hardware
-tags: [motherboard, chipset]
+tags: [motherboard]
 ---
 
 # Chipset and controllers

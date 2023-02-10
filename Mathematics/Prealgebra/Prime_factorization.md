@@ -3,8 +3,7 @@ categories:
   - Mathematics
 tags:
   - prealgebra
-  - factors
-  - primes
+  - number-theory
 ---
 
 ### Prime factorisation

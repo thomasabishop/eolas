@@ -3,7 +3,6 @@ categories:
   - Programming Languages
 tags:
   - shell
-  - processes
 ---
 
 # Processes (`ps`)

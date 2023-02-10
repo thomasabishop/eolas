@@ -1,7 +1,7 @@
 ---
 categories:
   - Software Engineering
-tags: [semver]
+tags: []
 ---
 
 # Semantic versioning

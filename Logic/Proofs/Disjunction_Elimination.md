@@ -1,7 +1,7 @@
 ---
 categories:
   - Logic
-tags: [derivation-rules]
+tags: []
 ---
 
 # Disjunction Elimination

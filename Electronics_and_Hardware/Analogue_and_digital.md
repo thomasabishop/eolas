@@ -2,7 +2,7 @@
 title: Analogue and digital
 categories:
   - Hardware
-tags: [analogue, digital]
+tags: [analogue]
 ---
 
 # Analogue and digital

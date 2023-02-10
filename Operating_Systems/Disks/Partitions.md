@@ -5,7 +5,6 @@ categories:
 
 tags:
   - disks
-  - devices
 ---
 
 # Disk partitions

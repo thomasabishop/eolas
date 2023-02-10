@@ -4,7 +4,6 @@ categories:
 tags:
   - backend
   - node-js
-  - streams
 ---
 
 # Handling streams with `fs`

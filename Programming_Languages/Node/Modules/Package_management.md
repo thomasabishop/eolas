@@ -4,7 +4,6 @@ categories:
 tags:
   - backend
   - node-js
-  - npm
 ---
 
 # Package management

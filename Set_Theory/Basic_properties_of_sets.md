@@ -1,8 +1,8 @@
 ---
 categories:
   - Mathematics
+  - Logic
 tags:
-  - logic
   - set-theory
 ---
 

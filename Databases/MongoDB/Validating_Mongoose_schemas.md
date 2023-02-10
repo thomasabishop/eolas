@@ -1,7 +1,7 @@
 ---
 categories:
   - Databases
-tags: [mongodb, node-js, mongoose]
+tags: [mongo-db, mongoose, node-js]
 ---
 
 # Validating Mongoose schemas

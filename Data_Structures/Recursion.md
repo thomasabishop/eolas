@@ -1,8 +1,9 @@
 ---
-categories: 
+categories:
   - DSA
 tags:
   - algorithms
+  - data-structures
   - recursion
 ---
 

@@ -3,7 +3,7 @@ categories:
   - Mathematics
 tags:
   - prealgebra
-  - primes
+  - number-theory
 ---
 
 ## Prime and composite numbers

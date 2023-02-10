@@ -4,7 +4,6 @@ categories:
   - Operating Systems
 tags:
   - disks
-  - devices
 ---
 
 # What are disks?

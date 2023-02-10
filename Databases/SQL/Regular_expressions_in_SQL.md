@@ -2,7 +2,7 @@
 categories:
   - Databases
   - Programming Languages
-tags: [SQL, relational-database, regex]
+tags: [SQL, relational-databases, regex]
 ---
 
 # Regular expressions in SQL

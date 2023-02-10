@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-tags: [systems-programming, systemd]
+tags: [systems-programming]
 ---
 
 # Create timed `systemd` job

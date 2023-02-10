@@ -2,7 +2,6 @@
 categories:
   - Mathematics
 tags:
-  - logic
   - set-theory
   - theorems
 ---

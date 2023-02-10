@@ -5,7 +5,6 @@ categories:
 tags:
   - memory
   - disks
-  - devices
 ---
 
 # Swap space

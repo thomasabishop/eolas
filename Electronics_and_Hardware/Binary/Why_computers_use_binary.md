@@ -3,7 +3,7 @@ title: Why computers use binary
 categories:
   - Mathematics
   - Computer Architecture
-tags: [binary, bits]
+tags: [binary]
 ---
 
 # Why computers use binary

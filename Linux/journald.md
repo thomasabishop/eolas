@@ -1,7 +1,7 @@
 ---
 categories:
   - Linux
-tags: [journaling, systemd, systems-programming]
+tags: [systems-programming]
 ---
 
 # `journald`
