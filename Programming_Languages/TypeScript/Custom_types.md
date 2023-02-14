@@ -15,7 +15,7 @@ So say we have this object:
 
 ```js
 const age = {
-  name: 'Thomas',
+  name: "Thomas",
   yearOfBirth: 1988,
   currentYear: 2021,
   ageNow: function () {
@@ -43,7 +43,7 @@ We could now re-write the first `age` object as an object of type `Age` :
 let thomas: typeof Age;
 
 thomas = {
-  name: 'Thomas',
+  name: "Thomas",
   yearOfBirth: 1988,
   currentYear: 2021,
   ageNow: function () {
@@ -67,7 +67,7 @@ We could then create objects based on this:
 
 ```tsx
 const thomas: Age = {
-  name: 'Thomas',
+  name: "Thomas",
   yearOfBirth: 1988,
   currentYear: 2021,
   ageNow: function () {
@@ -97,10 +97,10 @@ With custom (object types) this means that the following expression of an object
 
 ```tsx
 const martha = {
-  name: 'Martha',
+  name: "Martha",
   yearOfBirth: 1997,
   currentYear: 2021,
-  gender: 'female',
+  gender: "female",
 };
 
 const addition: Age = martha;
@@ -110,10 +110,10 @@ But if we tried to add this extra property whilst defining `martha` as an instan
 
 ```tsx
 const martha: Age = {
-  name: 'Martha',
+  name: "Martha",
   yearOfBirth: 1997,
   currentYear: 2021,
-  gender: 'female',
+  gender: "female",
 };
 ```
 
@@ -134,17 +134,17 @@ function logPoint(p: Point) {
 }
 
 // logs "12, 26"
-const point = {x: 12, y: 26};
+const point = { x: 12, y: 26 };
 logPoint(point);
 ```
 
 Shape matching only requires a subset of the object's fields to match:
 
 ```tsx
-const point3 = {x: 12, y: 26, z: 89};
+const point3 = { x: 12, y: 26, z: 89 };
 logPoint(point3); // logs "12, 26"
 
-const rect = {x: 33, y: 3, width: 30, height: 80};
+const rect = { x: 33, y: 3, width: 30, height: 80 };
 logPoint(rect);
 ```
 

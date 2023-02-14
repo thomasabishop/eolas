@@ -1,17 +1,17 @@
 # BBC Python Course notes
 
-## TODO:
+## Day 2
 
-## Numbers
+With lists you have to use copy if you wish to make a new version. You cannot just reassign to a new version. This will still update the original. Since it copies the pointer.
 
-## Control flow
+Distinguish functions that will create new list and methods which will modify existing list
 
-### Conditionals
+Functions: named parameter passing, use for default parameter values
 
-### While loops
+Python does not have constants but has a convention of upper case to mimic constants
 
-### For loops
+More on addresses and pointers in Python
 
-Add example of slightly odd ternary structure
+With classes we don't need to use `new` when instantiating an instance of a class.
 
-While, when we don't know how long
+You do not need to define properties in classes if they exist in the constructor

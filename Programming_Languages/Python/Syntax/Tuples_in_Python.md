@@ -57,15 +57,31 @@ tup3 = ('apple', 'pear', 'orange', 'plum', 'apple')
 for x in tup3:
     print(x)
 
+"""
+apple
+pear
+orange
+plum
+apple
+"""
+
 print(tup3.count('apple'))
 print(tup3.index('pear'))
 
+# 2
+# 1
+
+
 if 'orange' in tup3:
     print('orange is in the Tuple')
+
+# orange is in the Tuple
 
 tuple1 = (1, 3, 5, 7)
 tuple2 = ('John', 'Denise', 'Phoebe', 'Adam')
 tuple3 = (42, tuple1, tuple2, 5.5)
 print(tuple3)
+
+# (42, (1, 3, 5, 7), ('John', 'Denise', 'Phoebe', 'Adam'), 5.5)
 
 ```
