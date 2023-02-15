@@ -96,6 +96,10 @@ A. Sweighart. 2020. **Beyond the Basic Stuff with Python**
 
 A. Sweighart. 2015. **Automate the Boring Stuff with Python**
 
+J. Hunt. 2019. **A Beginner's Guide to Python Programming**
+
+J. Hunt. 2019. **An Advanced Guide to Python Programming**
+
 [Tiny Python Projects (O'Reilly)](https://learning.oreilly.com/library/view/tiny-python-projects/9781617297519/)
 
 [Learning Arduino with Python](https://realpython.com/arduino-python/)

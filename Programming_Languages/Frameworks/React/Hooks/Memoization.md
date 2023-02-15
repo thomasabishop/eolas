@@ -7,7 +7,7 @@ tags:
   - react-hooks
 ---
 
-# Memoization with `useCallback` and `useMemo`
+# Memoization with useCallback and useMemo
 
 ## Rationale
 
@@ -23,7 +23,7 @@ The `useCallback` hook is used to wrap functions. It tells React to not re-creat
 
 `useCallback` returns a memoized version of the callback function it is passed. This means that the function object returned from useCallback will be the same between re-renders.
 
-Remember that in JavaScript, functions are objects and components are functions. As a result, every time a component containing a function re-renders, it creates a new instance of the function in memory.
+Remember that in JavaScript, functions are objects and components are functions. As a result, every time a component containing a function re-renders, it create a new instance of the function in memory.
 
 > Given the same dependency value, the `useCallback` hook returns the same function instance between renderings (aka memoization).
 

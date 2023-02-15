@@ -1,5 +1,25 @@
 # Learning Topic Log
 
+## Python
+
+- Research: best practice for separating projects into `conda` environments like npm
+
+- Read-up more on types: what does it mean for Python to be dynamically typed. What is type-hinting really?
+
+  - Use provided pdfs and John's books
+
+- Is `dictionary.values()`/ `dictionary.keys()` of type list?
+- Is `dictionary.items()` a list of tuples for key, value?
+
+- How to run test suites via VSCode?
+
+  BBC Course, remaining topics:
+
+  - Classes and object-oriented paradigms in Python
+  - Modules
+  - Error handling
+  - Testing
+
 ## Bash
 
 - Best way to run a command in a script - is it to `echo` it?

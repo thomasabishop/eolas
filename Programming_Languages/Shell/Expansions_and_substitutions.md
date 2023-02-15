@@ -33,7 +33,7 @@ echo /tmp/{1..3}/file.txt
 /tmp/1/file.txt  /tmp/2/file.txt /tmp/3/file.txt
 ```
 
-```
+```bash
 echo {1..5}
 1 2 3 4 5
 
@@ -46,7 +46,7 @@ a b c
 
 We can also set sequences. If we wanted to count to twenty in intervals of two
 
-```
+```bash
 echo {1..20..2}
 1 3 5 7 9 11 13 15 17 19
 ```
