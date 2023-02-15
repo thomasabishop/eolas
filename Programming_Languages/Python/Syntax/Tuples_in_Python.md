@@ -16,43 +16,48 @@ Tuples have the following properties:
 - **Allow duplicate** members
 - They are **indexed**
 
+As with all containers in Python they permit any data type.
+
+> Tuples are denoted with `(...)`
+
+## Basic usage
+
 ```python
 tup1 = (1, 3, 5, 7)
-print('tup1[0]:\t', tup1[0])
-print('tup1[1]:\t', tup1[1])
-print('tup1[2]:\t', tup1[2])
-print('tup1[3]:\t', tup1[3])
+print(tup1[0])
+print(tup1[1])
+print(tup1[2])
+print(tup1[3])
 
 """
-tup1[0]:         1
-tup1[1]:         3
-tup1[2]:         5
-tup1[3]:         7
+1
+3
+5
+7
 """
+```
 
-# Slicing
+## Slicing
 
-print('tup1[1:3]:\t', tup1[1:3])
-print('tup1[:3]:\t', tup1[:3])
-print('tup1[1:]:\t', tup1[1:])
-print('tup1[::-1]:\t', tup1[::-1])
+```python
+tup1 = (1, 3, 5, 7)
+
+print(tup1[1:3])
+print(tup1[:3])
+print(tup1[1:])
+print(tup1[::-1])
 
 """
-tup1[1:3]:       (3, 5)
-tup1[:3]:        (1, 3, 5)
-tup1[1:]:        (3, 5, 7)
-tup1[::-1]:      (7, 5, 3, 1)
+(3, 5)
+(1, 3, 5)
+(3, 5, 7)
+(7, 5, 3, 1)
 """
+```
 
+## Looping
 
-print('len(tup1):\t', len(tup1))
-# len(tup1):       4
-
-tup2 = (1, 'John', True, -23.45)
-print(tup2)
-# (1, 'John', True, -23.45)
-
-
+```python
 tup3 = ('apple', 'pear', 'orange', 'plum', 'apple')
 for x in tup3:
     print(x)
@@ -64,20 +69,32 @@ orange
 plum
 apple
 """
+```
 
+## Useful methods and predicates
+
+```python
+tup3 = ('apple', 'pear', 'orange', 'plum', 'apple')
+
+# Count instances of a member
 print(tup3.count('apple'))
-print(tup3.index('pear'))
-
 # 2
+
+# Get index of a member
+print(tup3.index('pear'))
 # 1
 
-
+# Check for membership
 if 'orange' in tup3:
     print('orange is in the Tuple')
 
 # orange is in the Tuple
+```
 
-tuple1 = (1, 3, 5, 7)
+## Nest tuples
+
+```python
+
 tuple2 = ('John', 'Denise', 'Phoebe', 'Adam')
 tuple3 = (42, tuple1, tuple2, 5.5)
 print(tuple3)
@@ -85,3 +102,5 @@ print(tuple3)
 # (42, (1, 3, 5, 7), ('John', 'Denise', 'Phoebe', 'Adam'), 5.5)
 
 ```
+
+// TODO: How to flatten a tuple?
