@@ -2,16 +2,23 @@
 
 ## Python
 
-- Get PEP8 working in VSCode as linter and add to execute on save. (These are conventions not syntactic enforcements, style)
-
-- Is there a thing like prettier to enforce double quotes over single for instance?
-
-- Research: How do I make sure I am using `conda` and not the default install in VSCode ? PyCharm makes it easy to select environment.
-
 - Research: best practice for separating projects into `conda` environments like npm
 
 - Read-up more on types: what does it mean for Python to be dynamically typed. What is type-hinting really?
+
   - Use provided pdfs and John's books
+
+- Is `dictionary.values()`/ `dictionary.keys()` of type list?
+- Is `dictionary.items()` a list of tuples for key, value?
+
+- How to run test suites via VSCode?
+
+  BBC Course, remaining topics:
+
+  - Classes and object-oriented paradigms in Python
+  - Modules
+  - Error handling
+  - Testing
 
 ## Bash
 

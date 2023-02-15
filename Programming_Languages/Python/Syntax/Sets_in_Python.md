@@ -54,6 +54,37 @@ basket.remove('apple')
 basket.discard('apricot')
 print(basket)
 # {'pear', 'banana', 'orange'}
+
+basket.clear()
+print(basket)
+#set
+
 ```
 
 ## Add items to a set
+
+```python
+basket.add('apricot')
+print(basket)
+# {'apricot', 'pear', 'banana', 'orange'}
+```
+
+## Apply unions and intersections
+
+```python
+s1 = {'apple', 'orange', 'banana'}
+s2 = {'grapefruit', 'lime', 'banana'}
+print('Union:', s1 | s2)
+# Union: {'apple', 'orange', 'grapefruit', 'lime', 'banana'}
+
+print('Intersection:', s1 & s2)
+# Intersection: {'banana'}
+
+
+print('Difference:', s1 - s2)
+# Difference: {'orange', 'apple'}
+
+print('Symmetric Difference:', s1 ^ s2)
+#Symmetric Difference: {'apple', 'orange', 'grapefruit', 'lime'}
+
+```
