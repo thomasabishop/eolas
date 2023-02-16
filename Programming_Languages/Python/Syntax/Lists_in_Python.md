@@ -18,6 +18,14 @@ Lists have the following properties:
 
 > Lists are denoted with `[...]`
 
+## Duplicating lists
+
+When we want to duplicate a list, we can't just reassign the list to a new variable and expect this to be a copy.
+
+If we edit this "copy" it will update the original list since it copies the pointer and will therefore point to the same address in memory. Instead we have to use the List `copy()` function which returns a new list and doesn't modify the original list.
+
+Relatedly, we should distinguish those List methods and functions which create a new list (non-destructive) and those that mutate the existing list.
+
 ## Basic usage
 
 ```python
