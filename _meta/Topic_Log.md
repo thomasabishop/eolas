@@ -19,6 +19,7 @@
   - Modules
   - Error handling
   - Testing
+  - I/O
 
 ## Bash
 
@@ -59,6 +60,8 @@
 ## NodeJS
 
 - Build examples of read stream and write stream
+- Can you override parent class methods in JS subclass?
+  - If not in JS, can you do this in TS?
 
 ## Git
 
