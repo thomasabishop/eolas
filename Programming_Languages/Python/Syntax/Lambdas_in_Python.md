@@ -15,10 +15,14 @@ They are most often used unnamed with the functional methods [map, filter and re
 Here is the two syntaxes side by side:
 
 ```js
+// JavaScript
+
 const double = (x) => x * x;
 ```
 
 ```py
+# Python
+
 double = lambda x: x * x
 ```
 
