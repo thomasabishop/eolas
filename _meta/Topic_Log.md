@@ -15,8 +15,7 @@
 
   BBC Course, remaining topics:
 
-  - Classes and object-oriented paradigms in Python
-  - Modules
+  - Entrypoint modules
   - Error handling
   - Testing
   - I/O
