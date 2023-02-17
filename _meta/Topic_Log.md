@@ -15,10 +15,10 @@
 
   BBC Course, remaining topics:
 
-  - Classes and object-oriented paradigms in Python
-  - Modules
+  - Entrypoint modules
   - Error handling
   - Testing
+  - I/O
 
 ## Bash
 
@@ -59,6 +59,8 @@
 ## NodeJS
 
 - Build examples of read stream and write stream
+- Can you override parent class methods in JS subclass?
+  - If not in JS, can you do this in TS?
 
 ## Git
 
