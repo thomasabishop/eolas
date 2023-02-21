@@ -1,3 +1,8 @@
+code {
+  font-family: "IBM Plex Mono";
+  font-size: 13px !important;
+}
+
 body {
   background: #000e07;
 }

@@ -3,7 +3,10 @@ categories:
   - Programming Languages
 tags:
   - shell
+  - data-structures
 ---
+
+# Lists and arrays in Bash
 
 ## List variables
 
@@ -81,3 +84,13 @@ for x in ./l*.sh; do
 done
 echo
 ```
+
+## Associational arrays / maps
+
+With Bash 4 we gained an additional array-like data structure that is key-value based and similar to maps in other languages.
+
+```bash
+declare -A rock=(["win"]="scissors" ["lose"]="paper")
+```
+
+We would then individuate a value with `"${rock[win]}"`
