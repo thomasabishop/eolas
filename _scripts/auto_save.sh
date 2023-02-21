@@ -4,22 +4,22 @@
 
 # It is aliased to `cs-update` in .zshrc
 
-NOTES_PATH="/home/thomas/repos/computer_science"
-SPACE_TO_UNDERSCORE="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
-CLEAN_IMAGE_DIRECTORY="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
+notes_path="/home/thomas/repos/computer_science"
+space_to_underscore="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
+clean_image_directory="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
 
-cd "$NOTES_PATH"
+cd "$notes_path"
 
 # Loop through directories and convert spaces in filenames to underscores
-source ${SPACE_TO_UNDERSCORE}
-source ${CLEAN_IMAGE_DIRECTORY}
+source ${space_to_underscore}
+source ${clean_image_directory}
 
 git pull >/dev/null 2>&1
 
-CHANGES_EXIST="$(git status --porcelain | wc -l)"
+changes_exist="$(git status --porcelain | wc -l)"
 
 # If no changes, exit. Else commit and push with timestamp
-if [ "$CHANGES_EXIST" -eq 0 ]; then
+if [ "$changes_exist" -eq 0 ]; then
     echo "No changes"
     exit 0
 fi

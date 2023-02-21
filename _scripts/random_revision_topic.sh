@@ -5,15 +5,15 @@
 # It is aliased to cs-revise in .zshrc
 
 # Choose source directories...
-DIRS_TO_PARSE="../Computer_Architecture ../Databases ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell ../Logic"
+directories_to_parse="../Computer_Architecture ../Databases ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell ../Logic"
 
 # Return array of all files belonging to source dirs...
-for ele in $DIRS_TO_PARSE; do
-    FILE_MATCHES+=( $(find $ele -name "*.md" -type f) )
+for ele in $directories_to_parse; do
+    file_matches+=( $(find $ele -name "*.md" -type f) )
 done
 
 # Generate a random integer between 0 and the match array length...
-RANDOM_FILE_INDEX=$(( $RANDOM % ${#FILE_MATCHES[@]} + 0 ))
+random_file_index=$(( $RANDOM % ${#file_matches[@]} + 0 ))
 
 # Return file matching that index...
-echo "Revise this topic: ${FILE_MATCHES[$RANDOM_FILE_INDEX]}"
+echo "Revise this topic: ${file_matches[$random_file_index]}"
