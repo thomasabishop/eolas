@@ -71,3 +71,19 @@ The extended test supports the standard `test` comparisons and adds other featur
   ```
   [[ -d ~ || -a /bin/mash ]]; echo $?
   ```
+
+## Further examples
+
+**Test if a character exists in two strings**
+
+```bash
+string1="hello"
+string2="world"
+char="l"
+
+if [[ "$string1" == *"$char"* ]] && [[ "$string2" == *"$char"* ]]; then
+    echo "Character '$char' exists in both strings."
+else
+    echo "Character '$char' does not exist in both strings."
+fi
+```

@@ -5,7 +5,7 @@ tags:
   - shell
 ---
 
-# `read`
+# read
 
 The primary use of `read` is to capture user input from `stdin`. It is also often used frequently to parse strings or files that are redirected to it (with `<` and `<<`) or piped to it. In each case, what is read is stored as a variable.
 
@@ -41,7 +41,7 @@ while read var; do
 done < './input-file.txt
 ```
 
-## `$REPLY`
+## $REPLY
 
 If you do not assign a variable name to store the value that `read` reads a default (`$REPLY`) is applied. You can reference this value in your code.
 

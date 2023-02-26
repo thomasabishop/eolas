@@ -26,6 +26,10 @@ blockquote {
   background: #637d7510;
 }
 
+::selection {
+  background: #1d4125; /* WebKit/Blink Browsers */
+}
+
 table {
   table-layout: fixed;
   width: 100%;
