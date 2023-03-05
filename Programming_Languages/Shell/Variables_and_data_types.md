@@ -7,22 +7,14 @@ tags:
 
 ## Types
 
-> There is no typing in bash!
-
-- Bash variables do not have types thus bash is neither loosely or strictly typed. Anything you apply the identity operator against becomes a character string variable.
-- Bash is however able to distinguish numerical strings which is why arithmetic operations and comparisons work.
-- Consequently there is no `null` type either. The closest thing is an empty string, i.e. `APPROX_NULL=""` .
-
 ## Variables
 
-### Variables that hold character strings
-
-As noted we use the equality symbol to create a variable:
+We use the equality symbol to create a variable:
 
 ```bash
-PRIM_VAR_STR="My first variable"
-PRIM_VAR_FLOAT="50.3"
-PRIM_VAR_BOOL="true"
+stringVar="My first variable"
+floatVar="50.3"
+boolVar="true"
 ```
 
 As there is no typing in bash, the names of these variables are purely notional.
@@ -30,36 +22,15 @@ As there is no typing in bash, the names of these variables are purely notional.
 To invoke a variable we use special brackets:
 
 ```bash
-echo ${PRIM_VAR_STR} # My first variable
-echo ${PRIM_VAR_FLOAT} # 50.3
-echo ${PRIM_VAR_BOOL} # true
+echo ${stringVar} # My first variable
+echo ${floatVar} # 50.3
+echo ${boolVar} # true
 ```
 
-- there is no compunction to use capitals for variables but it can be helpful to distinguish custom variables from program variables (see below)
-- quotation marks at declaration are also not strictly necessary however they can help avoid bugs. Also serves as a reminder that every type is basically a string at the end of the day
+- Quotation marks at declaration are also not strictly necessary however they can help avoid bugs. Also serves as a reminder that every type is basically a string at the end of the day
 
-## Declarations
+## Parameter expansion
 
-You can achieve a sort of typing through the `declare` keyword, although bear in mind this is not enforced and you do not have to use it.
+// TODO: What is the difference betweeen `$var`, `${var}` and `"${var}"` ?
 
-### `-r` : readonly
-
-```bash
-declare -r var1="I'm read only"
-```
-
-Roughly equivalent to a `const` : if you attempt to change the value of `var1` it will fail with an error message.
-
-### `i` : integer
-
-```bash
-declare -i var2="43"
-```
-
-The script will treat all subsequent occurrences of `var2` as an integer
-
-### `a` : array
-
-```bash
-declare -a anArray
-```
+Still not very clear on this.
