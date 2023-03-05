@@ -4,7 +4,7 @@ categories:
 tags: [systems-programming]
 ---
 
-# `systemd`
+# systemd
 
 Once the [boot process](/Operating_Systems/Boot_process.md) has completed and the bootloader has located the kernel and injected it into memory the first user space program runs: `init` (for _initialisation_). `init` is a [daemon](/Operating_Systems/Daemons.md) process that continues running until shutdown and is responsible for starting all the processes that are prerequisites for user space. For example: network connections, disk access, user logins etc.
 
@@ -16,7 +16,7 @@ On Linux systems `systemd` is used to implement `init`.
 
 > `systemd` can track individual service daemons after they start, and group together multiple processes associated with a service, giving you more power and insight into exactly what is running on the system _How Linux Works: Third Edition_, Brian Ward 2021
 
-## How `systemd` works
+## How systemd works
 
 ### Goal-directed units
 
@@ -41,7 +41,7 @@ Units are organised into **unit types**. The main types that run at boot time ar
 
 For example, at boot, a target unit called `default.target` groups together a number of service and mount units as dependencies. These then run in a graph-like dependency structure where a unit that comes late in the boot process can depend on several previous units making earlier branches of a dependency tree join back together.
 
-## `systemd` configuration files
+## systemd configuration files
 
 Units are managed via `systemd` configuration files.
 
@@ -92,7 +92,7 @@ Also=uuidd.socket
 - `Service` constitutes the main specification for the unit
 - `Install` is the call to set the dependencies running before the `Service` functions are accessible.
 
-## `systemd` operations: `systemctl`
+## systemd operations: systemctl
 
 The `systemctl` command is the chief way of interacting with `systemd`. You use it to activate and deactivate services, list their status, reload the configuration and so.
 
@@ -188,6 +188,6 @@ systemctl disable mongodb.service
 Removed "/etc/systemd/system/multi-user.target.wants/mongodb.service".
 ```
 
-## Why use `systemd` over `cron` ?
+## Why use systemd over cron ?
 
 https://mark.stosberg.com/2016-08-26-rsnapshot-and-systemd/
