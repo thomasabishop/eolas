@@ -15,7 +15,6 @@
 
   BBC Course, remaining topics:
 
-  - Entrypoint modules
   - Error handling
   - Testing
   - I/O

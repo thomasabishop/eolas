@@ -39,6 +39,7 @@ th,
 td {
   background: #637d7510;
   padding: 0.5rem;
+  border: none !important;
 }
 
 tbody tr:nth-child(odd) {
@@ -52,12 +53,14 @@ tbody tr:nth-child(even) {
 thead {
   border-bottom-width: 0 !important;
 }
+
 th {
   border-bottom: 0px !important;
 }
 
 span.hljs-comment {
   color: #5a8055ad;
+  font-style: normal;
 }
 
 span.hljs-string,

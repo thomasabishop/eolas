@@ -35,7 +35,7 @@ Many tests can be run with flags as a shorthand like we saw above:
 -a FILE        True if file exists.
 -d FILE        True if file is a directory.
 -e FILE        True if file exists.
--h FILE        True if file is a symbolic link.z
+-h FILE        True if file is a symbolic link
 -s FILE        True if file exists and is not empty.
 -N FILE        True if the file has been modified since it was last read.
 ```
@@ -87,3 +87,5 @@ else
     echo "Character '$char' does not exist in both strings."
 fi
 ```
+
+> Note: this syntax can also be used to test if a given element exists in an [array](/Programming_Languages/Shell/Lists_and_arrays.md).

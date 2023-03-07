@@ -5,7 +5,7 @@
 # It is aliased to cs-revise in .zshrc
 
 # Choose source directories...
-directories_to_parse="../Computer_Architecture ../Databases ../Electronics_and_Hardware ../Operating_Systems ../Programming_Languages/Shell ../Logic"
+directories_to_parse="./Computer_Architecture ./Databases ./Electronics_and_Hardware ./Operating_Systems ./Programming_Languages/Shell ./Logic"
 
 # Return array of all files belonging to source dirs...
 for ele in $directories_to_parse; do
