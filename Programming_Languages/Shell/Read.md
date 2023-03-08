@@ -7,7 +7,7 @@ tags:
 
 # read
 
-The primary use of `read` is to capture user input from `stdin`. It is also often used frequently to parse strings or files that are redirected to it (with `<` and `<<`) or piped to it. In each case, what is read is stored as a variable.
+The primary use of `read` is to capture user input from `stdin`. It can also be used to parse strings or files that are redirected to it (with `<` and `<<`) or piped to it. In each case, what is read is stored as a variable.
 
 `read` will parse line by line using a space (`\n`) as the default delimiter. You can use IFS to parse by other characters and/or [split the contents into an array](/Programming_Languages/Shell/Split_into_array.md).
 
@@ -22,9 +22,9 @@ $ bishop
 
 > If you don't specify variables, `read` will automatically parse using whitespace
 
-## Example of piping to `read`
+## Example of piping to read
 
-This reads the files in a directory and passes the file names to `read`.
+Here we use [find](/Programming_Languages/Shell/Find.md) to collate the files in the current directory and then pipe them to read.
 
 ```bash
 find -type -f  -not -path "./.git/" | read $fname
@@ -35,8 +35,8 @@ find -type -f  -not -path "./.git/" | read $fname
 We will typically read from a source and then do something with each variable that `read` returns, e.g:
 
 ```bash
-while read var; do
-  if [var == 'something']; then
+while read line; do
+  if [ var == 'something' ]; then
     # do something
 done < './input-file.txt
 ```

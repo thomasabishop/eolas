@@ -119,7 +119,7 @@ file.close()
 
 ### Error handling
 
-Obviously file access can raise errors - typically when the file you want to access does not exist. We can manage this scenario with [exception handlers](/Programming_Languages/Python/Syntax/Error_handling_in_Python.md):
+Obviously file access can raise errors - typically when the file you want to access does not exist (i.e. a `FileNotFoundError` [exception](/Programming_Languages/Python/Syntax/Error_handling_in_Python.md)). We can manage this scenario with [exception handlers](/Programming_Languages/Python/Syntax/Error_handling_in_Python.md):
 
 ```py
 try:
@@ -142,4 +142,39 @@ A more pythonic and concise way of reading files and closing them is to use `wit
 with open('filename.txt', 'r') as file:
     contents = file.read()
     print(contents)
+```
+
+## Writing to files
+
+Again we create a file object with `open()` and this time use the `write` method:
+
+```py
+# Open file in write mode
+file = open("example.txt", "w")
+
+# Write some text to the file
+file.write("Hello, this is an example text written using Python.")
+
+# Close the file
+file.close()
+```
+
+> Note that in the above example, if the file does not already exist, it will create it. If it does exist, it will overwrite its contents with the new data. So we use `write` to create new files as well as to write to existing files.
+
+## Renaming and deleting files
+
+We hace to use another built-in module to rename and delete files: `os`.
+
+To rename an existing file:
+
+```py
+import os
+os.rename('original-file-name.txt', 'new-file-name.txt')
+```
+
+To delete a file:
+
+```py
+import os
+os.remove('file-name.txt')
 ```

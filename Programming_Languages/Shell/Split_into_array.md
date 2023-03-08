@@ -32,7 +32,7 @@ echo "${name_for_array[1]}"
 456
 ```
 
-If we want to read direct from string within bash file:
+If we want to read a string directly:
 
 ```bash
 readarray -t new_name_for_array <<< "here
@@ -46,17 +46,17 @@ is
 
 > The _-t_ flag removes the trailing newline
 
-Add more: https://linuxhint.com/split-string-array-bash/
+See more: https://linuxhint.com/split-string-array-bash/
 
 ## read
 
-For different delimiters we have to use `read`, combined with `IFS` the **Internal Field Separator**.
+For delimiters other than a space we have to use `read`, combined with `IFS` the **Internal Field Separator**.
 
 For example, to split by comma:
 
 ```plaintext
 # comma-input.txt
-something, something else, something more
+something,something else,something more
 ```
 
 ```bash
