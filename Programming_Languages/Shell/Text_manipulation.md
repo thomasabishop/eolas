@@ -5,6 +5,8 @@ tags:
   - shell
 ---
 
+# Text manipulation
+
 ## Sorting strings: `sort`
 
 If you have a `.txt` file containing text strings, each on a new line you can use the sort function to quickly put them in alphabetical order:

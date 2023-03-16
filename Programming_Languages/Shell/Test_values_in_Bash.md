@@ -3,6 +3,7 @@ categories:
   - Programming Languages
 tags:
   - shell
+  - regex
 ---
 
 # Test values in Bash
@@ -22,7 +23,7 @@ echo $?
 
 [ -d /bin/zsh ] # is this binary a directory?
 echo $
-01  # no
+1  # no
 ```
 
 ## Test structures
@@ -61,6 +62,14 @@ We can negate a test condition with `!`:
 0
 ```
 
+## Running process if test succeeds or fails
+
+We can use the following structure to run a process if a test condition obtains:
+
+```bash
+[[ -d ~ ]] && echo "/home is a directory"
+```
+
 ## Extended test: `[[...]]`
 
 When we use **double brackets** we are using _extended_ `test`.
@@ -71,6 +80,16 @@ The extended test supports the standard `test` comparisons and adds other featur
   ```
   [[ -d ~ || -a /bin/mash ]]; echo $?
   ```
+
+### Using regular expressions
+
+Extended test also allows us to use regular expressions as part of our test conditions. In order to test against a regular expression we use `=~` as the comparison operator.
+
+```bash
+[[ "thomas" =~ t.* ]]; echo $?
+```
+
+Here the test succeeds because "thomas" begins with "t" followed by any other character.
 
 ## Further examples
 

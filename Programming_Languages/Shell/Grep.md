@@ -5,6 +5,8 @@ tags:
   - shell
 ---
 
+# Grep
+
 ## Purpose of `grep`
 
 `grep` stands for “global regular expression print”. It allows you to search plain text data sets for strings which match a regular expression or pattern.

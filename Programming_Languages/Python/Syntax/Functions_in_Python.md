@@ -4,7 +4,7 @@ categories:
 tags: [python]
 ---
 
-# Functions
+# Functions in Python
 
 - Convention is to leave a double line-break after a function definition (but not with nested functions - here, a single linebreak is sufficient)
 - Scope within functions is demarcated by indents, as everything in Python

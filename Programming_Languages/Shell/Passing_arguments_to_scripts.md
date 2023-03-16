@@ -9,13 +9,15 @@ tags:
 
 ## Relation between commands and programs
 
-Whenever we issue a command in bash we are really running an executable program that is associated with the command. This is why when we create our own bash scripts we must run `chmod` to make them executables. When we issue a command like `./file.sh` we are running an executable program.
+Whenever we issue a command in bash we are really running an executable program that is associated with the command. This is why when we create our own bash scripts we must run `chmod` to make them executable. When we issue a command like `./file.sh` we are running an executable program.
 
-How come, however, that when we use a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh` ? Remember from our discussion of the `PATH` environment variable that whenever we use inbuilt commands like `ls` and `cd` we are automatically sourcing them from the binary directory because we have these directories in our `PATH` . Hence the shell knows in advance what these commands mean. In the case of custom scripts, these aren’t typically added to the `PATH` so we have to source them in order to run them.
+When we run a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh`. This is because a reference to the program file is already in our `$PATH`.
+
+In the case of `cd`, this is an in-built program and as such it will be sourced from a binary and we have a reference to the binary in path. In the case of `npm`, this is not an in-built program however in order to run it we must already have it in our `PATH`.
 
 ## Passing arguments
 
-If you think about it, a script is really just a function that runs when you source it. As such there needs to be a way for you to pass data to the function so that it can actually act like a function and take arguments. When we use for example `cd ./Desktop` we are passing a directory name as an argument to the `cd` program. We can do the same thing with our custom bash scripts.
+A script is really just a function that runs when you source it. As such there needs to be a way for you to pass data to the function so that it can actually act like a function and take arguments. When we use for example `cd ./Desktop` we are passing a directory name as an argument to the `cd` program. We can do the same thing with our custom bash scripts.
 
 To pass an argument we simply add the values after the script in the command. For example:
 
@@ -23,7 +25,7 @@ To pass an argument we simply add the values after the script in the command. Fo
 ./arguments.sh Thomas 33
 ```
 
-The script is as follows:
+We can use built-in variables to return information about the invocation of this script:
 
 ```bash
 #!/bin/bash
@@ -45,9 +47,8 @@ The second argument is 33
 Your name is Thomas and you are 33 years old
 ```
 
-Some points to note on syntax. The `$` is used to individuate the script itself and its arguments.
+Key points:
 
-- Each argument passed is accessible from an index starting at `1` (`$1`)
-- The script itself occupies the `0` position, hence we are able to log the name of the script at line 1 `$0` )
-- To log the arguments as a group (for instance to later loop through them) we use `$@` .
-- To get the number of arguments use `$#`
+- `$0` designates the script or function that is being executed
+- `$@` designates a list of all the arguments that are passed to the script
+- `$1...` designates each individual argument
