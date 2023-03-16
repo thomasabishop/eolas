@@ -35,6 +35,7 @@ echo "The arguments provided are $@"
 echo "The first argument is $1"
 echo "The second argument is $2"
 echo "Your name is $1 and you are $2 years old"
+echo "There were $# arguments"
 ```
 
 This outputs:
@@ -45,6 +46,7 @@ The arguments provided are Thomas 33
 The first argument is Thomas
 The second argument is 33
 Your name is Thomas and you are 33 years old
+There were 2 arguments.
 ```
 
 Key points:
@@ -52,3 +54,31 @@ Key points:
 - `$0` designates the script or function that is being executed
 - `$@` designates a list of all the arguments that are passed to the script
 - `$1...` designates each individual argument
+- `$#` gives us a count of the number of arguments
+
+## Passing options
+
+Options differ from arguments in that they are prepended with `-` and they can be passed in any order. We use the `getops` program to parse options.
+
+We can demonstrate this with a script that takes in a username and password as options:
+
+```sh
+while getopts u:p: option; do
+  case $option in
+    u) user=$OPTARG;;
+    p) pass=$OPTARG;;
+  esac
+done
+
+echo "user: $user / pass: $pass"
+```
+
+With the input `my-option-script.sh -u thomas -p password123` we would get the following returned:
+
+```
+user: thomas / pass: password123
+```
+
+Here we set up a `while` loop to parse the stdin and store it in the variable `option`. We run this through a case statement and individuate each option, storing them in dedicated local variables via the global `$OPTARG` variable
+
+Note: using a colon after each option means that the script will expect the given option to have a value.
