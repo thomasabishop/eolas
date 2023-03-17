@@ -13,11 +13,17 @@ The primary use of `read` is to capture user input from `stdin`. It can also be 
 
 ## Example of capturing user input
 
+When we use `read` to gather user input, the script will pause until the input is provided.
+
 ```bash
-$ read var1 var2
-$ thomas bishop # user inputs this
-$ echo $var2
-$ bishop
+echo "What is your name?"
+read name
+
+echo "What is your password?"
+read -s pass
+
+read
+
 ```
 
 > If you don't specify variables, `read` will automatically parse using whitespace

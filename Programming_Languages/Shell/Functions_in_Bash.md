@@ -27,7 +27,7 @@ echo $expandedRange
 
 ## Get all arguments as an array
 
-We can access all the arguments passed to a function using the `$@` syntax we encountered before when [passing arguments to scripts](/Programming_Languages/Shell/Passing_arguments_to_scripts.md). (Here a function is a kind of script in miniature so the process is the same.)
+We can access all the arguments passed to a function using the `$@` syntax we encountered before when [passing arguments to scripts](/Programming_Languages/Shell/Passing_arguments_to_Bash_scripts.md). (Here a function is a kind of script in miniature so the process is the same.)
 
 ```sh
 function numberThings() {

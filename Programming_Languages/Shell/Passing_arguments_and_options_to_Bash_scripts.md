@@ -5,13 +5,13 @@ tags:
   - shell
 ---
 
-# Passing arguments to scripts
+# Passing arguments and options to Bash scripts
 
 ## Relation between commands and programs
 
-Whenever we issue a command in bash we are really running an executable program that is associated with the command. This is why when we create our own bash scripts we must run `chmod` to make them executable. When we issue a command like `./file.sh` we are running an executable program.
+Whenever we issue a command in bash we are running an executable program that the command token references. This is why when we create our own bash scripts we must run `chmod` to make them executable. When we issue a command like `./do_something.sh` we are running an executable program.
 
-When we run a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh`. This is because a reference to the program file is already in our `$PATH`.
+When we run a program like `cd` or `npm` we don’t have to type `./cd.sh` or `./npm.sh`. This is because a reference to the program file is already in our [`$PATH`](/Programming_Languages/Shell/The_PATH.md).
 
 In the case of `cd`, this is an in-built program and as such it will be sourced from a binary and we have a reference to the binary in path. In the case of `npm`, this is not an in-built program however in order to run it we must already have it in our `PATH`.
 
@@ -58,9 +58,17 @@ Key points:
 
 ## Passing options
 
-Options differ from arguments in that they are prepended with `-` and they can be passed in any order. We use the `getops` program to parse options.
+Options differ from arguments in that they are prepended with `-` and they can be passed in any order. We use the `getops` program to parse the options that the user inputs with their command.
 
-We can demonstrate this with a script that takes in a username and password as options:
+We can demonstrate this with a script that takes in a username and password as options.
+
+We can handle an option-based input like:
+
+```
+some-program -u thomas -p password123
+```
+
+With the following construct:
 
 ```sh
 while getopts u:p: option; do
@@ -73,12 +81,29 @@ done
 echo "user: $user / pass: $pass"
 ```
 
-With the input `my-option-script.sh -u thomas -p password123` we would get the following returned:
+Which returns:
 
 ```
 user: thomas / pass: password123
 ```
 
-Here we set up a `while` loop to parse the stdin and store it in the variable `option`. We run this through a case statement and individuate each option, storing them in dedicated local variables via the global `$OPTARG` variable
+Here we set up a `while` loop against the `getopts` command to parse the options in the stdin and store each one in a `option`. We run each `option` through a case statement and individuate each one, storing them in dedicated local variables via the global `$OPTARG` variable
 
-Note: using a colon after each option means that the script will expect the given option to have a value.
+### The role of the colons
+
+Using a colon after each option means that the script will expect the given option to have a value. If we put a colon _before_ each of the options we expect this will allow us to view any option the user provides in our option handler. This is useful when you are working with very many options, as with a command-line program.
+
+This version demonstrates a more exhaustive use case:
+
+```sh
+while getopts :u:p: option; do
+  case $option in
+    u) user=$OPTARG;;
+    p) pass=$OPTARG;;
+    a) echo "got the 'a' flag";;
+    b) echo "got the 'b' flag";;
+    ?) echo "Don't know what $OPTARG is!"
+  esac
+done
+
+```
