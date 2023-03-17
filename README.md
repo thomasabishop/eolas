@@ -1,3 +1,7 @@
-# computer-science
+# Eólas
 
-This repository contains notes from my autodidactic study of Computer Science. As well as standard CS curricula it also houses notes related to my professional development as a software engineer. So there is a lot of practical content mixed in, such as topics in DevOps, Git, shell scripting etc. I find it easier to have everything in one place and cross-referenced through YAML.
+> Eólas is Irish for knowledge or information, especially knowledge gained by experience or practice
+
+This repository contains notes from my autodidactic study of software engineering and computer science more generally. Along with theoretical topics it includes lots of practical content, typically syntax that I use day-to-day. It's designed to function as a second brain however this is more of an aspiration than a reality.
+
+
