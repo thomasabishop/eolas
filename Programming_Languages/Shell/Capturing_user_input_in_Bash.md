@@ -63,7 +63,32 @@ do
 done
 ```
 
-## Validating the user inputs
+## Ensuring you capture a valid response from the user
+
+### Set a default response value with `-i`
+
+If the user doesn't enter anything, the value will be set to the default.
+
+```sh
+read -ep "Favourite colour? " -i "blue" favecolour
+echo "$favecolour"
+# blue
+```
+
+Alternative formulation:
+
+```sh
+
+read -p "Favourite colour? [blue]" fave
+
+# If response empty...
+if [[ -z $fave ]]; then
+    fave="blue"
+fi
+echo "$fave was selected"
+```
+
+### Check right number of arguments supplied
 
 Here we test that the right number of [arguments](/Programming_Languages/Shell/Passing_arguments_and_options_to_Bash_scripts.md) have been passed to the script:
 
@@ -76,4 +101,17 @@ else
     echo "userid: $2"
     echo "favourite number: $3"
 fi
+```
+
+## Check the response is valid
+
+The following example demonstrates checking an input for a pattern (a data-link integer sequence):
+
+```sh
+read -p "Which year? [nnnn] " year
+until [[ $year =~ [0-9{4} ]];
+    read -p "A four-digit year, please! [nnnn] " year
+done
+echo "Selected year: $year"
+
 ```

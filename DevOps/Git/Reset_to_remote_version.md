@@ -10,5 +10,5 @@ The scenario: your local Git history has become corrupted in some way and you wa
 
 ```
 git fetch origin
-git reset --hard origin/master
+git reset --hard origin/main
 ```
