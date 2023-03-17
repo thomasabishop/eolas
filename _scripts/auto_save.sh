@@ -4,9 +4,9 @@
 
 # It is aliased to `cs-update` in .zshrc
 
-notes_path="/home/thomas/repos/computer_science"
-space_to_underscore="/home/thomas/repos/computer_science/_scripts/space_to_underscore_filename.sh"
-clean_image_directory="/home/thomas/repos/computer_science/_scripts/clean_image_directory.sh"
+notes_path="/home/thomas/repos/eolas"
+space_to_underscore="/home/thomas/repos/eolas/_scripts/space_to_underscore_filename.sh"
+clean_image_directory="/home/thomas/repos/eolas/_scripts/clean_image_directory.sh"
 
 cd "$notes_path"
 
