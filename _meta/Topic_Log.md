@@ -54,12 +54,11 @@
 
 ## Git
 
-- What is rebasing?
-- What is cherry-picking?
-- GitFlow methodology in the context of releases, hotfixes etc
-- How can you rollback without a hard-reset, i.e. how can you keep the future state (from the point of view of the rolled-back branch) accessible?
-- Tagging (also in relation to Git flow)
-- See if there is an advanced Git course on LinkedIn
+- [ ] What is rebasing?
+- [ ] What is `git switch`
+- [x] What is cherry-picking
+- [ ] Tagging (also in relation to Git flow)
+- [ ] How can you rollback without a hard-reset, i.e. how can you keep the future state (from the point of view of the rolled-back branch) accessible?
 
 ## JavaScript
 
