@@ -39,7 +39,22 @@ And then rebrand the previous A commits to be continuous with B presenting a fla
 
 A common use-case is with feature branches as it makes the features fit more seamlessly with the `main` or `develop` branch.
 
-It is also a technique that can be used to integreate recent commits without merging.
+It is also a technique that can be used to integrate recent commits without merging.
+
+When to use one over the other:
+
+- **Merge** to allow commits to stand out or to be clearly grouped
+- **Merge** to bring large feature branches back into main
+- **Rebase** to add minor commits in a main branch into a feature branch
+- **Rebase** when you need to move commits from one branch to another
+
+So in terms of my personal workflow, I should be using
+
+- Merge when I want to bring a feature into develop
+- Merge when I want to bring develop into main for a release
+- Merge any time the feature branch is already public and being used by others.
+- Rebase to capture small changes in the parent branch
+- Rebase when I have branched from a branch because a refactor or something has become more complex than originally anticipated.
 
 ## Syntax
 
@@ -83,8 +98,38 @@ c33acc84f06fcb94e0e87d9adb240c038da6d71c
 
 ## Golden rule of rebasing
 
+When we rebase we remove the additional merge commit but we are changing history. The commits are still there but the SHAs are changed. For this reason **you should not rebase a public branch**, otherwise you will mess up your collaborators history. You should do your rebasing locally and then make a pull request.
+
 ## Difference from cherry-picking
 
 The main difference between the two approaches is that [cherry-picking](/DevOps/Git/Cherry_picking_a_branch.md) is a more selective process, where you can pick and choose specific commits that you want to include in another branch. This can be useful when you only want to apply specific changes or fixes from one branch to another, without including all the changes made in the original branch.
 
 On the other hand, rebasing is a more comprehensive process that can include all the changes from one branch to another, but it modifies the commit history, making it more linear and easier to understand. Unlike rebasing, cherry-picking does not modify the commit history of either branch.
+
+## Squashing commits
+
+This is a handy feature of rebasing. It allows you to combine multiple commits into one. This is useful when you have been doing a lot of trial and error to resolve a bug and you have lots of small commits that are not that important in themselves.
+
+We use the interactive rebase tool for this.
+
+Checkout the branch where the commit you want to squash is located.
+
+Then run:
+
+```
+git rebase -i HEAD~n
+```
+
+Where `n` is the number of commits you want to squash starting from the most recent. This will open an interactive rebase window, listing the commits. You can then use the keywords to decide what you want to do with them. In our case this will be `s` for squash.
+
+![](/_img/git-interactive-rebase.png)
+
+## `git pull rebase`
+
+We can use this command to combine a rebase with a pull. This way we silently update our local version of a branch with the remote, without adding a merge commit.
+
+```
+git pull --rebase
+```
+
+Add `--rebase=preserve` to keep merges that have been done _locally_. It is generally a good idea to do this.
