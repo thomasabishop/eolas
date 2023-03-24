@@ -57,8 +57,9 @@
 - [ ] What is rebasing?
 - [ ] What is `git switch`
 - [x] What is cherry-picking
-- [ ] Tagging (also in relation to Git flow)
+- [x] Tagging (also in relation to Git flow)
 - [ ] How can you rollback without a hard-reset, i.e. how can you keep the future state (from the point of view of the rolled-back branch) accessible?
+- [ ] Difference between restore and reset
 
 ## JavaScript
 

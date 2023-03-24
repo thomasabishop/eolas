@@ -46,4 +46,26 @@ git diff v1.0..v1.1
 
 ## Pushing tags to a remote
 
-In the examples so far, all the tags have been **local tags**. They only exist in our local workflow and are not accessible to our collaborators. If we do a `git push`, this doesn't transfer our local tags.
+In the examples so far, all the tags have been **local tags**. They only exist in our local workflow and are not accessible to our collaborators. If we do a `git push`, this doesn't transfer our local tags. You have to do:
+
+```
+git push origin [tag-name]
+```
+
+Push all tags:
+
+```
+git push origin --tags
+
+# Delete remote tag
+
+git push -d origin [tag-name]
+```
+
+## Getting tags from the remote
+
+```
+git fetch
+```
+
+This automatically fetches tags too.
