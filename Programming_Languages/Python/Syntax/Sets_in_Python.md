@@ -69,6 +69,20 @@ print(basket)
 # {'apricot', 'pear', 'banana', 'orange'}
 ```
 
+## Start with empty set
+
+To declare an empty set you cannot just do:
+
+```py
+my_set = {}
+```
+
+You have to use a constructor:
+
+```py
+my_set = set()
+```
+
 ## Apply unions and intersections
 
 ```python
