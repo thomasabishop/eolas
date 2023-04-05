@@ -72,3 +72,8 @@ Look into these new features:
 - Dynamic import
 - Temporal
 - `Promise.allSettled()`, `Promise.any()`
+
+## TypeScript
+
+- Records
+- Mapped types
