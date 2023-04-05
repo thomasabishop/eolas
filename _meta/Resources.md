@@ -104,6 +104,8 @@ J. Hunt. 2019. **An Advanced Guide to Python Programming**
 
 [Learning Arduino with Python](https://realpython.com/arduino-python/)
 
+[Python Programming Projects](https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt)
+
 ## Shell
 
 B. Perry, D. Taylor. 2015. **Wicked Cool Shell Scripts**
