@@ -7,123 +7,123 @@ tags:
 
 # Generics
 
-**Generics allow you to write code that is type-safe yet flexible enough to accommodate specifics that you are not able to ascertain in advance.**
+Generics are a powerful feature in TypeScript that enables you to write reusable and flexible code while maintaining strong typing. With generics, you can create functions, classes, and interfaces that work with various types while preserving type information.
 
-Generics can help promote:
+The main purpose of generics is to allow developers to write code that can **operate on different data types without knowing the specific type beforehand**. This helps to keep the code DRY and maintainable.
 
-- type consistency when specific types cannot be known in advance
-- reduced repetition when writing functions and methods
-- extensibility and future-proofing
+## Basic usage
 
-## First example: simplest use case
-
-In the code below we have a simple JavaScript function that receives a value and an an array as parameters. It returns a new array comprising the original array plus the additional value:
-
-```js
-function generateArray(existingArray, newValue) {
-  return [...existingArray, newValue];
-}
-```
-
-Imagine that we want to ensure that each of the parameters share the same data type. In other words: if the function is passed a string array, the second parameter must also be a string. For example, it should not be the case that you can append a string to an array of numbers.
-
-Now imagine that we don't know in advance what type the value or array will be, we just know that the data types of the parameters must match.
-
-In converting the function to TypeScript, one way of overcoming our lack of foreknowledge would be to deploy `any`. This way it doesn't matter which types are passed to the function:
+### Functions
 
 ```ts
-function generateArray(existingArray: any[], newValue: any): any[] {
-  return [...existingArray, newValue];
+function identity<T>(arg: T): T {
+  return arg;
 }
 ```
 
-But this is no solution at all. The problem — as always with `any` — is that it strips our function of any type checks whatsoever and would therefore invite calls of form: `generateArray([1,2,3], 'lorem')`.
+Here, `T` is a generic type variable. The `identity` function is a generic function that takes an argument of type `T` and returns a value of type `T`.
 
-Enter generics:
+To use this generic function you can either explicitly provide the type within the angle brackets, or let TypeScript infer the type based on the value passed:
 
 ```ts
-function generateArray<T>(existingArr: T[], newValue: T): T[] {
-  return [...existingArr, newValue];
+// Explicitly specifying the type
+let output1 = identity<string>("hello");
+
+// TypeScript infers the type as `number`
+let output2 = identity(42);
+```
+
+#### Restricting the available types
+
+In the previous example any type could be used with the `identity` function. The only constraint that we place on usage is that the types must be consistent: if we pass a string as an argument, then a string must be returned.
+
+However we can add further restrictions on types by using the `extend` keyword, combined with an interface.
+
+```ts
+interface Lengthwise {
+  length: number;
+}
+
+function logLength<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length);
+  return arg;
 }
 ```
 
-Now, whilst we haven't asserted ahead of time which types will be used, whichever types we do pass in, must match. The function header is saying:
+In this example the `logLength` generic function is limited to types that implement the `Lengthwise` interface. So: any argument that is passed to `logLength` and any value that is returned by it must match the shape of `Lengthwise`, having the `length` property.
 
-- both arguments must be of the same type (represented by `T`)
-- the function will return an array of this same `T` type.
+## Interfaces and classes
 
-If I then tried to run the function with unmatched types (for example `generateArray([1,2,3,4], true)` ) TypeScript would raise the following error:
+Generics can also be used profitably when working with stricter OOP constructs.
 
-```
-Argument of type 'boolean' is not assignable to parameter of type 'number'
-```
-
-Note that even though the function in question does not express any preference for number types, given that our first parameter is a number, TypeScript knows that the second parameter must also be a number.
-
-> In the generic function we have used `T` as our placeholder for a generic type as this is the convention. However there is no compunction to do so. We could have used any letter or string, providing that the string is not a reserved term.
-
-## Another example
-
-This example demonstrates how we can use generics to reduce repetition when writing functions and is also a more realistic use case.
-
-Let's say we have two types or interfaces:
-
-```tsx
-type VideoFormatUrls = {
-  format720p: URL;
-  format1080p: URL;
-};
-```
-
-```tsx
-type SubtitleFormatUrls = {
-  english: URL;
-  german: URL;
-};
-```
-
-An example of an object matching these type definitions:
-
-```tsx
-const videoFormats: VideoFormatUrls = {
-	format720p: https://www.format720p.co.uk,
-	format1080p: https://www.format1080p.co.uk
+```ts
+interface KeyValuePair<K, V> {
+  key: K;
+  value: V;
 }
 ```
 
-Imagine we wanted to be able to check whether a given film is available in a certain video format. We could write a function like this:
+The `KeyValuePair` interface has two generic type parameters: K for the key and V for the value. The interface defines an object shape that must possess the properties `key` and `value`, e.g:
 
-```tsx
-function isFormatAvailable(obj: VideoFormatUrls, format: string): format is keyof VideoFormatUrls {
-  return format in obj;
+```ts
+{
+  key: 2,
+  value: 'something'
 }
 ```
 
-Now imagine that we need to do the same thing with subtitles, but given that `isFormatAvailable()` is typed to the `VideoFormatUrls` type we would get an error if we used this function for subtitles. But we also don't want to write a near identical function typed to `SubtitleFormatUrls` to subtitles just to ensure adequate type safety.
+In this form the generic specifies that whatever types are used for the key and the pair must be used consistently, e.g. this would be wrong:
 
-Alternatively we could use a union type, for example:
-
-```tsx
-function isFormatAvailable(
-  obj: VideoFormatUrls | SubtitleFormatUrls,
-  format: string,
-): format is keyof VideoFormatUrls {
-  return format in obj;
+```ts
+{
+  key: 'age',
+  value: 32
 }
 ```
 
-But this quickly becomes unwieldy if we, for the sake of argument have a great many URL types that we want the function to utilise.
+The following class uses the `KeyValuePair` interface:
 
-This is where generics become super helpful. Here is how we would rewrite the function as a generic:
+```ts
+class Storage<K, V> {
+  private items: KeyValuePair<K, V>[] = [];
 
-```tsx
-function isAvailable<Formats>(obj: Formats, key: string): key is keyof Formats {
-  return key in obj;
+  add(item: KeyValuePair<K, V>): void {
+    this.items.push(item);
+  }
+
+  getByKey(key: K): V | undefined {
+    const foundItem = this.items.find((item) => item.key === key);
+    return foundItem ? foundItem.value : undefined;
+  }
+
+  getAll(): KeyValuePair<K, V>[] {
+    return this.items;
+  }
 }
 ```
 
-We could then explicitly type our calls of this function, viz:
+This class stores objects that match the `KeyValuesPair` interface in an array and provides and add and list method for accessing/returning them.
 
-```tsx
-isFormatAvailable<SubtitleFormatUrls>(subtitles, 'english');
+The `add` method takes an item of type `KeyValuePair<K, V>` and adds it to the `items` array. The `getByKey` method takes a key of type `K` and returns the value of type `V` associated with that key or undefined if the key is not found. The `getAll` method returns all stored key-value pairs.
+
+Here is an example of instantiating the class:
+
+```ts
+const storage = new Storage<number, string>();
+
+storage.add({ key: 1, value: "one" });
+storage.add({ key: 2, value: "two" });
+
+const value = storage.getByKey(1);
+const allItems = storage.getAll();
+
+console.log(value);
+// value: "one"
+
+console.log(allItems);
+
+// allItems: [
+//   { key: 1, value: "one" },
+//   { key: 2, value: "two" }
+// ]
 ```
