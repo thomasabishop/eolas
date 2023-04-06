@@ -132,6 +132,56 @@ console.log(allItems);
 
 ### GraphQL client for query and mutation requests over `fetch`
 
+```ts
+type GraphQlResult<T> = {
+  data: T;
+  errors?: Array<{
+    message: string;
+    locations: Array<{ line: number; column: number }>;
+    path: Array<string | number>;
+  }>;
+};
+
+export class GraphQlClient {
+  private endpoint: string;
+
+  constructor(endpoint: string) {
+    this.endpoint = endpoint;
+  }
+  async request<T>(
+    query: string,
+    variables?: Record<string, unknown>
+  ): Promise<T> {
+    try {
+      const response = await fetch(this.endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query, variables }),
+      });
+
+      if (!response.ok) {
+        throw new Error(
+          `Network error: ${response.status} - ${response.statusText}`
+        );
+      }
+
+      const result: GraphQlResult<T> = await response.json();
+
+      if (result.errors) {
+        throw new Error(`GraphQL error: ${JSON.stringify(result.errors)}`);
+      }
+
+      return result.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+}
+```
+
 ### VSCode extension TreeView generator
 
 In VSCode a TreeView is a list of values that may have nested values, like a directory. The following generic is a helper function that generates a TreeView based on a given class that is passed in as an argument, along with the class's constructor values (`args` in the example). It also calls a method `refresh` on each instance of the class.

@@ -24,7 +24,9 @@ type Person = {
 };
 ```
 
-### Read only mapped type
+## Main varieties of mapped types
+
+### Read only
 
 Creates a type with all properties of the given type set to `readonly`:
 
@@ -47,7 +49,7 @@ type ReadonlyPerson = {
 };
 ```
 
-### Partial mapped type
+### Partial
 
 Creates a type with all properties of the given type set to optional.
 
@@ -70,7 +72,9 @@ type PartialPerson = {
 };
 ```
 
-### Pick mapped type
+### Pick
+
+This is useful when you want to create a new type based on a subset of properties from an existing type.
 
 ```ts
 type Pick<T, K extends keyof T> = {
@@ -89,31 +93,33 @@ type PersonNameAndAge = {
 };
 ```
 
-### Record mapped type
+### Record
 
-Creates a type with keys of the given type and values of the specified type.
+Creates a type with keys of the given type and values of the specified type. It is a way of shoehorning keys from an existing type with new values.
 
-> How does this related to `Record` more generally in TS?
-
-> How is this different from `Pick` ?
+Basic syntax:
 
 ```ts
-type Record<K extends keyof any, T> = {
-  [P in K]: T;
-};
-
-type PersonRecord = Record<"id", Person>;
+Record<Keys, ValueType>;
 ```
 
-This is equivalent to:
+Example:
 
 ```ts
-type PersonRecord = {
-  id: Person;
+type UserRole = "admin" | "user" | "guest";
+
+// Create a Record type to store user role descriptions
+type UserRoleDescriptions = Record<UserRole, string>;
+
+// Create an object that implements the UserRoleDescriptions type
+const roleDescriptions: UserRoleDescriptions = {
+  admin: "Has full access to the system",
+  user: "Can access limited resources",
+  guest: "Can view public resources only",
 };
 ```
 
-### Exclude mapped type
+### Exclude
 
 Creates a type by excluding specific properties from the given type.
 
@@ -127,4 +133,48 @@ This is equivalent to:
 
 ```ts
 type KeysWithoutAge = "name" | "city" | "country";
+```
+
+### Extract
+
+Creates a type by extracting specific properties from the given type. Basically the opposite operation to Exclude.
+
+```ts
+type Extract<T, U> = T extends U ? T : never;
+
+type NameKey = Extract<keyof Person, "name">;
+```
+
+This is equivalent to:
+
+```ts
+type NameKey = "name";
+```
+
+### Non-nullable
+
+Creates a type by removing null and undefined from the given type.
+
+```ts
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+type NullablePerson = {
+  name: string | null;
+  age: number | null;
+  city: string | null;
+  country: string | null;
+};
+
+type NonNullablePerson = NonNullable<NullablePerson>;
+```
+
+Equivalent to:
+
+```ts
+type NonNullablePerson = {
+  name: string;
+  age: number;
+  city: string;
+  country: string;
+};
 ```
