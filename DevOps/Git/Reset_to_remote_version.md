@@ -1,7 +1,7 @@
 ---
 categories:
   - DevOps
-tags: [git]
+tags: [git, procedural]
 ---
 
 # Reset to remote version of a branch

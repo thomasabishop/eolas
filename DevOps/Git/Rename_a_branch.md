@@ -1,7 +1,7 @@
 ---
 categories:
   - DevOps
-tags: [git]
+tags: [git, procedural]
 ---
 
 # Rename a branch

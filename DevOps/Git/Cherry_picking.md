@@ -15,27 +15,36 @@ Cherry-picking can sometimes result in conflicts, especially if the changes you'
 
 ## Syntax
 
-Suppose you have two branches: `main` and `feature`. You want to apply the changes from the commit with hash `abcdefg` from the `feature` branch to the `main` branch.
+Suppose you have two branches: `main` and `feature`. You want to apply the changes from the commit with hash `xyx` from the `main` branch to the `feature` branch.
 
-First, switch to the `main` branch:
-
-```
-git checkout main
-```
-
-Next, cherry-pick the commit from the `feature` branch:
+First, switch to the `feature` branch:
 
 ```
-git cherry-pick abcdefg
+git checkout feature
 ```
 
-This will apply the changes from the commit with hash `abcdefg` to the `main` branch.
+Next, cherry-pick the commit from the `main` branch:
+
+```
+git cherry-pick xyz
+```
+
+This will apply the changes from the commit with hash `xyz` from thee `main` branch to the `feature` branch. This will create a new SHA on `feature` (pqr) but the changes will be identical.
+
+![](/_img/cherry-pick.svg)
+
+The benefit is that you only take the select changes you want, you are not merging the whole `main` branch into feature.
 
 Note that you can also cherry-pick multiple commits by specifying their hashes separated by spaces:
 
 ```
 git cherry-pick abcdefg hijklmn opqrst
 ```
+
+## Limitations
+
+- You don't have to just cherry-pick locally, you can also cherry-pick from a [remote tracking branch](/DevOps/Git/Remote_tracking_branches.md).
+- You cannot cherry-pick merge commits since these commits do not implement a set of changes, they are connecting commits.
 
 ## Use case
 
