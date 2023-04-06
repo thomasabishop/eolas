@@ -127,3 +127,33 @@ console.log(allItems);
 //   { key: 2, value: "two" }
 // ]
 ```
+
+## Real examples
+
+### GraphQL client for query and mutation requests over `fetch`
+
+### VSCode extension TreeView generator
+
+In VSCode a TreeView is a list of values that may have nested values, like a directory. The following generic is a helper function that generates a TreeView based on a given class that is passed in as an argument, along with the class's constructor values (`args` in the example). It also calls a method `refresh` on each instance of the class.
+
+```ts
+function createTreeView<
+  T extends IndexHyperlinksProvider | IndexMetadataProvider,
+  U extends LinkTypes | MetadataTypes
+>(
+  viewType: string,
+  ProviderClass: new (...args: any[]) => T,
+  type: U,
+  activeEditor?: string | undefined,
+  ...args: ConstructorParameters<typeof ProviderClass>
+): T {
+  const view = new ProviderClass(...args, type);
+  if (view instanceof IndexHyperlinksProvider) {
+    view.refresh(activeEditor, type as LinkTypes);
+  } else if (view instanceof IndexMetadataProvider) {
+    view.refreshIndex();
+  }
+  vscode.window.registerTreeDataProvider(viewType, view);
+  return view;
+}
+```
