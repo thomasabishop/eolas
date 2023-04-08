@@ -4,19 +4,7 @@ categories:
 tags: [AWS, aws-lambda, backend]
 ---
 
-# AWS Lambda programming model
-
-The overall architecure consists in the following three processes:
-
-1. Triggers
-2. Handler function
-3. Code
-
-## Triggers
-
-See [AWS Lambda triggers](/DevOps/AWS/AWS_Lambda/AWS_Lambda_triggers.md)
-
-## Handler function
+# AWS Lambda handler function
 
 Every Lambda function begins the same way with a handler function. In NodeJS:
 
@@ -77,7 +65,3 @@ def handler(event, context):
     }
     return response
 ```
-
-## Code
-
-This is just the stuff that runs in the body of the handler or that is called from the handler body.
