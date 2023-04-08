@@ -150,6 +150,16 @@ print(root_list)
 # ['John', [1, 43.5, 'Phoebe', True], ['apple', 'orange', 31], 'Denise']
 ```
 
+## Merging (flattening) lists
+
+```py
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+merged_list = list1 + list2
+print(merged_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
 ## List comprehension
 
 > List comprehension is an older feature of Python. Now the same functionality can be achieved with greater concision using functional methods like `map` and `filter`. But you may see it used in older code.
