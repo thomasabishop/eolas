@@ -2,7 +2,7 @@
 categories:
   - DevOps
   - Backend
-tags: [AWS, aws-lambda, node-js, python]
+tags: [AWS, aws-lambda]
 ---
 
 # AWS Lambda triggers
