@@ -25,7 +25,7 @@ Beneath this we have a code editor with the handler function with a basic boiler
 
 Next we need to add a [trigger](/DevOps/AWS/AWS_Lambda/Lambda_triggers.md) that execute the handler.
 
-We will do this using [AWS API Gateway](/DevOps/AWS/AWS_Api_Gateway.md). We select "Add trigger" from the dashboard view and input basic settings:
+We will do this using [AWS API Gateway](/DevOps/AWS/AWS_API_Gateway.md). We select "Add trigger" from the dashboard view and input basic settings:
 
 ![](/_img/api-gateway-trigger.png)
 

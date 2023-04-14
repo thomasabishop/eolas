@@ -6,7 +6,7 @@ tags: [physics, electricity]
 
 # Cells and batteries
 
-Cells are a [voltage source](/Electronics_and_Hardware/Analogue_circuits/Voltage.md#chemicals-cells-and-batteries) that generate a difference of potential via a positive and negative electrode separated by an electrolytic solution. The electrolytes pull free electrons from one of the materials which creates a positive charge. The other material gains the free electrons creating a negative charge.
+Cells are a [voltage source](/Electronics_and_Hardware/Analogue_circuits/Voltage.md) that generate a difference of potential via a positive and negative electrode separated by an electrolytic solution. The electrolytes pull free electrons from one of the materials which creates a positive charge. The other material gains the free electrons creating a negative charge.
 
 > A battery is a combination of two or more cells.
 
