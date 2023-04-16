@@ -113,3 +113,50 @@ It also lists the `get` event that we can use to call API Gateway and trigger th
 The full template is below:
 
 ![](/_img/sam-template-yaml.png)
+
+## Adding our own code
+
+We will create our own function and API Gateway trigger.
+
+We will place our function after the existing `HelloWorldFunction`
+
+```yaml
+ClockFunction:
+  Type: AWS::Serverless::Function
+  Properties:
+    CodeUri: clock/
+    Handler: handler.clock
+    Runtime: nodejs16.x
+  Events:
+    ClockApi:
+      Type: Api
+      Properties:
+        Path: /clock
+        Method: get
+```
+
+Just like with `HelloWorld`, we will create a directory for this function: `clock` and we will initialise it as an `npm` project.
+
+```sh
+mkdir clock
+cd clock
+npm init
+```
+
+We will use `handler.js` as our root, handler function.
+
+We have said in the template file that our `Handler: handler.clock`, therefore the main function in the `handler` module should be `clock`:
+
+```js
+const moment = require("moment");
+
+exports.clock = async (event) => {
+  console.log("Clock function run");
+  const message = moment().format();
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify(message),
+  };
+  return response;
+};
+```

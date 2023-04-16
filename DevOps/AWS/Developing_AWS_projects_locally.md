@@ -12,4 +12,4 @@ To develop AWS projects locally the following core tools can be used to set up a
   - Interact with AWS services from your local machine
 - AWS SDK
   - Integrate AWS services into your given programming language and application code
-- [AWS SAM](/DevOps/AWS/AWS_SAM/AWS_SAM.md)
+- [AWS SAM](/DevOps/AWS/AWS_SAM.md)
