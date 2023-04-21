@@ -34,6 +34,8 @@ See [https://docs.aws.amazon.com/serverless-application-model/latest/developergu
 
 ## Setting up credentials for the AWS CLI
 
+You require an access key for the given [IAM user](/DevOps/AWS/AWS_User_management_and_roles.md#iam). You should create an IAM account specific to the project with bounded permissions.
+
 ```
 aws configure
 AWS Access Key ID [None]: AK*******
@@ -160,3 +162,35 @@ exports.clock = async (event) => {
   return response;
 };
 ```
+
+The directory structure is as follows:
+
+![](/_img/sam-directory.png)
+
+When we call the API Gateway path `/clock` with `GET`, our function will be triggered.
+
+## Deploying the project
+
+We will now deploy our project to AWS from the local environment.
+
+The process is as follows:
+
+1. Build
+2. Package
+3. Deploy
+
+### Build
+
+We need to install the runtime dependencies for the function. We do this by running `sam build`. This ignores test files and development dependencies and installs the project dependencies and source files to a temporary subdirectory.
+
+![](/_img/sam-build.png)
+
+The build directory is `.aws-sam/build/`. There will be a subdirectory for each of our files.
+
+### Package
+
+As noted, CloudFront handles the deployment of the application. It can only receive one file as an input. The packaging process consists in creating that single file.
+
+The packaging proces will first archive all of the project artefacts into a zip file and then upload that to [S3](/DevOps/AWS/AWS_S3.md).
+
+![](/_img/s3-package-again.svg)
