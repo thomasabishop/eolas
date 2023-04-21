@@ -191,6 +191,49 @@ The build directory is `.aws-sam/build/`. There will be a subdirectory for each 
 
 As noted, CloudFront handles the deployment of the application. It can only receive one file as an input. The packaging process consists in creating that single file.
 
-The packaging proces will first archive all of the project artefacts into a zip file and then upload that to [S3](/DevOps/AWS/AWS_S3.md).
+The packaging proces will first archive all of the project artefacts into a zip file and then upload that to [S3](/DevOps/AWS/AWS_S3.md). A reference to this S3 entity is then provided to CloudFormation.
 
 ![](/_img/s3-package-again.svg)
+
+The command is as follows:
+
+```sh
+sam package
+  --template-file template.yaml
+  --output-template-file pkg.yml
+  --region eu-west-1
+```
+
+This will automatically create a hashed bucket name for you in S3 (I have tried to add my own naming but it doesn't comply.)
+
+### Local development with Docker
+
+In order to work with your application locally without actually sending requests to AWS and using credit, you can run a local instance.
+
+See [Local AWS Development with SAM](/DevOps/AWS/SAM/Local_AWS_development_with_SAM.md).
+
+### Deploy
+
+Once you have packaged the app you can deploy with `sam deploy --guided`. This will talk you through the defaults and will deploy the package to CloudFormation. In CloudFormation each individual project is called a **stack**.
+
+If we then go to Cloud Formation we will see the deployed application.
+
+![](/_img/cloud-formation-stack.png)
+
+## Call the endpoint
+
+If we now go to the Lambda console, we will see our function listed, and the API Gateway endpoint under `triggers`:
+
+![](/_img/gateway-trigger.png)
+
+We can then call this from Postman to check everything is working as it should:
+
+![](/_img/postman-aws-output.png)
+
+## Clean up and erase the stack
+
+We can delete the stack and remove all the resources we have created with a single CLI method:
+
+```sh
+aws cloudformation delete-stack --stack-name <name> --region <region>
+```
