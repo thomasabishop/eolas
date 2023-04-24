@@ -1,47 +1,3 @@
-# Unit 1
-
-A (shipping) container is a standard unit of shipping.
-
-Standardisd modular unit to transport goods from one location to another. Ships, trains, back of lorries.
-
-Beforehand, shipping world was chaotic: inefficient, complex, frictional.
-
-With containers, friction reduced driving down cost and increasing speeds of transport. Also led to automation.
-
-Analogy is with software containers. Compare differences between local machine and production environment, test environment etc. Friction removed by containers.
-
-> Linux containers are technologies that allow you to package and isolate applications with their entire runtime environment. This makes it easy to move the contained application between environments (dev, test, production, etc.) while retaining full functionality.
-
-> Containers as a technology are distinct from Docker. You don't need Docker to create and run a container. Docker just makes the process much easier and standardises it.
-
-> Containers are _Linux_ technology and are part of the Linux kernel. Running Linux containers do not require Docker.
-
-There are Windows containers and Linux containers. You cannot run either on the other. (Windows uses Docker to run containers. Linux can do it natively.)
-
-## How containers work
-
-Using `cgroups` (control groups) feature of Linux, group bunch of processes together and constrain their resource usage (e.g. CPU and memory). Originally called "process containers" for this reason.
-
-Use namespaces to provide _process isolation_ -> groups of processes are isolated so that they cannot access other processes on the system.
-
-Containerisation = resource control + process isolation
-
-TODO: Add diagrams from slides
-
-In standard user space, applications and processes share the **same** processor, memory and file system resources. This means there can be resource challenges, dependency challenges and security challenges.
-
-One application could fill up the hard drive preventing other applications from storing to it. One application can "bring down" another application.
-
-In enterprise environment most of system administration was managing these resources to avoid resource expenditure (before containers) and security challenges.
-
-Containers demarcate resource-constrained sub-sections of the user space that are ignorant of each other and the broader user space.
-
-Docker exploited the capacity of the Linux kernel to create containers and simplified the setup and deployment of them.
-
-> An image is a blueprint that contains the instructions to build a container. It's an immutable snapshot of the file system and configuration of an application. Images can be easily shared between developers.
-
-> A container is a executable package that contains everything needed to run an application. It will always run the same, regardless of infrastructure, in a sandboxed environment. It is a running instance of an image.
-
 ## Difference with virtual machines
 
 VMs require an OS. Containers do not. A VM contains a complete installation of a guest OS. Also provides isolation of resources (because you have an entirely separate OS).
@@ -69,6 +25,10 @@ The OCI standardises the follwoing:
 - Docker registry specification
 
 Docker company used to offer a platform for companies to run docker containers but they eventually sold this and focused solely on Docker desktop (local running of images for development).
+
+> An image is a blueprint that contains the instructions to build a container. It's an immutable snapshot of the file system and configuration of an application. Images can be easily shared between developers.
+
+> A container is a executable package that contains everything needed to run an application. It will always run the same, regardless of infrastructure, in a sandboxed environment. It is a running instance of an image.
 
 ## Why use containers?
 
