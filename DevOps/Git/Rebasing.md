@@ -124,6 +124,67 @@ Where `n` is the number of commits you want to squash starting from the most rec
 
 ![](/_img/git-interactive-rebase.png)
 
+### Example
+
+I made a small fix commit because something went wrong during build. I do not want this commit to be in the history because it is so minor. Instead I want to incorporate these changes into the last public commit.
+
+Trivial commit is `xy`
+Previous commit is `aa`
+
+```
+git rebase -i HEAD~2
+```
+
+This displays:
+
+```
+pick xy
+pick aa
+```
+
+Change this to:
+
+```
+pick xy
+squash aa
+```
+
+Now `xy == aa`
+
+### Another example
+
+Here we will rebase the interim commits into the last feature commit
+
+```sh
+git rebase -i HEAD~10
+```
+
+```
+pick a691a7667 feature (shared-nav) add active app check
+pick 74a07fdb1 interim: add logging
+pick 9af4e2652 interim: more logging
+pick 51b36f667 interim: use href not origin
+pick 33f161198 interim : try catch handler
+pick 41c144ddf interim: remove didLoadCheck
+pick ebd1c9f24 interim: fix flash star
+pick 77af452e7 interim: rm redundant active app check
+pick 79a9b737a iterim: test ternary
+pick a90d23223 interim: further tidying
+```
+
+```
+pick a691a7667 feature (shared-nav) add active app check
+squash 74a07fdb1 interim: add logging
+squash 9af4e2652 interim: more logging
+squash 51b36f667 interim: use href not origin
+squash 33f161198 interim : try catch handler
+squash 41c144ddf interim: remove didLoadCheck
+squash ebd1c9f24 interim: fix flash star
+squash 77af452e7 interim: rm redundant active app check
+squash 79a9b737a iterim: test ternary
+squash a90d23223 interim: further tidying
+```
+
 ## `git pull rebase`
 
 We can use this command to combine a rebase with a pull. This way we silently update our local version of a branch with the remote, without adding a merge commit.
