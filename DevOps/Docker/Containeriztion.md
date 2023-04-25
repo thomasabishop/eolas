@@ -1,10 +1,10 @@
 ---
 categories:
   - DevOps
-tags: [docker, containerization]
+tags: [docker, containerization, Linux]
 ---
 
-# Containers in general
+# Containerizaton
 
 > In this entry we look at containerization as a general technology that is distinct from its particular implementation by Docker.
 
@@ -32,7 +32,7 @@ A key feature of the Linux kernal is the existence of **cgroups** (control group
 In ordinary [user space](/Operating_Systems/User_Space.md) applications share the _same_ processor, memory and file system resources. This increases the likelihood of resourcing challenges, dependency conflicts and security threats. Without modularisation and the titration of resources, you are opened up to much greater possibility of failure.
 
 For example one application could fill up the harddrive preventing other applications from writing to it. One application can "bring down" another applicaton.
-
+standard-userspace.png
 Prior to containerization, in an enterprise environment most of the system administration consisted in managing resouces to avoid excessive resource expenditure and security challenges.
 
 _Standard userspace_
@@ -62,3 +62,11 @@ A containerized system radically reduces this overhead. It just starts up the co
 | Slower and more difficult to run            | Scale rapidly due to lightweight nature |
 
 ![](/_img/container-versus-vm.png)
+
+## Why use containers?
+
+- portability
+- scalability
+- efficiency
+- isolation
+- DevOps agility

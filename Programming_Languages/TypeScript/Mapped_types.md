@@ -119,6 +119,23 @@ const roleDescriptions: UserRoleDescriptions = {
 };
 ```
 
+Here is a simpler example
+
+```ts
+type Person = {
+  name: string;
+  nationality: string;
+};
+
+type PersonInstance = Record<string, Person>;
+const thomasInstance: PersonInstance = {
+  thomas: {
+    name: "Thomas",
+    nationality: "British",
+  },
+};
+```
+
 ### Exclude
 
 Creates a type by excluding specific properties from the given type.
