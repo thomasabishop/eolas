@@ -69,7 +69,7 @@ docker stop 2749
 
 There will be a delay because it shuts down gracefully. It sends a SIGINT to the process in the container with PID 1 (i.e the root or parent process for the container).
 
-`stop` will keep the container in memory. This means you can still refer back to the logs and that it can be restarted.
+`stop` will keep the container in memory. This means you can still refer bak to the logs and that it can be restarted.
 
 Instead of `stop`, if you were to use:
 
@@ -85,6 +85,84 @@ We can also tell Docker to immediately remove a container after it exits:
 docker run --rm [image]
 ```
 
+## Interacting with containers
+
+In the examples so far the container is a closed box. You don't have a terminal through which you can interact with the container as you would with an OS. You can only start the container and view its activities by accessing the logs.
+
+For images that have an OS we can use `-i -t` to launch a terminal in interactive mode.
+
+```sh
+docker run -i -t debian /bin/bash
+root@0022da12f2f2:/# ls
+bin  boot  dev	etc  home  lib	media  mnt  opt  proc  root  run  sbin	srv  sys  tmp  usr  var
+root@0022da12f2f2:/# whoami
+root
+root@0022da12f2f2:/# ls usr/
+bin  games  include  lib  libexec  local  sbin	share  src
+```
+
+Note that it defaults to the root user.
+
+Containers are lightweight and should only contain the minium environment needed to run an application. For this reason OSs that are included in an image are often very stripped-back and many programs and processes will not be there by default. (Although you could install a package manager and install the commands you need.)
+
+The previous command launches the container and enters into it with a terminal. If a container is already running, you can enter into it in terminal mode with `exec`:
+
+```
+docker exec -i -t my_container bash
+```
+
+If a container is running in detached mode we can attach to the main process with `docker attach`
+
+```
+docker attach my_container
+```
+
 ## Container lifecycle
 
-## Interacting with containers
+![](/_img/container-lifecycle.png)
+
+All containers have a lifecycle represented by five distinct states. Each state has an associated command:
+
+- created
+  - `docker create`, `docker run`
+- running
+- paused
+  - `docker pause`, `docker unpause`
+- stopped
+  - `docker stop`, `docker kill`
+- removed
+  - `docker rm`
+
+## Main container commands
+
+```sh
+docker create # create container from image
+docker run # create and start container from image
+docker run --name # add custom name for container
+docker ps # list currently active containers
+docker ps -a # list all containers (inactive and active)
+docker logs # display a container log
+docker stop # stop a running container
+docker start # starts a stopped (exited) container
+docker rm # remove a stopped (exited) container
+```
+
+## Container troubleshooting
+
+Lots of diagnostic output:
+
+```
+docker inspect container_name
+```
+
+List processes (from outside):
+
+```
+docker top container_name
+```
+
+View logs
+
+```
+docker logs container_name
+```
