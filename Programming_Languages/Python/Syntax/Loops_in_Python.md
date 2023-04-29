@@ -30,6 +30,40 @@ Done
 
 ## For
 
+There are three main types of `for` loop in Python and they all use the `for...in` clause:
+
+1. Traditional `for` loop with range:
+
+   ```py
+   for i in range(0, 5):
+       print(i)
+   ```
+
+   This is equivalent to the following in JavaScript:
+
+   ```js
+   for (let i = 0; i <= 5: i++) {
+       console.log(i)
+   }
+   ```
+
+2. `for` loop with iterable:
+
+   ```py
+   fruits = ["apple", "banana", "cherry"]
+   for (fruit in fruits):
+       print(fruit)
+   ```
+
+3. `for` loop with `enumerate()` function:
+   Iterate over an iterable whilst also keeping track of the index of the current element:
+   ```py
+   for index, fruit in enumerate(fruits):
+       print(f"Index {index}: {fruit}")
+   ```
+
+### Further examples of `for in range()` loops
+
 ```python
 # Loop over a set of values in a range
 print('Print out values in a range')
