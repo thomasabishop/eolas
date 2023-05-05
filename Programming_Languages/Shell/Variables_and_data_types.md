@@ -29,6 +29,28 @@ echo ${boolVar} # true
 
 - Quotation marks at declaration are also not strictly necessary however they can help avoid bugs. Also serves as a reminder that every type is basically a string at the end of the day
 
+## Common operations
+
+### Check if a variable exists
+
+```sh
+if [ -v variable_name ]; then
+    echo "The variable exists."
+else
+    echo "The variable does not exist."
+fi
+```
+
+### Check if a variable is set (defined)
+
+```sh
+if [ -z "${variable_name+x}" ]; then
+    echo "The variable does not exist."
+else
+    echo "The variable exists."
+fi
+```
+
 ## Parameter expansion
 
 // TODO: What is the difference betweeen `$var`, `${var}` and `"${var}"` ?
