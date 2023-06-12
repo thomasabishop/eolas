@@ -58,6 +58,16 @@ greeter('Eloise')
 # Welcome Eloise - Live Long and Prosper
 ```
 
+## Optional parameters
+
+````py
+def func_with_optional(non_optional, optional_param=None):
+  if optional_param is not None:
+    # Do something with specific value
+  else:
+    # Run standard process
+
+
 ## Function with arbitrary parameter list
 
 ```python
@@ -75,7 +85,7 @@ Welcome Adam
 Welcome Gryff
 Welcome Natalia
 """
-```
+````
 
 ## Scoping
 
