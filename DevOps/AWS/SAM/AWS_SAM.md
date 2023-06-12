@@ -48,6 +48,25 @@ This information can be found in the Security Credentials section of the given [
 
 ![](/_img/access-key-aws.png)
 
+### Switching between credentials
+
+You should set up a different IAM user for each project.
+
+You can do this with:
+
+```sh
+aws configure --profile <profile-name>
+```
+
+This will then ask you to add the credentials for the user.
+
+You can switch between different credentials for the user as follows:
+
+```sh
+AWS_PROFILE=<profile-name> sam build
+
+```
+
 ## Starting a SAM project
 
 First create a directory for your project which will serve as the repository:
@@ -135,6 +154,12 @@ ClockFunction:
       Properties:
         Path: /clock
         Method: get
+```
+
+We can test the syntax with:
+
+```sh
+sam validate
 ```
 
 Just like with `HelloWorld`, we will create a directory for this function: `clock` and we will initialise it as an `npm` project.
