@@ -8,7 +8,7 @@ tags: [docker, containerization, Linux]
 
 > In this entry we look at containerization as a general technology that is distinct from its particular implementation by Docker.
 
-We can understand the role and significance of containers and containerization by analogy with shipping containers. Before the invention of shipping containers as a **standardised modular unit** for transporting goods shipping and supply chains were chaotic: inefficient, complex, frictional. With the advent of the shipping container, the same artefact could be used for transportation via ships, trains, lorries etc.
+We can understand the role and significance of containers and containerization by analogy with shipping containers. Before the invention of shipping containers as a **standardised modular unit** for transporting goods, shipping and supply chains were chaotic: inefficient, complex, frictional. With the advent of the shipping container, the same artefact could be used for transportation via ships, trains, lorries etc.
 
 With containers we can share and transport software via a single standardised unit that works regardless of the host operating system or server. We can also iterate different software environments easily: local, production, test etc. As with the shipping of goods, standardisation has driven down running costs and increased the speed of transport.
 
@@ -32,7 +32,7 @@ A key feature of the Linux kernal is the existence of **cgroups** (control group
 In ordinary [user space](/Operating_Systems/User_Space.md) applications share the _same_ processor, memory and file system resources. This increases the likelihood of resourcing challenges, dependency conflicts and security threats. Without modularisation and the titration of resources, you are opened up to much greater possibility of failure.
 
 For example one application could fill up the harddrive preventing other applications from writing to it. One application can "bring down" another applicaton.
-standard-userspace.png
+
 Prior to containerization, in an enterprise environment most of the system administration consisted in managing resouces to avoid excessive resource expenditure and security challenges.
 
 _Standard userspace_
