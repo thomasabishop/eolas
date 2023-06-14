@@ -6,7 +6,7 @@ tags: [python, data-structures]
 
 # Tuples in Python
 
-Tuples are one of the main data-structures or containers in Python.
+Tuples are one of the main data-structures or containers in Python. Tuples are useful in cases where you want to group related data and ensure that it will not change.
 
 Tuples have the following properties:
 
@@ -15,6 +15,8 @@ Tuples have the following properties:
 - They are **immutable** and cannot be modified
 - **Allow duplicate** members
 - They are **indexed**
+
+> In essence a tuple is a list that is immutable.
 
 As with all containers in Python they permit any data type.
 
