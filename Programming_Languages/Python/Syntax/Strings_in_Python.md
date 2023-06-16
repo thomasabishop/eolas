@@ -76,3 +76,39 @@ print('sub string: ', 'Hello-World'[1:5])
 user_age = input("Please enter your age: ")
 print(f'You are {user_age}')
 ```
+
+## `str.split()`
+
+The `split()` function in Python is used to divide a string into multiple parts at the occurrence of a given separator. This function returns a [list](/Programming_Languages/Python/Syntax/Lists_in_Python.md) of substrings.
+
+### General syntax
+
+```py
+str.split(separator, maxsplit)
+```
+
+- The `separator` is optional. It specifies the separator to use when splitting the string. If no separator is provided, it will default to using whitespace.
+
+- `maxsplit` is also optional and specifies how many splits to do. Default value is -1, which is "all occurrences".
+
+### Examples
+
+```py
+
+text = "Hello world, how are you?"
+
+# Default usage:
+x = text.split()
+print(x)
+# ['Hello', 'world', 'how', 'are', 'you?']
+
+# Using a specific separator
+x = text.split(",")
+print(x)
+# ['Hello', 'world how are you?']
+
+# Specifiying a maxplit value
+x = text.split(" ", 1)
+print(x)
+# ['Hello']
+```
