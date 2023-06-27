@@ -15,38 +15,30 @@ The JK Flip-Flop (the letters are meaningless) is basically an SR latch in funct
 
 Where it differs from the SR is that it the SR will change state just if the voltage is high (this, afterall, is all that a bit is) whereas for the JK to set it **must receive a clock pulse** and it will only set on the pulse. Hence in addition to _J_ and _K_ inputs it has a _CLK_ input for "clock".
 
-In addition the JK Flip-Flop has a **toggle** function. When this is executed, whatever _Q_ currently is will be flipped to its opposite value: $1 \rightarrow 0$,  $0 \rightarrow 1$. The toggle executes when both _J_ and _K_ are set to high.
+In addition the JK Flip-Flop has a **toggle** function. When this is executed, whatever _Q_ currently is will be flipped to its opposite value: $1 \rightarrow 0$, $0 \rightarrow 1$. The toggle executes when both _J_ and _K_ are set to high.
 
 The possible state changes for the JK Flip-Flop are detailed below:
 
-| J 	| K 	| Clock 	| Q state                   	| Operation 	|
-|---	|---	|-------	|---------------------------	|-----------	|
-| 0 	| 0 	| Pulse 	| Maintain previous value   	| Hold      	|
-| 0 	| 1 	| Pulse 	| 0                         	| Reset     	|
-| 1 	| 0 	| Pulse 	| 1                         	| Set       	|
-| 1 	| 1 	| Pulse 	| Inverse of previous value 	| Toggle    	|
+| J   | K   | Clock | Q state                   | Operation |
+| --- | --- | ----- | ------------------------- | --------- |
+| 0   | 0   | Pulse | Maintain previous value   | Hold      |
+| 0   | 1   | Pulse | 0                         | Reset     |
+| 1   | 0   | Pulse | 1                         | Set       |
+| 1   | 1   | Pulse | Inverse of previous value | Toggle    |
 
 A JK Flip-Flop can execute on either the positive or negative pulse. Below are the diagrams for a rising and falling pulse respectively:
 
 ![](/_img/jk-flip-flops.png)
 
-
-
 ## T Flip-Flops
 
-Another type of Flip-Flop can be created by connecting the _J_ and _K_ inputs of a JK Flip-Flop to each other. This reduces the possible states to two: toggle current state or maintain current state. Its overall logic is therefore reduced to just two lines of the previous state table: the state that obtains when _J_ and _K_ are $0 0$ or $1 1$. 
+Another type of Flip-Flop can be created by connecting the _J_ and _K_ inputs of a JK Flip-Flop to each other. This reduces the possible states to two: toggle current state or maintain current state. Its overall logic is therefore reduced to just two lines of the previous state table: the state that obtains when _J_ and _K_ are $0 0$ or $1 1$.
 
 Thus the state table for the T Flip-Flop is:
 
-| T 	| Clock 	| Q state                   	| Operation 	|
-|---	|-------	|---------------------------	|-----------	|
-| 0 	| Pulse 	| Maintain previous value   	| Hold      	|
-| 0 	| Pulse 	| Inverse of previous value 	| Toggle    	|
+| T   | Clock | Q state                   | Operation |
+| --- | ----- | ------------------------- | --------- |
+| 0   | Pulse | Maintain previous value   | Hold      |
+| 0   | Pulse | Inverse of previous value | Toggle    |
 
 ![](/_img/t-flip-flops.png)
-
-
-<iframe src="https://withdiode.com/embed/4f015341-dc37-49e6-912a-42a580a1c92e" style="width:100%; height:500px; border:1px solid rgba(0,0,0,0.1); border-radius: 0.5rem; overflow:hidden;" title="LED & Switch" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" ></iframe>
-
-
-https://wokwi.com/
