@@ -125,7 +125,7 @@ We are adding three bits: $1$, $0$ and $0$. This can be achieved with two half a
 - One half adder (HA1) for the sum of $0 + 0$
 - One half adder (HA2) for the sum of $(0 + 0) + 1$ (the previous sum plus the third bit)
 
-The sume of HA1 ($0 + 0$) is passed in to the B input on HA2 and the $1$ is passed in as the A input of HA2. This gives us $1$ as the sum bit of HA2.
+The sum of HA1 ($0 + 0$) is passed in to the B input on HA2 and the $1$ is passed in as the A input of HA2. This gives us $1$ as the sum bit of HA2.
 
 At this point we have completed the addition and have successfully added the three bits: $1$, $0$, and $0$ to get $1$ as ths sum. However we also have to account for the fact that the addition may result in its own carry-out bit. What if the inputs were $1, 1, 0$ for example?
 
