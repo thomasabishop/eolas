@@ -8,6 +8,10 @@ tags: [binary, binary-encoding]
 
 In order to represent negative integers in binary we use signed numbers. **Signed binary** is basically binary where negative integers can be represented. **Unsigned binary** is standard binary without negative integers.
 
+In order to represent negative integers alonside positive integers a natural approach is to divide the available [encoding space / word length](/Electronics_and_Hardware/Binary/Binary_encoding.md) into two subsets: one for representing non-negative integers and one for representing negative integers.
+
+The primary method for doing this is to use _two's complement_. This method allows for signed numbers in a way that complicates the hardware implementation of the binary arithmetic operations as little as possible.
+
 ## Two's complement
 
 Signed numbers can be implemented in binary in a number of ways. The differences come down to how you choose to encode the negative integers. A common method is to use "two's complement".

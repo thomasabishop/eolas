@@ -13,7 +13,11 @@ _Encoding_ is the process of establishing a correspondence between sets of binar
 
 > An encoding system maps each symbol to a unique sequence of bits. A computer then interprets that sequence of bits and displays the apppropriate symbol to the user.
 
-The length of the binary number (sometimes called the _word length_ corresponding to bytes, 16-bit, 32-bit etc) that is used to represent a given data set is determined by the number of variations that you require to capture the entire range of the dataset. For example, say we know that there are 18 levels to a computer game. To encode a reference for each level we would need a binary number that is capable of at least 18 total variations. In this instance a 32-bit ($2^{5}$) number would be best because the next smallest (16-bit) would not be sufficient. Our levels would have representations as follows:
+The length of the binary number (sometimes called the _word length_) corresponding to 8-bit, 16-bit, 32-bit etc. that is used to represent a given data set is determined by the number of variations that you reqzuire to capture the entire range of the dataset:
+
+> An $n$-bit binary system can encode $2^n$ different things
+
+For example, say we know that there are 18 levels to a computer game. To encode a reference for each level we would need a binary number that is capable of at least 18 total variations. In this instance a 32-bit ($2^{5}$ ) number would be best because the next smallest (16-bit) would not be sufficient. Our levels would have representations as follows:
 
 ```
 00001 (1)
