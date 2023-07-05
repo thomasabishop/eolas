@@ -10,7 +10,7 @@ In order to represent negative integers in binary we use signed numbers. **Signe
 
 In order to represent negative integers alonside positive integers a natural approach is to divide the available [encoding space / word length](/Electronics_and_Hardware/Binary/Binary_encoding.md) into two subsets: one for representing non-negative integers and one for representing negative integers.
 
-The primary method for doing this is to use _two's complement_. This method allows for signed numbers in a way that complicates the hardware implementation of the binary arithmetic operations as little as possible.
+The primary method for doing this is to use _two's complement_. This method makes signed numbers possible in a way that complicates the hardware implementation of the binary arithmetic operations as little as possible.
 
 ## Two's complement
 
@@ -28,6 +28,38 @@ For example the two's complement of $0101$ (binary 5) is $1011$. There is a simp
 To translate a signed number to an unsigned number you flip them back and still add one:
 
 ![](/_img/signed-to-unsigned.png)
+
+### Formal expresssion: $2^n - x$
+
+The heuristic account of deriving two's complement above can be formalised as follows:
+
+> in a binary system that uses a word size of $n$ bits, the two's complement binary code that represents negative $x$ is taken to be the code that represents $2^n - x$
+
+Let's demonstrate this, again using -5 as the value we wish to encode.
+
+Applying the formula to a 4-bit system, negative 5 can be derived as follows:
+
+$$
+ 2^4 -5
+$$
+
+$$
+ 16 -5 = 11
+$$
+
+$$
+11 = 1011
+$$
+
+So basically we carry out the subtraction against the word length and then convert the decimal result to binary.
+
+We can also confirm the output by noting that when the binary form of the number and its negative are added the sum will be `0000` if we ignore the overflow bit:
+
+$$
+  1011 + 0101 = 0000
+$$
+
+(This makes sense if we recall that earlier we derived the complement by inverting the bits.)
 
 ### Advantages
 
@@ -61,16 +93,6 @@ Which is 4. This means the calculation above would be identical whether we were 
 The ease by which we conduct signed arithmetic with standard hardware contrasts with alternative approaches to signing numbers. An example of another approach is **signed magnitude representation**. A basic implemetation of this would be to say that for a given bit-length (6, 16, 32...) if the [most significant bit](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md#binary-arithmetic) is a 0 then the number is positive. If it is 1 then it is negative.
 
 This works but it requires extra complexity to in a system's design to account for the bit that has a special meaning. Adder components would need to be modified to account for it.
-
-## Shorthand for deriving two's complement
-
-A simple way to work out the value of a signed number as contrasted with an unsigned number is to schematize it as follows: _the most significant place has a weight equal to the negative value of that place, and all other places have weights equal to the positive values of those places_.
-
-Thus for a 4-bit number:
-
-Then if we add the decimal equivalents of the place value together, we get our signed number. So in the case of $-3$:
-
-![](/_img/signed-conversion.png)
 
 ## Considerations
 
