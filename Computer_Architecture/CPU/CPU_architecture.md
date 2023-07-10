@@ -14,6 +14,8 @@ The CPU comprises three core components:
 - the Arithmetic Logic Unit (ALU)
 - the Control Unit (CU)
 
+![](/_img/von_neumann_architecture.jpeg)
+
 > This method of putting together a computer is known as the **Von Neumann Architecture**. It was devised by John von Neumann in about 1945, well before any of the components that would be needed to produce it had actually been invented.
 
 ## Registers
