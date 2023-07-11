@@ -6,7 +6,7 @@ tags: [CPU, electromagnetism, clock]
 
 # CPU architecture
 
-At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the system bus from the memory. The [kernel](/Operating_Systems/The_Kernel.md), also residing in memory sequences and schedules the sending of data to the CPU and manages requests from the CPU for data in memory.
+At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the [system bus](/Computer_Architecture/Bus.md) from the memory. The [kernel](/Operating_Systems/The_Kernel.md), also residing in memory, sequences and schedules the sending of data to the CPU and manages requests from the CPU for data in memory.
 
 The CPU comprises three core components:
 
@@ -38,12 +38,6 @@ There are five main types of register in the CPU:
 
 See [Arithmetic Logic Unit](/Computer_Architecture/CPU/Arithmetic_Logic_Unit.md)
 
-### Processor cores
-
-The vast majority of general purpose computers are multi-core. This means that the CPU contains more than one processing unit. They are best thought of as mini-CPUs within the main CPU since they each have the same overall Von Neumann architecture.
-
-With Intel processors the two main consumer processors are the i5 and i7. The latter has more cores than the former. Consequently it has faster clock speeds and greater concurrency due to increased threads.
-
 ## Control Unit
 
 The CPU's [controller](/Computer_Architecture/Chipset_and_controllers.md). It takes the instructions in binary form from RAM memory (separate from the CPU, but connected) and then signals to the to ALU and memory registers what it is supposed to do to execute the instructions. Think of it as the overseer that gets the ALU and registers to work together to run program instructions.
@@ -52,7 +46,7 @@ The CPU's [controller](/Computer_Architecture/Chipset_and_controllers.md). It ta
 
 Whilst modern CPUs and multithreading make it appear as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to _clock speeds_ and the _clock cycle_.
 
-The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers). This is covered in greater detail in the discussion of [clock signals in digital circuits](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md)
+The clock's circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or between logic gates and [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers). This is covered in greater detail in the discussion of [clock signals in digital circuits](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md).
 
 Simple instructions such as add can often be executed in just one clock cycle, whilst complex operations such as divide will require a number of smaller steps, each using one cycle.
 
@@ -66,7 +60,7 @@ Each "cycle" is the execution of a process that commences once the [kernel](/Ope
 
 ## Electromagnetism: broader scientific context
 
-Hertz was the scientist who detected electromagentic waves and more broadly in science, we use Hertz to measure the frequency of electromatic wave cycles in a signal.
+Hertz was the scientist who detected [electromagentic waves](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md) and more broadly in science, we use Hertz to measure the frequency of electromatic wave cycles in a signal.
 
 ![](/_img/hertz_wave_freq.gif)
 
