@@ -2,18 +2,19 @@
 categories:
   - Computer Architecture
   - Hardware
-tags: [motherboard]
+tags: [bus]
 ---
 
 # Bus
 
-A bus is a communication system that transfers data between components inside a computer, or between computers. **A bus can be thought of as a kind of pipeline that allows different components of the computer to communicate with each other.**
+A bus is a communication system that transfers data between components inside a computer, or between computers.
+
+**A bus can be thought of as a kind of pipeline that allows different components of the computer to communicate with each other.**
 
 Note that the use of the word "bus" varies somewhat in points of emphasis. A bus can mean:
 
 - The physical wires that make up the bus
-- The logical communication channel that is established over those wires
-- TheBany\_.
+- The communication channel that is established over those wires
 
 ## Main buses
 
@@ -23,7 +24,7 @@ Note that the use of the word "bus" varies somewhat in points of emphasis. A bus
 | Internal bus  | Connects local devices for example the harddisk to the CPU.                                                                                                                                                                                      |
 | External bus  | Connects peripheral devices such as disks and printers to the [motherboard](/Electronics_and_Hardware/Motherboard.md)                                                                                                                            |
 | Expansion bus | Allows expansion boards to access the CPU and memory.                                                                                                                                                                                            |
-| Frontside bus | Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](Electronics_and_Hardware/Motherboard.md) devices.                                                  |
+| Frontside bus | Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](/Electronics_and_Hardware/Motherboard.md) devices.                                                 |
 | Backside bus  | Transfers secondary cache (L2 cache) data at faster speeds, allowing more efficient CPU operations                                                                                                                                               |
 
 ## Bus standards
