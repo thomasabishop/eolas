@@ -72,7 +72,7 @@ The magnetic field and force is more complex than the electric field/force. Wher
 
 This is illustrated below which shows the magnetic field operating at right angles to the flow of charge within a wire.
 
-<img src="/home/thomas/repos/computer_science/_img/magnetic_field.png" width="300" />
+<img src="/home/thomas/repos/eolas/_img/magnetic_field.png" width="300" />
 
 ## The electromagnetic field
 
