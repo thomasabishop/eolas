@@ -65,3 +65,9 @@ Hertz was the scientist who detected [electromagentic waves](/Electronics_and_Ha
 ![](/_img/hertz_wave_freq.gif)
 
 As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles per time unit, the greater the Hertz. We see the Hz increase as the number of cycles increases over time.
+
+## Processor cores
+
+The vast majority of general purpose computers are multi-core. This means that the CPU contains more than one processing unit. They are best thought of as mini-CPUs within the main CPU since they each have the same overall Von Neumann architecture.
+
+With Intel processors the two main consumer processors are the i5 and i7. The latter has more cores than the former. Consequently it has faster clock speeds and greater concurrency due to increased threads.

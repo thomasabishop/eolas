@@ -14,10 +14,8 @@ It executes arithmetic and logical operations on binary numbers and thus it is w
 
 More specifically, the ALU is responsible for the _execute_ phase of the [fetch, decode, execute cycle](/Computer_Architecture/CPU/Fetch_decode_execute.md).
 
-// Notes on
+## ALU execution lifecycle
 
-### Processor cores
-
-The vast majority of general purpose computers are multi-core. This means that the CPU contains more than one processing unit. They are best thought of as mini-CPUs within the main CPU since they each have the same overall Von Neumann architecture.
-
-With Intel processors the two main consumer processors are the i5 and i7. The latter has more cores than the former. Consequently it has faster clock speeds and greater concurrency due to increased threads.
+1. **Inputs**: The ALU receives two operands and a control signal as inputs. The operands are the data on which the operations will be performed. The control signal tells the ALU which operation it needs to perform.
+2. **Perform operation**: The ALU carries out the requested operation. For instance, if the control signal indicates an addition operation, the ALU sums the two operancs.
+3. **Output**: The ALU then sends the operation to another part of the CPU for further processing or storage. The ALU also outputs a status bit that can be used by other parts of the CPU to make decisions. For instance if the additon results in a value that is too large to be stored, the ALU will set an overflow flag.
