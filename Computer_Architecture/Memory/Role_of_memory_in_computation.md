@@ -9,7 +9,7 @@ tags: [memory]
 The following steps outline the way in which memory interacts with the processor during computational cycles, once the [bootstrapping](/Operating_Systems/Boot_process.md) process has completed and the OS kernel is itself loaded into memory.
 
 1. A file is loaded from the harddisk into memory.
-2. The instruction at the first address is sent to the CPU, travelling accross the data bus part of the [system bus](/Hardware/Bus.md#system-bus).
+2. The instruction at the first address is sent to the CPU, travelling accross the data bus part of the [system bus](/Computer_Architecture/Bus.md).
 3. The CPU processes this instruction and then sends a request accross the address bus part of the system bus for the next instruction to the memory controller within the [chipset](/Computer_Architecture/Chipset_and_controllers.md).
 4. The chipset finds where this instruction is stored within the [DRAM](/Computer_Architecture/Memory/Memory.md#dram) and issues a request to have it read out and send to the CPU over the data bus.
 
@@ -17,7 +17,7 @@ The following steps outline the way in which memory interacts with the processor
 
 ![](/_img/memory-flow.svg)
 
-Every part of the above process - the journey accross the bus, the lookup in the controller, the operations on the DRAM, the journey back accross the bus - takes muliple CPU clock cycles.
+Every part of the above process - the journey accross the bus, the lookup in the controller, the operations on the DRAM, the journey back accross the bus - takes multiple CPU clock cycles.
 
 ## The role of the cache
 
@@ -36,8 +36,11 @@ Cache controllers use complex algorithms to determine what should go into the ca
 
 ## Relation between cache and buffers
 
-The terms _cache_ and _buffer_ are often used interchangeably but there is a significant difference. Buffer 'size' refers to the amount of physical memory in RAM that is dedicated to a process where this size is measured in terms of the amount of disk blocks it would take up in the harddrive. Cache is also a measure of memory but it is expressed in terms of [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md): the page size of the memory.
+The terms _cache_ and _buffer_ are often used interchangeably because they are both types of temporary storage used to speed up CPU operations. Also they are both mechanisms for avoiding writing data to a storage device in the midst of active computation. They are different however:
 
-Buffers and caches are both mechanisms for avoiding writing data to a storage device in the midst of active computation. Every time data is saved, the OS doesn't immediately write it to disk. It keeps it in the most short term memory in case it is edited again or until the processor is free. In this state it is kept in buffers. When written to disk it becomes blocks. This is why you shouldn't immediately remove a disk device without first saving / syncing int.
+- A cache is used to store a subset of data (typically transient in nature) from a more permanent or slower storage location. In the context of the CPU, the L1 is a cache whereas the DRAM is the more permanent storage location.
+- A buffer is a temporary storage area for data while it is being transferred from one place to another. It helps with "smoothing out" data transfers, ensuring that the sending and receiving entities (which might operate at different speeds) can handle the data transfer effectively.
 
-Similarly with transferring memory to and from the RAM. The OS keeps occurent memory in the processor caches to enable reuse and not to overburden the CPU, this page data is then moved to RAM when convenient.
+Whereas a CPU cache is a **physical** part of the processor a buffer is more of a **logical** concept implemented within the system software. However a buffer does use physical memory - it is portion of RAM set aside for temporary storage.
+
+[Registers](/Computer_Architecture/CPU/CPU_architecture.md#registers) should not be confused with caches. Unlike the caches, registers are a part of the CPU itself. They are much quicker but hold less data than the caches.
