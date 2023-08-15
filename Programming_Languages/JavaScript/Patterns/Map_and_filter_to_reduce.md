@@ -1,7 +1,7 @@
 ---
 categories:
   - Programming Languages
-tags: [javascript, functional-programming]
+tags: [javascript]
 ---
 
 # Expressing combined map and filter operations to a single reduce

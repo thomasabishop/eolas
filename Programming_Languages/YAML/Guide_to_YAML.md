@@ -1,6 +1,5 @@
 ---
-categories:
-  - Programming_Languages
+categories: [Programming Languages]
 tags: []
 ---
 
