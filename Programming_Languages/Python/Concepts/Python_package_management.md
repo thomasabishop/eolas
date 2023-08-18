@@ -14,13 +14,23 @@ To make use of virtual environments in `pip` you have to create the virtual envi
 
 ```
 python3 -m venv venv
-source venv3/bin/activate
-pip [library_name]
 ```
 
 This will create a `venv` directory in your project that will manage the handling of modules.
 
 > This is especially important in ArchLinux since without a virtual environment it will ask you to install packages with `pacman` which is annoying for local packages.
+
+You then activate the environment with:
+
+```
+source venv3/bin/activate
+```
+
+Now you can install packages:
+
+```
+pip [library_name]
+```
 
 ## requirements.txt
 
