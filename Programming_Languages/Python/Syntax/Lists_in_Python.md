@@ -53,7 +53,8 @@ print(list1[:3])
 print(list1[1:])
 
 """
-Ringo
+'John'
+'Ringo'
 ['Paul', 'George']
 ['John', 'Paul', 'George']
 ['Paul', 'George', 'Ringo']
@@ -62,28 +63,35 @@ Ringo
 
 ## Adding additional values to existing list
 
-```python
+### Single value
+
+```py
 list1 = ['John', 'Paul', 'George', 'Ringo']
 
 # Add single element to the end of a list
 list1.append('Pete')
 # ['John', 'Paul', 'George', 'Ringo', 'Pete']
+```
 
-# Add multiple elements to end of a list
+### Multiple values
+
+```py
 list1.extend(['Albert', 'Bob'])
 list1 += ['Ginger', 'Sporty']
 # ['John', 'Paul', 'George', 'Ringo', 'Pete', 'Albert', 'Bob', 'Ginger', 'Sporty']
+```
+
+### Specific index
+
+```python
 
 ## Insert at specific index
-list1.insert(2, 7)
-['John', 'Paul', 7, 'George', 'Ringo', 'Pete', 'Albert', 'Bob', 'Ginger', 'Sporty']
 
 a_list = ['Adele', 'Madonna', 'Cher']
-print(a_list)
 a_list.insert(1, 'Paloma')
 print(a_list)
-# ['Adele', 'Paloma', 'Madonna', 'Cher']
 
+# ['Adele', 'Paloma', 'Madonna', 'Cher']
 ```
 
 ## Removing elements
@@ -95,40 +103,52 @@ We distinguish `del` from `remove` when removing elements from lists:
 
 `del` is simple deletion whereas `remove` searches the list. Therefore `del` is more efficient.
 
+### `del`
+
+```py
+my_list = [10, 20, 30, 40, 50]
+del my_list[1]
+print(my_list)  # Output will be [10, 30, 40, 50]
+```
+
+We can remove multiple items at once via a slice:
+
+```py
+my_list = [10, 20, 30, 40, 50]
+
+# Delete the elements from index 1 to 3 (inclusive of start index and exclusive of end index)
+del my_list[1:4]
+
+# Print the updated list
+print(my_list)  # Output will be [10, 50]
+```
+
+### `remove()`
+
+```py
+my_list = [10, 20, 30, 40, 50]
+
+# Remove the element with value 30
+my_list.remove(30)
+
+# Print the updated list
+print(my_list)  # Output will be [10, 20, 40, 50]
+```
+
+> If the value is not found in the list, ` remove()`` will raise a ValueError. To avoid this, you can check whether the value exists in the list before calling  `remove()`
+
+### pop()
+
+Remove and return the element removed
+
 ```python
-# Remove and return element removed
 list6 = ['Once', 'Upon', 'a', 'Time']
 print(list6.pop(2))
 # a
 
-# Remove and return last element
-list6 = ['Once', 'Upon', 'a', 'Time']
-print(list6.pop())
-list6.pop()
-print(list6)
-# Time
-
-list6.remove('Upon')
-print(list6)
-# ['Once', 'a']
-
-my_list = ['A', 'B', 'C', 'D', 'E']
-print(my_list)
-# ['A', 'B', 'C', 'D', 'E']
-del my_list[2]
-print(my_list)
-# ['A', 'B', 'D', 'E']
-
-
-print(my_list)
-# ['A', 'B', 'C', 'D', 'E']
-del my_list[1:3]
-print(my_list)
-# ['A', 'D', 'E']
-
 ```
 
-## Retrieve elements by index
+## Return index of a list element
 
 ```python
 list7 = [2, 3, 6, 8]
@@ -158,20 +178,4 @@ list2 = [4, 5, 6]
 
 merged_list = list1 + list2
 print(merged_list)  # Output: [1, 2, 3, 4, 5, 6]
-```
-
-## List comprehension
-
-> List comprehension is an older feature of Python. Now the same functionality can be achieved with greater concision using functional methods like `map` and `filter`. But you may see it used in older code.
-
-```python
-values = [1, 2, 4, 6, 8, 9]
-
-new_values = [i + 1 for i in values]
-print('new_values', new_values)
-# new_values [2, 3, 5, 7, 9, 10]
-new_list = [item + 1 for item in values if item % 2 == 0]
-
-print('new_list:', new_list)
-# new_list: [3, 5, 7, 9]
 ```
