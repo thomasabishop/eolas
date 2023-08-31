@@ -14,7 +14,7 @@ It is not included with the Python standard library so it must be installed with
 
 ### Using `pytest`
 
-- Pytest will automatically detect test files so long as they are named appropriately. E.g. for a module called `lorem`, it will detect the unit test files `lorem_test.py` and `test_lorem.py`.
+- Pytest will automatically detect test files so long as they are named appropriately. E.g. for a module called `lorem`, it will detzect the unit test files `lorem_test.py` and `test_lorem.py`.
 - In order to detect tests it should be run from a directory level above them
 
 ### Examples

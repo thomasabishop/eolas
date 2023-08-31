@@ -64,6 +64,8 @@ There are three main types of `for` loop in Python and they all use the `for...i
 
 ### Further examples of `for in range()` loops
 
+// TODO: segment the examples into dedicated sections
+
 ```python
 # Loop over a set of values in a range
 print('Print out values in a range')
