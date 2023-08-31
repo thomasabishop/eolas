@@ -28,11 +28,11 @@ The gate _interface_ is an abstraction that the enables the user to think of the
 
 We can demonstrate this with the earlier example of a three-way AND. The diagram below represents the gate as an interface:
 
-// TODO: Interface diagram
+// Add: Interface diagram
 
 Whereas this diagram presents the implementation of the gate: it shows the specific combination of gates which creates the enables the behaviour represented in the interface diagram.
 
-// TODO: Implementation diagra>m
+// Add: Implementation diagram
 
 > Importantly, a single interface may be implemented in a variety of ways. There is a one-to-many relationship at work here. From the point of view of the user interface these differences should not be detectable. This is another example of [hardware abstraction](/Computer_Architecture/Hardware_abstraction_and_modularity.md)
 

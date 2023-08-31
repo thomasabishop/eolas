@@ -44,7 +44,7 @@ The actual location is still hidden and decided by Docker.
 
 As these are anonymous they will show ups as GUIDs in the volume viewer in Docker Desktop:
 
-// TODO: add screenshot
+// Add: screenshot
 
 ### Commands
 

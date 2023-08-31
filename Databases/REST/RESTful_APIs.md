@@ -43,4 +43,4 @@ A basic example of a REST API would be a series of methods corresponding to the 
 | DELETE            | /api/customers/1    | Delete a customer           | No, data comes from GUID |
 | POST              | /api/customers      | Create a new customer       | Yes                      |
 
-// TODO: Add PATCH and explain differenct from PUT
+// Add: PATCH and explain differenct from PUT

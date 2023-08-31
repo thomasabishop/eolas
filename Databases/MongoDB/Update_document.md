@@ -23,12 +23,12 @@ async function updateCourseFromQuery(id) {
   if (!course) return;
   course.set({
     isPublished: true,
-    author: 'A new author',
+    author: "A new author",
   });
 
   // Instead of an object, we could also set the updated properties individually
   course.isPublished = true;
-  course.author = 'Biggs Volunksire';
+  course.author = "Biggs Volunksire";
 
   const result = course.save();
   console.log(result);
@@ -43,10 +43,10 @@ To do this we directly use the `update` method, not `find`:
 
 ```js
 async function updateCourseFromQuery(id) {
-  const result = await Course.update({_id: id});
+  const result = await Course.update({ _id: id });
   $set: {
     // Invoke the set operator
-    author: 'Terry Nutile';
+    author: "Terry Nutile";
     isPublished: true;
   }
   console.log(result);
@@ -70,4 +70,4 @@ If we don't add `{new: true}`, it will return the document before the update.
 
 ### Updating multiple documents at once
 
-// TODO : Add notes on this
+// Add: notes on this

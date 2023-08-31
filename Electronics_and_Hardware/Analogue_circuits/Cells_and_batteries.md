@@ -76,5 +76,3 @@ _Parallel battery circuit diagram:_
 ### Series-parrallel
 
 If we want both a higher voltage and a higher current we can use series-parallel configurations. Connecting cells in series increases the voltage and connecting cells in parellel increases the current so doint both boosts the amount of both quantities.
-
-// TODO: Add notes on series parallel once I have a better grasp of the basics of circuits.

@@ -26,8 +26,6 @@ const courseSchema = new mongoose.Schema({
 
 > This is similar to declaring a type or interface in TypeScript
 
-// TODO: Add printout of what the rejection will look like in the console.
-
 #### Available data types
 
 The following data types are available:

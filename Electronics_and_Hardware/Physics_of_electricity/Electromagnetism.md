@@ -113,8 +113,6 @@ The image below shows the propagation of an electromagnetic wave through space. 
 
 ## Using magnetism to generate electricity
 
-// TODO: Explain electrical induction, Faraday, the important role of iron and rotating coil stuff.
-
 ## Understand better:
 
 - How do EM waves relate to simple electrical circuits.

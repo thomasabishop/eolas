@@ -131,8 +131,6 @@ echo ${PATH}
 
 For example, if you wish to use `npm` commands globally (in any directory) you will need to have the requisite Node executable in your path, which you can see above.
 
-TODO: Add more info about the path when I have it.
-
 ### `SHELL`
 
 This describes the shell that will be interpreting any commands you type in. In most cases, this will be bash by default, but other values can be set if you prefer other options.

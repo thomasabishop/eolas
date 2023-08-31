@@ -53,6 +53,4 @@ fi
 
 ## Parameter expansion
 
-// TODO: What is the difference betweeen `$var`, `${var}` and `"${var}"` ?
-
 Still not very clear on this.
