@@ -2,7 +2,7 @@
 categories:
   - DevOps
   - Backend
-tags: [AWS, aws-api-api-gateway, APIs]
+tags: [AWS, APIs]
 ---
 
 # AWS API Gateway
@@ -11,4 +11,4 @@ We can use Gateway as the front-door to our application. It will create an [HTTP
 
 ![](/_img/gateway-services.png)
 
-See [using API Gateway as Lambda trigger](/DevOps/AWS/AWS_Lambda/Practical_walkthrough_Lambda_creation.md) for a basic example of usage.
+See [using API Gateway as Lambda trigger](/DevOps/AWS/AWS_Lambda/Practical_walkthrough_Lambda_creation_within_AWS.md) for a basic example of usage.
