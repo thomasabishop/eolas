@@ -13,6 +13,8 @@ tags: [python]
 - As above with multi-dimensional lists
 - As above with list of dictionaries
 
+## Complex data structures
+
 In JavaScript when we return data from an API we tend to use an array of objects as the canonical form of a repeating iterable, e.g:
 
 ```js
@@ -45,7 +47,7 @@ In Python there are two common ways to handle similar data structures:
   ]
   ```
 
-## List of lists
+## Multi-dimensional lists (list of lists)
 
 ### Sorting by common property
 
@@ -87,9 +89,7 @@ print(people)
 # Output: [['Alice', 30], ['Bob', 25], ['Clare', 35], ['Dave', 28]]
 ```
 
-### Updating a value within a list of lists
-
-We can use `map` to mutate a given value within each list.
+### Updating a value within an element of a list of lists
 
 In the following example we have a list of the following structure:
 
@@ -101,14 +101,26 @@ data = [
 ]
 ```
 
-Below, we apply a function to each of the first elements which is a Unix timestamp, converting it to a readable format:
+Below we use [list comprehension](/Programming_Languages/Python/Syntax/List_comprehension.md) to convert the first element of each iner list from a Unix timestamp to a readable string:
 
 ```py
  readable_date = list(map(lambda i: [convert_timestamp(i[0])] + i[1:], date))
 ```
 
-Key points:
+### Filter elements in a multidimensional list
 
-- We apply the `convert_timestamp` function to the first element of each sublist
-- We wrap this first element in `[]` so that it can be merged with the other elements of the list. This is necessary otherwise we will just return a list of the first elements and not include the other properties.
-- The map and lambda is the core structure. We wrap it in `list` because `map` returns an object not a list.
+Say we have the following data structure:
+
+```py
+name_age = [ ["Anthony", 16], ["Christopher", 22], ["James", 6] ]
+```
+
+We can return only the people who are older than 18 with the following `filter` function and `lambda`:
+
+```py
+filtered_ages = list(filter(lambda person: person[1] > 18, name_age))
+```
+
+### Remove duplicate entries from multidimensional list
+
+## List of dictionaries
