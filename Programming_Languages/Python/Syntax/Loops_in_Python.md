@@ -6,28 +6,6 @@ tags: [python]
 
 # Loops in Python
 
-## While
-
-```python
-count = 0
-print('Starting')
-while count < 10:
-    print(count, '', end='')
-    count += 1
-
-print()  # not part of the while loop
-print('Done')
-
-"""
-Starting
-0 1 2 3 4 5 6 7 8 9
-Done
-"""
-
-```
-
-> There are no `do while` loops in Python
-
 ## For
 
 There are three main types of `for` loop in Python and they all use the `for...in` clause:
@@ -62,60 +40,33 @@ There are three main types of `for` loop in Python and they all use the `for...i
        print(f"Index {index}: {fruit}")
    ```
 
-### Further examples of `for in range()` loops
+### Loop in increments greater than 1
 
-// TODO: segment the examples into dedicated sections
+The following loop increments by 2 on each iteration
 
-```python
-# Loop over a set of values in a range
-print('Print out values in a range')
-for i in range(0, 10):
-    print(i, ' ', end='')
-print()
-print('Done')
-
-"""
-Print out values in a range
-0  1  2  3  4  5  6  7  8  9
-Done
-"""
-
-# Now use values in a range but increment by 2
-print('Print out values in a range with an increment of 2')
+```py
 for i in range(0, 10, 2):
     print(i, ' ', end='')
 print()
-print('Done')
 
-"""
-Print out values in a range with an increment of 2
-0  2  4  6  8
-Done
-"""
+# 0  2  4  6  8
+```
 
-# Now use an 'anonymous' loop variable
-for _ in range(0, 10):
-    print('.', end='')
-print()
+### Break and continue
 
-print('-' * 25)
+#### Break
 
-# Illustrates use of break statement
-print('Only print code if all iterations completed')
-num = int(input('Enter a number to check for: '))
+```py
+num = int(input('Enter a number from 1-6 to check for: '))
 for i in range(0, 6):
     if i == num:
         break
-    print(i, ' ', end='')
-print('Done')
+    print(i, ' ')
+```
 
-"""
-Only print code if all iterations completed
-Enter a number to check for: 7
-0  1  2  3  4  5  Done
-"""
+#### Continue
 
-# Illustrates use of continue statement
+```py
 for i in range(0, 10):
     print(i, ' ', end='')
     if i % 2 == 1:
@@ -137,26 +88,25 @@ we love even numbers
 we love even numbers
 9  Done
 """
+```
 
-# Illustrates use of else statement with a for loop
-print('Only print code if all iterations completed')
-num = int(input('Enter a number to check for: '))
-for i in range(0, 6):
-    if i == num:
-        break
-    print(i, ' ', end='')
-else:
-    print()
-    print('All iterations successful')
+## While
+
+```python
+count = 0
+print('Starting')
+while count < 10:
+    print(count, '', end='')
+    count += 1
+
+print()  # not part of the while loop
 print('Done')
 
-
 """
-Only print code if all iterations completed
-Enter a number to check for: 6
-0  1  2  3  4  5
-All iterations successful
+Starting
+0 1 2 3 4 5 6 7 8 9
 Done
 """
-
 ```
+
+> There are no `do while` loops in Python
