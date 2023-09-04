@@ -123,4 +123,50 @@ filtered_ages = list(filter(lambda person: person[1] > 18, name_age))
 
 ### Remove duplicate entries from multidimensional list
 
+If we are just working with a normal list, a quick way to remove duplicates is just:
+
+```py
+our_list = [9, 9, 3, 2]
+unique = list(set(our_list))
+```
+
+This won't work with a list of lists because lists are not hashable.
+
+There are different approaches. Let's say we have the following multidimensional list:
+
+```py
+dummy_data = [
+    ["1689023491", "Article Three", "Lorem ipsum...", "https://example.com"],
+    ["1688582410", "Article One", "Lorem ipsum...", "https://example.com"],
+    ["1688647447", "Article Two", "Lorem ipsum...", "https://example.com"],
+    ["1689023491", "Article Three", "Lorem ipsum...", "https://example.com"],
+]
+```
+
+Here is one method:
+
+```py
+unique = []
+seen = set()
+for element in dummy_data:
+    element_to_check = element[0]
+    if element_to_check not in seen:
+        unique.append(element)
+        seen.add(element_to_check)
+print(unique)
+```
+
+We designate a unique property in the inner lists and then store a unique record of each. If the seen set doesn't have the incoming element, we add it to the unique array.
+
+It's more efficient to use a dictionary because it allows us to do this in 0(1) time rather than 0(n):
+
+```py
+unique_dict = {x[0]: x for x in dummy_data}
+unique_data = list(unique_dict.values())
+```
+
+This approach leverages the fact that a dictionary cannot have duplicate keys: if you try to insert an element with a key that already exists, the new value will simply overwrite the old value for that key.
+
+Accordingly, we create a dictionary which uses the unique key in each list as the key of each dictionary entry via [dictionary comprehension](/Programming_Languages/Python/Syntax/List_comprehension_etc.md#dictionary-comprehension) that loops through each value in the inner lists of the multidimensional array. We then parse the values of the dictionary into a list.
+
 ## List of dictionaries
