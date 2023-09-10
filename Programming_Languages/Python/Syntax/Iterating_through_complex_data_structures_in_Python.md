@@ -89,7 +89,7 @@ print(people)
 # Output: [['Alice', 30], ['Bob', 25], ['Clare', 35], ['Dave', 28]]
 ```
 
-### Updating a value within an element of a list of lists
+### Updating an inner value within a multidimensional list
 
 In the following example we have a list of the following structure:
 
@@ -101,10 +101,16 @@ data = [
 ]
 ```
 
-Below we use [list comprehension](/Programming_Languages/Python/Syntax/List_comprehension.md) to convert the first element of each iner list from a Unix timestamp to a readable string:
+Below we use [map](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md) and a [lambda function](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md) to convert the first element of each iner list from a Unix timestamp to a readable string:
 
 ```py
  readable_date = list(map(lambda i: [convert_timestamp(i[0])] + i[1:], date))
+```
+
+We could also use [list comprehension](/Programming_Languages/Python/Syntax/List_comprehension_etc.md) to achieve the same outcome:
+
+```py
+readable_date = [[convert_timestamp(i[0])] + i[1:] for i in data]
 ```
 
 ### Filter elements in a multidimensional list
