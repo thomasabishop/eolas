@@ -8,7 +8,7 @@ tags: [python]
 
 List comprehension is a syntactic shorthand for applying a function to each element in a list without explicitly using loop syntax.
 
-Since its introduction to the language, the same functionality has become achievable by using functional methods like [`map` and `filter`](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md) utilising [lambdas](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md) however list comprehension is often more straightforward and easier to read.
+Since its introduction to the language, the same functionality has become achievable by using functional methods like [`map` and `filter`](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md), utilising [lambdas](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md) however list comprehension is often more straightforward and easier to read.
 
 ## Syntax
 
@@ -56,7 +56,7 @@ print(new_list)
 
 ### Adding a condition
 
-We can apply a
+We can apply a conditional to a comprehension:
 
 ```py
 new_list = [item + 1 for item in values if item % 2 == 0]
@@ -65,7 +65,25 @@ print('new_list:', new_list)
 # new_list: [3, 5, 7, 9]
 ```
 
-// Add example of how a simple filter could be applied without any execution on each element
+### Filters
+
+By applying a condition (and no execution to each element) we effectively create a filter:
+
+```py
+numbers = [1, 2, 3, 4, 5]
+numbers_filtered = [i for i in numbers if i > 2]
+print(numbers_filtered)
+# [3, 4, 5]
+```
+
+For comparison, the same outcome could be achieved with a filter and lambda:
+
+```py
+with_filter = list(filter(lambda x: x > 2, numbers))
+print(with_filter)
+# [3, 4, 5]
+
+```
 
 // TODO: Compare with how the same would be achieved with lambdas
 
