@@ -70,7 +70,7 @@ print('new_list:', new_list)
 By applying a condition (and no execution to each element) we effectively create a filter:
 
 ```py
-numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 4, 4]
 numbers_filtered = [i for i in numbers if i > 2]
 print(numbers_filtered)
 # [3, 4, 5]
@@ -82,11 +82,23 @@ For comparison, the same outcome could be achieved with a filter and lambda:
 with_filter = list(filter(lambda x: x > 2, numbers))
 print(with_filter)
 # [3, 4, 5]
-
 ```
 
-// TODO: Compare with how the same would be achieved with lambdas
+## Set comprehension
+
+We can also apply comprehension to sets. The syntax is practically identical but the difference is the resultant data structure will not contain duplicates.
+
+```py
+numbers = [1, 2, 3, 4, 4, 4]
+unique =  {i for i in numbers}
+print(unique)
+# {1,2,3,4}
+```
 
 ## Dictionary comprehension
 
-// TODO: Add note on dictionary and set comprehension
+```py
+squares = {i: i * i for i in range(5)}
+print(squares)
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
