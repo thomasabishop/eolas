@@ -29,8 +29,6 @@ file_object = open(<file_name>, <access_mode>)
 
 In addition we have the following access modes
 
-// TODO: Add table
-
 ## Reading files
 
 Once a file object has been intialised with `open()` there are several ways in which the content can be read:

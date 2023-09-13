@@ -69,5 +69,3 @@ else
 finally
     # Do concluding action
 ```
-
-// TODO: Get ChatGPT to give me a medium length overview
