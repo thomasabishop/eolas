@@ -9,7 +9,6 @@ tags: [python, testing]
 ## `pytest`
 
 Pytest is the most popular testing library for Python.
-
 It is not included with the Python standard library so it must be installed with [pip](/Programming_Languages/Python/Concepts/Python_package_management.md). While it does not include a declaration library, it is robust enough to handle most scenarios having a rich and expressive set of constructs and decorators that let you declare what your tests should do, under what conditions they should run, and how they should interact with the rest of your system.
 
 ### Using `pytest`
@@ -23,7 +22,6 @@ Here is a basic example of using pytest for a local module callled `palindrome`:
 
 ```py
 import palindrome
-
 
 def test_is_palindrome():
     assert palindrome.is_palindrome('soros')
@@ -99,6 +97,104 @@ The example above follows the **Arrange, Act, Assert** pattern:
 | Arrange | Replace the `requests.get` function with `patch` and set properties with `Mock` |
 | Act     | Call the function under test                                                    |
 | Assert  | Assert that the function under test behaved as expected                         |
+
+## Before-each and after-each
+
+When testing functions, we achieve this in Python using `setup_function` and `teardown_function` methods. These methods are called before and after each test method respectively.
+
+To apply a "before each" to _every test_ just put your setup function and/or teardown function at the top level of your test module.
+
+For example, below we set and remove an env var before and after each test:
+
+```py
+@pytest.fixture(scope="function") # specify that this fixture should be run before each function test
+def setup_function():
+    print("Setting up test environment...")
+    os.environ["POCKET_LAMBDA_ENDPOINT"] = "https://some_endpoint.com/{article_type}"
+
+
+def teardown_function():
+    print("Tearing down test environment...")
+    del os.environ["POCKET_LAMBDA_ENDPOINT"]
+```
+
+If the setup/teardown should only be applied to a subset of tests, just pass the name of the fixture as a parameter to the test function:
+
+```py
+def some_function(setup_function):
+    # setup_function will be run before this test
+```
+
+You don't need to use the names `setup_function` and `teardown_function` so long as you are passing the fixture as a parameter.
+
+You can also use `yield` to combine the setup and teardown into a single function:
+
+```py
+@pytest.fixture(scope="function")
+def setup_function():
+    os.environ["POCKET_LAMBDA_ENDPOINT"] = "https://some_endpoint.com/{article_type}"
+    yield
+    del os.environ["POCKET_LAMBDA_ENDPOINT"]
+```
+
+## Parameterized tests
+
+For a sequence of tests that are repetitive, to avoid repeating the same code over and over again, we can use parameterized tests. This is where we pass in a list of parameters to the test function and the test function is run once for each parameter.
+
+For example, in the function below I am handling numerous possible Exceptions that could be raised by the `requests.get` method:
+
+```py
+    try:
+        response = requests.get(endpoint)
+        response.raise_for_status()
+        return response.json()
+
+    except HTTPError as http_err:
+        logging.error(f"HTTP Error occurred: {http_err}")
+
+    except ConnectionError as conn_err:
+        logging.error(f"Connection Error occurred: {conn_err}")
+
+    except Timeout as timeout_err:
+        logging.error(f"Timeout Error occurred: {timeout_err}")
+
+    except RequestException as e:
+        logging.error(f"Request Exception occurred: {e}")
+
+    return None
+```
+
+Instead of writing something like the following for each of the four exceptions:
+
+```py
+
+ def test_exception_generic(caplog):
+    with patch("requests.get", side_effect=RequestException("Some error")):
+        result = get_articles("some_type")
+
+    assert "Request Exception occurred" in caplog.text
+    assert result is None
+```
+
+I could parameterize like so:
+
+```py
+@pytest.mark.parametrize(
+    "exception_type, log_message",
+    [
+        (RequestException, "Request Exception occurred: "),
+        (HTTPError, "HTTP Error occurred: "),
+        (Timeout, "Timeout Error occurred: "),
+        (ConnectionError, "Connection Error occurred: "),
+    ],
+)
+def test_exceptions(caplog, exception_type, log_message):
+    with patch("requests.get", side_effect=exception_type("Some error")):
+        result = get_articles("some_type")
+
+    assert log_message in caplog.text
+    assert result is None
+```
 
 ## Caplog and Syslog
 
