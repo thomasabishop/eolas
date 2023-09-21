@@ -7,21 +7,25 @@ tags: [memory, motherboard]
 
 # Memory
 
-In essence the memory is just a temporary and volatile storage area for a series of binary digits. Each slot for a 0 or 1 is called a bit:
+## Why do we need memory?
 
-> This is where the running kernal and processes reside - they're just big collections of bits. A CPU is just an operator on memory. It reads its instructions and data from the memory and writes back out to the memory. (Ward 2021)
+When a [CPU](/Computer_Architecture/CPU/CPU_architecture.md) executes a program, it needs a place to store the program's **instructions** and **related data**.
 
-Technically, the harddisk is also memory of a non-volatile sort however we typically distinguish "disk storage" from memory. We can think of memory as active storage that is utilised during the runtime of a program and disk memory as dormant storage that only becomes active once it is loaded into memory.
+> A CPU is just an operator on memory. It reads its instructions and data from the memory and writes back out to the memory. (Ward 2021)
+
+## What memory is
+
+A program's data is a series of bits. The basic unit of memory storage is a **memory cell**: a circuit that can store a single bit.
+
+### Memory types
+
+There are two types of memory: SRAM and DRAM. Both types of RAM memory are _volatile_ : the memory is only retained whilst the computer has a power supply and is wiped when the computer is rebooted. This contrasts with the memory of the harddisk which is non-volatile and is retained after a reboot.
 
 Programs that are executing are loaded into memory because the chips that comprise memory can read and store data much faster than the harddisk. It would be possible to run a program from the harddisk but it would be 500 - 1000 times slower than memory.
 
-## Memory types
+#### DRAM
 
-### DRAM
-
-When we think of memory we generally think of the _main_ memory: the 8GB or 16GB+ slots of volatile, non-permanent storage that is utilised by the CPU during the runtime of programs. This is DRAM memory: Dynamic Random Access memory.
-
-DRAM uses capacitors to store bits:
+DRAM uses capacitors to create the memory cell:
 
 > a **capacitor** is an electronic component that stores electrical energy in an electrical field. A device which can accumulate and release electrical charge.
 
@@ -29,30 +33,18 @@ In a DRAM cell, each bit of data is stored as a charge in a capacitor. The prese
 
 However capacitors lose [charge](/Electronics_and_Hardware/Analogue_circuits/Current.md) over time due to leaks. As a result DRAM is memory that needs to be refreshed (recharged) frequently. For this reason and because it only uses one transistor and capacitor per bit, DRAM is the less expensive form of volatile memory.
 
-### SRAM
+#### SRAM
 
 SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_.
 
-SRAM uses [flip flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md) to store the bits. It also uses multiple transistors per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM. SRAM is used as [cache memory](/Computer_Architecture/Memory/Role_of_memory_in_computation.md#the-role-of-the-cache) on the [motherboard](/Electronics_and_Hardware/Motherboard.md) of which there are two types: L1 (on the processor chip) and L2 (separate from the processor).
+SRAM uses [flip flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md) to store the bits. It also uses multiple transistors per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM.
 
-### Relative speeds
+### Memory addresses
 
-The table below details the relative speeds of the different types of memory and those of other types of motherboard storage.
+We can think of the internals of RAM as grids of memory cells.
 
-| Storage type | Access speed (clock cycles) | Relative times slower |
-| ------------ | --------------------------- | --------------------- |
-| CPU register | 2                           |                       |
-| L1 cache     | 4                           | 2x                    |
-| L2 cache     | 6-20                        | 3-10x                 |
-| DRAM memory  | 50                          | 25x                   |
-| Harddisk     | 2000                        | 1000x                 |
+Each single-bit cell in the grid can be identified using two dimensional coordinates. The coordinates are the location of that cell in the grid. Handling one bit at a time isn't very efficient so RAM accesses multiple grids of 1-bit memory cells in parallel. This allows for reads or writes of multiple bits at once, such as a whole byte.
 
-## The memory hierarchy
+The location of a set of bits in memory is known as a **memory address**.
 
-The diagram below compares the different forms of memory within a computing device in terms of speed, monetary cost and capacity:
-
-![](/_img/Memory-Hierarchy.jpg)
-
-## References
-
-Ward, Brian. 2021. _How Linux works_. No Starch Press.
+### Demonstration
