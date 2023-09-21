@@ -6,6 +6,8 @@ tags: [python, data-structures]
 
 # Tuples in Python
 
+TODO: Exapand tuple notes - give more use cases
+
 Tuples are one of the main data-structures or containers in Python. Tuples are useful in cases where you want to group related data and ensure that it will not change.
 
 Tuples have the following properties:
@@ -26,16 +28,9 @@ As with all containers in Python they permit any data type.
 
 ```python
 tup1 = (1, 3, 5, 7)
-print(tup1[0])
-print(tup1[1])
 print(tup1[2])
-print(tup1[3])
 
-"""
-1
-3
-5
-7
+# 5
 """
 ```
 
