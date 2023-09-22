@@ -236,3 +236,27 @@ def test_http_error(capsys):
     captured = capsys.readouterr()
     assert "An error occurred" in captured.out
 ```
+
+## `excinfo`
+
+We can use `excinfo` to test that an exception is raised:
+
+For example, instead of using `logging.error` to log an error message when the environment variable cannot be sourced. We could instead raise an exception with `ValueError`:
+
+```py
+if POCKET_LAMBDA_ENDPOINT is None:
+    raise ValueError(
+        "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set"
+    )
+```
+
+Then to test this, we would use pytest's `excinfo` fixture along with `raises`:
+
+```py
+ with pytest.raises(ValueError) as excinfo:  # Watch for the ValueError
+    get_articles("some_type")
+
+    assert "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set" in str(
+        excinfo.value
+    )
+```
