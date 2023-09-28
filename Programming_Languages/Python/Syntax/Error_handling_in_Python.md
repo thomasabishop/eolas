@@ -16,16 +16,14 @@ In these scenarios you would want to allow for error handling, so that you can d
 
 ## Difference between errors and exceptions.
 
-Errors and exceptions are both types of runtime problems that can occur in the program however they slightly different from each other.
+Python distinguises between errors and exceptions.
 
-In essence, errors are problems in the program's code that prevent it from running. Exceptions are raised by the program itself when it encounters a problem at runtime that it can't handle.
+- An error typically indicates a situration where something goes wrong before the execution of the program begins.
+- An exception arises during the execution of the program
 
-<dl>
-    <dt><b>Errors</b></dt>
-    <dd> are problems that occur at runtime that prevent the program from executing successfully. Errors are usually caused by issues in the program's code, such as syntax errors or logical errors. Examples of errors in Python include NameError, SyntaxError, and TypeError.</dd>
-    <dt><b>Exceptions</b></dt>
-    <dd>are raised by the program itself when it encounters an unexpected situation at runtime that it cannot handle. These typically arise from user-interaction rather than as a result of errors that a programmer has made. Exceptions allow the program to gracefully handle errors and continue running without crashing. Examples of exceptions in Python include ZeroDivisionError, FileNotFoundError, and TypeError.</dd>
-</dl>
+In contrast to a error, when an exception occurs, the program doesn't necessarily stop immediately. Instead, Python provides a way to handle the exception, allowing you to potentially recover from it, or at least, to handle it gracefully before the program stops.
+
+However if you do not implement exception handling, the program will stop immediately when an exception occurs, similar to a error.
 
 ## The Exception hierarchy
 
@@ -37,9 +35,32 @@ The root class is `BaseException` which all errors and exeptions extend as subcl
 
 ## Exception syntax
 
-There is a general procedure for handling exceptions denoted by certain keywords:
+### Difference between `raise` and `except`:
 
-// TODO: Add difference between throw and exception object
+- `raise` is used to explicitly trigger an exception - it means that you are signalling that an exception condition _has_ occured in your program.
+- `except` is used in conjunction with `try`blocks to catch and handle exceptions. Here you are saying "I think this _might_ cause an exception, so let's be prepared to handle it".
+
+Exaple of `raise`:
+
+```py
+x = -10
+if x < 0:
+    raise ValueError("The value should not be negative!")
+```
+
+Example of `except`:
+
+```py
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+
+```
+
+### Scaffolding exception handling
+
+There is a general procedure for handling exceptions denoted by certain keywords:
 
 - `try`
   - The process you want to run
@@ -68,4 +89,18 @@ else
     # Do something after the exception blocks
 finally
     # Do concluding action
+```
+
+## Custom exceptions
+
+You can create your own custom exceptions by creating a class that inherits from the `Exception` class.
+
+```py
+class CustomError(Exception):
+    pass
+
+try:
+    raise CustomError("This is a custom exception!")
+except CustomError as e:
+    print(f"Caught an exception: {e}")
 ```
