@@ -24,15 +24,32 @@ def greet(name: str) -> str:
     return "Hello, " + name
 ```
 
-### Complex data types
-
-// TODO: Give examples of lists, tuples, dictionaries, sets
-
 ### Classes
 
 // TODO: Add examples
 
-### Optional types
+## Complex data types
+
+// TODO: Give examples of lists, tuples, dictionaries, sets
+
+## Custom dictionay types
+
+We can create custom dictionay types in the manner of TypeScript types and interfaces as follows:
+
+```py
+class ArticleInfo(TypedDict):
+    timestamp: str
+    article_title: str
+    link: str
+```
+
+We could then use it thus:
+
+```py
+def parse_articles() -> List[ArticleInfo]:
+```
+
+## Optional types
 
 `Optional` can be used to indicate that a variable can be `None` or the specified type.
 
@@ -48,7 +65,7 @@ def find_index(numbers: List[int], target: int) -> Optional[int]:
 
 The function above returns an `int` or `None`.
 
-### Union types
+## Union types
 
 `Union` can be used to indicate that a variable can be one of several types.
 
