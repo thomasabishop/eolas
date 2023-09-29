@@ -98,6 +98,34 @@ The example above follows the **Arrange, Act, Assert** pattern:
 | Act     | Call the function under test                                                    |
 | Assert  | Assert that the function under test behaved as expected                         |
 
+### Wrapping
+
+When we mock a function with `patch`, we are replacing the function with a Mock object. This means that the function will not be called. If we want to test the function itself, we can wrap the function in another function and mock the wrapper function instead.
+
+This is useful when you want to track or intercept calls without completely stubbing out or replacing the behavior of the function or method. This can be helpful when you to spy on the internal processes of the given function you are mocking - for instance, ensuring that it calls other functions.
+
+## Testing exceptions with `raises` and `excinfo`
+
+Testing exceptions is quite straightforward. You can use the `raises` helper provided by pytest, and combine this with `excinfo` ("exception info") to inspect the exception message.
+
+```py
+if POCKET_LAMBDA_ENDPOINT is None:
+    raise ValueError(
+        "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set"
+    )
+```
+
+Then to test this, we would use pytest's `excinfo` fixture along with `raises`:
+
+```py
+ with pytest.raises(ValueError) as excinfo:  # Watch for the ValueError
+    get_articles("some_type")
+
+    assert "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set" in str(
+        excinfo.value
+    )
+```
+
 ## Before-each and after-each
 
 When testing functions, we achieve this in Python using `setup_function` and `teardown_function` methods. These methods are called before and after each test method respectively.
@@ -196,7 +224,7 @@ def test_exceptions(caplog, exception_type, log_message):
     assert result is None
 ```
 
-## Caplog and Syslog
+## Caplog, syslog, excinfo
 
 `caplog` and `capsys` are built-in pytest fixtures. `caplog` lets you test log messages. `capsys` lets you test stdout and stderr. As such they are very useful when testing that error messages are logged correctly.
 
@@ -237,26 +265,4 @@ def test_http_error(capsys):
     assert "An error occurred" in captured.out
 ```
 
-## `excinfo`
-
-We can use `excinfo` to test that an exception is raised:
-
-For example, instead of using `logging.error` to log an error message when the environment variable cannot be sourced. We could instead raise an exception with `ValueError`:
-
-```py
-if POCKET_LAMBDA_ENDPOINT is None:
-    raise ValueError(
-        "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set"
-    )
-```
-
-Then to test this, we would use pytest's `excinfo` fixture along with `raises`:
-
-```py
- with pytest.raises(ValueError) as excinfo:  # Watch for the ValueError
-    get_articles("some_type")
-
-    assert "Error: POCKET_LAMBDA_ENDPOINT environment variable is not set" in str(
-        excinfo.value
-    )
-```
+### `excinfo`
