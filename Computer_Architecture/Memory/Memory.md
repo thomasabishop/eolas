@@ -9,15 +9,15 @@ tags: [memory, motherboard]
 
 ## Why do we need memory?
 
-When a [CPU](/Computer_Architecture/CPU/CPU_architecture.md) executes a program, it needs a place to store the program's **instructions** and **related data**.
-
 > A CPU is just an operator on memory. It reads its instructions and data from the memory and writes back out to the memory. (Ward 2021)
 
-## What memory is
+When a [CPU](/Computer_Architecture/CPU/CPU_architecture.md) executes a program, it needs a place to store the program's **instructions** and **related data**. This is the role of memory.
 
-A program's data is a series of bits. The basic unit of memory storage is a **memory cell**: a circuit that can store a single bit.
+## What is memory?
 
-### Memory types
+The data that comprises a program is a series of bits. The basic unit of memory storage is a **memory cell**: a circuit that can store a single bit.
+
+## Memory types
 
 There are two types of memory: SRAM and DRAM. Both types of RAM memory are _volatile_ : the memory is only retained whilst the computer has a power supply and is wiped when the computer is rebooted. This contrasts with the memory of the harddisk which is non-volatile and is retained after a reboot.
 
@@ -35,15 +35,17 @@ However capacitors lose [charge](/Electronics_and_Hardware/Analogue_circuits/Cur
 
 #### SRAM
 
-SRAM (Static Random Access Memory) is also volatile memory but, in terms of the electronics, it is different in its implementation. In contrast to DRAM it doesn't use capacitors. As a result the transistors do not leak and therefore do not need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_.
+SRAM (Static Random Access Memory) is also volatile memory but its electronical implementation is different. Unlike DRAM it doesn't use capacitors. Consequently the transistors do not leak or need to be refreshed, hence why SRAM is _static_ and DRAM is _dynamic_.
 
 SRAM uses [flip flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md) to store the bits. It also uses multiple transistors per bit. This makes it faster than DRAM but more expensive. DRAM is at least ten times slower than SRAM.
 
-### Memory addresses
+## Memory addresses
 
 We can think of the internals of RAM as grids of memory cells.
 
-Each single-bit cell in the grid can be identified using two dimensional coordinates. The coordinates are the location of that cell in the grid. Handling one bit at a time isn't very efficient so RAM accesses multiple grids of 1-bit memory cells in parallel. This allows for reads or writes of multiple bits at once, such as a whole byte.
+Each single-bit cell in the grid can be identified using two dimensional coordinates, like in a graph. The coordinates are the location of that cell in the grid.
+
+Handling one bit at a time isn't very efficient so RAM accesses **multiple grids** of 1-bit memory cells in parallel. This allows for reads or writes of multiple bits at once, such as a whole byte.
 
 The location of a set of bits in memory is known as a **memory address**.
 
