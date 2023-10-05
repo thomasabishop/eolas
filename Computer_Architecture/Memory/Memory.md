@@ -41,6 +41,8 @@ SRAM uses [flip flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md)
 
 ## Memory addresses
 
+> Computers assign numeric addresses to bytes of memory and the CPU can read or write to those addresses
+
 We can think of the internals of RAM as grids of memory cells.
 
 Each single-bit cell in the grid can be identified using two dimensional coordinates, like in a graph. The coordinates are the location of that cell in the grid.
@@ -50,3 +52,11 @@ Handling one bit at a time isn't very efficient so RAM accesses **multiple grids
 The location of a set of bits in memory is known as a **memory address**.
 
 ### Demonstration
+
+Let's imagine we have a computer system that can address up to 64KB of memory and our system is byte addressable. This means there are $64 \cdot 1024 = 65,536$ bytes of memory because 1KB = 1024 bytes.
+
+We therefore have 65,536 addresses and each address can store one byte. So our addresses go from 0 to 65, 535.
+
+We now need to consider how many bits we need to represent an address on this system.
+
+ChatGPT account: https://chat.openai.com/c/921e1415-4965-4fc4-af11-58db5dcef0f1
