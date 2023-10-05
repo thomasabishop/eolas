@@ -104,7 +104,7 @@ When we mock a function with `patch`, we are replacing the function with a Mock 
 
 This is useful when you want to track or intercept calls without completely stubbing out or replacing the behavior of the function or method. This can be helpful when you to spy on the internal processes of the given function you are mocking - for instance, ensuring that it calls other functions.
 
-## Testing exceptions with `raises` and `excinfo`
+## Testing exceptions with `raises`
 
 Testing exceptions is quite straightforward. You can use the `raises` helper provided by pytest, and combine this with `excinfo` ("exception info") to inspect the exception message.
 
@@ -125,6 +125,15 @@ Then to test this, we would use pytest's `excinfo` fixture along with `raises`:
         excinfo.value
     )
 ```
+
+We could actually simplify the above test by using the `match` parameter with `raise`. This way we do not need the separate assertion:
+
+```py
+with pytest.raises(ValueError, match="Error: POCKET_LAMBDA_ENDPOINT environment variable is not set"):
+    get_articles("some_type")
+```
+
+Note that `excinfo` is best used for testing the exception text that you the developer explicitly `raise`. For exceptions tha may occur naturaly in the code you are testing, you should use `caplog` or `capsys` (see below).
 
 ## Before-each and after-each
 
