@@ -6,27 +6,6 @@ tags: [javascript, testing]
 
 # Testing with Jest
 
-## Mock a function
-
-```js
-function sumOfFirstTenNumbers() {
-  let sum = 0;
-  for (let i = 1; i <= 10; i++) {
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-test("mock sumOfFirstTenNumbers function", () => {
-  const mockFunction = jest.fn().mockReturnValue(100);
-  const result = mockFunction();
-  expect(result).toBe(100);
-  expect(mockFunction).toHaveBeenCalled();
-});
-```
-
 ## Mocking classes/modules
 
 ### Classes
@@ -103,6 +82,115 @@ test("should use mocked module functions", () => {
   expect(result).toEqual({ id: 123, name: "Mock User" });
   expect(utils.fetchUserData).toHaveBeenCalledWith(123);
 
+});
+```
+
+### Inline mocking versus "per test" mocking
+
+There are two different architectures that we can use when mocking modules and classes: **inline** and **per test** mocking.
+
+Here is the inline case:
+
+```js
+jest.mock("./some_module.js", () => {
+  return {
+    someFunction: jest.fn(() => "value"),
+    someFunctionWithParam: jest.fn((param) => ({
+      property: param,
+    })),
+    someAsyncFunction: jest.fn(() => Promise.resolve("value")),
+  };
+});
+```
+
+Here is the per test case:
+
+```js
+import { someModule } from "./some_module.js";
+
+let someModuleMock;
+
+someModuleMock = {
+  someFunction: jest.fn(() => "value"),
+  someFunctionWithParam: jest.fn((param) => ({
+    property: param,
+  })),
+  someAsyncFunction: jest.fn(() => Promise.resolve("value")),
+};
+
+someModule.mockImplementation(() => someModuleMock);
+
+it("should do something", () => {
+  const newValue = "new value";
+  someModule.someFunction.mockReturnValue(newValue);
+});
+```
+
+The benefits of inline:
+
+- Inline is good because everything is set up in one place
+- Inline keeps consistency accross tests: every test case in the file will use the same mocked function unless overwritten within a test
+- It lends itself to being a _global_ mock that can be used accross test files in a `__mocks__/` directory
+
+The benefits of per-test:
+
+- You can very mock implementations within the file, providing more granular control. You can redefine `someModuleMock` or parts of it (`someModule.someFunction`) throughout your test file to accomodate varied requirements between tests
+- It’s beneficial when your tests have divergent requirements, as you can perform more detailed setups and overrides for each individual test case or suite, ensuring mocks are configured exactly as required.
+
+#### Overriding inline mocks
+
+Per test mocking makes it straightforward to change the test parameters of the mocked module or class but you can also override inline mocks.
+
+If we were using the `someModule` inline mock and we wanted to override the `someFunction` function that we have defined inline, we would first import the `someFunction` function and then use `mockImplementation` against it:
+
+```js
+import { someFunction } from "./some_module.js";
+someFunction.mockImplementation(() => "custom value");
+expect(someFunction()).toBe("custom value");
+
+// Optional: Restore the original mock implementation after the test
+someFunction.mockRestore();
+```
+
+Note: although we are importing `someFunction` we are not actually importing the real function tha belongs to the module. Because Jest mocks all of its properties and methods with the inline syntax, we are actually just importing that which Jest has aready mocked, but the syntax is a bit misleading.
+
+#### Applied to classes
+
+The same approaches (with minor differences) can be used with classes:
+
+Using inline:
+
+```js
+jest.mock("./SomeClass", () => {
+  return jest.fn().mockImplementation(() => {
+    return {
+      someFunction: jest.fn(() => "value"),
+      someFunctionWithParam: jest.fn((param) => ({ property: param })),
+      someAsyncFunction: jest.fn(() => Promise.resolve("value")),
+    };
+  });
+});
+```
+
+Using per test:
+
+```js
+import SomeClass from "./someClass";
+
+jest.mock("./someClass");
+
+let someClassMock = {
+  someFunction: jest.fn(() => "value"),
+  someFunctionWithParam: jest.fn((param) => ({ property: param })),
+  someAsyncFunction: jest.fn(() => Promise.resolve("value")),
+};
+
+// Mock class implementation
+SomeClass.mockImplementation(() => someClassMock);
+
+it("should do something", () => {
+  const newValue = "new value";
+  someClassMock.someFunction.mockReturnValue(newValue);
 });
 ```
 
