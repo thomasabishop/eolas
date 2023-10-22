@@ -10,7 +10,7 @@ At the core of a computer sits the Central Processing Unit. This is the assembly
 
 The CPU comprises three core components:
 
-- Registers (a form of memory that are positioned on the same chip as the CPU )
+- Registers (a type of memory positioned on the same chip as the CPU )
 - the Arithmetic Logic Unit (ALU)
 - the Control Unit (CU)
 
@@ -60,7 +60,7 @@ Each "cycle" is the execution of a process that commences once the [kernel](/Ope
 
 ## Electromagnetism: broader scientific context
 
-Hertz was the scientist who detected [electromagentic waves](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md) and more broadly in science, we use Hertz to measure the frequency of electromatic wave cycles in a signal.
+Hertz was the scientist who detected [electromagentic waves](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md). We use Hertz as a measure of the frequency of electromatic wave cycles in a signal.
 
 ![](/_img/hertz_wave_freq.gif)
 
