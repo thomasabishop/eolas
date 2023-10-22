@@ -1,7 +1,7 @@
 ---
 categories:
   - Programming Languages
-tags: [javascript, testing]
+tags: [javascript, testing, jest]
 ---
 
 # Testing with Jest
@@ -158,17 +158,20 @@ Note: although we are importing `someFunction` we are not actually importing the
 
 The same approaches (with minor differences) can be used with classes:
 
-Using inline:
+Using inline (where the class is not the default export):
 
 ```js
 jest.mock("./SomeClass", () => {
-  return jest.fn().mockImplementation(() => {
-    return {
-      someFunction: jest.fn(() => "value"),
-      someFunctionWithParam: jest.fn((param) => ({ property: param })),
-      someAsyncFunction: jest.fn(() => Promise.resolve("value")),
-    };
-  });
+  return {
+    SomeClass: jest.fn().mockImplementation(() => {
+      return {
+        someFunction: jest.fn(() => "value"),
+        someFunctionWithParam: jest.fn((param) => ({ property: param })),
+        someAsyncFunction: jest.fn(() => Promise.resolve("value")),
+        someOtherFunctionThatResolves: jest.fn().mockResolvedValue("some data"),
+      };
+    }),
+  };
 });
 ```
 
