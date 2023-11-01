@@ -20,7 +20,7 @@ The CPU comprises three core components:
 
 ## Registers
 
-This is the part of the CPU that stores data. The memory cells that comprise it do not have [capacitors](/Computer_Architecture/Memory/Memory.md) (unlike RAM) so they cannot store very much data but they work faster, which is what is important.
+This is the part of the CPU that stores data. The memory cells that comprise it do not have [capacitors](/Computer_Architecture/Memory/Memory.md) (unlike RAM) so they cannot store very much data but they work faster, which is what is important. Because their memory capacity is so small, we measure the size of registers in bits rather than bytes.
 
 In terms of speed, registers sit at the top part of the overall [memory hierarchy](/Computer_Architecture/Memory/Memory.md#the-memory-hierarchy).
 
@@ -68,6 +68,18 @@ As the diagram above shows, a cycle is equal to one ascending and one descending
 
 ## Processor cores
 
+// TODO: add to dedicated file
+
+// Add diagram
 The vast majority of general purpose computers are multi-core. This means that the CPU contains more than one processing unit. They are best thought of as mini-CPUs within the main CPU since they each have the same overall Von Neumann architecture.
 
 With Intel processors the two main consumer processors are the i5 and i7. The latter has more cores than the former. Consequently it has faster clock speeds and greater concurrency due to increased threads.
+
+### Cache access
+// See pp.129 
+
+### History
+
+The development of multi-core processors emerged because practical limits began to be reached when trying to increase the clock speeds of processors. For a period, increased transistor density meant that there were steady increases in clock speeds. This meant that more instructions could be executed per second.
+
+When the 3GHz level was reached it became clear that pushing a CPU beyond this led to excessive heat production and the logic gates not being able to keep up at those speeds. Instead of maxing out the clock rate, attention turned to running multiple instructions in parallel in order to increase performance.

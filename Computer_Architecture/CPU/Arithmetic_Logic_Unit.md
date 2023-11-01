@@ -8,7 +8,7 @@ tags: [CPU]
 
 The ALU is the centerpiece or core of the [CPU](/Computer_Architecture/CPU/CPU_architecture.md) architecture, where the binary calculations occur. All the other components on the CPU chip are appendanges to the execution that occurs within the ALU.
 
-The ALU comprises [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) that execute the instructions passed from memory and where the data stored by the registers is acted upon.
+The ALU comprises [logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) that execute the instructions passed from memory and where the data stored by the registers is acted upon. A processor's ALU is just a complex combinatorial logic circuit. 
 
 It executes arithmetic and logical operations on binary numbers and where you will find operations conducted by [full-adders and half adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md) etc.
 

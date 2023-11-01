@@ -62,16 +62,14 @@ Registers are a form of memory that are positioned on the same chip as the CPU. 
 
 The cache is SRAM memory that is separate from the DRAM memory which comprises the main memory. It exists in order to boost perfomance when executing the read/request cycles of the steps detailed above.
 
-For more detail see [CPU architecture](/Computer_Architecture/CPU/CPU_architecture.md).
-
-The cache is SRAM memory that is separate from the DRAM memory which comprises the main memory. It exists in order to boost perfomance when executing the read/request cycles of the steps detailed above.
-
 There are two types of cache memory:
 
 - L1 cache
   - Situated on the CPU chip itself
+  - Fastest to access but stores less
 - L2 cache
   - Situated outside of the CPU on its own chip
+  - Slower to access than L1 but can store more data
 
 The L1 cache is the fastest since the data has less distance to travel when moving to and from the CPU. This said, the L2 cache is still very fast when compared to the main memory, both because it is SRAM rather than DRAM and because it is closer to the processor than the main memory.
 
