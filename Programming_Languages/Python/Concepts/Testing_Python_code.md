@@ -98,11 +98,77 @@ The example above follows the **Arrange, Act, Assert** pattern:
 | Act     | Call the function under test                                                    |
 | Assert  | Assert that the function under test behaved as expected                         |
 
-### Wrapping
+### Alternative mock syntax
 
-When we mock a function with `patch`, we are replacing the function with a Mock object. This means that the function will not be called. If we want to test the function itself, we can wrap the function in another function and mock the wrapper function instead.
+The `with patch(...) as mock_name` syntax is fine for small-scale mocking but can become cumbersome when you are mocking several dependencies.
 
-This is useful when you want to track or intercept calls without completely stubbing out or replacing the behavior of the function or method. This can be helpful when you to spy on the internal processes of the given function you are mocking - for instance, ensuring that it calls other functions.
+There is another syntax (which I actually find clearer). Say we have a function with three dependencies: `update_worksheet`, `process_articles`, `get_articles`. We could mock like so:
+
+```py
+@patch("app.update_worksheet")
+@patch("app.process_articles")
+@patch("app.get_articles")
+def test_success(
+    mock_get_articles, mock_process_articles, mock_update_worksheet
+):
+    mock_get_articles.return_value = [1, 2, 3]
+```
+
+Here the patching is done by the decorator and the mocks are defined as parameters to the test function (always in reverse order)
+
+### Mock assertion lexicon
+
+#### `return_value`
+
+State what the mock should return
+
+```py
+my_mocked_function.return_value = ['one', 'two', 'three']
+```
+
+#### `call_count`
+
+Test how many times a dependent function is called
+
+```py
+assert my_mocked_function.call_count = 3
+```
+
+#### `assert_any_call()`
+
+Test that a given mock is called at least once during the execution of the function under test
+
+```py
+my_mocked_function.assert_any_call(some_mocked_return_value)
+```
+
+When the output of one function is used as a parameter to another, and we don't particularly care about the details of what is concerned we can just pass the executed function, e.g:
+
+```py
+my_mocked_function.assert_any_call(preceding_function())
+```
+
+#### `call_args_list`
+
+Get a list of all the arguments that a mock object was called with during the test.
+
+`call_args_list` is useful when you want to check the arguments that a mock object was called with during the test, especially if the mock object was called multiple times with different arguments. You can use it to inspect the arguments of each call and make assertions based on them.
+
+```py
+second_my_mocked_function_call = my_mocked_function.call_args_list[1]
+
+# check the first argument of the second call:
+
+assert second_my_mocked_function_call[0][0] == "expected arg"
+```
+
+#### `side_effect`
+
+Use to trigger a side effect when returning a value from a mock. Most useful for mocking exceptions.
+
+```py
+my_mocked_function.side_effect = Exception("Some exception raised")
+```
 
 ## Testing exceptions with `raises`
 
@@ -172,6 +238,28 @@ def setup_function():
     os.environ["POCKET_LAMBDA_ENDPOINT"] = "https://some_endpoint.com/{article_type}"
     yield
     del os.environ["POCKET_LAMBDA_ENDPOINT"]
+```
+
+### Another example:
+
+The following test suite uses the same three mocked functions in every test. The following set-up assigns the mocks before each test and resets after each individual test has run:
+
+```py
+@pytest.fixture(scope="function")
+def setup_function():
+    with patch("app.get_articles") as mock_get_articles, patch(
+        "app.process_articles"
+    ) as mock_process_articles, patch("app.update_worksheet") as mock_update_worksheet:
+        yield mock_get_articles, mock_process_articles, mock_update_worksheet
+```
+
+Then to use:
+
+```py
+def individual_test(setup_function):
+    mock_get_articles, mock_process_articles, mock_update_worksheet = setup_function
+    # Now each mock can be referenced using the vars above
+
 ```
 
 ## Parameterized tests
