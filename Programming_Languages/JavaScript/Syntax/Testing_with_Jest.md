@@ -388,3 +388,85 @@ describe("fetchData", () => {
   });
 });
 ```
+
+## Parameterization
+
+The following offers a good opportunity for parameterisation:
+
+```js
+it("should return page for deletion from `ipages-live`", async () => {
+  // preview = false, isInternal = false
+  await deletePageFromS3("url", false, false);
+  const deleteObjectCommand = s3ClientMock.calls()[0].args[0];
+  expect(deleteObjectCommand.input).toEqual({
+    Bucket: "bbc-ise-ipages-live",
+    Key: "url/index.html",
+  });
+});
+
+it("should return page for deletion from `preview`", async () => {
+  // preview = true, isInternal = false
+  await deletePageFromS3("url", true, false);
+  const deleteObjectCommand = s3ClientMock.calls()[0].args[0];
+  expect(deleteObjectCommand.input).toEqual({
+    Bucket: "staff.bbc.com-preview",
+    Key: "preview/url/index.html",
+  });
+});
+
+...
+```
+
+Each time we are passing in three parameters to the `deletePageFromS3` function which is the object under test. Each time there are different variations in the object that is output.
+
+To parameterize the process rather than use repeated `it` blocks we can combine the input paramters and outputs into an array:
+
+```js
+const testParams = [
+  {
+    preview: false,
+    isInternal: false,
+    bucket: "ipages-live",
+    key: "url/index.html",
+  },
+  {
+    preview: true,
+    isInternal: false,
+    bucket: "staff.com-preview",
+    key: "preview/url/index.html",
+  },
+];
+```
+
+Then use `it.each` to loop through all possible parameter combinations:
+
+```js
+it.each(testParams)(
+  "should return page for deletion from %s",
+  async ({ preview, isInternal, bucket, key }) => {
+    await deletePageFromS3("url", preview, isInternal);
+    const deleteObjectCommand = s3ClientMock.calls()[0].args[0];
+    expect(deleteObjectCommand.input).toEqual({
+      Bucket: bucket,
+      Key: key,
+    });
+  }
+);
+```
+
+This uses the `%s` variable to print the parameters from each test, which outputs:
+
+```
+  ✓ should return page for deletion from {
+  preview: false,
+  isInternal: false,
+  bucket: 'ipages-live',
+  key: 'url/index.html'
+} (1 ms)
+    ✓ should return page for deletion from {
+  preview: true,
+  isInternal: false,
+  bucket: 'staff.com-preview',
+  key: 'preview/url/index.html'
+}
+```
