@@ -39,7 +39,7 @@ The domain provides network **endpoints** you use to communicate and send reques
 
 #### Clusters and nodes
 
-A cluster is the highest level of organisation in OpensSearch that contains your indexed data. It processes all the search queries and handles tasks like indexing, searching, and managing documents.
+A cluster is the highest level of organisation within an OpensSearch domain that contains your indexed data. It processes all the search queries and handles tasks like indexing, searching, and managing documents.
 
 ![](/_img/opensearch-architecture.drawio.svg)
 
@@ -184,6 +184,21 @@ Find pages published after a certain date:
       "published_date": {
         "gte": "2023-01-01T00:00:00Z"
       }
+    }
+  }
+}
+```
+
+```json
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "fileId": "val" } },
+        { "match": { "programmeId": "val" } },
+        { "match": { "guid": "val" } }
+      ],
+      "minimum_should_match": 1
     }
   }
 }
