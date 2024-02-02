@@ -8,9 +8,15 @@ tags:
 
 # Command pattern
 
-This is typically used when you want to sequence a fairly large number of actions in a series with the option to undo or reverse them. Similarly to the mediator it has a one-to-many architecture (there is a central class that sequences the commands which are handled by other classes) but in addition to sending and routing requests between colleagues, it keeps a central store of them and can reverse actions.
+This is typically used when you want to sequence a fairly large number of
+actions in a series with the option to undo or reverse them. Similarly to the
+mediator it has a one-to-many architecture (there is a central class that
+sequences the commands which are handled by other classes) but in addition to
+sending and routing requests between colleagues, it keeps a central store of
+them and can reverse actions.
 
-The typical example is a calculator. Will will generate this using constructor function syntax, rather than ES6 class syntax.
+The typical example is a calculator. Will will generate this using constructor
+function syntax, rather than ES6 class syntax.
 
 You have a bunch of arithmetic functions:
 
@@ -29,7 +35,8 @@ function div(x, y) {
 }
 ```
 
-Then a generalised `Command` class that has three parameters: undo, execute, and return a value:
+Then a generalised `Command` class that has three parameters: undo, execute, and
+return a value:
 
 ```jsx
 var Command = function (execute, undo, value) {
@@ -39,7 +46,8 @@ var Command = function (execute, undo, value) {
 };
 ```
 
-We then create the specific commands by combining the functions and the `Command` class:
+We then create the specific commands by combining the functions and the
+`Command` class:
 
 ```jsx
 var AddCommand = function (value) {
@@ -49,9 +57,11 @@ var AddCommand = function (value) {
 // We would create one of these classes for each of the four operations
 ```
 
-So now the `add` and `subtract` functions slot into `execute` and `undo` on the `Command` class.
+So now the `add` and `subtract` functions slot into `execute` and `undo` on the
+`Command` class.
 
-Finally we create the centralised command class that will return values based on the individual commands it sequences and issues, store them and remove them:
+Finally we create the centralised command class that will return values based on
+the individual commands it sequences and issues, store them and remove them:
 
 ```jsx
 var Calculator = function () {

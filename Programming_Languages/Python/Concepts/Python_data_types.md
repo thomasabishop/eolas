@@ -7,9 +7,12 @@ tags: [python, data-types]
 
 # Python data-types
 
-- Python is dynamically typed rather than untyped. It updates the types on the fly as you are writing your code.
-- Type-hints in the editor like `-> str` mean "at the moment it is a string". It doesn't mean you can't redefine the value as something else.
-- Each data type in Python inherits off of a built-in class, similar to prototypes in JS
+- Python is dynamically typed rather than untyped. It updates the types on the
+  fly as you are writing your code.
+- Type-hints in the editor like `-> str` mean "at the moment it is a string". It
+  doesn't mean you can't redefine the value as something else.
+- Each data type in Python inherits off of a built-in class, similar to
+  prototypes in JS
 
 The core data-types are as follows:
 

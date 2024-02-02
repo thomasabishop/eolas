@@ -25,11 +25,16 @@ echo $a
 # 7
 ```
 
-> Note: we do not use a dollar-sign when referring to variables within arithmetic evaluation, there is no need. If we do, we get an error. This is because we are using an [expansion](/Programming_Languages/Shell/Expansions_and_substitutions.md), therefore the variables are already being interpreted as variables.
+> Note: we do not use a dollar-sign when referring to variables within
+> arithmetic evaluation, there is no need. If we do, we get an error. This is
+> because we are using an
+> [expansion](/Programming_Languages/Shell/Expansions_and_substitutions.md),
+> therefore the variables are already being interpreted as variables.
 
 ## Declaring variables as integers
 
-It is good practice to safeguard against Bash treating numbers as strings to declare them as integers in addition to using arithmetic evaluation, e.g:
+It is good practice to safeguard against Bash treating numbers as strings to
+declare them as integers in addition to using arithmetic evaluation, e.g:
 
 ```bash
 declare -i b=3
@@ -47,7 +52,8 @@ Without getting `3+4` in return
 
 ## No decimals in bash
 
-Bash does not support decimal calculations natively. This is what you'd get for example:
+Bash does not support decimal calculations natively. This is what you'd get for
+example:
 
 ```bash
 echo $(( 1/3 ))

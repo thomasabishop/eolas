@@ -11,7 +11,8 @@ tags: [graphql]
 
 - An argument is a value you provide for a particular field in a query.
 - The schema must define the arguments that a field accepts (if any)
-- The resolver invokes a field's provided arguments to determine how to return specific data
+- The resolver invokes a field's provided arguments to determine how to return
+  specific data
 - Some example use cases of arguments:
   - retrieve specific objects
   - filter through a set of objects
@@ -19,9 +20,11 @@ tags: [graphql]
 
 ## Updated schema
 
-In order to demonstrate arguments we need to expand the [original schema](/Databases/GraphQL/Apollo/Apollo_Server.md#example-schema).
+In order to demonstrate arguments we need to expand the
+[original schema](/Databases/GraphQL/Apollo/Apollo_Server.md#example-schema).
 
-Remember a Track is a group of modules that teaches about a specific topic. We are going to add:
+Remember a Track is a group of modules that teaches about a specific topic. We
+are going to add:
 
 - `description` and `numberOfViews` fields to the original `Track` type
 - A new `Module` type
@@ -59,7 +62,9 @@ type Author {
 
 ## Adding additional query
 
-> Currently we only have one query in the schema (`tracksForHome`) and this returns an array of all the tracks. To demonstrate arguments we want to return a specific track by its `id`. We are going to add a query that enables this.
+> Currently we only have one query in the schema (`tracksForHome`) and this
+> returns an array of all the tracks. To demonstrate arguments we want to return
+> a specific track by its `id`. We are going to add a query that enables this.
 
 ```js
 type Query {
@@ -67,13 +72,17 @@ type Query {
 }
 ```
 
-This query will take an `id` as an argument and the resolver will match the `id` to a given track and return that `Track`.
+This query will take an `id` as an argument and the resolver will match the `id`
+to a given track and return that `Track`.
 
-To define an argument for a field in the schema we add parentheses after the field name. In the parentheses we write the name of the argument and its type. If we have more than one argument we can separate them with commas.
+To define an argument for a field in the schema we add parentheses after the
+field name. In the parentheses we write the name of the argument and its type.
+If we have more than one argument we can separate them with commas.
 
 ## Create resolver for new query
 
-Now we have to create a resolver for our new `track` query. We will quickly run through the [server-side process](/Databases/GraphQL/Apollo/Apollo_Server.md).
+Now we have to create a resolver for our new `track` query. We will quickly run
+through the [server-side process](/Databases/GraphQL/Apollo/Apollo_Server.md).
 
 ### Update our `RESTDataSource`
 
@@ -112,7 +121,8 @@ const resolvers = {
 
 ### Making a query
 
-With the server changes complete, we can now issue a query with an argument from the client:
+With the server changes complete, we can now issue a query with an argument from
+the client:
 
 ```js
 query track(id: 'xyz'){
@@ -120,7 +130,8 @@ query track(id: 'xyz'){
 }
 ```
 
-This will return the `title` field from the track with the specific id. This query complies with the schema since the `Track` type has the field `title`
+This will return the `title` field from the track with the specific id. This
+query complies with the schema since the `Track` type has the field `title`
 
 ### Resolver chains
 
@@ -135,7 +146,8 @@ query track(id: 'xyz'){
 }
 ```
 
-It's not obvious how the resolver should respond to the nested query here since author name is not a field on `Track`, it is a field on `Author`:
+It's not obvious how the resolver should respond to the nested query here since
+author name is not a field on `Track`, it is a field on `Author`:
 
 ```js
 type Track {
@@ -157,7 +169,9 @@ type Author {
 }
 ```
 
-This is where we use a **resolver chain**. Because `authorId` exists on `Track` we can use this to get the `name` part of the query. We already have a resolver for `author` under the `Track` resolver:
+This is where we use a **resolver chain**. Because `authorId` exists on `Track`
+we can use this to get the `name` part of the query. We already have a resolver
+for `author` under the `Track` resolver:
 
 ```js
 Track: {
@@ -167,9 +181,12 @@ Track: {
   },
 ```
 
-Notice that `authorId` is used in the place of the `parent` parameter. It already exists on the `Track` type that wraps the resolver. So this can be invoked to fulfill `author` and thereby access the author name from the graph.
+Notice that `authorId` is used in the place of the `parent` parameter. It
+already exists on the `Track` type that wraps the resolver. So this can be
+invoked to fulfill `author` and thereby access the author name from the graph.
 
-This process is also required for our extended schema. The `Track` type now has a `modules` field that comprises an array of the `Module` type.
+This process is also required for our extended schema. The `Track` type now has
+a `modules` field that comprises an array of the `Module` type.
 
 Here's a reminder of the `Module` type:
 
@@ -181,7 +198,8 @@ type Module {
 }
 ```
 
-The modules for a `Track` can be sourced from the track `id`. So we can again add a resolver chain function to the resolvers file:
+The modules for a `Track` can be sourced from the track `id`. So we can again
+add a resolver chain function to the resolvers file:
 
 ```js
 const resolvers = {
@@ -204,7 +222,8 @@ const resolvers = {
 };
 ```
 
-Once again we are using a property on the parent `Track` type to use as a parameter in the resolver function.
+Once again we are using a property on the parent `Track` type to use as a
+parameter in the resolver function.
 
 This setup would enables like the following to be run:
 
@@ -215,7 +234,8 @@ query track(id: 'xyz'){
 }
 ```
 
-The `id` parameter would be used by the `modules` resolver to return the array of the `Modules` type.
+The `id` parameter would be used by the `modules` resolver to return the array
+of the `Modules` type.
 
 ## Variables in arguments
 
@@ -229,7 +249,8 @@ query GetTrack {
 }
 ```
 
-We can make the code more reusable by using variables instead of the hardcoded `id` argument:
+We can make the code more reusable by using variables instead of the hardcoded
+`id` argument:
 
 ```js
 query GetTrack($trackId: ID!) {
@@ -239,11 +260,14 @@ query GetTrack($trackId: ID!) {
 }
 ```
 
-This way we do not need to write a new query constant every time we want to return a specific track.
+This way we do not need to write a new query constant every time we want to
+return a specific track.
 
 ## Send query with arguments using Apollo `useQuery`
 
-We can now write a proper query using the [useQuery hook](/Databases/GraphQL/Apollo/Apollo_Client.md#usequery-hook) from Apollo Client, with variables.
+We can now write a proper query using the
+[useQuery hook](/Databases/GraphQL/Apollo/Apollo_Client.md#usequery-hook) from
+Apollo Client, with variables.
 
 First define our query constant:
 
@@ -279,4 +303,7 @@ const { loading, error, data } = useQuery(GET_TRACK, {
 });
 ```
 
-Note that in contrast to the [simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants) because we are using variables, we have to pass-in an additional options object with the query constant that specifies our variables.
+Note that in contrast to the
+[simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)
+because we are using variables, we have to pass-in an additional options object
+with the query constant that specifies our variables.

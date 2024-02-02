@@ -12,24 +12,33 @@ Errors can typically occur in the following scenarios:
 - A network connection fails
 - A module import error occurs
 
-In these scenarios you would want to allow for error handling, so that you can detect errors and respond appropriately.
+In these scenarios you would want to allow for error handling, so that you can
+detect errors and respond appropriately.
 
 ## Difference between errors and exceptions.
 
 Python distinguises between errors and exceptions.
 
-- An error typically indicates a situration where something goes wrong before the execution of the program begins.
+- An error typically indicates a situration where something goes wrong before
+  the execution of the program begins.
 - An exception arises during the execution of the program
 
-In contrast to a error, when an exception occurs, the program doesn't necessarily stop immediately. Instead, Python provides a way to handle the exception, allowing you to potentially recover from it, or at least, to handle it gracefully before the program stops.
+In contrast to a error, when an exception occurs, the program doesn't
+necessarily stop immediately. Instead, Python provides a way to handle the
+exception, allowing you to potentially recover from it, or at least, to handle
+it gracefully before the program stops.
 
-However if you do not implement exception handling, the program will stop immediately when an exception occurs, similar to a error.
+However if you do not implement exception handling, the program will stop
+immediately when an exception occurs, similar to a error.
 
 ## The Exception hierarchy
 
-Errors and Exceptions are objects in Python and there is no real syntactic distinction between the two since all errors and exceptions in herit from a base exception class.
+Errors and Exceptions are objects in Python and there is no real syntactic
+distinction between the two since all errors and exceptions in herit from a base
+exception class.
 
-The root class is `BaseException` which all errors and exeptions extend as subclasses as demonstrated by this diagram:
+The root class is `BaseException` which all errors and exeptions extend as
+subclasses as demonstrated by this diagram:
 
 ![](/_img/python-exception-hierarchy.png)
 
@@ -37,8 +46,11 @@ The root class is `BaseException` which all errors and exeptions extend as subcl
 
 ### Difference between `raise` and `except`:
 
-- `raise` is used to explicitly trigger an exception - it means that you are signalling that an exception condition _has_ occured in your program.
-- `except` is used in conjunction with `try`blocks to catch and handle exceptions. Here you are saying "I think this _might_ cause an exception, so let's be prepared to handle it".
+- `raise` is used to explicitly trigger an exception - it means that you are
+  signalling that an exception condition _has_ occured in your program.
+- `except` is used in conjunction with `try`blocks to catch and handle
+  exceptions. Here you are saying "I think this _might_ cause an exception, so
+  let's be prepared to handle it".
 
 Exaple of `raise`:
 
@@ -60,12 +72,14 @@ except ZeroDivisionError:
 
 ### Scaffolding exception handling
 
-There is a general procedure for handling exceptions denoted by certain keywords:
+There is a general procedure for handling exceptions denoted by certain
+keywords:
 
 - `try`
   - The process you want to run
 - `except`
-  - The errors that could occur. You can have multiple `except` clauses for different exceptions
+  - The errors that could occur. You can have multiple `except` clauses for
+    different exceptions
 - `else`
   - Some code you want to run after each of the `except` clauses have run
   - It must be written after the `except` clauses
@@ -93,7 +107,8 @@ finally
 
 ## Custom exceptions
 
-You can create your own custom exceptions by creating a class that inherits from the `Exception` class.
+You can create your own custom exceptions by creating a class that inherits from
+the `Exception` class.
 
 ```py
 class CustomError(Exception):

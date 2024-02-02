@@ -27,7 +27,9 @@ echo ${floatVar} # 50.3
 echo ${boolVar} # true
 ```
 
-- Quotation marks at declaration are also not strictly necessary however they can help avoid bugs. Also serves as a reminder that every type is basically a string at the end of the day
+- Quotation marks at declaration are also not strictly necessary however they
+  can help avoid bugs. Also serves as a reminder that every type is basically a
+  string at the end of the day
 
 ## Common operations
 

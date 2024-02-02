@@ -55,7 +55,8 @@ languages:
 
 ### Strings
 
-- Don't have to use quotes unless string contains reserved YAML characters (dashes, colons etc)
+- Don't have to use quotes unless string contains reserved YAML characters
+  (dashes, colons etc)
 - Can use single or double quotes
 
 ### Multi-line text
@@ -72,7 +73,6 @@ literal_block: |
 
 ```yaml
 folded_block: >
-  Each different line
-  will be folded back on itself so you don't
-  have to keep scrolling to the right
+  Each different line will be folded back on itself so you don't have to keep
+  scrolling to the right
 ```

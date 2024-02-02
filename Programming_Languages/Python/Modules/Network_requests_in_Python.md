@@ -6,7 +6,9 @@ tags: [python, APIs]
 
 # Making network requests in Python
 
-We can use the `requests` package to make API requests to [RESTful](/Databases/REST/RESTful_APIs.md) resources and handle the data as JSON.
+We can use the `requests` package to make API requests to
+[RESTful](/Databases/REST/RESTful_APIs.md) resources and handle the data as
+JSON.
 
 ```sh
 pip install requests
@@ -65,9 +67,11 @@ Running `main` returns:
 }
 ```
 
-This is JSON but in Python is a [dictionary](/Programming_Languages/Python/Syntax/Dictionaries_in_Python.md)
+This is JSON but in Python is a
+[dictionary](/Programming_Languages/Python/Syntax/Dictionaries_in_Python.md)
 
-We can use standard dictionary methods to handle the data. For example, we'll add to the existing `try` block:
+We can use standard dictionary methods to handle the data. For example, we'll
+add to the existing `try` block:
 
 ```py
 example_key = "brand"  # Replace with the key you want to access from the JSON data

@@ -7,14 +7,19 @@ tags: [docker, SQL, node-js]
 
 # Docker example: NodeJS backend with MySQL database
 
-We will utilise [Docker Compose](/DevOps/Docker/Docker_Compose.md) to combine two containers:
+We will utilise [Docker Compose](/DevOps/Docker/Docker_Compose.md) to combine
+two containers:
 
 - A container for the NodeJS backend
 - A container for the MySQL database
 
-We will only create a Dockerfile for the NodeJS part since the existing `mysql` image is sufficient for most needs and does not require a specific configuration.
+We will only create a Dockerfile for the NodeJS part since the existing `mysql`
+image is sufficient for most needs and does not require a specific
+configuration.
 
-Each of the files listed below would be saved to the same source directory which would then form the basis of the [build context](/DevOps/Docker/Creating_a_Docker_image.md#creating-a-docker-image).
+Each of the files listed below would be saved to the same source directory which
+would then form the basis of the
+[build context](/DevOps/Docker/Creating_a_Docker_image.md#creating-a-docker-image).
 
 ## Docker Compose file
 
@@ -129,11 +134,17 @@ docker-compose -up
 
 ## Environments
 
-In the example, the database connection information in the Node source is coming from the [`process.env`](/Programming_Languages/NodeJS/Architecture/Managing_environments.md) object, which itself is sourcing the values `MYSQL_HOST`, `MYSQL_PASSWORD` etc from the Docker compose file. Therefore these values are hardcoded there.
+In the example, the database connection information in the Node source is coming
+from the
+[`process.env`](/Programming_Languages/NodeJS/Architecture/Managing_environments.md)
+object, which itself is sourcing the values `MYSQL_HOST`, `MYSQL_PASSWORD` etc
+from the Docker compose file. Therefore these values are hardcoded there.
 
-This is not good practice as it exposes sensitive information and make managing different deployment environments (development, stage, test etc.) difficult.
+This is not good practice as it exposes sensitive information and make managing
+different deployment environments (development, stage, test etc.) difficult.
 
-To get around this we would create an `.env` file in the project directory that is Git ignored:
+To get around this we would create an `.env` file in the project directory that
+is Git ignored:
 
 ```sh
 # .env
@@ -179,17 +190,21 @@ volumes:
   mysql-data:
 ```
 
-`${VARIABLE_NAME}` syntax is used to reference environment variables from the .env file in the `docker-compose.yml` file. Docker Compose will automatically load the variables from the .env file when starting the services.
+`${VARIABLE_NAME}` syntax is used to reference environment variables from the
+.env file in the `docker-compose.yml` file. Docker Compose will automatically
+load the variables from the .env file when starting the services.
 
 ### Development, staging, production environments
 
-To specify different connection details for different environments you would create different `.env` files for each:
+To specify different connection details for different environments you would
+create different `.env` files for each:
 
 - `.env.development`
 - `.env.staging`
 - `.env.production`
 
-Each file will contain **environment-specific variables**, such as database credentials, API keys, and other configuration details.
+Each file will contain **environment-specific variables**, such as database
+credentials, API keys, and other configuration details.
 
 For example, development and production:
 
@@ -233,7 +248,9 @@ Then you would select the specific environment with your run command:
 docker-compose -f docker-compose.development.yml up -d
 ```
 
-Docker won't know by default which `.env` file to use from that command however. Assuming all the files are in the same directory you can use Bash substitution to specify the source of the environment specific variables:
+Docker won't know by default which `.env` file to use from that command however.
+Assuming all the files are in the same directory you can use Bash substitution
+to specify the source of the environment specific variables:
 
 ```sh
 export $(cat .env.development | xargs) && docker-compose -f docker-compose.development.yml up -d

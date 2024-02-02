@@ -7,13 +7,18 @@ tags:
 
 # Mapped types in TypeScript
 
-A mapped type is a way to create new types based on existing ones by transforming their properties
+A mapped type is a way to create new types based on existing ones by
+transforming their properties
 
-As it works on a single type and typically narrows or limits the properties it works in a way that is opposite to a [union]() or [intersection]() type.
+As it works on a single type and typically narrows or limits the properties it
+works in a way that is opposite to a [union]() or [intersection]() type.
 
-> Mapped types are an example of when `type` is preferable to `interface`, since you cannot generate mapped types as interfaces, although you may generate a mapped type from an interface.
+> Mapped types are an example of when `type` is preferable to `interface`, since
+> you cannot generate mapped types as interfaces, although you may generate a
+> mapped type from an interface.
 
-For the demonstrations we will use the following type as the example that we will map from:
+For the demonstrations we will use the following type as the example that we
+will map from:
 
 ```ts
 type Person = {
@@ -74,7 +79,8 @@ type PartialPerson = {
 
 ### Pick
 
-This is useful when you want to create a new type based on a subset of properties from an existing type.
+This is useful when you want to create a new type based on a subset of
+properties from an existing type.
 
 ```ts
 type Pick<T, K extends keyof T> = {
@@ -95,7 +101,8 @@ type PersonNameAndAge = {
 
 ### Record
 
-Creates a type with keys of the given type and values of the specified type. It is a way of shoehorning keys from an existing type with new values.
+Creates a type with keys of the given type and values of the specified type. It
+is a way of shoehorning keys from an existing type with new values.
 
 Basic syntax:
 
@@ -154,7 +161,8 @@ type KeysWithoutAge = "name" | "city" | "country";
 
 ### Extract
 
-Creates a type by extracting specific properties from the given type. Basically the opposite operation to Exclude.
+Creates a type by extracting specific properties from the given type. Basically
+the opposite operation to Exclude.
 
 ```ts
 type Extract<T, U> = T extends U ? T : never;

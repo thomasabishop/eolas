@@ -8,13 +8,20 @@ tags: [AWS]
 
 ## Background
 
-OpenSearch is the AWS implementation of the opean source Elasticsearch search engine. It was formally known as "AWS Elasticsearch".
+OpenSearch is the AWS implementation of the opean source Elasticsearch search
+engine. It was formally known as "AWS Elasticsearch".
 
-It has many features but the core usage is to create searchable indicies of a given content domain such as, for example, a website or content management system. This enables the quick search and retrieval of documents without using expensive database queries.
+It has many features but the core usage is to create searchable indicies of a
+given content domain such as, for example, a website or content management
+system. This enables the quick search and retrieval of documents without using
+expensive database queries.
 
 ## Key concepts
 
-We will introduce the main concepts with the example of an internal intranet for which we want to create a searchable index. The intranet comprises hundreds of pages. Each page has the following metadata, conforming to the following example.
+We will introduce the main concepts with the example of an internal intranet for
+which we want to create a searchable index. The intranet comprises hundreds of
+pages. Each page has the following metadata, conforming to the following
+example.
 
 ```json
 {
@@ -29,9 +36,11 @@ We will introduce the main concepts with the example of an internal intranet for
 
 ### Create domain
 
-The OpenSearch domain is a managed environment which hosts OpenSearch **clusters**. It can contain one or more clusters.
+The OpenSearch domain is a managed environment which hosts OpenSearch
+**clusters**. It can contain one or more clusters.
 
-The domain provides network **endpoints** you use to communicate and send requests. Typical requests:
+The domain provides network **endpoints** you use to communicate and send
+requests. Typical requests:
 
 - ingest data
 - index data
@@ -39,23 +48,36 @@ The domain provides network **endpoints** you use to communicate and send reques
 
 #### Clusters and nodes
 
-A cluster is the highest level of organisation within an OpensSearch domain that contains your indexed data. It processes all the search queries and handles tasks like indexing, searching, and managing documents.
+A cluster is the highest level of organisation within an OpensSearch domain that
+contains your indexed data. It processes all the search queries and handles
+tasks like indexing, searching, and managing documents.
 
 ![](/_img/opensearch-architecture.drawio.svg)
 
-A cluster comprises **nodes**. Nodes are individual servers that hold part of the cluster's data. Each node participates in the indexing and searching of the cluster's data.
+A cluster comprises **nodes**. Nodes are individual servers that hold part of
+the cluster's data. Each node participates in the indexing and searching of the
+cluster's data.
 
-- This distributed architecture helps in balancing the load and ensuring high availability.
-- Data can be replicated accross nodes, making the system resiliant against data loss
-- You can add more nodes to the cluster to handle increased data and traffic, making the system adaptable to changing needs.
+- This distributed architecture helps in balancing the load and ensuring high
+  availability.
+- Data can be replicated accross nodes, making the system resiliant against data
+  loss
+- You can add more nodes to the cluster to handle increased data and traffic,
+  making the system adaptable to changing needs.
 
 ### Define index and mappings
 
-Assuming the domain has been created. The next step is to create an index for the data, say `intranet_pages`. An index is basically a collection where the data is stored, similar to a database. Each entry is a **document** in this collection.
+Assuming the domain has been created. The next step is to create an index for
+the data, say `intranet_pages`. An index is basically a collection where the
+data is stored, similar to a database. Each entry is a **document** in this
+collection.
 
 Our index will store each webpage as a document.
 
-We specify the data that we want to store using an index mapping. For instance we may not want to store all the metadata for each page, preferring only to index a subset of the properties. In this example we will store all the data. We would achieve this with the following:
+We specify the data that we want to store using an index mapping. For instance
+we may not want to store all the metadata for each page, preferring only to
+index a subset of the properties. In this example we will store all the data. We
+would achieve this with the following:
 
 ```json
 {
@@ -74,22 +96,31 @@ We specify the data that we want to store using an index mapping. For instance w
 The mapping will be utilised in the following scenarios:
 
 - storing data:
-  - when a new document is added to the `intranet_pages` index, it will adhere to the defined mappings
-  - it will have to have the properties specified in the mapping in order to be added
+  - when a new document is added to the `intranet_pages` index, it will adhere
+    to the defined mappings
+  - it will have to have the properties specified in the mapping in order to be
+    added
 - searching data:
-  - when executing searches, OpenSearch utilizes the mappings to understand the type of data in each field and optimizes search queries accordingly
+  - when executing searches, OpenSearch utilizes the mappings to understand the
+    type of data in each field and optimizes search queries accordingly
 - assessing relevance:
-  - proper mappings allow OpenSearch to accurately score and rank search results based on relevance.
+  - proper mappings allow OpenSearch to accurately score and rank search results
+    based on relevance.
 
 ### Ingest data (bulk import and/or scraper)
 
-In order to create the index that we previously defined with a mapping it is necessary to implement some sort of mechanism for collating the metadata that matches the mapping. This would be a crawler or scraper that might be implemented with a lambda. This is a key part of the ingestion process.
+In order to create the index that we previously defined with a mapping it is
+necessary to implement some sort of mechanism for collating the metadata that
+matches the mapping. This would be a crawler or scraper that might be
+implemented with a lambda. This is a key part of the ingestion process.
 
-Alternatively the data could be bulk imported in a format that maps to the index.
+Alternatively the data could be bulk imported in a format that maps to the
+index.
 
 ### Querying and searching
 
-Having established the crawler (and some kind of search interface), we can now run queries against the OpenSearch domain.
+Having established the crawler (and some kind of search interface), we can now
+run queries against the OpenSearch domain.
 
 A basic example of the structure of a query would be as follows:
 
@@ -107,7 +138,8 @@ GET /intranet_pages/_search
 }
 ```
 
-Here we search against the `content` mapping to find pages that contain the word "project".
+Here we search against the `content` mapping to find pages that contain the word
+"project".
 
 Example of the data returned:
 
@@ -140,7 +172,8 @@ Below are further examples of commonly used search patterns.
 
 ### Multiple conditions
 
-Find documents that are authored by Jane Doe that contain the word "meeting". `must` stands for boolean AND:
+Find documents that are authored by Jane Doe that contain the word "meeting".
+`must` stands for boolean AND:
 
 ```json
 {
@@ -155,7 +188,8 @@ Find documents that are authored by Jane Doe that contain the word "meeting". `m
 }
 ```
 
-Find documents that contain either the word "meeting" or the word "project" in their content. `should` stands for boolean OR:
+Find documents that contain either the word "meeting" or the word "project" in
+their content. `should` stands for boolean OR:
 
 ```json
 {

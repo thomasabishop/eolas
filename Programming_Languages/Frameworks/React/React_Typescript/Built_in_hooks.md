@@ -38,12 +38,14 @@ interface IState {
   }[];
 }
 
-const [people, setPeople] = useState<IState['people']>({});
+const [people, setPeople] = useState<IState["people"]>({});
 ```
 
 ## `useReducer`
 
-Mostly the same. They key thing to type is the reducer function itself. You don't need to type the intitial state unless it is a pre-existing type, you can just use type assertion:
+Mostly the same. They key thing to type is the reducer function itself. You
+don't need to type the intitial state unless it is a pre-existing type, you can
+just use type assertion:
 
 ```jsx
 interface IAction {
@@ -73,15 +75,16 @@ const [state, dispatch] = useReducer(reducer, initialState);
 
 ## `useEffect`
 
-> Limited potential for typing here as this hook does not return a value. See if there is useful inferred typing from use and update.
+> Limited potential for typing here as this hook does not return a value. See if
+> there is useful inferred typing from use and update.
 
 ## `useContext`
 
 We can use generics but mostly this is untyped:
 
 ```jsx
-type Theme = 'light' | 'dark';
-const ThemeContext = createContext < Theme > 'dark';
+type Theme = "light" | "dark";
+const ThemeContext = createContext < Theme > "dark";
 
 const App = () => (
   <ThemeContext.Provider value="dark">
@@ -97,4 +100,5 @@ const MyComponent = () => {
 
 ## `useCallback` / `useMemo`
 
-You must only type the parameters that are passed to the callback, the return value will be inferred.
+You must only type the parameters that are passed to the callback, the return
+value will be inferred.

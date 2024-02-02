@@ -7,7 +7,8 @@ tags: [SQL, relational-databases]
 
 # Retrieve data from table with SQL `SELECT` statement
 
-> Select data from the database. The data returned is stored in a result table called the **result-set**.
+> Select data from the database. The data returned is stored in a result table
+> called the **result-set**.
 
 _A table named `models`:_
 
@@ -33,7 +34,9 @@ SELECT name, releaseDate FROM models
 
 ### `WHERE`
 
-The `WHERE` clause specifies a search criterion. The `WHERE` clause should always be last in the syntax. The clauses are always written in this order: `FROM` followed by `WHERE`
+The `WHERE` clause specifies a search criterion. The `WHERE` clause should
+always be last in the syntax. The clauses are always written in this order:
+`FROM` followed by `WHERE`
 
 ```sql
 SELECT name FROM models WHERE cores > 3
@@ -41,7 +44,10 @@ SELECT name FROM models WHERE cores > 3
 
 ### Compound statements
 
-Compound statements allow you to apply more filters to your clauses within an SQL statement. SQL allows you to build complex, combinatorial `WHERE` clauses by using Boolean and mathematical operators (i.e `AND` , `OR` , `>` , `<` , `!=` , `<=` ...)
+Compound statements allow you to apply more filters to your clauses within an
+SQL statement. SQL allows you to build complex, combinatorial `WHERE` clauses by
+using Boolean and mathematical operators (i.e `AND` , `OR` , `>` , `<` , `!=` ,
+`<=` ...)
 
 Multiple clauses:
 
@@ -68,7 +74,8 @@ SELECT name FROM models ORDER BY name, cores
 SELECT name FROM models ORDER BY name, cores DESC
 ```
 
-> `ORDER BY` always comes last, after the selection and any filtering clauses but _before_ a `WHERE` clause
+> `ORDER BY` always comes last, after the selection and any filtering clauses
+> but _before_ a `WHERE` clause
 
 ## Paginate
 

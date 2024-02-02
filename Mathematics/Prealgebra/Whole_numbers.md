@@ -13,13 +13,15 @@ $$ \mathbb{W} = {0, 1, 2, 3, ...} $$
 
 # The properties of $\mathbb{W}$
 
-> In mathematics, a **property** is any characteristic that applies to a given set.
+> In mathematics, a **property** is any characteristic that applies to a given
+> set.
 
 ## The commutative property
 
 ### Addition
 
-When **adding** whole numbers, the placement of the addends does not affect the sum.
+When **adding** whole numbers, the placement of the addends does not affect the
+sum.
 
 Let **a**, **b** represent whole numbers, then:
 
@@ -27,7 +29,10 @@ $$ a + b = b + a $$
 
 ### Multiplication
 
-When **multiplying** whole numbers the placement of the [multiplicands](https://www.notion.so/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd) does not affect the [product](https://www.notion.so/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd).
+When **multiplying** whole numbers the placement of the
+[multiplicands](https://www.notion.so/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd)
+does not affect the
+[product](https://www.notion.so/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd).
 
 Let **a, b** represent whole numbers, then:
 
@@ -49,7 +54,9 @@ $$ a \div b \neq b \div a $$
 
 ### Addition
 
-When grouping symbols (parentheses, brackets, braces) are used with addition, the particular placement of the grouping symbols relative to each of the addends does not change the sum.
+When grouping symbols (parentheses, brackets, braces) are used with addition,
+the particular placement of the grouping symbols relative to each of the addends
+does not change the sum.
 
 Let **a**, **b, c** represent whole numbers, then:
 
@@ -79,7 +86,8 @@ If **a** is any whole number, then:
 
 $$ a + 0 = a $$
 
-We therefore call zero the additive identity: whenever we add zero to a whole number, the sum is equal to the whole number itself.
+We therefore call zero the additive identity: whenever we add zero to a whole
+number, the sum is equal to the whole number itself.
 
 ## The property of multiplicative identity
 

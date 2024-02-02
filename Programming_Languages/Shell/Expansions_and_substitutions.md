@@ -7,7 +7,9 @@ tags:
 
 # Expansions and substitutions
 
-Bash is weird in that parentheses, braces and brackets are used not just as markers for different code blocks but as the designators of commands in their own right. The type of bracket you use effects how your input is interpreted.
+Bash is weird in that parentheses, braces and brackets are used not just as
+markers for different code blocks but as the designators of commands in their
+own right. The type of bracket you use effects how your input is interpreted.
 
 Below are the main forms of expansion and substitution:
 
@@ -21,7 +23,8 @@ Below are the main forms of expansion and substitution:
 
 ## Brace expansion: `{..}`
 
-Brace expansion is for changing a smaller part of a greater whole programmatically. This is best understood by looking at examples:
+Brace expansion is for changing a smaller part of a greater whole
+programmatically. This is best understood by looking at examples:
 
 ```
 echo c{a,o,u}t
@@ -55,7 +58,8 @@ echo {1..20..2}
 
 ### Example use case
 
-We might use brace expansion to generate sequential file names using a pre-defined naming scheme, eg.
+We might use brace expansion to generate sequential file names using a
+pre-defined naming scheme, eg.
 
 ```
 touch file_{01..12}{a..d}
@@ -71,17 +75,26 @@ file_02b
 file_12d
 ```
 
-The syntax here basically means: for each of the elements in the first list, run the second list against them.
+The syntax here basically means: for each of the elements in the first list, run
+the second list against them.
 
 ## Parameter expansion: `${...}`
 
-We use most frequently for returning the value of stored [variables](/Programming_Languages/Shell/Variables_and_data_types.md). Techically we do not have to use the braces, we can retrieve with just `$var` however it's better to use them to minimise interpretation fuck-ups which happen a lot.
+We use most frequently for returning the value of stored
+[variables](/Programming_Languages/Shell/Variables_and_data_types.md).
+Techically we do not have to use the braces, we can retrieve with just `$var`
+however it's better to use them to minimise interpretation fuck-ups which happen
+a lot.
 
-When the braces are used, this allows us to transform the values before they are returned such as only returning from the 6th character: `${var:6}`.
+When the braces are used, this allows us to transform the values before they are
+returned such as only returning from the 6th character: `${var:6}`.
 
 ## Command substition: `$(...)`
 
-Command substitution (circle-brackets) allows us to put the output of one command inside another. Bash runs the bracketed command in a [sub-shell](/Programming_Languages/Shell/Shell_sessions.md) and then returns it to the main user shell.
+Command substitution (circle-brackets) allows us to put the output of one
+command inside another. Bash runs the bracketed command in a
+[sub-shell](/Programming_Languages/Shell/Shell_sessions.md) and then returns it
+to the main user shell.
 
 For example:
 
@@ -93,4 +106,6 @@ echo "The current directory is $(pwd)."
 
 We use arithmetic expansion when we want to calculate numerical values
 
-See [Working with numbers in Bash](/Programming_Languages/Shell/Working_with_numbers_in_Bash.md) for more.
+See
+[Working with numbers in Bash](/Programming_Languages/Shell/Working_with_numbers_in_Bash.md)
+for more.

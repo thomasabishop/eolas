@@ -47,7 +47,8 @@ print('apple' in basket)
 
 ## Remove items from set
 
-> `remove` will raise an error if the specified item does not exist, `discard` will not
+> `remove` will raise an error if the specified item does not exist, `discard`
+> will not
 
 ```python
 basket.remove('apple')

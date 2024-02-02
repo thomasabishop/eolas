@@ -1,20 +1,28 @@
 ---
-categories: 
+categories:
   - DSA
 tags: []
 ---
-# Sliding window 
 
-Whereas the [multiple pointer](Multiple_pointers.md) pattern works by keeping two array indices running at once and comparing their values on each iteration, the sliding window
-has a running value (the 'window') that is updated at each iteration and which compares itself against its most recent previous value. 
+# Sliding window
 
-This is what makes it 'sliding': the value isn't constant, it changes (or doesn't) based on what it was previously. 
+Whereas the [multiple pointer](Multiple_pointers.md) pattern works by keeping
+two array indices running at once and comparing their values on each iteration,
+the sliding window has a running value (the 'window') that is updated at each
+iteration and which compares itself against its most recent previous value.
+
+This is what makes it 'sliding': the value isn't constant, it changes (or
+doesn't) based on what it was previously.
 
 ## Example: maximum sum of sub-array
 
-We create a function that takes an array and a sub-array length _n_. The objective is to find the maximum value that can be created by summing _n_ elements of the array. It moves through the array, summing by _n_ keeping track of the highest sum value so far and the current sum value. At the end it should return the highest possible sum value. 
+We create a function that takes an array and a sub-array length _n_. The
+objective is to find the maximum value that can be created by summing _n_
+elements of the array. It moves through the array, summing by _n_ keeping track
+of the highest sum value so far and the current sum value. At the end it should
+return the highest possible sum value.
 
-Here we do this for a sub-array of length 2: 
+Here we do this for a sub-array of length 2:
 
 ```ts
 function maxSubarraySum(arr, subArrLength) {

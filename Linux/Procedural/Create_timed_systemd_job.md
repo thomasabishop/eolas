@@ -6,7 +6,9 @@ tags: [systems-programming]
 
 # Create timed `systemd` job
 
-To use systemd to run a bash script at 11am each day, you can create a new systemd service file. Here is an example of what the service file might look like:
+To use systemd to run a bash script at 11am each day, you can create a new
+systemd service file. Here is an example of what the service file might look
+like:
 
 ```
 [Unit]
@@ -22,7 +24,9 @@ WantedBy=default.target
 
 Save this file to `/etc/systemd/system/my_script.service`.
 
-Then you can use systemd to schedule the script to run at 11am each day by creating a new systemd timer file. Here is an example of what the timer file might look like:
+Then you can use systemd to schedule the script to run at 11am each day by
+creating a new systemd timer file. Here is an example of what the timer file
+might look like:
 
 ```
 [Unit]
@@ -44,8 +48,8 @@ sudo systemctl enable my_script.timer
 sudo systemctl start my_script.timer
 ```
 
-This will run the script at 11am everyday
-You can check the status of the timer with the following command:
+This will run the script at 11am everyday You can check the status of the timer
+with the following command:
 
 ```
 sudo systemctl status my_script.timer

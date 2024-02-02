@@ -7,7 +7,8 @@ tags:
 
 # Processes (`ps`)
 
-`ps` allows us to control [user processes](/Operating_Systems/The_Kernel.md) from the shell.
+`ps` allows us to control [user processes](/Operating_Systems/The_Kernel.md)
+from the shell.
 
 The command in its most minimal application returns the following
 
@@ -68,7 +69,9 @@ With the `-e` modifier we can list more processes:
 
 ## Process termination
 
-The general schema is: `kill [pid]`. This allows for process clean-up. If this doesn't succeed you can force with `KILL [pid]` which will terminate the process immediately but is obviously more risky.
+The general schema is: `kill [pid]`. This allows for process clean-up. If this
+doesn't succeed you can force with `KILL [pid]` which will terminate the process
+immediately but is obviously more risky.
 
 We can also start/stop processes with modifiers on `kill`:
 

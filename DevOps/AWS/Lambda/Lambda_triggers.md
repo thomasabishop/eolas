@@ -26,5 +26,6 @@ Here are some common trigger patterns
 
 ### SQS trigger
 
-- a new message is added to an [SQS](/DevOps/AWS/AWS_Messaging_services.md#sqs) queue
+- a new message is added to an [SQS](/DevOps/AWS/AWS_Messaging_services.md#sqs)
+  queue
 - SQS triggers a Lambda function to execute

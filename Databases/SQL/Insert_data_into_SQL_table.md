@@ -20,14 +20,17 @@ INSERT INTO sales
 VALUES (1, 11, '2020-01-01','mhogan');
 ```
 
-> If you intend to miss out a value, you shouldn't leave it blank, you should instead use `NULL` :
+> If you intend to miss out a value, you shouldn't leave it blank, you should
+> instead use `NULL` :
 
 ```sql
 INSERT INTO sales
 VALUES (1, 11, '2020-01-01', NULL);
 ```
 
-> The approach above works well if the order of entry matches the order of the table fields. If this is not the case you can specify the order as part of the `INSERT` statement:
+> The approach above works well if the order of entry matches the order of the
+> table fields. If this is not the case you can specify the order as part of the
+> `INSERT` statement:
 
 ```sql
 INSERT INTO sales**(employee_id, sale_id, model_id, sale_date)**

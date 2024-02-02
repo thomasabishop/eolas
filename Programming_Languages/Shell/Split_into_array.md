@@ -9,8 +9,8 @@ tags:
 
 ## readarray
 
-`readarray` makes it really easy to split input into an array based on new lines.
-Say we have this file as input:
+`readarray` makes it really easy to split input into an array based on new
+lines. Say we have this file as input:
 
 ```
 123
@@ -50,7 +50,8 @@ See more: https://linuxhint.com/split-string-array-bash/
 
 ## read
 
-For delimiters other than a space we have to use `read`, combined with `IFS` the **Internal Field Separator**.
+For delimiters other than a space we have to use `read`, combined with `IFS` the
+**Internal Field Separator**.
 
 For example, to split by comma:
 
@@ -63,7 +64,8 @@ something,something else,something more
 IFS=',' read -a arr < ./comma_inputs.txt
 ```
 
-> We use the `-a` flag to signal that we want each item read returned as an element in an array
+> We use the `-a` flag to signal that we want each item read returned as an
+> element in an array
 
 ## mapfile
 
@@ -98,4 +100,5 @@ while mapfile -t -n 2 ary && ((${#ary[@]})); do
  done < $testInput
 ```
 
-So, while there are input lines, map each line into an array and return it in groups of 2.
+So, while there are input lines, map each line into an array and return it in
+groups of 2.

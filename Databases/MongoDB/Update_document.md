@@ -13,9 +13,18 @@ There are two methods for updating a document
 
 ## Query first document update
 
-With this approach we first execute a [query](/Databases/MongoDB/Querying_a_collection.md) to retrieve the document we want to edit and then make the change. We use the `findById` method to identify the document by its UUID and then `set` to update specified properties on the document. The `set` method is one of many operators that can be used to update values. For example there is also built-in operators for increment, renaming, multiplying values.
+With this approach we first execute a
+[query](/Databases/MongoDB/Querying_a_collection.md) to retrieve the document we
+want to edit and then make the change. We use the `findById` method to identify
+the document by its UUID and then `set` to update specified properties on the
+document. The `set` method is one of many operators that can be used to update
+values. For example there is also built-in operators for increment, renaming,
+multiplying values.
 
-Query first is best used when you want to secure the update with some prior logic or to validate. For example you may not want to update a course if it is listed as published. You could use a query to determine the publish status and then only update the entry if it returns `isPublished: false`.
+Query first is best used when you want to secure the update with some prior
+logic or to validate. For example you may not want to update a course if it is
+listed as published. You could use a query to determine the publish status and
+then only update the entry if it returns `isPublished: false`.
 
 ```js
 async function updateCourseFromQuery(id) {
@@ -37,7 +46,9 @@ async function updateCourseFromQuery(id) {
 
 ## Update first document update
 
-With this approach we don't bother with a prior query. We are confident that the update is legitimate and do not need to first determine that certain conditions are met.
+With this approach we don't bother with a prior query. We are confident that the
+update is legitimate and do not need to first determine that certain conditions
+are met.
 
 To do this we directly use the `update` method, not `find`:
 
@@ -53,7 +64,9 @@ async function updateCourseFromQuery(id) {
 }
 ```
 
-This function will just return some metadata about the update. It won't by default return the updated value. To do this use the `findByIdAndUpdate()` method instead of `update`:
+This function will just return some metadata about the update. It won't by
+default return the updated value. To do this use the `findByIdAndUpdate()`
+method instead of `update`:
 
 ```js
 async function updateCourseFromQuery(id) {

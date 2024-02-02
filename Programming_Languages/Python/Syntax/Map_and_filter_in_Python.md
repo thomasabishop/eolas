@@ -28,7 +28,9 @@ x = list(map(addOne, data))
 
 ### Map returns an object
 
-When you run `map` against a list it returns a map object not a list. This can present problems if you are not aware of it since it is not an entity that you can loop through.
+When you run `map` against a list it returns a map object not a list. This can
+present problems if you are not aware of it since it is not an entity that you
+can loop through.
 
 The following map removes whitespaces from elements in a list:
 
@@ -36,7 +38,8 @@ The following map removes whitespaces from elements in a list:
   lines = map(lambda x: x.strip(), lines)
 ```
 
-In order to be able to run list-like operations against the resulting `lines` object we would need to convert it to a list:
+In order to be able to run list-like operations against the resulting `lines`
+object we would need to convert it to a list:
 
 ```py
   lines = list(map(lambda x: x.strip(), lines))

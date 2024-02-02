@@ -7,7 +7,10 @@ tags:
 
 # Functions in Bash
 
-We don't name function parameters in the function declaration. Instead we have an implied index of arguments: `$1, $2, $3,...`. When the function is called, the first value after the function name becomes `$1` by default, then the subsequent arguments.
+We don't name function parameters in the function declaration. Instead we have
+an implied index of arguments: `$1, $2, $3,...`. When the function is called,
+the first value after the function name becomes `$1` by default, then the
+subsequent arguments.
 
 ```bash
 function expandRange() {
@@ -27,7 +30,10 @@ echo $expandedRange
 
 ## Get all arguments as an array
 
-We can access all the arguments passed to a function using the `$@` syntax we encountered before when [passing arguments to scripts](/Programming_Languages/Shell/Passing_arguments_to_Bash_scripts.md). (Here a function is a kind of script in miniature so the process is the same.)
+We can access all the arguments passed to a function using the `$@` syntax we
+encountered before when
+[passing arguments to scripts](/Programming_Languages/Shell/Passing_arguments_to_Bash_scripts.md).
+(Here a function is a kind of script in miniature so the process is the same.)
 
 ```sh
 function numberThings() {
@@ -58,4 +64,5 @@ echo $var3
 # I'm variable 2
 ```
 
-> The convention is to put functions at the top of the script, after the shebang and after the global variables
+> The convention is to put functions at the top of the script, after the shebang
+> and after the global variables

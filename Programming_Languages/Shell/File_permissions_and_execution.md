@@ -7,11 +7,14 @@ tags:
 
 # File permissions and executables
 
-Every Unix file has a set of permissions that determine whether you can read, write or run (execute) the file.
+Every Unix file has a set of permissions that determine whether you can read,
+write or run (execute) the file.
 
 ## Viewing file permissions
 
-In order to see file permissions within the terminal, use the `-l` or `-rfl` with the `ls` command. Remember this command can be applied at both the directory and single-file level. For example:
+In order to see file permissions within the terminal, use the `-l` or `-rfl`
+with the `ls` command. Remember this command can be applied at both the
+directory and single-file level. For example:
 
 ```bash
 drwxr-xr-x  7 thomas thomas 4096 Oct  2 19:22 angular-learning-lab
@@ -24,7 +27,8 @@ drwxr-xr-x  5 thomas thomas 4096 Sep  4 19:24 ts-kata
 
 ### What the output means
 
-The first column of the permissions output is known as the file's _mode_. The sequence from left to right is as follows:
+The first column of the permissions output is known as the file's _mode_. The
+sequence from left to right is as follows:
 
 ```
 -       - - -                 - - -                 - - -
@@ -44,17 +48,21 @@ type    user permissions      group permissions     other permissions
 
 ## Modifying permissions: `chmod`
 
-We use `chmod` for transferring ownership and file permissions quickly from the command-line.
+We use `chmod` for transferring ownership and file permissions quickly from the
+command-line.
 
 ### Octal notation
 
-`chmod` uses octal notation. Each numeral refers to a permission set. There are three numerals. The placement denotes the user group. From left to right this is:
+`chmod` uses octal notation. Each numeral refers to a permission set. There are
+three numerals. The placement denotes the user group. From left to right this
+is:
 
 - user
 - group
 - everyone else.
 
-If you are working solo and not with group access to files, you can disregard assigning the other numerals, by putting zeros in as placeholders.
+If you are working solo and not with group access to files, you can disregard
+assigning the other numerals, by putting zeros in as placeholders.
 
 [Permission codes](https://www.notion.so/685254916b2642f189e6316b876e09c9)
 
@@ -76,7 +84,10 @@ $ -rwx------  1 thomasbishop  staff  27 13 May 15:42 dummy.txtExample
 
 ## Running bash files
 
-In most cases, especially when you are working alone, the most frequent codes you are going to need are 700 and 600. When shell scripting, you need to make your scripts executable for them to work, therefore you should always `chmod 700` when creating a `.sh` file.
+In most cases, especially when you are working alone, the most frequent codes
+you are going to need are 700 and 600. When shell scripting, you need to make
+your scripts executable for them to work, therefore you should always
+`chmod 700` when creating a `.sh` file.
 
 Then to invoke the script from the shell you simply enter:
 

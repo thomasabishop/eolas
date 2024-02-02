@@ -8,13 +8,21 @@ tags:
 
 # The boot process
 
-The primary or boot [partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk contains a bootloader. It is the job of the bootloader to locate the [kernel](/Operating_Systems/The_Kernel.md) on the harddrive and inject it into memory so that they operating system can start. This is the boot process.
+The primary or boot
+[partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk
+contains a bootloader. It is the job of the bootloader to locate the
+[kernel](/Operating_Systems/The_Kernel.md) on the harddrive and inject it into
+memory so that they operating system can start. This is the boot process.
 
 ## Boot loaders
 
-The boot loader loads the kernel into memory from the disk and then starts the kernel with a set of kernel parameters.
+The boot loader loads the kernel into memory from the disk and then starts the
+kernel with a set of kernel parameters.
 
-Like the kernel itself, the boot loader requires a driver in order to access the disk but it can't use the same one as the kernel since at this point, the kernel is not yet loaded into memory. So it has its own special driver: this is either the BIOS or the UEFI firmware.
+Like the kernel itself, the boot loader requires a driver in order to access the
+disk but it can't use the same one as the kernel since at this point, the kernel
+is not yet loaded into memory. So it has its own special driver: this is either
+the BIOS or the UEFI firmware.
 
 A boot loader's core functionality includes the ability to do the following:
 
@@ -24,11 +32,17 @@ A boot loader's core functionality includes the ability to do the following:
 
 ### BIOS and UEFI
 
-BIOS and UEFI are both firmware that is installed directly on the motherboard of the computer. They are firmware because they are software that is permanent and programmed into read-only memory.
+BIOS and UEFI are both firmware that is installed directly on the motherboard of
+the computer. They are firmware because they are software that is permanent and
+programmed into read-only memory.
 
-In the context of disks, their most crucial role is locating the operating system on the harddisk and loading it into memory so that the bootstrapping process can begin. However they are also responsible for the computer clock and the management of peripherals.
+In the context of disks, their most crucial role is locating the operating
+system on the harddisk and loading it into memory so that the bootstrapping
+process can begin. However they are also responsible for the computer clock and
+the management of peripherals.
 
-As we can see from the `fdisk` readout, the boot partition uses EFI, the storage partition associated with UEFI.
+As we can see from the `fdisk` readout, the boot partition uses EFI, the storage
+partition associated with UEFI.
 
 ```bash
 Device            Start        End   Sectors   Size Type
@@ -37,9 +51,13 @@ Device            Start        End   Sectors   Size Type
 /dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem
 ```
 
-Whilst UEFI is installed on the hardware, most of its configuration is stored in the EFI partition on the disk, whereas with BIOS, everything is on the chip. This make booting faster with UEFI.
+Whilst UEFI is installed on the hardware, most of its configuration is stored in
+the EFI partition on the disk, whereas with BIOS, everything is on the chip.
+This make booting faster with UEFI.
 
-Even though most modern computers use UEFI, it may still be referred to as BIOS for user-continuity. This is like on Windows. With Linux you have to explicitly create your boot process so the two are clearly distinguishable.
+Even though most modern computers use UEFI, it may still be referred to as BIOS
+for user-continuity. This is like on Windows. With Linux you have to explicitly
+create your boot process so the two are clearly distinguishable.
 
 ### GRUB
 
@@ -47,21 +65,33 @@ The de facto standard boot loader for Linux is GRUB: Grand Unified Boot Loader.
 
 ![](/_img/grub.jpg)
 
-You see the GRUB default menu when you first start a Linux machine. It will offer you various options for loading your installed OS or other OSs. GRUB is a filesystem like the main disk. If you press `e` in this screen you can view and edit specific boot parameters. Pressing `c` gives you access to the GRUB command line interface. This allows you to interact with GRUB in the same way as you would with any other filesystem, allowing for advanced configuration.
+You see the GRUB default menu when you first start a Linux machine. It will
+offer you various options for loading your installed OS or other OSs. GRUB is a
+filesystem like the main disk. If you press `e` in this screen you can view and
+edit specific boot parameters. Pressing `c` gives you access to the GRUB command
+line interface. This allows you to interact with GRUB in the same way as you
+would with any other filesystem, allowing for advanced configuration.
 
 ## The boot sequence
 
-1. The machine's BIOS or boot firmware (in the case of UEFI) loads and runs a boot loader. It finds the bootloader by looking for the part of the disk that contains either the MBR or GPT sector.
-2. The boot loader finds the kernel image on disk, loads it into memory and starts it.
+1. The machine's BIOS or boot firmware (in the case of UEFI) loads and runs a
+   boot loader. It finds the bootloader by looking for the part of the disk that
+   contains either the MBR or GPT sector.
+2. The boot loader finds the kernel image on disk, loads it into memory and
+   starts it.
 3. The kernel initializes the devices and its drivers.
 4. The kernel mounts the root filesystem.
-5. The kernel starts a program called **init**. It has a [process id](/Programming_Languages/Shell_Scripting/Processes.md#processes-ps) of 1. This is the point at which [user space](User_Space.md) starts.
+5. The kernel starts a program called **init**. It has a
+   [process id](/Programming_Languages/Shell_Scripting/Processes.md#processes-ps)
+   of 1. This is the point at which [user space](User_Space.md) starts.
 6. Init sets the rest of the system processes in motion.
 7. At the end of the boot process, init starts a process allowing you to log in.
 
 ## Boot diagnostics
 
-Linux keeps a log of the boot process as part of the [journal]() log of everything that happens on disk. We can use the command `journalct -k` to view the diagnostics generated during the boot. Here is a selection:
+Linux keeps a log of the boot process as part of the [journal]() log of
+everything that happens on disk. We can use the command `journalct -k` to view
+the diagnostics generated during the boot. Here is a selection:
 
 ```
 Jul 07 07:12:58 archbish kernel: Linux version 5.18.5-arch1-1 (linux@archlinux) (gcc (GCC) 12.1.0, GNU ld (GNU Binutils) 2.38) #1 SMP PREEMPT_DYNAMIC Thu, 16 Jun 2022 20:40:45 +0000
@@ -102,11 +132,14 @@ Jul 07 07:12:58 archbish kernel: esrt: Reserving ESRT space from 0x000000008ab9c
 Jul 07 07:12:58 archbish kernel: e820: update [mem 0x8ab9c000-0x8ab9cfff] usable ==> reserved
 ```
 
-We can see that the first thing that is registered is the OS image that contains the kernel. From this point on, the kernel is active and doing its work.
+We can see that the first thing that is registered is the OS image that contains
+the kernel. From this point on, the kernel is active and doing its work.
 
 ## Initial kernel actions
 
-The diagnostics above are a running commentary provided by the kernel itself about its actions. The details will be specific to the machine in question but the general sequence is as follows for all operating systems:
+The diagnostics above are a running commentary provided by the kernel itself
+about its actions. The details will be specific to the machine in question but
+the general sequence is as follows for all operating systems:
 
 1. CPU inspection
 2. Memory inspection

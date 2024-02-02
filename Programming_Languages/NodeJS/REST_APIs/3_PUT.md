@@ -6,7 +6,9 @@ tags: [backend, node-js, REST, APIs]
 
 # Creating a RESTful API: `PUT` requests
 
-To demonstrate the handling of PUT requests, we will create a handler that updates an element in the course array, based on its `id` and return the updated entry:
+To demonstrate the handling of PUT requests, we will create a handler that
+updates an element in the course array, based on its `id` and return the updated
+entry:
 
 ```js
 router.put("/:id", (req, res) => {

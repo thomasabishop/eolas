@@ -9,7 +9,10 @@ tags: [SQL, relational-databases]
 
 We create tables in an SQL database with the `CREATE` command.
 
-Below is an example of this in practice. Each field corresponds to a column. We specify the name of the field and its corresponding [data type](/Databases/SQL/Data_types_in_MySQL.md). Every table must have a **primary key**. In the example, `employee_id` is the primary key.
+Below is an example of this in practice. Each field corresponds to a column. We
+specify the name of the field and its corresponding
+[data type](/Databases/SQL/Data_types_in_MySQL.md). Every table must have a
+**primary key**. In the example, `employee_id` is the primary key.
 
 ```sql
 CREATE TABLE employee (
@@ -29,6 +32,7 @@ CREATE TABLE employee (
 
 ## Check table metadata
 
-We can use `DESCRIBE [table_name]` any time we want to list out the data types and other metadata about the table.
+We can use `DESCRIBE [table_name]` any time we want to list out the data types
+and other metadata about the table.
 
 We can use `SHOW TABLE STATUS`/

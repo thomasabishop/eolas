@@ -6,13 +6,17 @@ tags: [python, OOP]
 
 # Class inheritance in Python
 
-We distinguish the **parent/source/superclass** class and the **subclass** that **extends** it.
+We distinguish the **parent/source/superclass** class and the **subclass** that
+**extends** it.
 
-A subclass can have more than one parent class that it extends, but this is atypical.
+A subclass can have more than one parent class that it extends, but this is
+atypical.
 
-> The subclass will inherit all attributes and methods of the superclass unless it overrides them.
+> The subclass will inherit all attributes and methods of the superclass unless
+> it overrides them.
 
-In addition to overriding the methods of the parent we can extend them in the child. This is a bit like using an abstract.
+In addition to overriding the methods of the parent we can extend them in the
+child. This is a bit like using an abstract.
 
 ## Example of class inheritance
 
@@ -54,15 +58,20 @@ class Employee(Person):
 ### Key points
 
 - We pass the name of the parent class to the child class as a parameter
-- We must include all of the parent class's attributes in the constructor of the subclass
-- We must use a special `super().__init__(..,...)` method to enact the extension of the parent. This method references the `__init__` class in the parent.
+- We must include all of the parent class's attributes in the constructor of the
+  subclass
+- We must use a special `super().__init__(..,...)` method to enact the extension
+  of the parent. This method references the `__init__` class in the parent.
 
 ## Protected/private methods and attributes
 
-> Protected methods and attributes are private to the class but can be accessed from any subclass
+> Protected methods and attributes are private to the class but can be accessed
+> from any subclass
 
 > Private methods cannot be accessed from anywhere outside of the class
 
-We declare private methods and attributes with a double underscore (`__`). We declare protected methods and attributes with a single underscore (`_`).
+We declare private methods and attributes with a double underscore (`__`). We
+declare protected methods and attributes with a single underscore (`_`).
 
-This is **convention**, there are not actually private and protected attributes or properties.
+This is **convention**, there are not actually private and protected attributes
+or properties.

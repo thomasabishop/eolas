@@ -2,9 +2,11 @@
 
 ## Python
 
-- Research: best practice for separating projects into `conda` environments like npm
+- Research: best practice for separating projects into `conda` environments like
+  npm
 
-- Read-up more on types: what does it mean for Python to be dynamically typed. What is type-hinting really?
+- Read-up more on types: what does it mean for Python to be dynamically typed.
+  What is type-hinting really?
 
   - Use provided pdfs and John's books
 
@@ -40,9 +42,12 @@
 
 ## AWS
 
-- Start reading more specifically about key services: Lambda, step functions, CloudFormation, Elasticache, CloudFront, CloudWatch
-- Do basic exercises from Amazon on aspects I am interested in to get a practical feel for it
-- Elastic Beanstalk and how it differs from using multiple different services at once
+- Start reading more specifically about key services: Lambda, step functions,
+  CloudFormation, Elasticache, CloudFront, CloudWatch
+- Do basic exercises from Amazon on aspects I am interested in to get a
+  practical feel for it
+- Elastic Beanstalk and how it differs from using multiple different services at
+  once
 - AWS Amplify
 - Deploy my own website on AWS
 

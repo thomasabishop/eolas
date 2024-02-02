@@ -6,17 +6,21 @@ tags: [python, data-types]
 
 # None in Python
 
-`None` is not `null`, it is closer to `undefined` in JS. If you define a variable as `None`, the variable exists, it is just not yet defined.
+`None` is not `null`, it is closer to `undefined` in JS. If you define a
+variable as `None`, the variable exists, it is just not yet defined.
 
-Using `None` is a pattern similar to using `let` in JS to name a variable and definine it later on.
+Using `None` is a pattern similar to using `let` in JS to name a variable and
+definine it later on.
 
 ```python
 temperature = None
 ```
 
-If we logged `temperature` it would give us `None` rather than a null pointer error.
+If we logged `temperature` it would give us `None` rather than a null pointer
+error.
 
-With None we can use `is None` and `is not None`, special predicates for working with `None` only. This is a akin to using `if (x !== undefined)` in TypeScript
+With None we can use `is None` and `is not None`, special predicates for working
+with `None` only. This is a akin to using `if (x !== undefined)` in TypeScript
 
 ```python
 winner = None

@@ -8,12 +8,19 @@ tags: [python, testing]
 
 ## `pytest`
 
-Pytest is the most popular testing library for Python.
-It is not included with the Python standard library so it must be installed with [pip](/Programming_Languages/Python/Concepts/Python_package_management.md). While it does not include a declaration library, it is robust enough to handle most scenarios having a rich and expressive set of constructs and decorators that let you declare what your tests should do, under what conditions they should run, and how they should interact with the rest of your system.
+Pytest is the most popular testing library for Python. It is not included with
+the Python standard library so it must be installed with
+[pip](/Programming_Languages/Python/Concepts/Python_package_management.md).
+While it does not include a declaration library, it is robust enough to handle
+most scenarios having a rich and expressive set of constructs and decorators
+that let you declare what your tests should do, under what conditions they
+should run, and how they should interact with the rest of your system.
 
 ### Using `pytest`
 
-- Pytest will automatically detect test files so long as they are named appropriately. E.g. for a module called `lorem`, it will detzect the unit test files `lorem_test.py` and `test_lorem.py`.
+- Pytest will automatically detect test files so long as they are named
+  appropriately. E.g. for a module called `lorem`, it will detzect the unit test
+  files `lorem_test.py` and `test_lorem.py`.
 - In order to detect tests it should be run from a directory level above them
 
 ### Examples
@@ -31,13 +38,23 @@ def test_is_palindrome():
 
 ## Mocking
 
-`patch()` and `Mock` enable us to mock objects whilst testing (classes, functions, methods and properties belonging). They are used in combination.
+`patch()` and `Mock` enable us to mock objects whilst testing (classes,
+functions, methods and properties belonging). They are used in combination.
 
-The `@patch` decorator temporarily replaces a specified object in your code with a mock object and restores the original object after the test is complete
+The `@patch` decorator temporarily replaces a specified object in your code with
+a mock object and restores the original object after the test is complete
 
-A Mock object simulates the object it replaces so that the object behaves as expected during testing. For example, if your code calls `some_function.some_method()`, and `some_method` is mocked, calling `some_method` will not execute real logic but will interact with the Mock object instead. Mock objects record details about how they have been used, like what methods have been called, with what arguments, etc., allowing you to make assertions about how they have been used.
+A Mock object simulates the object it replaces so that the object behaves as
+expected during testing. For example, if your code calls
+`some_function.some_method()`, and `some_method` is mocked, calling
+`some_method` will not execute real logic but will interact with the Mock object
+instead. Mock objects record details about how they have been used, like what
+methods have been called, with what arguments, etc., allowing you to make
+assertions about how they have been used.
 
-> `@patch` and `Mock` work together because a patch is used to replace an object or attribute with a Mock object. `Mock` handles the simulated functionality, and `@patch` designates the real value we are replacing with the mock.
+> `@patch` and `Mock` work together because a patch is used to replace an object
+> or attribute with a Mock object. `Mock` handles the simulated functionality,
+> and `@patch` designates the real value we are replacing with the mock.
 
 ### Example case
 
@@ -65,14 +82,18 @@ def get_articles(article_type: str) -> Optional[Dict[str, Any]]:
         return None
 ```
 
-This function: sources a URL from an environment variable, interpolates a query string into the URL (which comes in as a parameter), makes a request to the URL, and returns the response as JSON.
+This function: sources a URL from an environment variable, interpolates a query
+string into the URL (which comes in as a parameter), makes a request to the URL,
+and returns the response as JSON.
 
 It has some safeguards in place:
 
 - It checks that the environment variable is set
 - It checks that the request was successful
 
-In the example we could use a Mock object to simulate the response from the Pocket API. This would allow us to test the function without having to make a real request to the API:
+In the example we could use a Mock object to simulate the response from the
+Pocket API. This would allow us to test the function without having to make a
+real request to the API:
 
 ```py
 def test_successful_request():
@@ -100,9 +121,12 @@ The example above follows the **Arrange, Act, Assert** pattern:
 
 ### Alternative mock syntax
 
-The `with patch(...) as mock_name` syntax is fine for small-scale mocking but can become cumbersome when you are mocking several dependencies.
+The `with patch(...) as mock_name` syntax is fine for small-scale mocking but
+can become cumbersome when you are mocking several dependencies.
 
-There is another syntax (which I actually find clearer). Say we have a function with three dependencies: `update_worksheet`, `process_articles`, `get_articles`. We could mock like so:
+There is another syntax (which I actually find clearer). Say we have a function
+with three dependencies: `update_worksheet`, `process_articles`, `get_articles`.
+We could mock like so:
 
 ```py
 @patch("app.update_worksheet")
@@ -114,7 +138,8 @@ def test_success(
     mock_get_articles.return_value = [1, 2, 3]
 ```
 
-Here the patching is done by the decorator and the mocks are defined as parameters to the test function (always in reverse order)
+Here the patching is done by the decorator and the mocks are defined as
+parameters to the test function (always in reverse order)
 
 ### Mock assertion lexicon
 
@@ -136,13 +161,16 @@ assert my_mocked_function.call_count = 3
 
 #### `assert_any_call()`
 
-Test that a given mock is called at least once during the execution of the function under test
+Test that a given mock is called at least once during the execution of the
+function under test
 
 ```py
 my_mocked_function.assert_any_call(some_mocked_return_value)
 ```
 
-When the output of one function is used as a parameter to another, and we don't particularly care about the details of what is concerned we can just pass the executed function, e.g:
+When the output of one function is used as a parameter to another, and we don't
+particularly care about the details of what is concerned we can just pass the
+executed function, e.g:
 
 ```py
 my_mocked_function.assert_any_call(preceding_function())
@@ -150,9 +178,13 @@ my_mocked_function.assert_any_call(preceding_function())
 
 #### `call_args_list`
 
-Get a list of all the arguments that a mock object was called with during the test.
+Get a list of all the arguments that a mock object was called with during the
+test.
 
-`call_args_list` is useful when you want to check the arguments that a mock object was called with during the test, especially if the mock object was called multiple times with different arguments. You can use it to inspect the arguments of each call and make assertions based on them.
+`call_args_list` is useful when you want to check the arguments that a mock
+object was called with during the test, especially if the mock object was called
+multiple times with different arguments. You can use it to inspect the arguments
+of each call and make assertions based on them.
 
 ```py
 second_my_mocked_function_call = my_mocked_function.call_args_list[1]
@@ -164,7 +196,8 @@ assert second_my_mocked_function_call[0][0] == "expected arg"
 
 #### `side_effect`
 
-Use to trigger a side effect when returning a value from a mock. Most useful for mocking exceptions.
+Use to trigger a side effect when returning a value from a mock. Most useful for
+mocking exceptions.
 
 ```py
 my_mocked_function.side_effect = Exception("Some exception raised")
@@ -172,7 +205,9 @@ my_mocked_function.side_effect = Exception("Some exception raised")
 
 ## Testing exceptions with `raises`
 
-Testing exceptions is quite straightforward. You can use the `raises` helper provided by pytest, and combine this with `excinfo` ("exception info") to inspect the exception message.
+Testing exceptions is quite straightforward. You can use the `raises` helper
+provided by pytest, and combine this with `excinfo` ("exception info") to
+inspect the exception message.
 
 ```py
 if POCKET_LAMBDA_ENDPOINT is None:
@@ -192,20 +227,26 @@ Then to test this, we would use pytest's `excinfo` fixture along with `raises`:
     )
 ```
 
-We could actually simplify the above test by using the `match` parameter with `raise`. This way we do not need the separate assertion:
+We could actually simplify the above test by using the `match` parameter with
+`raise`. This way we do not need the separate assertion:
 
 ```py
 with pytest.raises(ValueError, match="Error: POCKET_LAMBDA_ENDPOINT environment variable is not set"):
     get_articles("some_type")
 ```
 
-Note that `excinfo` is best used for testing the exception text that you the developer explicitly `raise`. For exceptions tha may occur naturaly in the code you are testing, you should use `caplog` or `capsys` (see below).
+Note that `excinfo` is best used for testing the exception text that you the
+developer explicitly `raise`. For exceptions tha may occur naturaly in the code
+you are testing, you should use `caplog` or `capsys` (see below).
 
 ## Before-each and after-each
 
-When testing functions, we achieve this in Python using `setup_function` and `teardown_function` methods. These methods are called before and after each test method respectively.
+When testing functions, we achieve this in Python using `setup_function` and
+`teardown_function` methods. These methods are called before and after each test
+method respectively.
 
-To apply a "before each" to _every test_ just put your setup function and/or teardown function at the top level of your test module.
+To apply a "before each" to _every test_ just put your setup function and/or
+teardown function at the top level of your test module.
 
 For example, below we set and remove an env var before and after each test:
 
@@ -221,16 +262,19 @@ def teardown_function():
     del os.environ["POCKET_LAMBDA_ENDPOINT"]
 ```
 
-If the setup/teardown should only be applied to a subset of tests, just pass the name of the fixture as a parameter to the test function:
+If the setup/teardown should only be applied to a subset of tests, just pass the
+name of the fixture as a parameter to the test function:
 
 ```py
 def some_function(setup_function):
     # setup_function will be run before this test
 ```
 
-You don't need to use the names `setup_function` and `teardown_function` so long as you are passing the fixture as a parameter.
+You don't need to use the names `setup_function` and `teardown_function` so long
+as you are passing the fixture as a parameter.
 
-You can also use `yield` to combine the setup and teardown into a single function:
+You can also use `yield` to combine the setup and teardown into a single
+function:
 
 ```py
 @pytest.fixture(scope="function")
@@ -242,7 +286,9 @@ def setup_function():
 
 ### Another example:
 
-The following test suite uses the same three mocked functions in every test. The following set-up assigns the mocks before each test and resets after each individual test has run:
+The following test suite uses the same three mocked functions in every test. The
+following set-up assigns the mocks before each test and resets after each
+individual test has run:
 
 ```py
 @pytest.fixture(scope="function")
@@ -264,9 +310,13 @@ def individual_test(setup_function):
 
 ## Parameterized tests
 
-For a sequence of tests that are repetitive, to avoid repeating the same code over and over again, we can use parameterized tests. This is where we pass in a list of parameters to the test function and the test function is run once for each parameter.
+For a sequence of tests that are repetitive, to avoid repeating the same code
+over and over again, we can use parameterized tests. This is where we pass in a
+list of parameters to the test function and the test function is run once for
+each parameter.
 
-For example, in the function below I am handling numerous possible Exceptions that could be raised by the `requests.get` method:
+For example, in the function below I am handling numerous possible Exceptions
+that could be raised by the `requests.get` method:
 
 ```py
     try:
@@ -323,11 +373,14 @@ def test_exceptions(caplog, exception_type, log_message):
 
 ## Caplog, syslog, excinfo
 
-`caplog` and `capsys` are built-in pytest fixtures. `caplog` lets you test log messages. `capsys` lets you test stdout and stderr. As such they are very useful when testing that error messages are logged correctly.
+`caplog` and `capsys` are built-in pytest fixtures. `caplog` lets you test log
+messages. `capsys` lets you test stdout and stderr. As such they are very useful
+when testing that error messages are logged correctly.
 
 ### `caplog`
 
-In our example, if the endpoing environment is not set, we log an error message. We can test that this message is logged correctly using `caplog`:
+In our example, if the endpoing environment is not set, we log an error message.
+We can test that this message is logged correctly using `caplog`:
 
 ```py
 def test_no_endpoint_env_var(caplog):
@@ -342,11 +395,14 @@ def test_no_endpoint_env_var(caplog):
     assert result is None
 ```
 
-> Note tha we pass in `caplog` as a parameter to the test function. This is how pytest knows to use it as a fixture.
+> Note tha we pass in `caplog` as a parameter to the test function. This is how
+> pytest knows to use it as a fixture.
 
 ### `capsys`
 
-In our example, if the request is unsuccessful, we log an error message with `print` rather than `logging`. We can test that this message is printed correctly using `capsys` to check the stdout:
+In our example, if the request is unsuccessful, we log an error message with
+`print` rather than `logging`. We can test that this message is printed
+correctly using `capsys` to check the stdout:
 
 ```py
 def test_http_error(capsys):

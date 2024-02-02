@@ -7,7 +7,9 @@ tags:
 
 ## Listing options
 
-Obviously we know that in order to list the files and sub-directories in our current directory we use `ls` but here are some of the most useful of the different modifiers:
+Obviously we know that in order to list the files and sub-directories in our
+current directory we use `ls` but here are some of the most useful of the
+different modifiers:
 
 - `**ls -a**`
   - list and include hidden dot files

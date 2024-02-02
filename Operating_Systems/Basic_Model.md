@@ -7,7 +7,8 @@ tags:
 
 # Basic model of a \*nix operating system
 
-We can abstract the Linux OS into three operational levels or tiers, from the bottom up:
+We can abstract the Linux OS into three operational levels or tiers, from the
+bottom up:
 
 <dl>
 <dt>User processes: user space</dt>

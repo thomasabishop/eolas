@@ -7,9 +7,12 @@ tags: [AWS, docker]
 
 # Local AWS development with SAM
 
-We can run a local instance of our SAM stack for a given application without sending requests to the cloud. This is implemented through Docker.
+We can run a local instance of our SAM stack for a given application without
+sending requests to the cloud. This is implemented through Docker.
 
-The SAM CLI handles all the Docker-related tasks, such as pulling the required Lambda runtime images, creating containers, mounting your code and dependencies, and running your Lambda functions inside those containers.
+The SAM CLI handles all the Docker-related tasks, such as pulling the required
+Lambda runtime images, creating containers, mounting your code and dependencies,
+and running your Lambda functions inside those containers.
 
 ## Basic set up
 
@@ -27,7 +30,8 @@ We then run:
 sam local start-api
 ```
 
-If you have an API Gateway endpoint that you want to call over the local server. You will be able to call it after executing the above.
+If you have an API Gateway endpoint that you want to call over the local server.
+You will be able to call it after executing the above.
 
 This will be indicated by:
 
@@ -41,15 +45,19 @@ If we want to invoke the function directly we use:
 
 ## Using environment variables
 
-If you have an API key or database credentials, you are going to typically want to use different values dependent on environment.
+If you have an API key or database credentials, you are going to typically want
+to use different values dependent on environment.
 
-Even if the values are the same accross environments, it's a good idea to not call a secret when working locally since this request is billable.
+Even if the values are the same accross environments, it's a good idea to not
+call a secret when working locally since this request is billable.
 
-In the example below I show how to set up environment variables for an API key locally and in production.
+In the example below I show how to set up environment variables for an API key
+locally and in production.
 
 ## Create secret
 
-Go to AWS SecretsManager and add the API key as a secret. This will be sourced in production.
+Go to AWS SecretsManager and add the API key as a secret. This will be sourced
+in production.
 
 ## Create local ENV file
 
@@ -67,13 +75,15 @@ Go to AWS SecretsManager and add the API key as a secret. This will be sourced i
 }
 ```
 
-We save these to the root of the given function's directory not at the global repo level.
+We save these to the root of the given function's directory not at the global
+repo level.
 
 > Be sure to add this to `.gitignore` so that it does not become public
 
 ### Update `template.yaml`
 
-Every environment variable you intend to use, must exist in the `template.yaml`, otherwise it will not be sourced at runtime:
+Every environment variable you intend to use, must exist in the `template.yaml`,
+otherwise it will not be sourced at runtime:
 
 ```yaml
 ...
@@ -87,7 +97,9 @@ Resources:
 ...
 ```
 
-> We go ahead and populate the values for production. But we leave the variable we use in development blank, since we don't want it committed and we will source it at the SAM invocation. It still needs to exist though.
+> We go ahead and populate the values for production. But we leave the variable
+> we use in development blank, since we don't want it committed and we will
+> source it at the SAM invocation. It still needs to exist though.
 
 ### Pass in the environment variable at invocation:
 
@@ -95,11 +107,13 @@ Resources:
 sam local start-api --env-vars /home/thomas/repos/lambdas/wakatime-api/get-coding-stats/local-env.json
 ```
 
-In production, the variables required will be automatically sourced from the `template.yaml`
+In production, the variables required will be automatically sourced from the
+`template.yaml`
 
 ### Create handler within the Lambda itself
 
-You are obviously going to need to distinguish between the different deployments when the Lambda executes. Here is an example helper function:
+You are obviously going to need to distinguish between the different deployments
+when the Lambda executes. Here is an example helper function:
 
 ```ts
 import * as AWS from "aws-sdk";

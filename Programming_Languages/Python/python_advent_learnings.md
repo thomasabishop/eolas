@@ -57,8 +57,22 @@ else:
     valid_games_count += game_number
 ```
 
-The use of the `else` clause here is a special feature of Python. The `else` clause after a `for` loop will normally only execute when the loop has finished iterating over the list, but not when the loop is terminated by a `break` statement.
+The use of the `else` clause here is a special feature of Python. The `else`
+clause after a `for` loop will normally only execute when the loop has finished
+iterating over the list, but not when the loop is terminated by a `break`
+statement.
 
-The `else` clause is executed if the `for` loop completes normally. If the `break` statement is executed (i.e., if any count in `counter_values` is greater than the corresponding count in `initial_values`), the `for` loop is terminated and the `else` clause is skipped.
+The `else` clause is executed if the `for` loop completes normally. If the
+`break` statement is executed (i.e., if any count in `counter_values` is greater
+than the corresponding count in `initial_values`), the `for` loop is terminated
+and the `else` clause is skipped.
 
-Here the combination of a `for` loop and the `break` statement creates `if, else` logic. If the break condition is not reached, then the `else` block runs for every iteration of the loop.
+Here the combination of a `for` loop and the `break` statement creates
+`if, else` logic. If the break condition is not reached, then the `else` block
+runs for every iteration of the loop.
+
+### Multiple loop in list comprehension
+
+```py
+games = [item.strip().split() for game in games for item in game.split(",")]
+```

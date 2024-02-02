@@ -6,9 +6,13 @@ tags:
   - fractions
 ---
 
-Given the equivalence between factors and divisors we can increase fractions to higher terms in a very similar way to when we reduce fractions. In the latter case we are dividing by divisors to reduce. In the former, we are multiplying by factors to increase.
+Given the equivalence between factors and divisors we can increase fractions to
+higher terms in a very similar way to when we reduce fractions. In the latter
+case we are dividing by divisors to reduce. In the former, we are multiplying by
+factors to increase.
 
-> Whenever we increase a fraction, the resultant fraction will always be [equivalent](Equivalent%20fractions.md) to the fraction we started with.
+> Whenever we increase a fraction, the resultant fraction will always be
+> [equivalent](Equivalent%20fractions.md) to the fraction we started with.
 
 ## Demonstration
 

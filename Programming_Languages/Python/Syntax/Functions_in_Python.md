@@ -6,9 +6,11 @@ tags: [python]
 
 # Functions in Python
 
-- Convention is to leave a double line-break after a function definition (but not with nested functions - here, a single linebreak is sufficient)
+- Convention is to leave a double line-break after a function definition (but
+  not with nested functions - here, a single linebreak is sufficient)
 - Scope within functions is demarcated by indents, as everything in Python
-- We use a docstring _within_ the function body, to document our function. This text will then show up in Intellisense etc.
+- We use a docstring _within_ the function body, to document our function. This
+  text will then show up in Intellisense etc.
 
 ## Basic examples
 
@@ -91,9 +93,12 @@ Welcome Natalia
 
 Function variables are locally scoped by default.
 
-They can access variables that are outer to them and can redefine them within their own scope _and_ within the global scope using the keywords `global` and `nonlocal`.
+They can access variables that are outer to them and can redefine them within
+their own scope _and_ within the global scope using the keywords `global` and
+`nonlocal`.
 
-Below a global variable is accessed and changed but only internally within a function scope
+Below a global variable is accessed and changed but only internally within a
+function scope
 
 ```py
 max = 100
@@ -131,4 +136,5 @@ print(myfunc1())
 # hello
 ```
 
-We cannot however redefine a global variable from a function scope permanently. It will remain whatever it is in global scope, after the function has run.
+We cannot however redefine a global variable from a function scope permanently.
+It will remain whatever it is in global scope, after the function has run.

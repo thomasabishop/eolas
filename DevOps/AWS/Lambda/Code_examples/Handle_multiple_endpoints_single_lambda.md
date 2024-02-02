@@ -6,7 +6,8 @@ tags: [AWS, aws-lambda, backend]
 
 # Handle multiple API Gateway endpoints in a single lambda
 
-With the following config we have a single lambda (`/query-waktime`) with multiple endpoints:
+With the following config we have a single lambda (`/query-waktime`) with
+multiple endpoints:
 
 ```yml
 Resources:
@@ -45,9 +46,13 @@ Our endpoints are as follows:
 - `/query-wakatime/durations`
 - `/query-wakatime/today-only`
 
-Each returns a different dataset from an external API. The lambda function makes a different request to the API based on the endpoint it receives and the time period that is passed as a query string parameter, e.g. `/query-wakatime?range=last_7_days`.
+Each returns a different dataset from an external API. The lambda function makes
+a different request to the API based on the endpoint it receives and the time
+period that is passed as a query string parameter, e.g.
+`/query-wakatime?range=last_7_days`.
 
-Below is a template for concisely handling requests to the different endpoints in the single lambda function wihout excessive repetition.
+Below is a template for concisely handling requests to the different endpoints
+in the single lambda function wihout excessive repetition.
 
 ```js
 const getEndpoint = (path: string, timePeriod?: string | undefined) => {

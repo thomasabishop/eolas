@@ -8,7 +8,8 @@ tags: [javascript]
 
 ## `map` + `filter`
 
-The following combines a `map` and a `filter` to square a list of numbers and then filter the ones that are greater than or equal to 10:
+The following combines a `map` and a `filter` to square a list of numbers and
+then filter the ones that are greater than or equal to 10:
 
 ```js
 const arr = [1, 2, 3, 4];
@@ -30,7 +31,8 @@ const filteredSquaredNumbers = arr.reduce((acc, x) => {
 
 ## `filter` + `map`
 
-Here we use a filter and then a map to filter the even numbers and then double them:
+Here we use a filter and then a map to filter the even numbers and then double
+them:
 
 ```js
 const arr = [1, 2, 3, 4];
@@ -49,4 +51,8 @@ const evenDoubled = arr.reduce((acc, x) => {
 }, []);
 ```
 
-> The empty array [] is the initial value of the accumulator. As the callback function processes each element of the array, it can add or modify the accumulator based on the desired logic. By providing an empty array as the initial value for the accumulator, we ensure that the results will be collected in a new array without modifying the original array.
+> The empty array [] is the initial value of the accumulator. As the callback
+> function processes each element of the array, it can add or modify the
+> accumulator based on the desired logic. By providing an empty array as the
+> initial value for the accumulator, we ensure that the results will be
+> collected in a new array without modifying the original array.

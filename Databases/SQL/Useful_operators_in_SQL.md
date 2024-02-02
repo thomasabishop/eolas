@@ -9,9 +9,11 @@ tags: [SQL, relational-databases]
 
 ## True and false
 
-> In SQL false results are represented by `0` and true results are represented by `1`. Any zero value is false and any non-zero value is true.
+> In SQL false results are represented by `0` and true results are represented
+> by `1`. Any zero value is false and any non-zero value is true.
 
-> When comparing operators we can use `SELECT` as a general "execute" function for SQL to interpret
+> When comparing operators we can use `SELECT` as a general "execute" function
+> for SQL to interpret
 
 ```sql
 SELECT 0 = 0 -- 1

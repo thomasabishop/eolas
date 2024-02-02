@@ -6,27 +6,48 @@ tags: [systems-programming]
 
 # systemd
 
-Once the [boot process](/Operating_Systems/Boot_process.md) has completed and the bootloader has located the kernel and injected it into memory the first user space program runs: `init` (for _initialisation_). `init` is a [daemon](/Operating_Systems/Daemons.md) process that continues running until shutdown and is responsible for starting all the processes that are prerequisites for user space. For example: network connections, disk access, user logins etc.
-
-`init` is the parent of all processes: PID1. Whilst it does a lot of its work in quick succession at boot time it is not limited to the this stage of the lifescycle but runs continuously in reponse to new user events.
+Once the [boot process](/Operating_Systems/Boot_process.md) has completed and
+the bootloader has located the kernel and injected it into memory the first user
+space program runs: `init` (for _initialisation_). `init` is a
+[daemon](/Operating_Systems/Daemons.md) process that continues running until
+shutdown and is responsible for starting all the processes that are
+prerequisites for user space. For example: network connections, disk access,
+user logins etc.
+dsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+`init` is the parent of all processes: PID1. Whilst it does a lot of its work in
+quick succession at boot time it is not limited to the this stage of the
+lifescycle but runs continuously in reponse to new user events.
 
 On Linux systems `systemd` is used to implement `init`.
 
-`systemd` is directly accessible from user space and provides a straightforward way to enable/disable, start/stop system level processes
+`systemd` is directly accessible from user space and provides a straightforward
+way to enable/disable, start/stop system level processes
 
-> `systemd` can track individual service daemons after they start, and group together multiple processes associated with a service, giving you more power and insight into exactly what is running on the system _How Linux Works: Third Edition_, Brian Ward 2021
+> `systemd` can track individual service daemons after they start, and group
+> together multiple processes associated with a service, giving you more power
+> and insight into exactly what is running on the system _How Linux Works: Third
+> Edition_, Brian Ward 2021
 
 ## How systemd works
 
 ### Goal-directed units
 
-`systemd` works on the basis of _goals_. Each goal is system task defined as a **unit**. A unit contains instructions and a specification of dependencies to other units.
+`systemd` works on the basis of _goals_. Each goal is system task defined as a
+**unit**. A unit contains instructions and a specification of dependencies to
+other units.
 
-When activating a unit, `systemd` first activates the dependencies and then moves onto the details of the unit itself. `init` as implemented by `systemd` does not follow a rigid sequence every time, initialising units in the same sequence and waiting for one to complete before starting another. Instead it activates units whenever they are ready. This, its parallelized nature, is one of the main advantages over previous programs that managed the `init` sequence on Linux (such as for example System V);
+When activating a unit, `systemd` first activates the dependencies and then
+moves onto the details of the unit itself. `init` as implemented by `systemd`
+does not follow a rigid sequence every time, initialising units in the same
+sequence and waiting for one to complete before starting another. Instead it
+activates units whenever they are ready. This, its parallelized nature, is one
+of the main advantages over previous programs that managed the `init` sequence
+on Linux (such as for example System V);
 
 ### Unit types
 
-Units are organised into **unit types**. The main types that run at boot time are as follows:
+Units are organised into **unit types**. The main types that run at boot time
+are as follows:
 
 - service units (`.service`)
   - control service daemons
@@ -39,7 +60,11 @@ Units are organised into **unit types**. The main types that run at boot time ar
 - target units
   - control other units by organising them into groups
 
-For example, at boot, a target unit called `default.target` groups together a number of service and mount units as dependencies. These then run in a graph-like dependency structure where a unit that comes late in the boot process can depend on several previous units making earlier branches of a dependency tree join back together.
+For example, at boot, a target unit called `default.target` groups together a
+number of service and mount units as dependencies. These then run in a
+graph-like dependency structure where a unit that comes late in the boot process
+can depend on several previous units making earlier branches of a dependency
+tree join back together.
 
 ## systemd configuration files
 
@@ -47,12 +72,16 @@ Units are managed via `systemd` configuration files.
 
 ### Configuration file locations
 
-System level `systemd` config files are located in the _system unit directory_ at `/usr/lib/systemd/system`. You shouldn't change or manipulate these files or attempt to add new config files here since they will be overwritten by the system.
+System level `systemd` config files are located in the _system unit directory_
+at `/usr/lib/systemd/system`. You shouldn't change or manipulate these files or
+attempt to add new config files here since they will be overwritten by the
+system.
 
-![](/_img/systemd-global-files.png)
-_`systemd` global unit files_
+![](/_img/systemd-global-files.png) _`systemd` global unit files_
 
-Local definitions that relate to the specific user and where the user herself can define units are located in the _system configuration_ directory: `/etc/systemd/system`.
+Local definitions that relate to the specific user and where the user herself
+can define units are located in the _system configuration_ directory:
+`/etc/systemd/system`.
 
 ![](/_img/systemd-local-files.png)
 
@@ -88,17 +117,23 @@ SystemCallFilter=@default @file-system @basic-io @system-service @signal @io-eve
 Also=uuidd.socket
 ```
 
-- The `Unit` section provides metadata about the unit including which `systemd` dependencies it has
+- The `Unit` section provides metadata about the unit including which `systemd`
+  dependencies it has
 - `Service` constitutes the main specification for the unit
-- `Install` is the call to set the dependencies running before the `Service` functions are accessible.
+- `Install` is the call to set the dependencies running before the `Service`
+  functions are accessible.
 
 ## systemd operations: systemctl
 
-The `systemctl` command is the chief way of interacting with `systemd`. You use it to activate and deactivate services, list their status, reload the configuration and so.
+The `systemctl` command is the chief way of interacting with `systemd`. You use
+it to activate and deactivate services, list their status, reload the
+configuration and so.
 
 ### View the dependency graph
 
-`systemctl status` by itself will print a long list of units grouped by their dependency relations. It will also provide some metadata about the current systemd boot context.
+`systemctl status` by itself will print a long list of units grouped by their
+dependency relations. It will also provide some metadata about the current
+systemd boot context.
 
 ### Viewing active units
 
@@ -132,9 +167,11 @@ mongodb.service - MongoDB Database Server
 Aug 17 07:25:27 archbish systemd[1]: Started MongoDB Database Server.****
 ```
 
-In addition to the core info it tells us the unit type. In this case it is a service.
+In addition to the core info it tells us the unit type. In this case it is a
+service.
 
-We can also view the journal entry for the given unit. This provides you with its diagnostic log messages:
+We can also view the journal entry for the given unit. This provides you with
+its diagnostic log messages:
 
 ```
 journalctl --unit=mongodb.service
@@ -156,13 +193,17 @@ Each entry is organised around specific boots.
 
 ### List jobs
 
-Requests to activate, reactivate and restart units are called **jobs** in `systemd`. They can be thought of as unit state changes. Current jobs can be listed with `systemctl list-jobs`.
+Requests to activate, reactivate and restart units are called **jobs** in
+`systemd`. They can be thought of as unit state changes. Current jobs can be
+listed with `systemctl list-jobs`.
 
-This will most likely return `No jobs running` if the computer has been running for a while. Most jobs execute at boot.
+This will most likely return `No jobs running` if the computer has been running
+for a while. Most jobs execute at boot.
 
 ### Enable/disable, start/stop units
 
-If a unit has dependencies it is necessary to _enable_ it before starting it. This installs the dependencies.
+If a unit has dependencies it is necessary to _enable_ it before starting it.
+This installs the dependencies.
 
 ```bash
 systemctl enable mongodb.service
@@ -181,7 +222,8 @@ To stop the service:
 systemctl stop mongodb.service
 ```
 
-After this we should disable it, in order to remove any symbolic links it has created on the system as part of the install process:
+After this we should disable it, in order to remove any symbolic links it has
+created on the system as part of the install process:
 
 ```bash
 systemctl disable mongodb.service

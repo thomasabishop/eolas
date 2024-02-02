@@ -16,15 +16,21 @@ With a full-scale Node application you will typically run three environments:
 
 ## Accessing the current environment
 
-To determine the current environment we can use the variable **`process.env.NODE_ENV`** from the [global process object](/Programming_Languages/Node/Architecture/Process_object.md). This works universally regardless of the kind of Node app we are building.
+To determine the current environment we can use the variable
+**`process.env.NODE_ENV`** from the
+[global process object](/Programming_Languages/Node/Architecture/Process_object.md).
+This works universally regardless of the kind of Node app we are building.
 
-If you have not manually set up your environments, **`process.env.NODE_ENV`** will return `undefined`.
+If you have not manually set up your environments, **`process.env.NODE_ENV`**
+will return `undefined`.
 
 ### Setting the Node environment
 
 #### For the session
 
-`NODE_ENV` is a bash [environment variable](/Programming_Languages/Shell_Scripting/Environmental_and_shell_variables.md) like any other. So we can set it in the normal way:
+`NODE_ENV` is a bash
+[environment variable](/Programming_Languages/Shell_Scripting/Environmental_and_shell_variables.md)
+like any other. So we can set it in the normal way:
 
 ```bash
 export NODE_ENV=production
@@ -32,15 +38,18 @@ export NODE_ENV=production
 
 ### In Express
 
-In Express, there is a built in method for retrieving the current envrionment: `app.get('env')`. Express will default to the development environment.
+In Express, there is a built in method for retrieving the current envrionment:
+`app.get('env')`. Express will default to the development environment.
 
 <p style="color:red">! How to keep Express and Node environment in sync?</p>
 
 ## Configuring environments
 
-We use the third-party [Config](https://github.com/node-config/node-config) package to manage different configurations based on the environment.
+We use the third-party [Config](https://github.com/node-config/node-config)
+package to manage different configurations based on the environment.
 
-Once installed we set up a dedicated config directory with a structure as follows:
+Once installed we set up a dedicated config directory with a structure as
+follows:
 
 ```
 config/
@@ -65,15 +74,22 @@ const config = require("config");
 console.log("Application name:" + config.get("name"));
 ```
 
-If we toggled the different environments, we would see different outputs from the above code (assuming we had different config files in `/config` with different names).
+If we toggled the different environments, we would see different outputs from
+the above code (assuming we had different config files in `/config` with
+different names).
 
 ### Sensitive config data
 
-We will need to store passwords, API keys and other kinds of authentication data for our application. We obviously shouldn't store this data openly in our config files since it would be made public.
+We will need to store passwords, API keys and other kinds of authentication data
+for our application. We obviously shouldn't store this data openly in our config
+files since it would be made public.
 
-We can do so securely by utilising [environmental variables](../Shell_Scripting/Environmental_and_shell_variables.md) alongside the config pacakage.
+We can do so securely by utilising
+[environmental variables](../Shell_Scripting/Environmental_and_shell_variables.md)
+alongside the config pacakage.
 
-We create a file called `custom-environment-variables` (must be called this) and map a property to an environmental environment we have already set.
+We create a file called `custom-environment-variables` (must be called this) and
+map a property to an environmental environment we have already set.
 
 Let's create an environmental variable for a password:
 

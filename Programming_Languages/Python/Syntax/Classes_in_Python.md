@@ -9,8 +9,14 @@ tags: [python, OOP]
 ## General points
 
 - We don't need to use `new` when instantiating an instance of a class.
-- All properties and methods must be defined in the constructor. This is in contrast to JavaScript where the properties in the constructor are those we want to initialise when the object is created and where there may be other properties and methods that are used outside of the instantiation process.
-- In contrast to TypeScript and other OOP languages it is not necessary to declare the properties you wish to define in the constructor, outside of the constructor. As long as they are defined in the constructor they are accessible.
+- All properties and methods must be defined in the constructor. This is in
+  contrast to JavaScript where the properties in the constructor are those we
+  want to initialise when the object is created and where there may be other
+  properties and methods that are used outside of the instantiation process.
+- In contrast to TypeScript and other OOP languages it is not necessary to
+  declare the properties you wish to define in the constructor, outside of the
+  constructor. As long as they are defined in the constructor they are
+  accessible.
 
 ## Basic syntax
 
@@ -39,10 +45,14 @@ print(p1.name)
 
 Key points to note:
 
-- The `__init__` method is the constructor function and must exist on every class to define the properties of the class
-- `self` is a reference to the class itself and the object it will create, akin to `this` in other languages
-- You must pass `self` as a parameter to every method (this is a difference from JS)
-- As with functions, we can use docstrings to document the class. What you write here will show up in Intellisense etc
+- The `__init__` method is the constructor function and must exist on every
+  class to define the properties of the class
+- `self` is a reference to the class itself and the object it will create, akin
+  to `this` in other languages
+- You must pass `self` as a parameter to every method (this is a difference from
+  JS)
+- As with functions, we can use docstrings to document the class. What you write
+  here will show up in Intellisense etc
 
 ## More complex class
 
@@ -74,7 +84,8 @@ class Person:
 
 ## Object references
 
-When you log a class you get a reference to its hexadecimal [memory](/Computer_Architecture/Memory/Memory.md) reference.
+When you log a class you get a reference to its hexadecimal
+[memory](/Computer_Architecture/Memory/Memory.md) reference.
 
 ```py
 p1 = Person('John', 36)
@@ -87,7 +98,8 @@ print(p2)
 # <__main__.Person object at 0x102e75511>
 ```
 
-This shows each object is unique. You can also generate a specific ID with the `id()` method:
+This shows each object is unique. You can also generate a specific ID with the
+`id()` method:
 
 ```py
 print(id(p1))
@@ -99,13 +111,19 @@ print(id(p2))
 
 ## Copying objects
 
-The same principle that applies to [copying functions](/Programming_Languages/Python/Syntax/Functions_in_Python.md) applies to copying objects created through classes: redeclaration results in a duplicate entity. Thus changes to the duplicate will affect the original.
+The same principle that applies to
+[copying functions](/Programming_Languages/Python/Syntax/Functions_in_Python.md)
+applies to copying objects created through classes: redeclaration results in a
+duplicate entity. Thus changes to the duplicate will affect the original.
 
-This becomes obvious when you use `id()` but otherwise might not be apparent. To copy you should therefore declare a new instance of the class.
+This becomes obvious when you use `id()` but otherwise might not be apparent. To
+copy you should therefore declare a new instance of the class.
 
 ### The `str` method
 
-The memory reference isn't very helpful for viewing the data contents. To get around this we can use the builtin `__string__` method which automatically logs whatever properties you put in there:
+The memory reference isn't very helpful for viewing the data contents. To get
+around this we can use the builtin `__string__` method which automatically logs
+whatever properties you put in there:
 
 ```py
 class Person:
@@ -130,7 +148,9 @@ You might want to delete an object reference because:
 - the variable referencing the object goes out of scope
 - the variable is set to `None`
 
-After the `del` statement is applied to a variable that holds an object, the object will no longer be available and any attempt to reference it will result in an error.
+After the `del` statement is applied to a variable that holds an object, the
+object will no longer be available and any attempt to reference it will result
+in an error.
 
 ```py
 p1 = Person('J-Man', 76)

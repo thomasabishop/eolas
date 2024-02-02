@@ -8,7 +8,8 @@ tags:
 
 # Functions
 
-Continuing from the other examples of React Typescript, we could do standard listing function, like:
+Continuing from the other examples of React Typescript, we could do standard
+listing function, like:
 
 ```tsx
 <ul>

@@ -31,7 +31,10 @@ We now have the following entries in our `courses` collection:
 
 ```
 
-Now we will query the collection. This capability is provided via the Mongoose schema class we used to create the `Course` [model](/Databases/MongoDB/Create_collections_and_documents_with_Mongoose.md#models). We have the following methods available to use from the schema:
+Now we will query the collection. This capability is provided via the Mongoose
+schema class we used to create the `Course`
+[model](/Databases/MongoDB/Create_collections_and_documents_with_Mongoose.md#models).
+We have the following methods available to use from the schema:
 
 - `find`
 - `findById`
@@ -59,23 +62,32 @@ This will return all the published courses where Tosh Gnomay is the author:
 
 ```js
 async function getCourses() {
-  const courses = await Course.find({author: 'Tosh Gnomay', isPublished: true});
+  const courses = await Course.find({
+    author: "Tosh Gnomay",
+    isPublished: true,
+  });
   console.log(courses);
 }
 ```
 
-This time we will filter by the same author but we will add additional parameters to distinguish:
+This time we will filter by the same author but we will add additional
+parameters to distinguish:
 
 - only the first ten entries (using `.limit(10)`)
-- sort ascending by name (using `.sort({name: 1}))` , to descend we would use `-1`)
-- only return the properties `name` and `tags` for the item in the collection (using `.select({name: 1, tags: 1})`)
+- sort ascending by name (using `.sort({name: 1}))` , to descend we would use
+  `-1`)
+- only return the properties `name` and `tags` for the item in the collection
+  (using `.select({name: 1, tags: 1})`)
 
 ```js
 async function getCourses() {
-  const courses = await Course.find({author: 'Tosh Gnomay', isPublished: true})
+  const courses = await Course.find({
+    author: "Tosh Gnomay",
+    isPublished: true,
+  })
     .limit(10)
-    .sort({name: 1})
-    .select({name: 1, tags: 1});
+    .sort({ name: 1 })
+    .select({ name: 1, tags: 1 });
   console.log(courses);
 }
 ```
@@ -85,14 +97,14 @@ This returns:
 ```js
 [
   {
-    _id: new ObjectId('62f4f07a875cff48827b8731'),
-    name: 'Java Course',
-    tags: ['java', 'backend'],
+    _id: new ObjectId("62f4f07a875cff48827b8731"),
+    name: "Java Course",
+    tags: ["java", "backend"],
   },
   {
-    _id: new ObjectId('62f4e2527ac4aa2c30d41d24'),
-    name: 'Javascript Course',
-    tags: ['js', 'frontend'],
+    _id: new ObjectId("62f4e2527ac4aa2c30d41d24"),
+    name: "Javascript Course",
+    tags: ["js", "frontend"],
   },
 ];
 ```
@@ -101,9 +113,16 @@ This returns:
 
 ## Querying with operators
 
-So far when filtering we have been doing so with reference to properties that exist on the document's model (`author`, `isPublished` etc) and we have applied tranformations on the data returned (sorting, limiting the number or matches etc.). However we can also apply **operators** within our queries. Operators allow us to perform computations on the data, for example: for a given numerical property on an object, return the objects for which this value is within a certain range.
+So far when filtering we have been doing so with reference to properties that
+exist on the document's model (`author`, `isPublished` etc) and we have applied
+tranformations on the data returned (sorting, limiting the number or matches
+etc.). However we can also apply **operators** within our queries. Operators
+allow us to perform computations on the data, for example: for a given numerical
+property on an object, return the objects for which this value is within a
+certain range.
 
-When we apply operators we use the `$` symbol before the operator and pass the operator function as an object.
+When we apply operators we use the `$` symbol before the operator and pass the
+operator function as an object.
 
 The schema:
 
@@ -126,34 +145,43 @@ The following comparison operators are available in MongoDB:
 | `in`     | In                        |
 | `nin`    | Not in                    |
 
-We can employ these comparators within a `.find` filter. For example let's imagine that our `courses` instances have a property of `price`.
+We can employ these comparators within a `.find` filter. For example let's
+imagine that our `courses` instances have a property of `price`.
 
-To filter course prices that are greater than or equal to 10 and less than or equal to 29:
+To filter course prices that are greater than or equal to 10 and less than or
+equal to 29:
 
 ```js
-Course.find({price: {$gte: 10, $lte: 20}});
+Course.find({ price: { $gte: 10, $lte: 20 } });
 ```
 
 To filter course prices that are either 10, 15 or 20:
 
 ```js
-Course.find({price: {$in: [10, 15, 20]}});
+Course.find({ price: { $in: [10, 15, 20] } });
 ```
 
 ### Logical operators
 
-When we apply logical operators, we do not apply the query within the main `find` method. We use a dedicated method that corresponds to the logical predicate.
+When we apply logical operators, we do not apply the query within the main
+`find` method. We use a dedicated method that corresponds to the logical
+predicate.
 
-For example to query by logical [OR](/Logic/Truth-functional_connectives.md#disjunction):
+For example to query by logical
+[OR](/Logic/Truth-functional_connectives.md#disjunction):
 
 ```js
 async function getCourses() {
-  const courses = await Course.find().or([{author: 'Tosh Gnomay'}, {isPublished: true}]);
+  const courses = await Course.find().or([
+    { author: "Tosh Gnomay" },
+    { isPublished: true },
+  ]);
   console.log(courses);
 }
 ```
 
-We write each disjunct as an object representing the conditions we are filtering for within an array that is passed to the `.or()` method.
+We write each disjunct as an object representing the conditions we are filtering
+for within an array that is passed to the `.or()` method.
 
 The same syntax applies for conjunction.
 
@@ -176,7 +204,7 @@ To demonstrate regex we could filter by names beginning with `T`:
 ```js
 async function getCourses() {
   const courses = await Course.find()
-    .or([{author: 'Tosh Gnomay'}, {isPublished: true}])
+    .or([{ author: "Tosh Gnomay" }, { isPublished: true }])
     .count();
   console.log(courses);
 }
@@ -186,7 +214,11 @@ This will return a number.
 
 ### Pagination
 
-We previously used the `limit()` method to control how many matches we return from a query. We can extend this functionality by creating pagination. This allows us to meter the return values into set chunks. This is used frequently when interacting with a database through a mediating RESTful API. For example to return values from endpoints such as:
+We previously used the `limit()` method to control how many matches we return
+from a query. We can extend this functionality by creating pagination. This
+allows us to meter the return values into set chunks. This is used frequently
+when interacting with a database through a mediating RESTful API. For example to
+return values from endpoints such as:
 
 ```
 /api/courses?pageNumber=2&pageSize=10

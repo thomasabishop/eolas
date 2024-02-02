@@ -1,5 +1,5 @@
 ---
-categories: 
+categories:
   - DSA
 tags: [OOP]
 ---
@@ -8,15 +8,23 @@ tags: [OOP]
 
 The Observer design pattern is also known as the 'publish/subscribe' pattern.
 
-> The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+> The observer pattern is a software design pattern in which an object, called
+> the subject, maintains a list of its dependents, called observers, and
+> notifies them automatically of any state changes, usually by calling one of
+> their methods.
 
-The observer pattern instantiates a **one-to-many** relationship between the subject and its observers: when one object updates, it notifies many other objects that it has been updated.
+The observer pattern instantiates a **one-to-many** relationship between the
+subject and its observers: when one object updates, it notifies many other
+objects that it has been updated.
 
-This is another design pattern that is useful when implementing a global state. When the subject updates its subjects must follow suit and adapt to its changes. Here the subject is the instrument for maintaining the global state.
+This is another design pattern that is useful when implementing a global state.
+When the subject updates its subjects must follow suit and adapt to its changes.
+Here the subject is the instrument for maintaining the global state.
 
 ## Subject class
 
-This class maintains a list of observers that will be notified when it is updated. It should have the following attributes:
+This class maintains a list of observers that will be notified when it is
+updated. It should have the following attributes:
 
 - array of existing observers
 - an `addObserver` method which pushes an observer onto the observers array
@@ -25,7 +33,8 @@ This class maintains a list of observers that will be notified when it is update
 
 ## Observer class
 
-Observers must implement an `update` method that will be called by the subject's `notify` method.
+Observers must implement an `update` method that will be called by the subject's
+`notify` method.
 
 ## Example
 
@@ -55,14 +64,14 @@ class Subject {
 }
 
 class ObserverA {
-  state = 'I am observer A';
+  state = "I am observer A";
   update(newState) {
     this.state = newState;
   }
 }
 
 class ObserverB {
-  state = 'I am observer B';
+  state = "I am observer B";
 
   update(newState) {
     this.state = newState;

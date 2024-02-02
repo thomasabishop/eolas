@@ -90,7 +90,9 @@ echo "$fave was selected"
 
 ### Check right number of arguments supplied
 
-Here we test that the right number of [arguments](/Programming_Languages/Shell/Passing_arguments_and_options_to_Bash_scripts.md) have been passed to the script:
+Here we test that the right number of
+[arguments](/Programming_Languages/Shell/Passing_arguments_and_options_to_Bash_scripts.md)
+have been passed to the script:
 
 ```sh
 if (( $#<3 )); then
@@ -105,7 +107,8 @@ fi
 
 ## Check the response is valid
 
-The following example demonstrates checking an input for a pattern (a data-link integer sequence):
+The following example demonstrates checking an input for a pattern (a data-link
+integer sequence):
 
 ```sh
 read -p "Which year? [nnnn] " year

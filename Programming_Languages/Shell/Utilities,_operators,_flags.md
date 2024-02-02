@@ -5,7 +5,8 @@ tags:
   - shell
 ---
 
-The following are useful built-in utility methods that you can use for checking and validation in the course of your bash scripts.
+The following are useful built-in utility methods that you can use for checking
+and validation in the course of your bash scripts.
 
 ## Flags
 

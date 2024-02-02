@@ -6,20 +6,25 @@ tags: [docker]
 
 # Docker Compose
 
-- Docker Compose (DC) is a tool for defining and running multi-container applications. A typical example would be combining a FE with a BE implementation and database as three related but distinct containers.
+- Docker Compose (DC) is a tool for defining and running multi-container
+  applications. A typical example would be combining a FE with a BE
+  implementation and database as three related but distinct containers.
 
 - DC is a prime example of _infrastructure as code_.
 
-- A YAML file defines all the required configuration and **all services can be started with a single command**.
+- A YAML file defines all the required configuration and **all services can be
+  started with a single command**.
 
-- It provides a consistent configuration accross environments: development, test, production
+- It provides a consistent configuration accross environments: development,
+  test, production
 
 ## Composition
 
 Three step process:
 
 1. Define your application image in a Dockerfile
-2. Define the services in `docker-compose.yaml` (backend services, networks, volumes)
+2. Define the services in `docker-compose.yaml` (backend services, networks,
+   volumes)
 3. Start the entire application with `docker compose up`
 
 ### `docker-compose.yml`
@@ -27,9 +32,11 @@ Three step process:
 - Must always begin with `version`
 - Must have `services` map
   - This defines the different components that comprise your application
-  - Services can be either an image reference (the one that generates the container you want to include) or a build context
+  - Services can be either an image reference (the one that generates the
+    container you want to include) or a build context
 
-Look at the following example. It runs a Python Flask frontend connected to a Redis key-value pair database for backend.
+Look at the following example. It runs a Python Flask frontend connected to a
+Redis key-value pair database for backend.
 
 ```yml
 # docker-compose.yml
@@ -47,7 +54,9 @@ services:
     image: "redis:alpine"
 ```
 
-`depends_on` is important - it means this container must be running first before any others. If this is a DB, it means the data is accessible before the frontend request start.
+`depends_on` is important - it means this container must be running first before
+any others. If this is a DB, it means the data is accessible before the frontend
+request start.
 
 ## Main commands
 
@@ -68,7 +77,9 @@ docker compose top
 
 ## Environment variables
 
-You can define them in the compose file or name them and leave them blank. If you do this, Docker will look in the host environment for the variable which is really handy:
+You can define them in the compose file or name them and leave them blank. If
+you do this, Docker will look in the host environment for the variable which is
+really handy:
 
 ```yml
 ...

@@ -21,7 +21,8 @@ git branch --no-merged
 git branch -r --no-merged
 ```
 
-The above cases run the merge check from the point of view of HEAD as this is the default.
+The above cases run the merge check from the point of view of HEAD as this is
+the default.
 
 But we can also run it from any branch.
 

@@ -6,11 +6,20 @@ tags: [OOP]
 
 # Dependency injection
 
-Dependency injection is an object-oriented design pattern that allows for the decoupling of dependencies between objects making code more maintainable, testable and modular.
+Dependency injection is an object-oriented design pattern that allows for the
+decoupling of dependencies between objects making code more maintainable,
+testable and modular.
 
-The basic idea is to resist having any class (C) depend on the specific implementation details of any other class to which it sustains a dependency (D). If we can abstract the implementation of D, this makes it easier to swap-out and change C's dependencies later on without having to re-write C as a result of changes to D.
+The basic idea is to resist having any class (C) depend on the specific
+implementation details of any other class to which it sustains a dependency (D).
+If we can abstract the implementation of D, this makes it easier to swap-out and
+change C's dependencies later on without having to re-write C as a result of
+changes to D.
 
-This is where interfaces become very helpful because they are schematic representations of the main methods in a given class (basically their names, params and return value). As long as this is kept consistent in D when changes are made, you avoid conflicts when changes or refactorings are made to D.
+This is where interfaces become very helpful because they are schematic
+representations of the main methods in a given class (basically their names,
+params and return value). As long as this is kept consistent in D when changes
+are made, you avoid conflicts when changes or refactorings are made to D.
 
 ## Example
 
@@ -30,7 +39,8 @@ interface ILogger {
 }
 ```
 
-So this is a class that has a single method `log` which receives a `message` string as an argument and returns a side-effect.
+So this is a class that has a single method `log` which receives a `message`
+string as an argument and returns a side-effect.
 
 Now we'll implement this class:
 
@@ -59,7 +69,8 @@ class UserService {
 }
 ```
 
-We can see that the constructor references the `Logger` interface. Thus we inject the dependency when instantiating `UserService`:
+We can see that the constructor references the `Logger` interface. Thus we
+inject the dependency when instantiating `UserService`:
 
 ```ts
 // First implement our earlier class that matches the `Logger` in its shape:

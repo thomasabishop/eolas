@@ -8,7 +8,9 @@ tags: [python, data-structures]
 
 TODO: Exapand tuple notes - give more use cases
 
-Tuples are one of the main data-structures or containers in Python. Tuples are useful in cases where you want to group related data and ensure that it will not change.
+Tuples are one of the main data-structures or containers in Python. Tuples are
+useful in cases where you want to group related data and ensure that it will not
+change.
 
 Tuples have the following properties:
 

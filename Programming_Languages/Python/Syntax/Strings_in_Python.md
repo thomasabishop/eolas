@@ -6,7 +6,8 @@ tags: [python, data-types]
 
 # Strings in Python
 
-> Generally, anything that changes a string will be a method on the `str` class, rather than a built-in function like `len()`, as such it will use dot notation
+> Generally, anything that changes a string will be a method on the `str` class,
+> rather than a built-in function like `len()`, as such it will use dot notation
 
 - Strings are **immutable**: string operations produce a new string.
 
@@ -79,7 +80,9 @@ print(f'You are {user_age}')
 
 ## `str.split()`
 
-The `split()` function in Python is used to divide a string into multiple parts at the occurrence of a given separator. This function returns a [list](/Programming_Languages/Python/Syntax/Lists_in_Python.md) of substrings.
+The `split()` function in Python is used to divide a string into multiple parts
+at the occurrence of a given separator. This function returns a
+[list](/Programming_Languages/Python/Syntax/Lists_in_Python.md) of substrings.
 
 ### General syntax
 
@@ -87,9 +90,11 @@ The `split()` function in Python is used to divide a string into multiple parts 
 str.split(separator, maxsplit)
 ```
 
-- The `separator` is optional. It specifies the separator to use when splitting the string. If no separator is provided, it will default to using whitespace.
+- The `separator` is optional. It specifies the separator to use when splitting
+  the string. If no separator is provided, it will default to using whitespace.
 
-- `maxsplit` is also optional and specifies how many splits to do. Default value is -1, which is "all occurrences".
+- `maxsplit` is also optional and specifies how many splits to do. Default value
+  is -1, which is "all occurrences".
 
 ### Examples
 

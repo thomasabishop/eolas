@@ -8,7 +8,9 @@ tags:
 
 # Events
 
-Building on the previous examples for React TypeScript we are going to add a simple form that enables the user to add people to the list. This will demonstrate how we type components that use event handlers.
+Building on the previous examples for React TypeScript we are going to add a
+simple form that enables the user to add people to the list. This will
+demonstrate how we type components that use event handlers.
 
 We are going to use the preexisting interface for recording the list items:
 
@@ -67,11 +69,17 @@ return (
 };
 ```
 
-This follows standard practise for [controlled-components](/Programming_Languages/React/Hooks/Forms.md). The TS specific additions:
+This follows standard practise for
+[controlled-components](/Programming_Languages/React/Hooks/Forms.md). The TS
+specific additions:
 
-- We define the change event as being of the type `React.ChangeEvent` and state that it corresponds to a generic - `HTMLInputElement`. So we are saying that whenever this function is called we must be passing it an input element so that we can extract the event associated with its `target` property.
+- We define the change event as being of the type `React.ChangeEvent` and state
+  that it corresponds to a generic - `HTMLInputElement`. So we are saying that
+  whenever this function is called we must be passing it an input element so
+  that we can extract the event associated with its `target` property.
 
-- We are passing around variations on the `IState` interface in order to type the values that we are adding to the people array.
+- We are passing around variations on the `IState` interface in order to type
+  the values that we are adding to the people array.
 
 ## Further standard types for event handling
 
@@ -92,4 +100,5 @@ handleSubmit(e: React.SyntheticEvent) {
 }
 ```
 
-> Most event types and their associated generics will be revealed by VS Code Intellisense so you don't need to memorize them all
+> Most event types and their associated generics will be revealed by VS Code
+> Intellisense so you don't need to memorize them all

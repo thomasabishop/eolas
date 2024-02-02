@@ -26,7 +26,8 @@ They are mostly interchangeable but there are some specific differences
   }
   ```
 
-- You can add properties to an interface without generating a double declaration error:
+- You can add properties to an interface without generating a double declaration
+  error:
 
   ```ts
   interface Window {
@@ -42,11 +43,14 @@ They are mostly interchangeable but there are some specific differences
 
 You can create unions with types but not interfaces.
 
-> The consensus seems to be that interfaces should be used over types unless there are ocassions when you do not want a type to be extendable / redeclarable. Or when you want to use unions.
+> The consensus seems to be that interfaces should be used over types unless
+> there are ocassions when you do not want a type to be extendable /
+> redeclarable. Or when you want to use unions.
 
 ## How we type props
 
-The custom is to type props as an interface. This way we can easily type function prop types.
+The custom is to type props as an interface. This way we can easily type
+function prop types.
 
 ```tsx
 interface IProps {
@@ -126,6 +130,8 @@ interface IProps {
 }
 ```
 
-`React.ReactNode` covers everything that React can render. This should be definitely used when the prop is a child component, otherwise `JSX.element` is ok.
+`React.ReactNode` covers everything that React can render. This should be
+definitely used when the prop is a child component, otherwise `JSX.element` is
+ok.
 
 <p style="color: red;">Should I use type or interface? What is consensus?</p>

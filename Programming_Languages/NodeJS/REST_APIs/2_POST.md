@@ -6,7 +6,8 @@ tags: [backend, node-js, REST, APIs]
 
 # Creating a RESTful API: `POST` requests
 
-To demonstrate the handling of POST requests, we will create a handler that add a new element to the array of courses.
+To demonstrate the handling of POST requests, we will create a handler that add
+a new element to the array of courses.
 
 ```js
 router.post("/", (req, res) => {
@@ -19,7 +20,9 @@ router.post("/", (req, res) => {
 });
 ```
 
-Here we use the body that is sent from the client and isolate the field `name`. This presupposes that the client is sending us data with the following shape as the body:
+Here we use the body that is sent from the client and isolate the field `name`.
+This presupposes that the client is sending us data with the following shape as
+the body:
 
 ```json
 {
@@ -49,11 +52,17 @@ Which returns:
 { id: 4, name: 'Biology and Life Sciences' }
 ```
 
-The `id` is added by the server, not the client. Having created the new value we add it to our `courses` array. (In reality we would be creating a new entry in a database.) Then we follow the convention of returning the new value back to the client.
+The `id` is added by the server, not the client. Having created the new value we
+add it to our `courses` array. (In reality we would be creating a new entry in a
+database.) Then we follow the convention of returning the new value back to the
+client.
 
 ## Validation
 
-We should accept alterations to the database that are not first validated. We can use the [Joi validator](/Programming_Languages/NodeJS/REST_APIs/Validation.md) to vet the request:
+We should accept alterations to the database that are not first validated. We
+can use the
+[Joi validator](/Programming_Languages/NodeJS/REST_APIs/Validation.md) to vet
+the request:
 
 ```js
 function validateCourse(course) {

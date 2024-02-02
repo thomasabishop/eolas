@@ -9,7 +9,8 @@ tags: [SQL, relational-databases]
 
 ## Deleting records
 
-We use `DELETE` to delete existing records in a table. Once this is applied, the records are permanently deleted.
+We use `DELETE` to delete existing records in a table. Once this is applied, the
+records are permanently deleted.
 
 To delete **all records** whilst maintaining the table:
 
@@ -17,7 +18,8 @@ To delete **all records** whilst maintaining the table:
 DELETE FROM sales
 ```
 
-We can also use `TRUNCATE` to achieve this. It is faster but it doesn't keep a log of each deletion:
+We can also use `TRUNCATE` to achieve this. It is faster but it doesn't keep a
+log of each deletion:
 
 ```sql
 TRUNCATE TABLE sales
@@ -31,7 +33,9 @@ DELETE FROM sales WHERE sale_id = 1;
 
 ## Deleting tables
 
-We use `DROP` to remove an entire table. This will delete the table definition, and all the data, indexes, triggers, constraints and permission specifications for that table.
+We use `DROP` to remove an entire table. This will delete the table definition,
+and all the data, indexes, triggers, constraints and permission specifications
+for that table.
 
 ```sql
 DROP TABLE sales

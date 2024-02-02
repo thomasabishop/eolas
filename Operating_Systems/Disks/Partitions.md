@@ -9,15 +9,22 @@ tags:
 
 # Disk partitions
 
-A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md) which are subsections of the overall disk. The kernel presents each partition as a [block device](/Operating_Systems/Devices.md#Devices) as it would with an entire disk.
+A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md)
+which are subsections of the overall disk. The kernel presents each partition as
+a [block device](/Operating_Systems/Devices.md#Devices) as it would with an
+entire disk.
 
-The disk dedicates a small part of its contents to a **partition table**: this defines the different partitions that comprise the total disk space.
+The disk dedicates a small part of its contents to a **partition table**: this
+defines the different partitions that comprise the total disk space.
 
 ## Viewing current partitions
 
-Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: `parted`, `g(raphical)parted`, `fdisk`.
+Whenever you install a Linux distribution on a real or virtual machine, you must
+partition the drive. There are three main tools to choose from: `parted`,
+`g(raphical)parted`, `fdisk`.
 
-For a top-level overview of your disks and their main partitions you can run `lsblk` (_list block devices_):
+For a top-level overview of your disks and their main partitions you can run
+`lsblk` (_list block devices_):
 
 ```bash
 $ lsblk
@@ -64,30 +71,48 @@ Device            Start        End   Sectors   Size Type
 /dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem
 ```
 
-The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to `sda` on older machines running Linux) and it has the standard three partitions:
+The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to
+`sda` on older machines running Linux) and it has the standard three partitions:
 
 - Boot partition (`/dev/nvme0n1p1`)
-  - This takes up the smallest amount of space and exists in order to bootstrap the operating system: to load the kernel into memory when the machine starts. This is where your bootloader is stored and that will be accessed by the BIOS. In Linux this will be GRUB.
+  - This takes up the smallest amount of space and exists in order to bootstrap
+    the operating system: to load the kernel into memory when the machine
+    starts. This is where your bootloader is stored and that will be accessed by
+    the BIOS. In Linux this will be GRUB.
 - Root dir (`/dev/nvme0n1p2`)
-  - This is the domain of the [superuser](/Operating_Systems/User_Space.md#root-user-superuser). The part of the filesystem that you need sudo priveleges to access and where you manage users
+  - This is the domain of the
+    [superuser](/Operating_Systems/User_Space.md#root-user-superuser). The part
+    of the filesystem that you need sudo priveleges to access and where you
+    manage users
 - Home dir (`/dev/nvme0n1p3`)
   - The domain of the user(s)
 
 ## Types of partition table
 
-In the Linux world there are two main types: MBR and GPT. The type of table used determines how the OS boots. So although partition tables are also responsible for the partitioning of non-bootable sectors of a disk, **they are distinguished by the boot system they implement**.
-If we look at the output from `parted` and `fdisk` above we see that the harddrive uses the GPT partition type.
+In the Linux world there are two main types: MBR and GPT. The type of table used
+determines how the OS boots. So although partition tables are also responsible
+for the partitioning of non-bootable sectors of a disk, **they are distinguished
+by the boot system they implement**. If we look at the output from `parted` and
+`fdisk` above we see that the harddrive uses the GPT partition type.
 
 #### Primary, extended and logical partitions
 
-Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as 'bootable' and may be called the 'boot partition'. During the bootstrapping process this is injected into memory as the [kernel](/Operating_Systems/The_Kernel.md).
+Most standard partition tables allow for primary, extended and logical
+partitions. The primary partition is the part of the harddisk that contains the
+operating system and is thus described as 'bootable' and may be called the 'boot
+partition'. During the bootstrapping process this is injected into memory as the
+[kernel](/Operating_Systems/The_Kernel.md).
 
-The extended partition is basically everything other than the primary partition. This is typically subdivided into other partitions that are called _logical_ partitions. This is because they physically reside in the same sector of the disk (the extended partition) but are treated as virtual and independent disks.
+The extended partition is basically everything other than the primary partition.
+This is typically subdivided into other partitions that are called _logical_
+partitions. This is because they physically reside in the same sector of the
+disk (the extended partition) but are treated as virtual and independent disks.
 
 In our example above:
 
 - `/dev/nvme0n1p1` is the primary/boot partition
-- `/dev/nvme0n1p2` and `/dev/nvme0n1p3` comprise the extended partition and by themselves are each logical partitions.
+- `/dev/nvme0n1p2` and `/dev/nvme0n1p3` comprise the extended partition and by
+  themselves are each logical partitions.
 
 <dl>
   <dt>MBR</dt>
@@ -115,7 +140,8 @@ In our example above:
 
 ## Creating a partition table
 
-To demonstrate the process of partitioning a harddrive I am going to repartition an external SATA drive as if it were being primed for a fresh Linux install.
+To demonstrate the process of partitioning a harddrive I am going to repartition
+an external SATA drive as if it were being primed for a fresh Linux install.
 
 Let's take a look at the disk in its current form:
 
@@ -132,7 +158,11 @@ $ fdisk -l
   /dev/sda2  409640 976455639 976046000 465.4G Apple HFS/HFS+
 ```
 
-(This disk was previously used as a backup disk for MacOS so in addition to the extended partition which has a proprietary file system type (Apple HFS) it has a primary partition which would load the recovery OS. In contrast to my main harddrive this uses the standard SCSI prototcol and thus the partitions are prepended with `sda`.)
+(This disk was previously used as a backup disk for MacOS so in addition to the
+extended partition which has a proprietary file system type (Apple HFS) it has a
+primary partition which would load the recovery OS. In contrast to my main
+harddrive this uses the standard SCSI prototcol and thus the partitions are
+prepended with `sda`.)
 
 #### 1. Unmount existing partitions
 
@@ -176,7 +206,8 @@ NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda           8:0    0 465.7G  0 disk
 ```
 
-So now the disk has no partitions, just the physical disk space and no mountpoints. We are ready to re-partition.
+So now the disk has no partitions, just the physical disk space and no
+mountpoints. We are ready to re-partition.
 
 #### 3. Re-partition the disk
 
@@ -239,10 +270,13 @@ sda           8:0    0 465.7G  0 disk
 
 #### Naming a partition
 
-By default each partition will have its GUID as its name, but you can add a human friendly name with:
+By default each partition will have its GUID as its name, but you can add a
+human friendly name with:
 
 ```bash
 sudo e2label /dev/sda1 my_human_name
 ```
 
-> Whilst we have created our partitions we cannot yet mount them. This is because we have not yet set up a filesystem on the partitions. This is the next step.
+> Whilst we have created our partitions we cannot yet mount them. This is
+> because we have not yet set up a filesystem on the partitions. This is the
+> next step.

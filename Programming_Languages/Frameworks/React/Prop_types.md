@@ -9,7 +9,10 @@ tags:
 
 # Prop types
 
-**The `prop-types` package allows us to introduce type-checking during the development runtime of a React application. With larger applications or those with complex data flows, this can help reduce errors and bugs during development. This is a bit like using TypeScript but on a more minimal level.**
+**The `prop-types` package allows us to introduce type-checking during the
+development runtime of a React application. With larger applications or those
+with complex data flows, this can help reduce errors and bugs during
+development. This is a bit like using TypeScript but on a more minimal level.**
 
 ## Install
 
@@ -20,7 +23,7 @@ npm install prop-types
 ## Usage
 
 ```jsx
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 ```
 
 ## Examples
@@ -35,9 +38,14 @@ function Page(props) {
       <Typography className={classes.heading} variant="h1">
         {props.h1}
       </Typography>
-      {props.h2 !== '' && <Typography variant="h2">{props.h2}</Typography>}
+      {props.h2 !== "" && <Typography variant="h2">{props.h2}</Typography>}
       {props.paras.map((paragraph, index) => (
-        <Typography className={classes.paragraph} key={index} variant="body1" gutterBottom>
+        <Typography
+          className={classes.paragraph}
+          key={index}
+          variant="body1"
+          gutterBottom
+        >
           {paragraph}
         </Typography>
       ))}
@@ -57,7 +65,9 @@ function Page(props) {
 }
 ```
 
-Before the final `export default` statement, we would add a PropTypes object that specifies the data or reference type that is required by each prop cited in the component:
+Before the final `export default` statement, we would add a PropTypes object
+that specifies the data or reference type that is required by each prop cited in
+the component:
 
 ```jsx
 Page.propTypes = {
@@ -70,11 +80,13 @@ Page.propTypes = {
 };
 ```
 
-If one of these type checks failed you get a very semantic Warning in the console specifying which prop is not consistent with your prop type declaration.
+If one of these type checks failed you get a very semantic Warning in the
+console specifying which prop is not consistent with your prop type declaration.
 
 ## Additional checks
 
-Above are the most frequent and basic checks, but there are many other conditions you can check for:
+Above are the most frequent and basic checks, but there are many other
+conditions you can check for:
 
 ```jsx
 // The full list of types

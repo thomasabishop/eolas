@@ -10,7 +10,8 @@ tags:
 
 Definition of a **prime number**:
 
-> For any whole number $n$ where $n \neq 1$, $n$ is prime if and only if its sole [factors](Factors%20and%20divisors.md) are $1$ and $n$
+> For any whole number $n$ where $n \neq 1$, $n$ is prime if and only if its
+> sole [factors](Factors%20and%20divisors.md) are $1$ and $n$
 
 Definition of a **composite number**:
 

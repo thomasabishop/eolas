@@ -25,7 +25,9 @@ app.listen(8080, () =>
 
 ## Add GraphQL as middlewear
 
-Next we introduce GraphQL as a piece of Node.js [middlewear](/Programming_Languages/Node/Architecture/Middleware.md), with the `app.use()` method.
+Next we introduce GraphQL as a piece of Node.js
+[middlewear](/Programming_Languages/Node/Architecture/Middleware.md), with the
+`app.use()` method.
 
 ```js
 import { graphqlHTTP } from "express-graphql";
@@ -40,6 +42,9 @@ app.use(
 );
 ```
 
-- `schema` is a reference to our GraphQL schema - the structure of the fields that define our server.
+- `schema` is a reference to our GraphQL schema - the structure of the fields
+  that define our server.
 - `rootValue` is a reference to our resolvers.
-- `graphiql` is the GUI tool that will be served from the GraphQL endpoint at `localhost:8080/graphql`. This tool enables us to interrogate our data using the defined schema and see what data we would get back from frontend queries.
+- `graphiql` is the GUI tool that will be served from the GraphQL endpoint at
+  `localhost:8080/graphql`. This tool enables us to interrogate our data using
+  the defined schema and see what data we would get back from frontend queries.

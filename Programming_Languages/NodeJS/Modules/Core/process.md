@@ -8,17 +8,24 @@ tags:
 
 # The `process` module in Node.js
 
-`process` is a core module and a global object accessible from anywhere in a Node.js application. It contains functionality that allows us to interact with information about the current process instance of Node.
+`process` is a core module and a global object accessible from anywhere in a
+Node.js application. It contains functionality that allows us to interact with
+information about the current process instance of Node.
 
-For example, we can use it to get environment information, read environment variables, parse arguments that are passed to the run command, communicate with the terminal and exit the current process.
+For example, we can use it to get environment information, read environment
+variables, parse arguments that are passed to the run command, communicate with
+the terminal and exit the current process.
 
 ## Managing runtime environments
 
-See [Managing Environments](/Programming_Languages/NodeJS/Architecture/Managing_environments.md).
+See
+[Managing Environments](/Programming_Languages/NodeJS/Architecture/Managing_environments.md).
 
 ## Accessing arguments: `process.argv`
 
-We can use `process.argv` to return an array containing the command-line arguments passed when a Node process is launched. This could be a whole-app entrypoint (i.e. `index.js`) or a single file we are running.
+We can use `process.argv` to return an array containing the command-line
+arguments passed when a Node process is launched. This could be a whole-app
+entrypoint (i.e. `index.js`) or a single file we are running.
 
 For instance if we run the following file:
 
@@ -38,9 +45,11 @@ We get:
 ]
 ```
 
-The first item is the last executed process. The second is the array of arguments.
+The first item is the last executed process. The second is the array of
+arguments.
 
-In the array, the first value is a reference to the Node runtime binary. The second is the file that was passed to Node.
+In the array, the first value is a reference to the Node runtime binary. The
+second is the file that was passed to Node.
 
 If we passed in a parameter we would get that too:
 
@@ -58,7 +67,8 @@ Gives us:
 ]
 ```
 
-When writing Node CLI applications we can write functions that parse standard input. For example:
+When writing Node CLI applications we can write functions that parse standard
+input. For example:
 
 ```js
 function parseStandardInput(flag) {
@@ -89,7 +99,10 @@ node alpha.js
 Hello from file
 ```
 
-Typically we want to write and read data that the user provides. To do this we need to wait on that event. So we use Node's asynchonous [event listeners](/Programming_Languages/NodeJS/Modules/Core/events.md). We wait on the `data` event:
+Typically we want to write and read data that the user provides. To do this we
+need to wait on that event. So we use Node's asynchonous
+[event listeners](/Programming_Languages/NodeJS/Modules/Core/events.md). We wait
+on the `data` event:
 
 ```js
 process.stdin.on("data", (data) => {
@@ -102,7 +115,8 @@ process.stdout.write(` \n > `);
 
 This waits for whatever input is given and then echoes it.
 
-Currently there is no way to end this process; it will just keep echoing the input.
+Currently there is no way to end this process; it will just keep echoing the
+input.
 
 So we add an exit clause:
 
@@ -121,7 +135,8 @@ process.on("exit", () => {
 });
 ```
 
-> Timings can also obviously be managed via the `setTimeout` and `setInterval` methods.
+> Timings can also obviously be managed via the `setTimeout` and `setInterval`
+> methods.
 
 ### Additional useful methods
 
@@ -132,7 +147,8 @@ process.stdout.cursorTo([int]);
 
 ### `readline`
 
-The core `readline` module simplifies the handling of standard input and output by providing a wrapper. It reads the input stream line by line. Basic usage:
+The core `readline` module simplifies the handling of standard input and output
+by providing a wrapper. It reads the input stream line by line. Basic usage:
 
 ```js
 var readline = require("readline");

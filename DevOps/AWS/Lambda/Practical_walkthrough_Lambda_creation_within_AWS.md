@@ -13,19 +13,23 @@ First we name the function and accept the defaults:
 
 ![](/_img/lambda_func_one.png)
 
-This presents us with the function dashboard - a graphical representation of the Lambda showing [triggers]() as an input and destination as an output:
+This presents us with the function dashboard - a graphical representation of the
+Lambda showing [triggers]() as an input and destination as an output:
 
 ![](/_img/lambda-func-two.png)
 
-Beneath this we have a code editor with the handler function with a basic boilerplate:
+Beneath this we have a code editor with the handler function with a basic
+boilerplate:
 
 ![](/_img/lambda-func-three.png)
 
 ## Adding a trigger
 
-Next we need to add a [trigger](/DevOps/AWS/AWS_Lambda/Lambda_triggers.md) that execute the handler.
+Next we need to add a [trigger](/DevOps/AWS/AWS_Lambda/Lambda_triggers.md) that
+execute the handler.
 
-We will do this using [AWS API Gateway](/DevOps/AWS/AWS_API_Gateway.md). We select "Add trigger" from the dashboard view and input basic settings:
+We will do this using [AWS API Gateway](/DevOps/AWS/AWS_API_Gateway.md). We
+select "Add trigger" from the dashboard view and input basic settings:
 
 ![](/_img/api-gateway-trigger.png)
 
@@ -37,11 +41,15 @@ With the endpoint and other settings displayed:
 
 ![](/_img/trigger-info.png)
 
-If we go to the endpoint URL (`https://4kjqwbvd7g.execute-api.us-east-1.amazonaws.com/default/myFirstFunction`), we will see the output: `Hello from Lambda`.
+If we go to the endpoint URL
+(`https://4kjqwbvd7g.execute-api.us-east-1.amazonaws.com/default/myFirstFunction`),
+we will see the output: `Hello from Lambda`.
 
 ## Handling parameters
 
-We can make the example more realistic by expanding the handler to accept query parameters. We do this by accessing the value `queryStringParameters` on the `event` object:
+We can make the example more realistic by expanding the handler to accept query
+parameters. We do this by accessing the value `queryStringParameters` on the
+`event` object:
 
 ```js
 exports.handler = async (event) => {
@@ -61,10 +69,12 @@ exports.handler = async (event) => {
 };
 ```
 
-If we now access `https://4kjqwbvd7g.execute-api.us-east-1.amazonaws.com/default/myFirstFunction?name=Thomas`
+If we now access
+`https://4kjqwbvd7g.execute-api.us-east-1.amazonaws.com/default/myFirstFunction?name=Thomas`
 
 We get `Hello Thomas` as output.
 
-For a more advanced API with multiple endpoints and parameters, it's easiest to use Postman:
+For a more advanced API with multiple endpoints and parameters, it's easiest to
+use Postman:
 
 ![](/_img/postman-lambda.png)

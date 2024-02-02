@@ -9,7 +9,8 @@ tags: [mongo-db]
 
 ## Arch Linux troubleshooting
 
-Most times any problems will be a result of a Mongo process that is already running. Resolve with:
+Most times any problems will be a result of a Mongo process that is already
+running. Resolve with:
 
 ```bash
 # Kill running Mongo process...
@@ -33,4 +34,5 @@ sudo systemctl start --now mongodb
 rm /tmp/mongodb-27017.sock
 ```
 
-For additional command line utilities you will also need to install `mongodb-tools` from the AUR.
+For additional command line utilities you will also need to install
+`mongodb-tools` from the AUR.

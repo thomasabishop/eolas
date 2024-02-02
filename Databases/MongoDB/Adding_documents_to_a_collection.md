@@ -6,7 +6,9 @@ tags: [mongo-db, node-js, mongoose]
 
 # Adding documents to a collection
 
-We have our database (`playground`) and collection (`courses`) established. We now need to add documents to our collection. We will do this via a function since this will be an asynchronous process:
+We have our database (`playground`) and collection (`courses`) established. We
+now need to add documents to our collection. We will do this via a function
+since this will be an asynchronous process:
 
 ```js
 const pythonCourse = new Course({
@@ -28,7 +30,8 @@ async function addCourseDocToDb(courseDocument) {
 addCourseDocToDb(nodeCourse);
 ```
 
-When we run this, we call the `save` method on the Mongoose schema. We will then have the Mongo document outputted to the console:
+When we run this, we call the `save` method on the Mongoose schema. We will then
+have the Mongo document outputted to the console:
 
 ```
 {

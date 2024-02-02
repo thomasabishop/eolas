@@ -6,7 +6,8 @@ tags: [python, timestamps]
 
 # Dates in Python
 
-Python's built-in `datetime` module provides various classes for manipulating dates and times. Below are some common use-cases with examples.
+Python's built-in `datetime` module provides various classes for manipulating
+dates and times. Below are some common use-cases with examples.
 
 ### Importing `datetime`
 
@@ -27,7 +28,8 @@ print("Current datetime:", current_datetime)
 
 ### Creating Date Objects
 
-To create a date object, you can use `datetime.date`, specifying the year, month, and day.
+To create a date object, you can use `datetime.date`, specifying the year,
+month, and day.
 
 ```python
 some_date = datetime.date(2021, 9, 30)
@@ -36,7 +38,8 @@ print("Some date:", some_date)
 
 ### Creating Time Objects
 
-To create a time object, you can use `datetime.time`, specifying the hour, minute, second, and optionally microsecond.
+To create a time object, you can use `datetime.time`, specifying the hour,
+minute, second, and optionally microsecond.
 
 ```python
 some_time = datetime.time(13, 24, 56)

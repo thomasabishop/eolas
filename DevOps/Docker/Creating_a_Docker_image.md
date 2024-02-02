@@ -11,11 +11,13 @@ We create a new image with `docker build...`
 The key components of a build:
 
 - A Dockerfile
-- An asset directory (the **build context**) containing the Dockerfile and all resources needed for the build.
+- An asset directory (the **build context**) containing the Dockerfile and all
+  resources needed for the build.
 
 ## Syntax
 
-Here is an example of a Dockerfile that builds a container for running a Python app:
+Here is an example of a Dockerfile that builds a container for running a Python
+app:
 
 ```Dockerfile
 # Use an official Python runtime as a parent image
@@ -86,15 +88,29 @@ CMD ["npm", "start"]
 
 ### Two modes of `RUN`: shell and exec
 
-The RUN command in a Dockerfile has two forms: the "exec" form and the "shell" form. Both forms are used to execute commands during the build process, but they have different syntax and behavior.
+The RUN command in a Dockerfile has two forms: the "exec" form and the "shell"
+form. Both forms are used to execute commands during the build process, but they
+have different syntax and behavior.
 
-Exec form is written as `RUN ["executable", "param1", "param2", ...]`. This form executes the command directly without invoking a shell. As a result, shell processing features like environment variable substitution, pipes, and redirects are not available. It is the preferred form when you need to run a command without relying on shell behavior or when you want to avoid shell-related issues, such as variable substitution or command injection.
+Exec form is written as `RUN ["executable", "param1", "param2", ...]`. This form
+executes the command directly without invoking a shell. As a result, shell
+processing features like environment variable substitution, pipes, and redirects
+are not available. It is the preferred form when you need to run a command
+without relying on shell behavior or when you want to avoid shell-related
+issues, such as variable substitution or command injection.
 
-Shell form is written as `RUN command param1 param2 ....` This form executes the command within a shell, which is /bin/sh -c on Linux and cmd /S /C on Windows. It allows for shell processing, enabling environment variable substitution, pipes, redirects, and other shell features. This form is preferred when you need to use shell features or when you want to chain multiple commands together.
+Shell form is written as `RUN command param1 param2 ....` This form executes the
+command within a shell, which is /bin/sh -c on Linux and cmd /S /C on Windows.
+It allows for shell processing, enabling environment variable substitution,
+pipes, redirects, and other shell features. This form is preferred when you need
+to use shell features or when you want to chain multiple commands together.
 
 ## Environmental variables
 
-> ENV instructions in a Dockerfile are used to define environment variables that can be accessed by the processes running inside the container. These variables can be used to configure the behavior of the application, pass parameters, or store sensitive information like API keys.
+> ENV instructions in a Dockerfile are used to define environment variables that
+> can be accessed by the processes running inside the container. These variables
+> can be used to configure the behavior of the application, pass parameters, or
+> store sensitive information like API keys.
 
 ```Dockerfile
 # Use an official Node.js runtime as a parent image
@@ -123,9 +139,13 @@ EXPOSE 8000
 CMD ["npm", "start"]
 ```
 
-In this example, two environment variables are defined: PORT and API_KEY. These variables can be accessed in the application code using process.env.PORT and process.env.API_KEY in Node.js, for example.
+In this example, two environment variables are defined: PORT and API_KEY. These
+variables can be accessed in the application code using process.env.PORT and
+process.env.API_KEY in Node.js, for example.
 
-To override the environment variables defined in the Dockerfile when running the container, you can use the -e flag followed by the variable name and its new value in the docker run command:
+To override the environment variables defined in the Dockerfile when running the
+container, you can use the -e flag followed by the variable name and its new
+value in the docker run command:
 
 ```sh
 docker run -e PORT=8080 -e API_KEY=new_secret_key -p 8080:8000 <image_name>

@@ -8,7 +8,8 @@ tags: [python]
 
 ## For
 
-There are three main types of `for` loop in Python and they all use the `for...in` clause:
+There are three main types of `for` loop in Python and they all use the
+`for...in` clause:
 
 1. Traditional `for` loop with range:
 
@@ -33,8 +34,8 @@ There are three main types of `for` loop in Python and they all use the `for...i
        print(fruit)
    ```
 
-3. `for` loop with `enumerate()` function:
-   Iterate over an iterable whilst also keeping track of the index of the current element:
+3. `for` loop with `enumerate()` function: Iterate over an iterable whilst also
+   keeping track of the index of the current element:
    ```py
    for index, fruit in enumerate(fruits):
        print(f"Index {index}: {fruit}")

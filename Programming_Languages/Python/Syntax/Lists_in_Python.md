@@ -20,11 +20,16 @@ Lists have the following properties:
 
 ## Duplicating lists
 
-When we want to duplicate a list, we can't just reassign the list to a new variable and expect this to be a copy.
+When we want to duplicate a list, we can't just reassign the list to a new
+variable and expect this to be a copy.
 
-If we edit this "copy" it will update the original list since it copies the pointer and will therefore point to the same address in memory. Instead we have to use the List `copy()` function which returns a new list and doesn't modify the original list.
+If we edit this "copy" it will update the original list since it copies the
+pointer and will therefore point to the same address in memory. Instead we have
+to use the List `copy()` function which returns a new list and doesn't modify
+the original list.
 
-Relatedly, we should distinguish those List methods and functions which create a new list (non-destructive) and those that mutate the existing list.
+Relatedly, we should distinguish those List methods and functions which create a
+new list (non-destructive) and those that mutate the existing list.
 
 ## Basic usage
 
@@ -99,9 +104,11 @@ print(a_list)
 We distinguish `del` from `remove` when removing elements from lists:
 
 - `del` requires an index value
-- `remove` requires a value reference (i.e. the name of the element rather than its index)
+- `remove` requires a value reference (i.e. the name of the element rather than
+  its index)
 
-`del` is simple deletion whereas `remove` searches the list. Therefore `del` is more efficient.
+`del` is simple deletion whereas `remove` searches the list. Therefore `del` is
+more efficient.
 
 ### `del`
 
@@ -135,7 +142,8 @@ my_list.remove(30)
 print(my_list)  # Output will be [10, 20, 40, 50]
 ```
 
-> If the value is not found in the list, ` remove()`` will raise a ValueError. To avoid this, you can check whether the value exists in the list before calling  `remove()`
+> If the value is not found in the list,
+> ` remove()`` will raise a ValueError. To avoid this, you can check whether the value exists in the list before calling  `remove()`
 
 ### pop()
 

@@ -12,7 +12,8 @@ tags: []
 
 - Major
 
-  - New feature which may potentially cause breaking changes to applications dependent on the previous major version.
+  - New feature which may potentially cause breaking changes to applications
+    dependent on the previous major version.
 
 - Minor
 
@@ -26,13 +27,17 @@ tags: []
 
 ### Caret
 
-Interested in any version so long as the major version remains at $n$. E.g if we are at `^4.2.1` and we upgrade, we are ok with `4.5.3` or `4.8.2`. We are not bothered about the minor or patch version.
+Interested in any version so long as the major version remains at $n$. E.g if we
+are at `^4.2.1` and we upgrade, we are ok with `4.5.3` or `4.8.2`. We are not
+bothered about the minor or patch version.
 
 This is equivalent to `4.x`
 
 ### Tilde
 
-Interested in any patch version within set major and minor parameters. For example `~1.8.3` means you don't mind any patch version so long as it is a patch for `1.8`. This is equivalent to `1.8.x`.
+Interested in any patch version within set major and minor parameters. For
+example `~1.8.3` means you don't mind any patch version so long as it is a patch
+for `1.8`. This is equivalent to `1.8.x`.
 
 ### No tilde or caret
 

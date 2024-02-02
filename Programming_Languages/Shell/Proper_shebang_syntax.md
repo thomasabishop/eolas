@@ -7,7 +7,8 @@ tags:
 
 # Proper shebang syntax
 
-This is a more portable way of writing the shebang because the location of Bash on different systems can vary.
+This is a more portable way of writing the shebang because the location of Bash
+on different systems can vary.
 
 ```bash
 #!/usr/bin/env Bash

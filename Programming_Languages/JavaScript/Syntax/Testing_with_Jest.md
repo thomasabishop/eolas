@@ -87,7 +87,8 @@ test("should use mocked module functions", () => {
 
 ### Inline mocking versus "per test" mocking
 
-There are two different architectures that we can use when mocking modules and classes: **inline** and **per test** mocking.
+There are two different architectures that we can use when mocking modules and
+classes: **inline** and **per test** mocking.
 
 Here is the inline case:
 
@@ -129,19 +130,29 @@ it("should do something", () => {
 The benefits of inline:
 
 - Inline is good because everything is set up in one place
-- Inline keeps consistency accross tests: every test case in the file will use the same mocked function unless overwritten within a test
-- It lends itself to being a _global_ mock that can be used accross test files in a `__mocks__/` directory
+- Inline keeps consistency accross tests: every test case in the file will use
+  the same mocked function unless overwritten within a test
+- It lends itself to being a _global_ mock that can be used accross test files
+  in a `__mocks__/` directory
 
 The benefits of per-test:
 
-- You can very mock implementations within the file, providing more granular control. You can redefine `someModuleMock` or parts of it (`someModule.someFunction`) throughout your test file to accomodate varied requirements between tests
-- It’s beneficial when your tests have divergent requirements, as you can perform more detailed setups and overrides for each individual test case or suite, ensuring mocks are configured exactly as required.
+- You can very mock implementations within the file, providing more granular
+  control. You can redefine `someModuleMock` or parts of it
+  (`someModule.someFunction`) throughout your test file to accomodate varied
+  requirements between tests
+- It’s beneficial when your tests have divergent requirements, as you can
+  perform more detailed setups and overrides for each individual test case or
+  suite, ensuring mocks are configured exactly as required.
 
 #### Overriding inline mocks
 
-Per test mocking makes it straightforward to change the test parameters of the mocked module or class but you can also override inline mocks.
+Per test mocking makes it straightforward to change the test parameters of the
+mocked module or class but you can also override inline mocks.
 
-If we were using the `someModule` inline mock and we wanted to override the `someFunction` function that we have defined inline, we would first import the `someFunction` function and then use `mockImplementation` against it:
+If we were using the `someModule` inline mock and we wanted to override the
+`someFunction` function that we have defined inline, we would first import the
+`someFunction` function and then use `mockImplementation` against it:
 
 ```js
 import { someFunction } from "./some_module.js";
@@ -152,7 +163,10 @@ expect(someFunction()).toBe("custom value");
 someFunction.mockRestore();
 ```
 
-Note: although we are importing `someFunction` we are not actually importing the real function tha belongs to the module. Because Jest mocks all of its properties and methods with the inline syntax, we are actually just importing that which Jest has aready mocked, but the syntax is a bit misleading.
+Note: although we are importing `someFunction` we are not actually importing the
+real function tha belongs to the module. Because Jest mocks all of its
+properties and methods with the inline syntax, we are actually just importing
+that which Jest has aready mocked, but the syntax is a bit misleading.
 
 #### Applied to classes
 
@@ -220,7 +234,9 @@ test("spy on toBeCalledFunction", () => {
 
 ## Mock a function that needs to resolve to something within another function
 
-We have two functions, one that gets data and another that processes it. We want to mock the function that gets data and return a value that the processing function can use.
+We have two functions, one that gets data and another that processes it. We want
+to mock the function that gets data and return a value that the processing
+function can use.
 
 ```js
 async function getData() {
@@ -251,7 +267,8 @@ test("test processData function", async () => {
 });
 ```
 
-We could also combine the above with a spy to check that the `getData` function was called:
+We could also combine the above with a spy to check that the `getData` function
+was called:
 
 ```js
 const getDataSpy = jest
@@ -335,7 +352,8 @@ it("sends data", async () => {
 });
 ```
 
-If we want to change the `get` and `post` values in different tests, we can do so by using `mockImplementation`:
+If we want to change the `get` and `post` values in different tests, we can do
+so by using `mockImplementation`:
 
 ## Mocking exceptions
 
@@ -417,9 +435,12 @@ it("should return page for deletion from `preview`", async () => {
 ...
 ```
 
-Each time we are passing in three parameters to the `deletePageFromS3` function which is the object under test. Each time there are different variations in the object that is output.
+Each time we are passing in three parameters to the `deletePageFromS3` function
+which is the object under test. Each time there are different variations in the
+object that is output.
 
-To parameterize the process rather than use repeated `it` blocks we can combine the input paramters and outputs into an array:
+To parameterize the process rather than use repeated `it` blocks we can combine
+the input paramters and outputs into an array:
 
 ```js
 const testParams = [
@@ -454,7 +475,8 @@ it.each(testParams)(
 );
 ```
 
-This uses the `%s` variable to print the parameters from each test, which outputs:
+This uses the `%s` variable to print the parameters from each test, which
+outputs:
 
 ```
   ✓ should return page for deletion from {

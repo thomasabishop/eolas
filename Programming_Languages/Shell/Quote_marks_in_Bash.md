@@ -18,7 +18,8 @@ echo 'The directory is $(pwd)'
 
 ## Double-quotes
 
-Bash will interpret strings as strings but will interpret expansions and substitutions as executable processes:
+Bash will interpret strings as strings but will interpret expansions and
+substitutions as executable processes:
 
 ```bash
 $pointlessVar='directory'
@@ -28,4 +29,5 @@ echo "The ${pointlessVar}"
 # The directory is /home/thomas
 ```
 
-It is therefore generally best to use double quotes whenever we wish to return mixed values.
+It is therefore generally best to use double quotes whenever we wish to return
+mixed values.

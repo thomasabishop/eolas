@@ -6,11 +6,14 @@ tags: []
 
 # DeMorgan's Laws
 
-DeMorgan's laws express some fundamental equivalences that obtain between the Boolean [connectives](/Logic/Propositional_logic/Truth-functional_connectives.md).
+DeMorgan's laws express some fundamental equivalences that obtain between the
+Boolean
+[connectives](/Logic/Propositional_logic/Truth-functional_connectives.md).
 
 ## First Law
 
-> The negation of a conjunction is logically equivalent to the disjunction of the negations of the original conjuncts.
+> The negation of a conjunction is logically equivalent to the disjunction of
+> the negations of the original conjuncts.
 
 $$
 \lnot (P \land Q) \leftrightarrow \lnot P \lor \lnot Q
@@ -25,7 +28,8 @@ The equivalence is demonstrated with the following truth-table
 | F   | T   | T                    | T                       |
 | F   | F   | T                    | T ### Truth conditions  |
 
-> The negation of a disjunction is equivalent to the conjunction of the negation of the original disjuncts.
+> The negation of a disjunction is equivalent to the conjunction of the negation
+> of the original disjuncts.
 
 $$
 \lnot (P \lor Q) \leftrightarrow \lnot P \land \lnot Q

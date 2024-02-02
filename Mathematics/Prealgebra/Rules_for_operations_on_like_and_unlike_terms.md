@@ -21,7 +21,8 @@ $$
 
 ### Unlike terms
 
-> Subtract smaller from larger amount and then affix the sign of the larger amount to the sum.
+> Subtract smaller from larger amount and then affix the sign of the larger
+> amount to the sum.
 
 #### Negative plus positive
 
@@ -48,7 +49,8 @@ $$
 
 ### Like terms
 
-> Turn the operator and second negative into a plus sign and execute as an addition.
+> Turn the operator and second negative into a plus sign and execute as an
+> addition.
 
 $$
 \\begin{split}
@@ -92,7 +94,8 @@ $$
 
 ### Unlike terms
 
-> The product of a positive and a negative number will always be a negative number.
+> The product of a positive and a negative number will always be a negative
+> number.
 
 $$
 -3 \cdot 5 = -15
@@ -112,7 +115,8 @@ $$
 
 ### Unlike terms
 
-> The quotient of a positive and a negative number will always be a negative number.
+> The quotient of a positive and a negative number will always be a negative
+> number.
 
 $$
 -15 / 3 = -5

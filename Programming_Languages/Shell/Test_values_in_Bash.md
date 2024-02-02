@@ -8,13 +8,20 @@ tags:
 
 # Test values in Bash
 
-`test` is a built-in command that is used to compare values or determine whether something is the case.
+`test` is a built-in command that is used to compare values or determine whether
+something is the case.
 
-We can use the command `test` but it is more common to test a condition implicity by using square brackets. The square brackets are an alias for `test`. We use this alias when we use `IF` logic.
+We can use the command `test` but it is more common to test a condition
+implicity by using square brackets. The square brackets are an alias for `test`.
+We use this alias when we use `IF` logic.
 
-When we run a test the result we get back is a return status of a `0` or a `1`. `0` indicates that the test was a success and `1` means failure. (Bear in mind this is in contrast to most all other programming languages.)
+When we run a test the result we get back is a return status of a `0` or a `1`.
+`0` indicates that the test was a success and `1` means failure. (Bear in mind
+this is in contrast to most all other programming languages.)
 
-If we run a test in the command line we won't get a `0` or a `1` or back, there will just be silence from the shell. We can explicitly invoke the return value with variable `$?`, e.g:
+If we run a test in the command line we won't get a `0` or a `1` or back, there
+will just be silence from the shell. We can explicitly invoke the return value
+with variable `$?`, e.g:
 
 ```bash
 [ -d ~ ] # is the home directory a directory?
@@ -74,7 +81,8 @@ We can use the following structure to run a process if a test condition obtains:
 
 When we use **double brackets** we are using _extended_ `test`.
 
-The extended test supports the standard `test` comparisons and adds other features:
+The extended test supports the standard `test` comparisons and adds other
+features:
 
 - The use of Boolean operators:
   ```
@@ -83,13 +91,16 @@ The extended test supports the standard `test` comparisons and adds other featur
 
 ### Using regular expressions
 
-Extended test also allows us to use regular expressions as part of our test conditions. In order to test against a regular expression we use `=~` as the comparison operator.
+Extended test also allows us to use regular expressions as part of our test
+conditions. In order to test against a regular expression we use `=~` as the
+comparison operator.
 
 ```bash
 [[ "thomas" =~ t.* ]]; echo $?
 ```
 
-Here the test succeeds because "thomas" begins with "t" followed by any other character.
+Here the test succeeds because "thomas" begins with "t" followed by any other
+character.
 
 ## Further examples
 
@@ -107,4 +118,5 @@ else
 fi
 ```
 
-> Note: this syntax can also be used to test if a given element exists in an [array](/Programming_Languages/Shell/Lists_and_arrays.md).
+> Note: this syntax can also be used to test if a given element exists in an
+> [array](/Programming_Languages/Shell/Lists_and_arrays.md).
