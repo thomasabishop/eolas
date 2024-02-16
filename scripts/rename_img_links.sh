@@ -4,7 +4,7 @@
 
 find /home/thomas/repos/eolas/ -type f -name "*.md" | while
 read file; do
-    sed -i 's/\/img\//\/_img\//g' $file
+    sed -i 's/\/_img\//\/img\//g' $file
 done
 
 
