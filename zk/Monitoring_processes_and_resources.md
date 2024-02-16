@@ -21,7 +21,7 @@ time that they are utilising. You can also order by memory usage.
 
 _Here I have pressed `u` to show only the processes associated with my user:_
 
-![](/_img/htop.png)
+![](/img/htop.png)
 
 ### Main commands
 
@@ -130,7 +130,7 @@ using them. Without modifiers it outputs a huge amount of data. The best way to
 use it is to execute it against a specific PID. For example the below output
 gives me some useful info about which files VS Code is using:
 
-![](/_img/lsof.png)
+![](/img/lsof.png)
 
 ## System calls: `strace`
 

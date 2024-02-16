@@ -32,4 +32,4 @@ Edition)]
 The design of the diagram below emphasises the role of abstraction and
 modularity in the movement from transistors to chips:
 
-![](/_img/hardware-abstraction-hierarchy.png)
+![](/img/hardware-abstraction-hierarchy.png)

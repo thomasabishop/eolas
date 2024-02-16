@@ -31,7 +31,7 @@ tags: [physics]
 
 ## Atomic particles
 
-<img src="/home/thomas/repos/computer_science/_img/atom-diagram.svg" width="400" align="right" />
+<img src="/home/thomas/repos/computer_science/img/atom-diagram.svg" width="400" align="right" />
 
 - There are three particles comprising atoms: **protons**, **neutrons** and
   **electrons**.

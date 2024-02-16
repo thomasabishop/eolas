@@ -13,7 +13,7 @@ cell of the tape is a head, which can either move left or right, and can read
 the symbols written in the cells. The head is also capable of erasing symbols
 and writing new symbols into the cells.
 
-![Turing_machines_01.gif](../_img/Turing_machines_01.gif) The direction that the
+![Turing_machines_01.gif](../img/Turing_machines_01.gif) The direction that the
 head moves, which values it erases, and which values it writes in, are dependent
 on a set of instructions provided to the machine.0
 

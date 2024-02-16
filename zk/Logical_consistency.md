@@ -72,7 +72,7 @@ A
 has very important consequences for reasoning because if a set of propositions
 is inconsistent, any other proposition is derivable from it.
 
-![](/_img/derivation_from_contradiction.png)
+![](/img/derivation_from_contradiction.png)
 
 _A demonstration of the the consequences of deriving a contradiction in a
 sequence of reasoning._

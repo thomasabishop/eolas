@@ -18,7 +18,7 @@ accross its terminals. Through the application of
 [Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md) we can
 determine that the maximum current will be 0.9 miliamps.
 
-![](/_img/basic-circuit.png)
+![](/img/basic-circuit.png)
 
 ## Open and short circuits
 
@@ -42,4 +42,4 @@ current is represented as flowing in a straight line from the voltage source
 The circuit below is functionally identical to the previous circuit but
 represented vertically:
 
-![](/_img/vertical-circuit.png)
+![](/img/vertical-circuit.png)

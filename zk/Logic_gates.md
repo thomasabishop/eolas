@@ -96,7 +96,7 @@ tion) truth functional connective
 
 ### Symbol
 
-![](/_img/and-gate-new-2.png)
+![](/img/and-gate-new-2.png)
 
 ### Truth conditions
 
@@ -114,7 +114,7 @@ tion) truth functional connective
 
 ### Symbol
 
-![](/_img/nand-gate-new.png)
+![](/img/nand-gate-new.png)
 
 ### Truth conditions
 
@@ -143,7 +143,7 @@ NANDs alone.
 
 ### Symbol
 
-![](/_img/or-gate-new.png)
+![](/img/or-gate-new.png)
 
 ### Truth condition
 
@@ -172,7 +172,7 @@ t
 
 ### Symbol
 
-![](/_img/xor-gate-new.png)
+![](/img/xor-gate-new.png)
 
 ### Truth conditions
 
@@ -193,7 +193,7 @@ t
 
 ### Symbol
 
-![](/_img/nor-gate-new.png)
+![](/img/nor-gate-new.png)
 
 ### Truth conditions
 

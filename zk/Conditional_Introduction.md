@@ -9,4 +9,4 @@ tags: []
 If we can show that $Q$ follows from $P$ (typically via a sub-proof) than we can
 assert that P implies Q. This is also sometimes known as _Conditional Proof_
 
-![](/_img/cond-intro.png)
+![](/img/cond-intro.png)

@@ -18,7 +18,7 @@ the nucleus.
 _The diagram below demonstrates shell naming conventions and the maximum number
 of electrons per shell._
 
-![](/_img/valence-shell.svg)
+![](/img/valence-shell.svg)
 
 ## Valence
 

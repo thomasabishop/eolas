@@ -8,7 +8,7 @@ tags: [docker, containerization]
 
 ## Overview
 
-![](/_img/dock-architecture.png)
+![](/img/dock-architecture.png)
 
 - The Docker Client is a thin API for making
   [REST API](/Databases/REST/RESTful_APIs.md) to the Docker Server. Any CLI

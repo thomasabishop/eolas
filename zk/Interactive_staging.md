@@ -19,7 +19,7 @@ git add -i
 
 This opens an interface:
 
-![](/_img/git-interactive-mode-2.png)
+![](/img/git-interactive-mode-2.png)
 
 We select 2 and it lets us stage by number. If I enter 1, it will stage the
 first change.
@@ -40,7 +40,7 @@ But it is useful for staging sub-portions of a file, which are called **hunks**.
 
 We access these via **patch mode**:
 
-![](/_img/git-patch-mode.png)
+![](/img/git-patch-mode.png)
 
 ### Splitting hunks
 
@@ -59,7 +59,7 @@ mode. We enter this with `e`.
 
 This will oped up Vim for the manual work to be done:
 
-![](/_img/git-manual-hunk.png)
+![](/img/git-manual-hunk.png)
 
 We use the diff symbols `+`, `-` and space to do this.
 

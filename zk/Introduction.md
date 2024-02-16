@@ -27,4 +27,4 @@ in RDB table: units that comprise the collection.
 
 A document is a container comprising key-value pairs in the manner of an object.
 
-![](/_img/mongo-db-structure.svg)
+![](/img/mongo-db-structure.svg)

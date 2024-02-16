@@ -32,7 +32,7 @@ three lines
 
 ## Colour outputs
 
-![](/_img/terminal_colours.png)
+![](/img/terminal_colours.png)
 
 ```bash
 echo -e "\033[31;40mColoured Text\033[0m"

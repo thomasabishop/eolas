@@ -10,7 +10,7 @@ tags: [analogue]
 Analogue and digital are paradigms for recording information, specifically
 information about an object or state that obtains in the world.
 
-![](/_img/analog-digital.svg)
+![](/img/analog-digital.svg)
 
 ## Analogue
 

@@ -28,7 +28,7 @@ is the first instruction that the CPU fetches and this is what allows the kernel
 to play its mediatory role. However most of the fetch, decode, execute cycles of
 the CPU take place independently of the kernel.
 
-![](/_img/kernel-cpu-interaction.svg)
+![](/img/kernel-cpu-interaction.svg)
 
 > Fetch decode and execute refer to processor pipeline stages. They occur
 > automatically as part of normal processor operation, the kernel doesn’t

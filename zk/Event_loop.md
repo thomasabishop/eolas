@@ -28,7 +28,7 @@ If there was only one thread, this would be inefficient and unworkable.
 Therefore the framework will be multi-threaded: multiple request-response cycles
 can be executed at once by different threads.
 
-![sync-thread.svg](/_img/sync-thread.svg)
+![sync-thread.svg](/img/sync-thread.svg)
 
 To accomodate the ability to increase the scale of synchronous applications you
 need to be able to spawn more threads commensurate to increased demand. This
@@ -46,7 +46,7 @@ dispatching them asynchronously. When a request is made it sends it off and
 continues with its execution and handling new requests. Once these resolve, the
 data is returned to the main thread.
 
-![async.svg](/_img/async.svg)
+![async.svg](/img/async.svg)
 
 ## The Event Loop
 
@@ -77,7 +77,7 @@ process exits when there is no more pending work in the Event Loop, or when
 are tasks queued in the Event Loop, or present on the
 [call stack](/Software_Engineering/Call_stack.md).
 
-![](/_img/node-event-loop.svg)
+![](/img/node-event-loop.svg)
 
 The phases are as follows:
 

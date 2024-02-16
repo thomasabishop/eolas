@@ -19,11 +19,11 @@ main approaches to this:
 > $n$. We then repeat this process with the resulting factors working
 > recursively until the numbers we are left with are primes.
 
-![Untitled Diagram-Page-1.drawio.png](../../_img/Untitled%20Diagram-Page-1.drawio.png)
+![Untitled Diagram-Page-1.drawio.png](../../img/Untitled%20Diagram-Page-1.drawio.png)
 _The prime factors of 27 are 2, 3, 3_
 
 it doesn't matter which products we choose as the interim factors, we should
 always reach the same outcome:
-![Untitled Diagram-Page-3.drawio 1.png](../../_img/Untitled%20Diagram-Page-3.drawio%201.png)
+![Untitled Diagram-Page-3.drawio 1.png](../../img/Untitled%20Diagram-Page-3.drawio%201.png)
 
-![Untitled Diagram-Page-2.drawio.png](../../_img/Untitled%20Diagram-Page-2.drawio.png)
+![Untitled Diagram-Page-2.drawio.png](../../img/Untitled%20Diagram-Page-2.drawio.png)

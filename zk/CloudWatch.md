@@ -42,9 +42,9 @@ their infrastructure and applications.
 CloudWatch can usually be accessed directly from within the dashboard for the
 given AWS service under the "Monitor" tab. For example with AWS Lambda:
 
-![](/_img/lambda-cloudwatch.png)
+![](/img/lambda-cloudwatch.png)
 
 In addition to graphical metrics, we can also view specific logs for each event
 and execution of the given service. In the case of a Lambda function:
 
-![](/_img/cloudwatch-logs.png)
+![](/img/cloudwatch-logs.png)

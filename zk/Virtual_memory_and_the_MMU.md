@@ -20,7 +20,7 @@ accessing the real memory blocks. This reduces complexity because often memory
 will be allocated in places that are non-contiguous with similar running
 processes or be located in the cache or swap memory on the disk.
 
-![](/_img/virtual-memory-diagram.jpg)
+![](/img/virtual-memory-diagram.jpg)
 
 It would require considerable processing work for the kernel to be tracing these
 disparate memory sources at every instance. By working on an idealised

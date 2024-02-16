@@ -52,7 +52,7 @@ A cluster is the highest level of organisation within an OpensSearch domain that
 contains your indexed data. It processes all the search queries and handles
 tasks like indexing, searching, and managing documents.
 
-![](/_img/opensearch-architecture.drawio.svg)
+![](/img/opensearch-architecture.drawio.svg)
 
 A cluster comprises **nodes**. Nodes are individual servers that hold part of
 the cluster's data. Each node participates in the indexing and searching of the

@@ -11,4 +11,4 @@ the case, $P$ must be the case. Thus to introduce this operator we must
 demonstrate both that $Q$ follows from $P$ and that $P$ follows from $Q$. We do
 this via two sub-proofs.
 
-![](/_img/bi-intro.png)
+![](/img/bi-intro.png)

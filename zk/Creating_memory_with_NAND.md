@@ -15,7 +15,7 @@ below demonstrates how memory can be created using
 [NAND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate)
 gates. A single bit is stored in memory.
 
-![](/_img/nand_latch_logic_circuit.png) Interactive version of circuit:
+![](/img/nand_latch_logic_circuit.png) Interactive version of circuit:
 
 <iframe src="https://circuitverse.org/simulator/embed/nand-mem?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
 
@@ -42,7 +42,7 @@ gates. A single bit is stored in memory.
 
 > Upshot: With **S** `ON`, output is the same as input
 
-![](/_img/nand-mem-first.gif)
+![](/img/nand-mem-first.gif)
 
 ### Second state: both S and I `ON`
 
@@ -59,7 +59,7 @@ gates. A single bit is stored in memory.
 
 > Upshot: With **S** on, the output is again the same as the input
 
-![](/_img/nand-mem-second.gif)
+![](/img/nand-mem-second.gif)
 
 > So far we have seen that when **S** is `ON` you can change **I** on and off
 > and **O** will change with it.
@@ -78,4 +78,4 @@ and at Gate 2: `OFF (Gate 1) + OFF (S) = OFF`
 This is illustrated in the diagram below. The space occupied by **A** and **B**
 remains on (note it is illuminated) regardless of the state of **I**.
 
-![](/_img/nand-mem-demonstrated.gif)
+![](/img/nand-mem-demonstrated.gif)

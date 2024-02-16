@@ -25,7 +25,7 @@ In decimal, 0 is equal to black (zero light intensity) and 255 is equal to white
 (full light intensity). Some examples of this (including binary and hex
 representations are below):
 
-![](/_img/greyscale-encoding.svg)
+![](/img/greyscale-encoding.svg)
 
 ### Colour encoding
 
@@ -42,13 +42,13 @@ Some examples below
 Red is represented in RGB with all 8 red bits to set to 1 and the remaining 16
 bits for the other two colours set to 0.
 
-![](/_img/red-encoding.svg)
+![](/img/red-encoding.svg)
 
 #### Yellow
 
 Yellow is represented in RGB with both red and blue set to 1 and the remaining 8
 green bits set to ):
 
-![](/_img/yellow-encoding.svg)
+![](/img/yellow-encoding.svg)
 
 ## Binary encoding of images

@@ -30,7 +30,7 @@ the reverse (the electrons moving from the voltage source to ground).
 
 The diagram below shows a pulse cycle of 2Hz.
 
-![](/_img/clock_pulses.png)
+![](/img/clock_pulses.png)
 
 ## Linking components to the clock
 

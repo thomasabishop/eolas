@@ -91,7 +91,7 @@ Kirchoff's Voltage Law:
 
 The application of the Law is illustrated in the following diagram:
 
-![](/_img/voltage-drop.png)
+![](/img/voltage-drop.png)
 
 The explanation for the voltage drop at the positions $V^{A}$ and $V^{D}$ are
 obvious enough: they are at the beginning and end of the loop so are equal to

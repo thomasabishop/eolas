@@ -40,7 +40,7 @@ exception class.
 The root class is `BaseException` which all errors and exeptions extend as
 subclasses as demonstrated by this diagram:
 
-![](/_img/python-exception-hierarchy.png)
+![](/img/python-exception-hierarchy.png)
 
 ## Exception syntax
 

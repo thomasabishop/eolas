@@ -77,13 +77,13 @@ at `/usr/lib/systemd/system`. You shouldn't change or manipulate these files or
 attempt to add new config files here since they will be overwritten by the
 system.
 
-![](/_img/systemd-global-files.png) _`systemd` global unit files_
+![](/img/systemd-global-files.png) _`systemd` global unit files_
 
 Local definitions that relate to the specific user and where the user herself
 can define units are located in the _system configuration_ directory:
 `/etc/systemd/system`.
 
-![](/_img/systemd-local-files.png)
+![](/img/systemd-local-files.png)
 
 _`systemd` local unit files, specific to the currently logged-in user_
 

@@ -9,7 +9,7 @@ tags:
 Two fractions are equivalent if they represent the same value. To begin with we
 can represent this visually:
 
-![equiv-fractions.png](../../_img/equiv-fractions.png)
+![equiv-fractions.png](../../img/equiv-fractions.png)
 
 _Each shaded area is taking up the same proportion of the whole._
 

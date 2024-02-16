@@ -2,7 +2,7 @@
 tags: [algorithms]
 ---
 
-![Screenshot_2021-05-11_at_18.55.23.png](../_img/Screenshot_2021-05-11_at_18.55.23.png)
+![Screenshot_2021-05-11_at_18.55.23.png](../img/Screenshot_2021-05-11_at_18.55.23.png)
 _Summary of the main classes of algorithmic complexity_
 
 ## Distinguish algorithms from programs
@@ -117,7 +117,7 @@ following data set:
 | 5               |       5 |
 
 If we plotted this as a graph it is clear that this is equivalent to a linear
-distribution:![lin.svg](../_img/lin.svg)
+distribution:![lin.svg](../img/lin.svg)
 
 Algorithms which display this distribution are therefore called **linear
 algorithms**.
@@ -240,7 +240,7 @@ factor of it. Therefore the runtime is not growing proportional to the size of
 the input, it is growing proportional to the size of the input squared.
 
 Graphically this is represented with a curving lines as follows:
-![square.svg](../_img/square.svg)
+![square.svg](../img/square.svg)
 
 We can clearly see that as n grows, the runtime gets steeper and more
 pronounced,
@@ -289,7 +289,7 @@ Back to algorithms: $O(\log n)$ is a really good complexity to have. It is close
 to O(1) and in between O(1) and O(n). Represented graphically, it starts of with
 a slight increase in runtime but then quickly levels off:
 
-![Screenshot_2021-05-11_at_18.51.02.png](../_img/Screenshot_2021-05-11_at_18.51.02.png)
+![Screenshot_2021-05-11_at_18.51.02.png](../img/Screenshot_2021-05-11_at_18.51.02.png)
 
 Many sorting algorithms run in log n time, as does recursion.
 
@@ -354,7 +354,7 @@ we should keep in mind the following shorthands:
 
 With this in mind we can break down the `findSum` function like so:
 
-![breakdown.svg](../_img/breakdown.svg)
+![breakdown.svg](../img/breakdown.svg)
 
 This gives us:
 

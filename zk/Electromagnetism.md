@@ -57,7 +57,7 @@ call this propensity of electrons the **intrinsic magnetic moment** of the
 electron. It is aggregates of these miniature magnetic behaviours that produce
 the overall magnetic property of the material.
 
-![](/_img/dipole-again.svg)
+![](/img/dipole-again.svg)
 
 In most materials, equal numbers of electrons spin in opposite directions. As a
 result, their magentic effects are cancelled out. However **in strongly magnetic
@@ -128,7 +128,7 @@ charge, the magnetic field is different:
 This is illustrated below which shows the magnetic field operating at right
 angles to the flow of charge within a wire.
 
-<img src="/home/thomas/repos/eolas/_img/magnetic_field.png" width="300" />
+<img src="/home/thomas/repos/eolas/img/magnetic_field.png" width="300" />
 
 ## The electromagnetic field
 
@@ -181,7 +181,7 @@ waves form a spectrum based on their frequency and wavelength. For example,
 'radio waves' are low-frequency / long wavelength electromagnetic waves and
 gamma rays are high-frequency / short wavelength waves:
 
-![](/_img/em-spectrum.jpg)
+![](/img/em-spectrum.jpg)
 
 The image below shows the propagation of an electromagnetic wave through space.
 We can identify the core components as follows
@@ -191,7 +191,7 @@ We can identify the core components as follows
   which propagates upward along the $y$ axis
 - The directionality of both waves is forward along the $x$ axis
 
-![](/_img/em-wave.gif)
+![](/img/em-wave.gif)
 
 ## Using magnetism to generate electricity
 

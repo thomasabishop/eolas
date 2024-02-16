@@ -144,7 +144,7 @@ docker attach my_container
 
 ## Container lifecycle
 
-![](/_img/container-lifecycle.png)
+![](/img/container-lifecycle.png)
 
 All containers have a lifecycle represented by five distinct states. Each state
 has an associated command:

@@ -47,4 +47,4 @@ have the Mongo document outputted to the console:
 
 This will also be reflected in Compass:
 
-![](/_img/mongo-doc-added.png)
+![](/img/mongo-doc-added.png)

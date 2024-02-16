@@ -34,7 +34,7 @@ connection types:
 
 The table below summarises the relative differences:
 
-![](/_img/cell-comparison.svg)
+![](/img/cell-comparison.svg)
 
 ### Series connections
 
@@ -58,12 +58,12 @@ Thus series connections increase voltage but keep current constant.
 
 _Series battery connection:_
 
-![](/_img/series-battery-diagram.svg)
+![](/img/series-battery-diagram.svg)
 
 _Can be represented in a circuit diagram in one of the following two ways: as a
 series of cells or as a single battery:_
 
-![](/_img/series-battcircuit.svg)
+![](/img/series-battcircuit.svg)
 
 In the case of **series opposing**, negative terminals are connected to each
 other and positive terminals are connected to each other in a series. This
@@ -88,11 +88,11 @@ $$
 
 _Parallel battery connection:_
 
-![](/_img/parallel-battery-diagram.svg)
+![](/img/parallel-battery-diagram.svg)
 
 _Parallel battery circuit diagram:_
 
-![](/_img/circ-batt-final.svg)
+![](/img/circ-batt-final.svg)
 
 ### Series-parrallel
 

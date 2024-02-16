@@ -17,7 +17,7 @@ We mark the last good revision and the first bad revision. Bisect will the reset
 the code to the midpoint between the good and bad versions and let you test it.
 You mark that as a good or bad version and then bisect repeats the process.
 
-![](/_img/git-bisect.svg)
+![](/img/git-bisect.svg)
 
 ## Procedure
 

@@ -15,4 +15,4 @@ to be true. This is represented in the context of
 can pass up via either branch of a disjunction pattern. This rule is sometimes
 also referred to (confusingly) as _Addition_.
 
-![](/_img/disjunc-intro.png)
+![](/img/disjunc-intro.png)

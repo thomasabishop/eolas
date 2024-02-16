@@ -12,7 +12,7 @@ track of all [kernel](/Operating_Systems/The_Kernel.md) processes. It is
 invaluable when tracing the source of problems and errors that may arise on the
 system level. It keeps a track of all kernal processes.
 
-![](/_img/journald.png)
+![](/img/journald.png)
 
 ## `journalctl`
 

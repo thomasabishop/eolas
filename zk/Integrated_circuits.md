@@ -26,5 +26,5 @@ to a breadboard.
 
 _An integrated circuit and its use on a breadboard:_
 
-<img align="left" width="200" src="/home/thomas/repos/computer_science/_img/integrated-circuit.jpeg">
-<img  width="200" src="/home/thomas/repos/computer_science/_img/breadboard-DIP.jpg">
+<img align="left" width="200" src="/home/thomas/repos/computer_science/img/integrated-circuit.jpeg">
+<img  width="200" src="/home/thomas/repos/computer_science/img/breadboard-DIP.jpg">

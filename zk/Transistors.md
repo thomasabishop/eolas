@@ -25,13 +25,13 @@ it acts like an open circuit and no current can flow.
 
 We can combine switches in a circuit to create analogs to logic gates.
 
-![](/_img/switch-and-gate.png)
+![](/img/switch-and-gate.png)
 
 In the example above a simple AND gate is implemented with switches. Each switch
 is a conjunct and the current only flows if both switches are on, closing the
 circuit.
 
-![](/_img/switch-or-gate.png)
+![](/img/switch-or-gate.png)
 
 In the example above is a circuit implementing an OR gate. The current flows
 just if one of the switches are on or if both of the switches are on but not if
@@ -53,7 +53,7 @@ set parameters.
 There are different types of transistors but the simplest for the purposes of
 explanation are **bipolar junction transistors**.
 
-![](/_img/transistor-diag.svg)
+![](/img/transistor-diag.svg)
 
 A transistor works as follows: applying a small amount of current at the base
 allows a larger current to flow from the collector to the emitter. Relating this
@@ -63,9 +63,9 @@ Removing this current is like turning the switch off.
 The diagrams below show a transistor being used in a circuit to create 'on' and
 'off' switch states alongside a switch based circuit.
 
-![](/_img/transistor-off.png)
+![](/img/transistor-off.png)
 
-![](/_img/transistor-on.png)
+![](/img/transistor-on.png)
 
 - $V^{in}$ is the voltage that electrically controls the switch-as-transistor
 - $V^{out}$ is the voltage we want to control: it will be high when the
@@ -100,11 +100,11 @@ collector of one to the emitter of the other. If either voltage input is low
 then the voltage of the combined line is low (equivalent to the circuit being
 broken) and there is no current flowing.
 
-![](/_img/and-transistor.png)
+![](/img/and-transistor.png)
 
 Below, an
 [OR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate) has been
 constructed with transistors. If a voltage is applied to the base of either
 transistor, the current reaches the V-out terminal.
 
-![](/_img/or-transistor.svg)
+![](/img/or-transistor.svg)

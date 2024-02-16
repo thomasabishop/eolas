@@ -77,7 +77,7 @@ When we access the local URL we are able to access the Apollo server using the
 Explorer GUI. This automatically loads our schema and is basically a more fancy
 version of GraphiQL:
 
-![](/_img/apollo-explorer.png)
+![](/img/apollo-explorer.png)
 
 It makes it easy to read descriptions of the dataypes and to construct queries
 by clicking to insert fields.

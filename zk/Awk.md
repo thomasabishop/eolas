@@ -91,7 +91,7 @@ awk '/Joe/ {print}' list.txt
 
 ### Lines, records, fields
 
-![](/_img/awk-outline.png)
+![](/img/awk-outline.png)
 
 When `awk` receives a file it divides the lines into **records**.
 

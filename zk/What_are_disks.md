@@ -22,7 +22,7 @@ can write to and read from.
 
 The following diagram represents the basic anatomy of a disk device.
 
-![](/_img/harddisk.png)
+![](/img/harddisk.png)
 
 - A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md)
   which are subsections of the overall disk. The kernel presents each partition

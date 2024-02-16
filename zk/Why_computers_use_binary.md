@@ -17,7 +17,7 @@ to represent two states: on (1) and off (0) which corresponds to the switch on
 an electrical circuit. A single circuit representing the binary values of 1 and
 0:
 
-![multi_on_off 1.gif](../../_img/multi_on_off.gif)
+![multi_on_off 1.gif](../../img/multi_on_off.gif)
 
 It would be much more complicated to have to represent ten different states
 under the decimal number system, although denary computers do exist.
@@ -27,7 +27,7 @@ represent as large a binary number as we need. We just need one switch for every
 digit we want to represent. The switches used in modern computers are so cheap
 and so small that billions can be fitted on a single circuit board.
 
-![multiple_circuits.gif](../../_img/multiple_circuits.gif)
+![multiple_circuits.gif](../../img/multiple_circuits.gif)
 
 When we use the term 'switch' we actually mean the transistor components of a
 circuit. We don't need to know the physical details at this level but we can say

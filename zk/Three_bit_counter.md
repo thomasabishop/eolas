@@ -58,7 +58,7 @@ since the only state change we need is a single bit toggle three times that
 retains its value.
 
 Using these pulse patterns we can construct a circuit as follows:
-![](/_img/3-bit-adder-diagram.png)
+![](/img/3-bit-adder-diagram.png)
 
 <iframe src="https://circuitverse.org/simulator/embed/3-bit-counter-d33846e3-7538-427d-b4cc-dc64fdaf0af3?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="600" allowFullScreen></iframe>
 

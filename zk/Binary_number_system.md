@@ -101,11 +101,11 @@ equal to: **1 in the two column and 1 in the 4 column → 110**
 
 More clearly:
 
-![](../../_img/Pasted_image_20220319135558.png)
+![](../../img/Pasted_image_20220319135558.png)
 
 And for comparison:
 
-![](../../_img/Pasted_image_20220319135805.png)
+![](../../img/Pasted_image_20220319135805.png)
 
 Or we can express the binary as:
 
@@ -119,4 +119,4 @@ $$ 2^1 + 2^2 $$
 
 Let's convert 23 into binary:
 
-![](../../_img/Pasted_image_20220319135823.png)
+![](../../img/Pasted_image_20220319135823.png)

@@ -42,7 +42,7 @@ This will apply the changes from the commit with hash `xyz` from thee `main`
 branch to the `feature` branch. This will create a new SHA on `feature` (pqr)
 but the changes will be identical.
 
-![](/_img/cherry-pick.svg)
+![](/img/cherry-pick.svg)
 
 The benefit is that you only take the select changes you want, you are not
 merging the whole `main` branch into feature.

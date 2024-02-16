@@ -47,7 +47,7 @@ The most succinct account of a latch:
 
 _The representation of an SR Latch in a digital circuit diagram_:
 
-![](/_img/sr_latch_diagram.png)
+![](/img/sr_latch_diagram.png)
 
 ## Creating a latch circuit
 
@@ -62,7 +62,7 @@ also an input of the other at a single stage in the sequence.
 
 The circuit is created as follows:
 
-![](/_img/sr_latch_logic_circuit.png)
+![](/img/sr_latch_logic_circuit.png)
 
 Interactive version:
 

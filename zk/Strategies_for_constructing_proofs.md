@@ -58,7 +58,7 @@ in the first conjunct. We can get this simply but applying
 
 So far we have:
 
-![](/_img/step1.png)
+![](/img/step1.png)
 
 Now we just need to get $D$ from the proposition at line 3. This is easy since
 we already have access to the consequent of the biconditional at line 1.
@@ -66,7 +66,7 @@ Therefore we can apply
 [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md)) at line
 3 to get $D$. We are now halfway there:
 
-![](/_img/step2.png)
+![](/img/step2.png)
 
 Next we need to turn our attention to deriving $L \lor A$. How can we obtain $L$
 ? Well it is contained within the first conjunct of the assumption on line 2.
@@ -77,7 +77,7 @@ $\lnot N$ as an assumption on the first line, so we can use
 [Conditional Elimination](/Logic/Proofs/Conditional_Elimination.md) to derive
 $L$. These two steps give us:
 
-![](/_img/step3.png)
+![](/img/step3.png)
 
 Now we need to get from $L$ to $L \lor A$. This is really straightforward
 because by using
@@ -87,7 +87,7 @@ constituent parts of the conjunction that is the conclusion, we can combine them
 with [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) as we
 had planned at the outset.
 
-![](/_img/step4.png)
+![](/img/step4.png)
 
 ### A further example
 
@@ -109,7 +109,7 @@ approach is therefore to seek to derive the antecedent ($\lnot L$) and then use
 [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md) to
 extract the target sentence which is the consequent.
 
-![proof.png](/_img/proof.png)
+![proof.png](/img/proof.png)
 
 ## Proving theorems
 
@@ -127,13 +127,13 @@ Our strategy here is to identify the main connective in the proposition we want
 to derive (the material conditional). We then assume the antecedent and attempt
 to derive the consequent from it.
 
-![](/_img/theoremproof.png)
+![](/img/theoremproof.png)
 
 ## A complex theorem proof
 
 _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
 
-![](/_img/dsfdsfsdfwe.png)
+![](/img/dsfdsfsdfwe.png)
 
 ### Walkthrough
 

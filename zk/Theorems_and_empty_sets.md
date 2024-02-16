@@ -13,7 +13,7 @@ empty.
 
 _Demonstration_
 
-![](/_img/proofs-drawio-Page-5.drawio_2.png)
+![](/img/proofs-drawio-Page-5.drawio_2.png)
 
 We see in this example that there is no starting set and thus no primary
 assumptions. Instead we start with nothing other than the proposition we wish to

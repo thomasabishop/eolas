@@ -19,7 +19,7 @@ The CPU comprises three core components:
 - the Arithmetic Logic Unit (ALU)
 - the Control Unit (CU)
 
-![](/_img/von_neumann_architecture.jpeg)
+![](/img/von_neumann_architecture.jpeg)
 
 > This method of putting together a computer is known as the **Von Neumann
 > Architecture**. It was devised by John von Neumann in about 1945, well before
@@ -106,7 +106,7 @@ Hertz was the scientist who detected
 We use Hertz as a measure of the frequency of electromatic wave cycles in a
 signal.
 
-![](/_img/hertz_wave_freq.gif)
+![](/img/hertz_wave_freq.gif)
 
 As the diagram above shows, a cycle is equal to one ascending and one descending
 crest. The more cycles per time unit, the greater the Hertz. We see the Hz

@@ -63,7 +63,7 @@ create your boot process so the two are clearly distinguishable.
 
 The de facto standard boot loader for Linux is GRUB: Grand Unified Boot Loader.
 
-![](/_img/grub.jpg)
+![](/img/grub.jpg)
 
 You see the GRUB default menu when you first start a Linux machine. It will
 offer you various options for loading your installed OS or other OSs. GRUB is a

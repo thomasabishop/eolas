@@ -13,4 +13,4 @@ with a true proposition from which you derive a contradiction, you start with
 the negation of a proposition, derive a contradiction and then assert the
 positive of the negated proposition you started out with.
 
-![](/_img/negate-elim.png)
+![](/img/negate-elim.png)

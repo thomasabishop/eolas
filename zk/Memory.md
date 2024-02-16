@@ -87,7 +87,7 @@ the OS kernel is itself loaded into memory.
 > sends to the CPU not just the first instruction in the requested file but also
 > a number of instructions that immediately follow it.
 
-![](/_img/memory-flow.svg)
+![](/img/memory-flow.svg)
 
 Every part of the above process - the journey accross the bus, the lookup in the
 controller, the operations on the DRAM, the journey back accross the bus - takes
@@ -134,7 +134,7 @@ these from slow DRAM to fast SRAM.
 The diagram below compares the different forms of memory within a computing
 device in terms of speed, monetary cost and capacity:
 
-![](/_img/Memory-Hierarchy.jpg)
+![](/img/Memory-Hierarchy.jpg)
 
 ## Memory addresses
 

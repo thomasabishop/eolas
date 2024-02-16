@@ -43,8 +43,8 @@ link is used to transfer the data from an end to another. On other hand Parallel
 Transmission is the transmission in which multiple parallel links are used that
 transmit each bit of data simultaneously.
 
-<img src="../_img/serial-transmission.jpg" width="800px"/>
-<img src="../_img/parallel-transmission.jpg" width="800px"/>
+<img src="../img/serial-transmission.jpg" width="800px"/>
+<img src="../img/parallel-transmission.jpg" width="800px"/>
 
 - Serial buses are cheaper to implement than parallel buses
 - Serial buses operate at greater

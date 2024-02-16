@@ -37,7 +37,7 @@ we can learn the main facets of chip design. Its syntax is very similar to VHDL.
 We will create an HDL program for an XOR gate that is implemented through the
 following arrangement of NOT, AND, and OR gates:
 
-![](/_img/xor-hdl.png)
+![](/img/xor-hdl.png)
 
 ### HDL file (`Xor.hdl`):
 

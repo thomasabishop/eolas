@@ -9,7 +9,7 @@ tags:
 
 _Visualization of the queue data structure_
 
-![queue.svg](../_img/queue.svg)
+![queue.svg](../img/queue.svg)
 
 ## A queue is a sequential data structure and most similar to a stack
 

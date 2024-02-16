@@ -24,4 +24,4 @@ terminal of the voltage source.
 
 The symbol for ground in circuit diagrams:
 
-<img src="/home/thomas/repos/computer_science/_img/ground-symbol.png" width="300px">
+<img src="/home/thomas/repos/computer_science/img/ground-symbol.png" width="300px">

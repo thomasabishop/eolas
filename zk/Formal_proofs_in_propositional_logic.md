@@ -54,11 +54,11 @@ Sub-proofs follow this structure recursively. This is known as _Fitch notation_
 
 _Schematically_:
 
-![](/_img/proofs-drawio-Page-5.drawio.png)
+![](/img/proofs-drawio-Page-5.drawio.png)
 
 _Applied example_:
 
-![](/_img/proofs-drawio-Page-6.drawio.png)
+![](/img/proofs-drawio-Page-6.drawio.png)
 
 ## Sub-proofs
 

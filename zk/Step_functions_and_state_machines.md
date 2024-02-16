@@ -40,11 +40,11 @@ The diagram below shows the definition of a given state machine. On the left is
 the JSON specification. On the right is a diagramatic representation that shows
 the control flow and all possible steps that comprise a given pathway / state:
 
-![](/_img/state-machine-definition.png)
+![](/img/state-machine-definition.png)
 
 For each execution of the state machine (each time it is triggered) you can
 review the runtime. The flow diagram will highlight green to show the given
 pathway, and you can also see the inputs and outputs for each step and any
 errors:
 
-![](/_img/state-machine-execution.png)
+![](/img/state-machine-execution.png)

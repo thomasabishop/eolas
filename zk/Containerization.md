@@ -69,11 +69,11 @@ expenditure and security challenges.
 
 _Standard userspace_
 
-![](/_img/standard-userspace.png)
+![](/img/standard-userspace.png)
 
 _Userspace with containerization_
 
-![](/_img/containers-in-userspace.png)
+![](/img/containers-in-userspace.png)
 
 ## Differences with virtual machines
 
@@ -102,7 +102,7 @@ rest as it would any other process on the OS.
 | Less portable                               | More portable                           |
 | Slower and more difficult to run            | Scale rapidly due to lightweight nature |
 
-![](/_img/container-versus-vm.png)
+![](/img/container-versus-vm.png)
 
 ## Why use containers?
 

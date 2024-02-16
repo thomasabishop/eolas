@@ -41,4 +41,4 @@ Note that the property of equivalence stated in terms of derivablity above is
 identical to the derivation rule for the
 [material biconditional](/Logic/Proofs/Biconditional_Introduction.md):
 
-![bi-intro.png](/_img/bi-intro.png)
+![bi-intro.png](/img/bi-intro.png)

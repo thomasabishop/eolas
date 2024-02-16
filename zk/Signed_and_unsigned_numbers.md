@@ -35,12 +35,12 @@ simple algorithm at work to generate the complement for 4-bit number:
    values, so $0$ becomes $1$ and $1$ becomes $0$.
 2. Add one
 
-![](/_img/unsigned-to-signed.png)
+![](/img/unsigned-to-signed.png)
 
 To translate a signed number to an unsigned number you flip them back and still
 add one:
 
-![](/_img/signed-to-unsigned.png)
+![](/img/signed-to-unsigned.png)
 
 ### Formal expresssion: $2^n - x$
 

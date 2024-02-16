@@ -29,4 +29,4 @@ _Compass_ is a graphical interface for viewing and interacting with the data in
 your Mongo database. It will automatically load to the default Mongo port:
 `27017`.
 
-![](/_img/mongo-compass.png)
+![](/img/mongo-compass.png)

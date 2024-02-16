@@ -11,17 +11,17 @@ tags: [AWS, aws-lambda, node-js]
 
 First we name the function and accept the defaults:
 
-![](/_img/lambda_func_one.png)
+![](/img/lambda_func_one.png)
 
 This presents us with the function dashboard - a graphical representation of the
 Lambda showing [triggers]() as an input and destination as an output:
 
-![](/_img/lambda-func-two.png)
+![](/img/lambda-func-two.png)
 
 Beneath this we have a code editor with the handler function with a basic
 boilerplate:
 
-![](/_img/lambda-func-three.png)
+![](/img/lambda-func-three.png)
 
 ## Adding a trigger
 
@@ -31,15 +31,15 @@ execute the handler.
 We will do this using [AWS API Gateway](/DevOps/AWS/AWS_API_Gateway.md). We
 select "Add trigger" from the dashboard view and input basic settings:
 
-![](/_img/api-gateway-trigger.png)
+![](/img/api-gateway-trigger.png)
 
 Now we see this step displayed in the dashboard:
 
-![](/_img/lambda-overview.png)
+![](/img/lambda-overview.png)
 
 With the endpoint and other settings displayed:
 
-![](/_img/trigger-info.png)
+![](/img/trigger-info.png)
 
 If we go to the endpoint URL
 (`https://4kjqwbvd7g.execute-api.us-east-1.amazonaws.com/default/myFirstFunction`),
@@ -77,4 +77,4 @@ We get `Hello Thomas` as output.
 For a more advanced API with multiple endpoints and parameters, it's easiest to
 use Postman:
 
-![](/_img/postman-lambda.png)
+![](/img/postman-lambda.png)

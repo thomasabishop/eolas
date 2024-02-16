@@ -58,7 +58,7 @@ client application.
 Client requests are sent over HTTPS and the data is typically returned in the
 form of JSON:
 
-![](/_img/graphql-architecture.png)
+![](/img/graphql-architecture.png)
 
 ## Implementation overview
 
@@ -136,15 +136,15 @@ each individual resource:
 
 The REST scenario:
 
-![](/_img/REST_request-load.png)
+![](/img/REST_request-load.png)
 
 The GraphQL scenario:
 
-![](/_img/graphQL_request_load.png)
+![](/img/graphQL_request_load.png)
 
 ### Abstraction of multiple services
 
-![](/_img/graphql_multiple_resources.png)
+![](/img/graphql_multiple_resources.png)
 
 ### Stops overfetching
 

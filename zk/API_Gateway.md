@@ -13,7 +13,7 @@ client. In response to a client request you can then call a
 [lambda function](/DevOps/AWS/AWS_Lambda/Lambda_handler_function.md) that
 executes a backend process.
 
-![](/_img/gateway-services.png)
+![](/img/gateway-services.png)
 
 See
 [using API Gateway as Lambda trigger](/DevOps/AWS/AWS_Lambda/Practical_walkthrough_Lambda_creation_within_AWS.md)

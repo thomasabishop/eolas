@@ -117,7 +117,7 @@ $$
   = 15
 $$
 
-![](/_img/hexadecimal-to-bytes.svg)
+![](/img/hexadecimal-to-bytes.svg)
 
 > Every four bits (or half byte) in binary corresponds to one symbol in
 > hexadecimal. Therefore **a byte can be easily represented with two hexadecimal

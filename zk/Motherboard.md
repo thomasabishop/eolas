@@ -7,7 +7,7 @@ tags: [motherboard]
 
 # Motherboard
 
-<img src="../_img/motherboard-pi.jpg" width="400px"/>
+<img src="../img/motherboard-pi.jpg" width="400px"/>
 
 The motherboard is the foundation of a computer. It allocates power and allows
 communication to and between the

@@ -12,7 +12,7 @@ In order to test our
 them into the hardware simulator program. We will demonstrate this with the
 following XOR implementation:
 
-![](/_img/xor-addition-four.png)
+![](/img/xor-addition-four.png)
 
 There are several simulation options:
 
@@ -34,7 +34,7 @@ uploaded the `Xor.hdl` file into the simulator and changed the input pins to
 `a=1, b=0` and clicked the calculator icon (representing "evaluation"). This
 then shows the output and internal pin values for these inputs.
 
-<img src="/home/thomas/repos/computer_science/_img/hardware-sim-basic.png" >
+<img src="/home/thomas/repos/computer_science/img/hardware-sim-basic.png" >
 
 ## Script-based
 
@@ -46,7 +46,7 @@ When this is run it automatically generates an output file in the source
 directory at `Xor.out`. This can be viewed within the simulator via the 'View'
 drop down.
 
-![](/_img/hd-sim-test.png)
+![](/img/hd-sim-test.png)
 
 ## Comparison-based
 

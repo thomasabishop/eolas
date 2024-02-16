@@ -19,7 +19,7 @@ is evident from the following automatic commit message that is generated:
 Merge branch B of github.com:thomasabishop/remote-repository into A
 ```
 
-![](/_img/normal-merge-again.svg)
+![](/img/normal-merge-again.svg)
 
 In this scenario the merge commit has two or more parent commits each
 representing the history of the merged branches. The resulting history of A will
@@ -28,7 +28,7 @@ include the commits of B. Basically the two histories are combined.
 This would give us a history that looks like the following, with different
 colours for the separate SHAs of each merged branch:
 
-![](/_img/combined-merge-hist.svg)
+![](/img/combined-merge-hist.svg)
 
 If we were to create a rebase branch of A from B, there would be a new singular
 history without distinguishing multiple parents that combines the commits of A
@@ -41,12 +41,12 @@ of commits in a single branch.
 When a rebase is applied, it will put the diverging B commits at the tip of A
 like so:
 
-![](/_img/rebase-tip-chage.svg)
+![](/img/rebase-tip-chage.svg)
 
 And then rebrand the previous A commits to be continuous with B presenting a
 flat and linear Git history like the following:
 
-![](/_img/single-git-history-rebase.svg)
+![](/img/single-git-history-rebase.svg)
 
 ## Benefits, use-cases
 
@@ -162,7 +162,7 @@ recent. This will open an interactive rebase window, listing the commits. You
 can then use the keywords to decide what you want to do with them. In our case
 this will be `s` for squash.
 
-![](/_img/git-interactive-rebase.png)
+![](/img/git-interactive-rebase.png)
 
 ### Example
 
