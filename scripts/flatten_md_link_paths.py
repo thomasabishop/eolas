@@ -1,3 +1,5 @@
+# Flatten markdown links such that depth is reduced to /link.md
+
 import os
 import re
 
