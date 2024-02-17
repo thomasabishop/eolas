@@ -1,7 +1,4 @@
 ---
-title: Key characteristics of GraphQL
-categories:
-  - Databases
 tags: [graphql, APIs]
 ---
 

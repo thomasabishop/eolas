@@ -1,8 +1,4 @@
 ---
-title: Binary units of measurement
-categories:
-  - Computer Architecture
-  - Mathematics
 tags: [binary]
 ---
 

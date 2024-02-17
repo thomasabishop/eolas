@@ -1,7 +1,4 @@
 ---
-title: Apollo Client
-categories:
-  - Databases
 tags: [graphql]
 ---
 

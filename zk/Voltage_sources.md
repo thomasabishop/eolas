@@ -1,7 +1,4 @@
 ---
-title: Voltage sources
-categories:
-  - Electronics
 tags: [physics, electricity]
 ---
 

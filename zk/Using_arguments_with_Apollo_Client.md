@@ -1,7 +1,4 @@
 ---
-title: Using arguments with Apollo Client
-categories:
-  - Databases
 tags: [graphql]
 ---
 
@@ -37,8 +34,7 @@ type Query {
 
 type Track {
     id: ID!
-    title: String!
-    authorId: String! // They added this on the sly
+        authorId: String! // They added this on the sly
     thumbnail: String
     length: Int
     modulesCount: Int
@@ -49,8 +45,7 @@ type Track {
 
 type Module {
     id: ID!
-    title: String!
-    length: Int
+        length: Int
 }
 
 type Author {
@@ -152,8 +147,7 @@ author name is not a field on `Track`, it is a field on `Author`:
 ```js
 type Track {
   id: ID!
-  title: String!
-  authorId: String!
+    authorId: String!
   thumbnail: String
   length: Int
   modulesCount: Int
@@ -193,8 +187,7 @@ Here's a reminder of the `Module` type:
 ```js
 type Module {
     id: ID!
-    title: String!
-    length: Int
+        length: Int
 }
 ```
 

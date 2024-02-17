@@ -1,6 +1,4 @@
 ---
-categories:
-  - Programming Languages
 tags: [python, types]
 ---
 
@@ -54,8 +52,7 @@ interfaces as follows:
 ```py
 class ArticleInfo(TypedDict):
     timestamp: str
-    article_title: str
-    link: str
+    article_    link: str
 ```
 
 We could then use it thus:

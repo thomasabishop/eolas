@@ -1,7 +1,4 @@
 ---
-categories:
-  - Linux
-  - Programming Languages
 tags: [shell]
 ---
 

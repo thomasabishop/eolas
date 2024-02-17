@@ -1,6 +1,4 @@
 ---
-categories:
-  - Programming Languages
 tags:
   - typescript
   - react
@@ -31,8 +29,7 @@ They are mostly interchangeable but there are some specific differences
 
   ```ts
   interface Window {
-    title: string;
-  }
+      }
 
   interface Window {
     ts: TypeScriptAPI;

@@ -1,7 +1,4 @@
 ---
-categories:
-  - Electronics
-  - Hardware
 tags: [logic-gates, binary, nand-to-tetris]
 ---
 

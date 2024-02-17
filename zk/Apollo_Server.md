@@ -1,7 +1,4 @@
 ---
-title: Apollo Server
-categories:
-  - Databases
 tags: [graphql, REST, APIs]
 ---
 
@@ -37,8 +34,7 @@ type Query {
 
 type Track {
   id: ID!
-  title: String!
-  author: Author!
+    author: Author!
   thumbnail: String
   length: Int
   modulesCount: Int
@@ -102,8 +98,7 @@ const server = new ApolloServer({ typeDefs, mocks: true });
 const mocks = {
   Track: () => ({
     id: () => "track_01",
-    title: () => "Astro Kitty, Space Explorer",
-    author: () => {
+        author: () => {
       return {
         name: "Grumpy Cat",
         photo:

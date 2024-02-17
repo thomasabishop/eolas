@@ -1,7 +1,4 @@
 ---
-title: Standard input and output
-categories:
-  - Programming Languages
 tags: [python, data-types]
 ---
 

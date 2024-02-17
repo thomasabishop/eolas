@@ -1,5 +1,4 @@
 ---
-categories: [Programming Languages]
 tags: []
 ---
 

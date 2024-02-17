@@ -1,6 +1,4 @@
 ---
-categories:
-  - DevOps
 tags: [git, procedural]
 ---
 

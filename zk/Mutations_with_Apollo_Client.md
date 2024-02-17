@@ -1,7 +1,4 @@
 ---
-title: Mutations with Apollo Client
-categories:
-  - Databases
 tags: [graphql]
 ---
 

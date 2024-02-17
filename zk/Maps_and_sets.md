@@ -1,7 +1,4 @@
 ---
-title: Maps and sets
-categories:
-  - Programming Languages
 tags: [javascript]
 ---
 

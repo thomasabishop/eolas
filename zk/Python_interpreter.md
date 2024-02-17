@@ -1,7 +1,4 @@
 ---
-title: Python interpreter
-categories:
-  - Programming Languages
 tags: [python]
 ---
 

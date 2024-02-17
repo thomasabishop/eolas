@@ -1,7 +1,4 @@
 ---
-categories:
-  - Databases
-  - Programming Languages
 tags: [SQL, relational-databases, regex]
 ---
 

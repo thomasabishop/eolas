@@ -1,6 +1,4 @@
 ---
-categories:
-  - DevOps
 tags: [docker, containerization]
 ---
 

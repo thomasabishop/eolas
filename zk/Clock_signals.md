@@ -1,8 +1,4 @@
 ---
-categories:
-  - Computer Architecture
-  - Electronics
-  - Hardware
 tags: [binary, memory, clock, electromagnetism]
 ---
 

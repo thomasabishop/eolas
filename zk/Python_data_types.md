@@ -1,7 +1,4 @@
 ---
-title: Python data-types
-categories:
-  - Programming Languages
 tags: [python, data-types]
 ---
 

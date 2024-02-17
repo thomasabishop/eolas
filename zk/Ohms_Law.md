@@ -1,7 +1,4 @@
 ---
-title: Ohm's Law
-categories:
-  - Electronics
 tags: [physics, electricity]
 ---
 

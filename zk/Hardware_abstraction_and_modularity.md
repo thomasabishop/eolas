@@ -1,7 +1,4 @@
 ---
-categories:
-  - Computer Architecture
-  - Hardware
 tags: [nand-to-tetris]
 ---
 

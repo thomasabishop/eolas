@@ -1,8 +1,4 @@
 ---
-categories:
-  - Linux
-  - Operating Systems
-  - Hardware
 tags:
   - kernel
   - CPU

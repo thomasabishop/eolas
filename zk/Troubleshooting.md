@@ -1,7 +1,4 @@
 ---
-categories:
-  - Databases
-  - Linux
 tags: [mongo-db]
 ---
 

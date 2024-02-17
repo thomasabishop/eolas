@@ -1,6 +1,4 @@
 ---
-categories:
-  - Electronics
 tags: [physics, electricity, electromagnetism]
 ---
 

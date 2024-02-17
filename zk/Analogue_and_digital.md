@@ -1,7 +1,4 @@
 ---
-title: Analogue and digital
-categories:
-  - Hardware
 tags: [analogue]
 ---
 

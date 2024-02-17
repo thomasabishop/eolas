@@ -3,7 +3,7 @@ import os
 import re
 
 # Define the directory
-directory = "/home/thomas/repos/eolas-bak/zk"
+directory = "/home/thomas/repos/eolas/zk"
 
 # Define the regex patterns
 title_pattern = re.compile(r"title:.*\n")

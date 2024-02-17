@@ -1,6 +1,4 @@
 ---
-categories:
-  - Programming Languages
 tags:
   - typescript
 ---
@@ -84,8 +82,7 @@ using standard ES6 imports:
 
 ```tsx
 export type Article = {
-	title: string,
-	price: number,
+		price: number,
 }
 
 export type AnotherType = {

@@ -1,7 +1,4 @@
 ---
-categories:
-  - Logic
-  - Computer Architecture
 tags: [propositional-logic, nand-to-tetris]
 ---
 

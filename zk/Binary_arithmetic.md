@@ -1,7 +1,4 @@
 ---
-categories:
-  - Mathematics
-  - Computer Architecture
 tags: [binary, binary-arithemetic]
 ---
 

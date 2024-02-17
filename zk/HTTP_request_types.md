@@ -1,7 +1,4 @@
 ---
-categories:
-  - Databases
-  - Networks
 tags: []
 ---
 

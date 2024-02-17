@@ -1,7 +1,4 @@
 ---
-categories:
-  - DevOps
-  - Backend
 tags: [AWS, aws-lambda, node-js]
 ---
 

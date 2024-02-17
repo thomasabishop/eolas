@@ -1,6 +1,4 @@
 ---
-categories:
-  - Databases
 tags: [graphql]
 ---
 
@@ -48,8 +46,7 @@ For example if we had this type:
 ```graphql
 type Track {
   id: ID!
-  title: String!
-  author: Author!
+    author: Author!
   thumbnail: String
   length: Int
   modulesCount: Int

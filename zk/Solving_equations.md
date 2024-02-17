@@ -1,6 +1,4 @@
 ---
-categories:
-  - Mathematics
 tags: [algebra]
 ---
 

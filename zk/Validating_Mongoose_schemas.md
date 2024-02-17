@@ -1,6 +1,4 @@
 ---
-categories:
-  - Databases
 tags: [mongo-db, mongoose, node-js]
 ---
 

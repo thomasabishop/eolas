@@ -1,7 +1,4 @@
 ---
-categories:
-  - Linux
-  - Operating Systems
 tags:
   - memory
   - disks

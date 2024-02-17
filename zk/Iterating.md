@@ -1,6 +1,4 @@
 ---
-categories:
-  - Programming Languages
 tags:
   - javascript
   - react
@@ -80,8 +78,7 @@ const blogData = [
   {
     id: 1,
     date: "2020-11-15",
-    title: "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
-    shortByline:
+        shortByline:
       "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. ",
     longByline:
       "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor.",
@@ -90,8 +87,7 @@ const blogData = [
   {
     id: 2,
     date: "2020-08-11",
-    title: "Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
-    shortByline:
+        shortByline:
       "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. ",
     longByline:
       "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor.",

@@ -1,7 +1,4 @@
 ---
-categories:
-  - Hardware
-  - Electronics
 tags: [logic-gates, binary]
 ---
 

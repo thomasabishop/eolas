@@ -1,7 +1,4 @@
 ---
-categories:
-  - Operating Systems
-  - Linux
 tags:
 ---
 

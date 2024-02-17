@@ -1,7 +1,4 @@
 ---
-categories:
-  - Programming Languages
-  - Databases
 tags: [backend, node-js, REST, APIs, mongo-db]
 ---
 

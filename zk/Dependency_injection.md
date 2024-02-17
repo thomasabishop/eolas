@@ -1,6 +1,4 @@
 ---
-categories:
-  - Software Engineering
 tags: [OOP]
 ---
 

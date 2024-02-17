@@ -1,6 +1,4 @@
 ---
-categories:
-  - Computer Architecture
 tags:
   - theory-of-computation
 ---

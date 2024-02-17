@@ -1,7 +1,4 @@
 ---
-title: Python naming conventions
-categories:
-  - Programming Languages
 tags: [python]
 ---
 

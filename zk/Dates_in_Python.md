@@ -1,6 +1,4 @@
 ---
-categories:
-  - Programming Languages
 tags: [python, timestamps]
 ---
 

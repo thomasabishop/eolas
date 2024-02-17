@@ -1,6 +1,4 @@
 ---
-categories:
-  - Computer Architecture
 tags: [CPU]
 ---
 

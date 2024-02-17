@@ -1,6 +1,4 @@
 ---
-categories:
-  - Linux
 tags: []
 ---
 

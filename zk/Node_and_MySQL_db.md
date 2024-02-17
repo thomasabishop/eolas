@@ -1,7 +1,4 @@
 ---
-categories:
-  - DevOps
-  - Databases
 tags: [docker, SQL, node-js]
 ---
 

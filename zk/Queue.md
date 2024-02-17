@@ -1,6 +1,4 @@
 ---
-categories:
-  - DSA
 tags:
   - data-structures
 ---

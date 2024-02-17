@@ -1,7 +1,4 @@
 ---
-categories:
-  - Mathematics
-  - Logic
 tags:
   - set-theory
 ---

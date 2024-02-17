@@ -1,7 +1,4 @@
 ---
-title: Binary encoding
-categories:
-  - Computer Architecture
 tags: [binary, binary-encoding]
 ---
 

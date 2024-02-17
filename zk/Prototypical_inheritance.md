@@ -1,7 +1,4 @@
 ---
-title: Prototypical inheritance
-categories:
-  - Programming Languages
 tags: [javascript, OOP]
 ---
 

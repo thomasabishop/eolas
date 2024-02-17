@@ -1,9 +1,4 @@
 ---
-title: Creating memory with NAND gates
-categories:
-  - Computer Architecture
-  - Electronics
-  - Hardware
 tags: [logic-gates, binary, memory]
 ---
 

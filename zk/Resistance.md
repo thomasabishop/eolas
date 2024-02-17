@@ -1,7 +1,4 @@
 ---
-title: Resistance
-categories:
-  - Electronics
 tags: [physics, electricity]
 ---
 

@@ -1,7 +1,4 @@
 ---
-categories:
-  - Linux
-  - Networks
 tags: []
 ---
 

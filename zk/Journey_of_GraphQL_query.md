@@ -1,6 +1,4 @@
 ---
-categories:
-  - Databases
 tags: [graphql]
 ---
 

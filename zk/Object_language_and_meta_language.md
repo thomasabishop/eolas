@@ -1,6 +1,4 @@
 ---
-categories:
-  - Logic
 tags: [propositional-logic]
 ---
 

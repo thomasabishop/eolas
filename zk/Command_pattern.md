@@ -1,7 +1,4 @@
 ---
-title: Command pattern
-categories:
-  - DSA
 tags:
   - design-patterns
 ---

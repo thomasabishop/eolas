@@ -1,6 +1,4 @@
 ---
-categories:
-  - Electronics
 tags: [circuits]
 ---
 

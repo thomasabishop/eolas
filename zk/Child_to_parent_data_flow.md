@@ -1,7 +1,4 @@
 ---
-title: Child to parent data-flow
-categories:
-  - Programming Languages
 tags: [javascript, react, react-hooks]
 ---
 

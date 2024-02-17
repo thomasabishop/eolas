@@ -1,8 +1,4 @@
 ---
-title: Binary number system
-categories:
-  - Mathematics
-  - Computer Architecture
 tags: [binary, number-systems]
 ---
 
