@@ -8,8 +8,8 @@ tags: [logic-gates, binary, memory, clock]
 # Flip-Flops
 
 A flip-flop is a type of
-[latch](/Electronics_and_Hardware/Digital_circuits/Latches.md) that is connected
-to a [clock signal](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md)
+[latch](Latches.md) that is connected
+to a [clock signal](Clock_signals.md)
 and which executes in time with the clock's pulse. (Sometimes "latch" and
 "flip-flop" are used interchangeably but technically a latch is flip-flop
 without a clock connection.)

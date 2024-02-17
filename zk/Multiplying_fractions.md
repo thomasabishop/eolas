@@ -31,7 +31,7 @@ $$
 
 It would be laborious to reduce such a large product using factor trees or the
 repeated application of divisors, as defined in
-[reducing fractions](./Reducing_fractions.md). We can use a more efficient
+[reducing fractions](Reducing_fractions.md). We can use a more efficient
 method. This method can be applied at the point at which we conduct the
 multiplication rather than afterwards once we have the product. We express the
 the initial multiplicands as prime factors:

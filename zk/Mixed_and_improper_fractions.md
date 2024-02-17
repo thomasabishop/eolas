@@ -39,7 +39,7 @@ $$
 $$
 
 But we know that when we
-[add fractions with a common denominator](./Add_Subtract_Fractions.md#adding-subracting-fractions-with-common-denominators),
+[add fractions with a common denominator](Add_Subtract_Fractions.md#adding-subracting-fractions-with-common-denominators),
 we only add the numerators, not the denominators. Thus the calculation would
 actually be:
 
@@ -108,7 +108,7 @@ $$
 $$
 
 2. Then carry out the multiplication
-   [using factorization](./Multiplying_fractions.md#prime-factorisation-in-place):
+   [using factorization](Multiplying_fractions.md#prime-factorisation-in-place):
 
    $$
      \begin{split}
@@ -137,7 +137,7 @@ $$
 
 Again we convert the mixed fraction into an improper fraction and then follow
 the requisite rule, in the case of division this is to
-[invert and multiply]('./../Dividing_fractions.md#formal-specification-of-how-to-divide-fractions').
+[invert and multiply](Dividing_fractions.md#formal-specification-of-how-to-divide-fractions').
 
 Calculate $-4 \frac{4}{5} \div 5 \frac{3}{5}$.
 

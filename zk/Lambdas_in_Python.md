@@ -13,7 +13,7 @@ Whilst they are unnamed, just like JS, the value they return can be stored in a
 variable. They do not require the `return` keyword.
 
 They are most often used unnamed with the functional methods
-[map, filter](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md)
+[map, filter](Map_and_filter_in_Python.md)
 and reduce.
 
 Here is the two syntaxes side by side:

@@ -40,11 +40,11 @@ const store: string[] = []; // Empty array
 ## Object
 
 `Object` is a valid type declaration in TS but it is not particularly helpful
-since it becomes similar to using [any](./Any.md) given that most primitive
+since it becomes similar to using [any](Any.md) given that most primitive
 types in JavaScripts prototypically inherit from an Object.
 
 Generally, when you use objects in TypeScript you type them as
-[custom types](./Custom_types.md).
+[custom types](Custom_types.md).
 
 ## Array of (untyped) objects
 

@@ -61,7 +61,7 @@ In order to qualify as RESTful, an API must meet the following constraints:
 ## Example
 
 A basic example of a REST API would be a series of methods corresponding to the
-main [HTTP request types](/Databases/HTTP_request_types.md).
+main [HTTP request types](HTTP_request_types.md).
 
 | HTTP request type | URI                 | Action                      | Body ?                   |
 | ----------------- | ------------------- | --------------------------- | ------------------------ |

@@ -8,17 +8,17 @@ tags: [propositional-logic, nand-to-tetris]
 # Boolean function synthesis
 
 When we looked at
-[boolean functions](/Logic/Propositional_logic/Boolean_functions.md) we were
+[boolean functions](Boolean_functions.md) we were
 working in a particular direction: from a function to a truth table. When we do
 Boolean function synthesis we work in the opposite direction: from a truth table
 to a function.
 
 This is an important skill that we will use when constructing
-[logic circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md).
+[logic circuits](Digital_circuits.md).
 We will go from truth conditions (i.e. what we want the circuit to do and when
 we want it to do it) to a function expression which is then reduced to its
 simplest form and implemented with
-[logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
+[logic gates](Logic_gates.md).
 Specifically, NAND gates.
 
 We will show here that a complex logical expression can be reduced to an
@@ -88,7 +88,7 @@ $$
 $$
 
 Notice that $\lnot(z)$ is repeated so we can remove the repetition through
-[idempotence](/Logic/Propositional_logic/Boolean_algebra.md#idempotent-law):
+[idempotence](Boolean_algebra.md#idempotent-law):
 
 $$
     \lnot z \land (\lnot(x) \lor \lnot(y))
@@ -121,7 +121,7 @@ $$
 
 Finally, we can simplify even further by doing away with AND and NOT and using a
 single
-[NAND gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate)
+[NAND gate](Logic_gates.md#nand-gate)
 which embodies the logic of both, being true in all instances where AND would be
 false: $\lnot (x \land  y)$.
 

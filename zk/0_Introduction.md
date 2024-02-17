@@ -7,12 +7,12 @@ tags: [backend, node-js, REST, APIs]
 # Creating a RESTful API: Introduction
 
 We are going to use Express to create a
-[RESTful API](/Databases/RESTful_APIs.md) in Node.js.
+[RESTful API](RESTful_APIs.md) in Node.js.
 
 ## Request types
 
 Express provides us with methods corresponding to each of the
-[HTTP request types](/Databases/HTTP_request_types.md):
+[HTTP request types](HTTP_request_types.md):
 
 - `.get()`
 - `.post()`
@@ -25,7 +25,7 @@ Express provides us with methods corresponding to each of the
 > from a database. For simplicity we are just going simulate this with a simple
 > data array so that we can focus on the Express syntax rather than database
 > handling. Later we will integrate this with a
-> [MongoDB database](/Programming_Languages/NodeJS/REST_APIs/05_%20Integrating_the_database.md).
+> [MongoDB database](05_%20Integrating_the_database.md).
 
 We will mainly work with the following array of objects:
 
@@ -51,7 +51,7 @@ const courses = [
 We first create an instance of Express within `index.js`. This will be the main
 coordinating file and we will aim to minimise the amount of business logic we
 have in this file. It should really just be for initialization and managing
-[middleware](/Programming_Languages/NodeJS/Architecture/Middleware.md).
+[middleware](Middleware.md).
 
 ```js
 const express = require("express");
@@ -103,10 +103,10 @@ app.listen(3000, () => console.log("Listening on port 30000..."));
 
 We can now proceed to set up our RESTful endpoints:
 
-[GET requests](/Programming_Languages/NodeJS/REST_APIs/1_GET.md)
+[GET requests](1_GET.md)
 
-[POST requests](/Programming_Languages/NodeJS/REST_APIs/2_POST.md)
+[POST requests](2_POST.md)
 
-[PUT requests](/Programming_Languages/NodeJS/REST_APIs/3_PUT.md)
+[PUT requests](3_PUT.md)
 
-[DELETE requests](/Programming_Languages/NodeJS/REST_APIs/4_DELETE.md)
+[DELETE requests](4_DELETE.md)

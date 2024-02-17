@@ -15,7 +15,7 @@ JavaScript.
 ## Creating a server
 
 An HTTP server is another instance of an
-[event emitter](/Programming_Languages/NodeJS/Modules/Core/events.md)). It
+[event emitter](events.md)). It
 therefore has all the same methods as the `EventEmitter` class: `on`, `emit`,
 `addListener` etc. This demonstrates again how much of Node's core functionality
 is based on event emitters.

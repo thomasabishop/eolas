@@ -7,7 +7,7 @@ tags: [git]
 # Stale branches and pruning
 
 A **stale branch** is a
-[remote tracking branch](/DevOps/Git/Remote_tracking_branches.md) that **no
+[remote tracking branch](Remote_tracking_branches.md) that **no
 longer tracks anything** because the actual branch on the remote has been
 deleted.
 

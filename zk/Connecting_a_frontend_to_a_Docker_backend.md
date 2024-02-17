@@ -8,9 +8,9 @@ tags: [docker, SQL, node-js]
 # Connecting a frontend to a Docker backend
 
 Building on from
-[NodeJS backend with MySQL database](/DevOps/Docker/Docker_Examples/Node_and_MySQL_db.md)
+[NodeJS backend with MySQL database](Node_and_MySQL_db.md)
 we can add a frontend by adapting the existing
-[Docker Compose](/DevOps/Docker/Docker_Compose.md) files (one for each
+[Docker Compose](Docker_Compose.md) files (one for each
 environment) to accept an additional dependency.
 
 We won't create a container for the frontend as this is not necessary.

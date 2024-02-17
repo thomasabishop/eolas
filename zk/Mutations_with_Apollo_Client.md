@@ -150,7 +150,7 @@ const resolvers = {
 We invoke the `useMutation` hook to issue mutations from the client-side.
 
 As with queries and
-[query constants](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants) we
+[query constants](Apollo_Client.md#query-constants) we
 wrap our mutation in a `gql` template string:
 
 ```js

@@ -7,7 +7,7 @@ tags: [algebra]
 ## Use inversion of operators
 
 When solving equations we frequently make use of the
-[ operator inversion rules](../Prealgebra/Inversion%20of%20operators.md) to find
+[ operator inversion rules](Inversion%20of%20operators.md) to find
 the solutions.
 
 ### Example: inversion of addition

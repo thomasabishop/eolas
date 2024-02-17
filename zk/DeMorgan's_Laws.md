@@ -8,7 +8,7 @@ tags: []
 
 DeMorgan's laws express some fundamental equivalences that obtain between the
 Boolean
-[connectives](/Logic/Propositional_logic/Truth-functional_connectives.md).
+[connectives](Truth-functional_connectives.md).
 
 ## First Law
 

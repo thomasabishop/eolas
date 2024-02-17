@@ -9,10 +9,10 @@ tags:
 # Handling streams with fs
 
 When reading from a file, the
-[`fs.readFile()`](/Programming_Languages/NodeJS/Modules/Core/fs.md) method waits
+[`fs.readFile()`](fs.md) method waits
 until the entire file has been read before executing the callback. It's obvious
 why this might not be ideal in certain cases. If the file is very large you are
-utilising a lot of [memory](/Computer_Architecture/Memory/Memory.md) for a
+utilising a lot of [memory](Memory.md) for a
 single process. Additionally, the data you need might appear early in the file,
 in which case, once you find the data you want, there is no need to read to the
 end of the file.

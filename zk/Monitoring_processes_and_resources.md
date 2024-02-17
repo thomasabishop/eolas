@@ -10,7 +10,7 @@ tags: [systems-programming]
 
 ### `top`/`htop`
 
-We can use [ps](/Programming_Languages/Shell_Scripting/Processes.md) to list the
+We can use [ps](Processes.md) to list the
 currently running processes but it does not provide much information about the
 resource metrics or how the process changes over time. We can use `top` to get
 more information.
@@ -60,7 +60,7 @@ _Here I have pressed `u` to show only the processes associated with my user:_
     ```
 - `VIRT`
   - The total amount of
-    [virtual memory](/Operating_Systems/Virtual_memory_and_the_MMU.md) used by
+    [virtual memory](Virtual_memory_and_the_MMU.md) used by
     the process including: program code, data, shared libraries, pages that have
     been swapped, pages that have been mapped but not used.
 - `RES`
@@ -68,7 +68,7 @@ _Here I have pressed `u` to show only the processes associated with my user:_
   - The non swapped _physical_ memory the process has used
 - `SHR`
   - The size of the process's
-    [shared pages](/Operating_Systems/Virtual_memory_and_the_MMU.md#shared-pages)
+    [shared pages](Virtual_memory_and_the_MMU.md#shared-pages)
 - `S`
   - Status:
     - S for sleeping (idle)
@@ -104,13 +104,13 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
     - Total kbs swapped to disk
     - Total kbs free
     - Total kbs currently in
-      [buffer](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
+      [buffer](Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
       and not written
     - Total amount of virtual memory in the
-      [cache](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
+      [cache](Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
 - `swap`
   - Distinguishes amount of memory
-    [swapped](/Operating_Systems/Disks/Swap_space.md) in (`si`) to memory and
+    [swapped](Swap_space.md) in (`si`) to memory and
     swapped out (`so`) to disk
 - `io`
   - Disk actions
@@ -135,7 +135,7 @@ gives me some useful info about which files VS Code is using:
 ## System calls: `strace`
 
 A system call is when a process requests a service from the
-[kernel](/Operating_Systems/The_Kernel.md), for instance an I/O operation to
+[kernel](The_Kernel.md), for instance an I/O operation to
 memory. We can trace these system calls with `strace`.
 
 ## CPU performance
@@ -167,7 +167,7 @@ $ uptime
 
 We know that processes primarily interact with virtual memory in the form of
 pages which are then translated to physical blocks by the kernel via the
-[MMU](/Operating_Systems/Virtual_memory_and_the_MMU.md). There are several tools
+[MMU](Virtual_memory_and_the_MMU.md). There are several tools
 which provide windows onto this process.
 
 ### System page size
@@ -186,7 +186,7 @@ This will typically be the same for all Linux systems.
 
 `free` displays the total amount of free and¬used physical and swap memory in
 the system, as well as the
-[buffers and caches](/Hardware/Memory/Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
+[buffers and caches](Role_of_memory_in_computation.md#relation-between-cache-and-buffers)
 used by the kernel.
 
 ```bash

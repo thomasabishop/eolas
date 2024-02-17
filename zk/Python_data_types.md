@@ -16,7 +16,7 @@ tags: [python, data-types]
 
 The core data-types are as follows:
 
-- [str](/Programming_Languages/Python/Syntax/Strings_in_Python.md)
+- [str](Strings_in_Python.md)
 - bool
 - float
 - double

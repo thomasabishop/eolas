@@ -45,7 +45,7 @@ or **alternating current** (AC):
 ### Chemicals (cells and batteries)
 
 The chemical creation of current is the physics behind
-[batteries](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md).
+[batteries](Cells_and_batteries.md).
 Chemical current production produces currents on a smaller and less industrial
 scale than generators.
 

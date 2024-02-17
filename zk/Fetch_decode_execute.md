@@ -8,7 +8,7 @@ tags: [CPU]
 
 _Fetch, decode, execute_ is the operating cycle of the CPU. We will run through
 how this works with reference to the
-[CPU architecture](/Computer_Architecture/CPU/CPU_architecture.md).
+[CPU architecture](CPU_architecture.md).
 
 ## Fetch
 
@@ -59,9 +59,9 @@ to determine which of its circuits should be used for processing.
 Now the command will be executed. The operand is copied to the Memory Address
 Register and then passed to the Memory Data Register and the command is carried
 out by the ALU. The activities of ALU are covered in
-[CPU Architecture](/Computer_Architecture/CPU/CPU_architecture.md#arithmetic-logic-unit)
+[CPU Architecture](CPU_architecture.md#arithmetic-logic-unit)
 and the notes on
-[Logic Gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
+[Logic Gates](Logic_gates.md).
 
 ## Store
 
@@ -76,7 +76,7 @@ specify where to store the result.
 - If the instruction is iterative (e.g. adding two numbers and then multiplying
   by another number), the instruction will tell the CPU to store the interim
   first value in the CPU's
-  [registers](/Computer_Architecture/CPU/CPU_architecture.md#registers). As
+  [registers](CPU_architecture.md#registers). As
   these are part of the CPU, the data can be retrieved more readily. If the
   value is not expected to be used again immediately, it goes to the DRAM or
   harddisk.

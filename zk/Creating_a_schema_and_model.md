@@ -9,7 +9,7 @@ tags: [mongo-db, node-js, mongoose]
 ## Schema
 
 In order start adding
-[collections and documents](/Databases/MongoDB/Introduction.md) to our database,
+[collections and documents](Introduction.md) to our database,
 we use Mongoose's **schema** structure. (This is specific to Mongoose and is not
 a structure that is a part of Mongo in general.)
 
@@ -45,7 +45,7 @@ The following data types are available:
 
 > Note that we set our validation criteria as the second property for each
 > schema value. There is more info info on validation in a
-> [separate entry](/Databases/MongoDB/Validating_Mongoose_schemas.md);
+> [separate entry](Validating_Mongoose_schemas.md);
 
 ## Models
 

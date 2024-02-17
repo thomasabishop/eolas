@@ -7,7 +7,7 @@ tags: [propositional-logic]
 # Soundness
 
 Recall that in the definition of
-[deductive validity](/Logic/General_concepts/Validity_and_entailment.md#validity)
+[deductive validity](Validity_and_entailment.md#validity)
 we do not say: an argument is valid iff if the premises _are true_ and the
 conclusion _is true_. We say _if it is possible for the premises to be true_.
 This is important: we are not interested in the actual truth of the premises or

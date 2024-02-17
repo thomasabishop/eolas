@@ -6,7 +6,7 @@ tags: []
 
 # Negation Elimination
 
-Like the [introduction](/Logic/Proofs/Negation_Introduction.md) rule for
+Like the [introduction](Negation_Introduction.md) rule for
 negation, the elimination rule also works by deriving a contradiction. It is
 basically _Negation Introduction_ in reverse. Instead of starting the sub-proof
 with a true proposition from which you derive a contradiction, you start with

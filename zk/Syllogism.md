@@ -7,7 +7,7 @@ tags: [propositional-logic]
 # Syllogism
 
 In order to make assertions about the relative
-[consistency](/Logic/General_concepts/Logical_consistency.md) or inconsistency
+[consistency](Logical_consistency.md) or inconsistency
 of a set of propositions we advance arguments. Consider everyday life: if we are
 having an argument with someone, we believe that they are wrong. A more logical
 way to say this is that we believe that their beliefs are inconsistent. In order

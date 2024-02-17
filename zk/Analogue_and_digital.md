@@ -72,7 +72,7 @@ one of a limited set of values.
 Computers only use two symbols for each value: 0 and 1.
 
 Although a digital system could use more than two symbols, adding more would
-[increase the complexity](/Electronics_and_Hardware/Binary/Why_computers_use_binary.md#from-circuits-to-programs)
+[increase the complexity](Why_computers_use_binary.md#from-circuits-to-programs)
 and cost of the system. A set of only two symbols allows for simplified hardware
 and improved reliability.
 

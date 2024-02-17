@@ -24,7 +24,7 @@ $$
 $$
 
 Compare the
-[Commutative Law](/Mathematics/Prealgebra/Whole_numbers.md#the-commutative-property)
+[Commutative Law](Whole_numbers.md#the-commutative-property)
 in the context of arithmetic.
 
 ### The Associative Law
@@ -38,7 +38,7 @@ $$
 $$
 
 Compare the
-[Associative Law](/Mathematics/Prealgebra/Whole_numbers.md#the-associative-property)
+[Associative Law](Whole_numbers.md#the-associative-property)
 in the context of arithmetic.
 
 ### The Distributive Law
@@ -52,7 +52,7 @@ $$
 $$
 
 Compare how the
-[Distributive Law applies in the case of algebra based on arithmetic](/Mathematics/Prealgebra/Distributivity.md):
+[Distributive Law applies in the case of algebra based on arithmetic](Distributivity.md):
 
 $$
     a \cdot (b + c) = a \cdot b + a \cdot c
@@ -77,7 +77,7 @@ $$
 ### DeMorgan's Laws
 
 In addition we have
-[DeMorgan's Laws](/Logic/Laws_and_theorems.md/DeMorgan's_Laws.md) which express
+[DeMorgan's Laws](DeMorgan's_Laws.md) which express
 the relationship that obtains between the negations of conjunctive and
 disjunctive expressions:
 
@@ -158,8 +158,8 @@ with a truth table:
 The fact that we can take a complex Boolean function and reduce it to a simpler
 formulation has great significance for the development of computer
 architectures, specifically
-[logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md). It
+[logic gates](Logic_gates.md). It
 would be rather resource intensive and inefficient to create a gate that is
 representative of the complex function. Whereas the simplified version only
 requires a single
-[OR gate](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#or-gate).
+[OR gate](Logic_gates.md#or-gate).

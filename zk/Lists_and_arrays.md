@@ -88,7 +88,7 @@ fi
 ```
 
 Here we pass all the elements of the array to a
-[test](/Programming_Languages/Shell/Test_values_in_Bash.md) condition which
+[test](Test_values_in_Bash.md) condition which
 tests for an empty string.
 
 > NB: This will not immediately work in the context of a function. See below.
@@ -96,7 +96,7 @@ tests for an empty string.
 ## Weirdness with functions
 
 When you pass an array as an argument to a
-[function](/Programming_Languages/Shell/Functions_in_Bash.md) it will not
+[function](Functions_in_Bash.md) it will not
 immediately be understood to be an array.
 
 When we use `$1` to individuate the first function argument this is read as
@@ -163,4 +163,4 @@ done
 ```
 
 We are leveraging this aspect of Bash when we
-[loop through each character in a string](/Programming_Languages/Shell/Strings_in_bash.md#loop-through-each-character-in-a-string).
+[loop through each character in a string](Strings_in_bash.md#loop-through-each-character-in-a-string).

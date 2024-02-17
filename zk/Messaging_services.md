@@ -15,7 +15,7 @@ apps and software components built in AWS, with automatic encryption. It helps
 with decoupling and scaling.
 
 As the name indicates, its operating mode is that of a
-[queue](/Data_Structures/Queue.md) data structure offering first-in, first-out
+[queue](Queue.md) data structure offering first-in, first-out
 and other queue implementations.
 
 An example application of this would be to set up an SQS queue that receives

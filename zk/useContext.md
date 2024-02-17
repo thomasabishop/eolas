@@ -126,4 +126,4 @@ Then, in our code we just insert the `Context` component:
 In the examples above we have only been consuming state that is owned by the
 provider however in most scenarios you will also want to update the state from a
 consumer. This is best achieved by combining `useContext` with a reducer and is
-detailed in [Application state management](./Application_state_management.md).
+detailed in [Application state management](Application_state_management.md).

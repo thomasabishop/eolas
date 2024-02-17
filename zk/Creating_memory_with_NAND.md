@@ -10,9 +10,9 @@ tags: [logic-gates, binary, memory]
 # Creating memory with NAND gates
 
 The
-[logic circuit](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md)
+[logic circuit](Digital_circuits.md)
 below demonstrates how memory can be created using
-[NAND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nand-gate)
+[NAND](Logic_gates.md#nand-gate)
 gates. A single bit is stored in memory.
 
 ![](/img/nand_latch_logic_circuit.png) Interactive version of circuit:

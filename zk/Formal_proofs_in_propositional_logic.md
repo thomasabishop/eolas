@@ -71,7 +71,7 @@ only its result.
 ## Derivation rules
 
 Derivation rules are
-[syntactic](/Logic/Propositional_logic/Syntax_of_sentential_logic.md) rather
+[syntactic](Syntax_of_sentential_logic.md) rather
 than semantic. They are applied on the basis of their form rather than on the
 basis of the truth conditions of the sentences they are applied to.
 
@@ -86,13 +86,13 @@ connective and one for its elimination.
 
 The main derivation rules:
 
-- [Negation Introduction](/Logic/Proofs/Negation_Introduction.md)
-- [Negation Elimination](/Logic/Proofs/Negation_Elimination.md)
-- [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md)
-- [Conjunction Elimination](/Logic/Proofs/Conditional_Elimination.md)
-- [Disjunction Introduction](/Logic/Proofs/Disjunction_Introduction.md)
-- [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md)
-- [Conditional Introduction](/Logic/Proofs/Conditional_Introduction.md)
-- [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md)
-- [Biconditional Introduction](/Logic/Proofs/Biconditional_Introduction.md)
-- [Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md)
+- [Negation Introduction](Negation_Introduction.md)
+- [Negation Elimination](Negation_Elimination.md)
+- [Conjunction Introduction](Conjunction_Introduction.md)
+- [Conjunction Elimination](Conditional_Elimination.md)
+- [Disjunction Introduction](Disjunction_Introduction.md)
+- [Disjunction Elimination](Disjunction_Elimination.md)
+- [Conditional Introduction](Conditional_Introduction.md)
+- [Disjunction Elimination](Disjunction_Elimination.md)
+- [Biconditional Introduction](Biconditional_Introduction.md)
+- [Biconditional Elimination](Biconditional_Elimination.md)

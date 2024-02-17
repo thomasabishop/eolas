@@ -12,7 +12,7 @@ a collection with the proprties `age` and `publications` and the author name,
 say `Tosh Gnomay` was a document in this collection? This means we would have an
 interaction between two collections. In this entry we will look at how to work
 with interrelated collections. This is equivalent to establishing
-[joins](/Databases/SQL/10_Joins.md) in a relational database.
+[joins](10_Joins.md) in a relational database.
 
 There are two main approaches to modelling relationships between data:
 **normalisation** and **denormalisation**.

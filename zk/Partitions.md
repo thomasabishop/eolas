@@ -9,9 +9,9 @@ tags:
 
 # Disk partitions
 
-A disk is divided up into [partitions](/Operating_Systems/Disks/Partitions.md)
+A disk is divided up into [partitions](Partitions.md)
 which are subsections of the overall disk. The kernel presents each partition as
-a [block device](/Operating_Systems/Devices.md#Devices) as it would with an
+a [block device](Devices.md#Devices) as it would with an
 entire disk.
 
 The disk dedicates a small part of its contents to a **partition table**: this
@@ -81,7 +81,7 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to
     the BIOS. In Linux this will be GRUB.
 - Root dir (`/dev/nvme0n1p2`)
   - This is the domain of the
-    [superuser](/Operating_Systems/User_Space.md#root-user-superuser). The part
+    [superuser](User_Space.md#root-user-superuser). The part
     of the filesystem that you need sudo priveleges to access and where you
     manage users
 - Home dir (`/dev/nvme0n1p3`)
@@ -101,7 +101,7 @@ Most standard partition tables allow for primary, extended and logical
 partitions. The primary partition is the part of the harddisk that contains the
 operating system and is thus described as 'bootable' and may be called the 'boot
 partition'. During the bootstrapping process this is injected into memory as the
-[kernel](/Operating_Systems/The_Kernel.md).
+[kernel](The_Kernel.md).
 
 The extended partition is basically everything other than the primary partition.
 This is typically subdivided into other partitions that are called _logical_

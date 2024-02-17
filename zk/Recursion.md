@@ -17,7 +17,7 @@ another example. Also fractals display recursive properties.
 ## Schema
 
 The general structure of a recursive function is as follows:
-![javascript-recursion.png](../img/javascript-recursion.png)
+![javascript-recursion.png](javascript-recursion.png)
 
 ## Why use recursive functions?
 
@@ -131,4 +131,4 @@ if (num > 0) {
 }
 ```
 
-![javascript-factorial 1.png](../img/javascript-factorial%201.png)
+![javascript-factorial 1.png](javascript-factorial%201.png)

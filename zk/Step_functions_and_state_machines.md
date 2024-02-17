@@ -22,8 +22,8 @@ transitions between them. It also includes error catchers and retry logic.
 At the beginning you define a `StartAt` state which is the entrypoint of the
 state machine. This can be manually triggered, or more likely, triggered by
 another AWS service such as a
-[Lambda](/DevOps/AWS/AWS_Lambda/Lambda_programming_model.md), an
-[API Gateway](/DevOps/AWS/AWS_API_Gateway.md) request or a messaging/queue
+[Lambda](Lambda_programming_model.md), an
+[API Gateway](AWS_API_Gateway.md) request or a messaging/queue
 event.
 
 The state machine ultimately ends at an end state. In between are various

@@ -14,12 +14,12 @@ The overall architecure consists in the following three processes:
 
 ## Triggers
 
-See [AWS Lambda triggers](/DevOps/AWS/AWS_Lambda/Lambda_triggers.md)
+See [AWS Lambda triggers](Lambda_triggers.md)
 
 ## Handler function
 
 See
-[AWS Lambda handler function](/DevOps/AWS/AWS_Lambda/Lambda_handler_function.md)
+[AWS Lambda handler function](Lambda_handler_function.md)
 
 ## Code
 

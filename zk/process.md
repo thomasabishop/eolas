@@ -19,7 +19,7 @@ the terminal and exit the current process.
 ## Managing runtime environments
 
 See
-[Managing Environments](/Programming_Languages/NodeJS/Architecture/Managing_environments.md).
+[Managing Environments](Managing_environments.md).
 
 ## Accessing arguments: `process.argv`
 
@@ -101,7 +101,7 @@ Hello from file
 
 Typically we want to write and read data that the user provides. To do this we
 need to wait on that event. So we use Node's asynchonous
-[event listeners](/Programming_Languages/NodeJS/Modules/Core/events.md). We wait
+[event listeners](events.md). We wait
 on the `data` event:
 
 ```js

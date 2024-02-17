@@ -8,9 +8,9 @@ tags: [physics, electricity]
 # Ohm's Law
 
 The relationship between
-[current](/Electronics_and_Hardware/Analogue_circuits/Current.md),
-[voltage](/Electronics_and_Hardware/Analogue_circuits/Voltage.md), and
-[resistance](/Electronics_and_Hardware/Analogue_circuits/Resistance.md) is
+[current](Current.md),
+[voltage](Voltage.md), and
+[resistance](Resistance.md) is
 defined by Ohm's Law:
 
 > The current flowing from one point to another is equal to the voltage accross

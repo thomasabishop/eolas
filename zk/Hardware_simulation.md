@@ -8,7 +8,7 @@ tags: [nand-to-tetris]
 # Hardware simulation
 
 In order to test our
-[HDL](/Computer_Architecture/Hardware_Description_Language.md) files we load
+[HDL](Hardware_Description_Language.md) files we load
 them into the hardware simulator program. We will demonstrate this with the
 following XOR implementation:
 

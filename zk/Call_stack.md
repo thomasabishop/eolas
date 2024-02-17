@@ -6,7 +6,7 @@ tags: []
 
 # The call-stack
 
-A [stack](/Data_Structures/Stacks.md) data structure that holds the information
+A [stack](Stacks.md) data structure that holds the information
 of the functions called within a program that allows transfer of the application
 control from these functions to the main process after code inside the functions
 has been executed.

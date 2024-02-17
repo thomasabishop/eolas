@@ -19,7 +19,7 @@ because you don't want it to be output to `stdout`.
 
 The `2>&1` argument is the content: any errors that the program may generate and
 try to show in stout. Notice we are using the
-[file descriptors](/Programming_Languages/Shell/File_descriptors_and_redirection.md)
+[file descriptors](File_descriptors_and_redirection.md)
 `1` and `2`.
 
 If you just want the errors regardless of whether they appear in `stdout` you

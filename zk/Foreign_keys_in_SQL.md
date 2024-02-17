@@ -8,7 +8,7 @@ tags: [SQL, relational-databases]
 # Creating views with foreign keys
 
 We utilise **foreign** and
-[primary keys](/Databases/Relational_Databases/Primary_key.md) to create
+[primary keys](Primary_key.md) to create
 relationships between tables in SQL. Foreign keys link data in one table to the
 data in another table and are how we cross-reference data in SQL.
 

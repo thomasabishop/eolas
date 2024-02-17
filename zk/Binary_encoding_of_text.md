@@ -8,7 +8,7 @@ tags: [binary, binary-encoding]
 # Text encoding
 
 Text encoding is an applied instance of
-[binary encoding](/Electronics_and_Hardware/Binary/Binary_encoding.md).
+[binary encoding](Binary_encoding.md).
 
 ## ASCII
 

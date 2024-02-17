@@ -28,7 +28,7 @@ If there was only one thread, this would be inefficient and unworkable.
 Therefore the framework will be multi-threaded: multiple request-response cycles
 can be executed at once by different threads.
 
-![sync-thread.svg](/img/sync-thread.svg)
+![sync-thread.svg](sync-thread.svg)
 
 To accomodate the ability to increase the scale of synchronous applications you
 need to be able to spawn more threads commensurate to increased demand. This
@@ -46,7 +46,7 @@ dispatching them asynchronously. When a request is made it sends it off and
 continues with its execution and handling new requests. Once these resolve, the
 data is returned to the main thread.
 
-![async.svg](/img/async.svg)
+![async.svg](async.svg)
 
 ## The Event Loop
 
@@ -61,7 +61,7 @@ Node is continually monitoring the Event Loop in the background.
 
 A running Node application is a single running process. Like everything that
 happens within the OS, a process is managed by the
-[kernel](/Operating_Systems/The_Kernel.md) that dispatches operations to the CPU
+[kernel](The_Kernel.md) that dispatches operations to the CPU
 in a clock cycle. A thread is a sequence of code that resides within the process
 and utilises its memory pool (the amount of memory assigned by the kernel to the
 Node process). The Event Loop runs on CPU ticks: a tick is a single run of the
@@ -75,7 +75,7 @@ These six phases create one cycle, or loop, equal to one **tick**. A Node.js
 process exits when there is no more pending work in the Event Loop, or when
 `process.exit()` is called manually. A program only runs for as long as there
 are tasks queued in the Event Loop, or present on the
-[call stack](/Software_Engineering/Call_stack.md).
+[call stack](Call_stack.md).
 
 ![](/img/node-event-loop.svg)
 
@@ -93,7 +93,7 @@ The phases are as follows:
      are currently set. The Event Loop takes the timer with the shortest wait
      time and compares it with the Event Loop's current time. If the wait time
      has elapsed, then the timer's callback is queued to be called once the
-     [call stack](/Software_Engineering/Call_stack.md) is empty.
+     [call stack](Call_stack.md) is empty.
 2. **I/O Callbacks**
    - Once timers have been checked and scheduled, Node jumps to I/O operations.
    - Node implements a non-blocking input/output interface. This is to say,

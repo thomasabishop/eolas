@@ -85,7 +85,7 @@ class Person:
 ## Object references
 
 When you log a class you get a reference to its hexadecimal
-[memory](/Computer_Architecture/Memory/Memory.md) reference.
+[memory](Memory.md) reference.
 
 ```py
 p1 = Person('John', 36)
@@ -112,7 +112,7 @@ print(id(p2))
 ## Copying objects
 
 The same principle that applies to
-[copying functions](/Programming_Languages/Python/Syntax/Functions_in_Python.md)
+[copying functions](Functions_in_Python.md)
 applies to copying objects created through classes: redeclaration results in a
 duplicate entity. Thus changes to the duplicate will affect the original.
 

@@ -22,7 +22,7 @@ Here is a work through where $f(1, 0, 1)$:
   and both of its disjuncts are false
 
 We can compute all possible outputs of the function by constructing a
-[trkjuth table](/Logic/Propositional_logic/Truth-tables.md) with each possible
+[trkjuth table](Truth-tables.md) with each possible
 variable as the truth conditions and the output of the function as the truth
 value:
 

@@ -36,5 +36,5 @@ However it should be used carefully and sparingly because you are obviously
 turning off core type-checking and overuse nullifies the purpose of TypeScript.
 
 One way to get around it is to use better
-[type-guarding](./Type_guarding_and_narrowing.md) and conditionality and to
+[type-guarding](Type_guarding_and_narrowing.md) and conditionality and to
 cover cases where the value may be undefined.

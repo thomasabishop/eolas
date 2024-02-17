@@ -11,8 +11,8 @@ element in a list without explicitly using loop syntax.
 
 Since its introduction to the language, the same functionality has become
 achievable by using functional methods like
-[`map` and `filter`](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md),
-utilising [lambdas](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md)
+[`map` and `filter`](Map_and_filter_in_Python.md),
+utilising [lambdas](Lambdas_in_Python.md)
 however list comprehension is often more straightforward and easier to read.
 
 ## Syntax

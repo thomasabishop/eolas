@@ -13,7 +13,7 @@ piped to it. In each case, what is read is stored as a variable.
 
 `read` will parse line by line using a space (`\n`) as the default delimiter.
 You can use IFS to parse by other characters and/or
-[split the contents into an array](/Programming_Languages/Shell/Split_into_array.md).
+[split the contents into an array](Split_into_array.md).
 
 ## Example of capturing user input
 
@@ -36,7 +36,7 @@ read
 
 ## Example of piping to read
 
-Here we use [find](/Programming_Languages/Shell/Find.md) to collate the files in
+Here we use [find](Find.md) to collate the files in
 the current directory and then pipe them to read.
 
 ```bash

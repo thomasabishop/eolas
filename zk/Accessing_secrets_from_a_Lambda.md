@@ -46,5 +46,5 @@ Here is an example of a resource permission giving access to a Lambda:
 ```
 
 See
-[Fetch from Secrets Manager](/DevOps/AWS/AWS_Lambda/Code_examples/Fetch_from_Secrets_Manager.md)
+[Fetch from Secrets Manager](Fetch_from_Secrets_Manager.md)
 for a code example of retrieving a value from Secrets Manager.

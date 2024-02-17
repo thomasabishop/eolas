@@ -17,7 +17,7 @@ above' the actions of the CPU. This is wrong and if you think about it, how
 could this be since any process, kernel included, requires the processor? The
 kernel is executed by and loaded into the CPU just like any other instruction in
 the
-[fetch, decode, execute cycle](/Computer_Architecture/CPU/Fetch_decode_execute.md)
+[fetch, decode, execute cycle](Fetch_decode_execute.md)
 of the CPU.
 
 However as a process, the kernel is the 'first amongst equals' given that it is
@@ -40,7 +40,7 @@ the CPU take place independently of the kernel.
 > points the program counter back into kernel code. That’s basically what the
 > CPU will be doing from boot up to shut down; switching between executing
 > kernel code and executing userspace code
-> ([Reddit](https://www.reddit.com/r/osdev/comments/wdskj5/how_does_kernel_decide_if_use_cpu_or_gpu_after/))
+> ([Reddit]())
 
 This is because of [context switching](), when the CPU is running its cycle, the
 kernel is idle waiting for it to complete. Once control switches back to the

@@ -61,7 +61,7 @@ client.
 
 We should accept alterations to the database that are not first validated. We
 can use the
-[Joi validator](/Programming_Languages/NodeJS/REST_APIs/Validation.md) to vet
+[Joi validator](Validation.md) to vet
 the request:
 
 ```js

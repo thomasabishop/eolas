@@ -19,19 +19,19 @@ tags: [logic-gates, binary]
 Logic gates are the basic building blocks of digital computing. **A logic gate
 is an electrical circuit that has one or more than one input and only one
 output.** The input and output points of the gate are
-[pins](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md) The
+[pins](Integrated_circuits.md) The
 input controls the output and the logic determining which types of input
 (on/off) lead to specific outputs (on/off) is isomorphic with the
 truth-conditions of the
-[Boolean connectives](/Logic/Truth-functional_connectives.md) specifiable in
-terms of [truth tables](/Logic/Truth-tables.md).
+[Boolean connectives](Truth-functional_connectives.md) specifiable in
+terms of [truth tables](Truth-tables.md).
 
 Physically, what 'travels through' the gates is electrical current and what
 constitutes the 'gate' is a
-[transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md)
+[transistor](Transistors.md)
 responding to the current. Going up a level of abstraction, the current/ charge
 is identified with a
-[bit](/Electronics_and_Hardware/Binary/Binary_units_of_measurement.md#binary-units-of-measurement).
+[bit](Binary_units_of_measurement.md#binary-units-of-measurement).
 It is bits that go into the gate and bits which come out: binary information
 that may be either 1 or 0.
 
@@ -45,10 +45,10 @@ one elemen>tary gate and/or other composite gates.
 An example of a composite gate would be a three-way AND. An AND with three
 inputs rather than the standard two that furnish the elementary AND gate. This
 gate would output 1 when all three gates have the value 1 and 0 otherwise.
-[Adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md)
-and [latche>s](/Electronics_and_Hardware/Digital_circuits/Latches.md) whilst
+[Adders](Half_adder_and_full_adder.md)
+and [latche>s](Latches.md) whilst
 being
-[integrated circuits](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md)
+[integrated circuits](Integrated_circuits.md)
 are also, technically speaking, composite gates.
 
 ## Gate interface / gate implementation
@@ -73,7 +73,7 @@ represented in the interface diagram.
 > is a one-to-many relationship at work here. From the point of view of the user
 > interface these differences should not be detectable. This is another example
 > of
-> [hardware abstraction](/Computer_Architecture/Hardware_abstraction_and_modularity.md)
+> [hardware abstraction](Hardware_abstraction_and_modularity.md)
 
 ## NOT gate
 
@@ -138,7 +138,7 @@ NANDs alone.
 ## OR gate
 
 > The OR gate represents the truth conditions of the
-> [disjunction](/Logic/Truth-functional_connectives### Truth
+> [disjunction](Truth-functional_connectives### Truth
 > conditions.md#disjunction) truth functional connective
 
 ### Symbol

@@ -7,7 +7,7 @@ tags: [physics, electricity, exponents]
 # Prefixes for unit of electrical measurement
 
 In electronics we are often dealing with units that are very large or very
-small, thus we rely on [exponents](/Mathematics/Algebra/Exponents.md) for formal
+small, thus we rely on [exponents](Exponents.md) for formal
 expression.
 
 | Prefix | Symbol | Expression as exponent | Expression as decimal value | English word |

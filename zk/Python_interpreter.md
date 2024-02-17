@@ -32,7 +32,7 @@ In the standard implementation, the language which interprets Python code is C.
 
 When Python runs in this implementation, code written in C converts it to
 bytecode (so-called because each instruction is
-[8-bits long](/Hardware/Binary/Binary_units_of_measurement.md)). This is a
+[8-bits long](Binary_units_of_measurement.md)). This is a
 lower-level transliteration of Python is not meant to be understood by the CPU
 (since it is not binary) but rather to be run in the Python virtual machine
 which is equipped to understand bytecode. The Python Virtual Machine is

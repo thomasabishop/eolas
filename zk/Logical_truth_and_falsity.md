@@ -25,7 +25,7 @@ Apples are fruits and apples are not fruits
 
 Neither proposition can be true because the truth of the first clause is
 contradicted by the second. By the principle of
-[consistency](/Logic/General_concepts/Logical_consistency.md), it is not
+[consistency](Logical_consistency.md), it is not
 possible for both clauses to be true at once therefore the proposition, overall
 has the truth value of false.
 
@@ -96,7 +96,7 @@ technicalities that have philosophically interesting consequences.
 - If an argument contains premises which are logically false than this argument
   will perforce be valid. This is because one cannot consistently assert the
   premises and deny the conclusion which is the definition of
-  [validity](/Logic/General_concepts/Validity_and_entailment.md). However the
+  [validity](Validity_and_entailment.md). However the
   _reason_ why one cannot consistently assert the premises and deny the
   conclusions is because one cannot consistently assert the premises - they
   conflict with each other. Furthermore as the argument contains false premises,

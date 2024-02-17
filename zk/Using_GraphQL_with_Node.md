@@ -26,7 +26,7 @@ app.listen(8080, () =>
 ## Add GraphQL as middlewear
 
 Next we introduce GraphQL as a piece of Node.js
-[middlewear](/Programming_Languages/Node/Architecture/Middleware.md), with the
+[middlewear](Middleware.md), with the
 `app.use()` method.
 
 ```js

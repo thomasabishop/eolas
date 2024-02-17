@@ -12,7 +12,7 @@ tags: [memory, motherboard]
 > A CPU is just an operator on memory. It reads its instructions and data from
 > the memory and writes back out to the memory. (Ward 2021)
 
-When a [CPU](/Computer_Architecture/CPU/CPU_architecture.md) executes a program,
+When a [CPU](CPU_architecture.md) executes a program,
 it needs a place to store the program's **instructions** and **related data**.
 This is the role of memory.
 
@@ -43,11 +43,11 @@ DRAM uses capacitors to create the memory cell:
 In a DRAM cell, each bit of data is stored as a charge in a capacitor. The
 presence of charge represents a '1' bit and the absence of charge represents a
 '0' bit. Each of these cells is paired with a
-[transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) that
+[transistor](Transistors.md) that
 controls the reading and writing of data.
 
 However capacitors lose
-[charge](/Electronics_and_Hardware/Analogue_circuits/Current.md) over time due
+[charge](Current.md) over time due
 to leaks. As a result DRAM is memory that needs to be refreshed (recharged)
 frequently. For this reason and because it only uses one transistor and
 capacitor per bit, DRAM is the less expensive form of volatile memory.
@@ -59,7 +59,7 @@ implementation is different. Unlike DRAM it doesn't use capacitors. Consequently
 the transistors do not leak or need to be refreshed, hence why SRAM is _static_
 and DRAM is _dynamic_.
 
-SRAM uses [flip flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md)
+SRAM uses [flip flops](Flip_flops.md)
 to store the bits. It also uses multiple transistors per bit. This makes it
 faster than DRAM but more expensive. DRAM is at least ten times slower than
 SRAM.
@@ -68,18 +68,18 @@ SRAM.
 
 The following steps outline the way in which memory interacts with the processor
 during computational cycles, once the
-[bootstrapping](/Operating_Systems/Boot_process.md) process has completed and
+[bootstrapping](Boot_process.md) process has completed and
 the OS kernel is itself loaded into memory.
 
 1. A file is loaded from the harddisk into memory.
 2. The instruction at the first address is sent to the CPU, travelling accross
-   the data bus part of the [system bus](/Computer_Architecture/Bus.md).
+   the data bus part of the [system bus](Bus.md).
 3. The CPU processes this instruction and then sends a request accross the
    address bus part of the system bus for the next instruction to the memory
    controller within the
-   [chipset](/Computer_Architecture/Chipset_and_controllers.md).
+   [chipset](Chipset_and_controllers.md).
 4. The chipset finds where this instruction is stored within the
-   [DRAM](/Computer_Architecture/Memory/Memory.md#dram) and issues a request to
+   [DRAM](Memory.md#dram) and issues a request to
    have it read out and send to the CPU over the data bus.
 
 > This is a simplified account; it is not the case that only single requests are
@@ -177,7 +177,7 @@ is the number of bits.
 
 We need to reverse this formula to find out how many bits we need to represent a
 given number of addresses. We can do this with a
-[logarithm](/Mathematics/Algebra/Logarithms.md).
+[logarithm](Logarithms.md).
 
 We can reverse the formula as follows: number of bits = $\log_2$(number of
 addresses).
@@ -195,7 +195,7 @@ Using memory addresses we end up with tables like the following:
 | 0000000000000010 | 0010001001001010 |
 
 This is hard to parse so we can instead use
-[hexadecimal numbers](/Electronics_and_Hardware/Binary/Hexadecimal_number_system.md)
+[hexadecimal numbers](Hexadecimal_number_system.md)
 to represent the addresses:
 
 | Memory address (as hex) | Data (as binary) |
@@ -205,7 +205,7 @@ to represent the addresses:
 | 0x0002                  | 0010001001001010 |
 
 By itself, the the data is meaningless but we know from
-[binary encoding](/Electronics_and_Hardware/Binary/Binary_encoding.md) that the
+[binary encoding](Binary_encoding.md) that the
 binary data will correspond to some meaningful data, such as a character or a
 colour, depending on the encoding scheme used. The above table could correspond
 to the characters for 'A', 'B' and 'C' in the ASCII encoding scheme:

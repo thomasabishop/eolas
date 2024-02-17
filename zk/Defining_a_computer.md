@@ -17,7 +17,7 @@ single set of tasks according to prewritten instructions. We’ll take the term
 _computer_ to mean general purpose computer.
 
 Simplified model of what a computer is:
-![1.4-Input-Process-Output.png](../img/1.4-Input-Process-Output.png)
+![1.4-Input-Process-Output.png](1.4-Input-Process-Output.png)
 
 Although the input, output and storage parts of a computer are very important,
 they will not be the focus of this course. Instead we are going to learn all
@@ -28,7 +28,7 @@ instructions to make calculations.
 
 ### Early computing (_Crash Course Computer Science)_
 
-[Early Computing: Crash Course Computer Science #1](https://www.youtube.com/watch?v=O5nskjZ_GoI)
+[Early Computing: Crash Course Computer Science #1](watch?v=O5nskjZ_GoI)
 
 - The abacus was created because the scale of society had become greater than
   what a single person could create and manipulate in their mind.
@@ -57,9 +57,9 @@ instructions to make calculations.
   wind, drift, slope and elevation. These were used well into WW2 but they were
   limited to the particular type of cannon or shell
 
-![Screenshot_2020-08-09_at_21.32.54 1.png](../img/Screenshot_2020-08-09_at_21.32.54%201.png)
+![Screenshot_2020-08-09_at_21.32.54 1.png](Screenshot_2020-08-09_at_21.32.54%201.png)
 
-![Screenshot_2020-08-09_at_21.34.48.png](../img/Screenshot_2020-08-09_at_21.34.48.png)
+![Screenshot_2020-08-09_at_21.34.48.png](Screenshot_2020-08-09_at_21.34.48.png)
 
 > Before the invention of actual computers, 'computer' was a job-title denoting
 > people who were employed to conduct complex calculations, sometimes with the

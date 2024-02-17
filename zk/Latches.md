@@ -11,7 +11,7 @@ tags: [logic-gates, binary, memory]
 The **combinatorial digital circuits** we have looked at so far have been
 non-sequential. The outcome is a function of its immediate set of inputs and
 everything happens at once: there is no means of storing state for future use.
-In other words there is no _[memory](/Computer_Architecture/Memory/Memory.md)_.
+In other words there is no _[memory](Memory.md)_.
 
 In contrast, the output of a **sequential digital circuit** depends not only on
 its present set of inputs but also on past inputs to the circuit. It has some
@@ -54,7 +54,7 @@ _The representation of an SR Latch in a digital circuit diagram_:
 The circuit diagram latch symbol obviously encapsulates more complex
 functionality that occurs at the sub-circuit level. We will demonstrate how this
 functionality can be achieved with two
-[NOR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#nor-gate) gates.
+[NOR](Logic_gates.md#nor-gate) gates.
 
 The two gates are in a **cross-coupled configuration**. This basically means
 that the wires are crossed back on themselves such that the output of one is

@@ -11,7 +11,7 @@ We create tables in an SQL database with the `CREATE` command.
 
 Below is an example of this in practice. Each field corresponds to a column. We
 specify the name of the field and its corresponding
-[data type](/Databases/SQL/Data_types_in_MySQL.md). Every table must have a
+[data type](Data_types_in_MySQL.md). Every table must have a
 **primary key**. In the example, `employee_id` is the primary key.
 
 ```sql

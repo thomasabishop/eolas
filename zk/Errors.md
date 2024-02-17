@@ -20,4 +20,4 @@ Once the data is returned, React tries to update the state but the component is
 unmounted.
 
 As the warning suggests, this can be resolved using the cleanup parameter within
-[useEffect](../../Programming_Languages/React/Hooks/useEffect.md#cleanup-functions).
+[useEffect](useEffect.md#cleanup-functions).

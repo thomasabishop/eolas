@@ -5,7 +5,7 @@ tags: [propositional-logic]
 ---
 
 We know that when we construct a
-[derivation](/Logic/Proofs/Formal_proofs_in_propositional_logic.md#derivation-rules)
+[derivation](Formal_proofs_in_propositional_logic.md#derivation-rules)
 we start from a set of assumptions and then attempt to reach a proposition that
 is a consequence of the starting assumptions. However it does not always have to
 be the case that the starting set contains members. The set can in fact be

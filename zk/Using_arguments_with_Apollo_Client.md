@@ -21,7 +21,7 @@ tags: [graphql]
 ## Updated schema
 
 In order to demonstrate arguments we need to expand the
-[original schema](/Databases/GraphQL/Apollo/Apollo_Server.md#example-schema).
+[original schema](Apollo_Server.md#example-schema).
 
 Remember a Track is a group of modules that teaches about a specific topic. We
 are going to add:
@@ -82,7 +82,7 @@ If we have more than one argument we can separate them with commas.
 ## Create resolver for new query
 
 Now we have to create a resolver for our new `track` query. We will quickly run
-through the [server-side process](/Databases/GraphQL/Apollo/Apollo_Server.md).
+through the [server-side process](Apollo_Server.md).
 
 ### Update our `RESTDataSource`
 
@@ -266,7 +266,7 @@ return a specific track.
 ## Send query with arguments using Apollo `useQuery`
 
 We can now write a proper query using the
-[useQuery hook](/Databases/GraphQL/Apollo/Apollo_Client.md#usequery-hook) from
+[useQuery hook](Apollo_Client.md#usequery-hook) from
 Apollo Client, with variables.
 
 First define our query constant:
@@ -304,6 +304,6 @@ const { loading, error, data } = useQuery(GET_TRACK, {
 ```
 
 Note that in contrast to the
-[simple example](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)
+[simple example](Apollo_Client.md#query-constants)
 because we are using variables, we have to pass-in an additional options object
 with the query constant that specifies our variables.

@@ -46,7 +46,7 @@ spawned instances? Is this even possible or do they die on `exit` .
   session. It contains variables that define system properties.
 
 - Every time a
-  [shell session](https://www.notion.so/Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6)
+  [shell session](Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6)
   spawns, a process takes place to gather and compile information that should be
   available to the shell process and its child processes. It obtains the data
   for these settings from a variety of different files and settings on the
@@ -155,7 +155,7 @@ variables use `set` .
 You can also add variables to config files that run on login such as your user
 `.bashrc` / `.zshrc` . This is obviously best for when you want the variables to
 persist and be accessible within every
-[shell session](https://www.notion.so/Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6).
+[shell session](Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6).
 
 ## Important environmental and shell variables
 

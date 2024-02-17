@@ -9,7 +9,7 @@ tags:
 # Components
 
 We write functional components in the manner of a normal
-[function](/Programming_Languages/React/React_Typescript/Functions.md) that take
+[function](Functions.md) that take
 a props argument and return a JSX element.
 
 ```jsx

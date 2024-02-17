@@ -34,7 +34,7 @@ tags: [graphql, APIs]
 > The best way to think of GraphQL architecturally is to think of it as a
 > different technique for instantiating the _uniform interface_, _client/server
 > decoupling_, and _layered-system architecture_ contraints of traditional
-> [REST APIs](/Databases/REST/RESTful_APIs.md#rest). However, instead of making
+> [REST APIs](RESTful_APIs.md#rest). However, instead of making
 > GET or POST requests to a REST endpoint URL and passing parameters, you send a
 > structured query object.
 

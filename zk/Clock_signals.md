@@ -9,8 +9,8 @@ tags: [binary, memory, clock, electromagnetism]
 # Clock signals
 
 In the examples of digital circuits so far (i.e
-[adders](/Electronics_and_Hardware/Digital_circuits/Half_adder_and_full_adder.md)
-and [latches](/Electronics_and_Hardware/Digital_circuits/Latches.md)) everything
+[adders](Half_adder_and_full_adder.md)
+and [latches](Latches.md)) everything
 happens in a single instant or over several repeated instances. This is because
 of how simple the circuits are. In the case of latches only a single bit is
 updated. And even with rippled adders they are just a series of 1-bit updaters
@@ -22,7 +22,7 @@ We do this by sequencing the execution with the pulses of the system clock.
 
 A single iteration of the volatage rising and falling is a **pulse**. A complete
 oscillation from low to high and back to low is a **cycle**. As with all
-[electromagnetic](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md)
+[electromagnetic](Electromagnetism.md)
 signals we measure the frequency of the wave in Hertz: cylcles per second. We
 also further distinguish the rising and falling edge of a pulse. Rising
 represents the signal passing from ground to its maximum voltage and falling is
@@ -44,6 +44,6 @@ The diagram below shows a pulse cycle of 2Hz.
   edge-triggered**
 
 The role of the clock is essential in the functioning of the
-[CPU](/Computer_Architecture/CPU/CPU_architecture.md#the-system-clock). It is
+[CPU](CPU_architecture.md#the-system-clock). It is
 the system clock that gives CPUs their performance rating: how many processes
 can execute within a given clock cycle.

@@ -133,9 +133,9 @@ file.close()
 
 Obviously file access can raise errors - typically when the file you want to
 access does not exist (i.e. a `FileNotFoundError`
-[exception](/Programming_Languages/Python/Syntax/Error_handling_in_Python.md)).
+[exception](Error_handling_in_Python.md)).
 We can manage this scenario with
-[exception handlers](/Programming_Languages/Python/Syntax/Error_handling_in_Python.md):
+[exception handlers](Error_handling_in_Python.md):
 
 ```py
 try:

@@ -126,4 +126,4 @@ This asserts that B is not a superset of A.
 
 ## Resources
 
-[Set symbols](https://www.mathsisfun.com/sets/symbols.html)
+[Set symbols](symbols.html)

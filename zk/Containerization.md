@@ -33,7 +33,7 @@ increased the speed of transport.
   particular implementation of containerization that simplifies the process and
   bases it on a standardised specification.
 
-- Containers are native to the Linux [kernal](/Operating_Systems/The_Kernel.md)
+- Containers are native to the Linux [kernal](The_Kernel.md)
   and are key part of how it works. Thus when you run containers on Linux, you
   are using native capability. When you use containers on Windows or Mac you
   have to run a virtual version of Linux in order to exploit the capabilities of
@@ -53,7 +53,7 @@ groups).
   example a container is ignorant of the underlying operating system and
   network, by default.
 
-In ordinary [user space](/Operating_Systems/User_Space.md) applications share
+In ordinary [user space](User_Space.md) applications share
 the _same_ processor, memory and file system resources. This increases the
 likelihood of resourcing challenges, dependency conflicts and security threats.
 Without modularisation and the titration of resources, you are opened up to much

@@ -7,7 +7,7 @@ tags:
 
 # Capturing user input in Bash
 
-We use [read](/Programming_Languages/Shell/Read.md) to gather user input.
+We use [read](Read.md) to gather user input.
 
 ## Capturing raw inputs
 
@@ -91,7 +91,7 @@ echo "$fave was selected"
 ### Check right number of arguments supplied
 
 Here we test that the right number of
-[arguments](/Programming_Languages/Shell/Passing_arguments_and_options_to_Bash_scripts.md)
+[arguments](Passing_arguments_and_options_to_Bash_scripts.md)
 have been passed to the script:
 
 ```sh

@@ -8,7 +8,7 @@ tags: [physics, electricity]
 ## Difference of potential and the tranfer of energy
 
 We noted in the discussion of
-[current](/Electronics_and_Hardware/Analogue_circuits/Current.md) that current
+[current](Current.md) that current
 flows when there is a difference of potential between two points with negatively
 charged atoms at one point and positively charged atoms at the other.
 
@@ -21,7 +21,7 @@ current, energy must be imparted to the electrons so that they all flow in the
 same direction.
 
 Voltage is the application of this energy. Any
-[form of energy](/Electronics_and_Hardware/Analogue_circuits/Voltage_sources.md)
+[form of energy](Voltage_sources.md)
 that dislodges electrons from atoms can be used to produce current. Thus:
 
 > Voltage is the work required per coulomb to move a charge from one point to
@@ -31,7 +31,7 @@ that dislodges electrons from atoms can be used to produce current. Thus:
 
 Given that voltage is the force that generates current, it would be natural to
 think that voltage only exists when a voltage source (such as a
-[battery](/Electronics_and_Hardware/Analogue_circuits/Cells_and_batteries.md))
+[battery](Cells_and_batteries.md))
 is connected to a circuit. This however is not the case. Even if a 9V battery
 isn't connected to anything it still has a difference of potential of 9-volts
 accross its terminals. Remember voltage is _potential energy_ not just the
@@ -98,7 +98,7 @@ obvious enough: they are at the beginning and end of the loop so are equal to
 the maximal voltage rise and minimal voltage drop, respectively.
 
 We can work out the voltage of the remaining voltage points by inverting
-[Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md):
+[Ohm's Law](Ohms_Law.md):
 $V = I \times R$:
 
 For the voltage at $V^{B}$:

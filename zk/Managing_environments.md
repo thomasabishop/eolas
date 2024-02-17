@@ -18,7 +18,7 @@ With a full-scale Node application you will typically run three environments:
 
 To determine the current environment we can use the variable
 **`process.env.NODE_ENV`** from the
-[global process object](/Programming_Languages/Node/Architecture/Process_object.md).
+[global process object](Process_object.md).
 This works universally regardless of the kind of Node app we are building.
 
 If you have not manually set up your environments, **`process.env.NODE_ENV`**
@@ -29,7 +29,7 @@ will return `undefined`.
 #### For the session
 
 `NODE_ENV` is a bash
-[environment variable](/Programming_Languages/Shell_Scripting/Environmental_and_shell_variables.md)
+[environment variable](Environmental_and_shell_variables.md)
 like any other. So we can set it in the normal way:
 
 ```bash
@@ -45,7 +45,7 @@ In Express, there is a built in method for retrieving the current envrionment:
 
 ## Configuring environments
 
-We use the third-party [Config](https://github.com/node-config/node-config)
+We use the third-party [Config](node-config)
 package to manage different configurations based on the environment.
 
 Once installed we set up a dedicated config directory with a structure as
@@ -85,7 +85,7 @@ for our application. We obviously shouldn't store this data openly in our config
 files since it would be made public.
 
 We can do so securely by utilising
-[environmental variables](../Shell_Scripting/Environmental_and_shell_variables.md)
+[environmental variables](Environmental_and_shell_variables.md)
 alongside the config pacakage.
 
 We create a file called `custom-environment-variables` (must be called this) and

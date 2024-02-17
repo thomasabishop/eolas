@@ -6,9 +6,9 @@ tags: [systems-programming]
 
 # `journald`
 
-`journald` is a program that comes as default with [systemd](/Linux/systemd.md).
+`journald` is a program that comes as default with [systemd](systemd.md).
 It is a service fror collecting and storing system-level log data. I keeps a
-track of all [kernel](/Operating_Systems/The_Kernel.md) processes. It is
+track of all [kernel](The_Kernel.md) processes. It is
 invaluable when tracing the source of problems and errors that may arise on the
 system level. It keeps a track of all kernal processes.
 

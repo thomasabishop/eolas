@@ -70,4 +70,4 @@ function components.
 
 We change components by using state, not by mutating props. This is consistent
 with React's
-[principle of the immutability of elements](https://www.notion.so/Elements-992594b9cd2e483c85cddddffeb16f11).
+[principle of the immutability of elements](Elements-992594b9cd2e483c85cddddffeb16f11).

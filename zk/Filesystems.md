@@ -11,7 +11,7 @@ tags:
 We cannot yet mount or interact with the partitions we have created. This is
 because we have not added a filesystem to each partition.
 
-> A filesytem is a form of [database](/Databases/Basic_database_concepts.md); it
+> A filesytem is a form of [database](Basic_database_concepts.md); it
 > supplies the structure to transform a simple block device into the
 > sophisticated hierarchy of files and subdirectories that users can understand.
 
@@ -89,7 +89,7 @@ UUID=c53577b5-92ef-4a0a-9a19-e488bfdfa39c	/home     	ext4      	rw,relatime	0 2
 ```
 
 It shows my root and home filesystems and my
-[swap](/Operating_Systems/Disks/Swap_space.md) file. Note that we use the UUID
+[swap](Swap_space.md) file. Note that we use the UUID
 to name the partition rather than its name in `/dev/`. The order of the
 parameters is as follows:
 

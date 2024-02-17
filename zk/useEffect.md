@@ -15,7 +15,7 @@ would be dispatching a request to an API to retrieve data to display in a
 component's initial render.
 
 `useEffect` enshrines but also simplifies the
-[lifecyle methods](./../Classes/Lifecycle_methods.md) that are used with
+[lifecyle methods](Lifecycle_methods.md) that are used with
 class-based React components.
 
 ## Demonstration
@@ -78,12 +78,12 @@ Note the array that is the second argument to `useEffect`. This is the
 
 The syntax of the `useEffect` hook also allows you to handle cleanup: something
 you want to do when the component unmounts (another example of how this hook
-recasts the traditional [lifecycle methods](./../Classes/Lifecycle_methods.md))
+recasts the traditional [lifecycle methods](Lifecycle_methods.md))
 . In addition to running on unmount, the cleanup function will run before the
 effect runs again (i.e. when it runs in response to a change in one of the
 elements of the dependency araray). This is chiefly used to prevent
-[memory leaks](../../../Software_Engineering/Memory_leaks.md) and the
-['update on unmounted component error'](../Errors.md#state-update-on-unmounted-component).
+[memory leaks](Memory_leaks.md) and the
+['update on unmounted component error'](Errors.md#state-update-on-unmounted-component).
 
 You do this by having a `return` clause after the main effect. Schematically:
 
@@ -114,4 +114,4 @@ useEffect(() => {
 
 ## Resources
 
-[Understanding the React useEffect cleanup function](https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/)
+[Understanding the React useEffect cleanup function]()

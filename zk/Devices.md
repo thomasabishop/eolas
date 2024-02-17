@@ -9,7 +9,7 @@ tags:
 
 Devices are hardware that require access to the CPU in order to function.
 Devices can either be external and plugged-in or internal to the motherboard.
-The most common type of device that you will work with are [disks](./Disks.md).
+The most common type of device that you will work with are [disks](Disks.md).
 
 Devices are files but they have some different capabilities than ordinaryq
 files. There are two types: **block** and **stream**. Device files reside in the
@@ -45,7 +45,7 @@ brw-rw----   1 root   disk   259,     3 Jun  4 11:00 nvme0n1p3
 > programs like `ls` and `cat`.
 
 The
-[mode](/Programming_Languages/Shell_Scripting/File_permissions_and_execution.md#what-the-output-means)
+[mode](File_permissions_and_execution.md#what-the-output-means)
 is different from ordinary files. Each device file is prepended with
 `b, p, c, s` before the standard permissions. These stand for the major types of
 devices: _block, character, pipe_ and _socket_.
@@ -65,7 +65,7 @@ devices: _block, character, pipe_ and _socket_.
 
 `/dev/null` is a virtual device: it doesn't actually exist as a piece of
 hardware on the system. It can be useful when
-[bash scripting](/Programming_Languages/Shell/Redirect_to_dev_null.md) as a
+[bash scripting](Redirect_to_dev_null.md) as a
 place to direct output that you don't care about, for example errors or verbose
 program read-outs.
 

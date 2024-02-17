@@ -53,9 +53,9 @@ In Python there are two common ways to handle similar data structures:
 ### Sorting by common property
 
 Assuming the sub-lists have an identical structure, you can
-[sort](/Programming_Languages/Python/Syntax/Sorting_lists_in_Python.md) them by
+[sort](Sorting_lists_in_Python.md) them by
 a common property by passing a
-[lambda function](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md) to
+[lambda function](Lambdas_in_Python.md) to
 the `key` value of `sorted()` and `.sort()`.
 
 For example, to sort the following list of lists by the second `age` property:
@@ -108,8 +108,8 @@ data = [
 ```
 
 Below we use
-[map](/Programming_Languages/Python/Syntax/Map_and_filter_in_Python.md) and a
-[lambda function](/Programming_Languages/Python/Syntax/Lambdas_in_Python.md) to
+[map](Map_and_filter_in_Python.md) and a
+[lambda function](Lambdas_in_Python.md) to
 convert the first element of each iner list from a Unix timestamp to a readable
 string:
 
@@ -118,7 +118,7 @@ string:
 ```
 
 We could also use
-[list comprehension](/Programming_Languages/Python/Syntax/List_comprehension_etc.md)
+[list comprehension](List_comprehension_etc.md)
 to achieve the same outcome:
 
 ```py
@@ -195,7 +195,7 @@ will simply overwrite the old value for that key.
 
 Accordingly, we create a dictionary which uses the unique key in each list as
 the key of each dictionary entry via
-[dictionary comprehension](/Programming_Languages/Python/Syntax/List_comprehension_etc.md#dictionary-comprehension)
+[dictionary comprehension](List_comprehension_etc.md#dictionary-comprehension)
 that loops through each value in the inner lists of the multidimensional array.
 We then parse the values of the dictionary into a list.
 

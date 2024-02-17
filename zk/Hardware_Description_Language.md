@@ -9,12 +9,12 @@ tags: [nand-to-tetris]
 
 An HDL is a declarative programming language used to describe the behaviour or
 structure of
-[digital circuits](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md).
+[digital circuits](Integrated_circuits.md).
 They are used to simulate the circuit and check its response.
 
 The hardware designer specifies a chip's logic by writing an HDL program which
 is then rigorously tested. At this stage, a
-[hardware simulator](/Computer_Architecture/Hardware_simulation.md) takes the
+[hardware simulator](Hardware_simulation.md) takes the
 HDL program as input and creates a software representation of the chip logic.
 The designer can instruct the simulator to test the virtual chip on various sets
 of inputs. This is done to check the chip's functionality but also to benchmark
@@ -76,7 +76,7 @@ circuit diagram
 #### Pins
 
 In an HDL program we distinguish internal pins along with the standard
-[input and output pins](/Electronics_and_Hardware/Digital_circuits/Integrated_circuits.md).
+[input and output pins](Integrated_circuits.md).
 At the level of the interface, we are concerned only with input and output pins
 (in the example program these are `a`, `b` and `out`). It is at the level of the
 implementation that internal pins are encountered. In the example these are the
@@ -91,7 +91,7 @@ a NOT. `out` is the value that is computed based on the input pins of `a` and
 Along with the HDL file we also create a test file. This runs the chip against
 the inputs we supply, these will typically be equivalent to the (left-hand)
 truth-values column in a truth table which is the same as the parameters passed
-to a [Boolean function](/Logic/Propositional_logic/Boolean_functions.md), for
+to a [Boolean function](Boolean_functions.md), for
 example:
 
 ```vhdl

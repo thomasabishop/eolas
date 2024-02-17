@@ -27,7 +27,7 @@ shell**. If you run a script from the command line you will be in a
 ## Shell sessions and access
 
 The type of shell session that you are currently in affects the
-[environmental and shell variables](https://www.notion.so/Environmental-and-shell-variables-04d5ec7e8e2b486a93f002bf686e4bbb)
+[environmental and shell variables](Environmental-and-shell-variables-04d5ec7e8e2b486a93f002bf686e4bbb)
 that you can access. This is because the order in which configuration files are
 read on initialisation differs depending on the type of shell.
 

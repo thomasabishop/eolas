@@ -11,7 +11,7 @@ tags: [docker, containerization]
 ![](/img/dock-architecture.png)
 
 - The Docker Client is a thin API for making
-  [REST API](/Databases/REST/RESTful_APIs.md) to the Docker Server. Any CLI
+  [REST API](RESTful_APIs.md) to the Docker Server. Any CLI
   command beginning `docker...` is an API request to the server.
 - The internal process name for the server is `dockerd`.
 - On `docker run...`, `dockerd` calls `containerd`. This process starts the

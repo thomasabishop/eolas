@@ -38,9 +38,9 @@ used to _control_ the flow of current in a circuit.
 
 > One ohm is the resistance of a circuit or circuit element that permits a
 > steady current flow of one
-> [amp](/Electronics_and_Hardware/Analogue_circuits/Current.md#formal-expression)
+> [amp](Current.md#formal-expression)
 > (one coulomb/second) when one
-> [volt](/Electronics_and_Hardware/Analogue_circuits/Voltage.md#voltage) is
+> [volt](Voltage.md#voltage) is
 > applied to the circuit.
 
 ### Conductance
@@ -56,7 +56,7 @@ used to _control_ the flow of current in a circuit.
 ## Ohm's Law
 
 The relationship between current, resistance and voltage is expressed in
-[Ohm's Law](/Electronics_and_Hardware/Physics_of_electricity/Ohms_Law.md).
+[Ohm's Law](Ohms_Law.md).
 
 ## Resistors
 

@@ -29,7 +29,7 @@ exports.handler = (event, context, callback) => {
 
 Let's walk through the above example making reference to the general structure
 of the
-[AWS Lambda handler function](/DevOps/AWS/AWS_Lambda/Lambda_handler_function.md):
+[AWS Lambda handler function](Lambda_handler_function.md):
 
 1. The `event` parameter is invoked to gain access to the event that triggered
    the function. This is a CloudFront request event which is targetted with

@@ -15,10 +15,10 @@ the array.
 ## Set-up
 
 We will follow the routine for establishing a MongoDB instance as detailed in
-[my notes](/Databases/MongoDB/Connect_to_database.md) on Mongo:
+[my notes](Connect_to_database.md) on Mongo:
 
-- [Create MongoDB database](/Databases/MongoDB/Create_database.md)
-- [Connect to MongoDB database](/Databases/MongoDB/Connect_to_database.md)
+- [Create MongoDB database](Create_database.md)
+- [Connect to MongoDB database](Connect_to_database.md)
 
 Our `index.js` now looks like the following:
 
@@ -122,8 +122,8 @@ const Course = mongoose.model(
 
 Now we need to rewrite our RESTful request handlers so that the data is sourced
 from and added to the database. We will mainly be using the Mongo syntax defined
-at [Querying a collection](/Databases/MongoDB/Querying_a_collection.md) and
-[Adding documents to a collection](/Databases/MongoDB/Adding_documents_to_a_collection.md).
+at [Querying a collection](Querying_a_collection.md) and
+[Adding documents to a collection](Adding_documents_to_a_collection.md).
 We will also keep API validation within the `/model/` file.
 
 ### GET
@@ -174,7 +174,7 @@ router.post("/", async (req, res) => {
 ### PUT
 
 When updating a value in the database we are going to use the
-[query-first](/Databases/MongoDB/Update_document.md#query-first-document-update)
+[query-first](Update_document.md#query-first-document-update)
 approach to updating a Mongo document.
 
 ```jsconst courseSchema = new mongoose.Schema({

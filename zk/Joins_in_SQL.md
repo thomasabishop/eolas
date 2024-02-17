@@ -16,7 +16,7 @@ that share the same fields**.
 The output will be represented as a table but it is virtual, not an actual
 table. (If you wish to actually create a table or a view off the back of a join
 operation you should combine the join with the
-[`CREATE TABLE`](/Databases/SQL/Create_an_SQL_table.md) command etc.)
+[`CREATE TABLE`](Create_an_SQL_table.md) command etc.)
 
 ## Inner joins
 

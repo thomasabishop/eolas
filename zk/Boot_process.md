@@ -11,7 +11,7 @@ tags:
 The primary or boot
 [partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk
 contains a bootloader. It is the job of the bootloader to locate the
-[kernel](/Operating_Systems/The_Kernel.md) on the harddrive and inject it into
+[kernel](The_Kernel.md) on the harddrive and inject it into
 memory so that they operating system can start. This is the boot process.
 
 ## Boot loaders
@@ -82,7 +82,7 @@ would with any other filesystem, allowing for advanced configuration.
 3. The kernel initializes the devices and its drivers.
 4. The kernel mounts the root filesystem.
 5. The kernel starts a program called **init**. It has a
-   [process id](/Programming_Languages/Shell_Scripting/Processes.md#processes-ps)
+   [process id](Processes.md#processes-ps)
    of 1. This is the point at which [user space](User_Space.md) starts.
 6. Init sets the rest of the system processes in motion.
 7. At the end of the boot process, init starts a process allowing you to log in.

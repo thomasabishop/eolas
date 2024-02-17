@@ -10,7 +10,7 @@ tags: [logic-gates]
 
 An integrated circuit (IC) is a single unit that comprises several logic gates
 designed for the easy construction of
-[digital circuits](/Electronics_and_Hardware/Digital_circuits/Digital_circuits.md).
+[digital circuits](Digital_circuits.md).
 The terms "integrated circuit" and "chip" are often used interchangeably.
 
 An IC puts the gates on a single piece of silicon that has electrical contact

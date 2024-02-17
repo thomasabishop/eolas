@@ -55,7 +55,7 @@ type Author {
 
 We instantiate an `ApolloServer` instance and pass our schema to it. We then
 subscribe to it with a
-[listener](/Programming_Languages/Node/Modules/Core/Node_JS_events_module.md#extending-the-eventemitter-class).
+[listener](Node_JS_events_module.md#extending-the-eventemitter-class).
 
 ```js
 // index.js
@@ -121,12 +121,12 @@ const server = new ApolloServer({ typeDefs, mocks });
 ```
 
 We can now
-[run queries](/Databases/GraphQL/Apollo/Apollo_Client.md#running-a-query)
+[run queries](Apollo_Client.md#running-a-query)
 against our server.
 
 ## Implementing resolvers
 
-A resolver is a [function](/Trash/Creating_a_GraphQL_server.md#resolvers) that
+A resolver is a [function](Creating_a_GraphQL_server.md#resolvers) that
 populates data for a given query. It should have **the same name as the field
 for the query**. So far we have one query in our schema: `tracksForHome` which
 returns the tracks to be listed on the home page. We must therefore also name
@@ -136,7 +136,7 @@ It can fetch data from a single data source or multiple data sources (other
 servers, databases, REST APIs) and present this as a single integrated resource
 to the client, matching the shape requested.
 
-As per the [generic example](/Trash/Creating_a_GraphQL_server.md#resolvers), you
+As per the [generic example](Creating_a_GraphQL_server.md#resolvers), you
 write write your resolvers as keys on a `resolvers` object, e.g:
 
 ```js
@@ -162,7 +162,7 @@ implementing the resolution: `resolverFunction(parent, args, context, info)`.
 
 - `parent`
   - Used with
-    [resolver chains](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md#resolver-chains)
+    [resolver chains](Using_arguments_with_Apollo_Client.md#resolver-chains)
     ---add example
 - `args`
   - an object comprising arguments provided for the given field by the client.
@@ -296,7 +296,7 @@ const resolvers = {
   `ApolloServer` instance.
 * This time we utilise the `args` parameter in the resolver since an `id` will
   be provided as a client-side
-  [argument](/Databases/GraphQL/Apollo/Using_arguments_with_Apollo_Client.md) to
+  [argument](Using_arguments_with_Apollo_Client.md) to
   return a specific author.
 
 ## The `useMutation` hook
@@ -304,4 +304,4 @@ const resolvers = {
 We invoke the `useMutation` hook to issue mutations from the client-side.
 
 As with queries and
-[query constants](/Databases/GraphQL/Apollo/Apollo_Client.md#query-constants)
+[query constants](Apollo_Client.md#query-constants)

@@ -7,7 +7,7 @@ tags: [python, APIs]
 # Making network requests in Python
 
 We can use the `requests` package to make API requests to
-[RESTful](/Databases/REST/RESTful_APIs.md) resources and handle the data as
+[RESTful](RESTful_APIs.md) resources and handle the data as
 JSON.
 
 ```sh
@@ -68,7 +68,7 @@ Running `main` returns:
 ```
 
 This is JSON but in Python is a
-[dictionary](/Programming_Languages/Python/Syntax/Dictionaries_in_Python.md)
+[dictionary](Dictionaries_in_Python.md)
 
 We can use standard dictionary methods to handle the data. For example, we'll
 add to the existing `try` block:

@@ -8,7 +8,7 @@ tags:
 # The `$PATH`
 
 We know that `$PATH` is an
-[environment variable](/Programming_Languages/Shell/Environmental_and_shell_variables.md).
+[environment variable](Environmental_and_shell_variables.md).
 This variable keeps track of directories **where executables are found**.
 
 Whenever any command is run, the shell looks up the directories contained in the

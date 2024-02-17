@@ -70,7 +70,7 @@ return (
 ```
 
 This follows standard practise for
-[controlled-components](/Programming_Languages/React/Hooks/Forms.md). The TS
+[controlled-components](Forms.md). The TS
 specific additions:
 
 - We define the change event as being of the type `React.ChangeEvent` and state

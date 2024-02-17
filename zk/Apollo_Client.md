@@ -8,12 +8,12 @@ tags: [graphql]
 # Apollo Client
 
 Apollo Client is the client-side counterpart to
-[Apollo Server](/Databases/GraphQL/Apollo/Apollo_Server.md). We use it for
+[Apollo Server](Apollo_Server.md). We use it for
 managing queries and mutations from the frontend to our Apollo GraphQL server.
 It is specifically designed to work with React.
 
 > We will be working with the
-> [schema](/Databases/GraphQL/Apollo/Apollo_Server.md#example-schema) we defined
+> [schema](Apollo_Server.md#example-schema) we defined
 > when working on the server
 
 ## Initializing the client
@@ -58,7 +58,7 @@ between the frontend and the backend, it is not itself executable code.
 Therefore, for each query in the schema we must write a frontend implementation.
 We do this with **query constants**. The frontend implementation has a backend
 analogue: the
-[resolver](/Databases/GraphQL/Apollo/Apollo_Server.md#implementing-resolvers)
+[resolver](Apollo_Server.md#implementing-resolvers)
 that is invoked when the frontend issues a query. The schema standardises this
 relationship so that every query on the client must have a corresponding
 resolver on the backend.

@@ -82,7 +82,7 @@ print(f'You are {user_age}')
 
 The `split()` function in Python is used to divide a string into multiple parts
 at the occurrence of a given separator. This function returns a
-[list](/Programming_Languages/Python/Syntax/Lists_in_Python.md) of substrings.
+[list](Lists_in_Python.md) of substrings.
 
 ### General syntax
 

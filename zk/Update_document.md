@@ -14,7 +14,7 @@ There are two methods for updating a document
 ## Query first document update
 
 With this approach we first execute a
-[query](/Databases/MongoDB/Querying_a_collection.md) to retrieve the document we
+[query](Querying_a_collection.md) to retrieve the document we
 want to edit and then make the change. We use the `findById` method to identify
 the document by its UUID and then `set` to update specified properties on the
 document. The `set` method is one of many operators that can be used to update

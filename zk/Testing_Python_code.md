@@ -10,7 +10,7 @@ tags: [python, testing]
 
 Pytest is the most popular testing library for Python. It is not included with
 the Python standard library so it must be installed with
-[pip](/Programming_Languages/Python/Concepts/Python_package_management.md).
+[pip](Python_package_management.md).
 While it does not include a declaration library, it is robust enough to handle
 most scenarios having a rich and expressive set of constructs and decorators
 that let you declare what your tests should do, under what conditions they

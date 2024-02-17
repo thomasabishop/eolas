@@ -8,7 +8,7 @@ tags: [binary, binary-encoding]
 
 The approach to encoding binary representations of colour is very similar to the
 approach we explored when looking at the encoding of
-[alphanumeric values](/Electronics_and_Hardware/Binary/Text_encoding.md).
+[alphanumeric values](Text_encoding.md).
 
 We begin by determining the total number of colours and colour shades we want to
 represent. With this value established we then decide on the bit-length required

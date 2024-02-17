@@ -39,7 +39,7 @@ $$
 ### Lowest common denominator and lowest common multiple
 
 Given the symmetry between
-[factors and divisors](/Mathematics/Prealgebra/Factors_and_divisors.md) these
+[factors and divisors](Factors_and_divisors.md) these
 properties are related. Note however that the LCM is more generic: it applies to
 any set of numbers not just fractions. Whereas the LCD is explicitly to do with
 fractions (hence 'denominator').

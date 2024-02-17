@@ -44,7 +44,7 @@ src/
 - The `App` component is your parent component and the container for your app.
   It is where you will import your sub-components.
 - If you are using React Router `App` becomes the index for the different page
-  components. See [Routing](./Routing.md) for more detail.
+  components. See [Routing](Routing.md) for more detail.
 
 ## `build`
 

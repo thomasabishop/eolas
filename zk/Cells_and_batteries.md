@@ -7,7 +7,7 @@ tags: [physics, electricity]
 # Cells and batteries
 
 Cells are a
-[voltage source](/Electronics_and_Hardware/Analogue_circuits/Voltage.md) that
+[voltage source](Voltage.md) that
 generate a difference of potential via a positive and negative electrode
 separated by an electrolytic solution. The electrolytes pull free electrons from
 one of the materials which creates a positive charge. The other material gains
@@ -48,7 +48,7 @@ line.
 In this configuration the same current flows through all the cells; it is not
 cumulative. We represent this as follow> However the voltage is cumulative: it
 is the _sum_ of the individual cell voltages, represented below as
-[electrical field](/Electronics_and_Hardware/Analogue_circuits/Voltage.md#distinguishing-voltage-from-electric-field):
+[electrical field](Voltage.md#distinguishing-voltage-from-electric-field):
 
 $$
 E_{T} = E_{1} + E_{2} + E_{3} \\

@@ -10,7 +10,7 @@ tags:
 # Forms using hooks
 
 With hooks, form processing is exactly the same as
-[classes](/Programming_Languages/React/Classes/Forms.md) in terms of the overall
+[classes](Forms.md) in terms of the overall
 methodology, but the syntax is slightly different as a result of the `useState`
 hook.
 
@@ -157,7 +157,7 @@ export default FormHookAbstracted;
 
 Note that instead of individual variables `email` , `phone`, `age` , this
 approach returns a single object `formValues` . We could therefore access the
-individual values with e.g `[formValues.email](http://formvalues.email)` .
+individual values with e.g `[formValues.email](formvalues.email)` .
 
 As it is an object, it makes resetting to the original state very easy, viz:
 

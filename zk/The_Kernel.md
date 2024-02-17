@@ -7,7 +7,7 @@ tags: [systems-programming, memory]
 # The Kernel
 
 The kernel acts as the primary mediator between the hardware (CPU, memory) and
-user [processes](../Programming_Languages/Shell_Scripting/Processes.md). Let's
+user [processes](Processes.md). Let's
 look at each of its responsibilities in greater depth:
 
 - process management
@@ -63,7 +63,7 @@ It has the following jobs to manage:
 - Allowing for the use of disk space as auxiliary memory
 
 > Modern CPUs include a
-> [memory management unit](/Operating_Systems/Virtual_memory_and_the_MMU.md#the-memory-management-unit-mmu)
+> [memory management unit](Virtual_memory_and_the_MMU.md#the-memory-management-unit-mmu)
 > which provides the kernel with **virtual** memory. In this scenario, memory
 > isn't directly accessed by the process instead it works on the assumption that
 > is has access to the entire memory of the machine and this is then translated
@@ -100,4 +100,4 @@ Example with a terminal program like `ls`:
 ## Controlling processes
 
 In Linux we can view, kill, pause and resume processes using
-[ps](../Programming_Languages/Shell_Scripting/Processes.md).
+[ps](Processes.md).

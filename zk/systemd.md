@@ -6,10 +6,10 @@ tags: [systems-programming]
 
 # systemd
 
-Once the [boot process](/Operating_Systems/Boot_process.md) has completed and
+Once the [boot process](Boot_process.md) has completed and
 the bootloader has located the kernel and injected it into memory the first user
 space program runs: `init` (for _initialisation_). `init` is a
-[daemon](/Operating_Systems/Daemons.md) process that continues running until
+[daemon](Daemons.md) process that continues running until
 shutdown and is responsible for starting all the processes that are
 prerequisites for user space. For example: network connections, disk access,
 user logins etc.

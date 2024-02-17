@@ -61,7 +61,7 @@ We also distinguish:
 - **atomic components**
 
 These definitions provide a formal specification of the concepts of
-[atomic and molecular propositions](/Logic/Propositional_logic/Atomic_and_molecular_propositions.md)
+[atomic and molecular propositions](Atomic_and_molecular_propositions.md)
 introduced previously.
 
 1. If $P$ is an atomic proposition, $P$ contains no connectives and hence does

@@ -11,7 +11,7 @@ tags: [relational-databases]
 
 This is essential for carrying out operations across database tables and for
 creating and deleting database entires in accordance with the
-[ACID principle](/Databases/ACID_principle.md). It is also a safeguard: it means
+[ACID principle](ACID_principle.md). It is also a safeguard: it means
 you can always identify a record by itself and don't have to rely on generic
 queries to identify it.
 

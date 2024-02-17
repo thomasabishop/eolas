@@ -39,4 +39,4 @@ customElements.define("my-component", MyComponent);
 
 ## Resources
 
-[A complete introdution to Web Components](https://kinsta.com/blog/web-components/)
+[A complete introdution to Web Components]()

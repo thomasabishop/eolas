@@ -8,9 +8,9 @@ tags: [propositional-logic]
 
 The vast majority of propositions in natural and formal logical languages are
 **neither
-[logically true](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-truth)
+[logically true](Logical_truth_and_falsity.md#logical-truth)
 or
-[logically false](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-falsity)**.
+[logically false](Logical_truth_and_falsity.md#logical-falsity)**.
 This makes sense because propositions of this form are all either tautologies or
 contradictions and as such do not express information about the state of events
 in the world. We call propositions that are neither logically true or logically

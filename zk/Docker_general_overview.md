@@ -62,4 +62,4 @@ containers can be launched from the same, single image.
 
 ## Docker architectural overview
 
-See [Docker architecture](/DevOps/Docker/Docker_architecture.md).
+See [Docker architecture](Docker_architecture.md).

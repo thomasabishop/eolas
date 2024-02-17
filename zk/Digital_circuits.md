@@ -7,10 +7,10 @@ tags: [circuits]
 # Digital circuits
 
 Ultimately every process in a computer is the product of a digital
-[circuit](/Electronics_and_Hardware/Analogue_circuits/Circuits.md) that is
+[circuit](Circuits.md) that is
 working on binary values. In contrast to electrical circuits, digital circuits
 are not represented in an
-[analogue](/Electronics_and_Hardware/Analogue_and_digital.md) fashion.
+[analogue](Analogue_and_digital.md) fashion.
 
 Analogue circuits work on the basis of real continuous phenomena in the world:
 charges and currents. As a result, the key properties of a circuit - voltage,
@@ -21,7 +21,7 @@ natural flow of current and ensure that it only runs within desired parameters.
 In a standard electrical circuit, voltage, current and resistance can vary over
 a wide range of values however in the binary context we want to deal with
 discrete values (zeros and ones) which can be fed into the various
-[logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md).
+[logic gates](Logic_gates.md).
 
 We therefore need a way to represent 'on' and 'off' as single quantities. We do
 this by stipulating that a given voltage corresponds to 'on' (high) and another
@@ -31,6 +31,6 @@ voltage is inherently analogue but we basically binary-encode them. Formally
 be within 2-5V depending on the circuit design and anything between 0 - 0.8V is
 considered off.
 
-The [transistor](/Electronics_and_Hardware/Digital_circuits/Transistors.md) is
+The [transistor](Transistors.md) is
 the electrical component that enables us to represent given voltage ranges as
 being 'on' or 'off'.

@@ -8,7 +8,7 @@ tags: [logic-gates, binary, memory, clock]
 # 3-bit Counter
 
 To demonstrate the use of
-[Flip-Flops](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md) we will
+[Flip-Flops](Flip_flops.md) we will
 create the circuit for a 3-bit counter. This simply counts up from 0 to 7
 because 7 is the maximum decimal number we can create with three bits ($2^3$):
 
@@ -25,7 +25,7 @@ because 7 is the maximum decimal number we can create with three bits ($2^3$):
 
 The circuit will have three memory components, each representing one bit of the
 3-bit number. When the
-[clock pulses](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md), the
+[clock pulses](Clock_signals.md), the
 3-bit number increments by one. We need to synchronise the operation with a
 clock because each bit by itself is meaningless, it only gains meaning by the
 relation it sustains to the other two bits hence it must be kept in sync with
@@ -53,7 +53,7 @@ If we look at the pattern of each flip-flops' output we notice the following:
 
 This means that to construct a circuit that displays this behaviour we just have
 to use a
-[T flip-flop](/Electronics_and_Hardware/Digital_circuits/Flip_flops.md#t-flip-flops)
+[T flip-flop](Flip_flops.md#t-flip-flops)
 since the only state change we need is a single bit toggle three times that
 retains its value.
 

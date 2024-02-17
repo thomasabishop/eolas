@@ -72,4 +72,4 @@ processes on hold.
 
 ## Resources
 
-[Virtual memory](https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/9_VirtualMemory.html#:~:text=Virtual%20memory%20also%20allows%20the,to%20more%20than%20one%20process)
+[Virtual memory](9_VirtualMemory.html#:~:text=Virtual%20memory%20also%20allows%20the,to%20more%20than%20one%20process)

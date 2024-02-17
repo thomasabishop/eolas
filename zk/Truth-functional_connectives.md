@@ -8,10 +8,10 @@ tags: [propositional-logic]
 
 Propositions generated from other (simple) propositions by means of
 propositional connectives are
-[compound propositions](/Logic/Propositional_logic/Atomic_and_molecular_propositions.md).
+[compound propositions](Atomic_and_molecular_propositions.md).
 
 We know that
-[logically determinant](/Logic/General_concepts/Logical_indeterminacy.md)
+[logically determinant](Logical_indeterminacy.md)
 propositions express a truth value. When simple propositions are joined with a
 connective to make a compound proposition they also have a truth value. This is
 determined by the nature of the connective and the truth value of the

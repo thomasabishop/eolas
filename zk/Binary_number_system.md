@@ -88,7 +88,7 @@ Counting in binary:
 ## Binary prefix
 
 To distinguish numbers in binary from decimal or
-[hexadecimal](/Electronics_and_Hardware/Binary/Hexadecimal_number_system.md)
+[hexadecimal](Hexadecimal_number_system.md)
 numbers, it is common to use the prefix `0b`. Thus, e.g, `0b110` for decimal
 `6`.
 

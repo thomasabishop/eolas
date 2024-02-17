@@ -129,7 +129,7 @@ request.
 ## Difference from cherry-picking
 
 The main difference between the two approaches is that
-[cherry-picking](/DevOps/Git/Cherry_picking_a_branch.md) is a more selective
+[cherry-picking](Cherry_picking_a_branch.md) is a more selective
 process, where you can pick and choose specific commits that you want to include
 in another branch. This can be useful when you only want to apply specific
 changes or fixes from one branch to another, without including all the changes

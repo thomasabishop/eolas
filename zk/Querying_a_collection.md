@@ -33,7 +33,7 @@ We now have the following entries in our `courses` collection:
 
 Now we will query the collection. This capability is provided via the Mongoose
 schema class we used to create the `Course`
-[model](/Databases/MongoDB/Create_collections_and_documents_with_Mongoose.md#models).
+[model](Create_collections_and_documents_with_Mongoose.md#models).
 We have the following methods available to use from the schema:
 
 - `find`
@@ -168,7 +168,7 @@ When we apply logical operators, we do not apply the query within the main
 predicate.
 
 For example to query by logical
-[OR](/Logic/Truth-functional_connectives.md#disjunction):
+[OR](Truth-functional_connectives.md#disjunction):
 
 ```js
 async function getCourses() {

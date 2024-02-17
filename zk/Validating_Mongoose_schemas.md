@@ -29,7 +29,7 @@ the property of `required` for a cell in the table. If we didn't set any
 validation via Mongoose, Mongo would accept whatever we sent to it.
 
 What is the relationship between this Mongoose validation and the
-[Joi](/Programming_Languages/NodeJS/REST_APIs/Validation.md) validation that we
+[Joi](Validation.md) validation that we
 use when validating API requests in Node/Express? They complement each other. We
 use Joi to validate the client request to the API. If this is valid, the process
 would then move onto the next stage which would be transforming the data from a

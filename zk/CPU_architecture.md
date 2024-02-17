@@ -8,8 +8,8 @@ tags: [CPU, electromagnetism, clock]
 
 At the core of a computer sits the Central Processing Unit. This is the assembly
 of chips that execute all computation. Instructions are passed to the CPU along
-the data bus part of the [system bus](/Computer_Architecture/Bus.md) from the
-memory. The [kernel](/Operating_Systems/The_Kernel.md), also residing in memory,
+the data bus part of the [system bus](Bus.md) from the
+memory. The [kernel](The_Kernel.md), also residing in memory,
 sequences and schedules the sending of data to the CPU and manages requests from
 the CPU for data in memory.
 
@@ -29,13 +29,13 @@ The CPU comprises three core components:
 ## Registers
 
 This is the part of the CPU that stores data. The memory cells that comprise it
-do not have [capacitors](/Computer_Architecture/Memory/Memory.md) (unlike RAM)
+do not have [capacitors](Memory.md) (unlike RAM)
 so they cannot store very much data but they work faster, which is what is
 important. Because their memory capacity is so small, we measure the size of
 registers in bits rather than bytes.
 
 In terms of speed, registers sit at the top part of the overall
-[memory hierarchy](/Computer_Architecture/Memory/Memory.md#the-memory-hierarchy).
+[memory hierarchy](Memory.md#the-memory-hierarchy).
 
 There are five main types of register in the CPU:
 
@@ -49,11 +49,11 @@ There are five main types of register in the CPU:
 
 ## Arithmetic Logic Unit
 
-See [Arithmetic Logic Unit](/Computer_Architecture/CPU/Arithmetic_Logic_Unit.md)
+See [Arithmetic Logic Unit](Arithmetic_Logic_Unit.md)
 
 ## Control Unit
 
-The CPU's [controller](/Computer_Architecture/Chipset_and_controllers.md). It
+The CPU's [controller](Chipset_and_controllers.md). It
 takes the instructions in binary form from RAM memory (separate from the CPU,
 but connected) and then signals to the to ALU and memory registers what it is
 supposed to do to execute the instructions. Think of it as the overseer that
@@ -73,11 +73,11 @@ cycle_.
 The clock's circuitry is based on a quartz crystal system like that used in
 watches. At precisely timed intervals, the clock sends out pulses of electricity
 that cause bits to move from place to place within
-[logic gates](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md) or
+[logic gates](Logic_gates.md) or
 between logic gates and
-[registers](/Computer_Architecture/CPU/CPU_architecture.md#registers). This is
+[registers](CPU_architecture.md#registers). This is
 covered in greater detail in the discussion of
-[clock signals in digital circuits](/Electronics_and_Hardware/Digital_circuits/Clock_signals.md).
+[clock signals in digital circuits](Clock_signals.md).
 
 Simple instructions such as add can often be executed in just one clock cycle,
 whilst complex operations such as divide will require a number of smaller steps,
@@ -95,14 +95,14 @@ Hz a processor possesses.
 ## Processing cycles
 
 Each "cycle" is the execution of a process that commences once the
-[kernel](/Operating_Systems/The_Kernel.md) hands control to the CPU. Each cycle
+[kernel](The_Kernel.md) hands control to the CPU. Each cycle
 follows a sequence of events known as
-[fetch, decode, and execute](/Computer_Architecture/CPU/Fetch_decode_execute.md).
+[fetch, decode, and execute](Fetch_decode_execute.md).
 
 ## Electromagnetism: broader scientific context
 
 Hertz was the scientist who detected
-[electromagentic waves](/Electronics_and_Hardware/Physics_of_electricity/Electromagnetism.md).
+[electromagentic waves](Electromagnetism.md).
 We use Hertz as a measure of the frequency of electromatic wave cycles in a
 signal.
 

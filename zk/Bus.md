@@ -23,11 +23,11 @@ can mean:
 
 | Bus type      | Description                                                                                                                                                                                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| System bus    | The primary pathway between the CPU and [memory](/Computer_Architecture/Memory/Memory.md). It comprises the **data bus** that transfers data from the memory to the CPU and the **address bus** which transmits requests from the CPU to memory. |
+| System bus    | The primary pathway between the CPU and [memory](Memory.md). It comprises the **data bus** that transfers data from the memory to the CPU and the **address bus** which transmits requests from the CPU to memory. |
 | Internal bus  | Connects local devices for example the harddisk to the CPU.                                                                                                                                                                                      |
-| External bus  | Connects peripheral devices such as disks and printers to the [motherboard](/Electronics_and_Hardware/Motherboard.md)                                                                                                                            |
+| External bus  | Connects peripheral devices such as disks and printers to the [motherboard](Motherboard.md)                                                                                                                            |
 | Expansion bus | Allows expansion boards to access the CPU and memory.                                                                                                                                                                                            |
-| Frontside bus | Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](/Electronics_and_Hardware/Motherboard.md) devices.                                                 |
+| Frontside bus | Main computer bus that determines data transfer rate speed and is the primary data transfer path between the CPU, RAM and other [motherboard](Motherboard.md) devices.                                                 |
 | Backside bus  | Transfers secondary cache (L2 cache) data at faster speeds, allowing more efficient CPU operations                                                                                                                                               |
 
 ## Bus standards
@@ -48,7 +48,7 @@ transmit each bit of data simultaneously.
 
 - Serial buses are cheaper to implement than parallel buses
 - Serial buses operate at greater
-  [latency](/Computer_Architecture/Bus.md#latency) than parallel buses
+  [latency](Bus.md#latency) than parallel buses
 
 ## Latency
 

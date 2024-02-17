@@ -13,7 +13,7 @@ methods for working with files and directories.
 
 Every method associated with `fs` has a _blocking_ and _asynchronous_
 implementation. The former obviously blocks the
-[event queue](/Programming_Languages/NodeJS/Architecture/Event_loop.md), the
+[event queue](Event_loop.md), the
 latter does not.
 
 The synchronous methods are useful to have in some contexts but in general and
@@ -100,4 +100,4 @@ fs.rmSync("/dir", { recursive: true, force: true });
 
 ## Streams
 
-See [Handling streams with fs](/Programming_Languages/NodeJS/Streams.md)
+See [Handling streams with fs](Streams.md)

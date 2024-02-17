@@ -25,10 +25,10 @@ boilerplate:
 
 ## Adding a trigger
 
-Next we need to add a [trigger](/DevOps/AWS/AWS_Lambda/Lambda_triggers.md) that
+Next we need to add a [trigger](Lambda_triggers.md) that
 execute the handler.
 
-We will do this using [AWS API Gateway](/DevOps/AWS/AWS_API_Gateway.md). We
+We will do this using [AWS API Gateway](AWS_API_Gateway.md). We
 select "Add trigger" from the dashboard view and input basic settings:
 
 ![](/img/api-gateway-trigger.png)

@@ -81,7 +81,7 @@ the second list against them.
 ## Parameter expansion: `${...}`
 
 We use most frequently for returning the value of stored
-[variables](/Programming_Languages/Shell/Variables_and_data_types.md).
+[variables](Variables_and_data_types.md).
 Techically we do not have to use the braces, we can retrieve with just `$var`
 however it's better to use them to minimise interpretation fuck-ups which happen
 a lot.
@@ -93,7 +93,7 @@ returned such as only returning from the 6th character: `${var:6}`.
 
 Command substitution (circle-brackets) allows us to put the output of one
 command inside another. Bash runs the bracketed command in a
-[sub-shell](/Programming_Languages/Shell/Shell_sessions.md) and then returns it
+[sub-shell](Shell_sessions.md) and then returns it
 to the main user shell.
 
 For example:
@@ -107,5 +107,5 @@ echo "The current directory is $(pwd)."
 We use arithmetic expansion when we want to calculate numerical values
 
 See
-[Working with numbers in Bash](/Programming_Languages/Shell/Working_with_numbers_in_Bash.md)
+[Working with numbers in Bash](Working_with_numbers_in_Bash.md)
 for more.

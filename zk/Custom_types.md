@@ -7,7 +7,7 @@ tags:
 
 # Custom types
 
-Objects and [classes](./Classes.md) are where TypeScript becomes most useful and
+Objects and [classes](Classes.md) are where TypeScript becomes most useful and
 powerful. In TypeScript, objects and classes are by definition custom types.
 
 When typing objects, you do not write the types alongside the actual data as you

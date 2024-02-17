@@ -20,17 +20,17 @@ not always work and there will be cases where the route to the desired
 derivation is more circuitous. In these instances it is to best to combine this
 general top level strategy with goal analysis.
 
-Goal analysis is a [recursive](/Data_Structures/Recursion.md) strategy which
+Goal analysis is a [recursive](Recursion.md) strategy which
 proceeds by using a 'goal' proposition to guide the construction of intermediary
 derivations.
 
 Assume that we want to show that an argument is
-[valid](/Logic/General_concepts/Validity_and_entailment.md#validity). Then our
+[valid](Validity_and_entailment.md#validity). Then our
 ultimate goal is to derive the conclusion from the premises we are given. We
 first ask ourselves: _which propositions if we could derive them, would allow us
 to easily derive the conclusion_? (For example, these propositions might be two
 simple propositions that when combined with
-[Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) give us
+[Conjunction Introduction](Conjunction_Introduction.md) give us
 the conclusion.) Deriving these propositions then becomes the new intermediate
 goal.
 
@@ -48,7 +48,7 @@ and $((\lnot N \rightarrow L) \land (D \leftrightarrow \lnot N))$.
 First, we consider what is the easiest possible way of achieving the proposition
 $(L \lor A) \land D$. Clearly it is to separately derive each disjunct
 ($L \lor A$ and $D$) and then combine them with
-[Conjunction Introduction](/Logic/Proofs/Conditional_Introduction.md). This
+[Conjunction Introduction](Conditional_Introduction.md). This
 provides us with our first goal: to derive each of the separate conjuncts.
 
 Let's start with $D$: where does it occur in the assumptions? It occurs in the
@@ -63,7 +63,7 @@ So far we have:
 Now we just need to get $D$ from the proposition at line 3. This is easy since
 we already have access to the consequent of the biconditional at line 1.
 Therefore we can apply
-[Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md)) at line
+[Biconditional Elimination](Biconditional_Elimination.md)) at line
 3 to get $D$. We are now halfway there:
 
 ![](/img/step2.png)
@@ -71,20 +71,20 @@ Therefore we can apply
 Next we need to turn our attention to deriving $L \lor A$. How can we obtain $L$
 ? Well it is contained within the first conjunct of the assumption on line 2.
 Again, we can get this through the application of
-[Conjunction Elimination](/Logic/Proofs/Conjunction_Elimination.md). Now, how do
+[Conjunction Elimination](Conjunction_Elimination.md). Now, how do
 we get $L$ from $(\lnot N \rightarrow L)$? Well, we already have the antecedent
 $\lnot N$ as an assumption on the first line, so we can use
-[Conditional Elimination](/Logic/Proofs/Conditional_Elimination.md) to derive
+[Conditional Elimination](Conditional_Elimination.md) to derive
 $L$. These two steps give us:
 
 ![](/img/step3.png)
 
 Now we need to get from $L$ to $L \lor A$. This is really straightforward
 because by using
-[Disjunction Introduction](/Logic/Proofs/Disjunction_Introduction.md)) we can
+[Disjunction Introduction](Disjunction_Introduction.md)) we can
 get from any sentence to a disjunction. Finally, having assembled all the
 constituent parts of the conjunction that is the conclusion, we can combine them
-with [Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md) as we
+with [Conjunction Introduction](Conjunction_Introduction.md) as we
 had planned at the outset.
 
 ![](/img/step4.png)
@@ -100,21 +100,21 @@ $$
 The requirements here could easily mislead us. We see that the target
 proposition is a conjunction so we might think that the best strategy is to seek
 to derive each conjunct and then combine them via
-[Conjunction Introduction](/Logic/Proofs/Conjunction_Introduction.md)).
+[Conjunction Introduction](Conjunction_Introduction.md)).
 
 Actually, if we look more closely, there is a better approach. The target
 proposition is contained in the first premise as the consequent to the
 biconditional ($\lnot L \leftrightarrow [X \land (\lnot S \lor B)]$). A better
 approach is therefore to seek to derive the antecedent ($\lnot L$) and then use
-[Biconditional Elimination](/Logic/Proofs/Biconditional_Elimination.md) to
+[Biconditional Elimination](Biconditional_Elimination.md) to
 extract the target sentence which is the consequent.
 
-![proof.png](/img/proof.png)
+![proof.png](proof.png)
 
 ## Proving theorems
 
 When we are proving
-[theorems](/Logic/Laws_and_theorems.md/Theorems_and_empty_sets.md#theorems-and-empty-sets)
+[theorems](Theorems_and_empty_sets.md#theorems-and-empty-sets)
 we do not have a set of assumptions to work from when constructing the proof. We
 must derive the target sentence from the 'empty set' which is the target
 sentence itself. It is therefore like a process of reverse engineering.
@@ -143,7 +143,7 @@ _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
   $\lnot (A \lor B) \rightarrow \lnot (A \land B)$.
 
 - Our starting assumption is to a disjunction. Thus we can apply
-  [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) to show
+  [Disjunction Elimination](Disjunction_Elimination.md) to show
   that our goal sentence $\lnot(A \land B)$ follows from each of the disjuncts
   ($\lnot A$ and $\lnot B$) in dedicated sub-proofs. If we can do this, we have
   the right to derive $\lnot (A \land B)$.
@@ -154,7 +154,7 @@ _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
   $A \land  B$ so that we can negate it as $\lnot (A \land B)$.
 
 - Having done this, we can discharge the
-  [Disjunction Elimination](/Logic/Proofs/Disjunction_Elimination.md) sub-proofs
+  [Disjunction Elimination](Disjunction_Elimination.md) sub-proofs
   and derive $\lnot (A \land B)$ from $\lnot A \lor \lnot B$
 
 **Lines 13-26**
@@ -165,9 +165,9 @@ _Prove_ $\vdash (\lnot A \lor \lnot B) \leftrightarrow \lnot(A \land B)$
   anymore, we have a negated conjunction.
 - We will do this by assuming the negation of what we want to prove
   ($\lnot (\lnot A \lor \lnot B)$) and then apply
-  [Negation Elimination](/Logic/Proofs/Negation_Elimination.md) to get
+  [Negation Elimination](Negation_Elimination.md) to get
   $\lnot A \lor \lnot B$.
 - This requires us to derive a contradiction. We get this on lines 23 and 24.
   This requires as previous steps that we have two sub-proofs that use
-  [Negation Elimination](/Logic/Proofs/Negation_Elimination.md) to release $A$
+  [Negation Elimination](Negation_Elimination.md) to release $A$
   and $B$

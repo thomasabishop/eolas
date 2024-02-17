@@ -6,9 +6,9 @@ tags: [CPU]
 
 # instruction set architectures
 
-We know that the [ALU](/Computer_Architecture/CPU/Arithmetic_Logic_Unit.md) is
+We know that the [ALU](Arithmetic_Logic_Unit.md) is
 responsible for the "execute" stage of the
-[fetch, decode, execute](/Computer_Architecture/CPU/Fetch_decode_execute.md)
+[fetch, decode, execute](Fetch_decode_execute.md)
 cycle, implementing the most basic binary operations such as adding two numbers.
 
 Accross different machines and CPU types there can be differences in how the
@@ -39,7 +39,7 @@ Over time, new instructions have been added to the x86 architecture but they all
 maintain backwards compatibility with preceding generations.
 
 There have been different, successive generations of x86 corresponding to their
-[word-size](/Electronics_and_Hardware/Binary/Signed_and_unsigned_numbers.md):
+[word-size](Signed_and_unsigned_numbers.md):
 16-bit, 32-bit, 64-bit. Word size here just means how many bits the processor
 can work with at a time.
 

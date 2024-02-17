@@ -12,7 +12,7 @@ tags: [logic-gates, binary]
 The half adder and full adder are components of digital circuits that enable us
 to carry out binary addition. Using adders and half adders we can add two binary
 numbers together. Adders are a type of [integrated circuit]() comprising certain
-[logic gates](/Hardware/Digital_circuits/Logic_gates.md) where the arrangement
+[logic gates](Logic_gates.md) where the arrangement
 allows for the representation of the addition of bits.
 
 ### Example addition
@@ -90,7 +90,7 @@ We can represent this with a simple truth-table:
 | 1   | 1   | 0   | 1     |
 
 We can see that the sum bit column replicates the truth-conditions of
-[XOR](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#xor-gate):
+[XOR](Logic_gates.md#xor-gate):
 
 | P   | Q   | P V Q |
 | --- | --- | ----- |
@@ -100,7 +100,7 @@ We can see that the sum bit column replicates the truth-conditions of
 | F   | F   | F     |
 
 And the carry-out bit replicates the truth conditions of
-[AND](/Electronics_and_Hardware/Digital_circuits/Logic_gates.md#and-gate):
+[AND](Logic_gates.md#and-gate):
 
 | P   | Q   | P & Q |
 | --- | --- | ----- |

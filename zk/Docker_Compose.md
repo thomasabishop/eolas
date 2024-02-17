@@ -93,4 +93,4 @@ services:
 
 ## See also
 
-[NodeJS and MySQL Docker backend](/DevOps/Docker/Docker_Examples/Node_and_MySQL_db.md)
+[NodeJS and MySQL Docker backend](Node_and_MySQL_db.md)

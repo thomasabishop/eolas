@@ -7,7 +7,7 @@ tags: [docker, SQL, node-js]
 
 # Docker example: NodeJS backend with MySQL database
 
-We will utilise [Docker Compose](/DevOps/Docker/Docker_Compose.md) to combine
+We will utilise [Docker Compose](Docker_Compose.md) to combine
 two containers:
 
 - A container for the NodeJS backend
@@ -19,7 +19,7 @@ configuration.
 
 Each of the files listed below would be saved to the same source directory which
 would then form the basis of the
-[build context](/DevOps/Docker/Creating_a_Docker_image.md#creating-a-docker-image).
+[build context](Creating_a_Docker_image.md#creating-a-docker-image).
 
 ## Docker Compose file
 
@@ -136,7 +136,7 @@ docker-compose -up
 
 In the example, the database connection information in the Node source is coming
 from the
-[`process.env`](/Programming_Languages/NodeJS/Architecture/Managing_environments.md)
+[`process.env`](Managing_environments.md)
 object, which itself is sourcing the values `MYSQL_HOST`, `MYSQL_PASSWORD` etc
 from the Docker compose file. Therefore these values are hardcoded there.
 

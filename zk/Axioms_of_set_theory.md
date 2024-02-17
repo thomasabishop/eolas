@@ -20,4 +20,4 @@ Sets which contain the same members are the same set. If sets A and B contain
 the same elements then A = B.
 $$\forall a \forall b [\forall x (x \in a \longleftrightarrow x \in b) \rightarrow a =b]$$
 
-[link to test](/testFolder/beta.md)
+[link to test](beta.md)

@@ -57,7 +57,7 @@ git cherry-pick abcdefg hijklmn opqrst
 ## Limitations
 
 - You don't have to just cherry-pick locally, you can also cherry-pick from a
-  [remote tracking branch](/DevOps/Git/Remote_tracking_branches.md).
+  [remote tracking branch](Remote_tracking_branches.md).
 - You cannot cherry-pick merge commits since these commits do not implement a
   set of changes, they are connecting commits.
 

@@ -9,8 +9,8 @@ tags: [propositional-logic]
 ## Logical possibility
 
 In distinguishing the properties of
-[logical consistency](/Logic/General_concepts/Logical_consistency.md) and
-[validity](/Logic/General_concepts/Validity_and_entailment.md) we make tacit use
+[logical consistency](Logical_consistency.md) and
+[validity](Validity_and_entailment.md) we make tacit use
 of the notion of **possibility**. This is because when we consider the validity
 of an argument we are assessing truth-conditions and this consists in asking
 ourselves what could or could not be the case: were it such that _P_, then it
@@ -60,7 +60,7 @@ From this we can derive the following property of logical possibility:
 A proposition is _logically necessary_ if it is true in every logically possible
 circumstance which is to say: true on every possible truth functional
 assignment. Necessity and
-[logical truth](/Logic/General_concepts/Logical_truth_and_falsity.md#logical-truth)
+[logical truth](Logical_truth_and_falsity.md#logical-truth)
 are therefore synonyms: anything that is logically true (a tautology) is true by
 necessity (could not be otherwise.)
 

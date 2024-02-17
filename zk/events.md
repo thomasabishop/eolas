@@ -18,7 +18,7 @@ event. At bottom everything in Node is an event with a callback, created via
 event emitters.
 
 Because Node's runtime is
-[event-driven](/Programming_Languages/NodeJS/Architecture/Event_loop.md), it is
+[event-driven](Event_loop.md), it is
 event-emitter cycles that are being processed by the Event Loop, although you
 may know them as `fs` or `http` (etc) events. The call stack that the Event Loop
 works through is just a series of event emissions and their associated

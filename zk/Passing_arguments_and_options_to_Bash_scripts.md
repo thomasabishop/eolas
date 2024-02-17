@@ -16,7 +16,7 @@ must run `chmod` to make them executable. When we issue a command like
 
 When we run a program like `cd` or `npm` we don’t have to type `./cd.sh` or
 `./npm.sh`. This is because a reference to the program file is already in our
-[`$PATH`](/Programming_Languages/Shell/The_PATH.md).
+[`$PATH`](The_PATH.md).
 
 In the case of `cd`, this is an in-built program and as such it will be sourced
 from a binary and we have a reference to the binary in path. In the case of

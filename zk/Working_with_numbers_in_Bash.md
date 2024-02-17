@@ -28,7 +28,7 @@ echo $a
 > Note: we do not use a dollar-sign when referring to variables within
 > arithmetic evaluation, there is no need. If we do, we get an error. This is
 > because we are using an
-> [expansion](/Programming_Languages/Shell/Expansions_and_substitutions.md),
+> [expansion](Expansions_and_substitutions.md),
 > therefore the variables are already being interpreted as variables.
 
 ## Declaring variables as integers
