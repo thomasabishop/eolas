@@ -30,12 +30,11 @@ new entries and manage the knowledge base.
 | ------------- | ---------------------- | ----------------------------------------------------------------------------------------- |
 | `z`           | `cd $HOME/repos/eolas` | Access Zettelkasten                                                                       |
 | `zn`          | `zk new --title ...`   | Create new entry from template                                                            |
+| `<leader> zk` | `:ZkNotes`             | Access Zettelkasten from anywhere within `nvim`                                           |
 | `<leader> zi` | `:ZkIndex`             | Index Zettelkasten within `nvim`                                                          |
 | `<leader> zt` | `:ZkTags`              | View tags via [Telescope](https://github.com/nvim-telescope/telescope.nvim) within `nvim` |
 | `<leader> zl` | `:ZkLinks`             | View links in current entry via Telescope within `nvim`                                   |
 | `<leader> zb` | `:ZkBacklinks`         | View backlinks to current entry via Telescope within `nvim`                               |
-
-// what about viewing all zets from another dir?
 
 ## Frontmatter
 
