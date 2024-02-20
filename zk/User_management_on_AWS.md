@@ -1,6 +1,4 @@
 ---
-id: User_management_on_AWS
-aliases: []
 tags:
   - AWS
 ---

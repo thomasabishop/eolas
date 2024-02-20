@@ -1,6 +1,5 @@
 ---
-id: Elastic_Compute_Cloud
-aliases: []
+id:
 tags:
   - AWS
   - vm
