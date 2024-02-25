@@ -1,5 +1,6 @@
 ---
-tags: [AWS]
+tags:
+  - AWS
 ---
 
 # User management and roles
@@ -33,6 +34,28 @@ running. A good example is a lambda. Lambdas often need access to other services
 such as an S3 bucket or a DynamoDB table. Say you have a service that combines a
 lambda with a DynamoDB database. You could assign a role to the lambda and it
 would have access to the database.
+
+## Distinction between _principal_ and _identity_
+
+Both “principal” and “identity” refer to entities that can perform actions and
+interact with AWS resources. However, there is a subtle difference in their
+usage:
+
+> a principal is a specific type of entity that can take actions in AWS, while
+> an identity is the unique identifier associated with that principal.
+
+1. Principal: In the context of IAM policies, a principal represents the entity
+   that is allowed or denied access to AWS rThe principal is specified in the
+   policy statement as the entity to which the permissions are granted or
+   deniedesources. It can be an IAM user, an IAM role, an AWS service. The
+   principal is specified in the policy statement as the entity to which the
+   permissions are granted or denied.
+2. Identity: An identity, on the other hand, is a broader term that encompasses
+   both the principal and the authentication credentials associated with that
+   principal. It refers to the entity’s unique identifier, such as an IAM user’s
+   username or an IAM role’s ARN (Amazon Resource Name). An identity is used for
+   authentication purposes to verify the entity’s identity and determine its
+   permissions.
 
 ## Cognito
 
