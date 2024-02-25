@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# If there are images in _img/ that are not being used in the workspace, delete them
+# If there are images in img/ that are not being used by the Zettelkasten, delete them
 find /home/thomas/repos/eolas/_img -type f | while read filename; do
     rg "${filename##*/}" ../ --type markdown >/dev/null 2>&1
     if [ "$?" -eq 1 ]; then

@@ -4,8 +4,7 @@ tags: [binary, binary-encoding]
 
 # Text encoding
 
-Text encoding is an applied instance of
-[binary encoding](Binary_encoding.md).
+Text encoding is an applied instance of [binary encoding](Binary_encoding.md).
 
 ## ASCII
 

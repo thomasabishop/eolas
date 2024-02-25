@@ -1,18 +1,15 @@
 #!/bin/bash
 
-# This script automatically commits/pull changes to the remote repository with a generic commit message.
+# Automatically commits/pull changes to the remote repository with a generic commit message.
 
-# It is aliased to `cs-update` in .zshrc
+# ZK_PAT="/home/thomas/repos/eolas"
+tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
+purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
-notes_path="/home/thomas/repos/eolas"
-space_to_underscore="/home/thomas/repos/eolas/_scripts/space_to_underscore_filename.sh"
-clean_image_directory="/home/thomas/repos/eolas/_scripts/clean_image_directory.sh"
+cd $EOLAS_DIR 
 
-cd "$notes_path"
-
-# Loop through directories and convert spaces in filenames to underscores
-source ${space_to_underscore}
-source ${clean_image_directory}
+source ${tidy_filenames}
+source ${purge_images}
 
 git pull >/dev/null 2>&1
 
