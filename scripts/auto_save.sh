@@ -24,7 +24,7 @@ if [ "$changes_exist" -eq 0 ]; then
     exit 0
 fi
 
-echo "Updating remote..."
+echo "Changes exist. Updating remote..."
 git pull >/dev/null 2>&1
 git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
