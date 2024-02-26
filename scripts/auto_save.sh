@@ -2,8 +2,8 @@
 
 # Automatically commits/pull changes to the remote ZK repository.
 
-tidy_filenames="${EOLAS_PATH}/scripts/tidy_filenames.sh"
-purge_images="${EOLAS_PATH}/scripts/purge_images.sh"
+tidy_filenames="${EOLAS_DIR}/scripts/tidy_filenames.sh"
+purge_images="${EOLAS_DIR}/scripts/purge_images.sh"
 
 cd $EOLAS_DIR 
 
