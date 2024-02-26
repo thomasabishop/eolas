@@ -4,17 +4,15 @@ tags: [systems-programming]
 
 # systemd
 
-Once the [boot process](Boot_process.md) has completed and
-the bootloader has located the kernel and injected it into memory the first user
-space program runs: `init` (for _initialisation_). `init` is a
-[daemon](Daemons.md) process that continues running until
-shutdown and is responsible for starting all the processes that are
-prerequisites for user space. For example: network connections, disk access,
-user logins etc.
-dsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-`init` is the parent of all processes: PID1. Whilst it does a lot of its work in
-quick succession at boot time it is not limited to the this stage of the
-lifescycle but runs continuously in reponse to new user events.
+Once the [boot process](Boot_process.md) has completed and the bootloader has
+located the kernel and injected it into memory the first user space program
+runs: `init` (for _initialisation_). `init` is a [daemon](Daemons.md) process
+that continues running until shutdown and is responsible for starting all the
+processes that are prerequisites for user space. For example: network
+connections, disk access, user logins etc. `init` is the parent of all
+processes: PID1. Whilst it does a lot of its work in quick succession at boot
+time it is not limited to the this stage of the lifescycle but runs continuously
+in reponse to new user events.
 
 On Linux systems `systemd` is used to implement `init`.
 
