@@ -15,7 +15,7 @@ find "${EOLAS_PATH}/img" -type f | while read filename; do
     fi
 done
 
-if ! $unused_images; then
+if !$unused_images; then
     echo "Nothing to purge: all images currently in use."
 fi
 
