@@ -3,7 +3,7 @@
 # Convert hypens in file names to underscores
 
 main() {
-    find . -depth -name '*-*' | while read fname; do
+    find . -depth -name '*-*' -name '*.md' | while read fname; do
         new_fname=$(echo $fname | tr "-" "_")
         if [ -e $new_fname ]; then
             echo "File $new_fname already exists. Not replacing $fname"
@@ -16,5 +16,5 @@ main() {
 
 # Run and pipe errors and feedback to logfile
 
-&>/dev/null
+# &>/dev/null
 main
