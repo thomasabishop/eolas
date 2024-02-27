@@ -1,5 +1,7 @@
 # Eólas
 
+<img src='./img/knowledge_graph.png' width=400 align='center' /><br/>
+
 > Eólas is Irish for knowledge or information, especially knowledge gained by
 > experience or practice
 
