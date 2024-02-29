@@ -49,7 +49,7 @@ are as follows:
   - control service daemons
 - socket units (`.socket`)
   - handle incoming network connection request locations
-- device units (`.device)
+- device units (`.device`)
   - disks and other devices
 - mount units (`.mount`)
   - handle the attachment of filesystems to the system
