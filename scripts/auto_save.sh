@@ -3,14 +3,14 @@
 # Automatically commits/pull changes to the remote ZK repository.
 
 
-zk=$HOME/repos/eolas
+# zk=${HOME}/repos/eolas
 
-tidy_filenames="${zk}/scripts/tidy_filenames.sh"
-purge_images="${zk}/scripts/purge_images.sh"
+tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
+purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
-cd $zk
+cd /home/thomas/repos/eolas
 
-echo "Standardising file-names..." 
+echo "Standardising file-names..."
 source ${tidy_filenames}
 
 echo "Removing unused images..."
