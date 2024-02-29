@@ -29,3 +29,4 @@ git pull >/dev/null 2>&1
 git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
+notify-send "Auto-save complete" "Changes committed to remote repository"
