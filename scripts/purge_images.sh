@@ -9,7 +9,7 @@ find "/home/thomas/repos/eolas/img" -type f | while read filename; do
     # If the image is not found in any file, delete it
     if [ -z "$search_result" ]; then
 				echo "Deleted unused image: ${filename##*/}"
-        # rm $filename
+        rm $filename
     fi
 done
 
