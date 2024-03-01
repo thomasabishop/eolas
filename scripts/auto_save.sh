@@ -5,7 +5,7 @@
 tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
 purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
-cd /hom/thomas/repos/eolas
+cd /home/thomas/repos/eolas
 
 echo "Standardising file-names..."
 source ${tidy_filenames}
