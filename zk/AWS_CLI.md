@@ -45,5 +45,4 @@ aws cloudformation delete-stack --stack-name <my_stack> --region <region>
 
 ```
  aws ce get-cost-and-usage --time-period Start=$(date +%Y-%m-01),End=$(date -d @$(( $(date +%s) + 86400 )) +%Y-%m-%d) --granularity MONTHLY --metrics "UnblendedCost" "UsageQuantity
-
 ```
