@@ -283,12 +283,3 @@ Gateway endpoint under `triggers`:
 We can then call this from Postman to check everything is working as it should:
 
 ![](/img/postman-aws-output.png)
-
-## Clean up and erase the stack
-
-We can delete the stack and remove all the resources we have created with a
-single CLI method:
-
-```sh
-aws cloudformation delete-stack --stack-name <name> --region <region>
-```

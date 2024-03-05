@@ -2,7 +2,7 @@
 tags: [AWS]
 ---
 
-# SAM frequent commands
+# AWS CLI frequent commands
 
 ### Retrieve current user
 
@@ -22,3 +22,19 @@ aws configure list-profiles
 ```
 vim ./aws/credentials
 ```
+
+## CloudFormation
+
+### List stacks
+
+```
+aws cloudformation --list-stacks
+```
+
+### Delete a stack
+
+```
+aws cloudformation delete-stack --stack-name <my_stack> --region <region>
+```
+
+`region` is optional especially if only deployed to one region
