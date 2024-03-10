@@ -29,6 +29,6 @@ echo "Changes exist. Updating remote..."
 git pull >/dev/null 2>&1
 git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
-notify-send "Auto-save complete" "Zettelkasten changes committed to remote repository"
 git push
 
+/usr/bin/notify-send "Auto-save complete" "Zettelkasten changes committed to remote repository"
