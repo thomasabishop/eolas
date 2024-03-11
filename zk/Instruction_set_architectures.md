@@ -2,7 +2,7 @@
 tags: [CPU]
 ---
 
-# instruction set architectures
+# Instruction Set Architectures
 
 We know that the [ALU](Arithmetic_Logic_Unit.md) is responsible for the
 "execute" stage of the [fetch, decode, execute](Fetch_decode_execute.md) cycle,
@@ -40,8 +40,8 @@ There have been different, successive generations of x86 corresponding to their
 here just means how many bits the processor can work with at a time.
 
 A 34-bit processor can operate on values that are 32 bits in length. This means
-it has 32bit registers, a 32-bit data [[Bus|bus]], a 32-bit address bus and so
-on.
+it has 32bit [[CPU_architecture#registers|registers]], a 32-bit data
+[[Bus|bus]], a 32-bit address bus and so on.
 
 AMD introduced the first 64-bit processor, not Intel but they later caught up. A
 64-bit x86 processor is often referred to as _x64_ or _x86-64_.
