@@ -4,10 +4,9 @@ tags: [CPU]
 
 # instruction set architectures
 
-We know that the [ALU](Arithmetic_Logic_Unit.md) is
-responsible for the "execute" stage of the
-[fetch, decode, execute](Fetch_decode_execute.md)
-cycle, implementing the most basic binary operations such as adding two numbers.
+We know that the [ALU](Arithmetic_Logic_Unit.md) is responsible for the
+"execute" stage of the [fetch, decode, execute](Fetch_decode_execute.md) cycle,
+implementing the most basic binary operations such as adding two numbers.
 
 Accross different machines and CPU types there can be differences in how the
 given instruction, say "add", is implemented. Not all computers will execute the
@@ -29,7 +28,7 @@ introduced by Intel but are also made by AMD.
 ### x86
 
 The name stems from Intel's internal naming conventions - every new processor
-they introduced would have numerical designation ending with "86". Later they
+they introduced would have a letter designation ending with "86". Later they
 would adopt names such as "Pentium", "Celeron" etc. Regardless, these processors
 still fall under the "x86" family.
 
@@ -37,12 +36,12 @@ Over time, new instructions have been added to the x86 architecture but they all
 maintain backwards compatibility with preceding generations.
 
 There have been different, successive generations of x86 corresponding to their
-[word-size](Signed_and_unsigned_numbers.md):
-16-bit, 32-bit, 64-bit. Word size here just means how many bits the processor
-can work with at a time.
+[word-size](Signed_and_unsigned_numbers.md): 16-bit, 32-bit, 64-bit. Word size
+here just means how many bits the processor can work with at a time.
 
 A 34-bit processor can operate on values that are 32 bits in length. This means
-it has 32bit registers, a 32-bit data bus, a 32-bit address bus and so on.
+it has 32bit registers, a 32-bit data [[Bus|bus]], a 32-bit address bus and so
+on.
 
 AMD introduced the first 64-bit processor, not Intel but they later caught up. A
 64-bit x86 processor is often referred to as _x64_ or _x86-64_.
