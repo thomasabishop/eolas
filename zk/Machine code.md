@@ -32,8 +32,7 @@ instruction:
 | 1101            | opcode               | `mov` : move the value                   |
 | 0               | --                   | --                                       |
 | 0000            | --                   | --                                       |
-| 0111            | destination register | destinaation is 0111 which corresonds    |
-| to `r7`         |
+| 0111            | destination register | destination is 0111 which means `r7`     |
 | 0000            | --                   | --                                       |
 | 00000100        | immediate value      | the binary representation of decimal '4' |
 
