@@ -20,7 +20,7 @@ an [[Instruction_set_architectures| ARM ISA]]. It moves the number `4` into the
 11100011101000000111000000000100
 ```
 
-This 32bit line of binary has a series of instructions embedded within it. We
+This 32-bit line of binary has a series of instructions embedded within it. We
 partition each part of the sequence below, from left to right, mapping it to the
 instruction:
 
@@ -36,10 +36,25 @@ instruction:
 | 0000            | --                   | --                                       |
 | 00000100        | immediate value      | the binary representation of decimal '4' |
 
-- The blank values are also instruction points, they are just not used in this
+- The blank zeros are also instructions, they are just not used in this
   instruction
 
-- The instruction should run in all conditions not only under certain
-  circumstances
+- The condition sequence tells us the instruction should run in all conditions
+  not only under certain circumstances
 
-- The immediate bit (`1`) tells us
+- The immediate bit (`1`) tells us whether the the value we are accessing is
+  contained within the instruction or whether it is stored in a register. In
+  this scenario `1` means the value is in the instruction. If it were `0`, the
+  register where the value is located would be specified elsewhere in the
+  instruction (in one of the currently blank sequences).
+
+- The opcode correspoons to `mov` the value.
+
+- THe destination register details where the value should be moved to (`r7`)
+
+- Finally, the immediate value is equivalent to decimal `4`
+
+## In hexadecimal
+
+We can make things easier to understand by using the
+[[Hexadecimal_number_system]]:
