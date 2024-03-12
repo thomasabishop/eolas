@@ -54,7 +54,8 @@ instruction:
 
 - Finally, the immediate value is equivalent to decimal `4`
 
-## In hexadecimal
+## Difficulty
 
-We can make things easier to understand by using the
-[[Hexadecimal_number_system]]:
+Binary sequences are hard to understand, even if converted to the
+[[Hexadecimal_number_system]]. We have a better way of managing operations on
+the machine level: [[assembly]].

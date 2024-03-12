@@ -5,10 +5,9 @@ tags: [number-systems]
 # Hexadecimal number system
 
 Hexadecimal is the other main number system used in computing. It works in
-tandem with the
-[binary number system](Binary_number_system.md)
-and provides an easier and more accessible means of working with long sequences
-of binary numbers.
+tandem with the [binary number system](Binary_number_system.md) and provides an
+easier and more accessible means of working with long sequences of binary
+numbers.
 
 ## Hexadecimal place value
 
