@@ -2,6 +2,9 @@
 
 # Automatically commits/pull changes to the remote ZK repository.
 
+USER=thomas
+export XDG_RUNTIME_DIR=/run/user/1000
+
 tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
 purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
