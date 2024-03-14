@@ -15,6 +15,9 @@ created: Tuesday, March 12, 2024
 - An assembly instruction is a _mneumonic_ that comprises an "op code" plus
   operands
 
+- It is translated back to machine code by an assembler for the computer to
+  execute.
+
 ## Detail
 
 ### Example instruction
@@ -30,12 +33,20 @@ machine code. Therefore you need an **assembler** to translate the assembly code
 to machine code. An assembly language text file is fed into an assembler and a
 binary object file containing machine code is returned.
 
-## Relation to instruction set architectures
+A disassembler does the opposite: translate machine code into assembly.
+
+### Relation to instruction set architectures
+
+- the ISA defines the hardware capabilities and the instructions that can be run
+  on the hardware
+- machine code is a binary representation of these instructions and can be
+  directly executed by the CPU
+- humans use an assembly language version of the machine code which is then
+  translated back to machine code for the computer to execute.
 
 ## Applications
 
 ## Related notes
 
-[[Hexadecimal_number_system]], [[Instruction_set_architectures]]
-
-Summary, My Insight, Applications, Related Not
+[[Hexadecimal_number_system]], [[Instruction_set_architectures]],
+[[CPU_architecture]]
