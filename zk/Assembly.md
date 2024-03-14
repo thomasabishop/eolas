@@ -15,4 +15,7 @@ created: Tuesday, March 12, 2024
 - Assembly is one level up from machine code and provides a more human-friendly
   abstraction layer
 
+- An assembly instruction is a _mneumonic_ that comprises an "op code" plus
+  operands
+
 Summary, My Insight, Applications, Related Not
