@@ -4,17 +4,21 @@ tags: [CPU]
 
 # Instruction Set Architectures
 
-We know that the [ALU](Arithmetic_Logic_Unit.md) is responsible for the
-"execute" stage of the [fetch, decode, execute](Fetch_decode_execute.md) cycle,
-implementing the most basic binary operations such as adding two numbers.
+## Summary
 
-Accross different machines and CPU types there can be differences in how the
-given instruction, say "add", is implemented. Not all computers will execute the
-instruction in the same way.
+- Computers with different hardware execute machine code instructions (e.g
+  _add_) in different ways. They have different _instruction set architectures_
+  (ISAs).
 
-A family of CPUs that do implement the core instructions of the ALU in the same
-way are said to share an **instruction set architecture** (ISA). Software that
-is built for a certain ISA works on any CPU that implements that ISA.
+- A family of CPUs that implement the core instructions of the
+  [[Arithmetic_Logic_Unit]] in the same way share an ISA. Any software built for
+  that ISA will work on any CPU that implements the ISA
+
+- The two main CPU architectures are ARM and x86
+
+## Detail
+
+## Architecture is logical not physical
 
 > Note that this is a logical architecture rather than a physical architecture.
 > Like ISA processors may work very differently on the hardware level whilst
