@@ -20,9 +20,9 @@ tags: [CPU]
 
 ## Architecture is logical not physical
 
-> Note that this is a logical architecture rather than a physical architecture.
-> Like ISA processors may work very differently on the hardware level whilst
-> still adhering to the same ISA
+The "architecture" of an ISA is logical rather than physical, i.e processors
+that share an ISA may work very differently on the hardware level whilst still
+adhering to the same instruction set.
 
 ## ARM and x86
 
@@ -31,34 +31,37 @@ introduced by Intel but are also made by AMD.
 
 ### x86
 
-The name stems from Intel's internal naming conventions - every new processor
-they introduced would have a letter designation ending with "86". Later they
-would adopt names such as "Pentium", "Celeron" etc. Regardless, these processors
-still fall under the "x86" family.
+- First introduced by Intel but also made by AMD.
 
-Over time, new instructions have been added to the x86 architecture but they all
-maintain backwards compatibility with preceding generations.
+- Name stems from Intel's internal naming conventions - every new processor they
+  introduced would have a letter designation ending with "86". Later they would
+  adopt names such as "Pentium", "Celeron" etc. Regardless, these processors
+  still fall under the "x86" family.
 
-There have been different, successive generations of x86 corresponding to their
-[word-size](Signed_and_unsigned_numbers.md): 16-bit, 32-bit, 64-bit. Word size
-here just means how many bits the processor can work with at a time.
+- Over time, new instructions have been added to the x86 architecture but they
+  all maintain backwards compatibility with preceding generations.
 
-A 34-bit processor can operate on values that are 32 bits in length. This means
-it has 32bit [[CPU_architecture#registers|registers]], a 32-bit data
-[[Bus|bus]], a 32-bit address bus and so on.
+- There have been different, successive generations of x86 corresponding to
+  their [word-size](Signed_and_unsigned_numbers.md): 16-bit, 32-bit, 64-bit.
+  Word size here just means how many bits the processor can work with at a time.
+  A 34-bit processor can operate on values that are 32 bits in length. This
+  means it has 32bit [[CPU_architecture#registers|registers]], a 32-bit data
+  [[Bus|bus]], a 32-bit address bus and so on.
 
-AMD introduced the first 64-bit processor, not Intel but they later caught up. A
-64-bit x86 processor is often referred to as _x64_ or _x86-64_.
+- AMD introduced the first 64-bit processor, not Intel but they later caught up.
+  A 64-bit x86 processor is often referred to as _x64_ or _x86-64_.
 
 ### ARM
 
-Whilst x86 processors dominate the personal computer and server space, on mobile
-a different instruction set architecture predominates: ARM. The ARM company
-develops the architecture and standard which it licenses it to other companies
-to implment.
+- x86 processors dominate the personal computer and server space
 
-They are preferred on mobile because they have reduced power consumption and
-lower costs compared to x86.
+- On movile devices ARM ISA predominates
 
-With ARM processors the processor is on a single chip that contains the CPU as
-well as memory and other hardware.
+- The ARM company develops the architecture and standard which it licenses it to
+  other companies to implement.
+
+- Preferred on mobile because they have reduced power consumption and lower
+  costs compared to x86.
+
+- The processor is on a single chip that contains the CPU as well as memory and
+  other hardware.
