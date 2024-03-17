@@ -17,3 +17,21 @@ $ 7890
 sudo kill -9 7890
 # Kill the process that is running there
 ```
+
+## Alterntive
+
+```sh
+ss -ltnp | grep ':8000'
+```
+
+Returns:
+
+```
+LISTEN 0      511            [::1]:8000          [::]:*    users:(("node",pid=10493,fd=34))
+```
+
+Kill with:
+
+```
+kill 10493
+```
