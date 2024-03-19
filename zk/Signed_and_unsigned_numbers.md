@@ -6,11 +6,13 @@ tags: [binary, binary-encoding]
 
 ## Summary
 
-- To represent negative integers in binary we use signed numbers.
+- To represent negative integers in binary we use signed numbers._Signed binary_
+  includes negative integers, _unsigned binary_ does not.
 
-In order to represent negative integers in binary we use signed numbers.
-**Signed binary** is basically binary where negative integers can be
-represented. **Unsigned binary** is standard binary without negative integers.
+- The principal methnod for encoding signed binary numbers is called **two's
+  complement**.
+
+## Related notes
 
 In order to represent negative integers alonside positive integers a natural
 approach is to divide the available
