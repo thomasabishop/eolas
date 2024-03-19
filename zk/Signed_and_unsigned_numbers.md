@@ -4,15 +4,18 @@ tags: [binary, binary-encoding]
 
 # Signed and unsigned numbers
 
+## Summary
+
+- To represent negative integers in binary we use signed numbers.
+
 In order to represent negative integers in binary we use signed numbers.
 **Signed binary** is basically binary where negative integers can be
 represented. **Unsigned binary** is standard binary without negative integers.
 
 In order to represent negative integers alonside positive integers a natural
 approach is to divide the available
-[encoding space / word length](Binary_encoding.md)
-into two subsets: one for representing non-negative integers and one for
-representing negative integers.
+[encoding space / word length](Binary_encoding.md) into two subsets: one for
+representing non-negative integers and one for representing negative integers.
 
 The primary method for doing this is to use _two's complement_. This method
 makes signed numbers possible in a way that complicates the hardware
@@ -83,9 +86,8 @@ inverting the bits.)
 The chief advantage of the two's complement technique of signing numbers is that
 its circuit implementation is no different from the adding of two unsigned
 numbers. Once the signing algorithm is applied the addition can be passed
-through an
-[adder](Half_adder_and_full_adder.md)
-component without any special handling or additional hardware.
+through an [adder](Half_adder_and_full_adder.md) component without any special
+handling or additional hardware.
 
 Let's demonstrate this with the following addition:
 
@@ -119,8 +121,8 @@ The ease by which we conduct signed arithmetic with standard hardware contrasts
 with alternative approaches to signing numbers. An example of another approach
 is **signed magnitude representation**. A basic implemetation of this would be
 to say that for a given bit-length (6, 16, 32...) if the
-[most significant bit](Half_adder_and_full_adder.md#binary-arithmetic)
-is a 0 then the number is positive. If it is 1 then it is negative.
+[most significant bit](Half_adder_and_full_adder.md#binary-arithmetic) is a 0
+then the number is positive. If it is 1 then it is negative.
 
 This works but it requires extra complexity to in a system's design to account
 for the bit that has a special meaning. Adder components would need to be
