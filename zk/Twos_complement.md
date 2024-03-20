@@ -72,7 +72,17 @@ $$
   integers is the same as the implementation of positive integers. There is no
   need for additional harware or special handling of the values.
 - This can be contrasted with the alternative approaches to signing numbers such
-  as
+  as **signed magnitude representation** which uses certain bits as designators
+  of negative/positive status.
+
+### Limitations
+
+- Two's complement reduces the overall informational capacity of the given
+  binary word length, effectively halving the total number of unique values.
+
+- In a 4-bit system instead of 16 total unique encodings of integers you have 8
+  encodings for positive integers and 8 encodings for the their signed
+  equivalent.
 
 ## Related notes
 
