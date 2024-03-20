@@ -34,9 +34,37 @@ To derive the complement of an unsigned number:
 
 ![](/img/unsigned-to-signed.png)
 
-To derive the unsigned equivalent of a signed number
+To derive the unsigned equivalent of a signed number you invert the process but
+still make the smallest digit `1`:
+
+![](/img/signed-to-unsigned.png)
 
 ### Formal expression
+
+$$
+    2^n - x
+$$
+
+- where $x$ is the negative integer in binary that we wish to derive
+- where $n$ is the word length of the binary system in bits.
+
+Applied to the earlier example we have $2^4 -5$ which is:
+
+$$
+    16 - 5 = 11
+$$
+
+When we convert the decimal `11` to binary we get `1011` which is identical to
+the signed version of the unsigned integer.
+
+We can confirm the correctness of the derviation by summing the signed and
+unsigned binary values. If this results in zeros (ignoring the overflow bit),
+the derivation is correct as the two values effectively cancel each other out:
+
+$$
+
+  1011 + 0101 = 0000
+$$
 
 ## Applications
 
