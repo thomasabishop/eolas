@@ -66,7 +66,13 @@ $$
   1011 + 0101 = 0000
 $$
 
-## Applications
+### Advantages
+
+- The circuit implementation of arithmetic involving positive and negative
+  integers is the same as the implementation of positive integers. There is no
+  need for additional harware or special handling of the values.
+- This can be contrasted with the alternative approaches to signing numbers such
+  as
 
 ## Related notes
 
