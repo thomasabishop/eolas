@@ -95,5 +95,5 @@ $$
 
 ## Related notes
 
-[[Signed_and_unsigned_numbers|signed_and_unsigned_numbers]]
-[[Binary_addition|binary addition]]
+[[Signed_and_unsigned_numbers|signed_and_unsigned_numbers]],
+[[Binary_addition|binary addition]], [[Signed_magnitude_representation]]

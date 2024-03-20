@@ -15,4 +15,4 @@ tags: [binary, binary-encoding]
 
 ## Related notes
 
-[[gktb#detail|two's complement ❯ Detail]]
+[[Twos_complement]], [[Binary_encoding]], [[Signed_magnitude_representation]]
