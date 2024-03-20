@@ -1,7 +1,7 @@
 ---
 id: gktb
 title: Two's complement
-tags: []
+tags: [binary, binary-encoding]
 created: Tuesday, March 19, 2024
 ---
 
@@ -12,7 +12,13 @@ created: Tuesday, March 19, 2024
 - _Two's complement_ is a method for representing signed numbers (negative
   integers) in binary.
 
-- The two's complement of a given binary integer is its negative equivalent.
+- It is derived by inverting the values of an unsigned binary integer to create
+  its signed equivalent.
+
+- A benefit is that hardware implementation of the binary arithmetic of signed
+  and unsigned numbers can be handled in the same manner as unsigned numbers,
+  requiring no additional handling. A drawback is that it halves the
+  informational capacity of the given word length for the binary system.
 
 ## Detail
 
@@ -82,8 +88,12 @@ $$
 
 - In a 4-bit system instead of 16 total unique encodings of integers you have 8
   encodings for positive integers and 8 encodings for the their signed
-  equivalent.
+  equivalent. For integers larger than denary 8 you would need to increase the
+  bit length of the system
+
+- Consequently two's complement can necessitate larger overall word lengths.
 
 ## Related notes
 
 [[Signed_and_unsigned_numbers|signed_and_unsigned_numbers]]
+[[Binary_addition|binary addition]]
