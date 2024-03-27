@@ -23,7 +23,7 @@ changes_exist="$(git status --porcelain | wc -l)"
 
 # If no changes, exit. Else commit and push with timestamp
 if [ "$changes_exist" -eq 0 ]; then
-    echo "No changes, exiting"
+		echo "No changes, exiting"
     exit 0
 fi
 
