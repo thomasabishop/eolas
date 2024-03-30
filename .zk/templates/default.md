@@ -2,7 +2,7 @@
 id: {{id}}
 title: {{title}}
 tags: []
-created: 
+created: {{format-date now "full"}} 
 ---
 # {{title}}
 

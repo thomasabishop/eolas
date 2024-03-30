@@ -12,13 +12,13 @@
 #language = "en"
 
 # The default title used for new note, if no `--title` flag is provided.
-#default-title = "Untitled"
+default-title = "Untitled"
 
 # Template used to generate a note's filename, without extension.
-#filename = "{{id}}"
+filename = "{{title}}"
 
 # The file extension used for the notes.
-#extension = "md"
+extension = "md"
 
 # Template used to generate a note's content.
 # If not an absolute path, it is relative to .zk/templates/
