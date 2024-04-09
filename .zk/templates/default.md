@@ -6,11 +6,6 @@ created: {{format-date now "full"}}
 ---
 # {{title}}
 
-## Summary 
-
-## Detail
-
-## Applications
 
 ## Related notes
 

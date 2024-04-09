@@ -16,8 +16,6 @@ tags: [CPU]
 
 - The two main CPU architectures are ARM and x86
 
-## Detail
-
 ## Architecture is logical not physical
 
 The "architecture" of an ISA is logical rather than physical, i.e processors

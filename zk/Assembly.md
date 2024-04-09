@@ -7,8 +7,6 @@ created: Tuesday, March 12, 2024
 
 # Assembly
 
-## Summary
-
 - Assembly is one level up from machine code and provides a more human-friendly
   abstraction layer
 
@@ -18,15 +16,13 @@ created: Tuesday, March 12, 2024
 - It is translated back to machine code by an assembler for the computer to
   execute.
 
-## Detail
-
-### Example instruction
+## Example instruction
 
 We can translate the machine instruction `e3a07004` into the assembly
 instruction `mov r7, #4`. This translates to: _move the value number 4 to the
 register r7_.
 
-### Assemblers
+## Assemblers
 
 Although assembly is useful for humans, computers still work at the level of
 machine code. Therefore you need an **assembler** to translate the assembly code
@@ -35,7 +31,7 @@ binary object file containing machine code is returned.
 
 A disassembler does the opposite: translate machine code into assembly.
 
-### Relation to instruction set architectures
+## Relation to instruction set architectures
 
 - the ISA defines the hardware capabilities and the instructions that can be run
   on the hardware
@@ -43,8 +39,6 @@ A disassembler does the opposite: translate machine code into assembly.
   directly executed by the CPU
 - humans use an assembly language version of the machine code which is then
   translated back to machine code for the computer to execute.
-
-## Applications
 
 ## Related notes
 
