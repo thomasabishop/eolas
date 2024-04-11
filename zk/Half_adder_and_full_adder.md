@@ -9,8 +9,8 @@ tags: [logic-gates, binary]
 The half adder and full adder are components of digital circuits that enable us
 to carry out binary addition. Using adders and half adders we can add two binary
 numbers together. Adders are a type of [integrated circuit]() comprising certain
-[logic gates](Logic_gates.md) where the arrangement
-allows for the representation of the addition of bits.
+[logic gates](Logic_gates.md) where the arrangement allows for the
+representation of the addition of bits.
 
 ### Example addition
 
