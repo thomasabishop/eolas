@@ -6,6 +6,7 @@ main() {
     find . -depth -name '*.md' | while read fname; do
 		new_fname=$(echo "$fname" | tr " -"  "_")
         if [ -e "$new_fname" ]; then
+					echo "No filename change needed"
         else
             echo "Creating new file $new_fname to replace $fname"
             mv "$fname" "$new_fname"
