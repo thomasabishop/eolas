@@ -5,6 +5,8 @@
 USER=thomas
 export XDG_RUNTIME_DIR=/run/user/1000
 
+source /home/thomas/.env
+
 tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
 purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
