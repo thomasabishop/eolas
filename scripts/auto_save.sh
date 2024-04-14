@@ -35,5 +35,5 @@ git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
 
 
-/home/thomas/repos/slack-notifier/src/index.js 'eolas' '📓Eolas: auto-save executed'	
+/home/thomas/repos/slack-notifier/src/index.js 'eolas' 'Eolas: auto-save executed'	
 
