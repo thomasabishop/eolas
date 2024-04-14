@@ -34,4 +34,6 @@ git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
 
-/usr/bin/notify-send "Auto-save complete" "Zettelkasten changes committed to remote repository"
+
+/home/thomas/repos/slack-notifier/src/index.js 'eolas' '📓Eolas: auto-save executed'	
+
