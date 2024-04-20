@@ -1,10 +1,15 @@
 ---
 id: 18bl
 title: Heap_memory
-tags: []
+tags: [memory]
 created: Saturday, April 20, 2024
 ---
 
-# Heap_memory
+# Heap memory
 
-## Related notes
+## Summary
+
+- Along with [[Stack_memory|Stack memory]], programs make use of _heap memory_
+  during runtime.
+
+- [ ] ## Related notes
