@@ -62,4 +62,12 @@ b = 7 = 0111
 
 This leaves us with 0111 which is equal to 7 in denary.
 
+## Why use them?
+
+Bitwise operations are more of a hallmark of lower-level programming. As bit
+operations are the fastest and lowest level of computation, being able to
+directly access and operate on bits within a programming language can be
+beneficial when efficiency and speed of execution is a factor or when memory is
+constrained.
+
 ## Related notes
