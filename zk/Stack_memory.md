@@ -21,8 +21,6 @@ created: Tuesday, April 16, 2024
 
 - Uses a LIFO data-structure
 
-## Stack memory
-
 Similarly to the [[Stacks|stack data structure]], it works on the basis of LIFO:
 the last item put on the stack is the first item to be withdrawn.
 
