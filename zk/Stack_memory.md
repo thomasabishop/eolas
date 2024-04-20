@@ -12,8 +12,8 @@ of programs.
 
 ## Stack memory
 
-Similarly to the [[stack data structure]], it works on the basis of LIFO: the
-last item put on the stack is the first item to be withdrawn.
+Similarly to the [[Stacks|stacks]], it works on the basis of LIFO: the last item
+put on the stack is the first item to be withdrawn.
 
 Note, this doesn't mean that the data at the memory addresses that comprise the
 stack can _only_ be accessed in a LIFO manner. Any item currently on the stack
