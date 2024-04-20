@@ -1,7 +1,7 @@
 ---
 id: 18bl
 title: Heap_memory
-tags: [memory]
+tags: [memory, C]
 created: Saturday, April 20, 2024
 ---
 
@@ -19,5 +19,16 @@ when it is no longer required. This process of "freeing memory" is known as
 _garbage collection_. In a language like C, this is the explicit concern of the
 programmer and is not abstracted away. Failure to properly manage garbage
 collection is what causes [[Memory_leaks]].
+
+Here is an example of managing heap memory allocation in C:
+
+```c
+void * data;
+data = malloc(512)
+```
+
+The first line assigns a special _pointer_ variable (indicated by `void *`
+rather than `int` or `str`) . This is a variable only holds a memory address.
+The `malloc` method assigns 512 bytes to the `data` variable.
 
 ## Related notes
