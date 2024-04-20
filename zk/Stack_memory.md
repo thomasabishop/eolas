@@ -45,6 +45,12 @@ this will be a new memory address for the latest item. When an item is removed,
 the reverse happens. The previously top address is cleared and the pointer
 points to the new top item.
 
+## Threads
+
+For every thread that a program spawns, it gets its own stack or "stack frame".
+Stack memory within the thread can only be accessed by processes within that
+thread which is what makes it well suited for managing scoped function memory.
+
 ### Role in program execution
 
 1. Function call management: a stack records the key information pertaining to
