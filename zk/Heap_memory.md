@@ -29,6 +29,8 @@ data = malloc(512)
 
 The first line assigns a special _pointer_ variable (indicated by `void *`
 rather than `int` or `str`) . This is a variable only holds a memory address.
-The `malloc` method assigns 512 bytes to the `data` variable.
+The `malloc` method requests 512 bytes that it wants to assign to the `data`
+variable. it will return the address of the first byte in the newly allocated
+memory.
 
 ## Related notes
