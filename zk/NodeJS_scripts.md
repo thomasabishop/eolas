@@ -37,3 +37,14 @@ If you use any module not in the Node core, you will need to have this installed
 globally for it to work. (There are
 [ways around this](https://thom4.net/2014/self-contained-node-scripts/) for Node
 scripts you publish but for personal scripts this doesn't matter.)
+
+## `require.main`
+
+This construction checks that the script is being directy invoked via the 'node'
+command in the terminal rather than called by another module.
+
+This is equivalent to the [following construct]() in Python:
+
+```py
+if __name__ == "__main__":
+```
