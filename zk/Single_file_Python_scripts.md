@@ -25,3 +25,21 @@ When you run a script (module) Python assigns the string `__main__` to the
 
 If you run the script as an import into another script, the `__name__` attribute
 of the imported module is set to the module name, not `__main__`.
+
+Everything can go under the `__main__` conditional, or, for better readability,
+you can define a `main` function that is then invoked, e.g:
+
+```py
+
+def main():
+    # Do some stuff
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+## Related notes
+
+![Python modules and imports](./Python_modules_and_imports.md)
