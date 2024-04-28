@@ -24,6 +24,52 @@ with open('./path.csv', mode="r") as csv_file:
     reader = csv.reader(csv_file)
 ```
 
+### Parse values
+
+Having created the `reader` object, you can then loop through this as an
+iterable:
+
+```py
+for row in reader:
+    print(row)
+```
+
+Will return something like:
+
+```csv
+column something, column something else, ...
+```
+
+Which we can individuate with:
+
+```py
+print(row[0])
+# column something
+```
+
+We can also parse the rows as a dictionary for easier individuation. We do this
+by creating a `DictReader` rather than the default `reader`:
+
+```py
+...
+dict_reader = csv.DictReader(csv_file)
+```
+
+Now we can use the header row values to individuate particular columns.
+
+Say we have a CSV with the following headers:
+
+```csv
+name, profession
+```
+
+We can individuate thus:
+
+```py
+for row in dict_reader
+    name = row["name"]
+```
+
 ### Write
 
 Use standard Pythonic "read" syntax:
