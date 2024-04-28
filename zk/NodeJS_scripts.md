@@ -33,4 +33,7 @@ is then invoked within `main` in the manner of a Bash or
 This obviously requires the Node binary to be in your path and the script must
 be run with executable privileges.
 
-The module check at the bottom which makes the script file invocable.
+If you use any module not in the Node core, you will need to have this installed
+globally for it to work. (There are
+[ways around this](https://thom4.net/2014/self-contained-node-scripts/) for Node
+scripts you publish but for personal scripts this doesn't matter.)
