@@ -76,7 +76,15 @@ Use standard Pythonic "read" syntax:
 
 ```py
 with open('./new_csv_file.csv', mode="w") as csv_file:
-    write = csv.writer(csv_file)
+    writer = csv.writer(csv_file)
 ```
 
 The above will create the file as well, it doesn't need to be pre-existing.
+
+This creates the writer object. To actually write a row:
+
+```py
+some_list = ['thomas', 'engineer']
+for element in some_list:
+    writer.writerow(element)
+```
