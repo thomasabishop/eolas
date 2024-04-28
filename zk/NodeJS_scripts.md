@@ -9,7 +9,7 @@ created: Friday, April 26, 2024
 
 If we want to use NodeJS as a scripting language without going to the trouble of
 setting up an NPM-based development environment, we can use the following
-architecture
+architecture.
 
 ```js
 #!/usr/bin/env node
@@ -26,7 +26,11 @@ if (require.main === module) {
 }
 ```
 
-This obviously requires NodeJS to be in your path and executable privileges.
+Basically we have a function that contains the main actions of the script. This
+is then invoked within `main` in the manner of a Bash or
+![Python script](./Single_file_Python_scripts.md)
 
-The key part is the module check at the bottom which makes the script file
-invocable.
+This obviously requires the Node binary to be in your path and the script must
+be run with executable privileges.
+
+The module check at the bottom which makes the script file invocable.
