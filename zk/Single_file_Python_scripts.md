@@ -2,11 +2,26 @@
 id: atzw
 title: Single_file_Python_scripts
 tags: []
-created: Friday, April 26, 2024 
+created: Friday, April 26, 2024
 ---
+
 # Single_file_Python_scripts
 
+## Basic architecture
 
-## Related notes
+```py
+#! /usr/local/bin/python3
 
+import sys
 
+if __name__ == "__main__":
+    all_args = sys.argv
+    specific_arg = sys.argv[0]
+    # Main functionality...
+```
+
+When you run a script (module) Python assigns the string `__main__` to the
+`__name__` attribute to the script that is being executed.
+
+If you run the script as an import into another script, the `__name__` attribute
+of the imported module is set to the module name, not `__main__`.
