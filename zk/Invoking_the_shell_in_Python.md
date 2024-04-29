@@ -10,18 +10,16 @@ created: Monday, April 29, 2024
 ```py
 import subprocess
 
-
 try:
-        process = subprocess.run(
-            ["timew export"],
-            shell=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-        )
-        return json.loads(process.stdout)
-    except subprocess.CalledProcessError as e:
+    process = subprocess.run(
+        ["ls", "-la"],
+        shell=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    return json.loads(process.stdout)
+
+except subprocess.CalledProcessError as e:
         return e.stderr.strip()
-
-
 ```
