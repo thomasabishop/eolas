@@ -66,19 +66,32 @@ Device            Start        End   Sectors   Size Type
 /dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem
 ```
 
+## Standard Linux partitions
+
 The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to
 `sda` on older machines running Linux) and it has the standard three partitions:
 
 - Boot partition (`/dev/nvme0n1p1`)
-  - This takes up the smallest amount of space and exists in order to bootstrap
-    the operating system: to load the kernel into memory when the machine
-    starts. This is where your bootloader is stored and that will be accessed by
-    the BIOS. In Linux this will be GRUB.
 - Root dir (`/dev/nvme0n1p2`)
-  - This is the domain of the [superuser](User_Space.md#root-user-superuser).
-    The part of the filesystem that you need sudo priveleges to access and where
-    you manage users
 - Home dir (`/dev/nvme0n1p3`)
+
+### Boot partition
+
+- Contains the Linux kernel and the bootloader (GRUB, usually) and any other
+  files required for booting.
+- Once the BIOS has initialized the hardware components it hands control to the
+  bootloader stored in this partition.
+- The bootloader loads the kernel contained in its partition, into memory
+
+- This is the domain of the [superuser](User_Space.md#root-user-superuser). The
+  part of the filesystem that you need sudo priveleges to access and where you
+  manage users
+
+- This takes up the smallest amount of space and exists in order to bootstrap
+  the operating system: to load the kernel into memory when the machine starts.
+  This is where your bootloader is stored and that will be accessed by the BIOS.
+  In Linux this will be GRUB.
+
   - The domain of the user(s)
 
 ## Types of partition table
