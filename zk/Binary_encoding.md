@@ -22,7 +22,7 @@ format.
 
 The length of the binary number (sometimes called the _word length_)
 corresponding to 8-bit, 16-bit, 32-bit etc. that is used to represent a given
-data set is determined by the number of variations that you reqzuire to capture
+data set is determined by the number of variations that you require to capture
 the entire range of the dataset:
 
 > An $n$-bit binary system can encode $2^n$ different things
