@@ -1,15 +1,13 @@
 ---
-
 tags:
   - disks
 ---
 
-# Disk partitions
+# Linux disk partitions
 
-A disk is divided up into [partitions](Partitions.md)
-which are subsections of the overall disk. The kernel presents each partition as
-a [block device](Devices.md#Devices) as it would with an
-entire disk.
+A disk is divided up into partitions which are subsections of the overall disk.
+The kernel presents each partition as a [block device](Devices.md#Devices) as it
+would with an entire disk.
 
 The disk dedicates a small part of its contents to a **partition table**: this
 defines the different partitions that comprise the total disk space.
@@ -77,10 +75,9 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to
     starts. This is where your bootloader is stored and that will be accessed by
     the BIOS. In Linux this will be GRUB.
 - Root dir (`/dev/nvme0n1p2`)
-  - This is the domain of the
-    [superuser](User_Space.md#root-user-superuser). The part
-    of the filesystem that you need sudo priveleges to access and where you
-    manage users
+  - This is the domain of the [superuser](User_Space.md#root-user-superuser).
+    The part of the filesystem that you need sudo priveleges to access and where
+    you manage users
 - Home dir (`/dev/nvme0n1p3`)
   - The domain of the user(s)
 
@@ -173,13 +170,9 @@ umount /dev/sda2
 ```bash
 # Load the disk into fdisk
 $ sudo fdisk /dev/sda
-
-# Select delete and run for each partition
 Command (m for help): d
 Partition number (1,2, default 2): 1
-
 Partition 1 has been deleted.
-
 Command (m for help): d
 Selected partition 2
 Partition 2 has been deleted.
@@ -199,6 +192,7 @@ w
 
 # Check execution:
 $ lsblk
+
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda           8:0    0 465.7G  0 disk
 ```
@@ -255,7 +249,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-We can now confirm out new partitions:
+We can now confirm our new partitions:
 
 ```bash
 $ lsblk
