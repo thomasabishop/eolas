@@ -77,22 +77,47 @@ The two tools disclose that the main harddrive is `/dev/nvme0n1` (equivalent to
 
 ### Boot partition
 
+- Takes up the smallest amount of space
 - Contains the Linux kernel and the bootloader (GRUB, usually) and any other
   files required for booting.
 - Once the BIOS has initialized the hardware components it hands control to the
   bootloader stored in this partition.
 - The bootloader loads the kernel contained in its partition, into memory
 
+### Root partition (`/`)
+
+- This houses everything to do with the operation of the operating system apart
+  from the initial booting process. Once the kernel is in memory it accesses the
+  resources in the root partition to get the OS up and running. These resources
+  include system libraries, utilities, system-wide configs and application
+  software.
+
+- The root partition is vital for the system's functionality. Without it, the
+  system cannot boot or operate. It needs to be  
+   large enough to accommodate the operating system, installed programs, and system
+  libraries, but it doesn't need to store user data or  
+   additional applications, which can be located on other partitions.
+
 - This is the domain of the [superuser](User_Space.md#root-user-superuser). The
   part of the filesystem that you need sudo priveleges to access and where you
   manage users
 
-- This takes up the smallest amount of space and exists in order to bootstrap
-  the operating system: to load the kernel into memory when the machine starts.
-  This is where your bootloader is stored and that will be accessed by the BIOS.
-  In Linux this will be GRUB.
+### Home partition
 
-  - The domain of the user(s)
+- This is presented as `/home/`, i.e. that it is a descendent of `/`. But this
+  is because the Linux file system is hierarchical. Typically `/home/` is
+  usually its own partition.
+- Separating user data and system data in this way protects user data during
+  upgrades or reinstallation. Reinstalling or upgrading the OS can be done
+  without affecting these files.
+- Each user has their own directory off of `/home`, e.g `/home/thomas`.
+- While the root partition (`/`) is essential for the operation of the OS,
+  placing `/home` on a separate partition allows for better management of user
+  data, enhancing the system's flexibility and the user's control over their own
+  files, without compromising the integrity or performance of the OS. This
+  approach exemplifies the Linux philosophy of giving the user control while
+  maintaining a clear distinction between system  
+  resources and user data.
 
 ## Types of partition table
 
