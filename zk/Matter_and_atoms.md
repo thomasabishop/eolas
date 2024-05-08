@@ -28,8 +28,9 @@ tags: [physics]
   can join to form Sodium Chloride. We call this **chemical bonding**.
 
 ## Atomic particles
+![](/img/atom-diagram.svg)
 
-<img src="/home/thomas/repos/computer_science/img/atom-diagram.svg" width="400" align="right" />
+
 
 - There are three particles comprising atoms: **protons**, **neutrons** and
   **electrons**.
