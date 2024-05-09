@@ -13,7 +13,7 @@ tags: [physics]
   - An element is a substance that cannot be reduced to a simpler substance by
     chemical means.
   - The chemical combination of two or more elements is a compound. Compounds
-    _can_ be separated by reduced by chemical means but they cannot be
+    _can_ be separated or reduced by chemical means but they cannot be
     physically separated.
   - A _physical_ (note not _chemical_) combination of elements and compounds is
     a mixture.
@@ -24,8 +24,8 @@ tags: [physics]
 
 - Elements are made up of **atoms**.
 - A **molecule** is a type of compound where the atoms of two types of elements
-  have joined together. For example Sodium and Chlorine are two elements that
-  can join to form Sodium Chloride. We call this **chemical bonding**.
+  have joined together. For example sodium and chlorine are two elements that
+  can join to form sodium chloride. We call this **chemical bonding**.
 
 ## Atomic particles
 ![](/img/atom-diagram.svg)
