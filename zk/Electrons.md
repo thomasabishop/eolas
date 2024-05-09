@@ -1,7 +1,6 @@
 ---
 tags: [physics, electricity]
 ---
-
 # Electrons
 
 ## Shells
@@ -9,8 +8,8 @@ tags: [physics, electricity]
 Electrons orbit in concentric circuits around the nucleus of the atom. Each
 orbit is called a **shell**.
 
-Each shell can accomodate a maximum number of electrons. The shells are
-designated letters and filled in sequence moving out from the shell nearest to
+Each shell can accommodate a maximum number of electrons. The shells are
+designated by letters and filled in sequence moving out from the shell nearest to
 the nucleus.
 
 _The diagram below demonstrates shell naming conventions and the maximum number
@@ -21,7 +20,7 @@ of electrons per shell._
 ## Valence
 
 The outer shell called the **valence shell** and the number of electrons it
-contains, the **valence**. This part of the electron is the most important from
+contains, the **valence**. This part of the atom is the most important from
 the point of view of electricity because it is from here that electrons can
 escape the atom and where electrons from other atoms may join.
 

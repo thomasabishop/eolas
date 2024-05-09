@@ -1,7 +1,7 @@
 ---
 id: l29u
 title: Time_and_computers
-tags: []
+tags: [unix]
 created: Sunday, April 28, 2024
 ---
 
