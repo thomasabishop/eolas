@@ -2,24 +2,25 @@
 tags: [physics, electricity]
 ---
 
+# Voltage
+
 ## Difference of potential and the transfer of energy
 
-We noted in the discussion of
-[current](Current.md) that current
-flows when there is a difference of potential between two points with negatively
-charged atoms at one point and positively charged atoms at the other.
+We noted in the discussion of [current](Current.md) that current flows when
+there is a difference of potential between two points with negatively charged
+atoms at one point and positively charged atoms at the other.
 
 _Difference of potential_ is the same thing as voltage. Voltage is essential to
 current because it is the force that enables the current to flow.
 
 Without voltage there can be no current because in their natural state, the
-electrons in an atom are in random motion with no direction. To produce a
+electrons in an atom are **in random motion with no direction. To produce a
 current, energy must be imparted to the electrons so that they all flow in the
-same direction.
+same direction.**
 
 Voltage is the application of this energy. Any
-[form of energy](Voltage_sources.md)
-that dislodges electrons from atoms can be used to produce current. Thus:
+[form of energy](Voltage_sources.md) that dislodges electrons from atoms can be
+used to produce current. Thus:
 
 > Voltage is the work required per coulomb to move a charge from one point to
 > another.
@@ -28,11 +29,10 @@ that dislodges electrons from atoms can be used to produce current. Thus:
 
 Given that voltage is the force that generates current, it would be natural to
 think that voltage only exists when a voltage source (such as a
-[battery](Cells_and_batteries.md))
-is connected to a circuit. This however is not the case. Even if a 9V battery
-isn't connected to anything it still has a difference of potential of 9-volts
-accross its terminals. Remember voltage is _potential energy_ not just the
-actualisation of that energy.
+[battery](Cells_and_batteries.md)) is connected to a circuit. This however is
+not the case. Even if a 9V battery isn't connected to anything it still has a
+difference of potential of 9-volts accross its terminals. Remember voltage is
+_potential energy_ not just the actualisation of that energy.
 
 ## Voltage rise and voltage drops
 
@@ -58,8 +58,8 @@ resistance.
 As they move through the circuit the electrons encounter a **load** which is
 what we call resistance to the flow of current. As they run into this, they give
 up their energy. The relinquishing of energy happens in the form of a conversion
-of electrical energy to heat. The amount lost is equal to the amount of energy
-imparted by the voltage rise.
+of electrical energy to heat (hence why computers heat up). The amount lost is
+equal to the amount of energy imparted by the voltage rise.
 
 > The voltage drop in a circuit equals the the voltage rise of the circuit
 > because energy cannot be created or destroyed, only changed to another form.
@@ -95,8 +95,7 @@ obvious enough: they are at the beginning and end of the loop so are equal to
 the maximal voltage rise and minimal voltage drop, respectively.
 
 We can work out the voltage of the remaining voltage points by inverting
-[Ohm's Law](Ohms_Law.md):
-$V = I \times R$:
+[Ohm's Law](Ohms_Law.md): $V = I \times R$:
 
 For the voltage at $V^{B}$:
 
