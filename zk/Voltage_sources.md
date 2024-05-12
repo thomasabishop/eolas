@@ -4,7 +4,7 @@ tags: [physics, electricity]
 
 # Voltage sources
 
-The following phenomena are the main sources that we use to generat evoltage:
+The following phenomena are the main sources that we use to generate voltage:
 
 - friction
 - magnetism
