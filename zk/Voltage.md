@@ -2,7 +2,7 @@
 tags: [physics, electricity]
 ---
 
-## Difference of potential and the tranfer of energy
+## Difference of potential and the transfer of energy
 
 We noted in the discussion of
 [current](Current.md) that current

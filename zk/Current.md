@@ -5,23 +5,21 @@ tags: [physics, electricity]
 # Current
 
 > Electrical current is the movement of electrons from negatively charged atoms
-> to negatively charged atoms when an appropriate external force is applied.
+> to positively charged atoms when an appropriate external force is applied.
 
-So current is the flow of electrons. Charge is the quantity that flows.
+Current is the flow of electrons. Charge is the quantity that flows.
 
 > The amount of current is the sum of the charges of the moving electrons past a
 > given point.
 
 ## Why current exists
 
-Current exists because of the
-[first law of electrostatics](Coulombs_Laws.md).
+Current exists because of the [first law of electrostatics](Coulombs_Laws.md).
 
 When there is an excess of electrons at one terminal (i.e. negatively charged
 atoms) and a deficiency of electrons at the other terminal (i.e. positively
-charged atoms), a
-[_difference of potential_](Voltage.md)
-exists between the two terminals.
+charged atoms), a [_difference of potential_](Voltage.md) exists between the two
+terminals.
 
 When the terminals are connected to each other via a conductor (e.g. copper
 wire) electrons will flow along the conductor. This is provided that there is a
@@ -41,7 +39,7 @@ electrons knocking into each other and passing current:_
 
 We measure **charge** in Coulombs ($C$). A Coulomb is an aggregate of the charge
 of thousands of electrons because their individual charge is so small. One
-Coulomb is equal to the charge of $6.24 \cdot 10 ^{18}$ electrons.
+Coulomb is equal to the charge of $6.24 \times 10 ^{18}$ electrons.
 
 We measure **current** in amps. When one coulomb of charge moves past a point in
 one second it is called an **ampere** (amp) represented as $A$.
