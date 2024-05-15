@@ -1,6 +1,7 @@
 ---
 tags: [physics, electricity]
 ---
+
 # Electrons
 
 ## Shells
@@ -9,8 +10,8 @@ Electrons orbit in concentric circuits around the nucleus of the atom. Each
 orbit is called a **shell**.
 
 Each shell can accommodate a maximum number of electrons. The shells are
-designated by letters and filled in sequence moving out from the shell nearest to
-the nucleus.
+designated by letters and filled in sequence moving out from the shell nearest
+to the nucleus.
 
 _The diagram below demonstrates shell naming conventions and the maximum number
 of electrons per shell._
@@ -20,9 +21,9 @@ of electrons per shell._
 ## Valence
 
 The outer shell called the **valence shell** and the number of electrons it
-contains, the **valence**. This part of the atom is the most important from
-the point of view of electricity because it is from here that electrons can
-escape the atom and where electrons from other atoms may join.
+contains, the **valence**. This part of the atom is the most important from the
+point of view of electricity because it is from here that electrons can escape
+the atom and where electrons from other atoms may join.
 
 > The farther the valence shell is from the nucleus, the less attraction the
 > nucleus has on each valence electron. Thus the potential for the atom to gain
@@ -44,6 +45,13 @@ We call materials that contain a large number of free electrons **conductors**.
 In contrast **insulators** are atoms that stabilize themselves by absorbing
 valence electrons from other atoms to fill their valence shells, eliminating the
 free electrons.
+
+> The propensity for the electrons within a conductor to move about and jump
+> between atoms, swapping charge, is not something that is only activated when a
+> voltage is applied. In fact, the electrons are always doing this, even in a
+> piece of inert copper. The difference is they are doing it randomly and in all
+> kinds of directions. It is only when a voltage is applied that the motion and
+> exchange of electrons is forced in one consistent direction.
 
 ### Semiconductors
 
