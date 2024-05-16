@@ -18,8 +18,8 @@ The following phenomena are the main sources that we use to generate voltage:
 
 ### Magentism (electrical generators)
 
-Magnetism is used the voltage source in electrical generators by far the most
-common method of producing powerful and large currents at scale.
+Magnetism is used as the voltage source in electrical generators and is by far
+the most common method of producing powerful and large currents at scale.
 
 If a conductive wire is passed through a magnetic field voltage will be produced
 so long as there is motion between the magnetic field and the conductor. A
@@ -42,9 +42,8 @@ or **alternating current** (AC):
 ### Chemicals (cells and batteries)
 
 The chemical creation of current is the physics behind
-[batteries](Cells_and_batteries.md).
-Chemical current production produces currents on a smaller and less industrial
-scale than generators.
+[batteries](Cells_and_batteries.md). Chemical current production produces
+currents on a smaller and less industrial scale than generators.
 
 A chemical cell consists in two dissimilar metals such as copper and zinc. We
 call these the **electrodes**. They are immersed in a salt, acid or alkaline
