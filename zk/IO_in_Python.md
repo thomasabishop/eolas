@@ -131,8 +131,7 @@ file.close()
 
 Obviously file access can raise errors - typically when the file you want to
 access does not exist (i.e. a `FileNotFoundError`
-[exception](Error_handling_in_Python.md)).
-We can manage this scenario with
+[exception](Error_handling_in_Python.md)). We can manage this scenario with
 [exception handlers](Error_handling_in_Python.md):
 
 ```py
@@ -184,7 +183,7 @@ file.close()
 
 ## Renaming and deleting files
 
-We hace to use another built-in module to rename and delete files: `os`.
+We have to use another built-in module to rename and delete files: `os`.
 
 To rename an existing file:
 
