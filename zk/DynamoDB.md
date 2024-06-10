@@ -43,15 +43,72 @@ There are two types of primary key available:
 
 As well as the index provided by the primary key, you can set one or more
 **secondary indices**. A secondary index lets you query the data in the table
-using an alternate key. The main type of secondary index is a _global secondary
-index_. GSIs are useful for querying data that needs to be accessed using
-non-primary key attributes. For example, if you have a Users table with UserID
-as the primary key but often need to fetch users by their Email, a GSI on Email
-would be appropriate.
+using an alternate key.
 
-**Global secondary indices** span the entire table allowing you to query accross
-all partition keys whereas local secondary indices have the same partition key
-as the
+A **global secondary index** is useful for querying data that needs to be
+accessed using non-primary key attributes. For example, if you have a Users
+table with UserID as the primary key but often need to fetch users by their
+Email, a GSI on Email would be appropriate.
+
+There are also **local secondary indices** but I don't understand the
+difference.
+
+## Real example
+
+Below is a specification of the DynamoDB table I am using for my time-entries
+project:
+
+```json
+{
+  "TableName": "TimeEntries",
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "activity_start_end",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "start",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "activity_type",
+      "AttributeType": "S"
+    }
+  ],
+  "KeySchema": [
+    {
+      "AttributeName": "activity_start_end",
+      "KeyType": "HASH"
+    }
+  ],
+  "GlobalSecondaryIndexes": [
+    {
+      "IndexName": "StartIndex",
+      "KeySchema": [
+        {
+          "AttributeName": "start",
+          "KeyType": "HASH"
+        },
+        {
+          "AttributeName": "activity_type",
+          "KeyType": "RANGE"
+        }
+      ],
+      "Projection": {
+        "ProjectionType": "ALL"
+      },
+      "ProvisionedThroughput": {
+        "ReadCapacityUnits": 1,
+        "WriteCapacityUnits": 1
+      }
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 1,
+    "WriteCapacityUnits": 1
+  }
+}
+```
 
 ## Usage
 
