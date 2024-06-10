@@ -31,15 +31,27 @@ There are two types of primary key available:
 
 - partition key: a simple primary key composed of one attribute only. Because
   the primary key is hash-mapped items can be retrieved very rapidly using the
-  primary key.
+  primary key. This would be the `personId` alone.
 
 - composite key: this comprises a partition key and a _sort key_ both of which
-  are attributes
+  are attributes. In a table that has a partition key and a sort key, it's
+  possible for multiple items to have the same partition key value. However,
+  those items must have different sort key values. You could then query by
+  either key or both. For instance using the `personId` along with `LastName`
 
-However, you can also set one or more **secondary indices**. A secondary index
-lets you query the data in the table using an alternate key, in addition to
-queries against the primary key. DynamoDB doesn't require that you use indexes,
-but they give your applications more flexibility when querying your data.
+### Secondary index
+
+As well as the index provided by the primary key, you can set one or more
+**secondary indices**. A secondary index lets you query the data in the table
+using an alternate key. The main type of secondary index is a _global secondary
+index_. GSIs are useful for querying data that needs to be accessed using
+non-primary key attributes. For example, if you have a Users table with UserID
+as the primary key but often need to fetch users by their Email, a GSI on Email
+would be appropriate.
+
+**Global secondary indices** span the entire table allowing you to query accross
+all partition keys whereas local secondary indices have the same partition key
+as the
 
 ## Usage
 
