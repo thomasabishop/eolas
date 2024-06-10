@@ -20,7 +20,7 @@ non-relational meaning there cannot be JOIN operations via
 ### Primary key
 
 Although the data is stored as a table, one of the attributes is a primary key
-and the rest of the attributes are effectively the values associated with it.
+and the rest of the attributes are effectively the "value" associated with it.
 
 Because DynamoDB is schemaless, neither the attributes or their data types need
 to be defined beforehand and each item can have its own distinct attributes.
@@ -47,8 +47,8 @@ using an alternate key.
 
 A **global secondary index** is useful for querying data that needs to be
 accessed using non-primary key attributes. For example, if you have a Users
-table with UserID as the primary key but often need to fetch users by their
-Email, a GSI on Email would be appropriate.
+table with `UserID` as the primary key but often need to fetch users by their
+`Email`, a GSI on `Email` would be appropriate.
 
 There are also **local secondary indices** but I don't understand the
 difference.
@@ -96,19 +96,18 @@ project:
       ],
       "Projection": {
         "ProjectionType": "ALL"
-      },
-      "ProvisionedThroughput": {
-        "ReadCapacityUnits": 1,
-        "WriteCapacityUnits": 1
       }
     }
-  ],
-  "ProvisionedThroughput": {
-    "ReadCapacityUnits": 1,
-    "WriteCapacityUnits": 1
-  }
+  ]
 }
 ```
+
+This defines the attribute `activity_start_end` as the primary key. This string
+(`S`) value is a concatenation of three attributes, which is a way of ensuring
+each entry for the attribute will be unique.
+
+I also define two GSIs. -- check that these are correct for getting entries by
+range!
 
 ## Usage
 
