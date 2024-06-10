@@ -13,7 +13,9 @@ Data is stored as a table of key-value pairs. This doesn't mean there are single
 values corresponding to each key. There can be multiple columns for each key and
 the key itself is also a column.
 
-DynamoDB is "NoSQL" because it does not support
+DynamoDB is "NoSQL" because it does not support #SQL queries and is
+non-relational meaning there cannot be JOIN operations via
+[foreign_keys](Foreign_keys_in_SQL.md)
 
 ## Usage
 
