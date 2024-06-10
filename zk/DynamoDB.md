@@ -9,17 +9,20 @@ created: Sunday, June 09, 2024
 
 ## Data structure
 
-![](../img/dynamodb.png) Data is stored as a set of key-values in a table
-
-https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html
-Data is stored as a table of key-value pairs.
-
-This doesn't mean there are single values corresponding to each key. There can
-be multiple columns for each key and the key itself is also a column.
-
 DynamoDB is "NoSQL" because it does not support #SQL queries and is
 non-relational meaning there cannot be JOIN operations via
 [foreign_keys](Foreign_keys_in_SQL.md)
+
+![](../img/dynamodb.png)
+
+Although the data is stored as a table, one of the attributes is a key and the
+rest of the attributes are effectively the values associated with it. Each item
+in the table is uniquely identifiable by its primary key.
+
+Because DynamoDB is schemaless, neither the attributes or their data types need
+to be defined beforehand and each item can have its own distinct attributes.
+
+This attribute is known as the primary key.
 
 ## Usage
 
