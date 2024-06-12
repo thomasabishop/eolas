@@ -19,4 +19,17 @@ arp-scan --interface=wlan0 --localnet
 nmap -sn 192.168.0.0/24
 ```
 
-## Related notes
+## Check DNS resolution
+
+```sh
+dig google.com
+```
+
+Key output:
+
+```
+;; Query time: 6 msec
+;; SERVER: 192.168.0.4#53(192.168.0.4) (UDP)
+;; WHEN: Wed Jun 12 18:27:27 BST 2024
+;; MSG SIZE  rcvd: 55
+```
