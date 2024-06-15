@@ -1,5 +1,7 @@
 ---
-tags: [python, types]
+tags:
+  - python
+  - data-types
 ---
 
 # Type hinting in Python

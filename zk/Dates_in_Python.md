@@ -1,5 +1,7 @@
 ---
-tags: [python, timestamps]
+tags:
+  - python
+  - time
 ---
 
 # Dates in Python

@@ -11,7 +11,7 @@ tags:
 ## Schema
 
 In order start adding
-[collections and documents](Introduction.md) to our database,
+[collections and documents](MongoDB_Introduction.md) to our database,
 we use Mongoose's **schema** structure. (This is specific to Mongoose and is not
 a structure that is a part of Mongo in general.)
 

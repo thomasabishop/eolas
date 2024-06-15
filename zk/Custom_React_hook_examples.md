@@ -2,7 +2,6 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # Custom hook examples

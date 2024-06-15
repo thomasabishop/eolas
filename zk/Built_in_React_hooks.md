@@ -2,7 +2,6 @@
 tags:
   - typescript
   - react
-  - react-hooks
 ---
 
 # Typing built-in hooks

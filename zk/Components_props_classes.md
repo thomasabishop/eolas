@@ -2,7 +2,6 @@
 tags:
   - javascript
   - react
-  - react-classes
 ---
 
 # Components and props with class-based components

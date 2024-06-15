@@ -1,5 +1,9 @@
 ---
-tags: [mongo-db, node-js, mongoose]
+tags:
+  - mongo-db
+  - node-js
+  - mongoose
+  - databases
 ---
 
 # MongoDB: deleting a document from a collection

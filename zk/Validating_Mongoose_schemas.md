@@ -1,5 +1,9 @@
 ---
-tags: [mongo-db, mongoose, node-js]
+tags:
+  - mongo-db
+  - mongoose
+  - node-js
+  - databases
 ---
 
 # Validating Mongoose schemas

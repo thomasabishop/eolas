@@ -3,7 +3,6 @@ tags:
   - node-js
   - REST
   - APIs
-  - mongo-db
 ---
 
 # Structuring Express applications

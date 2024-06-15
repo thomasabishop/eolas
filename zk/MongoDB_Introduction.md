@@ -1,5 +1,7 @@
 ---
-tags: [mongo-db]
+tags:
+  - mongo-db
+  - databases
 ---
 
 # MongoDB: Introduction

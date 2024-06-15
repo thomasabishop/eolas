@@ -2,8 +2,6 @@
 tags:
   - javascript
   - react
-  - react-classes
-  - react-hooks
 ---
 
 # Comparing class components to hook-based components

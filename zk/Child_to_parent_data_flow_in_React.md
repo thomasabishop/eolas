@@ -1,5 +1,7 @@
 ---
-tags: [javascript, react, react-hooks]
+tags:
+  - javascript
+  - react
 ---
 
 # Child to parent data flow

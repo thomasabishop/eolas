@@ -1,5 +1,8 @@
 ---
-tags: [mongo-db, node-js]
+tags:
+  - mongo-db
+  - node-js
+  - databases
 ---
 
 # Importing data to MongoDB
