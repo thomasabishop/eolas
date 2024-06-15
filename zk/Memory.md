@@ -1,5 +1,7 @@
 ---
-tags: [memory, motherboard]
+tags:
+  - memory
+  - computer-architecture
 ---
 
 # Memory

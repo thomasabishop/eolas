@@ -1,5 +1,7 @@
 ---
-tags: [bus]
+tags:
+  - bus
+  - computer-architecture
 ---
 
 # Bus

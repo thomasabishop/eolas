@@ -2,13 +2,12 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # Forms using hooks
 
 With hooks, form processing is exactly the same as
-[classes](Forms.md) in terms of the overall
+[classes](Forms_in_React.md) in terms of the overall
 methodology, but the syntax is slightly different as a result of the `useState`
 hook.
 

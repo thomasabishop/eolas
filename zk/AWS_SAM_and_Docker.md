@@ -1,6 +1,7 @@
 ---
 tags:
   - docker
+  - AWS
 ---
 
 # AWS SAM and Docker

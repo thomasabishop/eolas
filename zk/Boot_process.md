@@ -1,6 +1,7 @@
 ---
 tags:
   - disks
+  - operating-systems
 ---
 
 # The boot process

@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+  - logic
 ---
 
 # Biconditional introduction

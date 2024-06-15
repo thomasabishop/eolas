@@ -1,5 +1,7 @@
 ---
 tags:
+  - operating-systems
+  - Linux
 ---
 
 # Basic model of a \*nix operating system

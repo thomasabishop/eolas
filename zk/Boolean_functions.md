@@ -1,5 +1,8 @@
 ---
-tags: [propositional-logic, nand-to-tetris]
+tags:
+  - propositional-logic
+  - nand-to-tetris
+  - logic
 ---
 
 # Boolean functions

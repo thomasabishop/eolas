@@ -2,7 +2,6 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # Memoization with useCallback and useMemo
@@ -69,7 +68,7 @@ const handleSubmit = useCallback(
 );
 ```
 
-Note that the syntax is similar to [useEffect](useEffect.md): there is a
+Note that the syntax is similar to [React_useEffect](React_useEffect.md): there is a
 dependency array. The effect is the same: the function contained within
 `useCallback` will only re-rendered if one of these dependencies changes.
 However (see next section) the function will run in its memoized form on every

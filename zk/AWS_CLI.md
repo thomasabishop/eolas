@@ -1,5 +1,7 @@
 ---
-tags: [AWS]
+tags:
+  - AWS
+  - procedural
 ---
 
 # AWS CLI frequent commands

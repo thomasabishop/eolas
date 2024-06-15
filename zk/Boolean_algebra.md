@@ -1,5 +1,9 @@
 ---
-tags: [propositional-logic, algebra, nand-to-tetris]
+tags:
+  - propositional-logic
+  - algebra
+  - nand-to-tetris
+  - logic
 ---
 
 # Boolean algebra

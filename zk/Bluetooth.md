@@ -1,5 +1,8 @@
 ---
-tags: []
+tags:
+  - networks
+  - procedural
+  - Linux
 ---
 
 # Bluetooth

@@ -6,7 +6,7 @@ tags:
 
 # Application state management
 
-Although [useReducer](useReducer.md) and [useContext](useContext.md) have
+Although [React_useReducer](React_useReducer.md) and [React_useContext](React_useContext.md) have
 many sound use cases by themselves, when they are combined they offer a way to
 acheive a system of global state management, without utilising third-party
 libraries like Redux.
@@ -47,7 +47,7 @@ export const CounterContext = React.createContext({});
 
 Now we need a reducer that will handle the state updates. We will just use the
 same setup as we used in the example of
-[useReducer](useReducer.md#refining-the-syntax):
+[React_useReducer](React_useReducer.md#refining-the-syntax):
 
 ```js
 function reducer(state, action) {

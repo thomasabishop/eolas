@@ -1,5 +1,7 @@
 ---
-tags: [motherboard]
+tags:
+  - hardware
+  - computer-architecture
 ---
 
 # Motherboard

@@ -2,7 +2,6 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # `useEffect`
@@ -81,7 +80,7 @@ recasts the traditional [lifecycle methods](Lifecycle_methods.md))
 effect runs again (i.e. when it runs in response to a change in one of the
 elements of the dependency araray). This is chiefly used to prevent
 [memory leaks](Memory_leaks.md) and the
-['update on unmounted component error'](Errors.md#state-update-on-unmounted-component).
+['update on unmounted component error'](React_errors.md#state-update-on-unmounted-component).
 
 You do this by having a `return` clause after the main effect. Schematically:
 

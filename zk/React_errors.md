@@ -2,7 +2,6 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # Errors
@@ -18,4 +17,4 @@ Once the data is returned, React tries to update the state but the component is
 unmounted.
 
 As the warning suggests, this can be resolved using the cleanup parameter within
-[useEffect](useEffect.md#cleanup-functions).
+[React_useEffect](React_useEffect.md#cleanup-functions).

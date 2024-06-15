@@ -2,13 +2,12 @@
 tags:
   - javascript
   - react
-  - react-hooks
 ---
 
 # `useReducer`
 
 The `useReducer` hook is best used in scenarios where you are manipulating state
-in a way that is too complex for the trivial [useState](useState.md) use case.
+in a way that is too complex for the trivial [React_useState](React_useState.md) use case.
 `useState` is best employed when you are updating a single value or toggling a
 boolean. If you are updating the state of an object or more complex data
 structure, it is often more efficient to employ `useReducer`.
