@@ -1,5 +1,7 @@
 ---
-tags: [docker, SQL, node-js]
+tags:
+  - docker
+  - node-js
 ---
 
 # Connecting a frontend to a Docker backend

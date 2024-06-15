@@ -1,5 +1,9 @@
 ---
-tags: [systems-programming]
+tags:
+  - systems-programming
+  - Linux
+  - procedural
+  - systemd
 ---
 
 # systemd

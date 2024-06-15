@@ -1,7 +1,11 @@
 ---
 id: v5f6xkdv
 title: systemd status
-tags: [systemd, systems-programming]
+tags:
+  - systemd
+  - systems-programming
+  - Linux
+  - procedural
 created: Thursday, February 29, 2024 | 18:19
 ---
 

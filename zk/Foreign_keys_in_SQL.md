@@ -1,5 +1,8 @@
 ---
-tags: [SQL, relational-databases]
+tags:
+  - SQL
+  - relational-databases
+  - databases
 ---
 
 # Creating views with foreign keys

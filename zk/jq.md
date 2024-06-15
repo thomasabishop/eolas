@@ -1,5 +1,6 @@
 ---
-tags: [new, json]
+tags:
+  - json
 ---
 
 # jq

@@ -1,5 +1,6 @@
 ---
-tags: [docker, gpt-output]
+tags:
+  - docker
 ---
 
 # AWS SAM and Docker

@@ -1,5 +1,8 @@
 ---
-tags: [systems-programming]
+tags:
+  - systems-programming
+  - Linux
+  - procedural
 ---
 
 # `journald`

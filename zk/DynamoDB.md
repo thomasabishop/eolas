@@ -1,7 +1,9 @@
 ---
 id: xowl
 title: DynamoDB
-tags: [AWS]
+tags:
+  - AWS
+  - databases
 created: Sunday, June 09, 2024
 ---
 

@@ -1,5 +1,7 @@
 ---
-tags: [SQL]
+tags:
+  - SQL
+  - databases
 ---
 
 # Accessing metadata about SQL database
