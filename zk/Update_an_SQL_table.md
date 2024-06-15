@@ -1,5 +1,7 @@
 ---
-tags: [SQL, relational-databases]
+tags:
+  - SQL
+  - databases
 ---
 
 # Updating an SQL table

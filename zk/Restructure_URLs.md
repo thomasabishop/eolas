@@ -1,5 +1,7 @@
 ---
-tags: [AWS, aws-lambda, backend]
+tags:
+  - AWS
+  - aws-lambda
 ---
 
 # AWS Lambda examples

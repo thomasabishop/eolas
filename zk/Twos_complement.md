@@ -1,7 +1,8 @@
 ---
 id: gktb
 title: Two's complement
-tags: [binary, binary-encoding]
+tags:
+  - binary
 created: Tuesday, March 19, 2024
 ---
 

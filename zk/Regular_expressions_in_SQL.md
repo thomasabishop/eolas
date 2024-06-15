@@ -1,5 +1,8 @@
 ---
-tags: [SQL, relational-databases, regex]
+tags:
+  - SQL
+  - regex
+  - databases
 ---
 
 # Regular expressions in SQL

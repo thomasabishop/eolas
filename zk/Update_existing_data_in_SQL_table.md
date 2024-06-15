@@ -1,5 +1,7 @@
 ---
-tags: [SQL, relational-databases]
+tags:
+  - SQL
+  - databases
 ---
 
 # Update existing data with the SQL `UPDATE` command

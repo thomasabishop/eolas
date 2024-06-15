@@ -1,6 +1,5 @@
 ---
 tags:
-  - backend
   - node-js
   - middleware
 ---

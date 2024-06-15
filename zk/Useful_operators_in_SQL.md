@@ -1,5 +1,7 @@
 ---
-tags: [SQL, relational-databases]
+tags:
+  - SQL
+  - databases
 ---
 
 # Useful operators in SQL

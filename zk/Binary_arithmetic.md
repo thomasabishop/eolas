@@ -1,5 +1,6 @@
 ---
-tags: [binary, binary-arithemetic]
+tags:
+  - binary
 ---
 
 # Binary multiplication

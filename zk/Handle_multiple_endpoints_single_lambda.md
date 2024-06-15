@@ -1,5 +1,7 @@
 ---
-tags: [AWS, aws-lambda, backend]
+tags:
+  - AWS
+  - aws-lambda
 ---
 
 # Handle multiple API Gateway endpoints in a single lambda

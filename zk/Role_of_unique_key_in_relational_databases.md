@@ -1,5 +1,6 @@
 ---
-tags: [relational-databases]
+tags:
+  - databases
 ---
 
 # Unique key

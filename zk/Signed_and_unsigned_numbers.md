@@ -1,5 +1,6 @@
 ---
-tags: [binary, binary-encoding]
+tags:
+  - binary
 ---
 
 # Signed and unsigned numbers

@@ -1,5 +1,9 @@
 ---
-tags: [backend, node-js, REST, APIs, mongo-db]
+tags:
+  - node-js
+  - REST
+  - APIs
+  - mongo-db
 ---
 
 # Structuring Express applications

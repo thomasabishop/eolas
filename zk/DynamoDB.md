@@ -4,6 +4,7 @@ title: DynamoDB
 tags:
   - AWS
   - databases
+  - dynamodb
 created: Sunday, June 09, 2024
 ---
 

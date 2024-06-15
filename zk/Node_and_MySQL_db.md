@@ -1,5 +1,9 @@
 ---
-tags: [docker, SQL, node-js]
+tags:
+  - docker
+  - SQL
+  - node-js
+  - databases
 ---
 
 # Docker example: NodeJS backend with MySQL database

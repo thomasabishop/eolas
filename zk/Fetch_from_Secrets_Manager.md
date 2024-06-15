@@ -1,5 +1,6 @@
 ---
-tags: [AWS, backend]
+tags:
+  - AWS
 ---
 
 # Fetch from Secrets Manager

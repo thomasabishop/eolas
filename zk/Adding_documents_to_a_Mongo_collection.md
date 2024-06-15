@@ -1,5 +1,9 @@
 ---
-tags: [mongo-db, node-js, mongoose]
+tags:
+  - mongo-db
+  - node-js
+  - mongoose
+  - databases
 ---
 
 # Adding documents to a collection

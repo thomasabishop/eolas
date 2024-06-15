@@ -1,7 +1,6 @@
 ---
 tags:
   - SQL
-  - relational-databases
   - databases
 ---
 

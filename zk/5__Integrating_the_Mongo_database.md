@@ -1,5 +1,10 @@
 ---
-tags: [backend, node-js, REST, APIs, mongo-db]
+tags:
+  - node-js
+  - REST
+  - APIs
+  - mongo-db
+  - databases
 ---
 
 # Creating a RESTful API: Integrating the database
@@ -12,10 +17,10 @@ the array.
 ## Set-up
 
 We will follow the routine for establishing a MongoDB instance as detailed in
-[my notes](Connect_to_database.md) on Mongo:
+[my notes](Connect_to_Mongo_database.md) on Mongo:
 
-- [Create MongoDB database](Create_database.md)
-- [Connect to MongoDB database](Connect_to_database.md)
+- [Create MongoDB database](Create_Mongo_database.md)
+- [Connect to MongoDB database](Connect_to_Mongo_database.md)
 
 Our `index.js` now looks like the following:
 
@@ -120,7 +125,7 @@ const Course = mongoose.model(
 Now we need to rewrite our RESTful request handlers so that the data is sourced
 from and added to the database. We will mainly be using the Mongo syntax defined
 at [Querying a collection](Querying_a_collection.md) and
-[Adding documents to a collection](Adding_documents_to_a_collection.md).
+[Adding documents to a collection](Adding_documents_to_a_Mongo_collection.md).
 We will also keep API validation within the `/model/` file.
 
 ### GET

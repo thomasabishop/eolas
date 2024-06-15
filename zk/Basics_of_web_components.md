@@ -1,6 +1,5 @@
 ---
-tags:
-  - frontend
+tags: []
 ---
 
 # Basics of Web Components

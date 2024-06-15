@@ -1,5 +1,7 @@
 ---
-tags: [SQL, relational-databases]
+tags:
+  - SQL
+  - databases
 ---
 
 # Insert data into table with SQL `INSERT` statement

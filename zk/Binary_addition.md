@@ -1,5 +1,6 @@
 ---
-tags: [binary, binary-arithmetic]
+tags:
+  - binary
 ---
 
 # Binary addition

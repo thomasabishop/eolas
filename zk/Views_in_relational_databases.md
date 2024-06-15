@@ -1,5 +1,5 @@
 ---
-tags: [relational-databases]
+tags: []
 ---
 
 # Views in relational databases

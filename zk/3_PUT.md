@@ -1,5 +1,8 @@
 ---
-tags: [backend, node-js, REST, APIs]
+tags:
+  - node-js
+  - REST
+  - APIs
 ---
 
 # Creating a RESTful API: `PUT` requests

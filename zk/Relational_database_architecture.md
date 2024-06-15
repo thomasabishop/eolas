@@ -1,5 +1,5 @@
 ---
-tags: [relational-databases]
+tags: []
 ---
 
 # Relational database architecture
