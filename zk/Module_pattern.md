@@ -1,5 +1,7 @@
 ---
-tags: [OOP]
+tags:
+  - OOP
+  - design-patterns
 ---
 
 # Module pattern

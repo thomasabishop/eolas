@@ -16,7 +16,7 @@ the terminal and exit the current process.
 ## Managing runtime environments
 
 See
-[Managing Environments](Managing_environments.md).
+[Managing Environments](Managing_environments_in_NodeJS.md).
 
 ## Accessing arguments: `process.argv`
 

@@ -2,6 +2,8 @@
 tags:
   - memory
   - disks
+  - Linux
+  - operating-systems
 ---
 
 # Swap space
@@ -31,7 +33,7 @@ Swap:        3145724           0     3145724
 
 To use an existing disk partition as a swap you can run the command
 `mkswap [device]` and then `swapon [device]` to register the space with the
-[kernel](The_Kernel.md).
+[kernel](The_kernel.md).
 
 ### Add to `fstab`
 

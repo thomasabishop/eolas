@@ -14,7 +14,7 @@ File descriptors are shorthand for `stdin`, `stdout` and `stderr`:
 | 2               | Standard error  | `stderr`            |
 
 They are typically used when you want to
-[redirect](Redirection.md) the output of the
+[redirect](Redirection_in_Bash.md) the output of the
 standard/input /output/error somewhere, e.g a file or as input to another
 program. A classic case is `[some_command] > /dev/null 2>&1`
 

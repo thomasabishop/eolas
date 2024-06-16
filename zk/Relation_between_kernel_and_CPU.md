@@ -2,6 +2,7 @@
 tags:
   - kernel
   - CPU
+  - computer-architecture
 ---
 
 # Relation between the kernel and CPU

@@ -1,11 +1,12 @@
 ---
 tags:
   - shell
+  - Linux
 ---
 
 # Processes (`ps`)
 
-`ps` allows us to control [user processes](The_Kernel.md)
+`ps` allows us to control [user processes](The_kernel.md)
 from the shell.
 
 The command in its most minimal application returns the following

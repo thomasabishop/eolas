@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+  - logic
+  - propositional-logic
 ---
 
 ## Rationale

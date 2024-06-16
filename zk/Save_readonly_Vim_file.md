@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+  - Linux
+  - procedural
 ---
 
 # Save read only Vim file

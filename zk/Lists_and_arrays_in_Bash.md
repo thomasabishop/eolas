@@ -161,4 +161,4 @@ done
 ```
 
 We are leveraging this aspect of Bash when we
-[loop through each character in a string](Strings_in_bash.md#loop-through-each-character-in-a-string).
+[loop through each character in a string](Strings_in_Bash.md#loop-through-each-character-in-a-string).

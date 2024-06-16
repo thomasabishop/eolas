@@ -58,7 +58,7 @@ Node is continually monitoring the Event Loop in the background.
 
 A running Node application is a single running process. Like everything that
 happens within the OS, a process is managed by the
-[kernel](The_Kernel.md) that dispatches operations to the CPU
+[kernel](The_kernel.md) that dispatches operations to the CPU
 in a clock cycle. A thread is a sequence of code that resides within the process
 and utilises its memory pool (the amount of memory assigned by the kernel to the
 Node process). The Event Loop runs on CPU ticks: a tick is a single run of the

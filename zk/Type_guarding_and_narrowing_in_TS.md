@@ -6,7 +6,7 @@ tags:
 # Type narrowing and guarding
 
 Type narrowing is the process of working out from a supertype like
-[any](Any.md) or [unknown](Unknown.md) whic type the value should be in the
+[any](Any.md) or [unknown](Unknown_type_in_TS.md) whic type the value should be in the
 x course of your code. This is necessary since a process will not necessarily
 always return or involve homogenous types.
 

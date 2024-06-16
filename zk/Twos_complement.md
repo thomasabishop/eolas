@@ -3,6 +3,7 @@ id: gktb
 title: Two's complement
 tags:
   - binary
+  - hardware
 created: Tuesday, March 19, 2024
 ---
 

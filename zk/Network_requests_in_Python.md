@@ -1,5 +1,8 @@
 ---
-tags: [python, APIs]
+tags:
+  - python
+  - APIs
+  - networks
 ---
 
 # Making network requests in Python

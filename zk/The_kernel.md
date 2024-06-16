@@ -1,5 +1,8 @@
 ---
-tags: [systems-programming, memory]
+tags:
+  - systems-programming
+  - memory
+  - computer-architecture
 ---
 
 # The Kernel

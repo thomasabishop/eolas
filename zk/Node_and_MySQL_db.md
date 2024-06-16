@@ -137,7 +137,7 @@ docker-compose -up
 
 In the example, the database connection information in the Node source is coming
 from the
-[`process.env`](Managing_environments.md)
+[`process.env`](Managing_environments_in_NodeJS.md)
 object, which itself is sourcing the values `MYSQL_HOST`, `MYSQL_PASSWORD` etc
 from the Docker compose file. Therefore these values are hardcoded there.
 

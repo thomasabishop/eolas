@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+  - design-patterns
 ---
 
 # Sliding window

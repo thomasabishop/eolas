@@ -135,7 +135,7 @@ Most standard partition tables allow for primary, extended and logical
 partitions. The primary partition is the part of the harddisk that contains the
 operating system and is thus described as 'bootable' and may be called the 'boot
 partition'. During the bootstrapping process this is injected into memory as the
-[kernel](The_Kernel.md).
+[kernel](The_kernel.md).
 
 The extended partition is basically everything other than the primary partition.
 This is typically subdivided into other partitions that are called _logical_

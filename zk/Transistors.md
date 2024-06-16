@@ -1,5 +1,8 @@
 ---
-tags: [logic-gates, binary]
+tags:
+  - logic-gates
+  - binary
+  - electronics
 ---
 
 # Transistors

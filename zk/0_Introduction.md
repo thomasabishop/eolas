@@ -52,7 +52,7 @@ const courses = [
 We first create an instance of Express within `index.js`. This will be the main
 coordinating file and we will aim to minimise the amount of business logic we
 have in this file. It should really just be for initialization and managing
-[middleware](Middleware.md).
+[middleware](Middleware_in_NodeJS.md).
 
 ```js
 const express = require("express");

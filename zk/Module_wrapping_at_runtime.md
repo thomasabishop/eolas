@@ -16,7 +16,7 @@ immediately-invoked function expression that has the following parameters:
 This is called the **module wrapper function**
 
 Note that one of these parameters is the
-[module object](Modules.md#structure-of-a-module).
+[module object](Modules_in_NodeJS.md#structure-of-a-module).
 
 Within any module we can access these parameters: you can think of them as
 metadata about the module itself. `__filename` and `__dirname` are particularly

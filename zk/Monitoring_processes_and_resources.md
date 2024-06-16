@@ -136,7 +136,7 @@ gives me some useful info about which files VS Code is using:
 ## System calls: `strace`
 
 A system call is when a process requests a service from the
-[kernel](The_Kernel.md), for instance an I/O operation to
+[kernel](The_kernel.md), for instance an I/O operation to
 memory. We can trace these system calls with `strace`.
 
 ## CPU performance

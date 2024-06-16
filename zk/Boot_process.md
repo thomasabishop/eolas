@@ -9,7 +9,7 @@ tags:
 The primary or boot
 [partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk
 contains a bootloader. It is the job of the bootloader to locate the
-[kernel](The_Kernel.md) on the harddrive and inject it into
+[kernel](The_kernel.md) on the harddrive and inject it into
 memory so that they operating system can start. This is the boot process.
 
 ## Boot loaders

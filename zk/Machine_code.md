@@ -1,7 +1,11 @@
 ---
 id: iqh8
 title: Machine_code
-tags: [binary, CPU]
+tags:
+  - binary
+  - CPU
+  - hardware
+  - computer-architecture
 created: Monday, March 11, 2024
 ---
 

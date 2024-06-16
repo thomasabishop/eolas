@@ -97,4 +97,4 @@ fs.rmSync("/dir", { recursive: true, force: true });
 
 ## Streams
 
-See [Handling streams with fs](Streams.md)
+See [Handling streams with fs](Streams_in_NodeJS.md)

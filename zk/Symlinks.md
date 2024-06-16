@@ -1,6 +1,8 @@
 ---
 tags:
   - shell
+  - Linux
+  - procedural
 ---
 
 > A symbolic link, also termed a soft link, is a special kind of file that

@@ -1,6 +1,7 @@
 ---
 tags:
   - binary
+  - hardware
 ---
 
 # Signed and unsigned numbers

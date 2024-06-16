@@ -10,7 +10,7 @@ tags:
 At the core of a computer sits the Central Processing Unit. This is the assembly
 of chips that execute all computation. Instructions are passed to the CPU along
 the data bus part of the [system bus](Bus.md) from the
-memory. The [kernel](The_Kernel.md), also residing in memory,
+memory. The [kernel](The_kernel.md), also residing in memory,
 sequences and schedules the sending of data to the CPU and manages requests from
 the CPU for data in memory.
 
@@ -96,7 +96,7 @@ Hz a processor possesses.
 ## Processing cycles
 
 Each "cycle" is the execution of a process that commences once the
-[kernel](The_Kernel.md) hands control to the CPU. Each cycle
+[kernel](The_kernel.md) hands control to the CPU. Each cycle
 follows a sequence of events known as
 [fetch, decode, and execute](Fetch_decode_execute.md).
 

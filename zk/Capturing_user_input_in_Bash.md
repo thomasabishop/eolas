@@ -5,7 +5,7 @@ tags:
 
 # Capturing user input in Bash
 
-We use [read](Read.md) to gather user input.
+We use [read](Read_command%20_in_Bash.md) to gather user input.
 
 ## Capturing raw inputs
 

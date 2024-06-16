@@ -1,5 +1,8 @@
 ---
-tags: []
+tags:
+  - Linux
+  - procedural
+  - arch-linux
 ---
 
 # Pacman

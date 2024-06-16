@@ -31,7 +31,7 @@ increased the speed of transport.
   particular implementation of containerization that simplifies the process and
   bases it on a standardised specification.
 
-- Containers are native to the Linux [kernal](The_Kernel.md)
+- Containers are native to the Linux [kernal](The_kernel.md)
   and are key part of how it works. Thus when you run containers on Linux, you
   are using native capability. When you use containers on Windows or Mac you
   have to run a virtual version of Linux in order to exploit the capabilities of

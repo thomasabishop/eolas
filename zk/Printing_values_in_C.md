@@ -1,7 +1,8 @@
 ---
 id: 3hcv0amc
 title: Printing values in C
-tags: []
+tags:
+  - C
 created: Thursday, February 29, 2024 | 17:33
 ---
 

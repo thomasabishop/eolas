@@ -11,7 +11,7 @@ piped to it. In each case, what is read is stored as a variable.
 
 `read` will parse line by line using a space (`\n`) as the default delimiter.
 You can use IFS to parse by other characters and/or
-[split the contents into an array](Split_into_array.md).
+[split the contents into an array](Split_into_array_in_Bash.md).
 
 ## Example of capturing user input
 
