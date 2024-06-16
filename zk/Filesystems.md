@@ -1,6 +1,8 @@
 ---
 tags:
   - disks
+  - computer-architecture
+  - operating-systems
 ---
 
 # Filesystems

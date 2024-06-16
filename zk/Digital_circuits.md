@@ -1,5 +1,6 @@
 ---
-tags: [circuits]
+tags:
+  - electronics
 ---
 
 # Digital circuits

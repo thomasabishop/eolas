@@ -1,6 +1,7 @@
 ---
 tags:
   - json
+  - shell
 ---
 
 # jq

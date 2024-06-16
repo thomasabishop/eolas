@@ -1,5 +1,7 @@
 ---
-tags: [logic-gates]
+tags:
+  - logic-gates
+  - electronics
 ---
 
 # Integrated circuits

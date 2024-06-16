@@ -1,5 +1,8 @@
 ---
-tags: [python]
+tags:
+  - python
+  - aws-lambda
+  - AWS
 ---
 
 # Lambdas in Python

@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+  - yaml
 ---
 
 # Guide to YAML

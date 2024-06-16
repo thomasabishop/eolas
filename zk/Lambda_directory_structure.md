@@ -1,5 +1,7 @@
 ---
-tags: [AWS]
+tags:
+  - AWS
+  - aws-lambda
 ---
 
 # Lambda directory structure

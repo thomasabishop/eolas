@@ -1,5 +1,6 @@
 ---
-tags: [electricity, circuits]
+tags:
+  - electronics
 ---
 
 # LEDs

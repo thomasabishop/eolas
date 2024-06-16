@@ -117,4 +117,4 @@ fi
 ```
 
 > Note: this syntax can also be used to test if a given element exists in an
-> [array](Lists_and_arrays.md).
+> [array](Lists_and_arrays_in_Bash.md).

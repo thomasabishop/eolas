@@ -1,7 +1,9 @@
 ---
 id: 6g54
 title: Docker_CLI
-tags: []
+tags:
+  - docker
+  - shell
 created: Saturday, March 30, 2024
 ---
 

@@ -1,5 +1,7 @@
 ---
 tags:
+  - computer-architecture
+  - Linux
 ---
 
 # Devices
@@ -42,7 +44,7 @@ brw-rw----   1 root   disk   259,     3 Jun  4 11:00 nvme0n1p3
 > programs like `ls` and `cat`.
 
 The
-[mode](File_permissions_and_execution.md#what-the-output-means)
+[mode](File_permissions_and_execution_in_Bash.md#what-the-output-means)
 is different from ordinary files. Each device file is prepended with
 `b, p, c, s` before the standard permissions. These stand for the major types of
 devices: _block, character, pipe_ and _socket_.

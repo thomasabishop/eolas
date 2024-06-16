@@ -1,6 +1,7 @@
 ---
 tags:
   - OOP
+  - design-patterns
 ---
 
 # Factory pattern

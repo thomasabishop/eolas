@@ -1,5 +1,8 @@
 ---
-tags: [number-systems]
+tags:
+  - number-systems
+  - hardware
+  - computer-architecture
 ---
 
 # Hexadecimal number system

@@ -1,5 +1,7 @@
 ---
-tags: [logic-gates, binary]
+tags:
+  - logic-gates
+  - binary
 ---
 
 # Four-bit adder

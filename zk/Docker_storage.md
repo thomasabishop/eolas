@@ -1,3 +1,8 @@
+---
+tags:
+  - docker
+---
+
 # Docker storage
 
 The following problems related to storage face containerized environments:

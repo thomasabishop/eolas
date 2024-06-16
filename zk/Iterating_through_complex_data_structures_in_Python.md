@@ -116,7 +116,7 @@ string:
 ```
 
 We could also use
-[list comprehension](List_comprehension_etc.md)
+[list comprehension](List_comprehension_in_Python.md)
 to achieve the same outcome:
 
 ```py
@@ -193,7 +193,7 @@ will simply overwrite the old value for that key.
 
 Accordingly, we create a dictionary which uses the unique key in each list as
 the key of each dictionary entry via
-[dictionary comprehension](List_comprehension_etc.md#dictionary-comprehension)
+[dictionary comprehension](List_comprehension_in_Python.md#dictionary-comprehension)
 that loops through each value in the inner lists of the multidimensional array.
 We then parse the values of the dictionary into a list.
 

@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+  - data-structures
 ---
 
 # Frequency counters

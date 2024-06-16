@@ -2,6 +2,7 @@
 tags:
   - SQL
   - databases
+  - data-types
 ---
 
 # Data types in MySQL

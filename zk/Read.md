@@ -34,7 +34,7 @@ read
 
 ## Example of piping to read
 
-Here we use [find](Find.md) to collate the files in
+Here we use [find](Find_Bash_command.md) to collate the files in
 the current directory and then pipe them to read.
 
 ```bash

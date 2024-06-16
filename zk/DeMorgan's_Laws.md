@@ -1,5 +1,8 @@
 ---
-tags: []
+tags:
+  - theorems
+  - logic
+  - propositional-logic
 ---
 
 # DeMorgan's Laws

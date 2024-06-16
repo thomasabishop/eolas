@@ -1,7 +1,8 @@
 ---
 id: 5faz2y2e
 title: Format specifiers in C
-tags: []
+tags:
+  - C
 created: Thursday, February 29, 2024 | 17:41
 ---
 

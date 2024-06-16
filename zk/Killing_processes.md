@@ -1,6 +1,7 @@
 ---
 tags:
   - shell
+  - procedural
 ---
 
 ## Kill a process running on a port

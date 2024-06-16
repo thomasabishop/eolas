@@ -1,7 +1,8 @@
 ---
 id: fw56
 title: Docker compose and Dockerfile difference
-tags: []
+tags:
+  - docker
 created: Tuesday, March 26, 2024
 ---
 

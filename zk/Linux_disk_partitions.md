@@ -1,6 +1,8 @@
 ---
 tags:
   - disks
+  - Linux
+  - procedural
 ---
 
 # Linux disk partitions

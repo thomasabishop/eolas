@@ -1,5 +1,9 @@
 ---
-tags: [systems-programming]
+tags:
+  - systems-programming
+  - disks
+  - procedural
+  - Linux
 ---
 
 # Disk info routines

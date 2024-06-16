@@ -1,5 +1,7 @@
 ---
-tags: [AWS]
+tags:
+  - AWS
+  - databases
 ---
 
 # Database options
