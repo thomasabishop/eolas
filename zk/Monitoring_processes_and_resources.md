@@ -61,7 +61,7 @@ _Here I have pressed `u` to show only the processes associated with my user:_
     ```
 - `VIRT`
   - The total amount of
-    [virtual memory](Virtual_memory_and_the_MMU.md) used by
+    [virtual memory](Virtual_memory_and_the_MMU_in_Linux.md) used by
     the process including: program code, data, shared libraries, pages that have
     been swapped, pages that have been mapped but not used.
 - `RES`
@@ -69,7 +69,7 @@ _Here I have pressed `u` to show only the processes associated with my user:_
   - The non swapped _physical_ memory the process has used
 - `SHR`
   - The size of the process's
-    [shared pages](Virtual_memory_and_the_MMU.md#shared-pages)
+    [shared pages](Virtual_memory_and_the_MMU_in_Linux.md#shared-pages)
 - `S`
   - Status:
     - S for sleeping (idle)
@@ -168,7 +168,7 @@ $ uptime
 
 We know that processes primarily interact with virtual memory in the form of
 pages which are then translated to physical blocks by the kernel via the
-[MMU](Virtual_memory_and_the_MMU.md). There are several tools
+[MMU](Virtual_memory_and_the_MMU_in_Linux.md). There are several tools
 which provide windows onto this process.
 
 ### System page size

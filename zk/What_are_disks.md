@@ -1,6 +1,7 @@
 ---
 tags:
   - disks
+  - computer-architecture
 ---
 
 # What are disks?

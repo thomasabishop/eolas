@@ -1,7 +1,6 @@
 ---
 tags:
   - electricity
-  - circuits
   - electronics
 ---
 

@@ -79,7 +79,7 @@ the second list against them.
 ## Parameter expansion: `${...}`
 
 We use most frequently for returning the value of stored
-[variables](Variables_and_data_types.md).
+[variables](Variables_and_data_types_in_Bash.md).
 Techically we do not have to use the braces, we can retrieve with just `$var`
 however it's better to use them to minimise interpretation fuck-ups which happen
 a lot.

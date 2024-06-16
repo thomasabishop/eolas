@@ -1,5 +1,7 @@
 ---
-tags: [memory]
+tags:
+  - memory
+  - Linux
 ---
 
 # Virtual memory and the Memory Management Unit

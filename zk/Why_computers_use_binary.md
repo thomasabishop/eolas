@@ -1,5 +1,7 @@
 ---
-tags: [binary]
+tags:
+  - binary
+  - computer-architecture
 ---
 
 # Why computers use binary

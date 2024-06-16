@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+  - Linux
+  - procedural
 ---
 
 # User management

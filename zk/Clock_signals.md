@@ -2,7 +2,6 @@
 tags:
   - binary
   - memory
-  - clock
   - electromagnetism
   - hardware
 ---

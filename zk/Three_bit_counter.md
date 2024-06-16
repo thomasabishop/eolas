@@ -1,5 +1,8 @@
 ---
-tags: [logic-gates, binary, memory, clock]
+tags:
+  - logic-gates
+  - binary
+  - memory
 ---
 
 # 3-bit Counter

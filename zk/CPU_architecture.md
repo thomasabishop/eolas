@@ -1,7 +1,6 @@
 ---
 tags:
   - CPU
-  - clock
   - computer-architecture
 ---
 
