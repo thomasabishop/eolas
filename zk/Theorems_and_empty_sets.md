@@ -1,5 +1,7 @@
 ---
-tags: [propositional-logic]
+tags:
+  - propositional-logic
+  - logic
 ---
 
 We know that when we construct a

@@ -1,5 +1,6 @@
 ---
 tags:
+  - computer-architecture
 ---
 
 # Daemons

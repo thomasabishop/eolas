@@ -2,6 +2,8 @@
 tags:
   - systems-programming
   - systemd
+  - Linux
+  - procedural
 ---
 
 # Create timed `systemd` job

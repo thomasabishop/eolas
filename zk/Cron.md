@@ -1,6 +1,8 @@
 ---
 tags:
   - shell
+  - Linux
+  - procedural
 ---
 
 # Cron

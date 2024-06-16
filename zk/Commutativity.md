@@ -1,6 +1,8 @@
 ---
 tags:
   - theorems
+  - algebra
+  - number-theory
 ---
 
 # The Commutative Property of Addition and Multiplication

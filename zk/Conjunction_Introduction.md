@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+  - propositional-logic
+  - logic
 ---
 
 If two conjuncts have each been independently derived then they can be

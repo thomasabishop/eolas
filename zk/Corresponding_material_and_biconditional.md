@@ -1,5 +1,7 @@
 ---
-tags: [propositional-logic]
+tags:
+  - propositional-logic
+  - logic
 ---
 
 # Corresponding material conditional to show validity

@@ -1,5 +1,7 @@
 ---
-tags: [propositional-logic]
+tags:
+  - propositional-logic
+  - logic
 ---
 
 # Strategies for constructing proofs in propositional logic

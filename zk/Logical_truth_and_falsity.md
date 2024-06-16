@@ -1,5 +1,7 @@
 ---
-tags: [propositional-logic]
+tags:
+  - propositional-logic
+  - logic
 ---
 
 # Logical truth and falsity

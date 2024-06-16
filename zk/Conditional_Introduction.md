@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+  - propositional-logic
+  - logic
 ---
 
 # Conditional Introduction

@@ -1,5 +1,8 @@
 ---
-tags: [CPU, electromagnetism, clock]
+tags:
+  - CPU
+  - clock
+  - computer-architecture
 ---
 
 # CPU architecture

@@ -1,5 +1,10 @@
 ---
-tags: [binary, memory, clock, electromagnetism]
+tags:
+  - binary
+  - memory
+  - clock
+  - electromagnetism
+  - hardware
 ---
 
 # Clock signals

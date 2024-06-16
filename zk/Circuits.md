@@ -1,5 +1,8 @@
 ---
-tags: [electricity, circuits]
+tags:
+  - electricity
+  - circuits
+  - electronics
 ---
 
 # Circuits

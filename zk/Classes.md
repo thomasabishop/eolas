@@ -241,7 +241,7 @@ constructor with `super`.
 
 You shouldn't confuse `implements` with `extends`. `implements` just checks the
 class as an interface in accordance with the principles of
-[duck typing](Custom_types.md#duck-typing):
+[duck typing](Custom_types_in_TypeScript.md#duck-typing):
 i.e the implementing class should have the same properties and methods. It
 doesn't affect anything internal to the methods or properties. So e.g, if you
 typed a method parameter as `string` in the base class, this would still default
