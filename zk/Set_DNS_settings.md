@@ -17,7 +17,7 @@ Within the system systemd files this will be handled in
 files etc.
 
 In the file below I have turned of DHCP routing and specified the address of my
-Pi-hole device to handle domain name resolution:
+Pi-Hole device to handle domain name resolution:
 
 ```
 #wlan.network
@@ -42,4 +42,10 @@ RouteMetric=600
 
 ```
 
+This stops it using the default DNS server of my router and runs the resolutions
+against Pi-Hole.
+
 ## Related notes
+
+![Network scanning](./Network_scanning.md)
+![Network debugging](Network_debugging.md)
