@@ -13,7 +13,8 @@ On Arch and most modern Linux distributions domain name resolution is handled
 via the `systemd-resolved` #systemd configuration.
 
 Within the system systemd files this will be handled in
-`/systemd/network/wired.network` or `systemd/network/wlan.network` files etc.
+`/etc/systemd/network/wired.network` or `/etc/systemd/network/wlan.network`
+files etc.
 
 In the file below I have turned of DHCP routing and specified the address of my
 Pi-hole device to handle domain name resolution:
