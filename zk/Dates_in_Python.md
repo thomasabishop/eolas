@@ -68,9 +68,21 @@ print("Minute:", some_datetime.minute)
 print("Second:", some_datetime.second)
 ```
 
-### Formatting Datetime Objects
+### Formatting Datetime Objects: `strftime`
 
-You can format datetime objects to strings using the `strftime` method.
+The `strftime` method (_string format time_) converts a datetime object to a
+string according to the specified format.
+
+In the example below we use `strftime` to express the current date as YYYY-MM:
+
+```python
+now = datetime.now()
+formatted = now.strftime('%Y-%m')
+print(formatted)
+# 2024-06
+```
+
+Another example, for YYYY-MM-DD H:M:S:
 
 ```python
 formatted_datetime = some_datetime.strftime('%Y-%m-%d %H:%M:%S')
