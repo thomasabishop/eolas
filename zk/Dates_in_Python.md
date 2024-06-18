@@ -17,7 +17,7 @@ import datetime
 
 ### Getting Current Date and Time
 
-You can get the current date and time using `datetime.datetime.now()`.
+Get the current date and time using `datetime.datetime.now()`.
 
 ```python
 current_datetime = datetime.datetime.now()
@@ -26,8 +26,8 @@ print("Current datetime:", current_datetime)
 
 ### Creating Date Objects
 
-To create a date object, you can use `datetime.date`, specifying the year,
-month, and day.
+To create a date object, use `datetime.date`, specifying the year, month, and
+day.
 
 ```python
 some_date = datetime.date(2021, 9, 30)
@@ -36,8 +36,8 @@ print("Some date:", some_date)
 
 ### Creating Time Objects
 
-To create a time object, you can use `datetime.time`, specifying the hour,
-minute, second, and optionally microsecond.
+To create a time object, use `datetime.time`, specifying the hour, minute,
+second, and optionally microsecond.
 
 ```python
 some_time = datetime.time(13, 24, 56)
@@ -46,16 +46,16 @@ print("Some time:", some_time)
 
 ### Creating Datetime Objects
 
-To create a datetime object, you can use `datetime.datetime`.
+To create a datetime object, use `datetime.datetime`.
 
 ```python
 some_datetime = datetime.datetime(2021, 9, 30, 13, 24, 56)
 print("Some datetime:", some_datetime)
 ```
 
-### Extracting Components
+### Extracting components
 
-You can extract various components from a datetime object like so:
+Extract components from a datetime object:
 
 ```python
 print("Year:", some_datetime.year)
@@ -75,7 +75,7 @@ This would typically be used when we have been working with a computer-friendly
 format of a date such as unix seconds which we then want to output in a more
 readable format.
 
-In the example below we use `strftime` to express the current date as YYYY-MM:
+Use `strftime` to express the current date as YYYY-MM:
 
 ```python
 now = datetime.now()
@@ -84,15 +84,14 @@ print(formatted)
 # 2024-06
 ```
 
-Another example, for YYYY-MM-DD H:M:S:
+Express the current date as YYYY-MM-DD H:M:S:
 
 ```python
 formatted_datetime = some_datetime.strftime('%Y-%m-%d %H:%M:%S')
 print("Formatted datetime:", formatted_datetime)
 ```
 
-Below is a real example that uses a [unix timestamp](./Time_and_computers.md) as
-the input:
+Express a [unix timestamp](./Time_and_computers.md) as DD-MM-YYYY:
 
 ```py
 def convert_timestamp(timestamp):
@@ -110,11 +109,10 @@ print(converted)
 The `strptime` (_string_parse_time) method_ parses a string representing a date
 and/or a time according to a specified format and returns a `datetime` object.
 
-This would typically be used when want to carry out some sort of transformation
-on time data that we are sourcing in a particular format.
+Typically be used when want to carry out some sort of transformation on time
+data that we are sourcing in a particular format.
 
-In the example below we receive a date in the format DD-MM-YYYY and we convert
-it to a datetime object:
+Receive a date in the format DD-MM-YYYY and convert to datetime object:
 
 ```python
 date_string = "18-06-2024"
