@@ -18,7 +18,7 @@ try:
         stderr=subprocess.PIPE,
         text=True,
     )
-    return json.loads(process.stdout)
+    return process.stdout
 
 except subprocess.CalledProcessError as e:
         return e.stderr.strip()
