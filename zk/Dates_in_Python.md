@@ -7,11 +7,9 @@ tags:
 # Dates in Python
 
 Python's built-in `datetime` module provides various classes for manipulating
-dates and times. Below are some common use-cases with examples.
+dates and times.
 
 ### Importing `datetime`
-
-First, you'll need to import the `datetime` module.
 
 ```python
 import datetime
@@ -68,10 +66,14 @@ print("Minute:", some_datetime.minute)
 print("Second:", some_datetime.second)
 ```
 
-### Formatting Datetime Objects: `strftime`
+### Formatting `datetime` objects: `strftime`
 
 The `strftime` method (_string format time_) converts a datetime object to a
 string according to the specified format.
+
+This would typically be used when we have been working with a computer-friendly
+format of a date such as unix seconds which we then want to output in a more
+readable format.
 
 In the example below we use `strftime` to express the current date as YYYY-MM:
 
@@ -89,9 +91,8 @@ formatted_datetime = some_datetime.strftime('%Y-%m-%d %H:%M:%S')
 print("Formatted datetime:", formatted_datetime)
 ```
 
-## Examples
-
-### Convert a unix timestamp to readable date
+Below is a real example that uses a [unix timestamp](./Time_and_computers.md) as
+the input:
 
 ```py
 def convert_timestamp(timestamp):
@@ -102,4 +103,30 @@ def convert_timestamp(timestamp):
 converted = convert_timestamp(1689023491)
 print(converted)
 # 10-07-2023
+```
+
+### Parsing `datetime` strings: `strptime`.
+
+The `strptime` (_string_parse_time) method_ parses a string representing a date
+and/or a time according to a specified format and returns a `datetime` object.
+
+This would typically be used when want to carry out some sort of transformation
+on time data that we are sourcing in a particular format.
+
+In the example below we receive a date in the format DD-MM-YYYY and we convert
+it to a datetime object:
+
+```python
+date_string = "18-06-2024"
+datetime_object = datetime.strptime(date_string, '%d-%m-%Y')
+print(date_object) # 2024-06-18 00:00:00
+```
+
+Extract the year from a UTC date format:
+
+```python
+datetime_obj = datetime.strptime("2024-03-27T10:44:28Z", "%Y%m%dT%H%M%SZ")
+print(datetime_obj.strftime('%Y'))
+# 2024
+
 ```
