@@ -8,8 +8,7 @@ tags:
 # Making network requests in Python
 
 We can use the `requests` package to make API requests to
-[RESTful](RESTful_APIs.md) resources and handle the data as
-JSON.
+[RESTful](RESTful_APIs.md) resources and handle the data as JSON.
 
 ```sh
 pip install requests
@@ -17,7 +16,7 @@ pip install requests
 
 Here is a basic architecture for making a `GET` request in Python.
 
-```py
+```python
 import requests
 
 def get_data(url):
@@ -46,7 +45,7 @@ if __name__ == "__main__":
 
 Running `main` returns:
 
-```py
+```python
 {
    "id":1,
    "title":"iPhone 9",
@@ -68,13 +67,12 @@ Running `main` returns:
 }
 ```
 
-This is JSON but in Python is a
-[dictionary](Dictionaries_in_Python.md)
+This is JSON but in Python is a [dictionary](Dictionaries_in_Python.md)
 
 We can use standard dictionary methods to handle the data. For example, we'll
 add to the existing `try` block:
 
-```py
+```python
 example_key = "brand"  # Replace with the key you want to access from the JSON data
     if example_key in data:
         print(f"Value of '{example_key}':", data[example_key])
