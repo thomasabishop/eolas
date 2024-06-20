@@ -51,10 +51,10 @@ Device            Start        End   Sectors   Size Type
 
 Whilst UEFI is installed on the hardware, most of its configuration is stored in
 the EFI partition on the disk, whereas with BIOS, everything is on the chip.
-This make booting faster with UEFI.
+This makes booting faster with UEFI.
 
 Even though most modern computers use UEFI, it may still be referred to as BIOS
-for user-continuity. This is like on Windows. With Linux you have to explicitly
+for user-continuity (for instance on WIndows). With Linux you have to explicitly
 create your boot process so the two are clearly distinguishable.
 
 ### GRUB
