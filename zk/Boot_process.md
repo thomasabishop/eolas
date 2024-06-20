@@ -9,8 +9,8 @@ tags:
 The primary or boot
 [partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk
 contains a bootloader. It is the job of the bootloader to locate the
-[kernel](The_kernel.md) on the harddrive and inject it into
-memory so that they operating system can start. This is the boot process.
+[kernel](The_kernel.md) on the harddrive and inject it into memory so that they
+operating system can start. This is the boot process.
 
 ## Boot loaders
 
@@ -65,10 +65,11 @@ The de facto standard boot loader for Linux is GRUB: Grand Unified Boot Loader.
 
 You see the GRUB default menu when you first start a Linux machine. It will
 offer you various options for loading your installed OS or other OSs. GRUB is a
-filesystem like the main disk. If you press `e` in this screen you can view and
-edit specific boot parameters. Pressing `c` gives you access to the GRUB command
-line interface. This allows you to interact with GRUB in the same way as you
-would with any other filesystem, allowing for advanced configuration.
+[filesystem](./Filesystems.md) like the main disk. If you press `e` in this
+screen you can view and edit specific boot parameters. Pressing `c` gives you
+access to the GRUB command line interface. This allows you to interact with GRUB
+in the same way as you would with any other filesystem, allowing for advanced
+configuration.
 
 ## The boot sequence
 
@@ -80,16 +81,16 @@ would with any other filesystem, allowing for advanced configuration.
 3. The kernel initializes the devices and its drivers.
 4. The kernel mounts the root filesystem.
 5. The kernel starts a program called **init**. It has a
-   [process id](Processes.md#processes-ps)
-   of 1. This is the point at which [user space](User_Space.md) starts.
+   [process id](Processes.md#processes-ps) of 1. This is the point at which
+   [user space](User_Space.md) starts.
 6. Init sets the rest of the system processes in motion.
 7. At the end of the boot process, init starts a process allowing you to log in.
 
 ## Boot diagnostics
 
-Linux keeps a log of the boot process as part of the [journal]() log of
-everything that happens on disk. We can use the command `journalct -k` to view
-the diagnostics generated during the boot. Here is a selection:
+Linux keeps a log of the boot process as part of the [journal](./journald.md)
+log of everything that happens on disk. We can use the command `journalct -k` to
+view the diagnostics generated during the boot. Here is a selection:
 
 ```
 Jul 07 07:12:58 archbish kernel: Linux version 5.18.5-arch1-1 (linux@archlinux) (gcc (GCC) 12.1.0, GNU ld (GNU Binutils) 2.38) #1 SMP PREEMPT_DYNAMIC Thu, 16 Jun 2022 20:40:45 +0000
