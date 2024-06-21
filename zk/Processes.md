@@ -18,4 +18,12 @@ a container in which a program runs. This container includes:
 - a memory address
 - other information about the state of the process
 
+Other than the `init` process started by the kernel (PID1), every process has a
+parent process that started it. This parent-child relationship creates a tree of
+processes.
+
+It is possible that a parent process will terminate before one of its child
+processes. In this instance the child becomes an orphan. When this occurs in
+#Linux, the orphan process is adopted by `init`.
+
 ## Related notes

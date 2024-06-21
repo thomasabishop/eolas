@@ -4,6 +4,7 @@ tags:
   - Linux
   - procedural
   - systemd
+  - operating-systems
 ---
 
 # systemd
