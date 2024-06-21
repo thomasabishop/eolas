@@ -27,3 +27,7 @@ processes. In this instance the child becomes an orphan. When this occurs in
 #Linux, the orphan process is adopted by `init`.
 
 ## Related notes
+
+![systemd](./systemd.md)
+
+![ps](./ps.md)
