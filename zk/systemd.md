@@ -20,7 +20,7 @@ succession at boot time it is not limited to the this stage of the lifescycle
 but runs continuously in reponse to new user events.
 
 On Linux systems `systemd` is used to implement `init` and therefore `systemd`
-will always be listed as the first process (PID1)
+will always be listed as PID1.
 
 `systemd` is directly accessible from user space and provides a straightforward
 way to enable/disable, start/stop system level processes

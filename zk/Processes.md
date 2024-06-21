@@ -5,7 +5,7 @@ tags: [operating-systems]
 created: Friday, June 21, 2024
 ---
 
-# Processes
+# Processes and threads
 
 Programs are sequences of machine instructions stored in a file. However they do
 not work by themselves. Something needs to load the file's intructions into
@@ -25,6 +25,24 @@ processes.
 It is possible that a parent process will terminate before one of its child
 processes. In this instance the child becomes an orphan. When this occurs in
 #Linux, the orphan process is adopted by `init`.
+
+Below, I have used the `pstree` utility to list all the running processes on my
+machine hierarchically.
+
+![diagram of `pstree` output](../img/ps-tree.png)
+
+Children are represented vertically and horizontally.
+
+```
+├─terminator─┬─zsh───tmux: client
+│            ├─zsh───pstree
+│            └─6*[{terminator}]
+
+```
+
+For instance here, `terminator` is a child of `init`, as are `zsh` and `tmux`
+but they are also children of `terminator`.`pstree` is a child of `zsh` and
+therefore also a child (grandchild) of `terminator`.
 
 ## Related notes
 
