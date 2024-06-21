@@ -2,14 +2,16 @@
 tags:
   - systems-programming
   - memory
+  - operating-systems
   - computer-architecture
 ---
 
-# The Kernel
+# The kernel
 
-The kernel acts as the primary mediator between the hardware (CPU, memory) and
-user [processes](Processes.md). Let's
-look at each of its responsibilities in greater depth:
+Within the [hierarchy of the OS](./Basic_model_of_the_operating_system.md), the
+kernel acts as the primary mediator between the hardware (CPU, memory) and
+[user](./User_Space.md) [processes](Processes.md). Let's look at each of its
+responsibilities in greater depth:
 
 - process management
 - memory management
@@ -100,5 +102,4 @@ Example with a terminal program like `ls`:
 
 ## Controlling processes
 
-In Linux we can view, kill, pause and resume processes using
-[ps](Processes.md).
+In Linux we can view, kill, pause and resume processes using [ps](Processes.md).
