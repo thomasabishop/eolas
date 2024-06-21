@@ -1,8 +1,8 @@
 ---
 tags:
-  - kernel
   - CPU
   - computer-architecture
+  - operating-systems
 ---
 
 # Relation between the kernel and CPU
