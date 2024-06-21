@@ -25,8 +25,9 @@ non-relational meaning there cannot be JOIN operations via
 Although the data is stored as a table, one of the attributes is a primary key
 and the rest of the attributes are effectively the "value" associated with it.
 
-Because DynamoDB is schemaless, neither the attributes or their data types need
-to be defined beforehand and each item can have its own distinct attributes.
+Because DynamoDB is schemaless, other than the primary key, neither the
+attributes or their data types need to be defined beforehand and each item can
+have its own distinct attributes.
 
 Each item in the table is uniquely identifiable by its primary key.
 
@@ -40,7 +41,7 @@ There are two types of primary key available:
   are attributes. In a table that has a partition key and a sort key, it's
   possible for multiple items to have the same partition key value. However,
   those items must have different sort key values. You could then query by
-  either key or both. For instance using the `personId` along with `LastName`
+  either key or both. For instance using the `PersonId` along with `LastName`
 
 ### Secondary index
 
@@ -64,9 +65,15 @@ project:
 ```json
 {
   "TableName": "TimeEntries",
-  "AttributeDefinitions": [
-    {
+  "KeyAttributes": {
+    "PartitionKey": {
       "AttributeName": "activity_start_end",
+      "AttributeType": "S"
+    }
+  },
+  "NonKeyAttributes": [
+    {
+      "AttributeName": "activity_type",
       "AttributeType": "S"
     },
     {
@@ -74,29 +81,35 @@ project:
       "AttributeType": "S"
     },
     {
-      "AttributeName": "activity_type",
+      "AttributeName": "end",
       "AttributeType": "S"
-    }
-  ],
-  "KeySchema": [
+    },
     {
-      "AttributeName": "activity_start_end",
-      "KeyType": "HASH"
+      "AttributeName": "duration",
+      "AttributeType": "N"
+    },
+    {
+      "AttributeName": "description",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "year",
+      "AttributeType": "S"
     }
   ],
   "GlobalSecondaryIndexes": [
     {
-      "IndexName": "StartIndex",
-      "KeySchema": [
-        {
-          "AttributeName": "start",
-          "KeyType": "HASH"
+      "IndexName": "YearIndex",
+      "KeyAttributes": {
+        "PartitionKey": {
+          "AttributeName": "year",
+          "AttributeType": "S"
         },
-        {
-          "AttributeName": "activity_type",
-          "KeyType": "RANGE"
+        "SortKey": {
+          "AttributeName": "start",
+          "AttributeType": "S"
         }
-      ],
+      },
       "Projection": {
         "ProjectionType": "ALL"
       }
@@ -109,9 +122,13 @@ This defines the attribute `activity_start_end` as the primary key. This string
 (`S`) value is a concatenation of three attributes, which is a way of ensuring
 each entry for the attribute will be unique.
 
-I also define two GSIs. -- check that these are correct for getting entries by
-range!
+The `NonKeyAttributes` are all the other attributes in addition to the primary
+key. As mentioned these do not actually need to be defined when setting up the
+table but they are listed here for clarity.
 
-## Usage
+I have also defined a GSI. This is derived from the `Year` attribute. This will
+group all the items by their `Year`, allowing me to query directly by year but
+also helping to chunk the entries which will make look-ups quicker and less
+expensive.
 
 ## Related notes
