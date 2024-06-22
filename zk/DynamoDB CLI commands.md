@@ -23,7 +23,19 @@ http://localhost:800
 ## Delete a table
 
 ```sh
-aws dynamodb delete-table --profile timetracking_local --endpoint-url http://localhost:8000 --table-name PersistentTable
+aws dynamodb delete-table \
+--profile timetracking_local \
+--endpoint-url http://localhost:8000 \
+--table-name TableName
+```
+
+## Create table from JSON schema
+
+```sh
+aws dynamodb create-table \
+--cli-input-json file://create-timeentries-table.json \
+--profile timetracking_local \
+--endpoint-url http://localhost:8000
 
 ```
 
