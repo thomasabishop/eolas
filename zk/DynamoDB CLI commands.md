@@ -24,7 +24,7 @@ http://localhost:800
 
 ```sh
 aws dynamodb delete-table \
---profile timetracking_local \
+--profile timetracking_dev \
 --endpoint-url http://localhost:8000 \
 --table-name TableName
 ```
@@ -34,7 +34,7 @@ aws dynamodb delete-table \
 ```sh
 aws dynamodb create-table \
 --cli-input-json file://create-timeentries-table.json \
---profile timetracking_local \
+--profile timetracking_dev \
 --endpoint-url http://localhost:8000
 
 ```
