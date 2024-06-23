@@ -59,4 +59,14 @@ aws dynamodb describe-table \
 --table-name TimeEntries
 ```
 
+## Scan the table
+
+```sh
+aws dynamodb scan \
+--table-name TimeEntries \
+--output table
+
+
+```
+
 ## Related notes
