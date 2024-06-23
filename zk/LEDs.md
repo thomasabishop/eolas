@@ -21,5 +21,5 @@ generic diode circuit symbol:
 An LED diode lights up when the right amount of current flows through it. A
 standard LED has a maximum current of 20mA. An appropriate
 [resistor](Resistance.md#resistors)
-must therefore be added to the circuit to ensure the current doesn't exeedd this
+must therefore be added to the circuit to ensure the current doesn't exceed this
 amount.
