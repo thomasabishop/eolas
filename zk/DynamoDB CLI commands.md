@@ -7,17 +7,21 @@ created: Saturday, June 22, 2024
 
 # DynamoDB CLI commands
 
-## Connecting to a local (Docker) DynamoDB instance
+## Connecting to a local (Docker)/prod (AWS) DynamoDB instance
 
 In order to distinguish between local and production accounts you should keep
-seperate configs in `.aws/config` and `.aws/credentials`. Then specify the
-profile if you are working locally and the local URL. Without the `--profile`
-flag, AWS will default to the `default` profile which will typically be your
-credentials for accessing AWS on the remote.
+seperate profiles for each (via `.aws/config` and `.aws/credentials`).
+
+When connecting to a local DB use the local profile and the local URL. Without
+the `--profile` flag, AWS will default to the `default` profile which will
+typically be your credentials for accessing AWS on the remote.
+
+For example:
 
 ```sh
-aws dynamodb list-tables --profile timetracking_dev --endpoint-url
-http://localhost:800
+aws dynamodb list-tables \
+--profile timetracking_dev \
+--endpoint-url http://localhost:800
 ```
 
 ## Delete a table
