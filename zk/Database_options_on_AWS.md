@@ -2,6 +2,7 @@
 tags:
   - AWS
   - databases
+  - dynamodb
 ---
 
 # Database options
