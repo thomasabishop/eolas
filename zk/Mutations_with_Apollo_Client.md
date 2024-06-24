@@ -98,7 +98,7 @@ const resolvers = {
 There's more going on with this resolver than the previous one. As is standard,
 we call the API using the `TrackAPI` class. However we don't just immediately
 return this when it executes. This is because the schema specifies that the
-retrun type `IncrementTrackViewsResponse` requires more than just the updated
+return type `IncrementTrackViewsResponse` requires more than just the updated
 `Track`. So we wait this and return it with the cluster of metadata about the
 mutation response (`code`, `success`, and `message`).
 
