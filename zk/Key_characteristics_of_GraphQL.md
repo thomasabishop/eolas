@@ -14,7 +14,6 @@ tags: [graphql, APIs]
 - GraphQL is a **query language** from which you can build APIs. It exists as an
   abstraction layer between a client that issues requests and a backend
   comprising any number of databases that responds to queries.
-
 - Crucially, with applications that utilise GraphQL, both the backend and the
   frontend use the same GraphQL syntax. They speak the same language. This means
   that neither needs to take account of the way in which the other is
