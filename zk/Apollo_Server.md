@@ -139,7 +139,7 @@ const resolvers = {};
 ```
 
 The `resolvers` object's keys will correspond to the schema's types and fields.
-You distinguish resolves which directly correspond to a query in the schema from
+You distinguish resolvers which directly correspond to a query in the schema from
 other resolver types by wraping them in `Query {}`.
 
 ```js
