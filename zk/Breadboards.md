@@ -7,6 +7,8 @@ created: Sunday, June 23, 2024
 
 # Breadboards
 
+![](../img/breadboard-diagram.jpg)
+
 ## Contact holes
 
 Beneath the plastic casing, the contact holes are connected to one another
