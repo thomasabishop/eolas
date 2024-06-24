@@ -1,7 +1,7 @@
 ---
 tags: [graphql]
 ---
-
+	
 # Mutations with Apollo Client
 
 Queries are read-only operations. Mutations are write-only operations.
