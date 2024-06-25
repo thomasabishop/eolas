@@ -16,7 +16,7 @@ Will error if the input string is not properly formatted JSON. This will be
 `json.JSONDecodeError`, a subclass of the `ValueError`
 [exception](./Error_handling_in_Python.md)
 
-## `json.parse()`
+## `json.dumps()`
 
 Take a JSON-formatted dictionary and convert it into a string. The reverse of
 `json.loads()` and equivalent to `JSON.stringify()` in JavaScript.
