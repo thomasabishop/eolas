@@ -21,4 +21,8 @@ To override the switch functionality and just have the button work as a
 connector we would connect the signal-in to the row 23 input and the row 23
 output.
 
+![Push button legs diagram](../img/push-button-legs.png)
+
 ## Related notes
+
+https://projects.raspberrypi.org/en/projects/button-switch-scratch-pi/1
