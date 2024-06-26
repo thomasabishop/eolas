@@ -5,7 +5,7 @@ tags: [operating-systems]
 created: Friday, June 21, 2024
 ---
 
-# Processes and threads
+# Processes
 
 Programs are sequences of machine instructions stored in a file. However they do
 not work by themselves. Something needs to load the file's intructions into

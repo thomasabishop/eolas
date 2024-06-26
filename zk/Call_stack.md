@@ -1,13 +1,13 @@
 ---
-tags: []
+tags: [memory, javascript]
 ---
 
 # The call-stack
 
-A [stack](Stacks.md) data structure that holds the information
-of the functions called within a program that allows transfer of the application
-control from these functions to the main process after code inside the functions
-has been executed.
+A [stack](Stacks.md) data structure that holds the information of the functions
+called within a program that allows transfer of the application control from
+these functions to the main process after code inside the functions has been
+executed.
 
 ## Example
 
@@ -31,3 +31,7 @@ console.log("Bye");
    function: the `console.log("bye")`
 6. Executes
 7. Returns to line that called it. Finds nothing else to do. Exits program.
+
+## Related notes
+
+![Stack memory](Stack_memory.md)

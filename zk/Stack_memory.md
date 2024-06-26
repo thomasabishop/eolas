@@ -11,7 +11,7 @@ created: Tuesday, April 16, 2024
 
 - Along with [[Heap_memory|heap memory]] heap memory, programs make use of
   _stack memory_ during runtime.
-- [ ]
+
 - Best suited for small-sized singular values that are temporary/ephemeral
   rather than large or complex data types that need to persist for a longer
   time.
