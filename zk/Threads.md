@@ -25,6 +25,19 @@ via operating system **threads of execution**.
 > process, shares its memory address and can execute any program code loaded
 > within it.
 
+Each thread has an identifier called a _thread ID_ (TID).
+
+Both procesess in [user space](User_Space.md) and the [kernel](The_kernel.md)
+utilise threads.
+
+## Hardware considerations
+
+Each [processor core](./CPU_architecture.md) can only one one thread at a time
+so the number of cores that a device's CPU has deterimines how many threads can
+run at once. In practice, then, the CPU shuffles between multiple threads in
+clock segments. This is known as scheduling and is managed by the process that
+the thread belongs to.
+
 ## Related notes
 
 ![Processes](Processes.md)
