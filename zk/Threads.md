@@ -18,10 +18,12 @@ If the program is strictly sequential, once the program starts the download, the
 UI is neglected since the CPU time dedicated to the process must be focused
 elsewhere.
 
-We need the updating of the UI and the download to execute in parallel. This is
-achieved via operating system **threads of execution**.
+We need the UI update and the download to execute in parallel. This is achieved
+via operating system **threads of execution**.
 
-> A thread is a schedulable unit of execution within a process.
+> A thread is a schedulable unit of execution within a process. It runs within a
+> process, shares its memory address and can execute any program code loaded
+> within it.
 
 ## Related notes
 
