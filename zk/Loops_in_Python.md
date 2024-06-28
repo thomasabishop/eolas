@@ -28,7 +28,7 @@ There are three main types of `for` loop in Python and they all use the
 
    ```py
    fruits = ["apple", "banana", "cherry"]
-   for (fruit in fruits):
+   for fruit in fruits:
        print(fruit)
    ```
 
