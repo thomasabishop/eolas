@@ -29,4 +29,4 @@ The contact holes on the outer edges of the breadboard, designated by numbers
 You will typically use the positive bus strip on one side for the voltage source
 and the negative bus strip on the other side for the ground outlet.
 
-## Related notes
+

@@ -17,11 +17,20 @@ pairs.
 To create a breakable circuit we would connect a signal-in cable to the top left
 at row 23 and a signal-out cable to the bottom-right at row 25.
 
+![Push button legs diagram](../img/push-button-legs.png)
+
+_The correct use of a push button where the button breaks the circuit_
+
+![](../img/correct_push_button.jpg)
+
 To override the switch functionality and just have the button work as a
 connector we would connect the signal-in to the row 23 input and the row 23
 output.
 
-![Push button legs diagram](../img/push-button-legs.png)
+_The push button being used as simple connector which does not break the
+circuit:_
+
+![](../img/incorrect_push_button.jpg)
 
 ## Related notes
 
