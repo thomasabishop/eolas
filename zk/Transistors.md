@@ -37,14 +37,12 @@ This happens because of how current and voltage interact in a transistor. The
 small base current controls the larger collector-emitter current through a
 process called current amplification.
 
-This happens because of how voltage works. Voltage is the potential difference
-between two terminals in a circuit. A high voltage increases the flow of current
-whereas low voltage restricts or reduces it.
-
-It follows from this that when the voltage at the base is high, a current flows
-from the collector to the emitter and the transistor is "on". Whereas when the
-voltage at the base is low no current flows from the collector to the emitter
-and the transistor is "off".
+When a small voltage is applied to the base, it allows a small current to flow
+from the base to the emitter. This base current triggers a much larger current
+to flow from the collector to the emitter. Think of it like a water valve: a
+small turn of the handle (base current) can control a large flow of water
+(collector-emitter current). The transistor amplifies this effect, allowing a
+tiny input signal to control a much larger output.
 
 ## Transistors and logic gates
 
