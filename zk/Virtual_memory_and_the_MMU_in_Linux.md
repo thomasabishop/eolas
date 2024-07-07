@@ -68,7 +68,3 @@ On the other hand too many major page faults can slow the system down both
 because of the time-costly process of fetching data from disk and because it
 demands more kernel resources to locate the missing page, which puts other
 processes on hold.
-
-## Resources
-
-[Virtual memory](9_VirtualMemory.html#:~:text=Virtual%20memory%20also%20allows%20the,to%20more%20than%20one%20process)
