@@ -4,14 +4,16 @@ tags:
   - Linux
 ---
 
-# Virtual memory and the Memory Management Unit
+# Virtual memory
 
-## What is virtual memory?
+Virtual memory is an abstracted and idealised representation of the physical
+memory capacity of the machine that is presented to user space for its memory
+operations.
 
-Virtual memory is an abstraction of physical memory capacity and allocation that
-is accessible to user space. The kernel handles physical memory allocation and
-presents this to user space as a simplified and idealised representation of the
-available memory of the system.
+When an OS implements virtual memory, processes in user space cannot directly
+read or write to the actual memory. Instead they execute memory operations
+against virtual memory and the kernel translates these into actual operations
+against the memory hardware.
 
 The main benefits:
 
@@ -20,20 +22,25 @@ The main benefits:
 - There is a buffer between user mode processes and physical memory, meaning
   that memory cannot be accidentally corrupted by other processes in user space.
 
-When a process writes or reads from a virtual memory address this does not
-directly refer to a hardware memory location. The kernel translates this into a
-physical memory address but this is opaque to the user space process. In fact,
-the physical memory addresses could be distributed accross multiple
-non-contiguous locations such as cache and swap memory, not just DRAM.
+Because the physical memory is abstracted, it can be the case that the physical
+memory addresses are non-contiguous or even distributed accross different
+hardware components (such as the cache and swap). Despite this, the memory
+addresses will appear contiguous in virtual memory. Each user space process is
+presented with the same range of available memory addresses and the same total
+capacity.
 
-Although the physical memory may be distributed and non-contiguous, from the
-viewpoint of user space, the available virtual memory is contiguous. Each user
-space process is presented with the same range of available memory addresses and
-the same total capacity.
+It is possible for the kernel to present user space with an available virtual
+memory capcacity that actually exceeds the current physical capacity of the
+machine:
 
-Because this is virtual, there is no risk of one process reading or overwriting
-the address of another. The same virtual address for multiple programs maps to
-different physical addresses.
+> _It's possible for the kernel and all running processes to request more bytes
+> of virtual memory than the total size of RAM. In that situation, the OS can
+> move move bytes of memory to secondary storage to make room in RAM for newly
+> requested memory._
 
-// Next: more memory offered than is physically available.
+_How Computers Really Work_ (2021) p.206
+
+// Next: the kernel also uses virtual memory however isn't also responsible for
+the appportioning of virtual memory. Confused.
+
 ![](/img/virtual-memory-diagram.jpg)
