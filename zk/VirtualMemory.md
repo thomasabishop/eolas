@@ -14,7 +14,8 @@ operations.
 When an OS implements virtual memory, [processes](./Processes.md) in
 [user space](./User_Space.md) cannot directly read or write to the actual
 memory. Instead they execute memory operations against virtual memory and the
-kernel translates these into the actual operations against the memory hardware.
+[kernel](./The_kernel.md) translates these into the actual operations against
+the memory hardware.
 
 The main benefits:
 
@@ -25,7 +26,8 @@ The main benefits:
 
 Because the physical memory is abstracted, it can be the case that the physical
 [memory addresses](./Memory_addresses.md) are non-contiguous or even distributed
-accross different hardware components (such as the cache and swap). Despite
+accross different hardware components (such as the
+[cache](./Register_and_cache_memory.md) and [swap](./Swap_space.md)). Despite
 this, the memory addresses will appear contiguous in virtual memory. Each user
 space process is presented with the same range of available memory addresses and
 the same total capacity.
@@ -52,4 +54,4 @@ other with separate address spaces that cannot interact.
 // Next: the kernel also uses virtual memory however isn't also responsible for
 the appportioning of virtual memory. Confused.
 
-![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
+// See Claude convo ![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
