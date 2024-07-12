@@ -46,12 +46,12 @@ is the number of bits.
 We need to reverse this formula to find out how many bits we need to represent a
 given number of addresses. We can do this with a [logarithm](Logarithms.md).
 
-We can reverse the formula as follows: number of bits = $\log_2$(number of
+We can reverse the formula as follows: number of bits = $\log_2$ (number of
 addresses).
 
 In our case we have 65,536 addresses so we need $\log_2(65,536)$ bits to
 represent each address. This is approximately 16 bits. Thus a 16 bit memory
-address is needed to address 65, 546 bytes.
+iaddress is needed to address 65, 546 bytes.
 
 Using memory addresses we end up with tables like the following:
 

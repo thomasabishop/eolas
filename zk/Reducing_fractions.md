@@ -42,7 +42,7 @@ With this method, the reduction can be completed in a single step.
 The greatest common divisor of 18 and 24 is 6, thus:
 
 $$
-\\frac{18}{24} = \frac{18/6}{24/6} = \frac{3}{4}
+\frac{18}{24} = \frac{18/6}{24/6} = \frac{3}{4}
 $$
 
 Note how our earlier two divisors 2 and 3 are

@@ -52,4 +52,4 @@ other with separate address spaces that cannot interact.
 // Next: the kernel also uses virtual memory however isn't also responsible for
 the appportioning of virtual memory. Confused.
 
-![](/img/virtual-memory-diagram.jpg)
+![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
