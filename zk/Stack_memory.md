@@ -65,5 +65,3 @@ thread which is what makes it well suited for managing scoped function memory.
 
 4. Recursion: individuating each call of a function that calls itself and its
    given step to avoid infinite loops
-
-## Related notes
