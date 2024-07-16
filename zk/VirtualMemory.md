@@ -12,7 +12,7 @@ memory capacity of a machine that is presented to user space for its memory
 operations.
 
 When an OS implements virtual memory, [processes](./Processes.md) in
-[user space](./User_Space.md) cannot directly read or write to the actual
+[user space](./User_Space.md) cannot directly read or write to the physical
 memory. Instead they execute memory operations against virtual memory and the
 [kernel](./The_kernel.md) translates these into the actual operations against
 the memory hardware.
@@ -43,15 +43,19 @@ machine:
 
 _How Computers Really Work_ (2021) p.206
 
-Furthermore the kernel itself utilises virtual memory. The difference with
-kernel virtual memory is that it has a different range of virtual addresses to
-work with than user space virtual memory.
+## Virtual memory and the kernel
 
-Also, unlike user address space, the kernel has access to everything running in
-kernel address space. Processes in user address space are partitioned from each
-other with separate address spaces that cannot interact.
+The kernel itself utilises virtual memory. The kernel virtual memory has a
+different range of virtual addresses to work with than user space virtual
+memory.
+
+Unlike user space virtual memory, the kernel has access to everything running in
+kernel address space whereas processes in user address space are partitioned
+from each other with separate address spaces that cannot interact.
 
 // Next: the kernel also uses virtual memory however isn't also responsible for
 the appportioning of virtual memory. Confused.
 
-// See Claude convo ![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
+// See Claude convo
+
+![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
