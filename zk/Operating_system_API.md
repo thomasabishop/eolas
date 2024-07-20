@@ -6,10 +6,10 @@ created: Wednesday, July 17, 2024
 
 # Operating system API
 
-A user can interact with the operating system either via the GUI or the shell.
-(The UI is in fact an abstraction for interfacing with the shell.) When
-_programs_ interact with the operating system they use the operating system's
-API.
+A user can interact with the operating system either via the GUI or the
+[shell](Intro_to_the_Unix_shell.md). Both ultimately access the OS via the shell
+since the UI is an abstraction layer of the shell. When _programs_ interact with
+the operating system they use the **operating system's API**.
 
 Every OS has an API. This specification details how a program should interact
 with the OS, exposing functions, properties and data types.
@@ -22,8 +22,11 @@ perform the action.
 
 ## Example: opening a file
 
-A user can use a file explorer and the mouse to open a file. However a running
-application doesn't have to do this. Instead it can call the OS API.
+A user can use a file explorer and the mouse to open a file. Or they can open
+the file by invoking it from the terminal.
+
+A running application doesn't have to do this. If it's remit includes opening
+files, it can do so by calling the OS API.
 
 On a Unix-like system the applicaton would use the `open` API function to open
 the file:
