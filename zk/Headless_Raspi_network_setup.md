@@ -5,6 +5,7 @@ tags:
   - networks
   - Linux
   - raspberry-pi
+  - procedural
 created: Wednesday, June 12, 2024
 ---
 
