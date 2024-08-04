@@ -22,9 +22,27 @@ This combines two protocols:
 
 Hence the Internet Protocol Suite is also known as "TCP/IP".
 
-The TCP/IP is a network stack comprising four layers. From the top:
+The TCP/IP is a network stack comprising four layers, each with its own
+protocols. From the top:
 
 ![TCP/IP stack diagram](../img/TCP_IP.png)
+
+- The **Link Layer** concerns communication between devices on the same local
+  network. The transfer of information once it has been received from the
+  internet or its transfer between devices before it sent out into the internet.
+  Ethernet and WiFi are two core protocols utilised at this layer.
+
+- The **Internet Layer** is concerned with communication accross networks. It is
+  responsible for identifying hosts on the inter-network by their addresses and
+  routing data from network to network.
+
+- The **Transport Layer** come back to this
+
+- The **Application Layer** is concerned with software that utilises information
+  received and sent over the internet, for instance web pages and emails. This
+  is the highest level of abstraction for which all the lower levels serve as
+  "plumbing". Examples of protocols operative at the Application Layer include
+  HTTP and SSH.
 
 The Link Layer ... The Internet Layer ... The Transport Layer ... The
 Application Layer ...
