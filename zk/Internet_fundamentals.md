@@ -44,5 +44,4 @@ protocols. From the top:
   "plumbing". Examples of protocols operative at the Application Layer include
   HTTP and SSH.
 
-The Link Layer ... The Internet Layer ... The Transport Layer ... The
-Application Layer ...
+  ![Path of a network request accross the internet](../img/network-request-layers.png)
