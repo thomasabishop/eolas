@@ -7,7 +7,7 @@ created: Saturday, August 03, 2024
 # Network_hosts
 
 A network **host** or **node** is a single computing device attached to a
-![network](Network_fundamentals.md).
+![network](Network_fundamentals.md)
 
 Hosts can act as servers or clients, or both.
 
