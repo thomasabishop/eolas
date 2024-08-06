@@ -1,7 +1,6 @@
 ---
 tags:
   - number-systems
-  - hardware
   - computer-architecture
 ---
 

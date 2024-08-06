@@ -1,6 +1,6 @@
 ---
 title: Link_Layer_of_the_Internet_Protocol
-tags: []
+tags: [networks, internet]
 created: Tuesday, August 06, 2024
 ---
 
