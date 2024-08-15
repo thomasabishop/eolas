@@ -27,10 +27,11 @@ protocols. From the top:
 
 ![TCP/IP stack diagram](../img/TCP_IP.png)
 
-- The **Link Layer** concerns communication between devices on the same local
-  network. The transfer of information once it has been received from the
-  internet or its transfer between devices before it sent out into the internet.
-  Ethernet and WiFi are two core protocols utilised at this layer.
+- The ![Link Layer](Link_Layer_of_Internet_Protocol.md) concerns communication
+  between devices on the same local network. The transfer of information once it
+  has been received from the internet or its transfer between devices before it
+  sent out into the internet. Ethernet and WiFi are two core protocols utilised
+  at this layer.
 
 - The **Internet Layer** is concerned with communication accross networks. It is
   responsible for identifying hosts on the inter-network by their addresses and

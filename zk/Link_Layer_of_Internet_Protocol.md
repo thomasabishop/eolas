@@ -19,10 +19,19 @@ Link Layer protocols goven communication between devices. Examples include:
 - **Ethernet**
   - Wired communication
 
+All devices connected to the internet participate in the Link Layer since it is
+the base level and the gateway out of the local network to other networks. The
+same is not true for other layers. For example a device like a laptop
+participates in all four layers up to the Application Layer but a network router
+does not:
+
+![Link Layer diagram](../img/link-layer-internet-diagram.png)
+
 ## MAC addresses
 
 Each device on a link has a network address that uniquely identifies it. For
-most Link Layer Protocols this is a Media Access Control (MAC) address.
+most Link Layer Protocols this is a
+[Media Access Control (MAC) address](MAC_addresses.md).
 
 A device receives data addressed to its MAC address.
 
