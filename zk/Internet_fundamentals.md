@@ -33,9 +33,11 @@ protocols. From the top:
   sent out into the internet. Ethernet and WiFi are two core protocols utilised
   at this layer.
 
-- The **Internet Layer** is concerned with communication accross networks. It is
-  responsible for identifying hosts on the inter-network by their addresses and
-  routing data from network to network.
+- The
+  ![Internet Layer of Internet_Protocol](Internet_Layer_of_Internet_Protocol.md)
+  is concerned with communication accross networks. It is responsible for
+  identifying hosts on the inter-network by their addresses and routing data
+  from network to network.
 
 - The **Transport Layer** come back to this
 

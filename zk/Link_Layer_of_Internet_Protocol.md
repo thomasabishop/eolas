@@ -43,11 +43,7 @@ a specific MAC address. This is off-limits from the outside.
 Link Layer data is divided into small units called "frames". The anatomy of a
 frame is as follows:
 
-```
---------------------------
-| header | data | footer |
---------------------------
-```
+![Link Layer frame](../img/link-layer-frame.drawio.png)
 
 The header contains the source and destination MAC address plus a descriptor of
 the type of data it contains. The data is the payload. The footer is used to
