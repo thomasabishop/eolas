@@ -4,7 +4,7 @@ tags: [literature, computer-history]
 created: Friday, August 23, 2024
 ---
 
-# _The History of Computing: A Very Short Introduction_ Swade
+# _The History of Computing: A Very Short Introduction_
 
 | Title                                               | Author      | Publication date | Resource type |
 | --------------------------------------------------- | ----------- | ---------------- | ------------- |
