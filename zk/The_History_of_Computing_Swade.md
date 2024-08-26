@@ -1,7 +1,6 @@
 ---
-title: Very_Short_History_of_Computing_2022
-tags:
-  [literature, computer-history, Leibniz, Babbage, Lovelace, Turing, Neumann]
+title: The_History_of_Computing_Swade
+tags: [literature, computer-history]
 created: Friday, August 23, 2024
 ---
 
@@ -35,6 +34,12 @@ A typical timeline approach rooted in major innovations.
 - Internet and later, Web
 - Smart phones
 
+First three phases of digital electronic computers:
+
+- Wartime up to 1950s vacuum-tube era
+- Transistor era up to 1963
+- First microchip era ending in early 1970s
+
 ## Mechanical calculating devices in the 17th century
 
 Focus was chiefly on creating a desktop calculator capable of four-function
@@ -44,9 +49,9 @@ arithmetic.
 
 ![Photograph of replica of Leibniz stepped drum machine](../img/leibniz-stepped-drum.jpg)
 
-The main contenders were Pascal's Pascaline (which only did cumulative addition)
-and Leibniz's wheel or "stepped drum" calculator that could do all operations
-(in theory).
+The main contenders were the Pascaline of #Pascal (which only did cumulative
+addition) and the wheel or "stepped drum" calculator of #Leibniz that could do
+all operations (in theory).
 
 Subsequent designs were based on these artefacts. In practice, neither worked
 consistently well with the carriage of tens remaining a sticking point.
@@ -61,7 +66,7 @@ with other mechanical calculators. In the US, Burroughs dominated the market.
 
 ## Babbage: mechanized, automated calculation
 
-> I wish to God these calculations had been executed by Steam (Babbage)
+> I wish to God these calculations had been executed by Steam (#Babbage)
 
 With Babbage's machines we see an approach to computation that can only be
 understood against the backdrop of the Industrial Revolution in which they were
@@ -76,22 +81,77 @@ Engine (AE). Neither were successfully built in his lifetime. The DE preceded
 the AE and was basically an advanced mechanical calculator whereas the AE
 approximated a general purpose computer.
 
-## Difference Engine
+Despite this, with the Difference Engine, in contrast to preceding _aids to
+calculation_, the steps of the computational algorithm were no longer directed
+by human intelligence but by internal rules embodied in the mechanism and
+automatically generated.
+
+### Difference Engine
 
 The DE's single purpose was to calculate and output mathematical tables such as
 the results of polynomial equations. The idea was that you would input the
 variables of the equation and activate the machine and it would output the
 results. Associated with this concept was the idea that once it arrived at the
-answer a bell would ring and the machine would _halt_. This influenced Turing
+answer a bell would ring and the machine would _halt_. This influenced #Turing
 later. It was non-programmable and designed for a specific set of calculations.
 
-## Analytical Engine
+### Analytical Engine
 
 Conceived as a general-purpose computing machine capable of perfoming a wide
 range of calculations, programmable using punched cards similar to those used
 with Jacquard looms.
 
 It more resembled modern computers in that Babbage used concepts that would
-later translate into the von Neumann architecture. There was a "mill" (CPU),
+later translate into the von #Neumann architecture. There was a "mill" (CPU),
 "store" (memory) and input/output mechanisms. It also had a concept of looping
 and conditional branching.
+
+### Lovelace's insight
+
+A central idea of Ada #Lovelace, expressed in her notes on the Analytical Engine
+is that **number can represent entities other than quantity**.
+
+If we assign meaning to number then results arrived at by operating on number
+according to rules can say things about the world when mapped back onto the
+world using the meanings assigned to them.
+
+Lovelace's insight was that the potential of computin lay in the power of
+machines to manipulate representations of the world contained in symbols.
+
+## Analogue computers
+
+Both digital and analogue computers are automatic. They differ in _how they
+represent quantities_ and how their outputs are derived.
+
+With digital machines, quantity is represented as a string of discrete digits.
+
+With analogue machines, quantity is a physical property _in itself_ rather than
+a representation. This could be, for example, the lowering of a weight, the flow
+of a liquid or an electrical charge.This physical behaviour is **analagous** to
+the system that is being modelled. Quantities are continuously variable values
+rather than discrete (discontinuous values).
+
+Digital machines produce results by _calculation_ whereas analogue machines
+produce results by _measurement_, e.g. the height of liquid in a tank or the
+time it taks for a tank to be emptied,
+
+### Historiography
+
+There is a tendency in the history of computing to downplay or diminish the
+contribution of analogue computing devices and to present them as just an
+inferior precursor to the inevitable dominance of digital electronic computers.
+
+This is ahistorical and inaccurate.
+
+Analogue (and electromechanical devices) overlapped with and coexisted with
+digital devices for 40 years, spanning the first three generations of digital
+electronic devices. The term "analogue" itself only came about when the need
+arose to distinguish digital devices from other types of computer; they were not
+"rivals" before this.
+
+### Electro-mechanical devices
+
+Electro-mechanical devices (also known as "electronic analogue computers") are a
+sort of midway between full digital devices and analogue computers.
+
+Their heyday was roughly 1935 - 1945.

@@ -75,7 +75,7 @@ instructions to make calculations.
     calculations → the Analytical Engine.
   - It could run operations in sequence and had memory and a primitive printer.
     It was way ahead of its time and was never completed.
-  - Ada Lovelace wrote hypothetical programs for the Analytical Engine, hence
+  - Ada #Lovelace wrote hypothetical programs for the Analytical Engine, hence
     she is considered the world's first computer programmer.
 - At this point then, computing was limited to scientific and engineering
   disciplines but in 1890, the US govt needed a computer in order to comply with
