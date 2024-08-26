@@ -4,8 +4,6 @@ tags: [literature, computer-history]
 created: Friday, August 23, 2024
 ---
 
-# _The History of Computing: A Very Short Introduction_
-
 | Title                                               | Author      | Publication date | Resource type |
 | --------------------------------------------------- | ----------- | ---------------- | ------------- |
 | The History of Computing: A Very Short Introduction | Doron Swade | 2022             | Book          |
@@ -134,6 +132,36 @@ rather than discrete (discontinuous values).
 Digital machines produce results by _calculation_ whereas analogue machines
 produce results by _measurement_, e.g. the height of liquid in a tank or the
 time it taks for a tank to be emptied,
+
+### Examples
+
+#### The Phillips Hydraulic Computer
+
+This used fluid to model the workings of the British economy. It consisted of a
+series of transparent plastic tanks and pipes which were fastened to a wooden
+board.
+
+![Philips Hydraulic Computer](../img/hydraulic_computer.jpg)
+
+Each tank represented some aspect of the UK national economy and the flow of
+money around the economy was illustrated by coloured water. At the top of the
+board was a large tank called the treasury. Water (representing money) flowed
+from the treasury to other tanks representing the various ways in which a
+country could spend its money. For example, there were tanks for health and
+education. To increase spending on health care a tap could be opened to drain
+water from the treasury to the tank which represented health spending.
+
+#### Bush's Differential Analyser
+
+This was designed to solve differential equations by integration. In contrast to
+the Philips Computer it was general enough to be used to solve problems from
+different contexts. Examples of these contexts: heat flow, ballistics,
+mechanics, population growth, chemical interactions, astronomy.
+
+![Differential Analyser](../img/differential_analyser_bush.jpg)
+
+It was about the size of a room and used shafts, motgors, discs and wheels to
+work.
 
 ### Historiography
 
