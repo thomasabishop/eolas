@@ -1,6 +1,6 @@
 ---
 title: IP_addresses
-tags: [network, internet]
+tags: [networks, internet]
 created: Friday, August 16, 2024
 ---
 
@@ -21,13 +21,13 @@ This entry focuses on IPv4 addresses.
 
 ## Anatomy of an IPv4 address
 
-Each of the 32 bits are divided into four groups which are each 8 bits (a byte)
-in length. Each group therefore comprises an octet and is separated by dots.
+Each of the 32 bits are divided into four groups which are each 8 bits in
+length. Each group therefore comprises an octet and is separated by dots.
 
 The decimal number system, rather than binary is used to represent the values.
-Thus each octet comprises three decimal digits as 8-bits = 2^3.
+This means each binary octet is three decimal digits in length.
 
-The 32 bits form two sections:
+The 32 bits comprise two major groupings
 
 - the **network prefix**
 - the **host**

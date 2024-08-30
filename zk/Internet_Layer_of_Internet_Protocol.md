@@ -1,6 +1,8 @@
 ---
 title: Internet_Layer_of_Internet_Protocol
-tags: [network, internet]
+tags:
+  - internet
+  - networks
 created: Thursday, August 15, 2024
 ---
 
