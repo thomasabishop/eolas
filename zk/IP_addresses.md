@@ -39,4 +39,68 @@ said to be on the same **subnet**. However each device will have a unique value
 for the host octet.
 
 (This account is somewhat idealised. The length of the prefix does not always
-align with the octet boundary. For instance )
+align with the octet boundary. For instance, the prefix could be 25 bits in
+length, rather than 24. In this case it would "steal" one bit from the host
+section making it 23 bits in length.)
+
+## Identifying the network and host groupings
+
+Given that the network prefix and host identifier do not always stick to set
+boundaries, we require a way of distinguishing the two values. There are two
+dominant methods.
+
+### CIDR notation
+
+This stands for _Classless Inter-Domain Routing_. An example:
+
+> 192.168.1.23/24
+
+The value after the forward slash is the number of bits that specify the network
+address. In the example, it is the standard 24-bits. Thus 192.168.1.23 stands
+for the network.
+
+### Subnet masking
+
+The subnet mask is another number _in addition to_ the network address. It is a
+kind of superimposed map on top of the address.
+
+Here is an example of a subnet mask:
+
+> 11111111.11111111.11111111.00000000
+
+The denary form would be as follows (as 255 is the maximal decimal number that
+can be represented with a single 8-bit number and 0 is the smallest):
+
+> 255.255.255.0
+
+In the binary form, the 1 values represent the bits which designate the network
+address and the 0 values represent the bits that designate the host.
+
+In the example above this corresonds to the idealised 32-bit/8-bit ratio.
+
+There is a clever consequence of the subnet mask: if you apply a bitwise AND
+operator against the IP address and mask (both in their binary form) you can
+determine whether two addresses are on the same network.
+
+To compare the IP address 192.168.1.23 against 192.168.1.100 to demonstrate:
+
+```
+192.168.1.23;
+IP:     11000000.10101000.00000001.00010111
+Mask:   11111111.11111111.11111111.00000000
+Result: 11000000.10101000.00000001.00000000
+___________________________________
+
+192.168.1.100:
+IP:     11000000.10101000.00000001.00010111
+Mask:   11111111.11111111.11111111.00000000
+Result: 11000000.10101000.00000001.00000000
+```
+
+After applying the bitwise AND logic we see that the result is identical for
+both IPs indicating they are on the same network (share the same network
+prefix), whilst the host value is "masked".
+
+// Example of not matching
+
+// Are there masks other than 255.255.255.0?
