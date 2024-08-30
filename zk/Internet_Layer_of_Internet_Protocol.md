@@ -27,7 +27,7 @@ when sent and received within the
 [Link Layer](Link_Layer_of_Internet_Protocol.md) on the local network, are
 enclosed within a Link Layer frame (in its payload section):
 
-![Internet Layer packet](../img/internet-layer-packet.png)
+![Internet Layer packet](../img/internet-layer-packet-revised.png)
 
 Like a frame, an IP packet has a header and a payload. The payload comprises the
 data between sent between hosts. The header contains a source IP address and a

@@ -31,3 +31,12 @@ The 32 bits comprise two major groupings
 
 - the **network prefix**
 - the **host**
+
+![Different sections of IP address](../img/ip-address-anatomy.png)
+
+Devices connected to the same network share the same network prefix. They are
+said to be on the same **subnet**. However each device will have a unique value
+for the host octet.
+
+(This account is somewhat idealised. The length of the prefix does not always
+align with the octet boundary. For instance )
