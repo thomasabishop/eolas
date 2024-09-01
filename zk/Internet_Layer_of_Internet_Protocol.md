@@ -18,7 +18,8 @@ interfacing with the other.
 The Internet Layer utilises the **Internet Protocol** to determine how devices
 will be publicly identified to devices on other networks and how different
 devices on the same local network will be distinguished from outside of this
-network. This is achieved through Internet Protocol (IP) addresses.
+network. This is achieved through
+[Internet Protocol (IP) addresses](./IP_addresses.md).
 
 ## Packets
 
@@ -34,4 +35,4 @@ data between sent between hosts. The header contains a source IP address and a
 destination IP address and also specifies which version of the Internet Protocol
 is being used.
 
-// Separate entry on anatomy of IP address
+// Need to find out more about packets work.
