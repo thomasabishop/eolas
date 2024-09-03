@@ -25,7 +25,7 @@ same is not true for other layers. For example a device like a laptop
 participates in all four layers up to the Application Layer but a network router
 does not:
 
-![Link Layer diagram](../img/link-layer-internet-diagram.png)
+![Link Layer diagram](../img/link-layer-frame-revised.png)
 
 ## MAC addresses
 
