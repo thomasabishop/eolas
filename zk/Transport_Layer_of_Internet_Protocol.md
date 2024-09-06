@@ -4,7 +4,7 @@ tags: [internet, networks, ports]
 created: Tuesday, September 03, 2024
 ---
 
-# Transport Layer of Internet Protocol
+# Transport Layer of the Internet Protocol
 
 Transport Layer protocols provide a communications channel for data to be sent
 between hosts. The Transport Layer is dependent upon the
