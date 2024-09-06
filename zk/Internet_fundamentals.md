@@ -37,12 +37,14 @@ protocols. From the top:
   communication accross networks. It is responsible for identifying hosts on the
   inter-network by their addresses and routing data from network to network.
 
-- The **Transport Layer** come back to this
+- The [Transport Layer](Transport_Layer_of_Internet_Protocol.md) creates a
+  commmunication channel between two hosts using ports and sockets.
 
-- The **Application Layer** is concerned with software that utilises information
-  received and sent over the internet, for instance web pages and emails. This
-  is the highest level of abstraction for which all the lower levels serve as
-  "plumbing". Examples of protocols operative at the Application Layer include
-  HTTP and SSH.
+- The [Application Layer](Application_Layer_of_Internet_Protocol.md) concerned
+  with software that utilises information received and sent over the internet,
+  for instance web pages and emails. This is the highest level of abstraction
+  for which all the lower levels serve as "plumbing". Examples of protocols
+  operative at the Application Layer include HTTP and SSH.
 
-  ![Path of a network request accross the internet](../img/network-request-layers.png)
+See:
+[Example_scenario_internet_data_transfer](Example_scenario_internet_data_transfer.md)
