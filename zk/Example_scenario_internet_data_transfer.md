@@ -40,4 +40,9 @@ created: Friday, September 06, 2024
   the internet and the process is replicated (looking up MAC address of the
   device and determining IP target). Eventually, the request reaches the router
   on the network where the server is connected.
-- The last router
+- The last router puts the packet in a frame suitable for the server's local
+  network and in the frame's header is the MAC address of the server.
+- The server receives the frame and the packet is passed to the TCP/IP software
+  stack. This passes the HTTP data to the process listening on TCP port 80.
+- Web server software, listening on port 80 handles the request and replies to
+  the client, start ing the process again in reverse order.
