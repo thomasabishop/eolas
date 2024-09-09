@@ -177,7 +177,7 @@ electronic devices. The term "analogue" itself only came about when the need
 arose to distinguish digital devices from other types of computer. They were not
 "rivals" before this.
 
-### Electro-mechanical devices
+### Electro-mechanical computers
 
 Electro-mechanical devices (also known as "electronic analogue computers") are a
 sort of midway between full digital devices and analogue computers, forming a
@@ -192,5 +192,36 @@ Their key components were:
 - punched cards or paper tape for input instructions and outputs
 
 They were slower than fully digital computers as they were limited by the speed
-of moving components rather than the flow of electric charge. In addition the
-various mechanical parts were prone to wear and needed frequent replacement.
+
+- [ ] of moving components rather than the flow of electric charge. In addition
+      the various mechanical parts were prone to wear and needed frequent
+      replacement.
+
+### Examples of electro-mechanical computers
+
+#### Harvard Mark 1 (1937-1944) - Aikin, IBM
+
+Designed by Howard Aiken and built by IBM (1937-1944). Also known as the
+_Automatic Sequence Controlled Calculator_ (ASCC). A general-purpose
+electro-mechanical computer it was most famously used at Los Alamos by
+#vonNeumann to calculate the blast yield of the atomic bomb.
+
+![Harvard Mark One](../img/Harvard_Mark_1.jpg)
+
+It was more than 15m in length and weighed 5 tonnes comprising over 750,000
+parts. It used paper tape and punched cards for input/output.
+
+#### Complex Number Calculator (1940) - Bell Labs, Stibitz
+
+Not general purpose nor was it programmable. It was hardwired to perform a
+specific set of operations on numbers and nothing else. It used relays like the
+others. Its distinguishing feature was that it used a teletype for input rather
+than cards or paper tape.
+
+![Calculating panel of the CMC](../img/complex-number-calculator-bell-labs.jpg)
+
+![Teletype input of CMC](../img/stibitz-teletype.jpg)
+
+It comprised a panel (the calculating unit) and teletype (the input). One could
+remotely access the computer from the teletype in another location, providing it
+was connected to Bell Lab's telephone network.
