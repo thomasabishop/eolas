@@ -100,7 +100,7 @@ range of calculations, programmable using punched cards similar to those used
 with Jacquard looms.
 
 It more resembled modern computers in that Babbage used concepts that would
-later translate into the von #Neumann architecture. There was a "mill" (CPU),
+later translate into the #vonNeumann architecture. There was a "mill" (CPU),
 "store" (memory) and input/output mechanisms. It also had a concept of looping
 and conditional branching.
 
@@ -109,11 +109,11 @@ and conditional branching.
 A central idea of Ada #Lovelace, expressed in her notes on the Analytical Engine
 is that **number can represent entities other than quantity**.
 
-If we assign meaning to number then results arrived at by operating on number
+If we assign meaning to number, results arrived at by operating on number
 according to rules can say things about the world when mapped back onto the
 world using the meanings assigned to them.
 
-Lovelace's insight was that the potential of computin lay in the power of
+Lovelace's insight was that the potential of computing lay in the power of
 machines to manipulate representations of the world contained in symbols.
 
 ## Analogue computers
@@ -124,16 +124,16 @@ represent quantities_ and how their outputs are derived.
 With digital machines, quantity is represented as a string of discrete digits.
 
 With analogue machines, quantity is a physical property _in itself_ rather than
-a representation. This could be, for example, the lowering of a weight, the flow
-of a liquid or an electrical charge.This physical behaviour is **analagous** to
-the system that is being modelled. Quantities are continuously variable values
-rather than discrete (discontinuous values).
+a representation. This could be, for example: the lowering of a weight, the flow
+of a liquid, or an electrical charge. This physical behaviour is **analagous**
+to the system that is being modelled. Quantities are continuously variable
+values rather than discrete (discontinuous values).
 
 Digital machines produce results by _calculation_ whereas analogue machines
 produce results by _measurement_, e.g. the height of liquid in a tank or the
-time it taks for a tank to be emptied,
+time it taks for a tank to be emptied.
 
-### Examples
+### Examples of analogue computers
 
 #### The Phillips Hydraulic Computer
 
@@ -160,7 +160,7 @@ mechanics, population growth, chemical interactions, astronomy.
 
 ![Differential Analyser](../img/differential_analyser_bush.jpg)
 
-It was about the size of a room and used shafts, motgors, discs and wheels to
+It was about the size of a room and used shafts, motors, discs and wheels to
 work.
 
 ### Historiography
@@ -174,12 +174,23 @@ This is ahistorical and inaccurate.
 Analogue (and electromechanical devices) overlapped with and coexisted with
 digital devices for 40 years, spanning the first three generations of digital
 electronic devices. The term "analogue" itself only came about when the need
-arose to distinguish digital devices from other types of computer; they were not
+arose to distinguish digital devices from other types of computer. They were not
 "rivals" before this.
 
 ### Electro-mechanical devices
 
 Electro-mechanical devices (also known as "electronic analogue computers") are a
-sort of midway between full digital devices and analogue computers.
+sort of midway between full digital devices and analogue computers, forming a
+bridge between the two eras.
 
 Their heyday was roughly 1935 - 1945.
+
+Their key components were:
+
+- [relays](Relays.md) for logic operations
+- rotating shafts and gears for performing calculations
+- punched cards or paper tape for input instructions and outputs
+
+They were slower than fully digital computers as they were limited by the speed
+of moving components rather than the flow of electric charge. In addition the
+various mechanical parts were prone to wear and needed frequent replacement.
