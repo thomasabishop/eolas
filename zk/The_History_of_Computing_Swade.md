@@ -40,6 +40,12 @@ First three phases of digital electronic computers:
 
 ## Terms
 
+| Term            | Definition                                                                                                                                                                  |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| automatic       | can execute programs, process data and perform functions on its own once it has been started. Can monitor its own processes and make adjustments without human intervention |
+| general-purpose |                                                                                                                                                                             |
+| programmable    |                                                                                                                                                                             |
+
 ## Mechanical calculating devices in the 17th century
 
 Focus was chiefly on creating a desktop calculator capable of four-function
@@ -255,3 +261,25 @@ cards and the output was via a front-panel display.
 
 Its importance stems from the fact that it was the first to use vacuum-tubes for
 the arithmetic calculations of the processor.
+
+### Colossus (1943-1945) - Tommy Flowers/ Max Newman
+
+Designed and built at the Post Office Research Station at Dollis Hill. Used for
+cracking the Lorenz messages of the German high command.
+
+Mainly important (beyond its role in the War) for establishing the viability of
+vacuum-tubes over relays. It comprised 2.4 thousand tubes.
+
+Debatable the extent to which the Collosus can be called the _first digital
+computer_ since it was not general purpose and not fully programmable.
+
+Furthermore it was not even a complete solution in its context of application.
+The codebreakers would be given a certain advantage using the Collosus
+(narrowing the field of possible deciphering keys) but still need to use manual
+methods to break the code. It made decipher time shorter rather than executing
+the full diciphering. In contrast to, say, the Bombe computer that would
+identify the key for the days transmissions.
+
+It's actual influence is also hard to gauge because of the secrecy that remained
+in place after the War. Apart from those who worked on it, its technical
+advancements were not public knowledge until the late 1970s.
