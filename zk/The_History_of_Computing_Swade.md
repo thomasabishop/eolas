@@ -262,7 +262,7 @@ cards and the output was via a front-panel display.
 Its importance stems from the fact that it was the first to use vacuum-tubes for
 the arithmetic calculations of the processor.
 
-### Colossus (1943-1945) - Tommy Flowers/ Max Newman
+### Colossus (1943-1945) - Tommy Flowers/Max Newman
 
 Designed and built at the Post Office Research Station at Dollis Hill. Used for
 cracking the Lorenz messages of the German high command.
@@ -283,3 +283,52 @@ identify the key for the days transmissions.
 It's actual influence is also hard to gauge because of the secrecy that remained
 in place after the War. Apart from those who worked on it, its technical
 advancements were not public knowledge until the late 1970s.
+
+### ENIAC (1945) John Mauchly/J.P Eckert
+
+The _Electronic Numerical Calculator and Integrator_
+
+The main motivation for creating the ENIAC was military: the US Army needed
+speed and accuracy when calculating artiliary firing tables and munition
+trajectory so that shells could hit their intended targets. Accuracy depended on
+myriad factors: gun elevation, shell shape and weight, explosive charge,
+distance, wind, temperature etc. Previously this had been done by human
+computers under the aegis of the Ballistic Research Laboratory.
+
+![The main control panel of the ENIAC](../img/eniac.jpg)
+
+It was not completed until after VE day but was used at Los Alamos after the War
+and retired in 1955.
+
+The BRL commissioned the Moore School of Engineering at the University of
+Pennsylvania for the construction of an automatic electronic calculator.
+
+It used vacuum-tubes, along with switches and realys. It used decimal rather
+than binary and had punch card input and output. It was crudely programmable and
+could be set up to work on different problems by rearranging the different
+components using switches and plugboards. But this took roughly two days.
+
+It's design was very influential because it was made public and not classified.
+
+### EDVAC (1944-49) John Mauchly/J.P Eckert/ John von Neumann
+
+Built at the Moore School for the BRL as a successor to ENIAC by Mauchly and
+Eckert whilst ENIAC was still operational. It arose out of #vonNeumann
+discussions with Mauchly and Eckert and was necessitated by the need to
+calculate the behaviour of the fissile materials in the atomic bomb.
+
+It resulted in the famous _First Draft of a Report on the Edvac_ by #vonNeumann
+which is seen as the definitive statement of the modern **digital programmable
+general-purpose computer**.
+
+As a result of the paper, #vonNeumann effectively got the credit for the
+invention even though it synthesised ideas from the ENIAC and the contributions
+of others to the EDVAC.
+
+There was lots of disputed provenance and claims of plagiarism generally.
+Antanasoff won a legal claim against Eckert and Mauchly for stealing ideas from
+the ABC to make ENIAC.
+
+// Add more on the hardware.
+
+## Machines
