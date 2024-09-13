@@ -158,6 +158,8 @@ the Philips Computer it was general enough to be used to solve problems from
 different contexts. Examples of these contexts: heat flow, ballistics,
 mechanics, population growth, chemical interactions, astronomy.
 
+<img src="../img/differential_analyser_bush.jpg" />
+
 ![Differential Analyser](../img/differential_analyser_bush.jpg)
 
 It was about the size of a room and used shafts, motors, discs and wheels to
