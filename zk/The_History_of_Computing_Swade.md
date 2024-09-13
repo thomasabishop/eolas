@@ -38,6 +38,8 @@ First three phases of digital electronic computers:
 - Transistor era up to 1963
 - First microchip era ending in early 1970s
 
+## Terms
+
 ## Mechanical calculating devices in the 17th century
 
 Focus was chiefly on creating a desktop calculator capable of four-function
@@ -158,8 +160,6 @@ the Philips Computer it was general enough to be used to solve problems from
 different contexts. Examples of these contexts: heat flow, ballistics,
 mechanics, population growth, chemical interactions, astronomy.
 
-<img src="../img/differential_analyser_bush.jpg" />
-
 ![Differential Analyser](../img/differential_analyser_bush.jpg)
 
 It was about the size of a room and used shafts, motors, discs and wheels to
@@ -194,10 +194,8 @@ Their key components were:
 - punched cards or paper tape for input instructions and outputs
 
 They were slower than fully digital computers as they were limited by the speed
-
-- [ ] of moving components rather than the flow of electric charge. In addition
-      the various mechanical parts were prone to wear and needed frequent
-      replacement.
+of moving components rather than the flow of electric charge. In addition the
+various mechanical parts were prone to wear and needed frequent replacement.
 
 ### Examples of electro-mechanical computers
 
@@ -227,3 +225,33 @@ than cards or paper tape.
 It comprised a panel (the calculating unit) and teletype (the input). One could
 remotely access the computer from the teletype in another location, providing it
 was connected to Bell Lab's telephone network.
+
+#### Z3 (1941) - Konrad Zuse
+
+![Z3](../img/Zuse-Z3.jpeg)
+
+First designed in 1938 and completed in 1941. Considered the first fully
+automatic, programmable digital computer although relay-based. Programs were
+stored on external punched tape and binary was used as the number system.
+Destroyed by Allied bombing in the War but a replica (pictured) was built
+in 1998.
+
+## Vacuum-tube devices
+
+Vacuum-tube devices were the first fully electronic digital devices as they used
+vacuum-tubes for implementing binary logic rather than relay switches.
+
+Canonical examples from this era are the ABC computer, the Collossus and most
+famously, the ENIAC.
+
+### The Antanasoff-Berry Computer (1939 - 1942)
+
+![ABC Computer](../img/abc-computer.jpg)
+
+Fully automatic, digital electronic computer but not programmable or really
+general-purpose, being created to do linear equations. It took decimal input and
+output but operated internally using binary arithmetic. The input was punched
+cards and the output was via a front-panel display.
+
+Its importance stems from the fact that it was the first to use vacuum-tubes for
+the arithmetic calculations of the processor.
