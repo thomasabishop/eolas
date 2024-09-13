@@ -43,8 +43,8 @@ First three phases of digital electronic computers:
 | Term            | Definition                                                                                                                                                                  |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | automatic       | can execute programs, process data and perform functions on its own once it has been started. Can monitor its own processes and make adjustments without human intervention |
-| general-purpose |                                                                                                                                                                             |
-| programmable    |                                                                                                                                                                             |
+| general-purpose | a computer designed to be able to solve a wide variety of problems and perform many different types of tasks as opposed to a computer built for a specific, limited purpose |
+| programmable    | the ability to change the operations a computer peforms without physically altering its hardware                                                                            |
 
 ## Mechanical calculating devices in the 17th century
 
