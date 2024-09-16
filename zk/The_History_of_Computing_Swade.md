@@ -313,11 +313,11 @@ It's design was very influential because it was made public and not classified.
 ### EDVAC (1944-49) John Mauchly/J.P Eckert/ John von Neumann
 
 Built at the Moore School for the BRL as a successor to ENIAC by Mauchly and
-Eckert whilst ENIAC was still operational. It arose out of #vonNeumann
-discussions with Mauchly and Eckert and was necessitated by the need to
-calculate the behaviour of the fissile materials in the atomic bomb.
+Eckert whilst ENIAC was still operational. It's architecture arose out of
+discussions between #vonNeumann and Mauchly and Eckert and was necessitated by
+the need to calculate the behaviour of the fissile materials in the atomic bomb.
 
-It resulted in the famous _First Draft of a Report on the Edvac_ by #vonNeumann
+It resulted in the famous _First Draft of a Report on the EDVAC_ by #vonNeumann
 which is seen as the definitive statement of the modern **digital programmable
 general-purpose computer**.
 
@@ -330,5 +330,12 @@ Antanasoff won a legal claim against Eckert and Mauchly for stealing ideas from
 the ABC to make ENIAC.
 
 // Add more on the hardware.
+
+### Concept of the _internal stored program_
+
+- Key innovation of the EDVAC was the _internal stored program_.
+- Solution to the problem of preceding computers requiring down-time when
+  switching between applications and problem sets.
+  - Circuitry would need to be reconfigured before the c
 
 ## Machines

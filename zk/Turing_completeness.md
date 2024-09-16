@@ -27,6 +27,11 @@ however the inverse doesn't hold: a non-TC system cannot emulate a TS system.
 For instance a calculator cannot do what a TC smart phone can do. But a smart
 phone can act as a calculator.
 
+This concept of completeness is also expressed in terms of a Universal Turing
+Machine - a TM capable of simulating any other Turing machine. Given that the
+ability of a TM to simulate another TM is the condition for completeness, a TC
+system is also a UTM.
+
 Completeness applies to the hardware of computers as well as their software.
 
 Turing Completeness is the theoretical basis of the practical concept of a
@@ -35,5 +40,3 @@ TC - it can in theory compute anything that is computable.
 
 Most modern programming languages are Turing Complete in that they can, in
 theory, be used to compute anything that is computable.
-
-What about Universal Turing Machines eh?
