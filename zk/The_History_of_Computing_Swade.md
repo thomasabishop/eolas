@@ -333,9 +333,57 @@ the ABC to make ENIAC.
 
 ### Concept of the _internal stored program_
 
-- Key innovation of the EDVAC was the _internal stored program_.
+- Key innovation of the EDVAC was the _internal stored program_ (ISP).
 - Solution to the problem of preceding computers requiring down-time when
   switching between applications and problem sets.
-  - Circuitry would need to be reconfigured before the c
+- Circuitry would need to be reconfigured before the computer could run on the
+  next problem
+- ISP removed the friction:
+  - the instructions comprising the program would be prepared on tape or punched
+    cards and read into electronic memory
+  - the hardware configuration of the machine would remain the same accross
+    different programs and require no reconfiguration, only the input program
+    data would change
+- This was basically the invention of software. Both instructions and data
+  shared the same memory space once they were read-in. Before, the data would be
+  stored in memory but the instructions would be read one-by-one from the
+  external storage media.
+- Key consequences:
+  - flexibility (no need for re-wiring)
+  - speed: fetching instructions from memory is quicker than fetching from
+    external storage devicde
+  - self-modification: since they were in memory, programs could modify
+    themselves during their execution (e.g. use branching conditions) and
+    treating one program as data for another. This enabled more complex
+    algorithms and also opened the possibility of higher-level languages and
+    compilers
+  - simplified architecture: both programs and data in memory
+  - generalisation: computers could switch between different tasks simply by
+    loading different programs
 
-## Machines
+### Post-EDVAC devices
+
+There were several notable devices which attempted to implement the architecture
+described in the _First Draft_ using vacuum tubes:
+
+- the Manchester "Baby"
+- the Cambridge EDSAC
+- Turing's ACE computer
+
+#### Manchester Baby
+
+- An experimental computer intended to create the
+  [von Neumann architecture](CPU_architecture.md) using
+  [Williams_Tube_RAM](Williams_Tube_RAM.md)
+- Developed at the Univesity of Manchester and completed in 1948.
+- Considered the first electronic stored-program computer and first to contain
+  all the elements of a modern electronic digital computer.
+
+#### EDSAC
+
+- _Electronic Delay Storge Automatic Computer_
+- Constructed by Maurice Wilkes and others at the Mathematical Laboratory
+  Cambridge University (UK).
+- The second digital stored-program computer after the Manchester Baby.
+- It used vacuum-tubes for the arithmetical operations in the ALU and mercury
+  delay lines for the RAM.
