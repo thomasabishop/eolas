@@ -19,4 +19,4 @@ created: Wednesday, September 18, 2024
     where a pulse is 1 and the absence of a pulse is 0.
   - The pulses are converted into sound waves (as with a speaker) and sent
     through a mercury-filled tube.
-  - The length of the tube
+  - The length of the tube is calculated...
