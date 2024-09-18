@@ -334,20 +334,26 @@ the ABC to make ENIAC.
 ### Concept of the _internal stored program_
 
 - Key innovation of the EDVAC was the _internal stored program_ (ISP).
+
 - Solution to the problem of preceding computers requiring down-time when
   switching between applications and problem sets.
+
 - Circuitry would need to be reconfigured before the computer could run on the
   next problem
+
 - ISP removed the friction:
+
   - the instructions comprising the program would be prepared on tape or punched
     cards and read into electronic memory
   - the hardware configuration of the machine would remain the same accross
     different programs and require no reconfiguration, only the input program
     data would change
+
 - This was basically the invention of software. Both instructions and data
   shared the same memory space once they were read-in. Before, the data would be
   stored in memory but the instructions would be read one-by-one from the
   external storage media.
+
 - Key consequences:
   - flexibility (no need for re-wiring)
   - speed: fetching instructions from memory is quicker than fetching from
@@ -364,26 +370,46 @@ the ABC to make ENIAC.
 ### Post-EDVAC devices
 
 There were several notable devices which attempted to implement the architecture
-described in the _First Draft_ using vacuum tubes:
+described in the _First Draft_ using vacuum tubes and other fully-electronic
+methods for memory:
 
 - the Manchester "Baby"
 - the Cambridge EDSAC
 - Turing's ACE computer
 
-#### Manchester Baby
+#### Manchester Baby (1948)
 
 - An experimental computer intended to create the
   [von Neumann architecture](CPU_architecture.md) using
   [Williams_Tube_RAM](Williams_Tube_RAM.md)
+
 - Developed at the Univesity of Manchester and completed in 1948.
+
 - Considered the first electronic stored-program computer and first to contain
   all the elements of a modern electronic digital computer.
 
-#### EDSAC
+#### EDSAC (1949) J.Wilkes et al.
 
 - _Electronic Delay Storge Automatic Computer_
+
 - Constructed by Maurice Wilkes and others at the Mathematical Laboratory
-  Cambridge University (UK).
+  Cambridge University.
+
 - The second digital stored-program computer after the Manchester Baby.
+
 - It used vacuum-tubes for the arithmetical operations in the ALU and mercury
   delay lines for the RAM.
+
+- Designed to be used by relatively non-specialist practitioners from other
+  university departments who were expected to program it themselves. To this
+  end, a formal programming paradigm was forged for the EDSAC which established
+  the following:
+
+  - subroutines as a library of common procedures available to programmers (e.g.
+    printing a result, reading input tape, program checking, mathematical
+    operations)
+  - diagnostics: techniques for verifying program code and its correctness
+
+- The key players wrote the first textbook on programming in 1951: _The
+  Preparation of Programs for an Electronic Digital Computer_ (Wilkes, Wheeler,
+  and Gill)
