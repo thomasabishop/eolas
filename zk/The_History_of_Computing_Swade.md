@@ -370,14 +370,16 @@ the ABC to make ENIAC.
 ### Post-EDVAC devices
 
 There were several notable devices which attempted to implement the architecture
-described in the _First Draft_ using vacuum tubes and other fully-electronic
-methods for memory:
+described in the _First Draft_ using vacuum tubes for logic operations and a
+variety of different electronic methods for memory:
 
 - the Manchester "Baby"
 - the Cambridge EDSAC
 - Turing's ACE computer
 
 #### Manchester Baby (1948)
+
+![The Manchester Baby Computer](../img/manchester_baby.png)
 
 - An experimental computer intended to create the
   [von Neumann architecture](CPU_architecture.md) using
@@ -390,15 +392,17 @@ methods for memory:
 
 #### EDSAC (1949) J.Wilkes et al.
 
+![EDSAC](../img/EDSAC.jpg)
+
 - _Electronic Delay Storge Automatic Computer_
 
-- Constructed by Maurice Wilkes and others at the Mathematical Laboratory
-  Cambridge University.
+- Constructed by Maurice Wilkes and others at the Mathematical Laboratory of the
+  University of Cambridge.
 
 - The second digital stored-program computer after the Manchester Baby.
 
 - It used vacuum-tubes for the arithmetical operations in the ALU and mercury
-  delay lines for the RAM.
+  [delay line memory](Delay_line_memory.md) for the RAM.
 
 - Designed to be used by relatively non-specialist practitioners from other
   university departments who were expected to program it themselves. To this
@@ -410,6 +414,27 @@ methods for memory:
     operations)
   - diagnostics: techniques for verifying program code and its correctness
 
+![Programming Digital Electronic Computer book](../img/programming_a_digital_electronic_computter.jpg)
+
 - The key players wrote the first textbook on programming in 1951: _The
   Preparation of Programs for an Electronic Digital Computer_ (Wilkes, Wheeler,
   and Gill)
+
+#### The Automatic Computing Engine (ACE) (1946) Alan Turing
+
+- Technical design provided by Alan #Turing working at the Mathematics Division
+  of the National Physical Laboratory. The product of Turing's theoretical work
+  in "On Computable Numbers" where he proposes the concept of a
+  [Turing_machine](Turing_machines.md) and based on his experience with early
+  single-purpose computing devices at Bletchley.
+
+- Due to secrecy over wartime work, it was hard for get Turing to build a fully
+  electronic implementation since this would disclose advances made during the
+  War. Tommy Flowers was intended to be brought in to build it but again this
+  was scuppered over the classification of wartime technology. Had this not been
+  the case, it is likely it would've been seen as on par with the EDVAC in its
+  design, if not dwarfing it.
+
+- Turing proposed a stored program architecture with high-speed memory. It would
+  be more perfomant than the EDVAC as a result. It used punched cards for the
+  input of data and programs
