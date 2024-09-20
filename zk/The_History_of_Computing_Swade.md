@@ -436,5 +436,11 @@ variety of different electronic methods for memory:
   design, if not dwarfing it.
 
 - Turing proposed a stored program architecture with high-speed memory. It would
-  be more perfomant than the EDVAC as a result. It used punched cards for the
-  input of data and programs
+  be more perfomant than the EDVAC as a result.
+
+![The Pilot ACE computer](../img/pilot-ace.jpg)
+
+- Turing's actual design was not implemented as it was thought too ambitious
+  given how powerful it would need to be. Instead a smaller prototype was made,
+  the Pilot ACE. It used vacuum-tubes for logic, and mercury delay lines for
+  memory. Data and memory was input via punched cards.
