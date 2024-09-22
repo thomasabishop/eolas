@@ -444,3 +444,5 @@ variety of different electronic methods for memory:
   given how powerful it would need to be. Instead a smaller prototype was made,
   the Pilot ACE. It used vacuum-tubes for logic, and mercury delay lines for
   memory. Data and memory was input via punched cards.
+
+### Further applications of the EDSAC architecture
