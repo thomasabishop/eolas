@@ -446,3 +446,52 @@ variety of different electronic methods for memory:
   memory. Data and memory was input via punched cards.
 
 ### Further applications of the EDSAC architecture
+
+### LEO I
+
+- Built by Lyons Tea Company to manage business affairs (payroll, inventory,
+  stock management)
+
+- Marked a shift from military and academic contexts for computers to business
+  and data management.
+
+### IAS machines
+
+![The MANIAC computer](../img/MANIAC_computer.jpg)
+
+Several machines were built at the Institute for Advanced Study utilising the
+"von Neumann" architecture and associated advancements such as vacuum-tubes and
+Williams' tubes. There was the original IAS machine (1952) as well as the
+JOHNNIAC (1954) and MANIAC (1956).
+
+Although their purpose was military (Los Alamos), their designs were public and
+widely studied making them influential outside of academia.
+
+### UNIVAC (1951)
+
+Mauchley and Eckert, who had designed the ENIAC left the Moore School and went
+into business: Eckert-Mauchley Computer Corporation. This was bought by
+Remington Rand and in subsequent years became the main competitor to IBM.
+
+In this capacity they built the UNIVAC: _Universal Automatic Computer_. It's
+name being an embodiment of its nature as a general-purpose, electronic digital
+computer.
+
+It used vacuum-tubes for logic and mercury delay lines for memory. It had
+multiple means of input/output including: directly via an operator console
+(basically a typewriter keyboard), magnetic tape for input and output, along
+with punched cards.
+
+It was the first computer specifically designed to include business and
+administrative use. This was underscored by its first client: the US Census
+Bureau.
+
+A key event was its succesful prediction of the 1952 general election. It
+correctly predicted a landslide for Eisenhower (against expectations). (This was
+so unlikely, they actually fudged the data because they thought the machine was
+way off.) It was a novelty on the results night but it cemented a certain
+concept of the computer in the public imagination - large, room sized machines
+with blinking lights.
+
+Swade notes that Eckert and Mauchley effectively launched the US commercial
+computer industry with the UNIVAC.
