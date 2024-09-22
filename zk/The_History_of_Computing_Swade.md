@@ -96,8 +96,6 @@ automatically generated.
 
 The DE's single purpose was to calculate and output mathematical tables such as
 the results of polynomial equations. The idea was that you would input the
-variables of the equation and activate the machine and it would output the
-results. Associated with this concept was the idea that once it arrived at the
 answer a bell would ring and the machine would _halt_. This influenced #Turing
 later. It was non-programmable and designed for a specific set of calculations.
 
@@ -469,6 +467,8 @@ widely studied making them influential outside of academia.
 
 ### UNIVAC (1951)
 
+![UNIVAC_computer](../img/univac-1.jpg)
+
 Mauchley and Eckert, who had designed the ENIAC left the Moore School and went
 into business: Eckert-Mauchley Computer Corporation. This was bought by
 Remington Rand and in subsequent years became the main competitor to IBM.
@@ -481,6 +481,8 @@ It used vacuum-tubes for logic and mercury delay lines for memory. It had
 multiple means of input/output including: directly via an operator console
 (basically a typewriter keyboard), magnetic tape for input and output, along
 with punched cards.
+
+![UNIVAC operator console](../img/univac-operator-console.jpeg)
 
 It was the first computer specifically designed to include business and
 administrative use. This was underscored by its first client: the US Census
@@ -495,3 +497,20 @@ with blinking lights.
 
 Swade notes that Eckert and Mauchley effectively launched the US commercial
 computer industry with the UNIVAC.
+
+## IBM
+
+- First created in 1911 as a merger of four companies all involved in some
+  capacity in business data processing. The most significant of these was the
+  Hollerith Tabulating Machine Company who's punched card machines had been used
+  in the 1890 census, greatly reducing its collation time
+
+- Named IBM in 1924
+
+- UNIVAC represented the encroachment of computing devices into IBM's market of
+  punched-card based data-processing and effectively put IBM on notice.
+
+- To attack the threat IBM brought out three crucial machines: the 701, 702
+  and 650.
+
+### IBM 701 ("Defense Calculator")
