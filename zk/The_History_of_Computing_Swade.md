@@ -513,4 +513,43 @@ computer industry with the UNIVAC.
 - To attack the threat IBM brought out three crucial machines: the 701, 702
   and 650.
 
-### IBM 701 ("Defense Calculator")
+- IBM's approach to marketing their computers was to emphasise the comfort of
+  continuity over the shock of the new represented by the UNIVAC. IBM had
+  already captured the business market. Their computers would be more of the
+  same, just faster and more powerful than their punched card machines due to
+  the electronics. To this end they initially did not call their devices
+  'computers'.
+
+- IBM were ultimately totally successful in their pivot to the computing market.
+  By 1960 it owned over 70% of the data processing and computer market.
+
+### IBM 701 ("Defense Calculator") (1952)
+
+![Control unit of the IBM 701](../img/ibm-701-control-unit.jpeg)
+
+IBM's first electronic computer. It directly competed with the UNIVAC for
+government contracts. It followed the prevailing approach of vaccuum tubes for
+logic and had a variety of storage methods: Williams tubes, magnetic tape, and
+magentic drums.
+
+701s were used at Los Alamos and avionics companies. Some were also used to
+manage payroll in business contexts.
+
+### IBM 702 ("Tape Processing Machine")
+
+![Advertisement for the IBM 702](../img/ibm-add.jpeg)
+
+Focused primarily on business applications. Used magnetic tape for...
+
+### IBM 650
+
+Low-cost general purpose machine using magnetic drum memory. It was
+mass-produced unlike the others which were built for specific customers. It
+proved the breakout star in IBMs initial line up and sometimes called "IBM's
+Model T".
+
+IBM offerred 650s to univesities at a 60% discount on the condition that the
+universities would establish courses in computing. This was shrewd as it meant
+that a whole generation of engineers and computer scientists learned on 650s and
+would prefer them in their research. It also created a pool of skilled users
+that would go on to work at IBM.
