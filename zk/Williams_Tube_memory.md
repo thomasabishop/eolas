@@ -1,10 +1,10 @@
 ---
-title: Williams_Tube_RAM
+title: Williams_Tube_memory
 tags: [computer-history, memory]
 created: Tuesday, September 17, 2024
 ---
 
-# Williams Tube RAM
+# Williams Tube memory
 
 - One of the early attempts to create RAM in computers based on the EDVAC
   stored-program architecture.

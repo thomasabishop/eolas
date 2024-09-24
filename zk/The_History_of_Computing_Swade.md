@@ -529,27 +529,37 @@ computer industry with the UNIVAC.
 
 IBM's first electronic computer. It directly competed with the UNIVAC for
 government contracts. It followed the prevailing approach of vaccuum tubes for
-logic and had a variety of storage methods: Williams tubes, magnetic tape, and
-magentic drums.
+logic and had a variety of storage methods: Williams tubes,
+[magnetic tape](Magnetic_tape.md) , and magentic drums.
 
 701s were used at Los Alamos and avionics companies. Some were also used to
 manage payroll in business contexts.
 
-### IBM 702 ("Tape Processing Machine")
+### IBM 702 ("Tape Processing Machine") (1953)
 
 ![Advertisement for the IBM 702](../img/ibm-add.jpeg)
 
-Focused primarily on business applications. Used magnetic tape for...
+Focused primarily on business applications and targetted at businesses rather
+than government contracts. Less powerful than the 701.
 
 ### IBM 650
 
-Low-cost general purpose machine using magnetic drum memory. It was
-mass-produced unlike the others which were built for specific customers. It
-proved the breakout star in IBMs initial line up and sometimes called "IBM's
-Model T".
+![IBM 650](../img/ibm-650.jpg)
+
+Low-cost general purpose machine using magnetic drum memory. Marketed as slower
+but more affordable than the 700 range. It was mass-produced unlike the others
+which were built for specific customers. It was in fact the first mass-produced
+computer in the world. It proved the breakout star in IBMs initial line up and
+sometimes called "IBM's Model T".
+
+![IBM_650 console panel](../img/ibm-650-console-panel.jpg)
 
 IBM offerred 650s to univesities at a 60% discount on the condition that the
 universities would establish courses in computing. This was shrewd as it meant
 that a whole generation of engineers and computer scientists learned on 650s and
 would prefer them in their research. It also created a pool of skilled users
 that would go on to work at IBM.
+
+Donald Knuth dedicated _The Art of Computer Programming_ to the 650.
+
+It used magnetic drum memory along with vacuum-tubes.
