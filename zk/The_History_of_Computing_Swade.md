@@ -652,3 +652,38 @@ with no required startup time, they were power efficient and small.
 
 The actual period where transistors alone were supreme in the form of a
 transistor board was relatively short-lived and rapidly gave way to ICs.
+
+Computers of the transistor era had the following components separate from each
+other: the transistors, wired connections, resistors and capacitors. Integrated
+circuits put these all on the same piece of silicon.
+
+They were first manufactured by Fairchild Semiconductor which was an offshoot of
+Shockley's Shockley Semiconductor Laboratory.
+
+The initial marked for ICs was military and scientific: the Minuteman ICBM and
+computers of the Apollo spacecraft. This laid the groundworkd for later
+commercial use and the personal computer revolution.
+
+## Mini-computers
+
+Mini computers did not threaten mainframes but they opened up a new class of
+user. They were vastly cheaper than a mainframe and only the size of a small
+fridge.
+
+The main player was DEC (Digital Equipment Corporation) starting in the
+mid-1960s. The introduced the PDP-8 in 1965 (Programmed Data Processor). The
+PDP-8 used transisotrs and magnetic core memory. It was affordable to smaller
+businesses if not yet, consumers.
+
+![The PDP-8](<../img/540px-PDP-8_(1).jpg>)
+
+The internals were made public and DEC encouraged making the machine extensible
+by users being permitted to create their own programs and specialised
+applications. This was a very different culture to IBM where technicians were
+required and machines were typically leased.
+
+By 1988, DEC was the second largest computer company after IBM. This led to
+additional companies entering the mini-computer market: Data General, Honeywell,
+Hewlett-Packard.
+
+Mini-computers died as a category in the mid-1990s in the wake of the PC.
