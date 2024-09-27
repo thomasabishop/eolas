@@ -567,6 +567,31 @@ vacuum-tubes.
 
 ### IBM 1401 (1959)
 
+![IBM 1401](../img/ibm-1401.jpg)
+
+Another IBM mainframe. Transistors replaced vacuum-tubes. Magnetic core storage
+replaced magnetic drum storage. It was housed in rectangular light-blue cabinets
+and the ubiquity of the 1401 in industry earned IBM the moniker 'Big Blue'.
+
+### IBM System/360 (1964)
+
+![IBM 360](../img/ibm-360.jpg)
+
+Named to suggest all-round compatibility - a family of mainframes designed to
+cover commercial and scientific applications. Considered one of history's most
+successful computers.
+
+Up until this point all IBM computers had a programming language unique to the
+specific processor. At that point there were about seven IBM computer models in
+active use and they were all incompatible with each other.
+
+![IBM 360 promo poster](../img/ibm-360-in-use.jpeg)
+
+In contrast the 360 computers all used the same programming language. This meant
+they were interoperable with each others. Because the there were variants in the
+360 ranges, customers could purchase a smaller system knowing they could expand
+it if their needs grew, without reprogramming their application software.
+
 ## Magnetic core devices: Whirlwind and SAGE
 
 Two devices that leveraged the new technology of
@@ -607,3 +632,23 @@ its way from the military context to business and consumer computing.
 An example of a civilian application of SAGE technology was airline booking
 systems, where booking reservation data needed to be processed in realtime. IBM
 worked with American Airlines to introduce this.
+
+## Transistor and integrated circuit revolution
+
+The arc of modern computing history (and its main eras) can be presented as
+
+- vacuum-tubes
+- [transistors](Transistors.md)
+- [integrated_circuits](Integrated_circuits.md)
+
+The transistor was invented at Bell Labs in 1947 by William Shockley and others.
+They were not created with computers in mind. Instead they were first used in
+hearing aids (1953) and transistor radios (1954).
+
+From the mid-1950s onwards they started being used in military computers.
+
+They had several advantages over vacuum-tubes: they were durable and reliable
+with no required startup time, they were power efficient and small.
+
+The actual period where transistors alone were supreme in the form of a
+transistor board was relatively short-lived and rapidly gave way to ICs.
