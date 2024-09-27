@@ -542,7 +542,7 @@ manage payroll in business contexts.
 Focused primarily on business applications and targetted at businesses rather
 than government contracts. Less powerful than the 701.
 
-### IBM 650
+### IBM 650 (1953)
 
 ![IBM 650](../img/ibm-650.jpg)
 
@@ -562,4 +562,48 @@ that would go on to work at IBM.
 
 Donald Knuth dedicated _The Art of Computer Programming_ to the 650.
 
-It used magnetic drum memory along with vacuum-tubes.
+It used [magnetic drum memory](./Magnetic_drum_memory.md) along with
+vacuum-tubes.
+
+### IBM 1401 (1959)
+
+## Magnetic core devices: Whirlwind and SAGE
+
+Two devices that leveraged the new technology of
+[magnetic_core_memory](Magnetic_core_memory.md) where the Whirlwind and SAGE
+computers. The ENIAC was also updated to use magnetic cores.
+
+![Whirlwind magnetic core memory](../img/whirlwind-magnetic-cores.JPG)
+
+The Whirlwind computer (1953) was a flight simulator and the first to use
+magnetic cores. Crucially was able to operate in realtime for output.
+
+The SAGE computer (_Semi-Automatic Ground Environment_) emerged as a response to
+the Soviet acquisition of the atomic bomb in 1949. The Americans realised they
+needed a much better early warning and air defence system that would allow them
+to identify bombers in their airspace and dispatch fighters.
+
+To achieve this, it was necessary to detect enemy bombers with radar and compute
+an interception course. Alterations in the bomber flight path required
+continuous updates and real-time computation of directions for the responding
+fighter.
+
+The resulting computer was SAGE (made by IBM) which was modelled on Whirlwind,
+using magnetic cores. SAGE computers were spread accross the continental US in
+sectors and managed by NORAD.
+
+![SAGE command post](../img/SAGE_command_post.jpg)
+
+The SAGE system was operation between 1958-1984, receiving continual
+improvements and updates. In addition to magnetic cores it introduced many
+technological innovations that influenced computers generally: interactive
+screens, printed circuit boards, mass-storage devices, digital communication
+over telephone lines, time-sharing, along with advances in software.
+
+Because so many private companies worked as contractors on SAGE (IBM, Burroughs,
+Bell Labs, RAND Corp), the military technology (both hardware and software) made
+its way from the military context to business and consumer computing.
+
+An example of a civilian application of SAGE technology was airline booking
+systems, where booking reservation data needed to be processed in realtime. IBM
+worked with American Airlines to introduce this.
