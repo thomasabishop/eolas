@@ -687,3 +687,24 @@ additional companies entering the mini-computer market: Data General, Honeywell,
 Hewlett-Packard.
 
 Mini-computers died as a category in the mid-1990s in the wake of the PC.
+
+## The Personal Computer
+
+The PC emerged out of advances in IC chip design - this was the engine of the
+PC.
+
+Intel (newly founded by Robert Noyce and Gordon Moore) were charged with making
+custom chips for a Japanese calculator company. Instead of creating the custom
+chips, they advised the company to use a general purpose chip that could handle
+general computing as well as the basic calculator functions. This generic chip -
+the Intel 4004 - was the microprocessor combined with three other ICs
+(comprising 2.3k transistors) that comprised the fundamental building blocks of
+the #vonNeumann architecture.
+
+However it took until the Apple II in 1977 for the phrase "personal computer" to
+enter the lexicon and become an identifiable class.
+
+The broader context for this was the computer hobbyists in Silicon Valley/Menlo
+Park (particularly the Homebrew Club of amateur computer engineers) along with
+idealistic figures from the 60s counterculture (such as Stuart Brand) who began
+associating computing technology as a tool of personal liberty and fulfillment.
