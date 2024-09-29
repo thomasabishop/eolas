@@ -708,3 +708,10 @@ The broader context for this was the computer hobbyists in Silicon Valley/Menlo
 Park (particularly the Homebrew Club of amateur computer engineers) along with
 idealistic figures from the 60s counterculture (such as Stuart Brand) who began
 associating computing technology as a tool of personal liberty and fulfillment.
+
+## Microsoft and Apple
+
+The PC "boom" began with the Altair 8800. This was a mail-order kit that
+required manual assembly. It was released by Micro Instrumentation Telemetry
+Systems (MITS) in 1975. It couldn't do much but had expansion capability
+(memory, teletype interface, casette player for data storage).
