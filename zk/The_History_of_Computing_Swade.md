@@ -709,9 +709,53 @@ Park (particularly the Homebrew Club of amateur computer engineers) along with
 idealistic figures from the 60s counterculture (such as Stuart Brand) who began
 associating computing technology as a tool of personal liberty and fulfillment.
 
-## Microsoft and Apple
+### Microsoft and Apple
 
 The PC "boom" began with the Altair 8800. This was a mail-order kit that
 required manual assembly. It was released by Micro Instrumentation Telemetry
 Systems (MITS) in 1975. It couldn't do much but had expansion capability
 (memory, teletype interface, casette player for data storage).
+
+Bill Gates and Paul Allen made a proposal to MITS: they would write software
+that would allow users to program the Altair in BASIC. They agreed and were
+prepared to distribute the software. As a result Gates and Allen founded
+Microsoft in 1975.
+
+Around the same time, Steve Wozniak (member of the Homebrew club) built the
+Apple I as a single-board hobbyist project. He made this available to buy via
+mail order and formed Apple with Steve Jobs in 1976 to manage the enterprise.
+
+By 1977 they had investment capital and brought out the Apple II. This was sold
+preassembled with casing and required no soldering. It had expansion slots for
+third-party vendors to create compatible devices and had colour graphics.
+
+The design of the Apple II was published in _Byte_ in order to invite
+crowd-sourced plugins and extensions. One of these was the Z-80 softcard which
+allowed it to run the CP/M OS (created by the company Digital Research) giving
+ready-made access to software such as a word-processor, spreadsheets and
+databases.
+
+Other competitors in the PC market at this time were Radioshack's TRS-80 and the
+Commodore PET.
+
+### IBM
+
+All the while it was hobbyist and tinkerers driving the PC market, IBM had no
+real interest. When PCSs started being used by businesses and their capacity
+grew to include typical business applications (databases, spreadsheets) it
+sensed an incursion into its market.
+
+Thus, in 1981, IBM launched the "IBM Personal Computer" which rapidly became the
+industry standard. This had the effect of legitimising the concept of a PC.
+There was overwhelming demand. In their marketing IBM melded home and office use
+to capture both markets at once.
+
+The internal specification of the IBM PC was freely available (dubbed 'open
+architecture'), in contrast to IBM's business computers, to encourage software
+expansion. Cards could be created to fit in its expansion slots adding graphics,
+sound, additional memory and networking capability.
+
+IBM originally contracted Digital Research to create software based on CP/M but
+this fell through. Microsoft got the deal to supply the OS which became MS-DOS
+(Microsoft Disk Operating System). Henceforth every PC and PC-clone came with
+DOS bundled.
