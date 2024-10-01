@@ -701,6 +701,8 @@ the Intel 4004 - was the microprocessor combined with three other ICs
 (comprising 2.3k transistors) that comprised the fundamental building blocks of
 the #vonNeumann architecture.
 
+![Intel 4004 chip](../img/intel-4004.jpg)
+
 However it took until the Apple II in 1977 for the phrase "personal computer" to
 enter the lexicon and become an identifiable class.
 
@@ -716,6 +718,8 @@ required manual assembly. It was released by Micro Instrumentation Telemetry
 Systems (MITS) in 1975. It couldn't do much but had expansion capability
 (memory, teletype interface, casette player for data storage).
 
+![Altair 8800](../img/altair-8800.jpg)
+
 Bill Gates and Paul Allen made a proposal to MITS: they would write software
 that would allow users to program the Altair in BASIC. They agreed and were
 prepared to distribute the software. As a result Gates and Allen founded
@@ -724,6 +728,8 @@ Microsoft in 1975.
 Around the same time, Steve Wozniak (member of the Homebrew club) built the
 Apple I as a single-board hobbyist project. He made this available to buy via
 mail order and formed Apple with Steve Jobs in 1976 to manage the enterprise.
+
+![Apple I](../img/apple1.jpg)
 
 By 1977 they had investment capital and brought out the Apple II. This was sold
 preassembled with casing and required no soldering. It had expansion slots for
@@ -735,6 +741,8 @@ allowed it to run the CP/M OS (created by the company Digital Research) giving
 ready-made access to software such as a word-processor, spreadsheets and
 databases.
 
+![Apple 2](../img/apple2.jpg)
+
 Other competitors in the PC market at this time were Radioshack's TRS-80 and the
 Commodore PET.
 
@@ -744,6 +752,8 @@ All the while it was hobbyist and tinkerers driving the PC market, IBM had no
 real interest. When PCSs started being used by businesses and their capacity
 grew to include typical business applications (databases, spreadsheets) it
 sensed an incursion into its market.
+
+![IBM PC](../img/ibm-pc.jpg)
 
 Thus, in 1981, IBM launched the "IBM Personal Computer" which rapidly became the
 industry standard. This had the effect of legitimising the concept of a PC.
