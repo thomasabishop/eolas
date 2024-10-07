@@ -74,4 +74,4 @@ superset of all available virtual memory. It can access user space virtual
 memory because it sets up the tables and locations, not because it is a subset
 of its own virtual memory.
 
-![Virtual memory diagram](/img/virtual-memory-diagram.jpg)
+![Virtual memory diagram](../img/virtual-memory-diagram.jpg)
