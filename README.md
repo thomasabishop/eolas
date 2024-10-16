@@ -1,4 +1,4 @@
-# Eólas
+# Eòlas
 
 <img src='./img/knowledge_graph.png' width=400 align='center' /><br/>
 
