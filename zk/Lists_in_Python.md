@@ -103,7 +103,6 @@ We distinguish `del` from `remove` when removing elements from lists:
 
 - `del` requires an index value
 - `remove` requires a value reference (i.e. the name of the element rather than
-  its index)
 
 `del` is simple deletion whereas `remove` searches the list. Therefore `del` is
 more efficient.
