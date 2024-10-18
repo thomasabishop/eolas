@@ -1,6 +1,5 @@
 ---
 id: sgtn
-title: Working_with_CSVs_in_Python
 tags: [python, csv]
 created: Sunday, April 28, 2024
 ---

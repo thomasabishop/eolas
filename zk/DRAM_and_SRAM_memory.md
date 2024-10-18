@@ -1,5 +1,4 @@
 ---
-title: DRAM_and_SRAM_memory
 tags: [memory, hardware]
 created: Friday, July 12, 2024
 ---

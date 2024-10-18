@@ -1,5 +1,4 @@
 ---
-title: What_is_memory
 tags: [memory]
 created: Friday, July 12, 2024
 ---

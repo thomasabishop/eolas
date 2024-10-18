@@ -1,5 +1,4 @@
 ---
-title: GPU_versus_CPU
 tags: [computer-architecture]
 created: Sunday, September 22, 2024
 ---

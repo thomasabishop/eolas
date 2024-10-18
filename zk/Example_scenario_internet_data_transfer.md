@@ -1,5 +1,4 @@
 ---
-title: Example_scenario_internet_data_transfer
 tags: [networks, internet]
 created: Friday, September 06, 2024
 ---

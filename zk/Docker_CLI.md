@@ -1,6 +1,5 @@
 ---
 id: 6g54
-title: Docker_CLI
 tags:
   - docker
   - shell

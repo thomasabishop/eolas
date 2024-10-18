@@ -1,5 +1,4 @@
 ---
-title: Delay_line_memory
 tags: [computer-history, memory]
 created: Wednesday, September 18, 2024
 ---

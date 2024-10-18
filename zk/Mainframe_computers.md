@@ -1,5 +1,4 @@
 ---
-title: Mainframe_computers
 tags: [computer-history]
 created: Friday, September 27, 2024
 ---

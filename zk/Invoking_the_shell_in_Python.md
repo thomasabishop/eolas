@@ -1,6 +1,5 @@
 ---
 id: cfr4
-title: Invoking_the_shell_in_Python
 tags: [python, shell]
 created: Monday, April 29, 2024
 ---

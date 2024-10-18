@@ -1,5 +1,4 @@
 ---
-title: Application_Layer_of_Internet_Protocol
 tags: [internet, networks]
 created: Friday, September 06, 2024
 ---

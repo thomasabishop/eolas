@@ -1,5 +1,4 @@
 ---
-title: Operating_system_API
 tags: [operating-systems]
 created: Wednesday, July 17, 2024
 ---

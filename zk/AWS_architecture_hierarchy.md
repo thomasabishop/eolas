@@ -1,6 +1,5 @@
 ---
 id: oyubuqx2
-title: AWS architecture hierarchy
 tags: [AWS]
 created: Monday, February 19, 2024 | 19:17
 since: just now

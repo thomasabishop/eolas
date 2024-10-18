@@ -1,6 +1,5 @@
 ---
 id: iqh8
-title: Machine_code
 tags:
   - binary
   - CPU

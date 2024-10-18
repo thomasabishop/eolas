@@ -1,5 +1,4 @@
 ---
-title: Memory_versus_processor
 tags: ["question"]
 created: Thursday, August 01, 2024
 ---

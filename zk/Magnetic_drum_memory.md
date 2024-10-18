@@ -1,5 +1,4 @@
 ---
-title: Magnetic_drum_memory
 tags: [computer-history, memory]
 created: Tuesday, September 24, 2024
 ---

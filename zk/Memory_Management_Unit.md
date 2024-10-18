@@ -1,5 +1,4 @@
 ---
-title: Memory_Management_Unit
 tags: [memory, Linux]
 created: Monday, July 08, 2024
 ---

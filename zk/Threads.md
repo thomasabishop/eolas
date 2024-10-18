@@ -1,6 +1,5 @@
 ---
 id: zadl
-title: Threads
 tags: [operating-systems]
 created: Wednesday, June 26, 2024
 ---

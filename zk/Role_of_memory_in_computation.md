@@ -1,5 +1,4 @@
 ---
-title: Role_of_memory_in_computation
 tags: [memory]
 created: Friday, July 12, 2024
 ---

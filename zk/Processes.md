@@ -1,6 +1,5 @@
 ---
 id: t70u
-title: Processes
 tags: [operating-systems]
 created: Friday, June 21, 2024
 ---

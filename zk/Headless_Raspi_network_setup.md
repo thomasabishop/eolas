@@ -1,6 +1,5 @@
 ---
 id: hb10
-title: Headless network setup
 tags:
   - networks
   - Linux

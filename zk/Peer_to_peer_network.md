@@ -1,5 +1,4 @@
 ---
-title: Peer_to_peer_network
 tags: [networks]
 created: Friday, August 09, 2024
 ---

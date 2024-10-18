@@ -1,5 +1,4 @@
 ---
-title: Internet_Layer_of_Internet_Protocol
 tags:
   - internet
   - networks

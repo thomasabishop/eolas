@@ -1,5 +1,4 @@
 ---
-title: Transport_Layer_of_Internet_Protocol
 tags: [internet, networks, ports]
 created: Tuesday, September 03, 2024
 ---

@@ -1,5 +1,4 @@
 ---
-title: MAC_addresses
 tags: [networks]
 created: Tuesday, August 06, 2024
 ---

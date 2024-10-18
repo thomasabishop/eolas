@@ -1,5 +1,4 @@
 ---
-title: Python_application_structure
 tags: [python]
 created: Tuesday, August 27, 2024
 ---

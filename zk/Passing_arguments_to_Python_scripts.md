@@ -1,6 +1,5 @@
 ---
 id: 44li
-title: Passing arguments to Python scripts
 tags: [python]
 created: Wednesday, June 19, 2024
 ---

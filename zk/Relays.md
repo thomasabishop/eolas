@@ -1,5 +1,4 @@
 ---
-title: Relays
 tags: [electronics]
 created: Monday, September 09, 2024
 ---

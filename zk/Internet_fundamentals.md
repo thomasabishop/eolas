@@ -1,5 +1,4 @@
 ---
-title: Internet_fundamentals
 tags: [networks]
 created: Saturday, August 03, 2024
 ---

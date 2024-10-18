@@ -1,6 +1,5 @@
 ---
 id: ippn
-title: Network scanning
 tags: [networks, procedural, Linux]
 created: Monday, June 10, 2024
 ---

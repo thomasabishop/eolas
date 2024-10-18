@@ -1,6 +1,5 @@
 ---
 id: 2w0e
-title: Set DNS settings
 tags: [Linux, networks]
 created: Wednesday, June 12, 2024
 ---

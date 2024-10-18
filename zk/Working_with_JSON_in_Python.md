@@ -1,6 +1,5 @@
 ---
 id: mjia
-title: Working with JSON in Python
 tags: [python, JSON]
 created: Tuesday, June 25, 2024
 ---

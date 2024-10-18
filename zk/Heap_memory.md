@@ -1,6 +1,5 @@
 ---
 id: 18bl
-title: Heap_memory
 tags: [memory, C]
 created: Saturday, April 20, 2024
 ---

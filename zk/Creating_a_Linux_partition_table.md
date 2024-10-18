@@ -1,6 +1,5 @@
 ---
 id: h7f8
-title: Creating_a_Linux_partition_table
 tags:
   - disks
   - Linux

@@ -1,6 +1,5 @@
 ---
 id: xowl
-title: DynamoDB
 tags:
   - AWS
   - databases

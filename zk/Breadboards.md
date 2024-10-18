@@ -1,6 +1,5 @@
 ---
 id: jbf1
-title: Breadboards
 tags: [electronics]
 created: Sunday, June 23, 2024
 ---

@@ -1,6 +1,5 @@
 ---
 id: t127
-title: Bitwise_operators
 tags: [binary]
 created: Saturday, April 20, 2024
 ---

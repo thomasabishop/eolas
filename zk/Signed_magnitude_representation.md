@@ -1,6 +1,5 @@
 ---
 id: 3wsh
-title: Signed_magnitude_representation
 tags:
   - binary
 created: Wednesday, March 20, 2024

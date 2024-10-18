@@ -1,6 +1,5 @@
 ---
 id: v5f6xkdv
-title: systemd status
 tags:
   - systemd
   - systems-programming

@@ -1,6 +1,5 @@
 ---
 id: atzw
-title: Single_file_Python_scripts
 tags: []
 created: Friday, April 26, 2024
 ---

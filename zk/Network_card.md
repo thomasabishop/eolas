@@ -1,5 +1,4 @@
 ---
-title: Network_card
 tags: [networks, hardware]
 created: Tuesday, August 06, 2024
 ---

@@ -1,5 +1,4 @@
 ---
-title: Magnetic_core_memory
 tags: [computer-history, memory]
 created: Friday, September 27, 2024
 ---

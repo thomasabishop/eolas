@@ -1,6 +1,5 @@
 ---
 id: nsrv
-title: Push buttons
 tags: [electronics]
 created: Tuesday, June 25, 2024
 ---

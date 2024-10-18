@@ -1,6 +1,5 @@
 ---
 id: mdw5fe5a
-title: Virtual Private Cloud
 tags: [AWS, networks]
 created: Tuesday, February 20, 2024 | 08:31
 ---

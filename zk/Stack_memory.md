@@ -1,6 +1,5 @@
 ---
 id: 1fig
-title: Stack_memory
 tags: [memory]
 created: Tuesday, April 16, 2024
 ---

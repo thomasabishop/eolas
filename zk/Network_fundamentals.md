@@ -1,5 +1,4 @@
 ---
-title: Network_fundamentals
 tags: [networks, network-protocols]
 created: Saturday, August 03, 2024
 ---

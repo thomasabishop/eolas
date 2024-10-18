@@ -1,5 +1,4 @@
 ---
-title: Magnetic_tape
 tags: [computer-history, storage]
 created: Monday, September 23, 2024
 ---

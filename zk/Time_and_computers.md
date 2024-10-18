@@ -1,6 +1,5 @@
 ---
 id: l29u
-title: Time_and_computers
 tags:
   - unix
   - time

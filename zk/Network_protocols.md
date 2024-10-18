@@ -1,5 +1,4 @@
 ---
-title: Network_protocols
 tags: [networks]
 created: Saturday, August 03, 2024
 ---

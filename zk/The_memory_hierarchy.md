@@ -1,5 +1,4 @@
 ---
-title: The_memory_hierarchy
 tags: [memory]
 created: Friday, July 12, 2024
 ---

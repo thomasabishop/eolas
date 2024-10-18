@@ -1,6 +1,5 @@
 ---
 id: rmvm
-title: ROM versus disk loading
 tags: [computer-architecture, memory]
 created: Monday, June 24, 2024
 ---

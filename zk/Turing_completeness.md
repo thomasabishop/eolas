@@ -1,5 +1,4 @@
 ---
-title: Turing_Completeness
 tags: [theory-of-computation, Turing]
 created: Friday, September 13, 2024
 ---

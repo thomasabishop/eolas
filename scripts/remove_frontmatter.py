@@ -19,7 +19,7 @@ for filename in os.listdir(directory):
             content = file.read()
             # Remove the 'title' and 'categories' sections
             content = title_pattern.sub("", content)
-            content = categories_pattern.sub("", content)
+            # content = categories_pattern.sub("", content)
             # Seek to the beginning of the file
             file.seek(0)
             # Write the modified content back to the file

@@ -1,5 +1,4 @@
 ---
-title: Williams_Tube_memory
 tags: [computer-history, memory]
 created: Tuesday, September 17, 2024
 ---

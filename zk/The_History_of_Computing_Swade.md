@@ -1,5 +1,4 @@
 ---
-title: The_History_of_Computing_Swade
 tags: [literature, computer-history]
 created: Friday, August 23, 2024
 ---

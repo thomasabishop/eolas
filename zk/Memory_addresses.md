@@ -1,5 +1,4 @@
 ---
-title: Memory_addresses
 tags: [memory]
 created: Friday, July 12, 2024
 ---

@@ -1,5 +1,4 @@
 ---
-title: Register_and_cache_memory
 tags: [memory, CPU]
 created: Friday, July 12, 2024
 ---

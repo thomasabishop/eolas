@@ -1,6 +1,5 @@
 ---
 id: l045
-title: DynamoDB CLI commands
 tags: [AWS, databases, dynamodb]
 created: Saturday, June 22, 2024
 ---

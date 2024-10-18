@@ -1,6 +1,5 @@
 ---
 id: 8b6h
-title: DynamoDB SDK commands
 tags: [AWS, databases, dynamodb]
 created: Sunday, June 23, 2024
 ---
