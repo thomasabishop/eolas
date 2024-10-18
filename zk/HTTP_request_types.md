@@ -3,6 +3,8 @@ tags:
   - REST
 ---
 
+# HTTP request types
+
 ## GET
 
 - Get data

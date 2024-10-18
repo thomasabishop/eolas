@@ -4,6 +4,8 @@ tags:
   - theorems
 ---
 
+# Axioms of set theory
+
 The basic notions of set theory are defined in
 [Basic properties of sets](Basic%20properties%20of%20sets.md). There we
 introduced a formal syntax that will be utilised to define the axioms. For easy

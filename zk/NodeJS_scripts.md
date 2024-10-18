@@ -1,10 +1,9 @@
 ---
-id: 5043
 tags: [node-js]
 created: Friday, April 26, 2024
 ---
 
-# NodeJS_scripts
+# NodeJS scripts
 
 If we want to use NodeJS as a scripting language without going to the trouble of
 setting up an NPM-based development environment, we can use the following

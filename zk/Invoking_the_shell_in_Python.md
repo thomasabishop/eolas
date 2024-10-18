@@ -4,7 +4,7 @@ tags: [python, shell]
 created: Monday, April 29, 2024
 ---
 
-# Invoking the shell_in_Python
+# Invoking the shell in Python
 
 ```py
 import subprocess

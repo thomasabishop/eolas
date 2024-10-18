@@ -2,7 +2,7 @@
 tags: [algebra]
 ---
 
-## Equivalent equations
+# Equivalent equations
 
 > Two equations are equivalent if they have the same
 > [solution](Algebra%20key%20terms.md#678811) set.
@@ -30,11 +30,16 @@ of the $=$ symbol). Adding or subtracting the same quantity from both sides
 
 ### Demonstration with addition
 
-$$ x - 4 = 3
 $$
+x - 4 = 3
+$$
+
 The [solution](Algebra%20key%20terms.md#678811) to this equation is $7$
-$$ x -
-4 (+4) = 3 (+ 4) $$
+
+$$
+x -
+4 (+4) = 3 (+ 4)
+$$
 
 Here we have added $4$ to each side of the equation. If $x = 7$ then:
 
@@ -46,11 +51,16 @@ $$ 3 + 4 = 7 $$
 
 ### Demonstration with subtraction
 
-$$ x + 4 = 9
 $$
+x + 4 = 9
+$$
+
 The [solution](Algebra%20key%20terms.md#678811) to this equation is $5$.
-$$ x +
-4 (-4) = 9(-4) $$
+
+$$
+x +
+4 (-4) = 9(-4)
+$$
 
 Here we have subtracted $4$ from each side of the equation. If $x = 5$ then:
 
@@ -62,8 +72,9 @@ $$ 9 - 4 = 5 $$
 
 ### Demonstration with multiplication
 
-$$x \cdot 2 = 10  $$
-The [solution](Algebra%20key%20terms.md#678811) to this equation is $5$.
+$$x \cdot 2 = 10  $$ The [solution](Algebra%20key%20terms.md#678811) to this
+equation is $5$.
+
 $$
 (x \cdot 2) \cdot 3 = 10 \cdot 3 $$ Here we have multiplied each side of the
 equation by $3$. If $x =5$ then
@@ -78,7 +89,12 @@ The [solution](Algebra%20key%20terms.md#678811) to this equation is $6$.
 $$\frac{x
 \cdot 3}{3} = \frac{18}{3}
 $$
+
 Here we have divided each side of the equation by $3$. If $x$ is 6, then
-$$\frac{6
-\cdot 3}{3} = 6$$
+
+$$
+\frac{6
+\cdot 3}{3} = 6
+$$
+
 $$\frac{18}{3} = 6 $$

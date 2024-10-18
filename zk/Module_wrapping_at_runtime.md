@@ -3,6 +3,8 @@ tags:
   - node-js
 ---
 
+# Module wrapping at runtime in NodeJS
+
 ## The Module Wrapper Function
 
 When Node runs each of our module files are wrapped within an

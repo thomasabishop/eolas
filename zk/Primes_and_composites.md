@@ -4,7 +4,7 @@ tags:
   - number-theory
 ---
 
-## Prime and composite numbers
+# Prime and composite numbers
 
 Definition of a **prime number**:
 

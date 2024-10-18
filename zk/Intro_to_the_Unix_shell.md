@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Introduction to the Unix shell
+
 ## Unix based systems
 
 Many operating systems are based on the UNIX software architecture. macOS/OSX

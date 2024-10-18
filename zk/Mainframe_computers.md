@@ -3,7 +3,7 @@ tags: [computer-history]
 created: Friday, September 27, 2024
 ---
 
-# Mainframe_computers
+# Mainframe computers
 
 A mainframe computer, also known as a "big iron" is a high performance computer
 used for resource-intensive tasks that require greater security and availability

@@ -4,7 +4,7 @@ tags:
   - fractions
 ---
 
-## Reducing fractions to their lowest terms
+# Reducing fractions to their lowest terms
 
 > A fraction is said to be _reduced to its lowest terms_ if the
 > [greatest common divisor](Factors%20and%20divisors.md#greatest-common-divisor)

@@ -6,7 +6,7 @@ tags:
 created: Saturday, March 30, 2024
 ---
 
-# Docker_CLI
+# Docker CLI
 
 ```sh
 # List images

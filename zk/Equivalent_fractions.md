@@ -4,6 +4,8 @@ tags:
   - fractions
 ---
 
+# Equivalent fractions
+
 Two fractions are equivalent if they represent the same value. To begin with we
 can represent this visually:
 

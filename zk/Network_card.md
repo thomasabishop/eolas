@@ -3,7 +3,7 @@ tags: [networks, hardware]
 created: Tuesday, August 06, 2024
 ---
 
-# Network_card
+# Network card
 
 The network card (technically know as the Network Interface Card (NIC)) or
 _network adapter_ is the hardware device that allows a computer to connect to a

@@ -1,10 +1,11 @@
 ---
-id: h7f8
 tags:
   - disks
   - Linux
 created: Monday, May 06, 2024
 ---
+
+# Creating a Linux partition table
 
 ## Creating a partition table
 

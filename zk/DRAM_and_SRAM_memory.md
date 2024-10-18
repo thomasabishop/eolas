@@ -3,7 +3,7 @@ tags: [memory, hardware]
 created: Friday, July 12, 2024
 ---
 
-# DRAM_and_SRAM_memory
+# DRAM and SRAM memory
 
 There are two types of RAM memory: [SRAM and DRAM](./DRAM_and_SRAM_memory.md).
 

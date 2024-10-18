@@ -4,6 +4,8 @@ tags:
   - fractions
 ---
 
+# Increasing fractions to their highest terms
+
 Given the equivalence between factors and divisors we can increase fractions to
 higher terms in a very similar way to when we reduce fractions. In the latter
 case we are dividing by divisors to reduce. In the former, we are multiplying by

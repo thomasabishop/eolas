@@ -4,6 +4,8 @@ tags:
   - theorems
 ---
 
+# Fundamental Theorem of Arithmetic
+
 > Every integer greater than one is either a prime number itself or is product
 > of a unique combination of primes.
 

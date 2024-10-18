@@ -3,6 +3,8 @@ tags:
   - set-theory
 ---
 
+# Basic properties of sets
+
 ## Set theory
 
 Set theory is a sub-discipline of both mathematics and formal logic. In

@@ -4,6 +4,8 @@ tags:
   - fractions
 ---
 
+# Expressing whole numbers as fractions
+
 Being asked to express a natural number as a fraction seems confusing at first
 but you need to just know that for any whole number $n$, you express it as a
 fraction with $\frac{n}{1}$.

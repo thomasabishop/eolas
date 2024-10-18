@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Listing and navigating directories in the shell
+
 ## Listing options
 
 Obviously we know that in order to list the files and sub-directories in our

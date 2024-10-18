@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Environmental and shell variables
+
 ## Important!
 
 To understand the difference between environmental and shell variables know
@@ -43,8 +45,7 @@ spawned instances? Is this even possible or do they die on `exit` .
 - The environment is an area that the shell builds every time that it starts a
   session. It contains variables that define system properties.
 
-- Every time a
-  [shell session](Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6)
+- Every time a [shell session](Shell-sessions-e6dd743dec1d4fe3b1ee672c8f9731f6)
   spawns, a process takes place to gather and compile information that should be
   available to the shell process and its child processes. It obtains the data
   for these settings from a variety of different files and settings on the

@@ -3,7 +3,7 @@ tags: [computer-history, memory]
 created: Friday, September 27, 2024
 ---
 
-# Magnetic_core_memory
+# Magnetic core memory
 
 ![](../img/magnetic-core-memory.jpg)
 

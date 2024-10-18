@@ -3,6 +3,8 @@ tags:
   - prealgebra
 ---
 
+# Order of operations
+
 1. Evaluate expressions in **parentheses**
 1. Evaluate **exponents**
 1. Evaluate **multiplications and divisions** from left to right in the order

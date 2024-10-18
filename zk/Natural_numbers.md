@@ -3,6 +3,8 @@ tags:
   - prealgebra
 ---
 
+# Natural numbers
+
 ## The set of natural numbers
 
 $$ \mathbb{N} = {1, 2, 3, ...} $$

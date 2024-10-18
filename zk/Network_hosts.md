@@ -3,7 +3,7 @@ tags: [networks]
 created: Saturday, August 03, 2024
 ---
 
-# Network_hosts
+# Network hosts
 
 A network **host** or **node** is a single computing device attached to a
 ![network](Network_fundamentals.md)

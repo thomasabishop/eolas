@@ -2,6 +2,8 @@
 tags: [algebra, exponents]
 ---
 
+# Negative exponents
+
 When calculating the exponents of a negative number the answer will always will
 be positive:
 

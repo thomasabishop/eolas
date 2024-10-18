@@ -3,7 +3,7 @@ tags:
   - prealgebra
 ---
 
-## Factors and divisors
+# Factors and divisors
 
 The terms **factor** and **divisor** are used interchangeably. They are
 different ways of expressing the same mathematical truth and this is because of

@@ -2,6 +2,8 @@
 tags: [algebra]
 ---
 
+# Algebra key terms
+
 - **Variable**
   - A symbol that stands for a value which may vary
 - **Equation**
