@@ -16,7 +16,7 @@ echo "Standardising file-names..."
 source ${tidy_filenames}
 
 echo "Removing unused images..."
-# source ${purge_images}
+source ${purge_images}
 
 echo "Checking for changes..."
 git pull >/dev/null 2>&1
@@ -37,5 +37,5 @@ git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
 
 
-/home/thomas/repos/slack-notifier/src/index.js 'eolas' 'Eolas: auto-save executed'	
+/home/thomas/repos/slack-notifier/src/index.js 'eolas' '✅ Eolas: auto-save executed'	
 
