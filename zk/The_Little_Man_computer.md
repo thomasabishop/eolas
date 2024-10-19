@@ -2,12 +2,12 @@
 tags: [CPU]
 ---
 
-## The Little Man Computer
+# The Little Man Computer
 
-The [Little Man Computer]() is a simplified
-computer that works on Von Neuman principles. It has all the CPU components we
-have detailed above. It is programmed in machine code but for simplicity it uses
-the denary rather than the binary number system.
+The [Little Man Computer]() is a simplified computer that works on Von Neuman
+principles. It has all the CPU components we have detailed above. It is
+programmed in machine code but for simplicity it uses the denary rather than the
+binary number system.
 
 ![LMC_5.gif](LMC_5.gif)
 

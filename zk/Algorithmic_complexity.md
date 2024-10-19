@@ -2,6 +2,8 @@
 tags: [algorithms]
 ---
 
+# Algorithmic complexity
+
 ![Screenshot_2021-05-11_at_18.55.23.png](Screenshot_2021-05-11_at_18.55.23.png)
 _Summary of the main classes of algorithmic complexity_
 

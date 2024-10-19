@@ -3,6 +3,8 @@ tags:
   - prealgebra
 ---
 
+# Rules for operations on like and unlike terms
+
 ## Addition
 
 ### Like terms

@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Shell sessions
+
 ## **Types of shell session**
 
 Shell sessions can be one of or several instances of the following types:

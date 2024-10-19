@@ -3,7 +3,7 @@ tags:
   - typescript
 ---
 
-## Function overloads
+# Function overloads
 
 Function overloading is not a feature of JavaScript but something close to it
 can be achieved with TypeScript. It proceeds by defining multiple function types

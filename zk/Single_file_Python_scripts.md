@@ -4,7 +4,7 @@ tags: []
 created: Friday, April 26, 2024
 ---
 
-# Single_file_Python_scripts
+# Single file Python scripts
 
 ## Basic architecture
 

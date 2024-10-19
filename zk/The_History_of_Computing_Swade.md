@@ -3,6 +3,8 @@ tags: [literature, computer-history]
 created: Friday, August 23, 2024
 ---
 
+# History of Computing (Swade, 2022 )
+
 | Title                                               | Author      | Publication date | Resource type |
 | --------------------------------------------------- | ----------- | ---------------- | ------------- |
 | The History of Computing: A Very Short Introduction | Doron Swade | 2022             | Book          |
