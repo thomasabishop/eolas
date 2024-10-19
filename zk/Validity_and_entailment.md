@@ -4,7 +4,7 @@ tags:
   - logic
 ---
 
-## Validity
+# Validity and entailment
 
 ### Informal definition
 

@@ -4,6 +4,8 @@ tags:
   - Turing
 ---
 
+# Turing Machines
+
 ## What is a Turing Machine?
 
 Turing Machine is a machine that contains mutable state, executes sequences of

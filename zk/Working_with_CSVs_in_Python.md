@@ -4,7 +4,7 @@ tags: [python, csv]
 created: Sunday, April 28, 2024
 ---
 
-# Working_with_CSVs_in_Python
+# Working with CSVs in Python
 
 ## Core package
 

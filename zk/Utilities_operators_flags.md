@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Utilities, operators, flags in Bash
+
 The following are useful built-in utility methods that you can use for checking
 and validation in the course of your bash scripts.
 

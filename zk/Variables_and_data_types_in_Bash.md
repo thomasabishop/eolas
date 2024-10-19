@@ -3,6 +3,8 @@ tags:
   - shell
 ---
 
+# Variables and datatypes in Bash
+
 ## Types
 
 ## Variables

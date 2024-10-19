@@ -2,6 +2,8 @@
 tags: []
 ---
 
+# The Pragmatic Programmer (Hunt/Thomas, 1999)
+
 ## General
 
 ### Meyer's Uniform Access Principle

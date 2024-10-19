@@ -4,6 +4,8 @@ tags:
   - propositional-logic
 ---
 
+# Truth trees
+
 ## Rationale
 
 Like [truth-tables](Truth-tables.md), truth-trees are a means of graphically
