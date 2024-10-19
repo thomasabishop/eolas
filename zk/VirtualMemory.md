@@ -36,10 +36,10 @@ It is also possible for the kernel to present user space with an available
 virtual memory capcacity that exceeds the current physical capacity of the
 machine:
 
-> _It's possible for the kernel and all running processes to request more bytes
-> of virtual memory than the total size of RAM. In that situation, the OS can
-> move move bytes of memory to secondary storage to make room in RAM for newly
-> requested memory._
+> _It's possible for the kernel and all running processes to request more
+> byte<!--  -->s of virtual memory than the total size of RAM. In that
+> situation, the OS can move move bytes of memory to secondary storage to make
+> room in RAM for newly requested memory._
 
 _How Computers Really Work_ (2021) p.206
 
