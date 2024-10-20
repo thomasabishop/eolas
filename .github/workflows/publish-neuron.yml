@@ -12,9 +12,16 @@ jobs:
       run: |
         mkdir -p .neuron/output && touch .neuron/output/.nojekyll
         NEURON_DIR=$(ls -d neuron/*/ | head -n 1)
+        echo "Neuron directory: $NEURON_DIR"
         cd $NEURON_DIR
         docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls
+        echo "Contents of current directory after Neuron generation:"
+        ls -R
+        echo "Moving .neuron directory..."
         mv .neuron ../../.neuron
+        cd ../..
+        echo "Contents of .neuron directory:"
+        ls -R .neuron
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
