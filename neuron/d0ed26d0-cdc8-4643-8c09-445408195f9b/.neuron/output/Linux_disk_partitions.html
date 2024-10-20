@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Linux disk partitions - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="A disk is divided up into partitions which are subsections of the overall disk. The kernel presents each partition as a block device as it would with an entire disk." name="description" /><meta content="Linux disk partitions" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Linux_disk_partitions" property="neuron:zettel-id" /><meta content="Linux_disk_partitions" property="neuron:zettel-slug" /><meta content="Linux" property="neuron:zettel-tag" /><meta content="disks" property="neuron:zettel-tag" /><meta content="procedural" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body blockquote {
+    border-left-width: 3px !important;
+    font-style: italic;
+  }
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans Condensed" !important;
+  }
+  body p {
+    line-height: 1.4;
+  }
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Linux disk partitions</h1><p>A disk is divided up into partitions which are subsections of the overall disk. The kernel presents each partition as a <a href="Devices.md#Devices">block device</a> as it would with an entire disk.</p><p>The disk dedicates a small part of its contents to a <strong>partition table</strong>: this defines the different partitions that comprise the total disk space.</p><h2 id="viewing-current-partitions">Viewing current partitions</h2><p>Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: <code>parted</code>, <code>g(raphical)parted</code>, <code>fdisk</code>.</p><p>For a top-level overview of your disks and their main partitions you can run <code>lsblk</code> (<em>list block devices</em>):</p><pre><code class="bash language-bash">$ lsblk
+
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda           8:0    0 465.7G  0 disk
+├─sda1        8:1    0   200M  0 part
+└─sda2        8:2    0 465.4G  0 part /run/media/thomas/ganesh
+nvme0n1     259:0    0 476.9G  0 disk
+├─nvme0n1p1 259:1    0   488M  0 part
+├─nvme0n1p2 259:2    0  27.9G  0 part /
+└─nvme0n1p3 259:3    0 448.5G  0 part /home</code></pre><p>We can use <code>parted -l</code> to view the partition table for the current machine:</p><pre><code class="bash language-bash">Model: SKHynix_HFS512GDE9X081N (nvme)
+Disk /dev/nvme0n1: 512GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start   End     Size    File system  Name  Flags
+ 1      1049kB  513MB   512MB   fat32              boot, esp
+ 2      513MB   30.5GB  30.0GB  ext4
+ 3      30.5GB  512GB   482GB   ext4</code></pre><p>We can use <code>fdisk -l</code> to get slightly more info:</p><pre><code class="bash language-bash">disk /dev/nvme0n1: 476.94 GiB, 512110190592 bytes, 1000215216 sectors
+Disk model: SKHynix_HFS512GDE9X081N
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 08175E77-CB9F-C34A-9032-DF29A3F8F0FE
+
+Device            Start        End   Sectors   Size Type
+/dev/nvme0n1p1     2048    1001471    999424   488M EFI System
+/dev/nvme0n1p2  1001472   59594751  58593280  27.9G Linux filesystem
+/dev/nvme0n1p3 59594752 1000214527 940619776 448.5G Linux filesystem</code></pre><h2 id="standard-linux-partitions">Standard Linux partitions</h2><p>The two tools disclose that the main harddrive is <code>/dev/nvme0n1</code> (equivalent to <code>sda</code> on older machines running Linux) and it has the standard three partitions:</p><ul><li>Boot partition (<code>/dev/nvme0n1p1</code>)</li><li>Root dir (<code>/dev/nvme0n1p2</code>)</li><li>Home dir (<code>/dev/nvme0n1p3</code>)</li></ul><h3 id="boot-partition">Boot partition</h3><ul><li>Takes up the smallest amount of space</li><li>Contains the Linux kernel and the bootloader (GRUB, usually) and any other files required for booting.</li><li>Once the BIOS has initialized the hardware components it hands control to the bootloader stored in this partition.</li><li>The bootloader loads the kernel contained in its partition, into memory</li></ul><h3 id="root-partition-">Root partition (<code>/</code>)</h3><ul><li><p>This houses everything to do with the operation of the operating system apart from the initial booting process. Once the kernel is in memory it accesses the resources in the root partition to get the OS up and running. These resources include system libraries, utilities, system-wide configs and application software.</p></li><li><p>The root partition is vital for the system’s functionality. Without it, the system cannot boot or operate. It needs to be<br />large enough to accommodate the operating system, installed programs, and system libraries, but it doesn’t need to store user data or<br />additional applications, which can be located on other partitions.</p></li><li><p>This is the domain of the <a href="User_Space.md#root-user-superuser">superuser</a>. The part of the filesystem that you need sudo priveleges to access and where you manage users</p></li></ul><h3 id="home-partition">Home partition</h3><ul><li>This is presented as <code>/home/</code>, i.e. that it is a descendent of <code>/</code>. But this is because the Linux file system is hierarchical. Typically <code>/home/</code> is usually its own partition.</li><li>Separating user data and system data in this way protects user data during upgrades or reinstallation. Reinstalling or upgrading the OS can be done without affecting these files.</li><li>Each user has their own directory off of <code>/home</code>, e.g <code>/home/thomas</code>.</li><li>While the root partition (<code>/</code>) is essential for the operation of the OS, placing <code>/home</code> on a separate partition allows for better management of user data, enhancing the system’s flexibility and the user’s control over their own files, without compromising the integrity or performance of the OS. This approach exemplifies the Linux philosophy of giving the user control while maintaining a clear distinction between system<br />resources and user data.</li></ul><h2 id="types-of-partition-table">Types of partition table</h2><p>In the Linux world there are two main types: MBR and GPT. The type of table used determines how the OS boots. So although partition tables are also responsible for the partitioning of non-bootable sectors of a disk, <strong>they are distinguished by the boot system they implement</strong>. If we look at the output from <code>parted</code> and <code>fdisk</code> above we see that the harddrive uses the GPT partition type.</p><h4 id="primary-extended-and-logical-partitions">Primary, extended and logical partitions</h4><p>Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as ‘bootable’ and may be called the ‘boot partition’. During the bootstrapping process this is injected into memory as the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel.html">kernel</a></span></span>.</p><p>The extended partition is basically everything other than the primary partition. This is typically subdivided into other partitions that are called <em>logical</em> partitions. This is because they physically reside in the same sector of the disk (the extended partition) but are treated as virtual and independent disks.</p><p>In our example above:</p><ul><li><code>/dev/nvme0n1p1</code> is the primary/boot partition</li><li><code>/dev/nvme0n1p2</code> and <code>/dev/nvme0n1p3</code> comprise the extended partition and by themselves are each logical partitions.</li></ul><dl>
+  <dt>MBR</dt>
+  <dd> 
+    <ul>
+      <li>Stands for Master Boot Record</li> 
+      <li>Uses BIOS in the boot process</li> 
+      <li>Can only works with disks up to 2TB in size</li> 
+      <li>Only supports 4 primary partitions. This means the number of operating systems you install is limitied to this number.</li> 
+      <li>This is the first 512 bytes of a storage device, preceding the first partition.</li>
+    </ul> 
+  </dd>
+  <dt>GPT</dt>
+  <dd>
+  <ul>
+      <li>Stands for GUID Partition Table </li>
+      <li>Gradually replacing MBR</li>
+      <li>Uses UEFI instead of BIOS</li>
+      <li>As name indicates, every partition on disk has its own globally-unique identifier</li>
+      <li>Vastly more partitions available than with MBR (dependent on operating system)</li>
+      <li>Offers greater recovery options and anti-corruption safeguards</li> 
+    </ul>
+</dd>
+</dl>
+<h2 id="related-notes">Related notes</h2><p><img alt="Creating a Linux partition table" src="/static/Creating_a_Linux_partition_table.md" /></p></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">Linux</span><span class="ui basic label zettel-tag" title="Tag">disks</span><span class="ui basic label zettel-tag" title="Tag">procedural</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse.html" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

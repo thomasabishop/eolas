@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Python modules - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="Modules and packages in Python are very similar to modules in Node.js: a combination of several pieces of functionality (often written in a mix of different syntactic styles) bundled together to be used as a unit." name="description" /><meta content="Python modules" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Python_modules_and_imports" property="neuron:zettel-id" /><meta content="Python_modules_and_imports" property="neuron:zettel-slug" /><meta content="OOP" property="neuron:zettel-tag" /><meta content="python" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body blockquote {
+    border-left-width: 3px !important;
+    font-style: italic;
+  }
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans Condensed" !important;
+  }
+  body p {
+    line-height: 1.4;
+  }
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Python modules</h1><h2 id="distinguishing-modules-from-packages">Distinguishing <em>modules</em> from <em>packages</em></h2><p>Modules and packages in Python are very similar to modules in Node.js: a combination of several pieces of functionality (often written in a mix of different syntactic styles) bundled together to be used as a unit.</p><ul><li>A <strong>module</strong> is basically just a script - a single Python file that you can import using the <code>import</code> statement</li><li>A <strong>package</strong> is a <em>collection of modules</em></li></ul><p>A package is a whole directory which has an <code>__init__.py</code> at its root which designates it as a package (this can be empty, but it is necessary to have this file for the interpreter to understand that the directory is a package).</p><h2 id="creating-modules">Creating modules</h2><h3 id="naming-modules">Naming modules</h3><p>The name of a module is the name of its file, e.g. <code>utils.py</code> defines the module <code>utils</code>. When we import a module we do not need to specify the extension.</p><h3 id="example-module">Example module</h3><p>Here is an example of a module.</p><pre><code class="py language-py">&quot;&quot;&quot;utils module&quot;&quot;&quot;
+
+print(&#39;Hello I am the utils module&#39;)
+
+
+def printer(some_object):
+    print(&#39;printer&#39;)
+    print(some_object)
+    print(&#39;done&#39;)
+
+
+class Shape:
+
+    def __init__(self, id):
+        self.id = id
+
+    def __str__(self):
+        return &#39;Shape - &#39; + self.id
+
+
+default_shape = Shape(&#39;square&#39;)
+
+
+def _special_function():
+    print(&#39;Special function&#39;)
+</code></pre><h2 id="importing-modules">Importing modules</h2><blockquote><p>Whether we are importing our own local module, a third-party module or a built-in module native to Python, the syntax is the same.</p></blockquote><ul><li>If the module is in the same directory as the file you wish to import it into, you can just directly import with:<pre><code class="py language-py">import utils
+utils.specialFunction
+shape = utils.Shape(&#39;circle&#39;)</code></pre></li><li>If the module you want to import is in a subdirectory, you will need to make that subdirectory a package in order to be able to import from it. This means adding an <code>__init__.py</code>. Then you can use the following import syntax:<pre><code class="py language-py">from subdir import utils
+...</code></pre></li></ul><h3 id="different-import-syntax">Different import syntax</h3><ul><li><p>If you don’t want to have to prepend the imported module’s name when using it (e.g. <code>utils.specialFunction</code>). You can import like so:</p><pre><code class="py language-py">from utils import *
+specialFunction()</code></pre></li><li><p>By default an import makes everything in the module available, however you can choose to import only a subset. E.g.:</p><pre><code class="py language-py">from utils import Shape
+#  or with an alias:
+from utils import Shape as lorem</code></pre></li></ul><h2 id="__main__"><code>__main__</code></h2><p>The <code>__main__</code> attribute is important in Python.</p><h3 id="usage-in-scriptsmodules">Usage in scripts/modules</h3><p>When you run a script (module) Python assigns the string <code>__main__</code> to the <code>__name__</code> attribute to the script that is being executed.</p><p>If you run the script as an import into another script, the <code>__name__</code> attribute of the imported module is set to the module name, not <code>__main__</code>. This is why, when we import we say <code>import [module_name]</code> and not <code>import __main__</code>.</p><p>When used with a module, <code>__main__</code> indicates code that should be run straight away when the given script file is run. You won’t always want to execute everything in the module file on execution so you can put this stuff outside of <code>__main__</code></p><p>Typically you will only want immediate execution to happen when <strong>the module is the entrypoint</strong> to the program.</p><p>We indicate this with <code>__main__</code> as follows:</p><pre><code class="py language-py">if __name__ == &quot;__main__&quot;:
+    print(&quot;This runs only if the module is the main module&quot;)</code></pre><h3 id="usage-in-packages">Usage in packages</h3><p>The only real difference with packages is that you can also define a <code>__main__.py</code> file in the root of the package directory.</p><p>This functions in the same manner as <code>__main__</code> in an individual module however this time it is not the entry point for a single script but the entrypoint of the package as a whole.</p><blockquote><p>When the package is run directly as a script, the code in <code>__main__.py</code> is executed, just like it would be if it were a standalone script. This allows a package to be run as a script, as well as letting it contain modules that can be imported separately.</p></blockquote><p>You can of course still have individual entrypoints for the modules that comprise the package.</p><h3 id="running-the-package-as-a-package">Running the package as a package</h3><p>If you want to run the whole package at once, rather than individually importing the modules that belong to it. You can run the following from the command-line:</p><pre><code class="language-none">python -m package_name</code></pre><p>With this, Python will try to locate the <code>__main__.py</code> file and execute it as though it were a standalone script.</p><h3 id="using-a-main-function">Using a <code>main()</code> function</h3><p>To ensure that certain code runs on initialisation we can define a special <code>main</code> function or class method that runs when the module or package is loaded.We would put the main set-up logic in <code>main</code> and coordinate the execution of the module or package through it.</p><pre><code class="py language-py">def main():
+    printer(default_shape)
+    shape = Shape(&quot;circle&quot;)
+    printer(shape)
+
+if __name__ == &quot;__main__&quot;:
+    main()</code></pre><h3 id="example">Example</h3><pre><code class="py language-py">&#39;&#39;&#39;palindrome module&#39;&#39;&#39;
+
+def is_palindrome(inp):
+    inp_list = list(inp)
+    inp_list_len = len(inp_list)
+    for i in range(inp_list_len):
+        if inp_list[i] != inp_list[inp_list_len - 1 - i]:
+            return False
+    return True
+
+
+def main():
+    palindrome_one = &quot;soros&quot;
+    palindrome_two = &quot;torot&quot;
+    not_palindrome = &quot;chair&quot;
+
+    print(is_palindrome(palindrome_one))
+    print(is_palindrome(palindrome_two))
+    print(is_palindrome(not_palindrome))
+
+
+if __name__ == &#39;__main__&#39;:
+    main()</code></pre></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">OOP</span><span class="ui basic label zettel-tag" title="Tag">python</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse.html" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>
