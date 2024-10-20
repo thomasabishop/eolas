@@ -14,7 +14,7 @@ jobs:
         NEURON_DIR=$(ls -d neuron/*/ | head -n 1)
         if [ -n "$NEURON_DIR" ]; then
           echo "Found Neuron directory: $NEURON_DIR"
-          docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /neuron/$(ls -d neuron/*/ | sed 's/neuron\///' | head -n 1)
+          docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /neuron/$(ls -d neuron/*/ | sed 's/neuron\///' | sed 's/\///' | head -n 1)
         else
           echo "No subdirectory found in neuron/"
           exit 1
