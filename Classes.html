@@ -1,0 +1,149 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Classes - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="TypeScript offers full type annotations for classes. It also introduces several TypeScript-specific options (control access modifiers, interfaces etc) that do not exist in JavaScript but which seek to bring it into closer alignment with more strict object-oriented languages like Java and C#." name="description" /><meta content="Classes" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Classes" property="neuron:zettel-id" /><meta content="Classes" property="neuron:zettel-slug" /><meta content="OOP" property="neuron:zettel-tag" /><meta content="typescript" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body blockquote {
+    border-left-width: 3px !important;
+    font-style: italic;
+  }
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans Condensed" !important;
+  }
+  body p {
+    line-height: 1.4;
+  }
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Classes</h1><h2 id="type-declarations-for-classes">Type declarations for classes</h2><p>TypeScript offers full type annotations for classes. It also introduces several TypeScript-specific options (control access modifiers, interfaces etc) that do not exist in JavaScript but which seek to bring it into closer alignment with more strict object-oriented languages like Java and C#.</p><p>A class in JavaScript:</p><pre><code class="js language-js">class Age {
+  constructor(name, birthYear) {
+    this.name = name;
+    this.birthYear = birthYear;
+  }
+  currentYear() {
+    return new Date().getFullYear();
+  }
+  get age() {
+    return this.currentYear() - this.birthYear;
+  }
+  get dataOutput() {
+    return `${this.personName} is ${this.age} years old`;
+  }
+}</code></pre><p>The same class in TypeScript:</p><pre><code class="ts language-ts">class Age {
+  personName: string;
+  birthYear: number;
+  constructor(personName: string, birthYear: number) {
+    this.personName = personName;
+    this.birthYear = birthYear;
+  }
+  currentYear(): number {
+    return new Date().getFullYear();
+  }
+  get age(): number {
+    return this.currentYear() - this.birthYear;
+  }
+  get dataOutput(): string {
+    return `${this.personName} is ${this.age} years old`;
+  }
+}</code></pre><p>The main points to note are:</p><ul><li>methods must specify their return type, as with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Functions"><a href="Functions">functions</a></span></span></li><li>the constructor function must specify its parameters’ types</li><li>we must declare the types of any properties we intend to use at the start of the class.</li></ul><h3 id="instantiating-a-class">Instantiating a class</h3><p>In order to create an object instance of <code>Age</code>, we can use the standard constructor function, viz:</p><pre><code class="js language-js">const mum = new Age(&quot;Mary Jo&quot;, 1959);
+console.log(mum);
+
+/* Age { personName: &#39;Mary Jo&#39;, birthYear: 1959 } */</code></pre><p>But given that classes define objects, we can also now use <code>Age</code> as a new custom type and define an object that way</p><pre><code class="jsx language-jsx">const thomas: Age = new Age(&quot;Thomas&quot;, 1988);</code></pre><h3 id="without-constructor">Without constructor</h3><p>If your class does not use a constructor, you still need to define your class property types at the top:</p><pre><code class="tsx language-tsx">class Dummy {
+  aNum: number = 4;
+  get getSquare(): number {
+    return this.aNum * this.aNum;
+  }
+}</code></pre><h2 id="interfaces">Interfaces</h2><p>In most cases the difference between using the <code>type</code> and <code>interface</code> keywords when defining a custom type is marginal however interfaces are specifically designed for classes and OOP style programming in TypeScript. This is obviously most apparent in a framework like Angular where interfaces are used heavily.</p><p>When we use an interface with a class we are asserting that the class must have certain properties and methods in order to qualify as that type. This is most helpful when you are working with several developers and want to ensure consistency.</p><p>Let’s say we have the following interface:</p><pre><code class="ts language-ts">interface Person {
+  firstName: string;
+  secondName: string;
+  age: number;
+  employed: () =&gt; boolean;
+}</code></pre><p>Now we want to create a class that must share this shape. We go ahead and create the class and say that it <strong>implements</strong> <code>Person</code> :</p><pre><code class="ts language-ts">class Programmer implements Person {
+// If the below are not included, TS will generate an error
+	firstName: string,
+	secondName: string,
+	age: number,
+	employed: () =&gt; boolean
+}</code></pre><h2 id="inheritance">Inheritance</h2><p>We can extend classes in TypeScript by using sub-classes or abstract classes.</p><h3 id="sub-classes">Sub-classes</h3><p>In the case of sub-classes, we use the phrase <code>[child_class] extends [parent_class]</code> in the class declaration to designate the inheritance relationship between the base class and the new class that is derived from it.</p><blockquote><p>A derived class has all the properies and methods of its base class but can also define additional members.</p></blockquote><p>When you instantiate a child class from a parent class, if the parent class has constructor values, you must initialise these in the child. You do this by calling the parent constructor via the <code>super()</code> syntax. For example:</p><pre><code class="ts language-ts">class Employee extends Person {
+  constructor(firstName: string, lastName: string, private jobTitle: string) {
+    // call the constructor of the Person class:
+    super(firstName, lastName);
+  }
+}</code></pre><p>To override or alter a method that exists on the parent in the child, you can use the syntax <code>super.[methodName]()</code>.</p><h3 id="abstract-classes">Abstract classes</h3><p>Classes marked <code>abstract</code> are similar to parent in the case of sub-classes. The difference is that they are like templates. Several of their methods and properties may be directly inherited by classes that derive from them (just like sub-classes) but they can include ‘blank’ methods and properties that are placeholders for methods and properties that are defined in the derivation class.</p><p>I have found this useful for cases where you want to inherit methods from a parent class but implement a specific method differently in each derivation.</p><pre><code class="ts language-ts">export abstract class IndexHyperlinksProvider
+   implements vscode.TreeDataProvider&lt;TreeItem&gt;
+{
+   public activeFile: string | undefined
+   private outlinks
+   private fileSystemUtils: FileSystemUtils
+
+   constructor(
+      activeFile: string | undefined,
+      workspaceRoot: string | undefined
+   ) {
+      this.setActiveFile(activeFile)
+      this.outlinks = this.generateLinks()
+      this.fileSystemUtils = new FileSystemUtils(workspaceRoot)
+   }
+
+   abstract generateLinks(): Promise&lt;TreeItem[] | undefined&gt;
+
+   public setActiveFile(activeFile: string | undefined) {
+      this.activeFile = activeFile
+   }
+  ...</code></pre><p>Above we have a base class with a single abstract method <code>generateLinks()</code>. The class below extends this base. Note that it passes the parent constructor values to <code>super</code> and defines an actual method for the designated <code>generateLinks()</code> template:</p><pre><code class="ts language-ts">export class IndexOutlinksProvider extends IndexHyperlinksProvider {
+  public workspaceFiles: string[];
+  public context: vscode.ExtensionContext;
+  constructor(
+    activeFile: string | undefined,
+    workspaceRoot: string | undefined,
+    workspaceFiles: string[],
+    context: vscode.ExtensionContext
+  ) {
+    super(activeFile, workspaceRoot);
+    this.workspaceFiles = workspaceFiles;
+    this.context = context;
+  }
+
+  public async generateLinks(): Promise&lt;TreeItem[] | undefined&gt; {
+    const indexer = new IndexHyperlinks(this.context, this.workspaceFiles);
+    if (typeof this.activeFile === &quot;string&quot;) {
+      const outlinks = await indexer.indexOutlinks(this.activeFile);
+      if (outlinks !== undefined) {
+        return this.transformLinksToTreeItem(outlinks);
+      }
+    }
+    return;
+  }
+}</code></pre><blockquote><p>Importantly, you cannot instantiate abstract classes. You can only <code>extend</code> them and then instantiate their derivation. This is another important difference from sub-classes.</p></blockquote><p>As with sub-classes, you must initialise the properties of the parent constructor with <code>super</code>.</p><h3 id="implements-vs-extends"><code>implements</code> vs <code>extends</code></h3><p>You shouldn’t confuse <code>implements</code> with <code>extends</code>. <code>implements</code> just checks the class as an interface in accordance with the principles of <a href="Custom_types_in_TypeScript.md#duck-typing">duck typing</a>: i.e the implementing class should have the same properties and methods. It doesn’t affect anything internal to the methods or properties. So e.g, if you typed a method parameter as <code>string</code> in the base class, this would still default to <code>any</code> in the derived class.</p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Custom_types_in_TypeScript">Custom types</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Objects and <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Classes"><a href="Classes">classes</a></span></span> are where TypeScript becomes most useful and powerful. In TypeScript, objects and classes are by definition custom types.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">OOP</span><span class="ui basic label zettel-tag" title="Tag">typescript</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>
