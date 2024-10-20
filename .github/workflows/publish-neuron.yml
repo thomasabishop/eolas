@@ -11,8 +11,21 @@ jobs:
     - name: Build neuron site 🔧
       run: |
         mkdir -p .neuron/output && touch .neuron/output/.nojekyll
-        NEURON_FILE=$(ls eolas/neuron/*.md | head -n 1)
-        docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /notes/$NEURON_FILE
+        NEURON_DIR=$(find eolas/neuron -maxdepth 1 -type d -regex '.*/[a-f0-9-]\{36\}' | head -n 1)
+        if [ -n "$NEURON_DIR" ]; then
+          echo "Found Neuron directory: $NEURON_DIR"
+          NEURON_FILE=$(find "$NEURON_DIR" -name "*.md" | head -n 1)
+          if [ -n "$NEURON_FILE" ]; then
+            echo "Found Neuron file: $NEURON_FILE"
+            docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /notes
+          else
+            echo "No .md files found in $NEURON_DIR"
+            exit 1
+          fi
+        else
+          echo "No matching directory found in eolas/neuron"
+          exit 1
+        fi
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
