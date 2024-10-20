@@ -10,18 +10,16 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build neuron site 🔧
       run: |
-        mkdir -p .neuron/output && touch .neuron/output/.nojekyll
         NEURON_DIR=$(ls -d neuron/*/ | head -n 1)
         echo "Neuron directory: $NEURON_DIR"
         cd $NEURON_DIR
         docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls
-        echo "Contents of current directory after Neuron generation:"
-        ls -R
-        echo "Moving .neuron directory..."
-        mv .neuron ../../.neuron
+        echo "Copying generated files..."
+        mkdir -p ../../.neuron/output
+        docker cp $(docker ps -lq):/notes/.neuron/output/. ../../.neuron/output/
         cd ../..
-        echo "Contents of .neuron directory:"
-        ls -R .neuron
+        echo "Contents of .neuron/output directory:"
+        ls -R .neuron/output
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
