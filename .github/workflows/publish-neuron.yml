@@ -11,12 +11,12 @@ jobs:
     - name: Build neuron site 🔧
       run: |
         mkdir -p .neuron/output && touch .neuron/output/.nojekyll
-        NEURON_DIR=$(find neuron -maxdepth 1 -type d -regex 'neuron/[a-f0-9-]\{36\}' | head -n 1)
+        NEURON_DIR=$(ls -d neuron/*/ | head -n 1)
         if [ -n "$NEURON_DIR" ]; then
           echo "Found Neuron directory: $NEURON_DIR"
-          docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /notes
+          docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls
         else
-          echo "No directory matching neuron/UUID format found"
+          echo "No subdirectory found in neuron/"
           exit 1
         fi
     - name: Deploy to gh-pages 🚀
