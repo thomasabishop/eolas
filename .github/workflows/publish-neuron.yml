@@ -2,7 +2,7 @@ name: "Publish Neuron Site"
 on:
   push:
     branches:
-      - master  # or your main branch name
+      - master
 jobs:
   neuron:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
     - name: Build neuron site 🔧
       run: |
         mkdir -p .neuron/output && touch .neuron/output/.nojekyll
-        NEURON_DIR=$(find eolas/neuron -maxdepth 1 -type d -regex '.*/[a-f0-9-]\{36\}' | head -n 1)
+        NEURON_DIR=$(find neuron -maxdepth 1 -type d -regex '.*/[a-f0-9-]\{36\}' | head -n 1)
         if [ -n "$NEURON_DIR" ]; then
           echo "Found Neuron directory: $NEURON_DIR"
           NEURON_FILE=$(find "$NEURON_DIR" -name "*.md" | head -n 1)
@@ -23,7 +23,7 @@ jobs:
             exit 1
           fi
         else
-          echo "No matching directory found in eolas/neuron"
+          echo "No matching directory found in neuron/"
           exit 1
         fi
     - name: Deploy to gh-pages 🚀
