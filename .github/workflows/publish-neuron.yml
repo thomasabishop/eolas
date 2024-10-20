@@ -12,13 +12,9 @@ jobs:
       run: |
         mkdir -p .neuron/output && touch .neuron/output/.nojekyll
         NEURON_DIR=$(ls -d neuron/*/ | head -n 1)
-        if [ -n "$NEURON_DIR" ]; then
-          echo "Found Neuron directory: $NEURON_DIR"
-          docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls /neuron/$(ls -d neuron/*/ | sed 's/neuron\///' | sed 's/\///' | head -n 1)
-        else
-          echo "No subdirectory found in neuron/"
-          exit 1
-        fi
+        cd $NEURON_DIR
+        docker run -v $PWD:/notes sridca/neuron neuron gen --pretty-urls
+        mv .neuron ../../.neuron
     - name: Deploy to gh-pages 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
