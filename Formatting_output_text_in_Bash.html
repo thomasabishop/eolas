@@ -54,7 +54,7 @@ Thomas		123</code></pre><h2 id="break-text-over-several-lines">Break text over s
 
 This text
 breaks over
-three lines</code></pre><h2 id="colour-outputs">Colour outputs</h2><p><img src="/static/terminal_colours.png" /></p><pre><code class="bash language-bash">echo -e &quot;\033[31;40mColoured Text\033[0m&quot;</code></pre><p>The coloured section is prepended by <code>\033[</code> and ended with <code>[0m</code>. The foreground colour is given first, and then the background colour.</p><p>We can also change the text style. We do this by adding an extra value after the first square bracket:</p><pre><code class="bash language-bash">echo -e &quot;\033[4;31;40mColoured Text\033[0m&quot;</code></pre><p>This underlines the output.</p><p>We can create a script that simplifies the construction of colour-formatted text, e.g</p><pre><code class="bash language-bash">ulinered=&quot;\033[4;31;40m&quot;
+three lines</code></pre><h2 id="colour-outputs">Colour outputs</h2><p><img src="static/terminal_colours.png" /></p><pre><code class="bash language-bash">echo -e &quot;\033[31;40mColoured Text\033[0m&quot;</code></pre><p>The coloured section is prepended by <code>\033[</code> and ended with <code>[0m</code>. The foreground colour is given first, and then the background colour.</p><p>We can also change the text style. We do this by adding an extra value after the first square bracket:</p><pre><code class="bash language-bash">echo -e &quot;\033[4;31;40mColoured Text\033[0m&quot;</code></pre><p>This underlines the output.</p><p>We can create a script that simplifies the construction of colour-formatted text, e.g</p><pre><code class="bash language-bash">ulinered=&quot;\033[4;31;40m&quot;
 red=&quot;\033[31;40m&quot;
 none=&quot;\033[0m&quot;
 
