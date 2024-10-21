@@ -11,9 +11,9 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progess
 comprising notes from my self-directed study of software engineering and
 computer science.
  
-**Build ID:** a52857b8-9da0-485b-a948-99e7903b251d
+**Build ID:** 613ccec5-1e2f-4825-8992-c4d4d5cb7dc8
 
-**Published:** Mon 21 Oct 2024 10:00:01
+**Published:** Mon 21 Oct 2024 11:00:01
 
 ### Recent edits 
 
