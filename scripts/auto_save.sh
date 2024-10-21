@@ -1,15 +1,12 @@
 #!/bin/bash
 
-#===================================================================================
-#
-# FILE: auto_save.sh
-#
-# USAGE: auto_save.sh 
-#
-# DESCRIPTION: Automatically pulls and commits changes to remote after: 
-# Running cleanup scripts 
-# Generating Neuron zettelkasten static site and writing to neuron/ 
-#===================================================================================
+#============================================================================#
+# FILE: auto_save.sh																												 #
+# USAGE: auto_save.sh																												 #
+# DESCRIPTION: Automatically pulls and commits changes to remote after:      #
+# running cleanup scripts																										 #
+# generating Neuron zettelkasten static site and writing to neuron/					 #
+#============================================================================#
 
 USER=thomas
 export XDG_RUNTIME_DIR=/run/user/1000
@@ -17,7 +14,7 @@ export XDG_RUNTIME_DIR=/run/user/1000
 source /home/thomas/.env
 
 tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
-purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
+# purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
 cd /home/thomas/repos/eolas
 
