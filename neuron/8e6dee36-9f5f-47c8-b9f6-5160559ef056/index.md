@@ -11,25 +11,24 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
  
-**Build ID:** 6675f329-3b33-497e-accb-2333f4cb63df
+**Build ID:** 8e6dee36-9f5f-47c8-b9f6-5160559ef056
 
-**Published:** Tue 22 Oct 2024 08:25:11
+**Published:** Tue 22 Oct 2024 16:25:47
 
 ### Recent edits 
 
-- [[385af4b4-43ea-4a5f-85a3-5791d95109aa]] 
-- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
 - [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
+- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
 - [[cfbef1c4_95ea_4fd1_85b8_536492e45e31]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[VirtualMemory]] 
 - [[Zero_property_of_multiplication]] 
 - [[Working_with_CSVs_in_Python]] 
+- [[Variables_and_data_types_in_Bash]] 
 
 
-### All notes (465) 
+### All notes (464) 
 
-- [[385af4b4-43ea-4a5f-85a3-5791d95109aa]] 
 - [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
 - [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
 - [[API_Gateway]] 
