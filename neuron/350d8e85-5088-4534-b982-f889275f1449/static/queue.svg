@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="437px" height="301px" viewBox="0 0 437 301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="437" height="301"></rect>
+        <g id="Data_Queue" transform="translate(47.000000, 22.000000)">
+            <rect id="node0" stroke="#6D7278" stroke-width="1.00000924" fill-opacity="0.1" fill="#000000" fill-rule="nonzero" transform="translate(89.496750, 132.289251) rotate(89.753630) translate(-89.496750, -132.289251) " x="45.9963478" y="118.789126" width="87.0008043" height="27.0002496"></rect>
+            <polygon id="path1446" stroke="#6D7278" fill="#6D7278" fill-rule="nonzero" points="324.901 146.491 326.067 163.674 315.986 149.682"></polygon>
+            <path d="M58.158,130.233 L58.158,130.233 C4.629,121.641 13.264,92.714 13.264,92.714" id="path2432" stroke="#6D7278" stroke-width="0.7364"></path>
+            <path d="M322.443,151.213 L322.443,151.213 C302.228,124.401 246.556,129.739 246.556,129.739" id="path3204" stroke="#6D7278" stroke-width="0.7313"></path>
+            <rect id="rect2481" stroke="#6D7278" stroke-width="1.00000924" fill-opacity="0.1" fill="#000000" fill-rule="nonzero" transform="translate(124.496150, 132.289551) rotate(89.753630) translate(-124.496150, -132.289551) " x="80.9957478" y="118.789426" width="87.0008043" height="27.0002496"></rect>
+            <rect id="rect2483" stroke="#6D7278" stroke-width="1.00000924" fill-opacity="0.1" fill="#000000" fill-rule="nonzero" transform="translate(159.496550, 132.290751) rotate(89.753630) translate(-159.496550, -132.290751) " x="115.996148" y="118.790626" width="87.0008043" height="27.0002496"></rect>
+            <rect id="rect2485" stroke="#6D7278" stroke-width="1.00000924" fill-opacity="0.1" fill="#000000" fill-rule="nonzero" transform="translate(194.496250, 132.291151) rotate(89.753630) translate(-194.496250, -132.291151) " x="150.995848" y="118.791026" width="87.0008043" height="27.0002496"></rect>
+            <rect id="rect2487" stroke="#6D7278" stroke-width="1.00000924" fill-opacity="0.1" fill="#000000" fill-rule="nonzero" transform="translate(229.495850, 132.291451) rotate(89.753630) translate(-229.495850, -132.291451) " x="185.995448" y="118.791326" width="87.0008043" height="27.0002496"></rect>
+            <polygon id="path2489" stroke="#6D7278" fill="#6D7278" fill-rule="nonzero" points="52.739 125.016 69.294 129.764 52.706 134.485"></polygon>
+            <rect id="rect2491" stroke="#FA6400" stroke-width="1.00000924" fill-opacity="0.426283189" fill="#FA6400" fill-rule="nonzero" transform="translate(14.499150, 44.249475) rotate(89.753630) translate(-14.499150, -44.249475) " x="-29.0012522" y="30.7493502" width="87.0008043" height="27.0002496"></rect>
+            <rect id="rect2493" stroke="#6DD400" stroke-width="1.00000924" fill-opacity="0.423111069" fill="#6DD400" fill-rule="nonzero" transform="translate(329.494752, 212.751725) rotate(89.753630) translate(-329.494752, -212.751725) " x="285.99385" y="199.2516" width="87.0018043" height="27.0002496"></rect>
+        </g>
+    </g>
+</svg>
