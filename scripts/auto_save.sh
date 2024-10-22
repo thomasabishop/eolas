@@ -12,7 +12,7 @@ USER=thomas
 export XDG_RUNTIME_DIR=/run/user/1000
 source /home/thomas/.env
 
-tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
+# tidy_filenames="/home/thomas/repos/eolas/scripts/tidy_filenames.sh"
 # purge_images="/home/thomas/repos/eolas/scripts/purge_images.sh"
 
 cd /home/thomas/repos/eolas
@@ -28,7 +28,7 @@ if [ "$changes_exist" -eq 0 ]; then
 fi
 
 echo "Standardising file-names..."
-source ${tidy_filenames}
+# source ${tidy_filenames}
 
 # echo "Removing unused images..."
 # source ${purge_images}

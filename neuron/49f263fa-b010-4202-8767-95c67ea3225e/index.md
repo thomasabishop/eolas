@@ -11,15 +11,15 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
  
-**Build ID:** 350d8e85-5088-4534-b982-f889275f1449
+**Build ID:** 49f263fa-b010-4202-8767-95c67ea3225e
 
-**Published:** Tue 22 Oct 2024 17:53:56
+**Published:** Tue 22 Oct 2024 18:18:33
 
 ### Recent edits 
 
-- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
-- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
 - [[cfbef1c4_95ea_4fd1_85b8_536492e45e31]] 
+- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
+- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[VirtualMemory]] 
 - [[Zero_property_of_multiplication]] 
