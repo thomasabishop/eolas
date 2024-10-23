@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Mutations with Apollo Client</h1><p>Queries are read-only operations. Mutations are write-only operations.</p><p>Just like the <code>Query</code> type, the <code>Mutation</code> type serves as an entrypoint to the schema.</p><h2 id="naming-convention">Naming convention</h2><ul><li>Use verb: <code>add</code>, <code>create</code>, <code>delete</code></li><li>Refer to the datatype</li></ul><p>For example <code>addSpaceCat(){}</code></p><h2 id="demonstration-mutation">Demonstration mutation</h2><p>We are going to create a mutation that increments the <code>numberOfViews</code> field on the <code>Track</code> type:</p><h2 id="updating-the-schema">Updating the schema</h2><pre><code class="js language-js">type Mutation {

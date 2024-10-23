@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Primitive types</h1><p>The most basic type level is the one already present in JavaScript itself: the primitive data types: <code>boolean</code>, <code>string</code> and <code>number</code> . These are the types that would be returned from a <code>typeof</code> expression in ordinary JavaScript</p><h2 id="type-inference">Type inference</h2><p>You can explicitly declare these data types yourself when you create a variable with <code>var</code>, <code>const</code>, or <code>let</code> if you like, but it is generally unnecessary since Typescript is intelligent enough to perform <strong>type inference</strong> and will know from what you write which type you mean.</p><pre><code class="ts language-ts">const age: number = 32;

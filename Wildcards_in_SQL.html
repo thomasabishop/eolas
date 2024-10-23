@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Wildcards in SQL</h1><p>SQL does not use Regex. Instead it has a simpler glob-like syntax for carrying out string matching.</p><p>In order to signal that you wish to compare by a wildcard and not a value, you have to use the <code>LIKE</code> keyword. The actual wildcard operator is <code>%</code> .</p><p>In an SQL statement, the <code>%</code> wild card will match any number of occurrences of any character. Any characters can appear before or after ‘MacBook’ and the record will still be returned:</p><pre><code class="sql language-sql">SELECT name, cores, release_date

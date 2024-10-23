@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Middleware</h1><h2 id="what-is-middleware">What is middleware?</h2><ul><li>Anything that terminates the <code>req, res</code> cycle counts as middleware. It is basically anything that acts as an intermediary once the request is received but before the resource is sent. A good example would be the <code>app.use(express.json()</code> or <code>app.use(bodyParser.json)</code> functions we call in order to be able to parse JSON that is sent from the client.</li><li>You will most likely have multiple middleware functions running at once. We call this intermediary part of the cycle the <strong>request processing pipeline</strong>.</li><li>Generally all middleware will be added as a property on the Express <code>app</code> instance with the <code>app.use(...)</code> syntax.</li></ul><h2 id="creating-custom-middleware-functions">Creating custom middleware functions</h2><h3 id="basic-schema">Basic schema</h3><pre><code class="js language-js">app.use((req, res, next) =&gt; {

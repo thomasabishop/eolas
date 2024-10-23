@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">The <code>process</code> module in Node.js</h1><p><code>process</code> is a core module and a global object accessible from anywhere in a Node.js application. It contains functionality that allows us to interact with information about the current process instance of Node.</p><p>For example, we can use it to get environment information, read environment variables, parse arguments that are passed to the run command, communicate with the terminal and exit the current process.</p><h2 id="managing-runtime-environments">Managing runtime environments</h2><p>See <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Managing environments"><a href="Managing_environments_in_NodeJS">Managing Environments</a></span></span>.</p><h2 id="accessing-arguments-processargv">Accessing arguments: <code>process.argv</code></h2><p>We can use <code>process.argv</code> to return an array containing the command-line arguments passed when a Node process is launched. This could be a whole-app entrypoint (i.e. <code>index.js</code>) or a single file we are running.</p><p>For instance if we run the following file:</p><pre><code class="js language-js">// process-demo.js

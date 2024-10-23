@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Using arguments with Apollo Client</h1><h2 id="what-are-arguments">What are arguments?</h2><ul><li>An argument is a value you provide for a particular field in a query.</li><li>The schema must define the arguments that a field accepts (if any)</li><li>The resolver invokes a field’s provided arguments to determine how to return specific data</li><li>Some example use cases of arguments:<ul><li>retrieve specific objects</li><li>filter through a set of objects</li><li>transform a field’s returned value</li></ul></li></ul><h2 id="updated-schema">Updated schema</h2><p>In order to demonstrate arguments we need to expand the <a href="Apollo_Server.md#example-schema">original schema</a>.</p><p>Remember a Track is a group of modules that teaches about a specific topic. We are going to add:</p><ul><li><code>description</code> and <code>numberOfViews</code> fields to the original <code>Track</code> type</li><li>A new <code>Module</code> type</li><li>A field <code>modules</code> to the <code>Track</code> type that will be an array of type <code>Module</code></li></ul><pre><code class="js language-js">type Query {

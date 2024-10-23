@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating a RESTful API: Integrating the database</h1><p>So far we have set up the application and an <code>/api/courses</code> route which handles requests for RESTful API operations on a local array of course objects. We now want to have the endpoints operate on a MongoDB <code>courses</code> collection rather than the array.</p><h2 id="set-up">Set-up</h2><p>We will follow the routine for establishing a MongoDB instance as detailed in <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Connect to a database with Mongoose"><a href="Connect_to_Mongo_database">my notes</a></span></span> on Mongo:</p><ul><li><span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Creating a MongoDB database"><a href="Create_Mongo_database">Create MongoDB database</a></span></span></li><li><span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Connect to a database with Mongoose"><a href="Connect_to_Mongo_database">Connect to MongoDB database</a></span></span></li></ul><p>Our <code>index.js</code> now looks like the following:</p><pre><code class="js language-js">// index.js

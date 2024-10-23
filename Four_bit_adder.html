@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Four-bit adder</h1><p>A single <a href="Half_adder_and_full_adder.md#half-adder">half adder</a> and <a href="Half_adder_and_full_adder.md#fufll-adder">full adder</a> allows us to calculate the sum of two 1-bit numbers, but this is not much use in practice. To approximate what is really happening at the circuit level in computers we need to be able to add bigger binary numbers. We will demonstrate how this can be achieved for a four-bit number (nibble) using repeated full adders and half adders.</p><p>We want to be able to calculate the following sum:</p><pre><code class="language-none">0010

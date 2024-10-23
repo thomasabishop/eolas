@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Theorems and empty sets</h1><p>We know that when we construct a <a href="Formal_proofs_in_propositional_logic.md#derivation-rules">derivation</a> we start from a set of assumptions and then attempt to reach a proposition that is a consequence of the starting assumptions. However it does not always have to be the case that the starting set contains members. The set can in fact be empty.</p><p><em>Demonstration</em></p><p><img src="static/proofs-drawio-Page-5.drawio_2.png" /></p><p>We see in this example that there is no starting set and thus no primary assumptions. Instead we start with nothing other than the proposition we wish to derive. The proposition is effectively derived from itself. In these scenarios we say that we are constructing a derivation from an <strong>empty set</strong>.</p><p>Propositions which possess this property are called theorems:</p><blockquote><p>A proposition <span class="math inline">\(P\)</span> or a system of propositions in propositional logic is a theorem in a system of derivation for that logic if <span class="math inline">\(P\)</span> is derivable from the empty set.</p></blockquote><p>We represent a theorem as:</p><p><span class="math display">$$

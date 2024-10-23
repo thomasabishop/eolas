@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Command pattern</h1><p>This is typically used when you want to sequence a fairly large number of actions in a series with the option to undo or reverse them. Similarly to the mediator it has a one-to-many architecture (there is a central class that sequences the commands which are handled by other classes) but in addition to sending and routing requests between colleagues, it keeps a central store of them and can reverse actions.</p><p>The typical example is a calculator. Will will generate this using constructor function syntax, rather than ES6 class syntax.</p><p>You have a bunch of arithmetic functions:</p><pre><code class="jsx language-jsx">function add(x, y) {

@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Arrays in Bash</h1><p>We define an array as follows:</p><pre><code class="bash language-bash">words=(here are some words)</code></pre><p>We can also explicitly define an array using <code>declare</code> :</p><pre><code class="bash language-bash">declare -a words=(&quot;element1&quot; &quot;element2&quot; &quot;element3&quot;)</code></pre><h2 id="index-notation">Index notation</h2><p>We access specific array elements by their index using the same braces style we use with variables:</p><pre><code class="bash language-bash">echo &quot;${words[2]}&quot;

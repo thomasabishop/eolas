@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating a RESTful API: Introduction</h1><p>We are going to use Express to create a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: RESTful APIs"><a href="RESTful_APIs">RESTful API</a></span></span> in Node.js.</p><h2 id="request-types">Request types</h2><p>Express provides us with methods corresponding to each of the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: HTTP request types"><a href="HTTP_request_types">HTTP request types</a></span></span>:</p><ul><li><code>.get()</code></li><li><code>.post()</code></li><li><code>.put()</code></li><li><code>.delete()</code></li></ul><h2 id="our-data-set">Our data set</h2><blockquote><p>Typically when you create a RESTful API you are going to be returning data from a database. For simplicity we are just going simulate this with a simple data array so that we can focus on the Express syntax rather than database handling. Later we will integrate this with a <a href="05_%20Integrating_the_database.md">MongoDB database</a>.</p></blockquote><p>We will mainly work with the following array of objects:</p><pre><code class="js language-js">const courses = [

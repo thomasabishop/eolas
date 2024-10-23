@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating a Docker image</h1><p>We create a new image with <code>docker build...</code></p><p>The key components of a build:</p><ul><li>A Dockerfile</li><li>An asset directory (the <strong>build context</strong>) containing the Dockerfile and all resources needed for the build.</li></ul><h2 id="syntax">Syntax</h2><p>Here is an example of a Dockerfile that builds a container for running a Python app:</p><pre><code class="Dockerfile language-Dockerfile"># Use an official Python runtime as a parent image

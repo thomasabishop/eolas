@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">List comprehension</h1><p>List comprehension is a syntactic shorthand for applying a function to each element in a list without explicitly using loop syntax.</p><p>Since its introduction to the language, the same functionality has become achievable by using functional methods like <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Map and filter in Python"><a href="Map_and_filter_in_Python"><code>map</code> and <code>filter</code></a></span></span>, utilising <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Lambdas in Python"><a href="Lambdas_in_Python">lambdas</a></span></span> however list comprehension is often more straightforward and easier to read.</p><h2 id="syntax">Syntax</h2><p>Here is a basic example which applies <code>+ 1</code> to each integer in a list:</p><pre><code class="python language-python">values = [1, 2, 4, 6, 8, 9]

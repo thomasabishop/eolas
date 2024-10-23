@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Docker example: NodeJS backend with MySQL database</h1><p>We will utilise <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Docker Compose"><a href="Docker_Compose">Docker Compose</a></span></span> to combine two containers:</p><ul><li>A container for the NodeJS backend</li><li>A container for the MySQL database</li></ul><p>We will only create a Dockerfile for the NodeJS part since the existing <code>mysql</code> image is sufficient for most needs and does not require a specific configuration.</p><p>Each of the files listed below would be saved to the same source directory which would then form the basis of the <a href="Creating_a_Docker_image.md#creating-a-docker-image">build context</a>.</p><h2 id="docker-compose-file">Docker Compose file</h2><pre><code class="yml language-yml"># docker-compose.yml

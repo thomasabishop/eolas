@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Module pattern</h1><blockquote><p>Come back and compare this with learning from Node.js</p></blockquote><p>With the module design pattern we create encapsulation: the variables and functions (as methods) are kept private inside the module and cannot be overwritten. This design pattern is familiar from Node.js development: every package you import into your project and download from NPM is a module.</p><p>Generally you will create the module as a class, import it and then instantiate a new instance. However for private development, you could just as well use an object and duplicate it with <code>Object.create</code>.</p><h2 id="example">Example</h2><p>Here is an example of a simple module that returns the age of a person.</p><pre><code class="js language-js">export default class Age {

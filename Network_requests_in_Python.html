@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Making network requests in Python</h1><p>We can use the <code>requests</code> package to make API requests to <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: RESTful APIs"><a href="RESTful_APIs">RESTful</a></span></span> resources and handle the data as JSON.</p><pre><code class="sh language-sh">pip install requests</code></pre><p>Here is a basic architecture for making a <code>GET</code> request in Python.</p><pre><code class="python language-python">import requests

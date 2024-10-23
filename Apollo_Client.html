@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Apollo Client</h1><p>Apollo Client is the client-side counterpart to <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Apollo Server"><a href="Apollo_Server">Apollo Server</a></span></span>. We use it for managing queries and mutations from the frontend to our Apollo GraphQL server. It is specifically designed to work with React.</p><blockquote><p>We will be working with the <a href="Apollo_Server.md#example-schema">schema</a> we defined when working on the server</p></blockquote><h2 id="initializing-the-client">Initializing the client</h2><p>We initialise the client and set-up in memory caching to reduce network requests:</p><pre><code class="js language-js">const client = new ApolloClient({

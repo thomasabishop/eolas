@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Stale branches and pruning</h1><p>A <strong>stale branch</strong> is a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Remote tracking branches"><a href="Remote_tracking_branches">remote tracking branch</a></span></span> that <strong>no longer tracks anything</strong> because the actual branch on the remote has been deleted.</p><p>If <em>you</em> delete the remote branch, the remote tracking branch will also be deleted. However if a <em>collaborator</em> deletes the remote branch, your remote tracking branch will remain, becoming a stale branch.</p><p>In order to get rid of it, we need to manually remove it. We can do this with the general <code>prune</code> command:</p><pre><code class="sh language-sh">git remote prune origin

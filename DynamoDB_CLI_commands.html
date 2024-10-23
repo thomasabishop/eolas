@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">DynamoDB CLI commands</h1><h2 id="connecting-to-a-local-dockerprod-aws-dynamodb-instance">Connecting to a local (Docker)/prod (AWS) DynamoDB instance</h2><p>In order to distinguish between local and production accounts you should keep seperate profiles for each (via <code>.aws/config</code> and <code>.aws/credentials</code>).</p><p>When connecting to a local DB use the local profile and the local URL. Without the <code>--profile</code> flag, AWS will default to the <code>default</code> profile which will typically be your credentials for accessing AWS on the remote.</p><p>It also sometimes required to add the endpoint-url when working locally:</p><pre><code class="language-none">--endpoint-url http://localhost:800

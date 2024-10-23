@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Update a MongoDB document</h1><p>There are two methods for updating a document</p><ul><li>query first</li><li>update first</li></ul><h2 id="query-first-document-update">Query first document update</h2><p>With this approach we first execute a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Query a Mongo collection with Mongoose"><a href="Querying_a_Mongo_collection">query</a></span></span> to retrieve the document we want to edit and then make the change. We use the <code>findById</code> method to identify the document by its UUID and then <code>set</code> to update specified properties on the document. The <code>set</code> method is one of many operators that can be used to update values. For example there is also built-in operators for increment, renaming, multiplying values.</p><p>Query first is best used when you want to secure the update with some prior logic or to validate. For example you may not want to update a course if it is listed as published. You could use a query to determine the publish status and then only update the entry if it returns <code>isPublished: false</code>.</p><pre><code class="js language-js">async function updateCourseFromQuery(id) {

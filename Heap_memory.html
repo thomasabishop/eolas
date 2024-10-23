@@ -51,7 +51,7 @@
     line-height: 1.4 !important;
   }
   img[alt~="not-by-ai-badge"] {
-    border: 1px solid red;
+    width: 100px;
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Heap memory</h1><p>Along with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Stack memory"><a href="Stack_memory">Stack memory</a></span></span>, programs make use of <em>heap memory</em> during runtime.</p><p>Heap memory does not use a standardised data structure and can be accessed from any point within the program.</p><p>Whereas stack memory with it’s LIFO structure has memory management built-in when programs allocate memory from the heap they must manually deallocate it when it is no longer required. This process of “freeing memory” is known as <em>garbage collection</em>. In a language like C, this is the explicit concern of the programmer and is not abstracted away. Failure to properly manage garbage collection is what causes <span class="zettel-link-container cf"><span class="zettel-link"><a href="Memory_leaks">Memory leaks</a></span></span>.</p><p>Heap memory is used in combination with the stack since a given heap memory allocation address is stored as a stack variable during runtime. It points to the heap memory address whilst not being that memory itself.</p><p>Here is an example of managing heap memory allocation in C:</p><pre><code class="c language-c">void * data;
