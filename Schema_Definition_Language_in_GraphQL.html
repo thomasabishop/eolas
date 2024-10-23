@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Schema Definition Language</h1><p>SDL is the formal name for the syntax of GraphQL schemas.</p><h2 id="types">Types</h2><p>A schema is a collection of object types that contain fields. Each field has a type of its own. A field’s type can be a primitive/scalar value (such as an <code>Int</code> or a <code>String</code>), or it can be another object type (just like a custom type in TS).</p><p>A schema’s type can be non-nullable which is to say, a required field. We indicate this with <code>!</code>.</p><p>A type for a field can be a collection/array of a given type.</p><p>The following example indicates these properties:</p><pre><code class="gql language-gql">type Person {
   age: Int

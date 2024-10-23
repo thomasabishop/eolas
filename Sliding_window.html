@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Sliding window</h1><p>Whereas the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Multiple pointers"><a href="Multiple_pointers">multiple pointer</a></span></span> pattern works by keeping two array indices running at once and comparing their values on each iteration, the sliding window has a running value (the ‘window’) that is updated at each iteration and which compares itself against its most recent previous value.</p><p>This is what makes it ‘sliding’: the value isn’t constant, it changes (or doesn’t) based on what it was previously.</p><h2 id="example-maximum-sum-of-sub-array">Example: maximum sum of sub-array</h2><p>We create a function that takes an array and a sub-array length <em>n</em>. The objective is to find the maximum value that can be created by summing <em>n</em> elements of the array. It moves through the array, summing by <em>n</em> keeping track of the highest sum value so far and the current sum value. At the end it should return the highest possible sum value.</p><p>Here we do this for a sub-array of length 2:</p><pre><code class="ts language-ts">function maxSubarraySum(arr, subArrLength) {
   let maxSum = 0; // Largest sum value so far

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Iterating through complex data structures in Python</h1><p>// TODO: sections :</p><ul><li>Looping, mapping, filtering lists</li><li>Looping, mapping, filtering dictionaries</li><li>As above with multi-dimensional lists</li><li>As above with list of dictionaries</li></ul><h2 id="complex-data-structures">Complex data structures</h2><p>In JavaScript when we return data from an API we tend to use an array of objects as the canonical form of a repeating iterable, e.g:</p><pre><code class="js language-js">const data = [
   {

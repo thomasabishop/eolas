@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">The <code>$PATH</code></h1><p>We know that <code>$PATH</code> is an <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Environmental and shell variables"><a href="Environmental_and_shell_variables">environment variable</a></span></span>. This variable keeps track of directories <strong>where executables are found</strong>.</p><p>Whenever any command is run, the shell looks up the directories contained in the <code>PATH</code> for the target executable file and runs it. We can see this is the case by using the <code>which</code> command which traces the executable of bash commands. Take the <code>echo</code> program:</p><pre><code class="bash language-bash">which echo
 # echo: shell built-in command</code></pre><p>Or <code>npm</code> :</p><pre><code class="bash language-bash">which npm

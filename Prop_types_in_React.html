@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Prop types</h1><p><strong>The <code>prop-types</code> package allows us to introduce type-checking during the development runtime of a React application. With larger applications or those with complex data flows, this can help reduce errors and bugs during development. This is a bit like using TypeScript but on a more minimal level.</strong></p><h2 id="install">Install</h2><pre><code class="language-none">npm install prop-types</code></pre><h2 id="usage">Usage</h2><pre><code class="jsx language-jsx">import PropTypes from &quot;prop-types&quot;;</code></pre><h2 id="examples">Examples</h2><p>Say we have a component with the following props:</p><pre><code class="jsx language-jsx">function Page(props) {
   const classes = useStyles();

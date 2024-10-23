@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating a RESTful API: <code>GET</code> requests</h1><p>With our GET request we will simply return the array of course objects.</p><p>We create an <a href="Events%20module.md#event-emitters">event emitter</a> and listener that listens for GET requests on a specified port and sends data in response to requests.</p><pre><code class="js language-js">// Return a value as response from specified URI
 router.get(&quot;/&quot;, (req, res) =&gt; {

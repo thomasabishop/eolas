@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Working with CSVs in Python</h1><h2 id="core-package">Core package</h2><pre><code class="py language-py">import csv</code></pre><h2 id="read-and-write-to-csv">Read and write to CSV</h2><h3 id="read">Read</h3><p>Use standard Pythonic “read” syntax:</p><pre><code class="py language-py">with open(&#39;./path.csv&#39;, mode=&quot;r&quot;) as csv_file:
     reader = csv.reader(csv_file)</code></pre><h3 id="parse-values">Parse values</h3><p>Having created the <code>reader</code> object, you can then loop through this as an iterable:</p><pre><code class="py language-py">for row in reader:

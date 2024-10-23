@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Update existing data with the SQL <code>UPDATE</code> command</h1><p>We use <code>UPDATE</code> to modify existing records in our table.</p><h2 id="schematic-syntax">Schematic syntax</h2><pre><code class="sql language-sql">UPDATE [table_name]
 SET [field]

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Test values in Bash</h1><p><code>test</code> is a built-in command that is used to compare values or determine whether something is the case.</p><p>We can use the command <code>test</code> but it is more common to test a condition implicity by using square brackets. The square brackets are an alias for <code>test</code>. We use this alias when we use <code>IF</code> logic.</p><p>When we run a test the result we get back is a return status of a <code>0</code> or a <code>1</code>. <code>0</code> indicates that the test was a success and <code>1</code> means failure. (Bear in mind this is in contrast to most all other programming languages.)</p><p>If we run a test in the command line we won’t get a <code>0</code> or a <code>1</code> or back, there will just be silence from the shell. We can explicitly invoke the return value with variable <code>$?</code>, e.g:</p><pre><code class="bash language-bash">[ -d ~ ] # is the home directory a directory?
 echo $?

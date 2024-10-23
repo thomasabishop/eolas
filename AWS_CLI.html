@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">AWS CLI frequent commands</h1><h3 id="retrieve-current-user">Retrieve current user</h3><pre><code class="language-none">aws-sts get-caller-identity</code></pre><h3 id="list-users">List users</h3><pre><code class="language-none">aws configure list
 aws configure list-profiles</code></pre><h3 id="view-profile-data">View profile data</h3><pre><code class="language-none">vim ./aws/credentials</code></pre><h2 id="cloudformation">CloudFormation</h2><h3 id="list-stacks">List stacks</h3><pre><code class="language-none">aws cloudformation --list-stacks</code></pre><h3 id="delete-a-stack">Delete a stack</h3><pre><code class="language-none">aws cloudformation delete-stack --stack-name &lt;my_stack&gt; --region &lt;region&gt;</code></pre><p><code>region</code> is optional especially if only deployed to one region</p><h2 id="billing-cost-explorer">Billing (“Cost explorer”)</h2><h3 id="usage-for-month">Usage for month</h3><pre><code class="language-none"> aws ce get-cost-and-usage --time-period Start=$(date +%Y-%m-01),End=$(date -d @$(( $(date +%s) + 86400 )) +%Y-%m-%d) --granularity MONTHLY --metrics &quot;UnblendedCost&quot; &quot;UsageQuantity</code></pre><h3 id="retrieve-current-user-1">Retrieve current user</h3><pre><code class="language-none">aws-sts get-caller-identity</code></pre><h3 id="list-users-1">List users</h3><pre><code class="language-none">aws configure list

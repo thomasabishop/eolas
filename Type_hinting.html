@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Type hinting in Python</h1><p>With type hinting we can add type information to variables, functions, and classes. This is not enforced by the Python interpreter but can be used by external tools like <code>mypy</code> to check the code.</p><p>Prior to 3.10, to use types you would have to import the types you wanted <code>from</code> the <code>typing</code> module. With later versions you can use them directly without importing from <code>typing</code>.</p><h2 id="basic-syntax">Basic syntax</h2><h3 id="variables">Variables</h3><pre><code class="py language-py">name: str = &quot;John&quot;
 age: int = 30</code></pre><h3 id="functions">Functions</h3><pre><code class="py language-py">def greet(name: str) -&gt; str:

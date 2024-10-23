@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">OpenSearch</h1><h2 id="background">Background</h2><p>OpenSearch is the AWS implementation of the opean source Elasticsearch search engine. It was formally known as “AWS Elasticsearch”.</p><p>It has many features but the core usage is to create searchable indicies of a given content domain such as, for example, a website or content management system. This enables the quick search and retrieval of documents without using expensive database queries.</p><h2 id="key-concepts">Key concepts</h2><p>We will introduce the main concepts with the example of an internal intranet for which we want to create a searchable index. The intranet comprises hundreds of pages. Each page has the following metadata, conforming to the following example.</p><pre><code class="json language-json">{
   &quot;title&quot;: &quot;Internal News&quot;,

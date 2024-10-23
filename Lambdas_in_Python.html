@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Lambdas in Python</h1><p>In Python, anonymous functions like arrow-functions in JavaScript (<code>() =&gt; {}</code>) are immediately invoked and unnamed. They are called lambdas.</p><p>Whilst they are unnamed, just like JS, the value they return can be stored in a variable. They do not require the <code>return</code> keyword.</p><p>They are most often used unnamed with the functional methods <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Map and filter in Python"><a href="Map_and_filter_in_Python">map, filter</a></span></span> and reduce.</p><p>Here is the two syntaxes side by side:</p><pre><code class="js language-js">// JavaScript
 

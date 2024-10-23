@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1"><code>useState</code></h1><p><code>useState</code> is the primary way in which React updates the application state based on user interaction.</p><ul><li><code>useState</code> <strong>receives</strong>: the initial state as an argument</li><li><code>useState</code> <strong>returns</strong>: the current state and a function that updates it</li></ul><p>The two items that are returned are returned as an array. We could refer to them with array syntax (i.e with <code>[0]</code> and <code>[1]</code> ) but it is more concise to use the destructuring syntax. But all that’s happening is that a method belonging to the <code>React</code> library (i.e. <code>useState</code> ) is taking an argument (the initial state) and returning two values as an array of two elements. The first of these values is a variable, the second is a function.</p><pre><code class="jsx language-jsx">(1) const [count, setCount] = useState(0);
 (2) const handleClick = () =&gt; { setCount(count + 1) };

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Lists in Python</h1><p>Lists are the equivalent of a simple array in JavaScript.</p><p>Lists have the following properties:</p><ul><li>They are <strong>ordered</strong></li><li>They are <strong>mutable</strong> and can be modified</li><li>They <strong>allow duplicate</strong> members</li><li>They are <strong>indexed</strong></li><li>You can increase/decrease their length by adding/removing new members</li></ul><blockquote><p>Lists are denoted with <code>[...]</code></p></blockquote><h2 id="duplicating-lists">Duplicating lists</h2><p>When we want to duplicate a list, we can’t just reassign the list to a new variable and expect this to be a copy.</p><p>If we edit this “copy” it will update the original list since it copies the pointer and will therefore point to the same address in memory. Instead we have to use the List <code>copy()</code> function which returns a new list and doesn’t modify the original list.</p><p>Relatedly, we should distinguish those List methods and functions which create a new list (non-destructive) and those that mutate the existing list.</p><h2 id="basic-usage">Basic usage</h2><pre><code class="python language-python"># Defining a list
 list1 = [&#39;John&#39;, &#39;Paul&#39;, &#39;George&#39;, &#39;Ringo&#39;]

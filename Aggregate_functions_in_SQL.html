@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Aggregate functions in SQL</h1><p>Aggregate functions enable us to return data about the data that a table holds. For example the sum of a given column or its average.</p><h2 id="count-return-with-custom-variable">Count return with custom variable</h2><pre><code class="sql language-sql">SELECT COUNT(*) AS total_sales
 FROM SALES</code></pre><h2 id="sum">Sum</h2><pre><code class="sql language-sql">SELECT SUM(price) as total_value

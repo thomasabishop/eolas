@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Utilities, operators, flags in Bash</h1><p>The following are useful built-in utility methods that you can use for checking and validation in the course of your bash scripts.</p><h2 id="flags">Flags</h2><h3 id="prevent-newline">Prevent newline</h3><p>Prevent bash from adding a new line after an echo:</p><pre><code class="bash language-bash">echo &#39;Your name is Thomas&#39;
 echo &#39;and you are 33 years old&#39;

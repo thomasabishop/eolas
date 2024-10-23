@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">None in Python</h1><p><code>None</code> is not <code>null</code>, it is closer to <code>undefined</code> in JS. If you define a variable as <code>None</code>, the variable exists, it is just not yet defined.</p><p>Using <code>None</code> is a pattern similar to using <code>let</code> in JS to name a variable and definine it later on.</p><pre><code class="python language-python">temperature = None</code></pre><p>If we logged <code>temperature</code> it would give us <code>None</code> rather than a null pointer error.</p><p>With None we can use <code>is None</code> and <code>is not None</code>, special predicates for working with <code>None</code> only. This is a akin to using <code>if (x !== undefined)</code> in TypeScript</p><pre><code class="python language-python">winner = None
 print(&#39;winner:&#39;, winner)

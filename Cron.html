@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Cron</h1><h2 id="cronie"><code>cronie</code></h2><p>In Arch Linux I use <code>cronie</code> for cron jobs. (There is no cron service installed by default). Install <code>cronie</code> and then enable it in systemd with:</p><pre><code class="bash language-bash">systemctrl enable --now cronie.service</code></pre><h2 id="commands">commands</h2><h3 id="list-cron-jobs">List cron jobs</h3><pre><code class="language-none">crontab -l</code></pre><h3 id="open-cron-file">Open cron file</h3><pre><code class="language-none">crontab -e</code></pre><h3 id="check-cron-log">Check cron log</h3><pre><code class="bash language-bash">
 journalctl | grep CRON

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Logical consistency</h1><h2 id="informal-definition">Informal definition</h2><p>A set of propositions is consistent if and only if <strong>it is possible for all the members of the set to be true at the same time</strong>. A set of propositions is inconsistent if and only if it is not consistent.</p><h3 id="demonstration">Demonstration</h3><p>The following set of propositions form an inconsistent set:</p><ol><li>Anyone who takes astrology seriously is a lunatic.</li><li>Alice is my sister and no sister of mine has a lunatic for a husband.</li><li>David is Alice’s husband and he read’s the horoscope column every morning.</li><li>Anyone who reads the horoscope column every morning takes astrology seriously.</li></ol><p>The set is inconsistent because not all of them can be true. If (1), (3), (4) are true, (2) cannot be. If (2), (3),(4) are true, (1) cannot be.</p><h2 id="formal-definition">Formal definition</h2><blockquote><p>A finite set of propositions <span class="math inline">\(\Gamma\)</span> is truth-functionally consistent if and only if there is at least one truth-assignment in which all propositions of <span class="math inline">\(\Gamma\)</span> are true.</p></blockquote><h3 id="informal-expression">Informal expression</h3><pre><code class="language-none">The book is blue or the book is brown
 The book is brown</code></pre><h3 id="formal-expression">Formal expression</h3><p><span class="math display">$$

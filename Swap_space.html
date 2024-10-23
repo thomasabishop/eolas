@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Swap space</h1><p>A swap partition is a partition on a disk that is not intended to be used as a filesystem. Instead, it is a part of the disk that is used to augment the main memory.</p><p>If you run out of memory and have set up a swap partition, the OS will be able to move pieces of memory to and from disk storage. This is called <em>swapping</em> because pieces of idle programs are swapped to the disk in exchange for active pieces residing on the disk.</p><h2 id="view-current-swap-usage">View current swap usage</h2><p>If you have a swap space established, the command <code>free</code> will show current usage:</p><pre><code class="bash language-bash">free
                total        used        free      shared  buff/cache   available

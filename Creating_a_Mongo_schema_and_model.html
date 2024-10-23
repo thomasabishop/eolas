@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating a schema and model</h1><h2 id="schema">Schema</h2><p>In order start adding <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: MongoDB: Introduction"><a href="MongoDB_Introduction">collections and documents</a></span></span> to our database, we use Mongoose’s <strong>schema</strong> structure. (This is specific to Mongoose and is not a structure that is a part of Mongo in general.)</p><p>We use a schema to define the shape of documents in a MongoDB collection. To do this we instantiate an instance of the Mongoose <code>Schema</code> class and set our properties:</p><h3 id="creating-a-schema">Creating a schema</h3><pre><code class="js language-js">const courseSchema = new mongoose.Schema({
   name: { type: String, required: true, minlength: 5, maxlength: 255 },

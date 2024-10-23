@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Processes</h1><p>Programs are sequences of machine instructions stored in a file. However they do not work by themselves. Something needs to load the file’s intructions into memory, direct the CPU to run the program and manage it during runtime. The OS does this via processes.</p><p>A process <strong>is a running instance of a given program</strong>. It can be thought of as a container in which a program runs. This container includes:</p><ul><li>a copy of the program code loaded into memory</li><li>a memory address</li><li>other information about the state of the process</li></ul><p>Other than the <code>init</code> process started by the kernel (PID1) (see <img alt="systemd" src="static/systemd.md" />), every process has a parent process that started it. This parent-child relationship creates a tree of processes.</p><p>It is possible that a parent process will terminate before one of its child processes. In this instance the child becomes an orphan. When this occurs in <span><code class="inline-tag">#Linux</code></span>, the orphan process is adopted by <code>init</code>.</p><p>Below, I have used the <code>pstree</code> utility to list all the running processes on my machine hierarchically.</p><p><img alt="diagram of pstree output" src="static/ps-tree.png" /></p><p>Children are represented vertically and horizontally.</p><pre><code class="language-none">├─terminator─┬─zsh───tmux: client
 │            ├─zsh───pstree

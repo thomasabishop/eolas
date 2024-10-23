@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Logical equivalence</h1><blockquote><p>Two sentences, P and Q, are truth-functionally equivalent if and only if there is no truth assignment in which P is true and Q is false</p></blockquote><h3 id="informal-expression">Informal expression</h3><p>P: If it is raining then the pavement will be wet.</p><p>Q: The pavement is not wet unless it is raining.</p><h3 id="formal-expression">Formal expression</h3><p><span class="math display">$$
 (P \rightarrow Q) \longleftrightarrow (\lnot P \lor Q)

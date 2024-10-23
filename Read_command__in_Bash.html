@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">read</h1><p>The primary use of <code>read</code> is to capture user input from <code>stdin</code>. It can also be used to parse strings or files that are redirected to it (with <code>&lt;</code> and <code>&lt;&lt;</code>) or piped to it. In each case, what is read is stored as a variable.</p><p><code>read</code> will parse line by line using a space (<code>\n</code>) as the default delimiter. You can use IFS to parse by other characters and/or <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Splitting input into an array"><a href="Split_into_array_in_Bash">split the contents into an array</a></span></span>.</p><h2 id="example-of-capturing-user-input">Example of capturing user input</h2><p>When we use <code>read</code> to gather user input, the script will pause until the input is provided.</p><pre><code class="bash language-bash">echo &quot;What is your name?&quot;
 read name

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Docker Compose</h1><ul><li><p>Docker Compose (DC) is a tool for defining and running multi-container applications. A typical example would be combining a FE with a BE implementation and database as three related but distinct containers.</p></li><li><p>DC is a prime example of <em>infrastructure as code</em>.</p></li><li><p>A YAML file defines all the required configuration and <strong>all services can be started with a single command</strong>.</p></li><li><p>It provides a consistent configuration accross environments: development, test, production</p></li></ul><h2 id="composition">Composition</h2><p>Three step process:</p><ol><li>Define your application image in a Dockerfile</li><li>Define the services in <code>docker-compose.yaml</code> (backend services, networks, volumes)</li><li>Start the entire application with <code>docker compose up</code></li></ol><h3 id="docker-composeyml"><code>docker-compose.yml</code></h3><ul><li>Must always begin with <code>version</code></li><li>Must have <code>services</code> map<ul><li>This defines the different components that comprise your application</li><li>Services can be either an image reference (the one that generates the container you want to include) or a build context</li></ul></li></ul><p>Look at the following example. It runs a Python Flask frontend connected to a Redis key-value pair database for backend.</p><pre><code class="yml language-yml"># docker-compose.yml
 

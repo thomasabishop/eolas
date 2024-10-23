@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Guide to YAML</h1><ul><li>Data description language</li><li>Alternative to XML and JSON</li><li>Easy to read by humans and process by code</li></ul><h2 id="main-rule">Main rule</h2><blockquote><p>Never use tabs for indentation, use two spaces</p></blockquote><h2 id="available-data-types">Available data types</h2><ul><li>strings</li><li>numbers</li><li>booleans</li><li>arrays</li><li>maps (key, value pairs)</li></ul><h3 id="example">Example</h3><pre><code class="yaml language-yaml"># Basic scalar data types
 age: 51

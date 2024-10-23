@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Classes in Python</h1><h2 id="general-points">General points</h2><ul><li>We don’t need to use <code>new</code> when instantiating an instance of a class.</li><li>All properties and methods must be defined in the constructor. This is in contrast to JavaScript where the properties in the constructor are those we want to initialise when the object is created and where there may be other properties and methods that are used outside of the instantiation process.</li><li>In contrast to TypeScript and other OOP languages it is not necessary to declare the properties you wish to define in the constructor, outside of the constructor. As long as they are defined in the constructor they are accessible.</li></ul><h2 id="basic-syntax">Basic syntax</h2><pre><code class="py language-py">class Person:
 	&quot;&quot;&quot; An example class to hold a persons name and age&quot;&quot;&quot;

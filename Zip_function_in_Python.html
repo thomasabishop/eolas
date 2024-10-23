@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1"><code>zip</code></h1><p>The <code>zip</code> function returns a zip object when you pass in two iterator data types (typically two lists). This is an iterator of tuples where the first item in each passed iterator is paired together, and then the second item in each passed iterator are paired together, and so on.</p><h2 id="example">Example</h2><pre><code class="py language-py">a = (&quot;John&quot;, &quot;Charles&quot;, &quot;Mike&quot;)
 b = (&quot;Jenny&quot;, &quot;Christy&quot;, &quot;Monica&quot;, &quot;Vicky&quot;)

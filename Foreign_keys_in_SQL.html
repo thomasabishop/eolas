@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Creating views with foreign keys</h1><p>We utilise <strong>foreign</strong> and <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Primary_key</a></span></span> to create relationships between tables in SQL. Foreign keys link data in one table to the data in another table and are how we cross-reference data in SQL.</p><p>In essence you use the primary key of one table to access data in another table. When one table <em>A</em> contains the primary key of another table <em>B</em> as a field, that key is “foreign” to <em>A</em> hence the name.</p><p>Let’s say we have a <code>sales</code> table:</p><table class="ui table"><thead><tr><th>saleId</th><th>modelId</th><th>saleDate</th><th>employeeId</th><th>price</th></tr></thead><tbody><tr><td>1</td><td>44</td><td>2020-07-27</td><td>tbishop</td><td>399.99</td></tr><tr><td>2</td><td>22</td><td>2021-02-05</td><td>tbishop</td><td>200.99</td></tr></tbody></table><p>In SQL this would be set up as follows:</p><pre><code class="sql language-sql">CREATE TABLE sales (
   saleId integer PRIMARY KEY,

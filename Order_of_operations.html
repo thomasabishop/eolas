@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Order of operations</h1><ol><li>Evaluate expressions in <strong>parentheses</strong></li><li>Evaluate <strong>exponents</strong></li><li>Evaluate <strong>multiplications and divisions</strong> from left to right in the order that they appear</li><li>Evaluate <strong>additions and subtractions</strong> from left to right in the order that they appear.</li></ol><p>In the absence of grouping symbols, addition holds no precedence over subtraction and vice versa.</p><pre><code class="language-none">15 - 8 + 4 = 7 + 4
 					= 11</code></pre><pre><code class="language-none">15 - 8 + 4 = 15 - 12

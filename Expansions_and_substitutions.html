@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Expansions and substitutions</h1><p>Bash is weird in that parentheses, braces and brackets are used not just as markers for different code blocks but as the designators of commands in their own right. The type of bracket you use effects how your input is interpreted.</p><p>Below are the main forms of expansion and substitution:</p><table class="ui table"><thead><tr><th>Representation</th><th>Name</th></tr></thead><tbody><tr><td><code>~</code> .</td><td>Tilde expansion</td></tr><tr><td><code>{..}</code></td><td>Brace expansion</td></tr><tr><td><code>${...}</code></td><td>Parameter expansion</td></tr><tr><td><code>$(...)</code></td><td>Command substitution</td></tr><tr><td><code>$((...))</code></td><td>Arithmetic expansion</td></tr></tbody></table><h2 id="brace-expansion-">Brace expansion: <code>{..}</code></h2><p>Brace expansion is for changing a smaller part of a greater whole programmatically. This is best understood by looking at examples:</p><pre><code class="language-none">echo c{a,o,u}t
 cat cot cut</code></pre><pre><code class="language-none">echo /tmp/{1..3}/file.txt

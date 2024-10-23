@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Non-null assertion</h1><p>Oftentimes you will encounter errors of the form:</p><p><code>Property [property_name] does not exist on type [type_name].ts(2339)</code></p><p>This means the interpreter is not able to determine whether the property which you are seeking to change exists. It can’t be sure that you are not trying to update a property that is either <code>null</code> or <code>undefined</code>. This is good type checking but it means that in cases when <em>you know</em> the property either exists or <em>will</em> exist at runtime, you are going to face a code-breaking error.</p><p>To get around this you can use non-null assertion. Like the name suggests, here you are saying to TypeScript: thanks but I am sure this property exists. When you do this you get the value you are trying to change with <code>null</code> and <code>undefined</code> excluded from it.</p><p>This typically occurs when you are assigning a property to a value and TS doesn’t know whether the value will exist or be accessible at this point in the runtime. A good scenario would be dynamic data passed into a function:</p><pre><code class="ts language-ts">function doSomethingWith(typeAlias: ITypeAlias) {
   let x = typeAlias!.somePropertyEvidentAtRuntime;

@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Linux disk partitions</h1><p>A disk is divided up into partitions which are subsections of the overall disk. The kernel presents each partition as a <a href="Devices.md#Devices">block device</a> as it would with an entire disk.</p><p>The disk dedicates a small part of its contents to a <strong>partition table</strong>: this defines the different partitions that comprise the total disk space.</p><h2 id="viewing-current-partitions">Viewing current partitions</h2><p>Whenever you install a Linux distribution on a real or virtual machine, you must partition the drive. There are three main tools to choose from: <code>parted</code>, <code>g(raphical)parted</code>, <code>fdisk</code>.</p><p>For a top-level overview of your disks and their main partitions you can run <code>lsblk</code> (<em>list block devices</em>):</p><pre><code class="bash language-bash">$ lsblk
 

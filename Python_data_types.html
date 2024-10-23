@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Python data-types</h1><ul><li>Python is dynamically typed rather than untyped. It updates the types on the fly as you are writing your code.</li><li>Type-hints in the editor like <code>-&gt; str</code> mean “at the moment it is a string”. It doesn’t mean you can’t redefine the value as something else.</li><li>Each data type in Python inherits off of a built-in class, similar to prototypes in JS</li></ul><p>The core data-types are as follows:</p><ul><li><span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Strings in Python"><a href="Strings_in_Python">str</a></span></span></li><li>bool</li><li>float</li><li>double</li></ul><p>We can identify types using the built-in <code>type()</code> function:</p><pre><code class="python language-python"># Integer number
 my_variable = 422

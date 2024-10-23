@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Tags in Git</h1><p>Tags exist to reference specific commits in a more meaningful way than using a SHA reference. They are a <strong>named reference to a commit</strong>. As they refer to a singular commit they do not update but are a fixed point in the Git history.</p><blockquote><p>Tags do not care about branches. They are an objective reference to a commit regardless of which branch it occured on. You can reference a tag without needing to be in the branch where the tagging originally took place.</p></blockquote><p>Tags are frequently used to mark software release versions. But they can also be used for other designations such as the addition of a key feature or bug.</p><h2 id="creating-a-tag">Creating a tag</h2><pre><code class="language-none">git tag -am &quot;Version 1.0&quot; v1.0 dd5c4539a0</code></pre><p><code>am</code> is for “annotated + message”. The actual tag name is <code>v1.0</code></p><p>Now you can refer to that commit with <code>v1.0</code> rather than use the SHA</p><h2 id="deleting-a-tag">Deleting a tag</h2><pre><code class="language-none">git tag -d v1.0</code></pre><blockquote><p>When you delete the tag you are only deleting the tag reference not the commit that it refers to.</p></blockquote><h2 id="listing-tags">Listing tags</h2><pre><code class="language-none">git tag --list</code></pre><h2 id="examples-of-use">Examples of use</h2><pre><code class="language-none">git show v1.1
 

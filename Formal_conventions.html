@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Formal conventions</h1><h2 id="grouping-symbols">Grouping symbols</h2><p>We use parentheses to delimit the part of an expression we want evaluated first. If grouping symbols are nested, evaluate the expression in the innermost pair of grouping symbols first,</p><h2 id="writing-mathematical-statements-placement-of-">Writing mathematical statements: placement of <span class="math inline">\(=\)</span></h2><p>We only write one equals sign per line. For example, if we are resolving parentheses:</p><p><span class="math display">$$
 \begin{equation} \begin{split} 2 + \[3 + (4+5)\] = 2 + \[3 +9\] \\ = 2 + 12

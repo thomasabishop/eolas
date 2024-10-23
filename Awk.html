@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Awk</h1><blockquote><p>Awk is a programming language designed for text processing and data extraction. It was created in the 1970s and remains widely used today for tasks such as filtering and transforming text data, generating reports, and performing basic calculations. Awk is known for its simplicity and versatility, making it a popular tool for Unix system administrators and data analysts.</p></blockquote><h2 id="invocation">Invocation</h2><p>We can use <code>awk</code> directly in <code>stdin</code> or we can reference <code>.awk</code> files for more elaborate scripts</p><pre><code class="bash language-bash"># CLI
 awk [program] file1, file2, file3

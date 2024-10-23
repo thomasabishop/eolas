@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Components and props with class-based components</h1><p>A <strong>component</strong> is a class or a function that manages the content that is output on the page (the rendering of <strong>elements</strong>) and the data (<strong>props</strong>) and state that is applied to the elements that are output.</p><p><strong>Components can be created using ES6 classes or using the newer hook methodology.</strong></p><p>A class-based component is a mixture of standard Javascript, JSX Javascript and HTML wrapped within an extension of the <code>React.Component</code> <strong>class</strong> that you import into your custom JS when installing the React library:</p><pre><code class="js language-js">class Welcome extends React.Component {
   render() {

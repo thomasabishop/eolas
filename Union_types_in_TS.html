@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Union types</h1><p>Like intersection types, union types allow us to combine the properties of existing primitive and custom types to make composites.</p><p>Intersection types work well when you have complete knowledge of what form your data will take. This approach only works if you know in advance that your data will be and that it will share properties from more than one type. But what if you don’t have this knowledge? You only know that it will be one of the three possible types? This is where union types become helpful. Instead of saying that event X will be of type A we say that event X may be one of types A or B or C.</p><blockquote><p>A union type is a type formed from two or more other types, representing values that may be any one of those types. We refer to each of these types as the union’s members.</p></blockquote><h2 id="demonstration">Demonstration</h2><pre><code class="ts language-ts">type Petrol = {
   maxSpeed: number;

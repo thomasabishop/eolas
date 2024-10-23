@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Application state management</h1><p>Although <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: useReducer"><a href="React_useReducer">React_useReducer</a></span></span> and <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: useContext"><a href="React_useContext">React_useContext</a></span></span> have many sound use cases by themselves, when they are combined they offer a way to acheive a system of global state management, without utilising third-party libraries like Redux.</p><h2 id="requirements">Requirements</h2><p>The Context API combined with a reducer addresses the following needs:</p><ul><li>be able to consume global state from anywhere in the component hierarchy without prop-drilling</li><li>update global state from within child components from anywhere in the component hierarchy</li><li>access, maintain and update complex structured data (arrays/objects) not just single values, as global state</li></ul><h2 id="implementation">Implementation</h2><p>In essence the approach is as follows:</p><ul><li>Create a context provider that houses the global state object</li><li>Attach this state to a reducer function that operates on the state object through dispatch methods</li></ul><p>First off, our initial state and overall state object:</p><pre><code class="js language-js">const initialState = {
   count: 0,

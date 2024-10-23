@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1"><code>useContext</code></h1><p>We use React’s Context API to enable us to easily share stateful data between all levels of an application without having to use repetitious ‘prop-drilling’ at a component level.</p><p>This works best with data that is global by definition, such as theme parameters or access authorisation. Context should not be used when standard and proximate compositional methods and prop-passing are sufficient.</p><h2 id="providers-and-consumers">Providers and consumers</h2><p>The Context API preceded the introduction of hooks in React 16.8 and it still underpins context management in hooks, although the syntax is simplified.</p><p>The process is as follows:</p><ul><li>Initiate a context</li><li>Create a parent <code>Provider</code> component that owns the data that will be passed down</li><li>Create child <code>Consumer</code> components that receive the data of the parent.</li></ul><p>We will demonstrate using a set of styles as the context that we want to pass around our app.</p><pre><code class="jsx language-jsx">const style = {
   border: &quot;2px solid dodgerblue&quot;,

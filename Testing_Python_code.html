@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Testing Python code</h1><h2 id="pytest"><code>pytest</code></h2><p>Pytest is the most popular testing library for Python. It is not included with the Python standard library so it must be installed with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Package management"><a href="Python_package_management">pip</a></span></span>. While it does not include a declaration library, it is robust enough to handle most scenarios having a rich and expressive set of constructs and decorators that let you declare what your tests should do, under what conditions they should run, and how they should interact with the rest of your system.</p><h3 id="using-pytest">Using <code>pytest</code></h3><ul><li>Pytest will automatically detect test files so long as they are named appropriately. E.g. for a module called <code>lorem</code>, it will detzect the unit test files <code>lorem_test.py</code> and <code>test_lorem.py</code>.</li><li>In order to detect tests it should be run from a directory level above them</li></ul><h3 id="examples">Examples</h3><p>Here is a basic example of using pytest for a local module callled <code>palindrome</code>:</p><pre><code class="py language-py">import palindrome
 

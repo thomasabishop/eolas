@@ -50,6 +50,9 @@
     font-size: 12px !important;
     line-height: 1.4 !important;
   }
+  img[alt~="not-by-ai-badge"] {
+    border: 1px solid red;
+  }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Basics of Web Components</h1><p>Web Components are custom HTML elements like those we create with frameworks like React and Angular but which are native to HTML and the DOM and therefore do not require any special compilation or libraries.</p><ul><li>Designed to be interoperable with normal HTML</li><li>Designed to be interoperable with component frameworks like React</li><li>Designed to be highly modular and reusable</li><li>Utilise the shadow DOM which is like the virtual DOM but native to the browser and invocable through plain JavaScript. A bit like an iFrame within the “light” DOM and helps greatly with style-scoping.</li></ul><h2 id="example-of-composing-a-web-component">Example of composing a web component:</h2><pre><code class="js language-js">// MyComponent.js
 class MyComponent extends HTMLElement {
