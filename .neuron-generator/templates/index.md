@@ -11,4 +11,4 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
-![Not By AI Badge](../../img/not-by-ai-badge.svg)
+![not-by-ai-badge](../../img/not-by-ai-badge.svg)
