@@ -11,11 +11,11 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
-![not-by-ai-badge](static/not-by-ai-badge.svg)
+![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 07e52cd3-8c5d-41a3-b133-26fda809825e
+**Build ID:** a78874c0-3838-49d0-b534-e6363f801ef8
 
-**Published:** Wed 23 Oct 2024 15:13:36
+**Published:** Wed 23 Oct 2024 17:50:20
 
 ### Recent edits 
 
