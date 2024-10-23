@@ -32,7 +32,7 @@ fi
 
 # echo "Removing unused images..."
 # source ${purge_images}
-
+# pointless comment
 
 /home/thomas/repos/neuron-zk-generator/dist/app 
 

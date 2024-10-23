@@ -10,16 +10,18 @@ Hi, I'm [Thomas](https://systemsobscure.blog/). This is the frontend of
 is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
- 
-**Build ID:** 49f263fa-b010-4202-8767-95c67ea3225e
 
-**Published:** Tue 22 Oct 2024 18:18:33
+![Not By AI Badge](static/not-by-ai-badge.svg)
+ 
+**Build ID:** 7892e299-959d-4c7e-baa6-e001c1ecf74c
+
+**Published:** Wed 23 Oct 2024 14:58:16
 
 ### Recent edits 
 
+- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
 - [[cfbef1c4_95ea_4fd1_85b8_536492e45e31]] 
 - [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
-- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[VirtualMemory]] 
 - [[Zero_property_of_multiplication]] 
