@@ -27,7 +27,7 @@ if [ "$changes_exist" -eq 0 ]; then
     exit 0
 fi
 
-echo "Standardising file-names..."
+# echo "Standardising file-names..."
 # source ${tidy_filenames}
 
 # echo "Removing unused images..."
