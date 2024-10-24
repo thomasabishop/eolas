@@ -13,12 +13,13 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** e64d42b7-6034-467b-be10-f60f7ae23656
+**Build ID:** 22009d2d-5405-4213-9214-3625c42630dd
 
-**Published:** Thu 24 Oct 2024 17:28:56
+**Published:** Thu 24 Oct 2024 20:15:17
 
 ### Recent edits 
 
+- [[653c0b1d_host_protocols_of_ARPANET]] 
 - [[cfbef1c4_web_precursors]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
 - [[f0f70a3c_ARPANET_motivations]] 
@@ -26,12 +27,12 @@ computer science.
 - [[385af4b4_Baran_distributed_networks]] 
 - [[861cc26e_ARPA_origins]] 
 - [[Compile_Python_app_to_single_executable]] 
-- [[VirtualMemory]] 
 
 
-### All notes (466) 
+### All notes (467) 
 
 - [[385af4b4_Baran_distributed_networks]] 
+- [[653c0b1d_host_protocols_of_ARPANET]] 
 - [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 
 - [[AWS_CLI]] 
