@@ -12,7 +12,7 @@ computer science.
 ## Frontend
 
 The notes can be read in a more congenial format
-[here](https://thomasabishop.github.io/eolas/cfbef1c4_web_precursors). This is a
+[here](https://thomasabishop.github.io/eolas). This is a
 [Neuron](https://neuron.zettel.page/) static site that I generate automatically
 using a small Python
 [application](https://github.com/thomasabishop/neuron-zk-generator) that
