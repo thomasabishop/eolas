@@ -3,14 +3,14 @@ tags: [ARPA, ARPANET, networks, computer-history]
 created: Friday, October 18, 2024
 ---
 
-# f0f70a3c-ARPANET-motivations
+# f0f70a3c_ARPANET_motivations
 
 It is inaccurate to say that the chief motivation in creating the ARPANET was to
 create a network that could withstand nuclear conflict, where mulitple nodes
 could be hit and the network could still go on functioning.
 
 Ideas that originated from this concern _did_ influence the project (chiefly
-[Paul Baran's work on distributed networks](./385af4b4_baran_distributed_networks.md)
+[Paul Baran's work on distributed networks](385af4b4_baran_distributed_networks.md)
 at RAND), but this was not the concern of the ARPANET.
 
 ARPA's objectives were focused more on reducing efficiency in the academic and

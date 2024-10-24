@@ -13,20 +13,20 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 85c93482-be2b-476d-8d37-e67e35658655
+**Build ID:** e64d42b7-6034-467b-be10-f60f7ae23656
 
-**Published:** Thu 24 Oct 2024 07:31:51
+**Published:** Thu 24 Oct 2024 17:28:56
 
 ### Recent edits 
 
 - [[cfbef1c4_web_precursors]] 
-- [[861cc26e_ARPA_origins]] 
-- [[f0f70a3c_ARPANET_motivations]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
+- [[f0f70a3c_ARPANET_motivations]] 
+- [[Threads]] 
 - [[385af4b4_Baran_distributed_networks]] 
+- [[861cc26e_ARPA_origins]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[VirtualMemory]] 
-- [[Zero_property_of_multiplication]] 
 
 
 ### All notes (466) 

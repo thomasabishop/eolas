@@ -3,10 +3,10 @@ tags: [ARPA, ARPANET, networks, computer-history]
 created: Friday, October 18, 2024
 ---
 
-# e470bf3d-IMPs_in_the_ARPANET
+# e470bf3d_IMPs_in_the_ARPANET
 
 Within the #ARPANET, IMPs (Information Message Processors) were nodes
-distinguished from [hosts](./Network_hosts.md). They were computers designed to
+distinguished from [hosts](Network_hosts.md). They were computers designed to
 receive and route the the packets from one host to another, described as
 "adaptive routing".
 
@@ -20,7 +20,7 @@ Their job was to:
 - confirm successful transmission
 
 These responsibilities required the IMP to "know" the location and addresses of
-other IMPs and hosts on the [network](./Network_fundamentals.md) and their
+other IMPs and hosts on the [network](Network_fundamentals.md) and their
 proximity to them.
 
 From the point of view of the host user, the existence of the IMPs would be

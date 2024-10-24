@@ -31,10 +31,10 @@ utilise threads.
 
 ## Hardware considerations
 
-Each [processor core](./CPU_architecture.md) can only run one thread at a time
-so the number of cores that a device's CPU has deterimines how many threads can
-run at once. In practice, then, the CPU shuffles between multiple threads in
-[clock segments](./Clock_signals.md). This is known as scheduling and is managed
+Each [processor core](CPU_architecture.md) can only run one thread at a time so
+the number of cores that a device's CPU has deterimines how many threads can run
+at once. In practice, then, the CPU shuffles between multiple threads in
+[clock segments](Clock_signals.md). This is known as scheduling and is managed
 by the process that the thread belongs to.
 
 ## Related notes

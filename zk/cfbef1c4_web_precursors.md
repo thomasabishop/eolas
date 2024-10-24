@@ -13,7 +13,7 @@ Example services: checking one's bank balance, paying bills, transferring money,
 booking holidays.
 
 (Presumably, the services would be hosted on a providers'
-[mainframe](./Mainframe_computers.md) or mini-computer, which the consumer would
+[mainframe](Mainframe_computers.md) or mini-computer, which the consumer would
 access through something like time-sharing?)
 
 ![BT telephone modem](../img/modem-bt.png)

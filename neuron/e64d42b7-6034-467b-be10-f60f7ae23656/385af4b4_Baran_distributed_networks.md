@@ -3,7 +3,7 @@ tags: [fleeting, networks, ARPANET, packet-switching]
 created: Tuesday, October 22, 2024
 ---
 
-# 385af4b4-Baran_distributed_networks
+# 385af4b4_Baran_distributed_networks
 
 ## Paul Baran's concept of a distributed network and influence on architecture of the ARPANET
 
