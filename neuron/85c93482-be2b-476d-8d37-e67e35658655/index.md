@@ -13,26 +13,26 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** a78874c0-3838-49d0-b534-e6363f801ef8
+**Build ID:** 85c93482-be2b-476d-8d37-e67e35658655
 
-**Published:** Wed 23 Oct 2024 17:50:20
+**Published:** Thu 24 Oct 2024 07:31:51
 
 ### Recent edits 
 
-- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
-- [[cfbef1c4_95ea_4fd1_85b8_536492e45e31]] 
-- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
+- [[cfbef1c4_web_precursors]] 
+- [[861cc26e_ARPA_origins]] 
+- [[f0f70a3c_ARPANET_motivations]] 
+- [[e470bf3d_IMPs_in_the_ARPANET]] 
+- [[385af4b4_Baran_distributed_networks]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[VirtualMemory]] 
 - [[Zero_property_of_multiplication]] 
-- [[Working_with_CSVs_in_Python]] 
-- [[Variables_and_data_types_in_Bash]] 
 
 
-### All notes (464) 
+### All notes (466) 
 
-- [[385af4b4_43ea_4a5f_85a3_5791d95109aa]] 
-- [[861cc26e_5f59_4615_821d_fe3ee5e1014d]] 
+- [[385af4b4_Baran_distributed_networks]] 
+- [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 
 - [[AWS_CLI]] 
 - [[AWS_SAM_and_Docker]] 
@@ -484,7 +484,9 @@ computer science.
 - [[Working_with_numbers_in_Bash]] 
 - [[Zero_property_of_multiplication]] 
 - [[Zip_function_in_Python]] 
-- [[cfbef1c4_95ea_4fd1_85b8_536492e45e31]] 
+- [[cfbef1c4_web_precursors]] 
+- [[e470bf3d_IMPs_in_the_ARPANET]] 
+- [[f0f70a3c_ARPANET_motivations]] 
 - [[fs]] 
 - [[http_in_Node]] 
 - [[journald]] 

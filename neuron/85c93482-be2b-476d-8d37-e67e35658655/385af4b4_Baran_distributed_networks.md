@@ -3,7 +3,7 @@ tags: [fleeting, networks, ARPANET, packet-switching]
 created: Tuesday, October 22, 2024
 ---
 
-# 385af4b4-43ea-4a5f-85a3-5791d95109aa
+# 385af4b4-Baran_distributed_networks
 
 ## Paul Baran's concept of a distributed network and influence on architecture of the ARPANET
 
@@ -21,7 +21,7 @@ If we think of the nodes of the phone network as being loci for the transferral
 of data, the phone network was highly centralised. The message would go from its
 transmitter to a central switch which would route it to the intended receiver:
 
-![Centralised network](../img/centralised.png)
+![Centralised network](static/centralised.png)
 
 The problem is obvious: if the central switch went down, all data transferance
 stop.
@@ -29,7 +29,7 @@ stop.
 In fact this is an over-simplification. The phone network at the time was
 actually decentralised:
 
-![Decentralised network](../img/decentralised.png)
+![Decentralised network](static/decentralised.png)
 
 This system is an improvement because each region has a switch and not all nodes
 are dependent on the central switch at all times. If the central switch goes
@@ -43,7 +43,7 @@ Baran conceived a _distributed_ network as his model for the most resiliant
 communications network. Instead of centralised or decentralised switches, nodes
 would connect to eachother in aggregate:
 
-![Distributed network](../img/distributed.png)
+![Distributed network](static/distributed.png)
 
 Under this system, every node can eventually access every other node through
 intermediary nodes, without going through a main switch that establishes the

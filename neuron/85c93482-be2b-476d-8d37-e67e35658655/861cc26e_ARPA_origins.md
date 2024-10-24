@@ -3,9 +3,7 @@ tags: [fleeting, computer-history, ARPA]
 created: Monday, October 14, 2024
 ---
 
-# 861cc26e-5f59-4615-821d-fe3ee5e1014d
-
-## Origins of ARPA
+# 861cc26e_ARPA_origins
 
 After Sputnik, Eisenhower wanted a dedicated, cross-departmental division within
 the US government to focus on advanced technological research so that they would

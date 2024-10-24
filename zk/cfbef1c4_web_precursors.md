@@ -3,7 +3,7 @@ tags: [fleeting, modems, computer-history, internet, bulletin-boards]
 created: Monday, October 14, 2024
 ---
 
-# cfbef1c4-95ea-4fd1-85b8-536492e45e31
+# cfbef1c4_web_precursors
 
 ## Early precursors to the commercial internet
 
