@@ -13,23 +13,23 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 34679fdf-5a10-42d3-941d-d835c4b29c36
+**Build ID:** 0368f5e0-e5f8-46f2-9cd3-c028c04a15d1
 
-**Published:** Fri 25 Oct 2024 09:51:21
+**Published:** Fri 25 Oct 2024 13:28:54
 
 ### Recent edits 
 
-- [[Reading_files_in_Python]] 
+- [[Working_with_directories_in_Python]] 
 - [[File_CRUD_operations_in_Python]] 
+- [[File_operations_in_Python]] 
+- [[Reading_files_in_Python]] 
 - [[With_open_in_Python]] 
 - [[Writing_to_files_in_Python]] 
 - [[Error_handling_in_Python]] 
 - [[File_system_error_handling_in_Python]] 
-- [[Appending_to_files_in_Python]] 
-- [[e470bf3d_IMPs_in_the_ARPANET]] 
 
 
-### All notes (473) 
+### All notes (475) 
 
 - [[385af4b4_Baran_distributed_networks]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
@@ -187,6 +187,7 @@ computer science.
 - [[Fetch_from_Secrets_Manager]] 
 - [[File_CRUD_operations_in_Python]] 
 - [[File_descriptors]] 
+- [[File_operations_in_Python]] 
 - [[File_permissions_and_execution_in_Bash]] 
 - [[File_system_error_handling_in_Python]] 
 - [[Filesystems]] 
@@ -486,6 +487,7 @@ computer science.
 - [[With_open_in_Python]] 
 - [[Working_with_CSVs_in_Python]] 
 - [[Working_with_JSON_in_Python]] 
+- [[Working_with_directories_in_Python]] 
 - [[Working_with_numbers_in_Bash]] 
 - [[Writing_to_files_in_Python]] 
 - [[Zero_property_of_multiplication]] 

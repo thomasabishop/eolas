@@ -3,7 +3,7 @@ tags: [python, file-system, procedural]
 created: Friday, October 25, 2024
 ---
 
-# File CRUD operations in Python
+# File operations in Python
 
 Most create, delete, move etc operations invoke the inbuilt `os` module.
 
