@@ -1,36 +1,9 @@
 ---
-tags: [python]
+tags: [python, file-system, procedural]
+created: Friday, October 25, 2024
 ---
 
-# IO in Python
-
-## The open() object
-
-The built-in `open()` function creates a **file object** that allows us to read,
-write and append to files.
-
-The general syntax is as follows:
-
-```py
-file_object = open(<file_name>, <access_mode>)
-```
-
-`<file_name>` is obviously a path to the file you want to read, create or
-modify. The `<access_mode>` denotes the mode in which to open the file. The most
-frequently used are:
-
-- `r`
-  - read
-- `w`
-  - write
-- `a`
-  - append
-
-### All access modes
-
-In addition we have the following access modes
-
-## Reading files
+# Reading files in Python
 
 Once a file object has been intialised with `open()` there are several ways in
 which the content can be read:
@@ -41,7 +14,7 @@ which the content can be read:
 | `readline`  | Read the contents of a file a line at a time. You would combine this with a loop so that you can do something with each individual line. |
 | `readlines` | Return a list of all the lines in a file. Each line will be an element in the list.                                                      |
 
-### Read
+## Read
 
 `read` reads the entire contents of a file and returns it as a single string.
 
@@ -77,7 +50,7 @@ for line in lines:
         # do something with line
 ```
 
-### Readline
+## Readline
 
 > The readline() method in Python is used to read a single line from a file. It
 > is typically used when you want to process a file line by line, rather than
@@ -107,7 +80,7 @@ while line:
 file.close()
 ```
 
-### Readlines
+## Readlines
 
 The `readlines()` method is used to read all the lines of a file and return them
 as a list of strings, where each element of the list is a line from the file.
@@ -125,76 +98,5 @@ for line in lines:
 
 # Close the file
 file.close()
-```
-
-### Error handling
-
-Obviously file access can raise errors - typically when the file you want to
-access does not exist (i.e. a `FileNotFoundError`
-[exception](Error_handling_in_Python.md)). We can manage this scenario with
-[exception handlers](Error_handling_in_Python.md):
-
-```py
-try:
-    with open('filename.txt', 'r') as file:
-    contents = file.readlines()
-    for line in lines:
-        print(line)
-except FileNotFoundError as err:
-    print("File does not exist")
-    print(err)
-```
-
-## Close and "with as"
-
-You notice that once we have finished with our I/O operation, we must call
-`file.close()` to terminate the process. This removes the reference to the file
-from memory.
-
-A more pythonic and concise way of reading files and closing them is to use
-`with...as` syntax. When this phrasing is used, a self-contained context is
-created for the I/O operation that closes the file automatically.
-
-```py
-with open('filename.txt', 'r') as file:
-    contents = file.read()
-    print(contents)
-```
-
-## Writing to files
-
-Again we create a file object with `open()` and this time use the `write`
-method:
-
-```py
-# Open file in write mode
-file = open("example.txt", "w")
-
-# Write some text to the file
-file.write("Hello, this is an example text written using Python.")
-
-# Close the file
-file.close()
-```
-
-> Note that in the above example, if the file does not already exist, it will
-> create it. If it does exist, it will overwrite its contents with the new data.
-> So we use `write` to create new files as well as to write to existing files.
-
-## Renaming and deleting files
-
-We have to use another built-in module to rename and delete files: `os`.
-
-To rename an existing file:
-
-```py
-import os
-os.rename('original-file-name.txt', 'new-file-name.txt')
-```
-
-To delete a file:
-
-```py
-import os
-os.remove('file-name.txt')
+`
 ```

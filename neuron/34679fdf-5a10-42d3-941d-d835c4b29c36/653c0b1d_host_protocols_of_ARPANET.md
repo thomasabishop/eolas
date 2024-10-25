@@ -9,7 +9,7 @@ The responsibility for enabling communication between nodes fell to the hosts,
 not the [IMPs](e470bf3d_IMPs_in_the_ARPANET.md). At the lowest level (equivalent
 to the [link layer](Link_Layer_of_Internet_Protocol.md) in the subsequent
 internet?), this consisted in moving raw bits between hosts regardless of what
-specific type of data encoded.
+specific type of data they encoded.
 
 In the book (_Where Wizards Stay Up Late_), there is a great description by
 analogy:

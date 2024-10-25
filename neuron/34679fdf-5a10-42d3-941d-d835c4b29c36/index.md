@@ -13,23 +13,23 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 22009d2d-5405-4213-9214-3625c42630dd
+**Build ID:** 34679fdf-5a10-42d3-941d-d835c4b29c36
 
-**Published:** Thu 24 Oct 2024 20:15:17
+**Published:** Fri 25 Oct 2024 09:51:21
 
 ### Recent edits 
 
-- [[653c0b1d_host_protocols_of_ARPANET]] 
-- [[cfbef1c4_web_precursors]] 
+- [[Reading_files_in_Python]] 
+- [[File_CRUD_operations_in_Python]] 
+- [[With_open_in_Python]] 
+- [[Writing_to_files_in_Python]] 
+- [[Error_handling_in_Python]] 
+- [[File_system_error_handling_in_Python]] 
+- [[Appending_to_files_in_Python]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
-- [[f0f70a3c_ARPANET_motivations]] 
-- [[Threads]] 
-- [[385af4b4_Baran_distributed_networks]] 
-- [[861cc26e_ARPA_origins]] 
-- [[Compile_Python_app_to_single_executable]] 
 
 
-### All notes (467) 
+### All notes (473) 
 
 - [[385af4b4_Baran_distributed_networks]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
@@ -51,6 +51,7 @@ computer science.
 - [[Any]] 
 - [[Apollo_Client]] 
 - [[Apollo_Server]] 
+- [[Appending_to_files_in_Python]] 
 - [[Application_Layer_of_Internet_Protocol]] 
 - [[Application_state_management_with_React_hooks]] 
 - [[Application_structure]] 
@@ -184,8 +185,10 @@ computer science.
 - [[Factory_pattern]] 
 - [[Fetch_decode_execute]] 
 - [[Fetch_from_Secrets_Manager]] 
+- [[File_CRUD_operations_in_Python]] 
 - [[File_descriptors]] 
 - [[File_permissions_and_execution_in_Bash]] 
+- [[File_system_error_handling_in_Python]] 
 - [[Filesystems]] 
 - [[Find_Bash_command]] 
 - [[Flip_flops]] 
@@ -222,7 +225,6 @@ computer science.
 - [[Headless_Raspi_network_setup]] 
 - [[Heap_memory]] 
 - [[Hexadecimal_number_system]] 
-- [[IO_in_Python]] 
 - [[IP_addresses]] 
 - [[Identify_merged_branches]] 
 - [[Importing_MongoDB_data]] 
@@ -367,6 +369,7 @@ computer science.
 - [[React_useReducer]] 
 - [[React_useState]] 
 - [[Read_command__in_Bash]] 
+- [[Reading_files_in_Python]] 
 - [[Reciprocals]] 
 - [[Recursion]] 
 - [[Redirect_to_dev_null]] 
@@ -480,11 +483,14 @@ computer science.
 - [[Why_computers_use_binary]] 
 - [[Wildcards_in_SQL]] 
 - [[Williams_Tube_memory]] 
+- [[With_open_in_Python]] 
 - [[Working_with_CSVs_in_Python]] 
 - [[Working_with_JSON_in_Python]] 
 - [[Working_with_numbers_in_Bash]] 
+- [[Writing_to_files_in_Python]] 
 - [[Zero_property_of_multiplication]] 
 - [[Zip_function_in_Python]] 
+- [[c8173d17_TIMPs]] 
 - [[cfbef1c4_web_precursors]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
 - [[f0f70a3c_ARPANET_motivations]] 

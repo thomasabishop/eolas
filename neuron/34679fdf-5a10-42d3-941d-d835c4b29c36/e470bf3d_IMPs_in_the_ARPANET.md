@@ -1,5 +1,5 @@
 ---
-tags: [ARPA, ARPANET, networks, computer-history]
+tags: [ARPANET, networks, computer-history]
 created: Friday, October 18, 2024
 ---
 
