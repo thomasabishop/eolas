@@ -13,26 +13,30 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 0368f5e0-e5f8-46f2-9cd3-c028c04a15d1
+**Build ID:** 8b09146b-ecca-49b4-bbdb-d619b5566ef4
 
-**Published:** Fri 25 Oct 2024 13:28:54
+**Published:** Mon 28 Oct 2024 15:52:07
 
 ### Recent edits 
 
+- [[4da22434_from_ARPANET_to_Internet]] 
+- [[3f1b9fe5_motivation_Berners_Lee]] 
+- [[4a3dc316_key_figures_ARPANET]] 
+- [[82f9c228_dissolution_of_ARPANET]] 
+- [[Fetch_decode_execute]] 
+- [[Secrets_or_env_vars_in_AWS]] 
 - [[Working_with_directories_in_Python]] 
 - [[File_CRUD_operations_in_Python]] 
-- [[File_operations_in_Python]] 
-- [[Reading_files_in_Python]] 
-- [[With_open_in_Python]] 
-- [[Writing_to_files_in_Python]] 
-- [[Error_handling_in_Python]] 
-- [[File_system_error_handling_in_Python]] 
 
 
-### All notes (475) 
+### All notes (479) 
 
 - [[385af4b4_Baran_distributed_networks]] 
+- [[3f1b9fe5_motivation_Berners_Lee]] 
+- [[4a3dc316_key_figures_ARPANET]] 
+- [[4da22434_from_ARPANET_to_Internet]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
+- [[82f9c228_dissolution_of_ARPANET]] 
 - [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 
 - [[AWS_CLI]] 
