@@ -47,7 +47,7 @@ _The ARPANET as part of an inter-network 1977_
 
 ![](static/internetworking_1977.jpg)
 
-_ The ARPANET in 1977_
+_The ARPANET in 1977_
 
 ![](static/Arpanet_logical_map,_march_1977.png)
 
