@@ -140,7 +140,7 @@ print(my_list)  # Output will be [10, 20, 40, 50]
 ```
 
 > If the value is not found in the list,
-> ` remove()`` will raise a ValueError. To avoid this, you can check whether the value exists in the list before calling  `remove()`
+> `remove()`` will raise a ValueError. To avoid this, you can check whether the value exists in the list before calling `remove()`
 
 ### pop()
 
@@ -175,7 +175,7 @@ print(root_list)
 # ['John', [1, 43.5, 'Phoebe', True], ['apple', 'orange', 31], 'Denise']
 ```
 
-## Merging (flattening) lists
+## Merging lists
 
 ```py
 list1 = [1, 2, 3]
@@ -183,6 +183,23 @@ list2 = [4, 5, 6]
 
 merged_list = list1 + list2
 print(merged_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+## Flattening a two-dimensional list (matrix)
+
+Use [list comprehension](List_comprehension_in_Python.md) for each row in the
+matrix:
+
+```python
+ matrix = [
+    [9, 3, 8, 3],
+    [4, 5, 2, 8],
+    [6, 4, 3, 1],
+    [1, 0, 4, 5],
+]
+
+flat = [item for row in matrix for item in row]
+# [9, 3, 8, 3, 4, 5, 2, 8, 6, 4, 3, 1, 1, 0, 4, 5]
 ```
 
 ## See also

@@ -120,5 +120,14 @@ print(seasons['Spring'][1])
 ('Mar', 'Apr', 'May')
 Apr
 """
+```
+
+## Merging two Dictionaries
+
+Two separate dictionaries can be merged into a single dictionary with shared
+properties with this shorthand:
+
+```python
+merged_dictionary = dictionary_one | dictionary_two
 
 ```
