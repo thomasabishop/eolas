@@ -3,7 +3,7 @@ tags:
   - binary
 ---
 
-# Text encoding
+# Binary encoding of text
 
 Text encoding is an applied instance of [binary encoding](Binary_encoding.md).
 

@@ -6,7 +6,7 @@ tags:
   - databases
 ---
 
-# MongoDB connection, set-up and data query: complete example
+# MongoDB connection
 
 ```js
 const mongoose = require("mongoose");

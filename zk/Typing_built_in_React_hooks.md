@@ -4,7 +4,7 @@ tags:
   - react
 ---
 
-# Typing built-in hooks
+# Typing built-in React hooks
 
 ## `useState`
 

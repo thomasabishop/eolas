@@ -4,7 +4,7 @@ tags:
   - prealgebra
 ---
 
-# The Associative Property of Addition and Multiplication
+# Associative Property of Addition and Multiplication
 
 **Let $a$, $b$ , $c$ represent members of $\mathbb{W}$ or $\mathbb{Z}$ then:**
 

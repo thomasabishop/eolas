@@ -4,7 +4,7 @@ tags:
   - operating-systems
 ---
 
-# The boot process
+# Boot process
 
 The primary or boot
 [partition](Disks.md#primary-extended-and-logical-partitions) of a harddisk

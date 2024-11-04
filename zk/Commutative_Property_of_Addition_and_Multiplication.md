@@ -5,7 +5,7 @@ tags:
   - number-theory
 ---
 
-# The Commutative Property of Addition and Multiplication
+# Commutative Property of Addition and Multiplication
 
 **Let $a$, $b$ represent members of $\mathbb{W}$ or $\mathbb{Z}$ then:**
 

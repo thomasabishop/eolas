@@ -13,20 +13,24 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** cd6bdaba-031a-4daf-adf2-ef3b075243e6
+**Build ID:** 6ee38802-781e-4c65-8c64-56c9bccc4460
 
-**Published:** Mon 04 Nov 2024 14:07:02
+**Published:** Mon 04 Nov 2024 14:26:41
 
 ### Recent edits 
 
+- [[MongoDB_connection]] 
+- [[Commutative_Property_of_Addition_and_Multiplication]] 
+- [[Call_stack]] 
+- [[Typing_built_in_React_hooks]] 
+- [[Boot_process]] 
+- [[Binary_encoding_of_text]] 
+- [[Testing_basic_prop_passing_in_React]] 
+- [[Associative_Property_of_Addition_and_Multiplication]] 
 - [[Classes_in_Python]] 
 - [[File_operations_in_Python]] 
 - [[Lists_in_Python]] 
 - [[Dictionaries_in_Python]] 
-- [[Bell_System]] 
-- [[Bolt_Beranek_and_Newman]] 
-- [[4da22434_from_ARPANET_to_Internet]] 
-- [[3f1b9fe5_motivation_Berners_Lee]] 
 
 
 ### All notes (481) 
@@ -40,6 +44,7 @@ computer science.
 - [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 
 - [[AWS_CLI]] 
+- [[AWS_CloudWatch]] 
 - [[AWS_SAM_and_Docker]] 
 - [[AWS_architecture_hierarchy]] 
 - [[Accessing_metadata_about_SQL_database]] 
@@ -58,16 +63,14 @@ computer science.
 - [[Appending_to_files_in_Python]] 
 - [[Application_Layer_of_Internet_Protocol]] 
 - [[Application_state_management_with_React_hooks]] 
-- [[Application_structure]] 
 - [[Arithmetic_Logic_Unit]] 
 - [[Arrays]] 
 - [[Assembly]] 
-- [[Associativity]] 
+- [[Associative_Property_of_Addition_and_Multiplication]] 
 - [[Atomic_and_molecular_propositions]] 
 - [[Awk]] 
 - [[Axioms_of_set_theory]] 
 - [[Basic_model_of_the_operating_system]] 
-- [[Basic_prop_passing_in_React]] 
 - [[Basic_properties_of_sets]] 
 - [[Basics_of_web_components]] 
 - [[Bell_System]] 
@@ -88,7 +91,6 @@ computer science.
 - [[Boolean_functions]] 
 - [[Boot_process]] 
 - [[Breadboards]] 
-- [[Built_in_React_hooks]] 
 - [[Bus]] 
 - [[CPU_architecture]] 
 - [[Call_stack]] 
@@ -102,13 +104,11 @@ computer science.
 - [[Classes]] 
 - [[Classes_in_Python]] 
 - [[Clock_signals]] 
-- [[CloudWatch]] 
 - [[Command_pattern]] 
-- [[Commutativity]] 
+- [[Commutative_Property_of_Addition_and_Multiplication]] 
 - [[Comparing_React_classes_to_hooks]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[Compile_from_source]] 
-- [[Complete_Mongo_example]] 
 - [[Components_props_classes]] 
 - [[Components_props_hooks_in_React]] 
 - [[Concise_subfield_mapping_JS]] 
@@ -305,6 +305,7 @@ computer science.
 - [[Module_wrapping_at_runtime]] 
 - [[Modules_in_NodeJS]] 
 - [[MongoDB_Introduction]] 
+- [[MongoDB_connection]] 
 - [[Monitoring_processes_and_resources]] 
 - [[Morgan]] 
 - [[Motherboard]] 
@@ -370,6 +371,7 @@ computer science.
 - [[RESTful_APIs]] 
 - [[ROM_versus_disk_loading]] 
 - [[React_Components]] 
+- [[React_application_structure]] 
 - [[React_errors]] 
 - [[React_useContext]] 
 - [[React_useEffect]] 
@@ -435,6 +437,7 @@ computer science.
 - [[Tags_in_Git]] 
 - [[Test_values_in_Bash]] 
 - [[Testing_Python_code]] 
+- [[Testing_basic_prop_passing_in_React]] 
 - [[Testing_with_Jest]] 
 - [[Text_manipulation_in_Bash]] 
 - [[The_History_of_Computing_Swade]] 
@@ -460,6 +463,7 @@ computer science.
 - [[Twos_complement]] 
 - [[Type_guarding_and_narrowing_in_TS]] 
 - [[Type_hinting]] 
+- [[Typing_built_in_React_hooks]] 
 - [[Union_types_in_TS]] 
 - [[Unknown_type_in_TS]] 
 - [[Update_a_Mongo_document]] 

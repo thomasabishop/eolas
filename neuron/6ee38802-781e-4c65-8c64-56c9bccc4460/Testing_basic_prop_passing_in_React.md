@@ -5,7 +5,7 @@ tags:
   - testing
 ---
 
-# Test: Basic prop passing
+# Testing basic prop passing in React
 
 ```js
 import { render, screen } from "@testing-library/react";
