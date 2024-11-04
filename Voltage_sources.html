@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Voltage sources</h1><p>The following phenomena are the main sources that we use to generate voltage:</p><ul><li>friction</li><li>magnetism</li><li>chemicals</li><li>light</li><li>heat</li><li>pressure</li></ul><blockquote><p>In each case, energy in one state is transferred into energy as current. No energy is lost or gained, it simply changes its form.</p></blockquote><h3 id="magentism-electrical-generators">Magentism (electrical generators)</h3><p>Magnetism is used as the voltage source in electrical generators and is by far the most common method of producing powerful and large currents at scale.</p><p>If a conductive wire is passed through a magnetic field voltage will be produced so long as there is motion between the magnetic field and the conductor. A <strong>generator</strong> is a device that generates current in this manner. Generators themselves need to be powered. They can be powered by steam from a nuclear power plant, water, wind, coal or other fossil fuels.</p><h4 id="acdc">AC/DC</h4><p>Depending on how it is wired, a generator can produce <strong>directed current</strong> (DC) or <strong>alternating current</strong> (AC):</p><ul><li><p><strong>Directed current</strong></p><ul><li>The electrons flow in only one direction</li></ul></li><li><p><strong>Alternating current</strong></p><ul><li>The electrons flow in one direction and then the other</li></ul></li></ul><h3 id="chemicals-cells-and-batteries">Chemicals (cells and batteries)</h3><p>The chemical creation of current is the physics behind <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Cells and batteries"><a href="Cells_and_batteries">batteries</a></span></span>. Chemical current production produces currents on a smaller and less industrial scale than generators.</p><p>A chemical cell consists in two dissimilar metals such as copper and zinc. We call these the <strong>electrodes</strong>. They are immersed in a salt, acid or alkaline solution. We call these the <strong>electrolytes</strong>. The electrolyte pulls the free electrons from the copper electrode which leaves it imbalanced with a positive charge. The zinc electrode attracts the free electrons from the electrolyte giving it a negative charge, thus a difference of potential is achieved.</p><h3 id="light-photovoltaic-cells">Light (photovoltaic cells)</h3><p>Solar energy can be converted to electrical energy through solar panels which are large collections of <strong>photovoltaic cells</strong>.</p><p>When the surfaces of these cells are exposed to light, it dislodges electrons from their orbits around the surface atoms of the cell material. For each cell this only produces a very small amount of energy, therefore large quantities must be used.</p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Voltage">Voltage</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Voltage is the application of this energy. Any <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Voltage sources"><a href="Voltage_sources">form of energy</a></span></span> that dislodges electrons from atoms can be used to produce current. Thus:</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">electricity</span><span class="ui basic label zettel-tag" title="Tag">physics</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

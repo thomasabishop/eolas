@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Text encoding</h1><p>Text encoding is an applied instance of <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Binary encoding"><a href="Binary_encoding">binary encoding</a></span></span>.</p><h2 id="ascii">ASCII</h2><p>There are around 100 characters in total required to render A-Z, a-z, 0-9 and the special characters of Lating text. The ASCII (American Standard Code for Information Interchange) system achieves this with 8-bit code. Thus, each character symbol corresponds to a byte. As <span class="math inline">\(2^8 = 256\)</span>, this allows for a total of 256 characters (where only 7-bits are sufficient, a leading <code>0</code> is added).</p><p>Below are some examples of the ASCII correspondences:</p><table class="ui table"><thead><tr><th>Binary</th><th>Hex</th><th>Character</th></tr></thead><tbody><tr><td>00100000</td><td>20</td><td>[space]</td></tr><tr><td>00100001</td><td>21</td><td>!</td></tr><tr><td>001010112</td><td>2B</td><td>+</td></tr></tbody></table><p>However there are only 128 characters represented in ASCII, thus using 256-bits is somewhat excessive. This lead people to try and use the remaining, free 128 bits to accommodate characters from non-English languages. This was quickly found to be insufficient, necessitating the development of a new encoding standard, Unicode…</p><h2 id="unicode-and-utf-8">Unicode and UTF-8</h2><p>Whereas ASCII only encodes 128 English alphanumeric characters, the scope of Unicode is much broader, as such it is a superset of ASCII (every character in ASCII is in Unicode but not the converse). Unicode is a universal character encoding that defines every character in every spoken language of the world. The Unicode standard is maintained by the Unicode Consortium and defines more than 1,40,000 characters from more than 150 modern and historic scripts along with emoji.</p><p>In contrast to ASCII, it doesn’t achieve this by mapping every character to a bit. Instead it provides an abstract representation of every character which is then encoded using a designated encoding protocol, such as UTF-8, UTF-16, UTF-32 etc. These abstract representations are called “code-points” and are represented as hexadecimal numbers between 0xO - 0x10FFFF (1114111), prepended by <code>U+</code>, for example <code> U+00F7</code> which is the sign for division.</p><p>As the encoding names suggest they encode to different bit sizes:</p><ul><li>UTF-8 and UTF-16 are variable length encodings.</li><li>In UTF-8, a character may occupy a minimum of 8 bits.</li><li>In UTF-16, a character length starts with 16 bits.</li><li>UTF-32 is a fixed length encoding of 32 bits.</li></ul><blockquote><p>Unicode can be stored using several different encodings, which translate the character codes into sequences of bytes. So, crucially Unicode is not itself an encoding.</p></blockquote><p>UTF-8 uses the ASCII set for the first 128 characters. That’s handy because it means ASCII text is also valid in UTF-8.</p></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">binary</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

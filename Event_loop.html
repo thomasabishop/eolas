@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">The Event Loop</h1><p>Node.js provides a single-threaded asynchronous architecture which is achieved via means of the Event Loop.</p><h2 id="multi-threaded-synchronous-architectures">Multi-threaded synchronous architectures</h2><p>In the context of backend, a thread as an instance of a request-response transaction.</p><p>For example a request is made from the client for a resource contained in a database. The back-end language is an intermediary between the client machine and the server. It receives the request and returns the resource as a response.</p><p>Many backend frameworks are synchronous but multithreaded. This means that a thread can only process one request-response cycle at a time. The thread cannot initiate a new cycle until it has finished with its current cycle.</p><p>If there was only one thread, this would be inefficient and unworkable. Therefore the framework will be multi-threaded: multiple request-response cycles can be executed at once by different threads.</p><p><img alt="sync-thread.svg" src="static/sync-thread.svg" /></p><p>To accomodate the ability to increase the scale of synchronous applications you need to be able to spawn more threads commensurate to increased demand. This increases the resource consumption of the framework (more cores, more memory etc). Moreover it is possible to reach a point where all threads are active and no more can be spawned. In this case there will simply be delays in the return of data.</p><h2 id="node-as-a-single-threaded-asynchronous-architecture">Node as a single-threaded asynchronous architecture</h2><p>In contrast, Node only has a single thread but it works asynchronously, not synchronously. Thus it has a <strong>single-threaded asynchronous architecture</strong>. This means whilst there is only a single thread it can juggle responses by dispatching them asynchronously. When a request is made it sends it off and continues with its execution and handling new requests. Once these resolve, the data is returned to the main thread.</p><p><img alt="async.svg" src="static/async.svg" /></p><h2 id="the-event-loop-1">The Event Loop</h2><p>Node implements its single-threaded asynchronous architecture through the Event Loop.</p><p>This is the mechanism by which Node keeps track of incoming requests and their fulfillment status: whether the data has been returned successfully or if there has been error.</p><p>Node is continually monitoring the Event Loop in the background.</p><p>A running Node application is a single running process. Like everything that happens within the OS, a process is managed by the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> that dispatches operations to the CPU in a clock cycle. A thread is a sequence of code that resides within the process and utilises its memory pool (the amount of memory assigned by the kernel to the Node process). The Event Loop runs on CPU ticks: a tick is a single run of the Event Loop.</p><h3 id="phases-of-the-event-loop">Phases of the Event Loop</h3><p>The Event Loop comprises six phases. The Event Loop starts at the moment Node begins to execute your <code>index.js</code> file or any other application entry point. These six phases create one cycle, or loop, equal to one <strong>tick</strong>. A Node.js process exits when there is no more pending work in the Event Loop, or when <code>process.exit()</code> is called manually. A program only runs for as long as there are tasks queued in the Event Loop, or present on the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The call-stack"><a href="Call_stack">call stack</a></span></span>.</p><p><img src="static/node-event-loop.svg" /></p><p>The phases are as follows:</p><ol><li><strong>Timers</strong><ul><li>These are functions that execute callbacks after a set period of time. As in standard JavaScript there are two global timer functions: <code>setTimeout</code> and <code>setInterval</code>. Interestingly these are not core parts of the JavaScript language, they are something that are made available to JS by the particular browser. As Node does not run in the browser, Node has to provide this functionality. It does so through the core <code>timers</code> module.</li><li>At the beginning of this phase the Event Loop updates its own time. Then it checks a queue, or pool, of timers. This queue consists of all timers that are currently set. The Event Loop takes the timer with the shortest wait time and compares it with the Event Loop’s current time. If the wait time has elapsed, then the timer’s callback is queued to be called once the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The call-stack"><a href="Call_stack">call stack</a></span></span> is empty.</li></ul></li><li><strong>I/O Callbacks</strong><ul><li>Once timers have been checked and scheduled, Node jumps to I/O operations.</li><li>Node implements a non-blocking input/output interface. This is to say, writing and reading to disk (files in the Node application directory) is implemented asynchronously. The asynchronous I/O request is recorded into the queue and then the call stack continues.</li></ul></li><li><strong>Idle / waiting / preparation</strong><ul><li>This phase is internal to Node and is not accessible to the programmer.</li><li>It is primarily used for gathering informtion, and planning what needs to be executed during the next tick of the Event Loop</li></ul></li><li><strong>I/O polling</strong><ul><li>This is the phase at which the main block of code is read and executed by Node.</li><li>During this phase the Event Loop is managing the I/O workload, calling the functions in the queue until the queue is empty, and calculating how long it should wait until moving to the next phase. All callbacks in this phase are called synchronously (although they return asynchronously) in the order that they were added to the queue, from oldest to newest.</li><li>This is the phase that can potentially block our application if any of these callbacks are slow or do not return asynchronously.</li></ul></li><li><strong><code>setImmediate</code> callbacks</strong><ul><li>This phase runs as soon as the poll phase becomes idle. If <code>setImmediate()</code> is scheduled within the I/O cycle it will always be executed before other timers regardless of how many timers are present.</li><li>This is your opportunity to grant precedence to certain threads within the Node process</li></ul></li><li><strong>Close events</strong><ul><li>This phase occurs when the Event Loop is wrapping up one cycle and is ready to move to the next one.</li><li>It is an opportunity for clean-up and to guard against memory leaks.</li><li>This phase can be targetted via the <code>process.exit()</code> function or the close event of a web-socket.</li></ul></li></ol><h2 id="event-loop-and-event-queue">Event <em>loop</em> and event <em>queue</em></h2><p>The terms <em>event loop</em> and <em>event queue</em> are often used interchangeably in the literature but in fact they are distinct.</p><p>The Event Loop is the Node runtime’s method of execution, the queue is the stack of tasks that are lined up and executed by the loop. We can think of the queue as being the input and the loop as what acts on the input. The queue obviously emerges from the program we write but it is scheduled, organised and sequenced by the loop.</p><p><a href="https://blog.appsignal.com/2022/07/20/an-introduction-to-multithreading-in-nodejs.html">https://blog.appsignal.com/2022/07/20/an-introduction-to-multithreading-in-nodejs.html</a> <a href="https://school.geekwall.in/p/Bk2xFs1DV">https://school.geekwall.in/p/Bk2xFs1DV</a></p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="fs">fs module</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Every method associated with <code>fs</code> has a <em>blocking</em> and <em>asynchronous</em> implementation. The former obviously blocks the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The Event Loop"><a href="Event_loop">event queue</a></span></span>, the latter does not.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">node-js</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

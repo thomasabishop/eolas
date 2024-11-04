@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Introduction to the Unix shell</h1><h2 id="unix-based-systems">Unix based systems</h2><p>Many operating systems are based on the UNIX software architecture. macOS/OSX (Darwin) and GNU/Linux are two very popular examples. Most web servers run a version of Linux as their native OS thus a knowledge of command line for UNIX systems is invaluable for web developers. Windows systems are not UNIX based so everything that is written here is not applicable to the Windows command line program Command Prompt although there are obvious conceptual overlaps.</p><p>UNIX was initially developed by AT&amp;T and is still owned by them. GNU (the basis for Linux) is a recursive acronym for ’GNU is not UNIX’. Functionally it is the same as Unix however, it just doesn’t contain the proprietary code.</p><h2 id="key-terms">Key terms</h2><h3 id="kernal">Kernal</h3><p>The kernel is the central part of an operating system. It manages the operations of the computer and the hardware; most notably memory and CPU time. There are two types of kernels: a <strong>micro-kernel</strong>, which only contains basic functionality; and a <strong>monolithic kernel</strong>, which contains many device drivers.</p><h3 id="shell">Shell</h3><p>A shell is a user interface for access to an operating system’s services. In general, operating system shells use either a command-line interface or GUI, depending on a computer’s role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel</p><h3 id="bash">Bash</h3><p>Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell. First released in 1989, it has been distributed widely as the default login shell for most Linux distributions and Apple’s macOS.</p><h2 id="what-is-the-command-line">What is the command line?</h2><p>Command line is both a general computing concept and a specific utility. In its general sense, engaging with a computer via command line means inputting abbreviated written commands into a console or terminal window on a computer. The computer then runs these commands on the basis of the instructions you have given.</p><p>You can get the computer to ‘do things’ (make files, connect to networks etc) via command line and you can use it to check the status of systems within your computer.</p><p>This mode of engagement contrasts with the engagement facilitated by modern graphical user interfaces (GUIs) where the user navigates via a combination of keyboard and mouse inputs and interacts with windows whose functionality is usually self-explanatory and therefore more user-friendly. Command line predates GUIs but it is considered a more efficient and expansive means of interacting with the whole of your computer especially if you are a developer or programmer.</p><p>In the more specific sense, the ‘command line’ refers to the location in the console window where you input your commands. The command line consists in a user name and the current directory you are in followed by a dollar sign and a cursor waiting for input.</p><h2 id="basic-orientation">Basic orientation</h2><p>When you are using command line you are always situated somewhere within a file system. Typically this will be your own user files. directory structure By default you are always in your home directory, this is represented by the tilda symbol: <code>~</code>. This is why you see the tilda symbol as part of the command line. In command line, we do not use the term ‘folders’, instead they are called directories. (I will follow this convention from hereon.) You do not have to worry too much about remembering the names of specific folders and files you can always ask the computer to display them to you by using <code>ls</code> argument or <code>pwd</code>.</p><h2 id="command-line-syntax">Command line syntax</h2><p>The syntax of the language used to input commands is analogous to the grammar of natural languages. We have a verb that is operative on an object/noun and which can be modified through adverbs. The syntax of a command sequence is as follows:</p><ol><li>Command (verb): what we want to do</li><li>Option (adverb): modifying the command - always starts with a hyphen</li><li>Argument (noun/object): what we want our command to operate on</li></ol><p>We will see that not all commands require arguments, but this is the general structure</p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Operating_system_API">Operating system API</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>A user can interact with the operating system either via the GUI or the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Introduction to the Unix shell"><a href="Intro_to_the_Unix_shell">shell</a></span></span>. (Both ultimately access the OS via the shell since the UI is an abstraction layer of the shell.)</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">shell</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

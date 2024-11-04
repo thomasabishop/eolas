@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Monitoring processes and resources</h1><h2 id="general-purpose-diagnostic-programs-memory-cpu-io">General purpose diagnostic programs (memory, CPU, I/O)</h2><h3 id="tophtop"><code>top</code>/<code>htop</code></h3><p>We can use <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Processes"><a href="Processes">ps</a></span></span> to list the currently running processes but it does not provide much information about the resource metrics or how the process changes over time. We can use <code>top</code> to get more information.</p><p><code>top</code> provides an interactive interface for the information that <code>ps</code> displays. It updates in real time and shows the most active processes based on the CPU time that they are utilising. You can also order by memory usage.</p><p><em>Here I have pressed <code>u</code> to show only the processes associated with my user:</em></p><p><img src="static/htop.png" /></p><h3 id="main-commands">Main commands</h3><table class="ui table"><thead><tr><th>Command</th><th>Action</th></tr></thead><tbody><tr><td>-u</td><td>Show processes by selected user</td></tr><tr><td>M</td><td>Sort by memory usage</td></tr><tr><td>P</td><td>Sort by cumulative CPU usage</td></tr><tr><td>?</td><td>View key and explanation</td></tr></tbody></table><h3 id="understanding-the-categories">Understanding the categories</h3><ul><li><code>Main/IO</code><ul><li>The first covers all processes. The second focuses on input/output processes (i.e. reading and writing to disks and other devices)</li></ul></li><li><code>PRI</code><ul><li>This stands for <em>priority</em>. This metric reflects the kernel’s current schedule priority for the process. The higher the value, it is less likely that the kernel will schedule the process if there are competing processes that require CPU time. The lower the value, the greater priority this process has over others.</li></ul></li><li><code>NI</code><ul><li>This stands for <em>nice value</em>. This metric exists in order to allow administrators to nudge or influence the priority of a given process. You cannot directly tell the kernel to <em>do x now instead of y</em> but you can make what are effectively suggestions by manipulating the nice value.</li><li>The kernel adds the nice value to the current priority value for the given process to determine its next time slot. When you increase the nice value of process <em>P</em> you are being “nicer” to the other processes by influencing the priority of <em>P</em> downwards so that the other processes receive greater precedence from the kernel.</li><li>By default, the nice value will be 0. To reduce priority of PID 1234, you would use:<pre><code class="bash language-bash">$ renice 20 1234</code></pre></li></ul></li><li><code>VIRT</code><ul><li>The total amount of <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Virtual_memory_and_the_MMU_in_Linux</a></span></span> used by the process including: program code, data, shared libraries, pages that have been swapped, pages that have been mapped but not used.</li></ul></li><li><code>RES</code><ul><li>Stands for <em>resident size</em></li><li>The non swapped <em>physical</em> memory the process has used</li></ul></li><li><code>SHR</code><ul><li>The size of the process’s <a href="Virtual_memory_and_the_MMU_in_Linux.md#shared-pages">shared pages</a></li></ul></li><li><code>S</code><ul><li>Status:<ul><li>S for sleeping (idle)</li><li>R for running</li><li>D for disk sleep</li></ul></li></ul></li></ul><h3 id="vmstat"><code>vmstat</code></h3><p><code>vmstat</code> provides similar metrics to <code>htop</code> but tells you more about the memory state and the activities of the kernel in a single row.</p><p>The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:</p><pre><code class="language-none">$ vmstat 5

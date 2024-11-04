@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Strategies for constructing proofs in propositional logic</h1><h2 id="general-strategy">General strategy</h2><ul><li>Break complex propositions into simpler sentences by using the elimination rules</li><li>Recombine simple propositions into complex propositions using the introduction rules.</li></ul><h2 id="goal-analysis">Goal analysis</h2><p>The approach above describes the general form of a proof but of course it will not always work and there will be cases where the route to the desired derivation is more circuitous. In these instances it is to best to combine this general top level strategy with goal analysis.</p><p>Goal analysis is a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Recursion"><a href="Recursion">recursive</a></span></span> strategy which proceeds by using a ‘goal’ proposition to guide the construction of intermediary derivations.</p><p>Assume that we want to show that an argument is <a href="Validity_and_entailment.md#validity">valid</a>. Then our ultimate goal is to derive the conclusion from the premises we are given. We first ask ourselves: <em>which propositions if we could derive them, would allow us to easily derive the conclusion</em>? (For example, these propositions might be two simple propositions that when combined with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Conjunction Introduction"><a href="Conjunction_Introduction">Conjunction Introduction</a></span></span> give us the conclusion.) Deriving these propositions then becomes the new intermediate goal.</p><p>If arriving at these propositions is not trivial, we then ask ourselves the question again: <em>which propositions would permit us to derive the intermediary propositions we need</em>? You keep working back in this manner until you reach a base level. Then it is just a matter or working upwards from each set of derived intermediary propositions until you reach the ultimate goal.</p><h3 id="demonstration">Demonstration</h3><p>Let’s say we want to prove <span class="math inline">\((L \lor A) \land D\)</span> from the propositions <span class="math inline">\(\lnot N\)</span> and <span class="math inline">\(((\lnot N \rightarrow L) \land (D \leftrightarrow \lnot N))\)</span>.</p><p>First, we consider what is the easiest possible way of achieving the proposition <span class="math inline">\((L \lor A) \land D\)</span>. Clearly it is to separately derive each disjunct (<span class="math inline">\(L \lor A\)</span> and <span class="math inline">\(D\)</span>) and then combine them with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Conditional Introduction"><a href="Conditional_Introduction">Conjunction Introduction</a></span></span>. This provides us with our first goal: to derive each of the separate conjuncts.</p><p>Let’s start with <span class="math inline">\(D\)</span>: where does it occur in the assumptions? It occurs in the compound <span class="math inline">\((\lnot N \rightarrow L) \land (D \leftrightarrow \lnot N)\)</span>, but only in the first conjunct. We can get this simply but applying <a href="Conjunction%20Elimination.md">Conjunction Elimination</a>.</p><p>So far we have:</p><p><img src="static/step1.png" /></p><p>Now we just need to get <span class="math inline">\(D\)</span> from the proposition at line 3. This is easy since we already have access to the consequent of the biconditional at line 1. Therefore we can apply <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Biconditional Elimination"><a href="Biconditional_Elimination">Biconditional Elimination</a></span></span>) at line 3 to get <span class="math inline">\(D\)</span>. We are now halfway there:</p><p><img src="static/step2.png" /></p><p>Next we need to turn our attention to deriving <span class="math inline">\(L \lor A\)</span>. How can we obtain <span class="math inline">\(L\)</span> ? Well it is contained within the first conjunct of the assumption on line 2. Again, we can get this through the application of <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Conditional Elimination"><a href="Conjunction_Elimination">Conjunction Elimination</a></span></span>. Now, how do we get <span class="math inline">\(L\)</span> from <span class="math inline">\((\lnot N \rightarrow L)\)</span>? Well, we already have the antecedent <span class="math inline">\(\lnot N\)</span> as an assumption on the first line, so we can use <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Conditional elimination"><a href="Conditional_Elimination">Conditional Elimination</a></span></span> to derive <span class="math inline">\(L\)</span>. These two steps give us:</p><p><img src="static/step3.png" /></p><p>Now we need to get from <span class="math inline">\(L\)</span> to <span class="math inline">\(L \lor A\)</span>. This is really straightforward because by using <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Disjunction Introduction"><a href="Disjunction_Introduction">Disjunction Introduction</a></span></span>) we can get from any sentence to a disjunction. Finally, having assembled all the constituent parts of the conjunction that is the conclusion, we can combine them with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Conjunction Introduction"><a href="Conjunction_Introduction">Conjunction Introduction</a></span></span> as we had planned at the outset.</p><p><img src="static/step4.png" /></p><h3 id="a-further-example">A further example</h3><p>We will seek to prove the following:</p><p><span class="math display">$$

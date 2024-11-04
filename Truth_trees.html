@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Truth trees</h1><h2 id="rationale">Rationale</h2><p>Like <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Truth-tables</a></span></span>, truth-trees are a means of graphically representing the logical relationships that may obtain between propositions. Truth-trees and truth-tables complement each other and which method you choose depends on which logical property you are seeking to derive.</p><p>Whilst truth-tables have the benefit of being exhaustive - every possible truth assignment is factored into the representation - their complexity grows exponentially with each additional proposition they contain. This can make manually constructing truth tables long-winded and prone to mistakes.</p><p>Truth-trees are less onerous but they lack the exhaustive scope of a truth-table. They are more targeted and are best used for demonstrating <em>that something is the case</em> rather than <em>all the possible states that could be the case</em>. For example, a truth tree will tell us that a set <em>S is logically consistent</em> whereas a truth-table will tell us that <em>S is consistent on the following three assignments.</em></p><h2 id="logical-consistency">Logical consistency</h2><p>Recall that a set of propositions is logically or truth-functionally <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Consistency</a></span></span> just if there is at least one assignment of truth conditions which results in all members of the set being true. To identify consistency for a set of three propositions via the truth table approach we would need to construct a truth table with <span class="math inline">\(2^3\)</span> (8) rows. Assume that this set is consistent on one partial assignment only. This means that 87.5% of our rows are redundant, they are not required to prove the consistency of the set. However we can only know this and we can only be sure of consistency once we have gone through the process of generating an assignment for each row.</p><p>Truth trees allow us to reduce the amount of work required and go straight to the assignment that proves consistency, disregarding the rest which are irrelevant.</p><h2 id="truth-tree-structure-and-key-terms">Truth tree structure and key terms</h2><p><strong>When using a truth tree to derive logical consistency, the goal is to determine whether there is a truth-value assignment on which all of the sentences of a set are true. If the set is consistent we should be able to derive a partial assignment from the tree that demonstrates consistency.</strong></p><p>Each truth tree begins with a series of sentences one on top of the other in a column. We call the sentences that comprise the initial column <strong>set members</strong>. In constructing the tree, we work downwards from the initial column decomposing set members into their atomic constituents. We a call an atomic sentence that has been decomposed a <strong>literal.</strong> A literal will either be an atomic sentence or the negation of an atomic sentence. If one of the set members is already a literal, there is no need to decompose it; it can remain as it is.</p><p>Once every set member has been decomposed the truth tree is complete. It can then be interpreted in order to derive logical consistency or inconsistency. If the set is consistent, we are able to derive the partial assignment(s) that demonstrate consistency.</p><p>The rules for decomposing compound sentences match the truth conditions of the logical connectives. There are rules for every possible connective and the negation of every possible connective however in terms of their tree shape they all correspond to either a conjunction or a disjunction. Disjunctive decomposition results in new branches being formed off the main column (or trunk). Conjunctive decomposition is non-branching which means the decomposed constituents are placed within the trunk of whichever tree or branch they are decomposed within.</p><p>As we construct the tree we list each line in the left-hand margin and the decomposition rule in the right-hand margin. When we apply a decomposition rule we must cite the lines to which it applies.</p><h3 id="closed-and-open-branches">Closed and open branches</h3><p>Any branch on which an atomic sentence (<span class="math inline">\(P\)</span>) and the negation of that sentence (<span class="math inline">\(\sim P\)</span>) both occur is a <strong>closed branch</strong>. A branch that is not closed is an <strong>open branch</strong>. No partial assignment is recoverable from a closed branch. An open branch allows truth to ‘flow up’ to the original set members whereas a closed branch blocks this passage.</p><h3 id="completed-open-branch">Completed open branch</h3><p>A completed open branch occurs when we have an open branch that has been fully decomposed: the branch is open and all molecular sentences have been ticked off such that it contains only literals.</p><h3 id="completed-tree">Completed tree</h3><p>A tree where all its branches are either completed open branches or closed branches.</p><h3 id="closed-tree">Closed tree</h3><p>A tree where all the branches are closed</p><h3 id="open-tree">Open tree</h3><p>A tree with at least one completed open branch</p><h2 id="deriving-consistency">Deriving consistency</h2><p>Using the definitions above, we can now define truth-functional consistency and inconsistency in terms of truth trees:</p><blockquote><p>A finite set (<span class="math inline">\(\Gamma\)</span> ) of sentences is truth-functionally inconsistent if <span class="math inline">\(\Gamma\)</span> is a closed tree</p></blockquote><blockquote><p>A finite set (<span class="math inline">\(\Gamma\)</span> ) of sentences is truth-functionally consistent if <span class="math inline">\(\Gamma\)</span> is an open tree</p></blockquote><h2 id="examples">Examples</h2><h3 id="first-example">First example</h3><p>The following is a truth tree for the set <span class="math inline">\({P \lor Q, \sim P }\)</span>:</p><p><img alt="basic-open-tree 1.svg" src="static/basic-open-tree%201.svg" /></p><h3 id="interpretation">Interpretation</h3><ul><li>We decompose the disjunction at line 1 on line 3. We tick off the compound sentence to indicate that it is now decomposed and no longer under consideration.</li><li>Both P and its negation exist on a single branch (at line 2 and line 3). This makes it a closed branch. We indicate this by the X beneath the branch that is closed, citing the source of the closure by line number.</li><li>The rightward branch is a completed open branch given the decomposition at 3 and the lack of negation of Q. Overall this makes the tree an open tree.</li></ul><p>As the set gives us an open tree, it must be truth-functionally consistent. If this is the case we should be able to determine the partial assignment in which each set member is true. Given that Q is not negated the assignment of consistency will contain Q but we have both P and ~P. This means there are two possible assignments where the set is consistent: <span class="math inline">\(P, Q\)</span> and <span class="math inline">\(\sim P, Q\)</span>. This is confirmed by the truth-table:</p><pre><code class="language-none">P	Q				P	∨	~	P				Q

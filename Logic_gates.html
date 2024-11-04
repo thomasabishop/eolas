@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Logic gates</h1><blockquote><p>[A logic gate consists in] three connections where there may or may not be some electricity. Two of those connections are places where electricity may be put into the device, and the third connection is a place where electricity may come out of the device.</p></blockquote><p>[J.C. Scott. 2009. <strong>But How Do It Know? The Basics of Computers for Everyone</strong>, 21]</p><p>Logic gates are the basic building blocks of digital computing. <strong>A logic gate is an electrical circuit that has one or more than one input and only one output.</strong> The input and output points of the gate are <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Integrated circuits"><a href="Integrated_circuits">pins</a></span></span> The input controls the output and the logic determining which types of input (on/off) lead to specific outputs (on/off) is isomorphic with the truth-conditions of the <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Truth-functional_connectives</a></span></span> specifiable in terms of <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Truth-tables</a></span></span>.</p><p>Physically, what ‘travels through’ the gates is electrical current and what constitutes the ‘gate’ is a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Transistors"><a href="Transistors">transistor</a></span></span> responding to the current. Going up a level of abstraction, the current/ charge is identified with a <a href="Binary_units_of_measurement.md#binary-units-of-measurement">bit</a>. It is bits that go into the gate and bits which come out: binary information that may be either 1 or 0.</p><h2 id="elementary-and-composite-gates">Elementary and composite gates</h2><p>We distinguish elementary from composite logic gates. An elementary gate is a single gate embodying a single logical connective. It cannot be reduced any lower as a logical abstraction. A composite gate is a gate made up of more than one elemen&gt;tary gate and/or other composite gates.</p><p>An example of a composite gate would be a three-way AND. An AND with three inputs rather than the standard two that furnish the elementary AND gate. This gate would output 1 when all three gates have the value 1 and 0 otherwise. <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The half adder and full adder"><a href="Half_adder_and_full_adder">Adders</a></span></span> and <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Latches"><a href="Latches">latche&gt;s</a></span></span> whilst being <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Integrated circuits"><a href="Integrated_circuits">integrated circuits</a></span></span> are also, technically speaking, composite gates.</p><h2 id="gate-interface--gate-implementation">Gate interface / gate implementation</h2><p>The gate <em>interface</em> is an abstraction that the enables the user to think of the gate simply in terms of inputs and outputs, without being conc&gt;erned with the technical details of how this is achieved. How it is achieved is the gate <em>implementation</em>.</p><p>We can demonstrate this with the earlier example of a three-way AND. The diagram below represents the gate as an interface:</p><p>// Add: Interface diagram</p><p>Whereas this diagram presents the implementation of the gate: it shows the specific combination of gates which creates the enables the behaviour represented in the interface diagram.</p><p>// Add: Implementation diagram</p><blockquote><p>Importantly, a single interface may be implemented in a variety of ways. There is a one-to-many relationship at work here. From the point of view of the user interface these differences should not be detectable. This is another example of <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Hardware abstraction and modularity"><a href="Hardware_abstraction_and_modularity">hardware abstraction</a></span></span></p></blockquote><h2 id="not-gate">NOT gate</h2><blockquote><p>The NOT gate inverts the value of whatever input it receives</p></blockquote><h3 id="truth-conditions">Truth conditions</h3><table class="ui table"><thead><tr><th><span class="math inline">\(P\)</span></th><th><span class="math inline">\(\lnot P\)</span></th></tr></thead><tbody><tr><td>1</td><td>0</td></tr><tr><td>0</td><td>1</td></tr></tbody></table><h3 id="interactive-circuit">Interactive circuit</h3><iframe src="https://circuitverse.org/simulator/embed/not-gate-aeb5f9e5-9f58-4883-b8e5-d70f6d023185?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginhe

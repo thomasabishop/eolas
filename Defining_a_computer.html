@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Defining a computer</h1><blockquote><p>A general-purpose computer is one that, given the appropriate instructions and required time, should be able to perform most common computing tasks.</p></blockquote><p>This sets a general purpose computer aside from a special-purpose computer, like the one you might find in your dishwasher which may have its instructions hardwired or coded into the machine. Special purpose computers only perform a single set of tasks according to prewritten instructions. We’ll take the term <em>computer</em> to mean general purpose computer.</p><p>Simplified model of what a computer is: <img alt="1.4-Input-Process-Output.png" src="static/1.4-Input-Process-Output.png" /></p><p>Although the input, output and storage parts of a computer are very important, they will not be the focus of this course. Instead we are going to learn all about the process part, which will focus on how the computer is able to follow instructions to make calculations.</p><h2 id="supplementary-resources"><strong>Supplementary Resources</strong></h2><h3 id="early-computing-crash-course-computer-science">Early computing (<em>Crash Course Computer Science)</em></h3><p><a href="watch?v=O5nskjZ_GoI">Early Computing: Crash Course Computer Science <span><code class="inline-tag">#1</code></span></a></p><ul><li>The abacus was created because the scale of society had become greater than what a single person could create and manipulate in their mind.<ul><li>Eg thousands of people in a village and tens of thousands of cattle</li></ul></li><li>In a basic abacus each row of beads (say its coloured) represents a different power of ten</li><li>As well as aiding calculation, the abacus acts as a primitive storage device</li><li>Similar early computing devices: astrolabe, slide rule, sunrise clocks, tide clocks</li></ul><blockquote><p>As each increase in knowledge, as well as on the contrivance of every new tool, human labour becomes abridged. <strong>Charles Babbage</strong></p></blockquote><ul><li>One of the first computers of the modern era was the Step Reckoner built by Leibniz in 1694.<ul><li>In addition to adding, this machine was able to multiply and divide basically through hacks because from a mechanical point of view, multiplications and divisions are just many additions and subtractions</li><li>For example, to divide 17/5, we just subtract 5, then 5, then 5 again until we can’t do anymore hence two left over</li></ul></li><li>But as these machines were expensive and slow, people used pre-computed tables in book form generated by human computers. Useful particularly for things like square roots.</li><li>Similarly range tables were created that aided the military in calculating distances for gunboat artillery which factored in contextual factors like wind, drift, slope and elevation. These were used well into WW2 but they were limited to the particular type of cannon or shell</li></ul><p><img alt="Screenshot_2020-08-09_at_21.32.54 1.png" src="static/Screenshot_2020-08-09_at_21.32.54%201.png" /></p><p><img alt="Screenshot_2020-08-09_at_21.34.48.png" src="static/Screenshot_2020-08-09_at_21.34.48.png" /></p><blockquote><p>Before the invention of actual computers, ‘computer’ was a job-title denoting people who were employed to conduct complex calculations, sometimes with the aid of machinery, but most often not. This persisted until the late 18th century when the word changed to include devices like adding machines.</p></blockquote><ul><li>Babbage sought to overcome this by designing the <strong>Difference Engine</strong> which was able to compute polynomials. Complex mathematical expressions that have constants, variables and exponent. He failed to complete it in his lifetime because of the complexity and number of intricate parts required. His model was eventually successfully created in the 90s using his designs and it worked.<ul><li>But while he was coming up with this he also conceived of a better and general purpose computing device that wasn’t limited to polynomial calculations → the Analytical Engine.</li><li>It could run operations in sequence and had memory and a primitive printer. It was way ahead of its time and was never completed.</li><li>Ada <span><code class="inline-tag">#Lovelace</code></span> wrote hypothetical programs for the Analytical Engine, hence she is considered the world’s first computer programmer.</li></ul></li><li>At this point then, computing was limited to scientific and engineering disciplines but in 1890, the US govt needed a computer in order to comply with the constitutional stipulation to have a census every ten years. This was getting increasingly difficult with the growing population - it would take more than 13 years to complete. This led to punch cards designed by Herman Hollereth. From this IBM was born</li></ul></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">1</span><span class="ui basic label zettel-tag" title="Tag">Lovelace</span><span class="ui basic label zettel-tag" title="Tag">theory-of-computation</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

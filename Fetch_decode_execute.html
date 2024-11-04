@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Fetch, decode, execute, store</h1><p><em>Fetch, decode, execute</em> is the operating cycle of the CPU. We will run through how this works with reference to the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU architecture</a></span></span>.</p><h2 id="fetch">Fetch</h2><h3 id="overview">Overview</h3><p>First, instructions and data are fetched from outside of the CPU chip (usually from the DRAM). In some cases, the data used by an instruction will be included with it. In other instance the instruction will reference the location where the data are held as an address.</p><h3 id="specifics">Specifics</h3><ul><li>The Program Counter register needs to keep track and sequence the different instructions that the CPU will work on. The first place it will look for an instruction is at the DRAM address <code>0000</code>, equivalent to 0 in the Program Counter register: the starting point. This is address therefore copied to the Memory Address Register for future reference.</li><li>This memory-storing event constitutes an instruction so it is copied to the Instruction Register.</li><li>As the first instruction has been fetched, the system reaches the end of the first cycle. Thus the Program counter increments by 1 to log this.</li><li>The next fetch cycle begins.</li></ul><h2 id="decode">Decode</h2><h3 id="overview-1">Overview</h3><p>Once the CPU has received the instruction, the CPU controller chip analyses it to determine which of its circuits should be used for processing.</p><h3 id="specifics-1">Specifics</h3><ul><li>Now that the instruction is fetched and stored in the RAM it needs to be decoded. It is therefore sent from the RAM to the Control Unit of the CPU. There are two parts to the instruction:<ol><li>The operation code (“op code”): the command that the computer will carry out.</li><li>The operand: an address in RAM where the data will be read and written to as part of the execution</li></ol></li><li>The Control Unit converts the operation code and operand into an instruction that is fed to the next stage in the cycle: execution. For example, for an add function, <code>add</code> would be the op code and <code>address x</code> and <code>address y</code> would be the operands, thus the instruction would be: <code>add</code> the value in <code>address x</code> to the value in <code>address y</code>.</li></ul><h2 id="execute">Execute</h2><p>Now the command will be executed. The operand is copied to the Memory Address Register and then passed to the Memory Data Register and the command is carried out by the ALU. The activities of ALU are covered in <a href="CPU_architecture.md#arithmetic-logic-unit">CPU Architecture</a> and the notes on <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Logic gates"><a href="Logic_gates">Logic Gates</a></span></span>.</p><h2 id="store">Store</h2><h3 id="overview-2">Overview</h3><p>As well as telling the CPU what operation to perform, the instructions must specify where to store the result.</p><h3 id="specifics-2">Specifics</h3><ul><li>Data is stored differently depending on the instruction.</li><li>If the instruction is iterative (e.g. adding two numbers and then multiplying by another number), the instruction will tell the CPU to store the interim first value in the CPU’s <a href="CPU_architecture.md#registers">registers</a>. As these are part of the CPU, the data can be retrieved more readily. If the value is not expected to be used again immediately, it goes to the DRAM or harddisk.</li></ul></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Relation_between_kernel_and_CPU">Relation between the kernel and CPU</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>It can be confusing to understand how the kernel and CPU interact with one another. Whilst it is true to say the kernel mediates between the hardware and user processes, this led me to think that the kernel was somehow ‘over and above’ the actions of the CPU. This is wrong and if you think about it, how could this be since any process, kernel included, requires the processor? The kernel is executed by and loaded into the CPU just like any other instruction in the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Fetch, decode, execute, store"><a href="Fetch_decode_execute">fetch, decode, execute cycle</a></span></span> of the CPU.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="CPU_architecture">CPU architecture</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Each “cycle” is the execution of a process that commences once the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> hands control to the CPU. Each cycle follows a sequence of events known as <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Fetch, decode, execute, store"><a href="Fetch_decode_execute">fetch, decode, and execute</a></span></span>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Arithmetic_Logic_Unit">Arithmetic Logic Unit (ALU)</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>More specifically, the ALU is responsible for the <em>execute</em> phase of the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Fetch, decode, execute, store"><a href="Fetch_decode_execute">fetch, decode, execute cycle</a></span></span>.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">CPU</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

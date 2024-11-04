@@ -28,7 +28,10 @@
 
   body blockquote {
     border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
   }
+
   .headerFont,
   .ui.header,
   body h1,
@@ -37,21 +40,285 @@
   h4,
   h5,
   h6 {
-    font-family: "IBM Plex Sans Condensed" !important;
+    font-family: "IBM Plex Sans" !important;
   }
   body p {
-    line-height: 1.4;
+    /* line-height: 1.3; */
   }
+
   .monoFont,
   body code,
   pre,
   tt {
     font-family: "IBM Plex Mono" !important;
     font-size: 12px !important;
-    line-height: 1.4 !important;
+    /* line-height: 1.3 !important; */
   }
   img[alt~="not-by-ai-badge"] {
     width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
   }
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Rebasing</h1><p>Rebasing is a way to integrate changes from one branch into another. In this regarding it is like merging a branch B into another branch A. However rebasing differs from normal merging in the way in which it modifies the Git history.</p><p>In a normal merge of branch B into branch A, Git creates a new commit that combines the changes of branches B and A. This is known as the merge commit and is evident from the following automatic commit message that is generated:</p><pre><code class="language-none">Merge branch B of github.com:thomasabishop/remote-repository into A</code></pre><p><img src="static/normal-merge-again.svg" /></p><p>In this scenario the merge commit has two or more parent commits each representing the history of the merged branches. The resulting history of A will include the commits of B. Basically the two histories are combined.</p><p>This would give us a history that looks like the following, with different colours for the separate SHAs of each merged branch:</p><p><img src="static/combined-merge-hist.svg" /></p><p>If we were to create a rebase branch of A from B, there would be a new singular history without distinguishing multiple parents that combines the commits of A and B. The rebased branch’s commits are recreated with new commit IDs and new timestamps, based on the current state of the branch that you are rebasing onto. This is obviously potentially destructive because it does not preserve the respective branch’s separate history. It rewrites history as a continuous stream of commits in a single branch.</p><p>When a rebase is applied, it will put the diverging B commits at the tip of A like so:</p><p><img src="static/rebase-tip-chage.svg" /></p><p>And then rebrand the previous A commits to be continuous with B presenting a flat and linear Git history like the following:</p><p><img src="static/single-git-history-rebase.svg" /></p><h2 id="benefits-use-cases">Benefits, use-cases</h2><blockquote><p>The purpose of rebasing is to ensure that the commit history of a project is as linear and simple as possible, by incorporating changes from one branch into another, as if the changes had been made on the other branch all along.</p></blockquote><p>A common use-case is with feature branches as it makes the features fit more seamlessly with the <code>main</code> or <code>develop</code> branch.</p><p>It is also a technique that can be used to integrate recent commits without merging.</p><p>When to use one over the other:</p><ul><li><strong>Merge</strong> to allow commits to stand out or to be clearly grouped</li><li><strong>Merge</strong> to bring large feature branches back into main</li><li><strong>Rebase</strong> to add minor commits in a main branch into a feature branch</li><li><strong>Rebase</strong> when you need to move commits from one branch to another</li></ul><p>So in terms of my personal workflow, I should be using</p><ul><li>Merge when I want to bring a feature into develop</li><li>Merge when I want to bring develop into main for a release</li><li>Merge any time the feature branch is already public and being used by others.</li><li>Rebase to capture small changes in the parent branch</li><li>Rebase when I have branched from a branch because a refactor or something has become more complex than originally anticipated.</li></ul><h2 id="syntax">Syntax</h2><p>For example if we are working on a feature branch off of <code>main</code>, we would run the following from this feature branch:</p><pre><code class="language-none">git rebase main</code></pre><p>This will move the feature branch to the tip of <code>main</code>.</p><p>If this completes successfully, we would then go on to merge the feature with main.</p><p>If conflicts occur, the rebase will halt. You fix the conflicts and then run:</p><pre><code class="language-none">git rebase --continue</code></pre><p>Or if you don’t want to resolve the conflict (not advised):</p><pre><code class="language-none">git rebase --skip</code></pre><p>Or stop the whole process:</p><pre><code class="language-none">git rebase --abort</code></pre><h3 id="isolate-the-point-at-which-one-branch-diverges-from-another">Isolate the point at which one branch diverges from another</h3><p>This can be useful to check before you create a rebase:</p><pre><code class="language-none">git merge-base main feature/some-feature
