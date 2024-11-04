@@ -22,3 +22,12 @@ os.rename('original-file-name.txt', 'new-file-name.txt')
 import os
 os.remove('file-name.txt')
 ```
+
+## Check file exists
+
+```python
+import os
+
+file_exists = os.exists('/file/path')
+
+```

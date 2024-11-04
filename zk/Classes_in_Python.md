@@ -16,6 +16,18 @@ tags: [python, OOP]
   constructor. As long as they are defined in the constructor they are
   accessible.
 
+## Class properties
+
+In contrast to other languages, you do not need to declare any properties you
+wish to use in the class at the top before you can assign to them. This is true
+whether you define them in the constructor or not.
+
+Instead, you can create properties just by invoking `self.some_property_name` in
+the course of your code and Python will create the variable implicitly.
+
+For continuity with other languages you may however define them at the top of
+the class if you wish.
+
 ## Basic syntax
 
 ```py
@@ -82,8 +94,8 @@ class Person:
 
 ## Object references
 
-When you log a class you get a reference to its hexadecimal
-[memory](Memory.md) reference.
+When you log a class you get a reference to its hexadecimal [memory](Memory.md)
+reference.
 
 ```py
 p1 = Person('John', 36)
@@ -109,8 +121,7 @@ print(id(p2))
 
 ## Copying objects
 
-The same principle that applies to
-[copying functions](Functions_in_Python.md)
+The same principle that applies to [copying functions](Functions_in_Python.md)
 applies to copying objects created through classes: redeclaration results in a
 duplicate entity. Thus changes to the duplicate will affect the original.
 

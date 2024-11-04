@@ -13,20 +13,20 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 3e9c8244-6ff9-4b0e-85f5-e82db8665849
+**Build ID:** cd6bdaba-031a-4daf-adf2-ef3b075243e6
 
-**Published:** Fri 01 Nov 2024 16:51:34
+**Published:** Mon 04 Nov 2024 14:07:02
 
 ### Recent edits 
 
+- [[Classes_in_Python]] 
+- [[File_operations_in_Python]] 
 - [[Lists_in_Python]] 
 - [[Dictionaries_in_Python]] 
 - [[Bell_System]] 
 - [[Bolt_Beranek_and_Newman]] 
 - [[4da22434_from_ARPANET_to_Internet]] 
 - [[3f1b9fe5_motivation_Berners_Lee]] 
-- [[4a3dc316_key_figures_ARPANET]] 
-- [[82f9c228_dissolution_of_ARPANET]] 
 
 
 ### All notes (481) 
