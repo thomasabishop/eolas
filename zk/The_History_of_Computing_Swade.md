@@ -56,8 +56,8 @@ arithmetic.
 
 ![Photograph of replica of Leibniz stepped drum machine](../img/leibniz-stepped-drum.jpg)
 
-The main contenders were the Pascaline of #Pascal (which only did cumulative
-addition) and the wheel or "stepped drum" calculator of #Leibniz that could do
+The main contenders were the Pascaline of Pascal (which only did cumulative
+addition) and the wheel or "stepped drum" calculator of Leibniz that could do
 all operations (in theory).
 
 Subsequent designs were based on these artefacts. In practice, neither worked
@@ -73,7 +73,7 @@ with other mechanical calculators. In the US, Burroughs dominated the market.
 
 ## Babbage: mechanized, automated calculation
 
-> I wish to God these calculations had been executed by Steam (#Babbage)
+> I wish to God these calculations had been executed by Steam (Babbage)
 
 With Babbage's machines we see an approach to computation that can only be
 understood against the backdrop of the Industrial Revolution in which they were
@@ -97,23 +97,23 @@ automatically generated.
 
 The DE's single purpose was to calculate and output mathematical tables such as
 the results of polynomial equations. The idea was that you would input the
-answer a bell would ring and the machine would _halt_. This influenced #Turing
+answer a bell would ring and the machine would _halt_. This influenced Turing
 later. It was non-programmable and designed for a specific set of calculations.
 
 ### Analytical Engine
 
-Conceived as a general-purpose computing machine capable of perfoming a wide
+Conceived as a general-purpose computing machine capable of performing a wide
 range of calculations, programmable using punched cards similar to those used
 with Jacquard looms.
 
 It more resembled modern computers in that Babbage used concepts that would
-later translate into the #vonNeumann architecture. There was a "mill" (CPU),
-"store" (memory) and input/output mechanisms. It also had a concept of looping
-and conditional branching.
+later translate into the [von Neumann architecture](CPU_architecture.md) There
+was a "mill" (CPU), "store" (memory) and input/output mechanisms. It also had a
+concept of looping and conditional branching.
 
 ### Lovelace's insight
 
-A central idea of Ada #Lovelace, expressed in her notes on the Analytical Engine
+A central idea of Ada Lovelace, expressed in her notes on the Analytical Engine
 is that **number can represent entities other than quantity**.
 
 If we assign meaning to number, results arrived at by operating on number
@@ -208,8 +208,8 @@ various mechanical parts were prone to wear and needed frequent replacement.
 
 Designed by Howard Aiken and built by IBM (1937-1944). Also known as the
 _Automatic Sequence Controlled Calculator_ (ASCC). A general-purpose
-electro-mechanical computer it was most famously used at Los Alamos by
-#vonNeumann to calculate the blast yield of the atomic bomb.
+electro-mechanical computer it was most famously used at Los Alamos by von
+Neumann to calculate the blast yield of the atomic bomb.
 
 ![Harvard Mark One](../img/Harvard_Mark_1.jpg)
 
@@ -307,20 +307,20 @@ than binary and had punch card input and output. It was crudely programmable and
 could be set up to work on different problems by rearranging the different
 components using switches and plugboards. But this took roughly two days.
 
-It's design was very influential because it was made public and not classified.
+Its design was very influential because it was made public and not classified.
 
 ### EDVAC (1944-49) John Mauchly/J.P Eckert/ John von Neumann
 
 Built at the Moore School for the BRL as a successor to ENIAC by Mauchly and
 Eckert whilst ENIAC was still operational. It's architecture arose out of
-discussions between #vonNeumann and Mauchly and Eckert and was necessitated by
+discussions between von Neumann and Mauchly and Eckert and was necessitated by
 the need to calculate the behaviour of the fissile materials in the atomic bomb.
 
-It resulted in the famous _First Draft of a Report on the EDVAC_ by #vonNeumann
+It resulted in the famous _First Draft of a Report on the EDVAC_ by von Neumann
 which is seen as the definitive statement of the modern **digital programmable
 general-purpose computer**.
 
-As a result of the paper, #vonNeumann effectively got the credit for the
+As a result of the paper, von Neumann effectively got the credit for the
 invention even though it synthesised ideas from the ENIAC and the contributions
 of others to the EDVAC.
 
@@ -421,7 +421,7 @@ variety of different electronic methods for memory:
 
 #### The Automatic Computing Engine (ACE) (1946) Alan Turing
 
-- Technical design provided by Alan #Turing working at the Mathematics Division
+- Technical design provided by Alan Turing working at the Mathematics Division
   of the National Physical Laboratory. The product of Turing's theoretical work
   in "On Computable Numbers" where he proposes the concept of a
   [Turing_machine](Turing_machines.md) and based on his experience with early
@@ -700,7 +700,7 @@ chips, they advised the company to use a general purpose chip that could handle
 general computing as well as the basic calculator functions. This generic chip -
 the Intel 4004 - was the microprocessor combined with three other ICs
 (comprising 2.3k transistors) that comprised the fundamental building blocks of
-the #vonNeumann architecture.
+the von Neumann architecture.
 
 ![Intel 4004 chip](../img/intel-4004.jpg)
 

@@ -3,7 +3,7 @@ tags:
   - theorems
 ---
 
-# The Property of Additive Identity
+# Property of Additive Identity
 
 **Let $a$ represent any member of $\mathbb{W}$ or $\mathbb{Z}$ then:**
 

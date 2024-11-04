@@ -4,7 +4,7 @@ tags: []
 created: Friday, June 28, 2024
 ---
 
-# Concise mapping of object subfileds in JS
+# Concise mapping of object subfields in JS
 
 ## Scenario
 
