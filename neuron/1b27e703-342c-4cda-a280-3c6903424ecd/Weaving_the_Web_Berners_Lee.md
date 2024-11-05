@@ -28,4 +28,4 @@ quite a different level from anything that a neuron could be aware
 of...[W]riters have contemplated an 'emergent property' arising from the mass of
 humanity and computers. But remember that such a phenomenon would have its own
 agenda. We would not as individuals be ware of it, let alone control it, any
-more than the neuron controls the brain._ p.222
+more than the neuron controls the brain._ (p.222)

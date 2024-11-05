@@ -13,28 +13,29 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 942a9988-f5a6-4ae9-be83-000113c8d4f2
+**Build ID:** 1b27e703-342c-4cda-a280-3c6903424ecd
 
-**Published:** Mon 04 Nov 2024 16:36:33
+**Published:** Tue 05 Nov 2024 15:14:03
 
 ### Recent edits 
 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
-- [[ecec56e6_precursors_to_search_engines]] 
-- [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
-- [[The_History_of_Computing_Swade]] 
+- [[241fe1a3_the_Web_versus_modem_BBSs]] 
 - [[Weaving_the_Web_Berners_Lee]] 
+- [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
+- [[ecec56e6_precursors_to_search_engines]] 
+- [[The_History_of_Computing_Swade]] 
 - [[Concise_subfield_mapping_JS]] 
 - [[Additive_identity]] 
 - [[MongoDB_connection]] 
 - [[Commutative_Property_of_Addition_and_Multiplication]] 
 - [[Call_stack]] 
 - [[Typing_built_in_React_hooks]] 
-- [[Boot_process]] 
 
 
-### All notes (485) 
+### All notes (486) 
 
+- [[241fe1a3_the_Web_versus_modem_BBSs]] 
 - [[385af4b4_Baran_distributed_networks]] 
 - [[3f1b9fe5_motivation_Berners_Lee]] 
 - [[4a3dc316_key_figures_ARPANET]] 

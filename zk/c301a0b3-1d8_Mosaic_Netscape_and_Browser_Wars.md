@@ -3,7 +3,7 @@ tags: [world-wide-web, computer-history, Microsoft]
 created: Sunday, November 03, 2024
 ---
 
-# c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars
+# c301a0b3_Mosaic_Netscape_and_Browser_Wars
 
 The Mosaic browser was conceived and produced at the University of Illinois
 during the very early growth of the Web, when TBL was still at CERN.

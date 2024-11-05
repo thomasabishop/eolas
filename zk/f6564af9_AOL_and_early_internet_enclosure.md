@@ -1,13 +1,14 @@
 ---
-tags: [world-wide-web, computer-history, internet, socio-political]
+tags:
+  [world-wide-web, computer-history, internet, socio-political, bulletin-boards]
 created: Monday, November 04, 2024
 ---
 
 # f6564af9_AOL_and_early_internet_enclosure
 
-We might view AOL, with it's millions of 'free trial' CD-ROMs, as the first
+We might view AOL, with its ubiquitous 'free trial' CD-ROMs, as the first
 attempt by a corporate entity to try and enclose the Internet/Web. To take the
-vase informational expanse and reduce it to a single, filtered and contained
+vast informational expanse and reduce it to a single, filtered and contained
 space controlled by a single company.
 
 ![Early AOL interface](../img/aol-on-windows.jpg)
@@ -28,8 +29,9 @@ at a time when accessing information was opaque and confusing to the average
 non-technical user. The advent of the web first threatened and then basically
 obviated this model, when access to information via browsers and HTTP servers
 made the process easier and more democratized. Hence why AOL then tellingly
-pivoted to the browser and search-engine market, the next available mechanism of
-enclosure.
+pivoted to the browser and search-engine market (purchasing
+[Netscape](c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars.md) in 1999), the next
+available mechanism of enclosure.
 
 ![AOL homepage](../img/aol-original.jpg)
 
