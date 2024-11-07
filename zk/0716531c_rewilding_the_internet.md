@@ -6,23 +6,23 @@ created: Thursday, November 07, 2024
 # 0716531c_rewilding_the_internet
 
 The following analogy can be useful in understanding how the internet has become
-such a negative environment, divorced from its original promise as a humanistic
-space that facilitated the connection of individuals with shared interests and
-values to an environment that is entirely mediated by capital subject to
-control, censorship and the violation of privacy.
+such a negative environment. How it has transmogrified from its original promise
+of a humanistic space that would facilitate the connection of individuals based
+on shared interests and values to an environment that is entirely mediated by
+capital subject to control, censorship and the violation of privacy.
 
-In the 18th-century in the northern German states officials decided to
-rationalise the production of timber to enable its systematic extraction as a
-resource. (Clearly a product of Enlightenment principles of applying reason and
-science to agriculture similar to Jethro Tull's invention of the seed drill and
-the suspension of three-field rotation to constantly exploit available land.)
+In the 18th-century in the northern German states, officials decided to
+rationalise the production of timber to enable more systematic extraction.
+(Clearly a product of Enlightenment principles of applying reason and science to
+agriculture similar to Jethro Tull's invention of the seed drill and the
+suspension of three-field rotation to four-field all-round harvesting.)
 
 Instead of a sprawling forest ecosystem that had developed naturally over
 hundreds of thousands of years, which allowed for felling without upsetting the
 continuance of the system, the forests were stripped and trees were planted in
 rows and grids with the arrangement designed to maximise yield and access. This
-is broadly analogous to the factory-farming of chickens compared to free-range
-rearing.
+would be broadly analogous to the factory-farming of chickens compared to
+free-range rearing.
 
 For the first cycle it appeared as if this restructuring was a huge success.
 Yields were high and the timber was of excellent quality. This was a false dawn,
@@ -30,10 +30,10 @@ however. The subsequent yields were a complete failure compared to the past.
 Fewer trees grew and those that did had a reduced yield and were subject to
 disease. The overall health of the forests declined precipitously.
 
-What explains the initial success, however? It was made possible by the
-preceding centuries of free-range growth and husbandry. The seeming success of
-the new system was a product of the generations of investment in the natural
-ecosystem. This was exhausted in one cycle of the new regime.
+What explains the initial success? It was made possible by the preceding
+centuries of free-range growth and husbandry. The seeming success of the new
+system was a product of the generations of investment in the natural ecosystem.
+This was exhausted in one cycle of the new regime.
 
 Taking this back to the Web, the analogy is that the web was initially a natural
 ecosystem of different communities and technologies developing organically out
@@ -47,9 +47,9 @@ etc.).
 
 The initial fruits of this centralisation (just like the forest 'optimisation')
 appeared to be beneficial in the initial 'heyday' of the 2010s when social-media
-was new and full of prospects (the political benefits of Twitter and enriched
+was new and full of prospect (the political benefits of Twitter and enriched
 public sphere, the 'Arab Spring', WikiLeaks etc). But this actually proved to be
-the nadir. The vitality on display was a product of the preceding era of the
+a nadir. The vitality on display was a product of the preceding era of the
 natural growth of the Web ecosystem.
 
 This decline in quality should be apparent to any reflective user:
@@ -72,11 +72,11 @@ There are many further points that can be made and ideas that can be
 extrapolated from this. Two examples:
 
 - the emergence of supposed 'AI' is going to lead to greater content
-  homogenisation and the intensification of informational entropy since the
+  homogenisation and the intensification of informational entropy as the
   technological mechanism consists in feeding the regurgitated content of the
   internet back into itself
 
 - reality itself has become infected by the disease that killed the Web
-  (ecocide), since the distinction between offline and online is becoming
-  increasingly hard to draw (politics - the normalisation and ascendancy of the
-  far right and subsequent destabilisation of western states)
+  (ecocide). The distinction between offline and online is becoming increasingly
+  hard to draw (politics - the normalisation and ascendancy of the far right and
+  subsequent destabilisation of western states)
