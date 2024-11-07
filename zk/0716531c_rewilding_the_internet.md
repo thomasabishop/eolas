@@ -5,11 +5,13 @@ created: Thursday, November 07, 2024
 
 # 0716531c_rewilding_the_internet
 
-The following analogy can be useful in understanding how the internet has become
-such a negative environment. How it has transmogrified from its original promise
-of a humanistic space that would facilitate the connection of individuals based
-on shared interests and values to an environment that is entirely mediated by
-capital subject to control, censorship and the violation of privacy.
+The following
+[analogy](https://www.noemamag.com/we-need-to-rewild-the-internet/) can be
+useful in understanding how the internet has become such a negative environment.
+How it has transmogrified from its original promise of a humanistic space that
+would facilitate the connection of individuals based on shared interests and
+values to an environment that is entirely mediated by capital subject to
+control, censorship and the violation of privacy.
 
 In the 18th-century in the northern German states, officials decided to
 rationalise the production of timber to enable more systematic extraction.
