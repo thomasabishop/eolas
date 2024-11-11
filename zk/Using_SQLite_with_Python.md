@@ -73,8 +73,7 @@ cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?",
 
 ### Prepared statements
 
-> With prepared statements you have to use a dictionary not a dictionary or
-> other data type
+> With prepared statements you have to pass in the parameters
 
 ```python
 user_data = {
@@ -82,4 +81,5 @@ user_data = {
     "email": "thomas@email.com"
 }
 
+cursor.execute("INSERT INTO users (username, email) VALUES (:username, :email)")
 ```
