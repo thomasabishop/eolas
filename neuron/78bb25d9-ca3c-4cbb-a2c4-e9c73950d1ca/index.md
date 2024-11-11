@@ -13,14 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 32f6269d-615a-4d39-8593-13ef9a9b8e03
+**Build ID:** 78bb25d9-ca3c-4cbb-a2c4-e9c73950d1ca
 
-**Published:** Mon 11 Nov 2024 10:45:37
+**Published:** Mon 11 Nov 2024 15:47:09
 
 ### Recent edits 
 
-- [[Using_SQLite_with_Python]] 
 - [[0716531c_rewilding_the_internet]] 
+- [[Using_SQLite_with_Python]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
 - [[Weaving_the_Web_Berners_Lee]] 

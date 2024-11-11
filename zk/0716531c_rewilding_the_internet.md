@@ -10,7 +10,7 @@ The following
 useful in understanding how the internet has become such a negative environment.
 How it has transmogrified from its original promise of a humanistic space that
 would facilitate the connection of individuals based on shared interests and
-values to an environment that is entirely mediated by capital subject to
+values to an environment that is entirely mediated by capital, subject to
 control, censorship and the violation of privacy.
 
 In the 18th-century in the northern German states, officials decided to
