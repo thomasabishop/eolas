@@ -13,12 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 78bb25d9-ca3c-4cbb-a2c4-e9c73950d1ca
+**Build ID:** 674ca64c-a00f-4fd4-88ed-0d1856b37688
 
-**Published:** Mon 11 Nov 2024 15:47:09
+**Published:** Tue 12 Nov 2024 08:09:18
 
 ### Recent edits 
 
+- [[Usenet]] 
+- [[Batch_processing]] 
 - [[0716531c_rewilding_the_internet]] 
 - [[Using_SQLite_with_Python]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
@@ -29,11 +31,9 @@ computer science.
 - [[The_History_of_Computing_Swade]] 
 - [[Concise_subfield_mapping_JS]] 
 - [[Additive_identity]] 
-- [[MongoDB_connection]] 
-- [[Commutative_Property_of_Addition_and_Multiplication]] 
 
 
-### All notes (488) 
+### All notes (490) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -75,6 +75,7 @@ computer science.
 - [[Basic_model_of_the_operating_system]] 
 - [[Basic_properties_of_sets]] 
 - [[Basics_of_web_components]] 
+- [[Batch_processing]] 
 - [[Bell_System]] 
 - [[Biconditional_Elimination]] 
 - [[Biconditional_Introduction]] 
@@ -472,6 +473,7 @@ computer science.
 - [[Update_an_SQL_table]] 
 - [[Update_existing_data_in_SQL_table]] 
 - [[Useful_operators_in_SQL]] 
+- [[Usenet]] 
 - [[User_Space]] 
 - [[User_management_in_Linux]] 
 - [[User_management_on_AWS]] 
