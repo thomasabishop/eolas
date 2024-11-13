@@ -1,5 +1,5 @@
 ---
-tags: [python, databases, SQL]
+tags: [python, databases, SQL, SQLite]
 created: Thursday, November 07, 2024
 ---
 

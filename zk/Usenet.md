@@ -53,7 +53,7 @@ these groups.
 
 ## Influence
 
-- Created the concept of threaded discussion in its reply structured
+- Created the concept of threaded discussions in its reply structure
 - Reddit appropriated the concept of topic-based communities in its sub-reddits
   and also used threading
 - RSS adopted Usenet's model of subscribing to specific information sources and
