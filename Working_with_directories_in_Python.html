@@ -327,7 +327,10 @@ from pathlib import Path
 
 with os.scandir(&quot;/a/directory&quot;) as dir:
     for entry in dir:
-        print(Path(entry).suffix)</code></pre><h2 id="create-a-directory">Create a directory</h2><pre><code class="py language-py">import os
+        print(Path(entry).suffix)</code></pre><h2 id="list-files-without-extension">List files without extension</h2><pre><code class="python language-python">
+file = &quot;/some/file/with/markdown.md&quot;
+return os.path.splitext(os.path.basename(file))[0]
+# markdown</code></pre><h2 id="create-a-directory">Create a directory</h2><pre><code class="py language-py">import os
 
 os.makedirs(&quot;/name/of/directory&quot;)</code></pre><h3 id="check-if-directory-exists-remove-if-so">Check if directory exists, remove if so</h3><pre><code class="py language-py">import os
 import shutil
