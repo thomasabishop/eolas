@@ -13,12 +13,13 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 233bf7c7-59e9-471c-8275-895571468b75
+**Build ID:** 77a73718-e886-48cc-8cdf-d7b948def2d1
 
-**Published:** Wed 13 Nov 2024 18:22:05
+**Published:** Thu 14 Nov 2024 13:10:49
 
 ### Recent edits 
 
+- [[Working_with_directories_in_Python]] 
 - [[SQLite]] 
 - [[Using_SQLite_with_Python]] 
 - [[Usenet]] 
@@ -30,10 +31,9 @@ computer science.
 - [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
 - [[ecec56e6_precursors_to_search_engines]] 
 - [[The_History_of_Computing_Swade]] 
-- [[Concise_subfield_mapping_JS]] 
 
 
-### All notes (491) 
+### All notes (490) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -194,7 +194,6 @@ computer science.
 - [[Factory_pattern]] 
 - [[Fetch_decode_execute]] 
 - [[Fetch_from_Secrets_Manager]] 
-- [[File_CRUD_operations_in_Python]] 
 - [[File_descriptors]] 
 - [[File_operations_in_Python]] 
 - [[File_permissions_and_execution_in_Bash]] 

@@ -17,6 +17,15 @@ with os.scandir("/a/directory") as dir:
         print(Path(entry).suffix)
 ```
 
+## List files without extension
+
+```python
+
+file = "/some/file/with/markdown.md"
+return os.path.splitext(os.path.basename(file))[0]
+# markdown
+```
+
 ## Create a directory
 
 ```py
