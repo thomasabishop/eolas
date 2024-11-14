@@ -1,36 +1,36 @@
-# Eòlas
+# eòlas
 
-<img src='./img/knowledge_graph.png' width=400 align='center' /><br/>
-
-> Eólas is Irish for knowledge or information, especially knowledge gained by
-> experience or practice
-
-This repository is my technical knowledge management system or "second-brain".
-It comprises notes from my autodidactic study of software engineering and
-computer science.
-
-## Frontend
+This repository is my technical knowledge management system,
+[zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) or "second-brain",
+comprising notes from my study of software engineering and computer science.
 
 The notes can be read in a more congenial format
-[here](https://thomasabishop.github.io/eolas). This is a
-[Neuron](https://neuron.zettel.page/) static site that I generate automatically
-using a small Python
-[application](https://github.com/thomasabishop/neuron-zk-generator) that
-executes on each push to this repository and deploys via GitHub pages.
+[online](https://thomasabishop.github.io/eolas).
 
-## Implementation
+## Related projects
 
-It is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in
-progress. I've recently converted the topic-based subdirectories into a single
-flat directory structure organised by tags. I'm in the process of partitioning
-longer notes into smaller units.
+### [neuron-zk-generator]()
 
-I use the [zk](https://github.com/zk-org/zk) CLI package to help with indexing
-and task automation alongside its [zk-nvim](https://github.com/zk-org/zk-nvim)
-Neovim wrapper.
+Converts notes in this repository into a format that can be compiled into a
+[Neuron](https://neuron.zettel.page/) project and published to the Web.
+
+### [eolas-db]()
+
+A database for the entries which I use to track changes and relations between
+notes. Also serves as the back-end for further transformations/utilities.
 
 ## Scripts
 
 The [scripts](/scripts) directory contains several Bash and Python scripts I use
 for general housekeeping, such as formatting image URLs, removing unused assets,
 and autosaving.
+
+### `auto-commit.sh`
+
+This is the main script for managing the project:
+
+- standardises file names and purges unused resources
+- compiles the Neuron version of the project, writing to the `/neuron`, which is
+  then deployed to the Web via GitHub actions and GitHub pages
+- triggers the reindexing of the `eolas-db` database
+- commits all changes to this repository with a timestamp
