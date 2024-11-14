@@ -23,8 +23,8 @@ changes_exist="$(git status --porcelain | wc -l)"
 
 # If no changes, exit. Else commit and push with timestamp
 if [ "$changes_exist" -eq 0 ]; then
-		echo "No changes, exiting"
-    exit 0
+	echo "No changes, exiting"
+	exit 0
 fi
 
 # echo "Standardising file-names..."
@@ -34,8 +34,8 @@ fi
 # source ${purge_images}
 # pointless comment
 
-/home/thomas/repos/neuron-zk-generator/dist/app 
-
+neuron-zk-generator
+# /home/thomas/repos/neuron-zk-generator/dist/app
 
 echo "Changes exist. Updating remote..."
 git pull >/dev/null 2>&1
@@ -43,5 +43,4 @@ git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
 
-/home/thomas/repos/slack-notifier/src/index.js 'eolas' '✅ Eolas: auto-save executed'	
-
+/home/thomas/repos/slack-notifier/src/index.js 'eolas' '✅ Eolas: auto-save executed'
