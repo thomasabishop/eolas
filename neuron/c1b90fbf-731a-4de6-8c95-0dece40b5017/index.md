@@ -13,15 +13,15 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 4e66db01-35b6-4b9c-aab8-2a0429e30df2
+**Build ID:** c1b90fbf-731a-4de6-8c95-0dece40b5017
 
-**Published:** Thu 14 Nov 2024 14:15:51
+**Published:** Thu 14 Nov 2024 14:43:30
 
 ### Recent edits 
 
-- [[Working_with_directories_in_Python]] 
-- [[SQLite]] 
 - [[Using_SQLite_with_Python]] 
+- [[SQLite]] 
+- [[Working_with_directories_in_Python]] 
 - [[Usenet]] 
 - [[Batch_processing]] 
 - [[0716531c_rewilding_the_internet]] 

@@ -51,6 +51,9 @@ print(cursor.fetchall())
 # (tags)
 ```
 
+Note that it is necessary to `commit` the changes. The cursor object just stores
+the operation in memory and does not execute until you specifically commit them.
+
 ## Prepared statements and parameterised queries
 
 ### Parameterised queries
@@ -67,13 +70,12 @@ Alternatively, pass the [tuple](Tuples_in_Python.md) directly:
 ```python
 login_data = ("thomas", "123")
 cursor.execute("SELECT * FROM users WHERE username = ? AND password = ?",
-               login_data)
-
+login_data)
 ```
 
 ### Prepared statements
 
-> With prepared statements you have to pass in the parameters
+> With prepared statements you have to pass in the parameters as a dictionary
 
 ```python
 user_data = {
@@ -81,5 +83,14 @@ user_data = {
     "email": "thomas@email.com"
 }
 
-cursor.execute("INSERT INTO users (username, email) VALUES (:username, :email)")
+cursor.execute("INSERT INTO users (username, email) VALUES (:username, :email)",
+               user_data)
+```
+
+In the example above it so happens that we already have a dictionary we are
+working with. If you want to use a prepared statement and you don't have a
+dictionary already, you will need to construct one as part of the query, e.g:
+
+```python
+cursor.execute("INSERT INTO table_name (value_one, value_two) VALUES (:value_one, :value_two)", { value_one: 'foo', value_two: 'bar'})
 ```
