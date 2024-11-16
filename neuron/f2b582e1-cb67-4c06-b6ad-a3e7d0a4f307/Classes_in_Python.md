@@ -64,6 +64,21 @@ Key points to note:
 - As with functions, we can use docstrings to document the class. What you write
   here will show up in Intellisense etc
 
+## Private, protected members and methods
+
+As Python is not strictly typed the property accessors are not actually real and
+won't throw errors if violated. However there is a syntax convention.
+
+- Private
+
+  - `__self.property`
+  - `def __private method(self)...`
+
+- Protected
+
+- `_self.property`
+- `def _protected method(self)...`
+
 ## More complex class
 
 ```py

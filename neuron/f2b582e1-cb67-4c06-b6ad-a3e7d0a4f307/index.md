@@ -13,12 +13,15 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** c1b90fbf-731a-4de6-8c95-0dece40b5017
+**Build ID:** f2b582e1-cb67-4c06-b6ad-a3e7d0a4f307
 
-**Published:** Thu 14 Nov 2024 14:43:30
+**Published:** Sat 16 Nov 2024 16:29:25
 
 ### Recent edits 
 
+- [[Terraform]] 
+- [[Classes_in_Python]] 
+- [[Dictionaries_in_Python]] 
 - [[Using_SQLite_with_Python]] 
 - [[SQLite]] 
 - [[Working_with_directories_in_Python]] 
@@ -28,12 +31,9 @@ computer science.
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
 - [[Weaving_the_Web_Berners_Lee]] 
-- [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
-- [[ecec56e6_precursors_to_search_engines]] 
-- [[The_History_of_Computing_Swade]] 
 
 
-### All notes (490) 
+### All notes (491) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -438,6 +438,7 @@ computer science.
 - [[Symlinks]] 
 - [[Syntax_of_propositional_logic]] 
 - [[Tags_in_Git]] 
+- [[Terraform]] 
 - [[Test_values_in_Bash]] 
 - [[Testing_Python_code]] 
 - [[Testing_basic_prop_passing_in_React]] 

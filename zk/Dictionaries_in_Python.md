@@ -131,3 +131,20 @@ properties with this shorthand:
 merged_dictionary = dictionary_one | dictionary_two
 
 ```
+
+## Spreading dictionary properties
+
+In JavaScript we can spread values from one object into a new object that
+inherits those values with `{...spreadValues, newProperty: 'foo'}`.
+
+This can be achieved in Python with the `|` union operator, e.g:
+
+```python
+text_base = {"height": 1, "font": font}
+
+heading_text = text_base | {
+    "bg": colors["accent"],
+    "fg": colors["background"],
+}
+
+```
