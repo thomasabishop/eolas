@@ -10,7 +10,7 @@ derive the status and then provide custom outputs or other branching logic.
 
 Here is an example of adding an object to a bucket in S3:
 
-```sh
+```bash
 aws s3api put-object --bucket "${BUCKET_NAME}" --key "${FILE}" --body "${FILE_PATH}" >/dev/null 2>&1
 STATUS=$?
 

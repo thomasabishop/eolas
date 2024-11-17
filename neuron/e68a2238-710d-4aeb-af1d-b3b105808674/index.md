@@ -13,15 +13,17 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 7d6ebca6-4ae5-4451-bb1d-beee6c92ebad
+**Build ID:** e68a2238-710d-4aeb-af1d-b3b105808674
 
-**Published:** Sun 17 Nov 2024 12:01:22
+**Published:** Sun 17 Nov 2024 15:08:35
 
 ### Recent edits 
 
+- [[Passing_arguments_and_options_to_Bash_scripts]] 
+- [[Functions_in_Bash]] 
+- [[Bash_file_exists]] 
 - [[Bash_store_status_of_command_execution]] 
 - [[Bash_colour_output]] 
-- [[Bash_file_exists]] 
 - [[Terraform]] 
 - [[Classes_in_Python]] 
 - [[Dictionaries_in_Python]] 
@@ -29,8 +31,6 @@ computer science.
 - [[SQLite]] 
 - [[Working_with_directories_in_Python]] 
 - [[Usenet]] 
-- [[Batch_processing]] 
-- [[0716531c_rewilding_the_internet]] 
 
 
 ### All notes (494) 

@@ -3,11 +3,11 @@ tags: [shell]
 created: Sunday, November 17, 2024
 ---
 
-# Bash colour output'
+# Bash colour output
 
 Define colours:
 
-```sh
+```bash
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -16,7 +16,7 @@ NO_COLOR='\033[0m'
 
 Interpolate in string:
 
-```sh
+```bash
 echo -e "${BLUE}INFO Uploading graph file...${NO_COLOR}"
 ```
 

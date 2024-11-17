@@ -30,8 +30,8 @@ echo $expandedRange
 
 We can access all the arguments passed to a function using the `$@` syntax we
 encountered before when
-[passing arguments to scripts](Passing_arguments_to_Bash_scripts.md).
-(Here a function is a kind of script in miniature so the process is the same.)
+[passing arguments to scripts](Passing_arguments_to_Bash_scripts.md). (Here a
+function is a kind of script in miniature so the process is the same.)
 
 ```sh
 function numberThings() {
@@ -45,7 +45,7 @@ function numberThings() {
 
 ## Local variables
 
-```sh
+```bash
 var1="I'm variable 1"
 
 function myfunction() {

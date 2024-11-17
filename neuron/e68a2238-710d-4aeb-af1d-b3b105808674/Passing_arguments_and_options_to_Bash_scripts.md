@@ -85,7 +85,7 @@ some-program -u thomas -p password123
 
 With the following construct:
 
-```sh
+```bash
 while getopts u:p: option; do
   case $option in
     u) user=$OPTARG;;
@@ -117,7 +117,7 @@ command-line program.
 
 This version demonstrates a more exhaustive use case:
 
-```sh
+```bash
 while getopts :u:p: option; do
   case $option in
     u) user=$OPTARG;;
