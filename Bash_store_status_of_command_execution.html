@@ -321,7 +321,7 @@
     background: #9d0006; /* red2 */
   }
 </style>
-<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Bash store status of command execution</h1><p>We can store the outcome of a command in a variable, then check this variable to derive the status and then provide custom outputs or other branching logic.</p><p>Here is an example of adding an object to a bucket in S3:</p><pre><code class="sh language-sh">aws s3api put-object --bucket &quot;${BUCKET_NAME}&quot; --key &quot;${FILE}&quot; --body &quot;${FILE_PATH}&quot; &gt;/dev/null 2&gt;&amp;1
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Bash store status of command execution</h1><p>We can store the outcome of a command in a variable, then check this variable to derive the status and then provide custom outputs or other branching logic.</p><p>Here is an example of adding an object to a bucket in S3:</p><pre><code class="bash language-bash">aws s3api put-object --bucket &quot;${BUCKET_NAME}&quot; --key &quot;${FILE}&quot; --body &quot;${FILE_PATH}&quot; &gt;/dev/null 2&gt;&amp;1
 STATUS=$?
 
 if [ $STATUS -eq 0 ]; then
