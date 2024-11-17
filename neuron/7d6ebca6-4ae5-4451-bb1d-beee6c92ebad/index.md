@@ -13,12 +13,15 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** f2b582e1-cb67-4c06-b6ad-a3e7d0a4f307
+**Build ID:** 7d6ebca6-4ae5-4451-bb1d-beee6c92ebad
 
-**Published:** Sat 16 Nov 2024 16:29:25
+**Published:** Sun 17 Nov 2024 12:01:22
 
 ### Recent edits 
 
+- [[Bash_store_status_of_command_execution]] 
+- [[Bash_colour_output]] 
+- [[Bash_file_exists]] 
 - [[Terraform]] 
 - [[Classes_in_Python]] 
 - [[Dictionaries_in_Python]] 
@@ -28,12 +31,9 @@ computer science.
 - [[Usenet]] 
 - [[Batch_processing]] 
 - [[0716531c_rewilding_the_internet]] 
-- [[f6564af9_AOL_and_early_internet_enclosure]] 
-- [[241fe1a3_the_Web_versus_modem_BBSs]] 
-- [[Weaving_the_Web_Berners_Lee]] 
 
 
-### All notes (491) 
+### All notes (494) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -72,6 +72,9 @@ computer science.
 - [[Atomic_and_molecular_propositions]] 
 - [[Awk]] 
 - [[Axioms_of_set_theory]] 
+- [[Bash_colour_output]] 
+- [[Bash_file_exists]] 
+- [[Bash_store_status_of_command_execution]] 
 - [[Basic_model_of_the_operating_system]] 
 - [[Basic_properties_of_sets]] 
 - [[Basics_of_web_components]] 

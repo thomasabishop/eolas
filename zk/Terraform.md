@@ -73,3 +73,12 @@ Typically when you want to do a clean recreate.
 ```
 terraform destoy
 ```
+
+## Run with debug/logger
+
+```
+TF_LOG=DEBUG terraform apply
+```
+
+Or use with other Terraform command, e.g. `destroy`, `refresh` - whatever is
+causing the problem.
