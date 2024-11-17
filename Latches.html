@@ -1,0 +1,327 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Latches - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="The combinatorial digital circuits we have looked at so far have been non-sequential. The outcome is a function of its immediate set of inputs and everything happens at once: there is no means of storing state for future use. In other words there is no memory." name="description" /><meta content="Latches" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Latches" property="neuron:zettel-id" /><meta content="Latches" property="neuron:zettel-slug" /><meta content="binary" property="neuron:zettel-tag" /><meta content="logic-gates" property="neuron:zettel-tag" /><meta content="memory" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body h2,
+  body div.zettel-view .zettel-content h2 {
+    border-bottom: none !important;
+  }
+
+  body blockquote {
+    border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
+  }
+
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body p {
+    /* line-height: 1.3; */
+  }
+
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    /* line-height: 1.3 !important; */
+  }
+  img[alt~="not-by-ai-badge"] {
+    width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Latches</h1><p>The <strong>combinatorial digital circuits</strong> we have looked at so far have been non-sequential. The outcome is a function of its immediate set of inputs and everything happens at once: there is no means of storing state for future use. In other words there is no <em><span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Memory</a></span></span></em>.</p><p>In contrast, the output of a <strong>sequential digital circuit</strong> depends not only on its present set of inputs but also on past inputs to the circuit. It has some knowledge of its own previous state through the existence of memory. This can be implemented via components that allow for the <strong>storage and retrieval of binary data</strong>.</p><h2 id="what-is-a-latch">What is a latch?</h2><p>A latch is a circuit component that wor</p><p>The <strong>SR Latch</strong> (for “set/reset”) has two inputs: <em>S</em> (for “set”) and <em>R</em> (for “reset”) and one output, <em>Q</em>. <em>Q</em> stands for the bit that is remembered. (There is also <em>not-Q</em> which is the opposite of whatever <em>Q</em> is currently set to.)</p><p>The SR Latch goes through the following state changes:</p><ul><li>When <em>S</em> is set to 1, output <em>Q</em> becomes 1 also</li><li>When <em>S</em> goes to 0, <em>Q</em> remains 1</li><li>When <em>R</em> is set to 1, the memory bit is cleared and <em>Q</em> becomes 0.</li><li><em>Q</em> remains at 0 even if <em>R</em> goes back to 0</li></ul><p>This is represented more clearly in the table below:</p><table class="ui table"><thead><tr><th>S</th><th>R</th><th>Q</th><th>Operation</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>X</td><td>Invalid, null</td></tr></tbody></table><p>The most succinct account of a latch:</p><blockquote><p>A latch is a 1-bit memory device that has a state <em>Q</em> of either 1 or 0. The <em>S</em> input sets <em>Q</em> to 1 and the <em>R</em> input resets <em>Q</em> to 0.</p></blockquote><p><em>The representation of an SR Latch in a digital circuit diagram</em>:</p><p><img src="static/sr_latch_diagram.png" /></p><h2 id="creating-a-latch-circuit">Creating a latch circuit</h2><p>The circuit diagram latch symbol obviously encapsulates more complex functionality that occurs at the sub-circuit level. We will demonstrate how this functionality can be achieved with two <a href="Logic_gates.md#nor-gate">NOR</a> gates.</p><p>The two gates are in a <strong>cross-coupled configuration</strong>. This basically means that the wires are crossed back on themselves such that the output of one is also an input of the other at a single stage in the sequence.</p><p>The circuit is created as follows:</p><p><img src="static/sr_latch_logic_circuit.png" /></p><p>Interactive version:</p><iframe src="https://circuitverse.org/simulator/embed/nor-latch-0869192c-7d7b-4161-b13f-3f72c1bce8e9" style="border-width:; border-style: solid; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400" width="600" allowFullScreen></iframe>
+<br />
+Let's talk through the logic at each state change:
+<ul><li>When <em>S</em> is set to 1, output <em>Q</em> becomes 1 also<ul><li>N1 is receiving 1 from S and 0 from R by way of N2. This is the inversion of OR so TF equals F. Thus N1 is outputting 0.</li><li>Thus N2 is receiving 0 from N1 as its top input and 0 from R as its bottom input. It is therefore outputting 1 because with NOR, FF equals T. For this reason, <em>Q</em> is 1 because is directly connected to <em>R</em>.</li></ul></li><li>When <em>S</em> goes to 0, <em>Q</em> remains 1<ul><li>N2 is receiving 0 from N1 as the top input and 0 from R as the bottom input hence the overall input is FF which means N2 is outputting T and Q remains 1</li><li>N1 is outputting 0 because it is receiving 0 as its top input and 1 from its bottom input</li></ul></li><li>When <em>R</em> is set to 1, the memory bit is cleared and <em>Q</em> becomes 0.<ul><li>N2 is receiving 1 from R as its bottom input and 1 from the output of N1 as its top input. Therefore it is outputting TT which in NOR evaluates to F hence Q is 0</li><li>N1 is outputting 1 because it is receiving 0 from S as its top input and 0 from its bottom input coming from N2. FF equals T in NOR therefore 1 is outputting 1</li></ul></li><li><em>Q</em> remains at 0 even if <em>R</em> goes back to 0<ul><li>N2 is receiving 0 as its bottom input from R and 1 as its top input from N1. TF equals F in NOR hence the output of N2 is 0 and Q remains 0</li><li>N1 is outputting 1 because it is receiving 0 as its top input from S and 0 as its bottom input from N2. FF equals T in NOR hence N1 is 1</li></ul></li></ul></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Logic_gates">Logic gates</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>An example of a composite gate would be a three-way AND. An AND with three inputs rather than the standard two that furnish the elementary AND gate. This gate would output 1 when all three gates have the value 1 and 0 otherwise. <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The half adder and full adder"><a href="Half_adder_and_full_adder">Adders</a></span></span> and <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Latches"><a href="Latches">latche&gt;s</a></span></span> whilst being <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Integrated circuits"><a href="Integrated_circuits">integrated circuits</a></span></span> are also, technically speaking, composite gates.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Flip_flops">Flip-Flops</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>A flip-flop is a type of <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Latches"><a href="Latches">latch</a></span></span> that is connected to a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Clock signals"><a href="Clock_signals">clock signal</a></span></span> and which executes in time with the clock’s pulse. (Sometimes “latch” and “flip-flop” are used interchangeably but technically a latch is flip-flop without a clock connection.)</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Clock_signals">Clock signals</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>In the examples of digital circuits so far (i.e <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The half adder and full adder"><a href="Half_adder_and_full_adder">adders</a></span></span> and <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Latches"><a href="Latches">latches</a></span></span>) everything happens in a single instant or over several repeated instances. This is because of how simple the circuits are. In the case of latches only a single bit is updated. And even with rippled adders they are just a series of 1-bit updaters in a chain.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">binary</span><span class="ui basic label zettel-tag" title="Tag">logic-gates</span><span class="ui basic label zettel-tag" title="Tag">memory</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

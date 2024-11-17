@@ -1,0 +1,365 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Prototypical inheritance - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="As we know, everything in JS that isn’t a primitive (i.e. a primitive data type: string, number, boolean, null) is an object. Where an object is a data structure that consists in key:value pairs." name="description" /><meta content="Prototypical inheritance" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Prototypical_inheritance" property="neuron:zettel-id" /><meta content="Prototypical_inheritance" property="neuron:zettel-slug" /><meta content=")" property="neuron:zettel-tag" /><meta content="OOP" property="neuron:zettel-tag" /><meta content="javascript" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body h2,
+  body div.zettel-view .zettel-content h2 {
+    border-bottom: none !important;
+  }
+
+  body blockquote {
+    border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
+  }
+
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body p {
+    /* line-height: 1.3; */
+  }
+
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    /* line-height: 1.3 !important; */
+  }
+  img[alt~="not-by-ai-badge"] {
+    width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Prototypical inheritance</h1><h2 id="object-oriented-basis-of-javascript-and-nomenclature">Object oriented basis of JavaScript and nomenclature</h2><p>As we know, everything in JS that isn’t a primitive (i.e. a primitive data type: string, number, boolean, null) is an object. Where an object is a data structure that consists in key:value pairs.</p><p>The key is always a string and the value can be: a primitive value, a method (function within an object), an array, another object etc.</p><blockquote><p>In other object-oriented languages like C# and Java, <strong>functions are called methods</strong> however in JS the term <strong>method</strong> is reserved for function that exists as a property of an objects that contains it.</p></blockquote><h3 id="lack-of-classes-in-js">Lack of classes in JS</h3><p>In contrast to more advanced object-oriented languages that are compiled (Java, C<span><code class="inline-tag">#)</code></span>, classes do not really exist in JavaScript. This is due to the prototype-based nature of JS (as we will see) however class-like functionality can be achieved through the use of functions.</p><p>Remember in JS that functions can be simple code blocks that execute when called (which is what we mean most of the time by ‘function’) <strong>or they can be constructor functions which create generic object types from which specific token instances can be generated as objects.</strong></p><p>It is through these ‘generic object types’ that something akin to a class can be created in JavaScript. (These are sometimes called function-objects )</p><p>The following is a good account of the differences between prototypal and class-based languages:</p><blockquote><p>JavaScript is a prototype-based language, <strong>meaning object properties and methods can be shared through generalized objects that have the ability to be cloned and extended</strong>. This is known as <strong>prototypical inheritance</strong> and differs from <strong>class inheritance</strong>. Among popular object-oriented programming languages, JavaScript is relatively unique, as other prominent languages such as PHP, Python, and Java are class-based languages, which instead <strong>define classes as blueprints for objects</strong>.</p></blockquote><h3 id="example-of-a-constructor-function">Example of a constructor function</h3><p>In order to understand prototypes in a moment, it will be helpful to have an example of a constructor function that can be used to generate object instances:</p><pre><code class="jsx language-jsx">/* Create constructor function: */
+function Band(mainAlbum, subgenre) {
+  // use Pascal for constructor function names
+  this.mainAlbum = mainAlbum;
+  this.subgenre = subgenre;
+}
+
+/* Then to create an object instance: */
+
+var slayer = new Band(&quot;Reign in Blood&quot;, &quot;thrash metal&quot;);</code></pre><h2 id="prototypes">Prototypes</h2><p>Now that we know class-type functionality enters JS via constructor functions and we have an example, we can look at prototypes.</p><blockquote><p>Prototypes are a special type of object that exist as a property within function-objects.</p></blockquote><p>Whenever we create an instance-object from constructor function using <code>new</code>, the object is given a property with the key <code>_proto_</code> . It’s value is the <code>[[prototype]]</code> property of the function that created, i.e the class of which the object is an instance:</p><pre><code class="jsx language-jsx">{
+  _proto_: prototype;
+}</code></pre><p>Note that we use the syntax <code>[[prototype]]</code> to indicate that <strong>whilst the value exists, it is not accessible via JavaScript code</strong>, in the manner of a normal object-literal or function-object, because it is the lower-level foundation of first-order JS code.</p><p>So how would this work for the <code>slayer</code> object we created above?</p><pre><code class="jsx language-jsx">Slayer._proto_ === Band.prototype;</code></pre><p>The thing is, you do not tend to see this prototype functionality and it is not possible to refer to it as a key:value directly. This is because it is something under-the-hood - it is a process that makes the object-oriented aspects of JS possible but it is not apparent on the first-order level of everyday coding.</p><p>The prototype is like a hidden hook that facilitates the generation of objects from class-like constructor functions. With our new awareness of it, we are in a position <em>to understand how JavaScript works in foundational terms.</em></p><h2 id="every-non-primitive-data-type-in-js-possesses-the-object-prototype">Every non-primitive data type in JS possesses the <code>Object</code> prototype</h2><p>The title above indicates how and why JavaScript establishes its object-oriented data structure.</p><p>When we create an object literal (i.e an every day object not a class-like function), under-the-hood JS is making a <code>new Object()</code> call in much the same way as we are calling the function-object <code>Band</code> when we declare <code>var slayer = new Band(...)</code> .</p><p>All instance-objects in JavaScript (which, remember is the set of everything that is not a primitive) <strong>inherit from the <code>Object</code> keyword</strong>. And, to do this, prototypes are necessary. Now we see how integral prototypes are to JavaScript.</p><h3 id="examples">Examples</h3><p>Here we create an object-literal and uncover how it has it’s basis in the overall <code>Object</code> constructor.</p><pre><code class="jsx language-jsx">var slayerMembers = {
+  bassist: &quot;Tom Araya&quot;,
+  guitarist: &quot;Kerry King&quot;,
+  guitarist: &quot;Jeff Hanneman&quot;,
+  drummer: &quot;Dave Lombardo&quot;,
+};
+
+//  slayerMembers._proto_ === Object.prototype</code></pre><p>Here we create an instance-object off of our <code>Band</code> constructor function and trace it back to <code>Object</code></p><pre><code class="jsx language-jsx">var deicide = new Band(&quot;Legion&quot;, &quot;death metal&quot;);
+
+/* deicide object relies on Band prototype:
+		
+		deicide._proto_=== Band.prototype
+
+Band prototype in turn relies in turn on Object prototype: 
+
+ Band.prototype._proto_=== Object.prototype
+
+*/</code></pre><p>As the above examples show, ultimately all objects in JavaScript (whether variables, arrays, methods, or functions) eventually lead back to <code>Object.prototype</code> .</p><h3 id="how-the-browser-uses-prototypes-when-interpreting-code">How the browser uses prototypes when interpreting code</h3><p>When the browser interprets your code attempting to access a property or method of an object it runs through the following process:</p><ol><li>Search on the object itself. If fails →</li><li>Search the object’s prototype. If fails →</li><li>Search the prototype of the linked object. If fails→</li><li>Keep going until <code>Object.prototype</code> is reached</li></ol><p>Clearly with each step we are going to a lower level of abstraction, drawing the curtain back more and more until we got the point where JavaScript effectively stops because any lower would take you into its lower-level parent language (C/C++ depending on how the specific browser executes ECMAScript)</p><p>Note (3) is basically the prototype of the component itself. So if you started at (1) with a custom array. At (3) the browser would be querying <code>Array.prototype</code> i.e the basic foundational array object.</p><p>This explains why the full-name of certain methods on the global objects, includes reference to ‘prototype’, for instance:</p><ul><li><code>toFixed</code> → <code>Number.prototype.toFixed()</code></li><li><code>.trim</code> → <code>String.prototype.trim()</code>.</li></ul><h3 id="using-the-function-object-of-object-to-create-an-object-literal">Using the function-object of <code>Object</code> to create an object literal</h3><p>As a side-effect of uncovering the prototypical basis of <code>Object()</code> we can use it to create an object literal in another way.</p><p>Standardly to create a new, empty object literal we would use:</p><pre><code class="jsx language-jsx">var slayerMembers = {...}</code></pre><p>But now we could just as easily direct the code to <code>Object()</code> prototype and achieve the same outcome:</p><pre><code class="jsx language-jsx">let slayerMembers = new Object();</code></pre><h3 id="finding-the-prototype-of-a-js-object-with-getprototypeof">Finding the <code>[[Prototype]]</code> of a JS object with <code>getPrototypeOf()</code></h3><p>We can find out the <code>[[prototype]]</code> of a given object in JavaScript with a special method applied to the object in question. The method we use is one of the inherent methods that belong to the <code>Object()</code> constructor function: <code>getPrototypeOf()</code> .</p><p>Here is an example:</p><pre><code class="jsx language-jsx">console.log(Object.getPrototypeOf(slayer));
+
+/*
+
+Returns: 
+
+Object {constructor: , __defineGetter__: ,
+ __defineSetter__: , hasOwnProperty: , __lookupGetter__: , …}
+
+*/</code></pre><p>We could also use the following approach to get the same output however this is not recommended for production:</p><pre><code class="jsx language-jsx">console.log(slayer.__prototype__);</code></pre><p>The output we get when querying the prototype is the same in each instance.</p><h2 id="but-why-bother-using-prototypes-in-your-code">But why bother using prototypes in your code?</h2><p>It is informative to learn how prototypes are behind the object behaviour we observe at a high level in JavaScript and to know that there is a common, lower-level root but when would you actually need to use prototype methods?</p><p>The reason is mainly to do with performance and optimisation</p><blockquote><p>When we create a <code>deicide</code> and <code>slayer</code> object using the constructor function <code>Band()</code> JS creates two <em>copies</em> of the constructor function, one for each generated object. This means there are two instances of <code>mainAlbum</code> for each object even though each do exactly the same thing. This wastes memory and performance time every time the script runs.</p></blockquote><p>As a prototype object is an object, we can attach properties and methods to the prototype object. Thus, enabling all the objects created using the constructor function to share those properties and methods. However, the beauty is that the method is applied to the prototype, so it is only stored in the memory once, but every instance of the object has access to it.</p><pre><code class="jsx language-jsx">/* So say I wanted to add an age property to the Band()constructor that all objects of this type have access to. I could do this without wasting memory and without the need to change the original constructor function by referring to the prototype: */
+
+Band.prototype.age = null;
+
+Slayer.age = 25;</code></pre><h2 id="further-steps">Further steps</h2><p>We are going to stop here for the time being since the primary aim of uncovering prototypes and understanding how they underly all objects and object methods in JS has been achieved.</p><p>However it is important to note that there is more that you can do with prototypes. The main additional thing is using the prototypical basis of constructor functions (i.e pseudo-classes) to add and remove key value pairs in the resulting objects. This is useful when you want to create behaviour that is much more like classes in compiled OOP languages.</p></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">)</span><span class="ui basic label zettel-tag" title="Tag">OOP</span><span class="ui basic label zettel-tag" title="Tag">javascript</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>

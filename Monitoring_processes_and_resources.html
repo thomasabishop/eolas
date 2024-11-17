@@ -1,0 +1,337 @@
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>Monitoring processes and resources - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="We can use ps to list the currently running processes but it does not provide much information about the resource metrics or how the process changes over time. We can use top to get more information." name="description" /><meta content="Monitoring processes and resources" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="Monitoring_processes_and_resources" property="neuron:zettel-id" /><meta content="Monitoring_processes_and_resources" property="neuron:zettel-slug" /><meta content="Linux" property="neuron:zettel-tag" /><meta content="procedural" property="neuron:zettel-tag" /><meta content="systems-programming" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
+  async=""
+  id="MathJax-script"
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
+  rel="stylesheet"
+/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/><link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+  rel="stylesheet"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<style>
+  body .ui.container,
+  body ul {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body h2,
+  body div.zettel-view .zettel-content h2 {
+    border-bottom: none !important;
+  }
+
+  body blockquote {
+    border-left-width: 3px !important;
+    border-left-color: #458588 !important;
+    background-color: #f2e5bc !important;
+  }
+
+  .headerFont,
+  .ui.header,
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "IBM Plex Sans" !important;
+  }
+  body p {
+    /* line-height: 1.3; */
+  }
+
+  .monoFont,
+  body code,
+  pre,
+  tt {
+    font-family: "IBM Plex Mono" !important;
+    font-size: 12px !important;
+    /* line-height: 1.3 !important; */
+  }
+  img[alt~="not-by-ai-badge"] {
+    width: 100px;
+  }
+
+  #neuron-nav-bar {
+    background-color: #458588;
+  }
+
+  #neuron-nav-bar a.right {
+    display: none;
+  }
+
+  .ui .center img {
+    display: none;
+  }
+
+  body {
+    background-color: #ebdbb2 !important;
+    color: #282828;
+  }
+
+  .zettel-view article.zettel-content {
+    background-color: #f9f5d7 !important;
+  }
+  a,
+  body span.zettel-link-container span.zettel-link a,
+  body .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  .deemphasized:not(:hover) a {
+    color: #458588 !important;
+  }
+
+  body .zettel-content h1#title-h1 {
+    background-color: #458588;
+    color: #f9f5d7;
+  }
+
+  .ui.raised.raised.segment,
+  .ui.raised.raised.segments {
+    box-shadow: none;
+  }
+
+  .ui.raised.attached.segment.zettel-content {
+    border: none;
+  }
+
+  #neuron-backlinks-pane,
+  #neuron-tags-pane {
+    background-color: #3c3836;
+    border: none;
+  }
+
+  #neuron-backlinks-pane h3.ui.header,
+  #neuron-backlinks-pane p,
+  #neuron-backlinks-pane > ul > li > ul > li > div {
+    color: #ebdbb2 !important;
+  }
+
+  #neuron-backlinks-pane ul li::marker {
+    color: #ebdbb2 !important;
+  }
+  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
+  #neuron-backlinks-pane ul li span.zettel-link a {
+    color: #83a598 !important;
+  }
+
+  body .deemphasized:not(:hover),
+  body .deemphasized:hover {
+    opacity: 1;
+  }
+
+  #neuron-nav-bar {
+    border-radius: 0;
+  }
+  .ui.basic.label.zettel-tag {
+    background-color: #458588;
+    border-radius: 0;
+    border: none;
+    color: #f9f5c7;
+  }
+
+  body div.zettel-view .zettel-content p code,
+  li code,
+  ol code {
+    padding: 0;
+    font-size: 13px !important;
+    background: transparent;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+
+  .ui table {
+    background-color: #f9f5d7 !important;
+    border-radius: 0 !important;
+    border-color: #3c3836 !important;
+  }
+
+  .ui.table > thead > tr > th {
+    background-color: #3c3836 !important;
+    border-radius: 0 !important;
+    color: #f9f5d7 !important;
+  }
+
+  body span.zettel-link-container.errors {
+    border-color: #cc241d;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a {
+    color: #cc241d !important;
+  }
+
+  body span.zettel-link-container.errors span.zettel-link a:hover {
+    background-color: #fb483460 !important;
+  }
+
+  /**
+ * Gruvbox light theme
+ *
+ * Based on Gruvbox: https://github.com/morhetz/gruvbox
+ * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
+ *
+ * @author Michael Schnerring (https://schnerring.net)
+ * @version 1.0
+ */
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #3c3836; /* fg1 / fg */
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    color: #282828; /* fg0 */
+    background: #fbf1c7; /* bg4 */
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    color: #282828; /* fg0 */
+
+    background: #fbf1c7; /* bg4 */
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: #f9f5d7; /* bg4 */
+    border: 1px solid #a89984;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.cdata {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.delimiter,
+  .token.boolean,
+  .token.keyword,
+  .token.selector,
+  .token.important,
+  .token.atrule {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.operator,
+  .token.punctuation,
+  .token.attr-name {
+    color: #7c6f64; /* fg4 / gray1 */
+    background: transparent;
+  }
+
+  .token.tag,
+  .token.tag .punctuation,
+  .token.doctype,
+  .token.builtin {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.entity,
+  .token.number,
+  .token.symbol {
+    color: #8f3f71; /* purple2 */
+  }
+
+  .token.property,
+  .token.constant,
+  .token.variable {
+    color: #9d0006; /* red2 */
+  }
+
+  .token.string,
+  .token.char {
+    color: #797403; /* green2 */
+  }
+
+  .token.attr-value,
+  .token.attr-value .punctuation {
+    color: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.url {
+    color: #797403; /* green2 */
+    text-decoration: underline;
+  }
+
+  .token.function {
+    color: #b57614; /* yellow2 */
+  }
+
+  .token.regex {
+    background: #797403; /* green2 */
+  }
+
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.inserted {
+    background: #7c6f64; /* fg4 / gray1 */
+  }
+
+  .token.deleted {
+    background: #9d0006; /* red2 */
+  }
+</style>
+<!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">Monitoring processes and resources</h1><h2 id="general-purpose-diagnostic-programs-memory-cpu-io">General purpose diagnostic programs (memory, CPU, I/O)</h2><h3 id="tophtop"><code>top</code>/<code>htop</code></h3><p>We can use <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Processes"><a href="Processes">ps</a></span></span> to list the currently running processes but it does not provide much information about the resource metrics or how the process changes over time. We can use <code>top</code> to get more information.</p><p><code>top</code> provides an interactive interface for the information that <code>ps</code> displays. It updates in real time and shows the most active processes based on the CPU time that they are utilising. You can also order by memory usage.</p><p><em>Here I have pressed <code>u</code> to show only the processes associated with my user:</em></p><p><img src="static/htop.png" /></p><h3 id="main-commands">Main commands</h3><table class="ui table"><thead><tr><th>Command</th><th>Action</th></tr></thead><tbody><tr><td>-u</td><td>Show processes by selected user</td></tr><tr><td>M</td><td>Sort by memory usage</td></tr><tr><td>P</td><td>Sort by cumulative CPU usage</td></tr><tr><td>?</td><td>View key and explanation</td></tr></tbody></table><h3 id="understanding-the-categories">Understanding the categories</h3><ul><li><code>Main/IO</code><ul><li>The first covers all processes. The second focuses on input/output processes (i.e. reading and writing to disks and other devices)</li></ul></li><li><code>PRI</code><ul><li>This stands for <em>priority</em>. This metric reflects the kernel’s current schedule priority for the process. The higher the value, it is less likely that the kernel will schedule the process if there are competing processes that require CPU time. The lower the value, the greater priority this process has over others.</li></ul></li><li><code>NI</code><ul><li>This stands for <em>nice value</em>. This metric exists in order to allow administrators to nudge or influence the priority of a given process. You cannot directly tell the kernel to <em>do x now instead of y</em> but you can make what are effectively suggestions by manipulating the nice value.</li><li>The kernel adds the nice value to the current priority value for the given process to determine its next time slot. When you increase the nice value of process <em>P</em> you are being “nicer” to the other processes by influencing the priority of <em>P</em> downwards so that the other processes receive greater precedence from the kernel.</li><li>By default, the nice value will be 0. To reduce priority of PID 1234, you would use:<pre><code class="bash language-bash">$ renice 20 1234</code></pre></li></ul></li><li><code>VIRT</code><ul><li>The total amount of <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Virtual_memory_and_the_MMU_in_Linux</a></span></span> used by the process including: program code, data, shared libraries, pages that have been swapped, pages that have been mapped but not used.</li></ul></li><li><code>RES</code><ul><li>Stands for <em>resident size</em></li><li>The non swapped <em>physical</em> memory the process has used</li></ul></li><li><code>SHR</code><ul><li>The size of the process’s <a href="Virtual_memory_and_the_MMU_in_Linux.md#shared-pages">shared pages</a></li></ul></li><li><code>S</code><ul><li>Status:<ul><li>S for sleeping (idle)</li><li>R for running</li><li>D for disk sleep</li></ul></li></ul></li></ul><h3 id="vmstat"><code>vmstat</code></h3><p><code>vmstat</code> provides similar metrics to <code>htop</code> but tells you more about the memory state and the activities of the kernel in a single row.</p><p>The default output is a single line with the averages since boot. You can add a delay parameter (in secs) which will then output at that interval, allowing you to see memory usage in realtime, e.g:</p><pre><code class="language-none">$ vmstat 5
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  0      0 4326768 334228 5050952    0    0     8    19   80   10  4  1 94  0  0
+ 0  0      0 4365520 334260 5054468    0    0     0   125 2140 3434  4  1 94  0  0
+ 1  0      0 4382400 334276 5068940    0    0     0    77 2102 3988  3  1 95  0  0
+ 1  0      0 4434000 334288 5052908    0    0     0    25 2859 4278  6  1 92  0  0
+ 0  0      0 4391576 334304 5086484    0    0     0   110 2899 6480  8  3 90  0  0
+</code></pre><ul><li><code>procs</code><ul><li>The number of runnable processes (<code>r</code>) and the number of blocked (<code>b</code>) processes</li></ul></li><li><code>memory</code><ul><li>The core memory output distinguishing:<ul><li>Total kbs swapped to disk</li><li>Total kbs free</li><li>Total kbs currently in <a href="Role_of_memory_in_computation.md#relation-between-cache-and-buffers">buffer</a> and not written</li><li>Total amount of virtual memory in the <a href="Role_of_memory_in_computation.md#relation-between-cache-and-buffers">cache</a></li></ul></li></ul></li><li><code>swap</code><ul><li>Distinguishes amount of memory <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Swap space"><a href="Swap_space">swapped</a></span></span> in (<code>si</code>) to memory and swapped out (<code>so</code>) to disk</li></ul></li><li><code>io</code><ul><li>Disk actions</li><li>Amount of data read from harddisk (<code>bi</code>)</li><li>Amount of data written to harddisk (<code>bo</code>)</li></ul></li><li><code>system</code><ul><li>The number of times the kernel switches to kernel code</li></ul></li><li><code>cpu</code><ul><li>Percentage of the different CPU behaviours:<ul><li>Responding to user tasks (<code>us</code>)</li><li>Time that it is idle (<code>id</code>)</li></ul></li></ul></li></ul><h2 id="files-being-used-by-active-processes-lsof">Files being used by active processes: <code>lsof</code></h2><p><code>lsof</code> stands for <em>list open files</em>. It lists opened files and the processes using them. Without modifiers it outputs a huge amount of data. The best way to use it is to execute it against a specific PID. For example the below output gives me some useful info about which files VS Code is using:</p><p><img src="static/lsof.png" /></p><h2 id="system-calls-strace">System calls: <code>strace</code></h2><p>A system call is when a process requests a service from the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>, for instance an I/O operation to memory. We can trace these system calls with <code>strace</code>.</p><h2 id="cpu-performance">CPU performance</h2><p>We can use the <code>uptime</code> program to assess overall CPU performance in the form of a load average.</p><blockquote><p>Load average is the number of active processes currently ready to run. It is an estimate of the number of processes that are capable of using the CPU at any given time.</p></blockquote><p><code>Uptime</code> gives you three load averages:</p><pre><code class="bash language-bash">$ uptime
+11:19:16 up 14 days,  3:53,  1 user,  load average: 0.84, 0.57, 0.50</code></pre><ul><li><p>The three numbers are load averages for the past 1 minute, 5 minutes and 15 minutes respectively.</p></li><li><p>A load average close to 0 is usually a good sign because it means that your processor isn’t being challenged and you are conserving power. Anything equal to or above 1 means that a single process is using the CPU nearly all the time. You can identify that process with <code>htop</code> and it will obviously be near to the top. (This is often caused by Chrome and Electron-based software.)</p></li></ul><h2 id="memory-status">Memory status</h2><p>We know that processes primarily interact with virtual memory in the form of pages which are then translated to physical blocks by the kernel via the <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Virtual_memory_and_the_MMU_in_Linux</a></span></span>. There are several tools which provide windows onto this process.</p><h3 id="system-page-size">System page size</h3><p>We can view the overall system page size which is a representation of the amount of virtual memory available:</p><pre><code class="bash language-bash">$ getconf PAGE_SIZE
+4096</code></pre><p>This will typically be the same for all Linux systems.</p><h3 id="free--available-physical-memory"><code>free</code> : available physical memory</h3><p><code>free</code> displays the total amount of free and¬used physical and swap memory in the system, as well as the <a href="Role_of_memory_in_computation.md#relation-between-cache-and-buffers">buffers and caches</a> used by the kernel.</p><pre><code class="bash language-bash">$ free
+              total        used        free      shared  buff/cache   available
+Mem:        16099420     5931512     5039344     2046460     5128564     7781904
+Swap:        3145724           0     3145724</code></pre></div></article><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">Linux</span><span class="ui basic label zettel-tag" title="Tag">procedural</span><span class="ui basic label zettel-tag" title="Tag">systems-programming</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>
