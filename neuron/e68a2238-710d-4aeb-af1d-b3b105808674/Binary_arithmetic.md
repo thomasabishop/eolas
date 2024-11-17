@@ -1,6 +1,0 @@
----
-tags:
-  - binary
----
-
-# Binary multiplication
