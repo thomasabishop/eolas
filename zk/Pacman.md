@@ -13,7 +13,7 @@ tags:
 pacman -Qe
 ```
 
-## List all packages installed by current user
+## List all packages installed for current user
 
 ```
 pacman -Qqe
