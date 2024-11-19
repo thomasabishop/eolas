@@ -1,5 +1,5 @@
 ---
-tags: [socio-political, internet]
+tags: [ecopolsoc, internet]
 created: Thursday, November 07, 2024
 ---
 
@@ -65,7 +65,7 @@ This decline in quality should be apparent to any reflective user:
   capital and western imperialism
 - the saturation of pornography and dehumanising media more generally
 
-This has also involved the reshaping of Internet users themselves, from active
+Thbs has also involved the reshaping of Internet users themselves, from active
 and independent _agents_, to drone-like passive _consumers_ of drivel engineered
 to maximise 'engagement' (the monopolisation of attention), where users are like
 the viewers of _Infinite Jest_. See, e.g TikTok and its clones.

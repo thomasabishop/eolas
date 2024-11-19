@@ -13,12 +13,16 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** bf894b27-4b56-45c5-b936-59d1518a7e06
+**Build ID:** 28270bf1-8ccb-4761-85b3-c2af3fa8014c
 
-**Published:** Sun 17 Nov 2024 15:43:55
+**Published:** Tue 19 Nov 2024 17:43:49
 
 ### Recent edits 
 
+- [[0716531c_rewilding_the_internet]] 
+- [[f6564af9_AOL_and_early_internet_enclosure]] 
+- [[Bauman_quote]] 
+- [[Weaving_the_Web_Berners_Lee]] 
 - [[Pacman]] 
 - [[Passing_arguments_and_options_to_Bash_scripts]] 
 - [[Functions_in_Bash]] 
@@ -27,13 +31,9 @@ computer science.
 - [[Bash_colour_output]] 
 - [[Terraform]] 
 - [[Classes_in_Python]] 
-- [[Dictionaries_in_Python]] 
-- [[Using_SQLite_with_Python]] 
-- [[SQLite]] 
-- [[Working_with_directories_in_Python]] 
 
 
-### All notes (494) 
+### All notes (495) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -79,6 +79,7 @@ computer science.
 - [[Basic_properties_of_sets]] 
 - [[Basics_of_web_components]] 
 - [[Batch_processing]] 
+- [[Bauman_quote]] 
 - [[Bell_System]] 
 - [[Biconditional_Elimination]] 
 - [[Biconditional_Introduction]] 

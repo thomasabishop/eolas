@@ -1,5 +1,5 @@
 ---
-tags: [literature, socio-political, world-wide-web]
+tags: [literature, ecosolpoc, world-wide-web]
 created: Monday, November 04, 2024
 ---
 
