@@ -1,180 +1,178 @@
-<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>The kernel - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="Within the hierarchy of the OS, the kernel acts as the primary mediator between the hardware (CPU, memory) and user processes. Let’s look at each of its responsibilities in greater depth:" name="description" /><meta content="The kernel" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="The_kernel" property="neuron:zettel-id" /><meta content="The_kernel" property="neuron:zettel-slug" /><meta content="computer-architecture" property="neuron:zettel-tag" /><meta content="memory" property="neuron:zettel-tag" /><meta content="operating-systems" property="neuron:zettel-tag" /><meta content="systems-programming" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script
-  async=""
-  id="MathJax-script"
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-></script>
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>The kernel - My Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" rel="icon" /><meta content="Within the hierarchy of the OS, the kernel acts as the primary mediator between the hardware (CPU, memory) and user processes. Let’s look at each of its responsibilities in greater depth:" name="description" /><meta content="The kernel" property="og:title" /><meta content="My Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="The_kernel" property="neuron:zettel-id" /><meta content="The_kernel" property="neuron:zettel-slug" /><meta content="computer-architecture" property="neuron:zettel-tag" /><meta content="memory" property="neuron:zettel-tag" /><meta content="operating-systems" property="neuron:zettel-tag" /><meta content="systems-programming" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
-  rel="stylesheet"
-/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin
-/><link
-  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet"
-/>
+	href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+	rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
 <style>
-  body .ui.container,
-  body ul {
-    font-family: "IBM Plex Sans" !important;
-  }
-  body h2,
-  body div.zettel-view .zettel-content h2 {
-    border-bottom: none !important;
-  }
+	body .ui.container,
+	body ul {
+		font-family: "IBM Plex Sans" !important;
+	}
 
-  body blockquote {
-    border-left-width: 3px !important;
-    border-left-color: #458588 !important;
-    background-color: #f2e5bc !important;
-  }
+	body h2,
+	body div.zettel-view .zettel-content h2 {
+		border-bottom: none !important;
+	}
 
-  .headerFont,
-  .ui.header,
-  body h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "IBM Plex Sans" !important;
-  }
-  body p {
-    /* line-height: 1.3; */
-  }
+	body blockquote {
+		border-left-width: 3px !important;
+		border-left-color: #458588 !important;
+		background-color: #f2e5bc !important;
+	}
 
-  .monoFont,
-  body code,
-  pre,
-  tt {
-    font-family: "IBM Plex Mono" !important;
-    font-size: 12px !important;
-    /* line-height: 1.3 !important; */
-  }
-  img[alt~="not-by-ai-badge"] {
-    width: 100px;
-  }
+	.headerFont,
+	.ui.header,
+	body h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "IBM Plex Sans" !important;
+	}
 
-  #neuron-nav-bar {
-    background-color: #458588;
-  }
+	body p {
+		/* line-height: 1.3; */
+	}
 
-  #neuron-nav-bar a.right {
-    display: none;
-  }
+	.monoFont,
+	body code,
+	pre,
+	tt {
+		font-family: "IBM Plex Mono" !important;
+		font-size: 12px !important;
+		/* line-height: 1.3 !important; */
+	}
 
-  .ui .center img {
-    display: none;
-  }
+	img[alt~="not-by-ai-badge"] {
+		width: 100px;
+	}
 
-  body {
-    background-color: #ebdbb2 !important;
-    color: #282828;
-  }
+	#neuron-nav-bar {
+		background-color: #458588;
+	}
 
-  .zettel-view article.zettel-content {
-    background-color: #f9f5d7 !important;
-  }
-  a,
-  body span.zettel-link-container span.zettel-link a,
-  body .deemphasized:not(:hover) a {
-    color: #458588 !important;
-  }
+	#neuron-nav-bar a.right {
+		display: none;
+	}
 
-  .deemphasized:not(:hover) a {
-    color: #458588 !important;
-  }
+	.ui .center img {
+		display: none;
+	}
 
-  body .zettel-content h1#title-h1 {
-    background-color: #458588;
-    color: #f9f5d7;
-  }
+	body {
+		background-color: #ebdbb2 !important;
+		color: #282828;
+	}
 
-  .ui.raised.raised.segment,
-  .ui.raised.raised.segments {
-    box-shadow: none;
-  }
+	.zettel-view article.zettel-content {
+		background-color: #f9f5d7 !important;
+	}
 
-  .ui.raised.attached.segment.zettel-content {
-    border: none;
-  }
+	a,
+	body span.zettel-link-container span.zettel-link a,
+	body .deemphasized:not(:hover) a {
+		color: #458588 !important;
+	}
 
-  #neuron-backlinks-pane,
-  #neuron-tags-pane {
-    background-color: #3c3836;
-    border: none;
-  }
+	.deemphasized:not(:hover) a {
+		color: #458588 !important;
+	}
 
-  #neuron-backlinks-pane h3.ui.header,
-  #neuron-backlinks-pane p,
-  #neuron-backlinks-pane > ul > li > ul > li > div {
-    color: #ebdbb2 !important;
-  }
+	body .zettel-content h1#title-h1 {
+		background-color: #458588;
+		color: #f9f5d7;
+		word-wrap: break-word;
+	}
 
-  #neuron-backlinks-pane ul li::marker {
-    color: #ebdbb2 !important;
-  }
-  #neuron-backlinks-pane > ul > li > ul > li > div > p > a,
-  #neuron-backlinks-pane ul li span.zettel-link a {
-    color: #83a598 !important;
-  }
+	.ui.raised.raised.segment,
+	.ui.raised.raised.segments {
+		box-shadow: none;
+	}
 
-  body .deemphasized:not(:hover),
-  body .deemphasized:hover {
-    opacity: 1;
-  }
+	.ui.raised.attached.segment.zettel-content {
+		border: none;
+	}
 
-  #neuron-nav-bar {
-    border-radius: 0;
-  }
-  .ui.basic.label.zettel-tag {
-    background-color: #458588;
-    border-radius: 0;
-    border: none;
-    color: #f9f5c7;
-  }
+	#neuron-backlinks-pane,
+	#neuron-tags-pane {
+		background-color: #3c3836;
+		border: none;
+	}
 
-  body div.zettel-view .zettel-content p code,
-  li code,
-  ol code {
-    padding: 0;
-    font-size: 13px !important;
-    background: transparent;
-  }
+	#neuron-backlinks-pane h3.ui.header,
+	#neuron-backlinks-pane p,
+	#neuron-backlinks-pane>ul>li>ul>li>div {
+		color: #ebdbb2 !important;
+	}
 
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
+	#neuron-backlinks-pane ul li::marker {
+		color: #ebdbb2 !important;
+	}
 
-  .ui table {
-    background-color: #f9f5d7 !important;
-    border-radius: 0 !important;
-    border-color: #3c3836 !important;
-  }
+	#neuron-backlinks-pane>ul>li>ul>li>div>p>a,
+	#neuron-backlinks-pane ul li span.zettel-link a {
+		color: #83a598 !important;
+	}
 
-  .ui.table > thead > tr > th {
-    background-color: #3c3836 !important;
-    border-radius: 0 !important;
-    color: #f9f5d7 !important;
-  }
+	body .deemphasized:not(:hover),
+	body .deemphasized:hover {
+		opacity: 1;
+	}
 
-  body span.zettel-link-container.errors {
-    border-color: #cc241d;
-  }
+	#neuron-nav-bar {
+		border-radius: 0;
+	}
 
-  body span.zettel-link-container.errors span.zettel-link a {
-    color: #cc241d !important;
-  }
+	.ui.basic.label.zettel-tag {
+		background-color: #458588;
+		border-radius: 0;
+		border: none;
+		color: #f9f5c7;
+	}
 
-  body span.zettel-link-container.errors span.zettel-link a:hover {
-    background-color: #fb483460 !important;
-  }
+	body div.zettel-view .zettel-content p code,
+	li code,
+	ol code {
+		padding: 0;
+		font-size: 13px !important;
+		background: transparent;
+	}
 
-  /**
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+
+	.ui table {
+		background-color: #f9f5d7 !important;
+		border-radius: 0 !important;
+		border-color: #3c3836 !important;
+	}
+
+	.ui.table>thead>tr>th {
+		background-color: #3c3836 !important;
+		border-radius: 0 !important;
+		color: #f9f5d7 !important;
+	}
+
+	body span.zettel-link-container.errors {
+		border-color: #cc241d;
+	}
+
+	body span.zettel-link-container.errors span.zettel-link a {
+		color: #cc241d !important;
+	}
+
+	body span.zettel-link-container.errors span.zettel-link a:hover {
+		background-color: #fb483460 !important;
+	}
+
+	/**
  * Gruvbox light theme
  *
  * Based on Gruvbox: https://github.com/morhetz/gruvbox
@@ -184,141 +182,160 @@
  * @version 1.0
  */
 
-  code[class*="language-"],
-  pre[class*="language-"] {
-    color: #3c3836; /* fg1 / fg */
-    font-family: Consolas, Monaco, "Andale Mono", monospace;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    line-height: 1.5;
+	code[class*="language-"],
+	pre[class*="language-"] {
+		color: #3c3836;
+		/* fg1 / fg */
+		font-family: Consolas, Monaco, "Andale Mono", monospace;
+		direction: ltr;
+		text-align: left;
+		white-space: pre;
+		word-spacing: normal;
+		word-break: normal;
+		line-height: 1.5;
 
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
 
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none;
+	}
 
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
-    color: #282828; /* fg0 */
-    background: #fbf1c7; /* bg4 */
-  }
+	pre[class*="language-"]::-moz-selection,
+	pre[class*="language-"] ::-moz-selection,
+	code[class*="language-"]::-moz-selection,
+	code[class*="language-"] ::-moz-selection {
+		color: #282828;
+		/* fg0 */
+		background: #fbf1c7;
+		/* bg4 */
+	}
 
-  pre[class*="language-"]::selection,
-  pre[class*="language-"] ::selection,
-  code[class*="language-"]::selection,
-  code[class*="language-"] ::selection {
-    color: #282828; /* fg0 */
+	pre[class*="language-"]::selection,
+	pre[class*="language-"] ::selection,
+	code[class*="language-"]::selection,
+	code[class*="language-"] ::selection {
+		color: #282828;
+		/* fg0 */
 
-    background: #fbf1c7; /* bg4 */
-  }
+		background: #fbf1c7;
+		/* bg4 */
+	}
 
-  /* Code blocks */
-  pre[class*="language-"] {
-    padding: 1em;
-    margin: 0.5em 0;
-    overflow: auto;
-  }
+	/* Code blocks */
+	pre[class*="language-"] {
+		padding: 1em;
+		margin: 0.5em 0;
+		overflow: auto;
+	}
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: #f9f5d7; /* bg4 */
-    border: 1px solid #a89984;
-  }
+	:not(pre)>code[class*="language-"],
+	pre[class*="language-"] {
+		background: #f9f5d7;
+		/* bg4 */
+		border: 1px solid #a89984;
+	}
 
-  /* Inline code */
-  :not(pre) > code[class*="language-"] {
-    padding: 0.1em;
-    border-radius: 0.3em;
-  }
+	/* Inline code */
+	:not(pre)>code[class*="language-"] {
+		padding: 0.1em;
+		border-radius: 0.3em;
+	}
 
-  .token.comment,
-  .token.prolog,
-  .token.cdata {
-    color: #7c6f64; /* fg4 / gray1 */
-  }
+	.token.comment,
+	.token.prolog,
+	.token.cdata {
+		color: #7c6f64;
+		/* fg4 / gray1 */
+	}
 
-  .token.delimiter,
-  .token.boolean,
-  .token.keyword,
-  .token.selector,
-  .token.important,
-  .token.atrule {
-    color: #9d0006; /* red2 */
-  }
+	.token.delimiter,
+	.token.boolean,
+	.token.keyword,
+	.token.selector,
+	.token.important,
+	.token.atrule {
+		color: #9d0006;
+		/* red2 */
+	}
 
-  .token.operator,
-  .token.punctuation,
-  .token.attr-name {
-    color: #7c6f64; /* fg4 / gray1 */
-    background: transparent;
-  }
+	.token.operator,
+	.token.punctuation,
+	.token.attr-name {
+		color: #7c6f64;
+		/* fg4 / gray1 */
+		background: transparent;
+	}
 
-  .token.tag,
-  .token.tag .punctuation,
-  .token.doctype,
-  .token.builtin {
-    color: #b57614; /* yellow2 */
-  }
+	.token.tag,
+	.token.tag .punctuation,
+	.token.doctype,
+	.token.builtin {
+		color: #b57614;
+		/* yellow2 */
+	}
 
-  .token.entity,
-  .token.number,
-  .token.symbol {
-    color: #8f3f71; /* purple2 */
-  }
+	.token.entity,
+	.token.number,
+	.token.symbol {
+		color: #8f3f71;
+		/* purple2 */
+	}
 
-  .token.property,
-  .token.constant,
-  .token.variable {
-    color: #9d0006; /* red2 */
-  }
+	.token.property,
+	.token.constant,
+	.token.variable {
+		color: #9d0006;
+		/* red2 */
+	}
 
-  .token.string,
-  .token.char {
-    color: #797403; /* green2 */
-  }
+	.token.string,
+	.token.char {
+		color: #797403;
+		/* green2 */
+	}
 
-  .token.attr-value,
-  .token.attr-value .punctuation {
-    color: #7c6f64; /* fg4 / gray1 */
-  }
+	.token.attr-value,
+	.token.attr-value .punctuation {
+		color: #7c6f64;
+		/* fg4 / gray1 */
+	}
 
-  .token.url {
-    color: #797403; /* green2 */
-    text-decoration: underline;
-  }
+	.token.url {
+		color: #797403;
+		/* green2 */
+		text-decoration: underline;
+	}
 
-  .token.function {
-    color: #b57614; /* yellow2 */
-  }
+	.token.function {
+		color: #b57614;
+		/* yellow2 */
+	}
 
-  .token.regex {
-    background: #797403; /* green2 */
-  }
+	.token.regex {
+		background: #797403;
+		/* green2 */
+	}
 
-  .token.bold {
-    font-weight: bold;
-  }
+	.token.bold {
+		font-weight: bold;
+	}
 
-  .token.italic {
-    font-style: italic;
-  }
+	.token.italic {
+		font-style: italic;
+	}
 
-  .token.inserted {
-    background: #7c6f64; /* fg4 / gray1 */
-  }
+	.token.inserted {
+		background: #7c6f64;
+		/* fg4 / gray1 */
+	}
 
-  .token.deleted {
-    background: #9d0006; /* red2 */
-  }
+	.token.deleted {
+		background: #9d0006;
+		/* red2 */
+	}
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">The kernel</h1><p>Within the <a href="./Basic_model_of_the_operating_system.md">hierarchy of the OS</a>, the kernel acts as the primary mediator between the hardware (CPU, memory) and <a href="./User_Space.md">user</a> <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Processes"><a href="Processes">processes</a></span></span>. Let’s look at each of its responsibilities in greater depth:</p><ul><li>process management</li><li>memory management</li><li>device drivers</li><li>system calls</li></ul><h2 id="process-management">Process management</h2><blockquote><p>A process is just another name for a running program. Process management is the starting, pausing, resuming, scheduling and terminating of processes.</p></blockquote><p>On modern computers it appears that multiple processes can run simultaneously at once. This is only because the processor is so fast that we do not detect changes. In fact access to the CPU is always sequential. The sequence in which multiple programs are allowed to access the CPU is managed by the kernel.</p><blockquote><p>Consider a system with a one-core CPU. Many processes may be <em>able</em> to use the CPU, but only one process can actually use the CPU at any given time…Each process uses the CPU for a fraction of a second, then pauses, then another process uses it for a fraction of a second and so on… (<em>How Linux Works: Third Edition</em>, Brian Ward 2021)</p></blockquote><p>This process of the CPU shuffling between multiple processes is called <em>context switching</em>.</p><p>The role of the kernel in facilitating this, is as follows:</p><ol><li>CPU runs process for a time slice based on its internal time. Then hands control back to the kernel (kernel mode)</li><li>Kernel records current state of CPU and memory. This is necessary in order to resume the progress that was just interupted.</li><li>The kernel executes any tasks that arose in the last timeslice executed by the CPU (e.g. collecting data from I/0)</li><li>Kernel then analyses the list of processes that are ready to run next and chooses one.</li><li>Kernel prepares memory for this new process and prepares the CPU.</li><li>Kernel tells CPU how long the time slice for the new process will last.</li><li>Kernel switches the CPU into user mode and hands control of CPU to the process.</li></ol><h2 id="memory-management">Memory management</h2><p>During the context switch from CPU to user space, the kernel allocates memory. It has the following jobs to manage:</p><ul><li>Keeping its own private area in memory for itself that user processes cannot access</li><li>Assigning each user process its own section of memory</li><li>Managing shared memory between processes and ensuring the private memory of processes is not accessed by others</li><li>Managing read-only memory</li><li>Allowing for the use of disk space as auxiliary memory</li></ul><blockquote><p>Modern CPUs include a <a href="Virtual_memory_and_the_MMU_in_Linux.md#the-memory-management-unit-mmu">memory management unit</a> which provides the kernel with <strong>virtual</strong> memory. In this scenario, memory isn’t directly accessed by the process instead it works on the assumption that is has access to the entire memory of the machine and this is then translated into a map that is applied to the real memory and managed by the kernel.</p></blockquote><h2 id="device-drivers">Device drivers</h2><p>Devices are managed by the kernal and are not accessible directly via user space, since improper usage could crash the whole machine. There is little uniformity between devices and as a result drivers are needed. Thes are kernl code that enable different OS kernels to access and control the devices.</p><h2 id="system-calls">System calls</h2><p>Syscalls are what enable programs to start and are required for the acts of opening, reading and writing files. System calls in Linux are typically managed via C.</p><p>In Linux there are two particularly important system calls:</p><ul><li><code>fork()</code><ul><li>When a process calls fork, the kernel creates a nearly identical copy of this running process</li></ul></li><li><code>exec()</code><ul><li>When a process calls exec it passes a program name as a parameter. Then the kernel loads and starts this program, replacing the current process.</li></ul></li></ul><p>Example with a terminal program like <code>ls</code>:</p><blockquote><p>When you enter <code>ls</code> into the terminal window, the shell that’s running inside the terminal window calls <code>fork()</code> to create a copy of the shell, and then the new copy of the shell calls <code>exec(ls)</code> to run <code>ls</code>. (<em>Ibid.</em>)</p></blockquote><h2 id="controlling-processes">Controlling processes</h2><p>In Linux we can view, kill, pause and resume processes using <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Processes"><a href="Processes">ps</a></span></span>.</p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="ps">Processes (ps)</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p><code>ps</code> allows us to control <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">user processes</a></span></span> from the shell.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="journald">journald</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p><code>journald</code> is a program that comes as default with <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: systemd"><a href="systemd">systemd</a></span></span>. It is a service for collecting and storing system-level log data. I keeps a track of all <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> processes. It is invaluable when tracing the source of problems and errors that may arise on the system level. It keeps a track of all kernal processes.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Threads">Threads</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Both procesess in <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: User space"><a href="User_Space">user space</a></span></span> and the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> utilise threads.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Swap_space">Swap space</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>To use an existing disk partition as a swap you can run the command <code>mkswap [device]</code> and then <code>swapon [device]</code> to register the space with the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Monitoring_processes_and_resources">Monitoring processes and resources</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>A system call is when a process requests a service from the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>, for instance an I/O operation to memory. We can trace these system calls with <code>strace</code>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Linux_disk_partitions">Linux disk partitions</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Most standard partition tables allow for primary, extended and logical partitions. The primary partition is the part of the harddisk that contains the operating system and is thus described as ‘bootable’ and may be called the ‘boot partition’. During the bootstrapping process this is injected into memory as the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Event_loop">The Event Loop</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>A running Node application is a single running process. Like everything that happens within the OS, a process is managed by the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> that dispatches operations to the CPU in a clock cycle. A thread is a sequence of code that resides within the process and utilises its memory pool (the amount of memory assigned by the kernel to the Node process). The Event Loop runs on CPU ticks: a tick is a single run of the Event Loop.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Containerization">Containerizaton</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Containers are native to the Linux <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernal</a></span></span> and are key part of how it works. Thus when you run containers on Linux, you are using native capability. When you use containers on Windows or Mac you have to run a virtual version of Linux in order to exploit the capabilities of that kernel. (Docker provides this)</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="CPU_architecture">CPU architecture</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Bus"><a href="Bus">system bus</a></span></span> from the memory. The <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>, also residing in memory, sequences and schedules the sending of data to the CPU and manages requests from the CPU for data in memory.</p></div></li><li class="item"><div class="pandoc"><p>Each “cycle” is the execution of a process that commences once the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> hands control to the CPU. Each cycle follows a sequence of events known as <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Fetch, decode, execute, store"><a href="Fetch_decode_execute">fetch, decode, and execute</a></span></span>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Boot_process">Boot process</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>The primary or boot <a href="Disks.md#primary-extended-and-logical-partitions">partition</a> of a harddisk contains a bootloader. It is the job of the bootloader to locate the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> on the harddrive and inject it into memory so that they operating system can start. This is the boot process.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">computer-architecture</span><span class="ui basic label zettel-tag" title="Tag">memory</span><span class="ui basic label zettel-tag" title="Tag">operating-systems</span><span class="ui basic label zettel-tag" title="Tag">systems-programming</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>
