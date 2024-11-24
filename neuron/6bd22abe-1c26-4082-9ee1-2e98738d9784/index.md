@@ -13,12 +13,16 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** e74b7b2d-cac4-4437-99e5-f94adaa32c60
+**Build ID:** 6bd22abe-1c26-4082-9ee1-2e98738d9784
 
-**Published:** Thu 21 Nov 2024 18:26:01
+**Published:** Sun 24 Nov 2024 10:53:17
 
 ### Recent edits 
 
+- [[a771a6d9_attributes_of_internet_enclosure]] 
+- [[JavaScript_module_types]] 
+- [[AWS_SQS]] 
+- [[Messaging_services]] 
 - [[0716531c_rewilding_the_internet]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[Bauman_quote]] 
@@ -27,13 +31,9 @@ computer science.
 - [[Passing_arguments_and_options_to_Bash_scripts]] 
 - [[Functions_in_Bash]] 
 - [[Bash_file_exists]] 
-- [[Bash_store_status_of_command_execution]] 
-- [[Bash_colour_output]] 
-- [[Terraform]] 
-- [[Classes_in_Python]] 
 
 
-### All notes (495) 
+### All notes (498) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -48,6 +48,7 @@ computer science.
 - [[AWS_CLI]] 
 - [[AWS_CloudWatch]] 
 - [[AWS_SAM_and_Docker]] 
+- [[AWS_SQS]] 
 - [[AWS_architecture_hierarchy]] 
 - [[Accessing_metadata_about_SQL_database]] 
 - [[Accessing_secrets_from_a_Lambda]] 
@@ -255,6 +256,7 @@ computer science.
 - [[Invoking_the_shell_in_Python]] 
 - [[Iterating_in_React]] 
 - [[Iterating_through_complex_data_structures_in_Python]] 
+- [[JavaScript_module_types]] 
 - [[Joins_in_SQL]] 
 - [[Journey_of_GraphQL_query]] 
 - [[Key_characteristics_of_GraphQL]] 
@@ -513,6 +515,7 @@ computer science.
 - [[Writing_to_files_in_Python]] 
 - [[Zero_property_of_multiplication]] 
 - [[Zip_function_in_Python]] 
+- [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
 - [[c8173d17_TIMPs]] 
 - [[cfbef1c4_web_precursors]] 
