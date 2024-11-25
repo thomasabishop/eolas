@@ -13,16 +13,17 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 6bd22abe-1c26-4082-9ee1-2e98738d9784
+**Build ID:** f3ec2d6c-97a4-4a7a-9dfe-64824a6e94ae
 
-**Published:** Sun 24 Nov 2024 10:53:17
+**Published:** Mon 25 Nov 2024 07:19:27
 
 ### Recent edits 
 
+- [[AWS_SNS]] 
+- [[AWS_SQS]] 
+- [[AWS_SQS_SDK]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[JavaScript_module_types]] 
-- [[AWS_SQS]] 
-- [[Messaging_services]] 
 - [[0716531c_rewilding_the_internet]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[Bauman_quote]] 
@@ -30,10 +31,9 @@ computer science.
 - [[Pacman]] 
 - [[Passing_arguments_and_options_to_Bash_scripts]] 
 - [[Functions_in_Bash]] 
-- [[Bash_file_exists]] 
 
 
-### All notes (498) 
+### All notes (499) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -48,7 +48,9 @@ computer science.
 - [[AWS_CLI]] 
 - [[AWS_CloudWatch]] 
 - [[AWS_SAM_and_Docker]] 
+- [[AWS_SNS]] 
 - [[AWS_SQS]] 
+- [[AWS_SQS_SDK]] 
 - [[AWS_architecture_hierarchy]] 
 - [[Accessing_metadata_about_SQL_database]] 
 - [[Accessing_secrets_from_a_Lambda]] 
@@ -305,7 +307,6 @@ computer science.
 - [[Memory_addresses]] 
 - [[Memory_leaks]] 
 - [[Memory_versus_processor]] 
-- [[Messaging_services]] 
 - [[Middleware_in_NodeJS]] 
 - [[Mixed_and_improper_fractions]] 
 - [[Modelling_relationships_in_MongoDB]] 

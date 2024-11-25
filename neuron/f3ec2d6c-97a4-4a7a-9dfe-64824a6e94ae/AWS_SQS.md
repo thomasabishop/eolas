@@ -50,3 +50,8 @@ to the dead letter queue (DLQ) and remove it from the main queue.
 If the DLQ reaches a certain threshold this can trigger additional handling such
 as raising an Alert in [CloudWatch](./AWS_CloudWatch.md) or other monitoring
 tool.
+
+Note that a DLQ is not a distinct entity within the SDK, it is just another SQS
+queue that is designated to store failures.
+
+See [AWS SDK Syntax](AWS_SQS_SDK.md).
