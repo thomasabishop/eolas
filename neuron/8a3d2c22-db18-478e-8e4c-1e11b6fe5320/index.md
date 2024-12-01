@@ -13,12 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** f3ec2d6c-97a4-4a7a-9dfe-64824a6e94ae
+**Build ID:** 8a3d2c22-db18-478e-8e4c-1e11b6fe5320
 
-**Published:** Mon 25 Nov 2024 07:19:27
+**Published:** Sun 01 Dec 2024 19:37:45
 
 ### Recent edits 
 
+- [[a247fa9b_surveillance_capitalism_not_necessary]] 
+- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[AWS_SNS]] 
 - [[AWS_SQS]] 
 - [[AWS_SQS_SDK]] 
@@ -29,11 +31,9 @@ computer science.
 - [[Bauman_quote]] 
 - [[Weaving_the_Web_Berners_Lee]] 
 - [[Pacman]] 
-- [[Passing_arguments_and_options_to_Bash_scripts]] 
-- [[Functions_in_Bash]] 
 
 
-### All notes (499) 
+### All notes (501) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -516,6 +516,7 @@ computer science.
 - [[Writing_to_files_in_Python]] 
 - [[Zero_property_of_multiplication]] 
 - [[Zip_function_in_Python]] 
+- [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
 - [[c8173d17_TIMPs]] 
@@ -524,6 +525,7 @@ computer science.
 - [[ecec56e6_precursors_to_search_engines]] 
 - [[f0f70a3c_ARPANET_motivations]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
+- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[fs]] 
 - [[http_in_Node]] 
 - [[journald]] 
