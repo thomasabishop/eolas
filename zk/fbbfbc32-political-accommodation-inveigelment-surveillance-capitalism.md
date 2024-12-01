@@ -26,14 +26,18 @@ and Google:
 
 _The US intelligence community's incubation of Google from inception occurred
 through a combination of direct sponsorship and informal networks of financial
-influence, themselves closely aligned with Pentagon interests._ (118)
+influence, themselves closely aligned with Pentagon interests._
+
+_The Age of Surveillance Capitalism_ (2019): 118
 
 Another key aspect was cosying up to politicians during the electoral cycle.
 Most notably during Obama's elections:
 
 _Google demonstrated that the same predictive knowledge derived from behavioural
 surplus that had made the surveillance capitalists wealthy could also help
-candidates win elections_.(122)
+candidates win elections_
+
+_Ibid_: 122
 
 Eric Schmidt took an active role in making Google's dataset and technologies
 available to the Obama campaign in both of his elections in order to target

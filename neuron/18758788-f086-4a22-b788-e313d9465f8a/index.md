@@ -13,15 +13,15 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** ece17b21-4a01-41a2-ae84-09e40ec6dfab
+**Build ID:** 18758788-f086-4a22-b788-e313d9465f8a
 
-**Published:** Sun 01 Dec 2024 19:39:44
+**Published:** Sun 01 Dec 2024 19:43:26
 
 ### Recent edits 
 
+- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[test]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
-- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[AWS_SNS]] 
 - [[AWS_SQS]] 
 - [[AWS_SQS_SDK]] 
