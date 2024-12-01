@@ -13,12 +13,13 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 8a3d2c22-db18-478e-8e4c-1e11b6fe5320
+**Build ID:** ece17b21-4a01-41a2-ae84-09e40ec6dfab
 
-**Published:** Sun 01 Dec 2024 19:37:45
+**Published:** Sun 01 Dec 2024 19:39:44
 
 ### Recent edits 
 
+- [[test]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[AWS_SNS]] 
@@ -30,10 +31,9 @@ computer science.
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[Bauman_quote]] 
 - [[Weaving_the_Web_Berners_Lee]] 
-- [[Pacman]] 
 
 
-### All notes (501) 
+### All notes (502) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -534,4 +534,5 @@ computer science.
 - [[python_advent_learnings]] 
 - [[systemd]] 
 - [[systemd_status]] 
+- [[test]] 
 - [[v8]] 
