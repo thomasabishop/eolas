@@ -34,8 +34,8 @@ fi
 # source ${purge_images}
 # pointless comment
 
-neuron-zk-generator
-# /home/thomas/repos/neuron-zk-generator/dist/app
+#neuron-zk-generator
+/home/thomas/repos/neuron-zk-generator/dist/app
 
 echo "Changes exist. Updating remote..."
 git pull >/dev/null 2>&1
