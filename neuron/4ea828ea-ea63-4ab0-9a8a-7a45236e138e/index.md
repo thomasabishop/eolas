@@ -13,12 +13,16 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** d06d7699-6cc3-4470-a1d4-b6201bdeb808
+**Build ID:** 4ea828ea-ea63-4ab0-9a8a-7a45236e138e
 
-**Published:** Tue 10 Dec 2024 17:25:16
+**Published:** Fri 13 Dec 2024 17:06:14
 
 ### Recent edits 
 
+- [[Architecture_of_the_World_Wide_Web]] 
+- [[Network_packet_analysis_tools]] 
+- [[What_can_the_ISP_see]] 
+- [[HTTPS]] 
 - [[Bauman_quote]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
@@ -27,13 +31,9 @@ computer science.
 - [[AWS_SQS_SDK]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[JavaScript_module_types]] 
-- [[0716531c_rewilding_the_internet]] 
-- [[f6564af9_AOL_and_early_internet_enclosure]] 
-- [[Weaving_the_Web_Berners_Lee]] 
-- [[Pacman]] 
 
 
-### All notes (501) 
+### All notes (505) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -68,6 +68,7 @@ computer science.
 - [[Appending_to_files_in_Python]] 
 - [[Application_Layer_of_Internet_Protocol]] 
 - [[Application_state_management_with_React_hooks]] 
+- [[Architecture_of_the_World_Wide_Web]] 
 - [[Arithmetic_Logic_Unit]] 
 - [[Arrays]] 
 - [[Assembly]] 
@@ -231,6 +232,7 @@ computer science.
 - [[Grep]] 
 - [[Ground]] 
 - [[Guide_to_YAML]] 
+- [[HTTPS]] 
 - [[HTTP_request_types]] 
 - [[Half_adder_and_full_adder]] 
 - [[Handle_multiple_endpoints_single_lambda]] 
@@ -333,6 +335,7 @@ computer science.
 - [[Network_debugging]] 
 - [[Network_fundamentals]] 
 - [[Network_hosts]] 
+- [[Network_packet_analysis_tools]] 
 - [[Network_protocols]] 
 - [[Network_requests_in_Python]] 
 - [[Network_scanning]] 
@@ -503,6 +506,7 @@ computer science.
 - [[Voltage_sources]] 
 - [[Weaving_the_Web_Berners_Lee]] 
 - [[What_are_disks]] 
+- [[What_can_the_ISP_see]] 
 - [[What_is_memory]] 
 - [[Whole_numbers]] 
 - [[Why_computers_use_binary]] 
