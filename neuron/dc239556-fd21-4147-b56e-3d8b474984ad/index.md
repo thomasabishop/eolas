@@ -13,12 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** a04df86f-a05c-47a7-b4e9-17284e6b14a3
+**Build ID:** dc239556-fd21-4147-b56e-3d8b474984ad
 
-**Published:** Fri 20 Dec 2024 11:32:52
+**Published:** Fri 20 Dec 2024 13:12:09
 
 ### Recent edits 
 
+- [[a4601796_trapdoor_functions]] 
+- [[bbdcb54f_public_key_cryptography]] 
 - [[Dynamic_and_static_websites]] 
 - [[User_agent]] 
 - [[Architecture_of_the_World_Wide_Web]] 
@@ -29,11 +31,9 @@ computer science.
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[AWS_SNS]] 
-- [[AWS_SQS]] 
-- [[AWS_SQS_SDK]] 
 
 
-### All notes (507) 
+### All notes (509) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -523,7 +523,9 @@ computer science.
 - [[Zero_property_of_multiplication]] 
 - [[Zip_function_in_Python]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
+- [[a4601796_trapdoor_functions]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
+- [[bbdcb54f_public_key_cryptography]] 
 - [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
 - [[c8173d17_TIMPs]] 
 - [[cfbef1c4_web_precursors]] 
