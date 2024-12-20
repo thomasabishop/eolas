@@ -13,12 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 4ea828ea-ea63-4ab0-9a8a-7a45236e138e
+**Build ID:** a04df86f-a05c-47a7-b4e9-17284e6b14a3
 
-**Published:** Fri 13 Dec 2024 17:06:14
+**Published:** Fri 20 Dec 2024 11:32:52
 
 ### Recent edits 
 
+- [[Dynamic_and_static_websites]] 
+- [[User_agent]] 
 - [[Architecture_of_the_World_Wide_Web]] 
 - [[Network_packet_analysis_tools]] 
 - [[What_can_the_ISP_see]] 
@@ -29,11 +31,9 @@ computer science.
 - [[AWS_SNS]] 
 - [[AWS_SQS]] 
 - [[AWS_SQS_SDK]] 
-- [[a771a6d9_attributes_of_internet_enclosure]] 
-- [[JavaScript_module_types]] 
 
 
-### All notes (505) 
+### All notes (507) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -181,6 +181,7 @@ computer science.
 - [[Docker_general_overview]] 
 - [[Docker_images]] 
 - [[Docker_storage]] 
+- [[Dynamic_and_static_websites]] 
 - [[DynamoDB_CLI_commands]] 
 - [[DynamoDB_SDK_commands]] 
 - [[DynamoDB_data_structure]] 
@@ -486,6 +487,7 @@ computer science.
 - [[Useful_operators_in_SQL]] 
 - [[Usenet]] 
 - [[User_Space]] 
+- [[User_agent]] 
 - [[User_management_in_Linux]] 
 - [[User_management_on_AWS]] 
 - [[Using_GraphQL_with_Node]] 
