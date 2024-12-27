@@ -13,12 +13,14 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** dc239556-fd21-4147-b56e-3d8b474984ad
+**Build ID:** 3cd71ed3-2c64-460c-92b8-94889befa1fe
 
-**Published:** Fri 20 Dec 2024 13:12:09
+**Published:** Fri 27 Dec 2024 14:21:54
 
 ### Recent edits 
 
+- [[Audio_file_formats]] 
+- [[Binary_encoding_of_sound]] 
 - [[a4601796_trapdoor_functions]] 
 - [[bbdcb54f_public_key_cryptography]] 
 - [[Dynamic_and_static_websites]] 
@@ -29,11 +31,9 @@ computer science.
 - [[HTTPS]] 
 - [[Bauman_quote]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
-- [[a247fa9b_surveillance_capitalism_not_necessary]] 
-- [[AWS_SNS]] 
 
 
-### All notes (509) 
+### All notes (511) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -74,6 +74,7 @@ computer science.
 - [[Assembly]] 
 - [[Associative_Property_of_Addition_and_Multiplication]] 
 - [[Atomic_and_molecular_propositions]] 
+- [[Audio_file_formats]] 
 - [[Awk]] 
 - [[Axioms_of_set_theory]] 
 - [[Bash_colour_output]] 
@@ -91,6 +92,7 @@ computer science.
 - [[Binary_arithmetic]] 
 - [[Binary_colour_encoding]] 
 - [[Binary_encoding]] 
+- [[Binary_encoding_of_sound]] 
 - [[Binary_encoding_of_text]] 
 - [[Binary_number_system]] 
 - [[Binary_units_of_measurement]] 

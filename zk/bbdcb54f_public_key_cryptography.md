@@ -1,5 +1,5 @@
 ---
-tags: [encryption]
+tags: [encryption, cryptography]
 created: Friday, December 20, 2024
 ---
 
