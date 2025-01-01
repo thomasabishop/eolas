@@ -63,6 +63,35 @@ We could then use it thus:
 def parse_articles() -> list[ArticleInfo]:
 ```
 
+### Explicit type construction
+
+Sometimes, simply asserting that custom type will be returned by a function is
+not sufficient to pass the type checks. In these cases you need to explicitly
+construct the type within the function.
+
+For example this generates an error as Python sees the `tags` type as
+`[Dictionary]`, even though it matches the type:
+
+```python
+class IGraphNode(TypedDict):
+    id: str
+    type: str
+
+```
+
+```py
+tags = [{"id": f"#{tag[0]}", "type": "tag"} for tag in tags]
+```
+
+So you have to explicitly generate the type like this:
+
+```python
+tags = [IGraphNode(id=f"#{tag[0]}", type="tag") for tag in tags]
+```
+
+Then you will be able to type the return of the function as
+`-> list[IGraphNode]`
+
 ## Optional types
 
 `Optional` can be used to indicate that a variable can be `None` or the

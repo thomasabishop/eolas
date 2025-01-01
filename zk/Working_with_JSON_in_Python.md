@@ -1,5 +1,4 @@
 ---
-id: mjia
 tags: [python, JSON]
 created: Tuesday, June 25, 2024
 ---
@@ -20,8 +19,13 @@ Will error if the input string is not properly formatted JSON. This will be
 Take a JSON-formatted dictionary and convert it into a string. The reverse of
 `json.loads()` and equivalent to `JSON.stringify()` in JavaScript.
 
-## JSON errors
+## `json.dump()`
 
-The `.loads()` and `.parse()` methods will throw an error if the input string is
+Not to be confused with the above. Output a Python dictionary as JSON, for
+instance to create a `.json` file:
 
-## Related notes
+```py
+data = { "key": "value"}
+with open("some/directory/output.json", "w") as f:
+    json.dump(data, f, indent=4)
+```

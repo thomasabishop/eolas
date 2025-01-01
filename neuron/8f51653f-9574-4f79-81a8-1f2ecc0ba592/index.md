@@ -13,14 +13,17 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 3cd71ed3-2c64-460c-92b8-94889befa1fe
+**Build ID:** 8f51653f-9574-4f79-81a8-1f2ecc0ba592
 
-**Published:** Fri 27 Dec 2024 14:21:54
+**Published:** Wed 01 Jan 2025 15:57:54
 
 ### Recent edits 
 
-- [[Audio_file_formats]] 
 - [[Binary_encoding_of_sound]] 
+- [[Audio_file_formats]] 
+- [[Type_hinting]] 
+- [[Working_with_JSON_in_Python]] 
+- [[SQLite]] 
 - [[a4601796_trapdoor_functions]] 
 - [[bbdcb54f_public_key_cryptography]] 
 - [[Dynamic_and_static_websites]] 
@@ -28,9 +31,6 @@ computer science.
 - [[Architecture_of_the_World_Wide_Web]] 
 - [[Network_packet_analysis_tools]] 
 - [[What_can_the_ISP_see]] 
-- [[HTTPS]] 
-- [[Bauman_quote]] 
-- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 
 
 ### All notes (511) 

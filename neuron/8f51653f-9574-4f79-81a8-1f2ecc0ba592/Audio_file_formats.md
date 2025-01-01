@@ -5,44 +5,57 @@ created: Friday, December 27, 2024
 
 # Audio file formats
 
-## CD
+## CD quality
 
-- CDs store audio in uncompressed PCM (Pulse Code Modulation) format
-- They have a sampling rate of 44.1kHz
-- In two channels for stereo
+We can use CD's as the digital gold standard as the best digital quality
+available (to consumers).
 
-## WAV: Waveform Audio File Format
+CDs store audio in uncompressed PCM (Pulse Code Modulation) format.
+
+They have a sampling rate of 44.1kHz, which is done in two channels to enable
+stereo.
+
+## What lossy formats entail
+
+A conversion to MP3 from, for example, a CD source is always a one-way process
+and is not reversible. Once information is discarded in the compression process,
+it cannot be retrieved.
+
+This is obviously in contrast to lossless methods like FLAC where the original
+CD audio can always be reconstructed.
+
+It follows from the above that if you repeatedly encode a CD source to MP3, it
+will deteriorate in quality since more data is being removed each time.
+
+## Major audio formats
+
+### WAV (Waveform Audio File Format)
 
 - CD-quality encoding with no compression
 - Bit-for-bit identical to the CD source
 - Historically developed for Windows machines but can play on all operating
   systems
 
-## FLAC: Free Lossless Audio Codec
+### FLAC (Free Lossless Audio Codec)
 
 - Basically the same as WAV but in a (losslessly) compressed format
 - The difference between a novel in a text file (WAV) and as a zipped file
 
-## MP3: MPEG-1 Audio Layer MP3
+### MP3 (MPEG-1 Audio Layer MP3)
 
 - Lossy format.
 - When a WAV file (or other lossless format) is converted to MP3 a Fast Fourier
-  Transform analysis is performed to determine the frequency of certain sounds.
+  Transform analysis is performed to determine the frequency of certain sounds
 - This is used by the encoder to decide which parts of the sound are
   imperceptible and thus which can be discarded to reduce the file size. This is
   done through the application of psycho-acoustic models.
 - The remaining data is then compressed
 - Examples of the data reduction applied:
+
   - Removing frequencies that humans cannot hear
   - Removing quieter sounds that are masked by louder sounds
   - Combining similar frequencies
   - Reducing stero information where it is less noticable
-- A conversion to MP3 from, for example, a CD source is always a one-way process
-  and is not reversible. Once information is discarded in the compression
-  process it cannot be retrieved. This is obviously in contrast to lossless
-  methods like FLAC where the original CD audio can always be reconstructed.
-- It follows from the above that if you repeatedly encode a CD source to MP3, it
-  will deteriorate in quality since more data is being removed each time.
 
 ## OGG: Ogg Vorbis
 
