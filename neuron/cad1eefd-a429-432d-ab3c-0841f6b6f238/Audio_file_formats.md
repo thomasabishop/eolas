@@ -57,7 +57,7 @@ will deteriorate in quality since more data is being removed each time.
   - Combining similar frequencies
   - Reducing stero information where it is less noticable
 
-## OGG: Ogg Vorbis
+### OGG: Ogg Vorbis
 
 - An open-source alternative to MP3
 - Typically achieves better quality than MP3 at the same bit rate, especially at
