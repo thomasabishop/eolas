@@ -39,7 +39,7 @@ number of bits per sample (bit-depth), multiplied by the number of channels.
 Thus for stereo CDs this is:
 
 $$
-(44100 / 16 ) \middot 2 = 1411200
+(44100 / 16 ) \cdot 2 = 1411200
 $$
 
 Or 1.4 Mb/s
