@@ -11,7 +11,7 @@ To record sound, we convert the change in air pressure into an electrical signal
 by means of a microphone. Effectively, the same natural waveform is converted
 from one medium (the vibration of air molecules) into another medium (electrical
 charge in a field) whilst retaining the same morphology. See
-[Recording and processing sound]().
+[Recording and playback of sound](Recording_and_playback_of_sound.md).
 
 The resulting electrical signal is analogue: it has a continuous and variable
 frequency and amplitude and thus can have any value at any given moment.
@@ -31,7 +31,7 @@ used to record the measurement is the **bit-depth**. Each measurement is rounded
 to the nearest available digital value. CDs have a depth of 16 bits. Thus each
 measurement can be one of $16^2 = 65,536$ possible values.
 
-With sampling at a given bit-depth established, the **bitrate** can be derived.
+With sampling at a given bit-depth established, the **bit-rate** can be derived.
 
 This is the sampling rate (number of measurements per second) divided by the
 number of bits per sample (bit-depth), multiplied by the number of channels.
@@ -44,7 +44,7 @@ $$
 
 Or 1.4 Mb/s
 
-> Even with a high bitrate (as with CDs) the process still necessarily involves
+> Even with a high bit-rate (as with CDs) the process still necessarily involves
 > a loss of information when converting sound from analogue to digital. However,
 > given a high enough value for the sampling rate and bit-depth, the differences
 > are imperceptible to the human ear.

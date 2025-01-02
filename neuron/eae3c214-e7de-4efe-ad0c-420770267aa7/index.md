@@ -13,14 +13,16 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** cad1eefd-a429-432d-ab3c-0841f6b6f238
+**Build ID:** eae3c214-e7de-4efe-ad0c-420770267aa7
 
-**Published:** Wed 01 Jan 2025 16:46:38
+**Published:** Thu 02 Jan 2025 17:31:18
 
 ### Recent edits 
 
-- [[Audio_file_formats]] 
+- [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[Binary_encoding_of_sound]] 
+- [[Recording_and_playback_of_sound]] 
+- [[Audio_file_formats]] 
 - [[Type_hinting]] 
 - [[Working_with_JSON_in_Python]] 
 - [[SQLite]] 
@@ -29,11 +31,9 @@ computer science.
 - [[Dynamic_and_static_websites]] 
 - [[User_agent]] 
 - [[Architecture_of_the_World_Wide_Web]] 
-- [[Network_packet_analysis_tools]] 
-- [[What_can_the_ISP_see]] 
 
 
-### All notes (511) 
+### All notes (513) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -42,6 +42,7 @@ computer science.
 - [[4a3dc316_key_figures_ARPANET]] 
 - [[4da22434_from_ARPANET_to_Internet]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
+- [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[82f9c228_dissolution_of_ARPANET]] 
 - [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 
@@ -395,6 +396,7 @@ computer science.
 - [[Read_command__in_Bash]] 
 - [[Reading_files_in_Python]] 
 - [[Reciprocals]] 
+- [[Recording_and_playback_of_sound]] 
 - [[Recursion]] 
 - [[Redirect_to_dev_null]] 
 - [[Redirection_in_Bash]] 
