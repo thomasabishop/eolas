@@ -55,7 +55,7 @@ will deteriorate in quality since more data is being removed each time.
   - Removing frequencies that humans cannot hear
   - Removing quieter sounds that are masked by louder sounds
   - Combining similar frequencies
-  - Reducing stero information where it is less noticable
+  - Reducing stereo information where it is less noticeable
 
 ### OGG: Ogg Vorbis
 
@@ -93,14 +93,15 @@ With VBR, these are sometimes expressed as an average.
 Subjectively, A 128kbps MP3 might sound "underwater" or "swishy", while a
 320kbps version would preserve much more detail.
 
-Still, the bitrate of a CD is 1411kbps! A 128kbs MP3 is therefore only capturing
-about 9% of CD quality and a 320kbps MP3 is capturing about 23% of CD quality.
+Still, the bit-rate of a CD is 1411kbps! A 128kb/s MP3 is therefore only
+capturing about 9% of CD quality and a 320kbps MP3 is capturing about 23% of CD
+quality.
 
 ## Streaming services
 
-Spotify uses Ogg Vorbis throughout but uses different bit rates for its diferent
-tiers. The free tier has a range from 24-160kbs at VBR with the option of 320kbs
-on the premium tier.
+Spotify uses Ogg Vorbis throughout but uses different bit rates for its
+different tiers. The free tier has a range from 24-160kb/s at VBR with the
+option of 320kb/s on the premium tier.
 
 Other services offer FLAC or FLAC-equivalent quality at their most expensive
 tiers (Apple Music, Amazon Music, Tidal).

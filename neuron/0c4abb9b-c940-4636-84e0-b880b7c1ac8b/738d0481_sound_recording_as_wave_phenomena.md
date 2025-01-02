@@ -17,7 +17,7 @@ we captured their initial expression accurately.
 
 It's like two different people doing the same dance:
 
-In air: p
+In air:
 
 - The dancers are air molecules
 - They move back and forth in waves of compression and rarefaction
