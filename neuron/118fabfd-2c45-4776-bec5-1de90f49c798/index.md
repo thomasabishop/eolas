@@ -13,12 +13,13 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 0c4abb9b-c940-4636-84e0-b880b7c1ac8b
+**Build ID:** 118fabfd-2c45-4776-bec5-1de90f49c798
 
-**Published:** Thu 02 Jan 2025 18:02:33
+**Published:** Sat 04 Jan 2025 13:28:24
 
 ### Recent edits 
 
+- [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[Audio_file_formats]] 
 - [[Binary_encoding_of_sound]] 
@@ -30,10 +31,9 @@ computer science.
 - [[bbdcb54f_public_key_cryptography]] 
 - [[Dynamic_and_static_websites]] 
 - [[User_agent]] 
-- [[Architecture_of_the_World_Wide_Web]] 
 
 
-### All notes (513) 
+### All notes (514) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -321,6 +321,7 @@ computer science.
 - [[Modules_in_NodeJS]] 
 - [[MongoDB_Introduction]] 
 - [[MongoDB_connection]] 
+- [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[Monitoring_processes_and_resources]] 
 - [[Morgan]] 
 - [[Motherboard]] 
