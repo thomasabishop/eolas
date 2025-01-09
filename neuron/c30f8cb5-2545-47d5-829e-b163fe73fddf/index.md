@@ -13,12 +13,16 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 118fabfd-2c45-4776-bec5-1de90f49c798
+**Build ID:** c30f8cb5-2545-47d5-829e-b163fe73fddf
 
-**Published:** Sat 04 Jan 2025 13:28:24
+**Published:** Thu 09 Jan 2025 19:03:45
 
 ### Recent edits 
 
+- [[747589ad_effects_of_privacy_violation]] 
+- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
+- [[f6564af9_AOL_and_early_internet_enclosure]] 
+- [[Weaving_the_Web_Berners_Lee]] 
 - [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[Audio_file_formats]] 
@@ -27,13 +31,9 @@ computer science.
 - [[Type_hinting]] 
 - [[Working_with_JSON_in_Python]] 
 - [[SQLite]] 
-- [[a4601796_trapdoor_functions]] 
-- [[bbdcb54f_public_key_cryptography]] 
-- [[Dynamic_and_static_websites]] 
-- [[User_agent]] 
 
 
-### All notes (514) 
+### All notes (515) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -43,6 +43,7 @@ computer science.
 - [[4da22434_from_ARPANET_to_Internet]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
+- [[747589ad_effects_of_privacy_violation]] 
 - [[82f9c228_dissolution_of_ARPANET]] 
 - [[861cc26e_ARPA_origins]] 
 - [[API_Gateway]] 

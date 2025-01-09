@@ -1,5 +1,5 @@
 ---
-tags: [world-wide-web, computer-history, internet, ecosolpoc, bulletin-boards]
+tags: [world-wide-web, computer-history, internet, ecopolsoc, bulletin-boards]
 created: Monday, November 04, 2024
 ---
 
