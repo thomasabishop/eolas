@@ -13,27 +13,27 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** 4769804b-fe54-4891-992f-720e46f2fc37
+**Build ID:** cd5cdd66-905b-4f1f-b8e8-3a11ad507325
 
-**Published:** Fri 10 Jan 2025 17:09:45
+**Published:** Mon 13 Jan 2025 20:54:48
 
 ### Recent edits 
 
+- [[Ping]] 
+- [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
+- [[ICMP_Protocol]] 
 - [[IP_addresses]] 
 - [[View_IP_addresses]] 
 - [[747589ad_effects_of_privacy_violation]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[Weaving_the_Web_Berners_Lee]] 
-- [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[Audio_file_formats]] 
 - [[Binary_encoding_of_sound]] 
-- [[Recording_and_playback_of_sound]] 
-- [[Type_hinting]] 
 
 
-### All notes (515) 
+### All notes (517) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -248,6 +248,7 @@ computer science.
 - [[Headless_Raspi_network_setup]] 
 - [[Heap_memory]] 
 - [[Hexadecimal_number_system]] 
+- [[ICMP_Protocol]] 
 - [[IP_addresses]] 
 - [[Identify_merged_branches]] 
 - [[Importing_MongoDB_data]] 
@@ -362,6 +363,7 @@ computer science.
 - [[Passing_arguments_and_options_to_Bash_scripts]] 
 - [[Passing_arguments_to_Python_scripts]] 
 - [[Peer_to_peer_network]] 
+- [[Ping]] 
 - [[Ports_in_NodeJS]] 
 - [[Practical_walkthrough_Lambda_creation_within_AWS]] 
 - [[Prefixes_for_units_of_electrical_measurement]] 
