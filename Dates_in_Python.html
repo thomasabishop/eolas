@@ -352,7 +352,7 @@ print(&quot;Second:&quot;, some_datetime.second)</code></pre><h3 id="formatting-
 formatted = now.strftime(&#39;%Y-%m&#39;)
 print(formatted)
 # 2024-06</code></pre><p>Express the current date as YYYY-MM-DD H:M:S:</p><pre><code class="python language-python">formatted_datetime = some_datetime.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;)
-print(&quot;Formatted datetime:&quot;, formatted_datetime)</code></pre><p>Express a <a href="./Time_and_computers.md">unix timestamp</a> as DD-MM-YYYY:</p><pre><code class="py language-py">def convert_timestamp(timestamp):
+print(&quot;Formatted datetime:&quot;, formatted_datetime)</code></pre><p>Express a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Time and computers"><a href="Time_and_computers">unix timestamp</a></span></span> as DD-MM-YYYY:</p><pre><code class="py language-py">def convert_timestamp(timestamp):
     date_object = datetime.datetime.fromtimestamp(timestamp)
     formatted_date = date_object.strftime(&quot;%d-%m-%Y&quot;)
     return formatted_date
