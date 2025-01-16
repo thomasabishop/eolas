@@ -7,7 +7,7 @@ created: Tuesday, August 06, 2024
 
 > The Link Layer is the lowest level of the network stack that makes up the
 > Internet Protocol Suite. It is concerned with the physical and logical
-> connections between [hosts](./Network_hosts.md) on the same local network.
+> connections between [hosts](Network_hosts.md) on the same local network.
 
 The physical and logical connections are known as **Links**.
 

@@ -4,7 +4,7 @@ tags: [physics, electricity]
 
 # Resistance
 
-- Resistance is opposition to the flow of [current](./Current.md).
+- Resistance is opposition to the flow of [current](Current.md).
 
 - Different materials have different levels of resistance. For example glass and
   rubber are excellent resistors whereas silver and copper offer little

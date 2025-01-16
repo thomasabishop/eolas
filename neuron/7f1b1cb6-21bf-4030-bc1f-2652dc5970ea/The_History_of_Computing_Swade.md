@@ -563,7 +563,7 @@ that would go on to work at IBM.
 
 Donald Knuth dedicated _The Art of Computer Programming_ to the 650.
 
-It used [magnetic drum memory](./Magnetic_drum_memory.md) along with
+It used [magnetic drum memory](Magnetic_drum_memory.md) along with
 vacuum-tubes.
 
 ### IBM 1401 (1959)

@@ -8,8 +8,8 @@ SAM stands for **serverless application model**. It is a framework developed by
 AWS to simplify the process of building, deploying and managing serverless
 applications. It provides a concise syntax for defining the components of a
 serverless application, such as
-[Lambda functions](zk/Lambda_programming_model.md),
-[API gateway](/zk/AWS_API_Gateway.md) and database tables.
+[Lambda functions](Lambda_programming_model.md),
+[API gateway](AWS_API_Gateway.md) and database tables.
 
 The SAM infrastructure is defined in a YAML file which is then deployed to AWS.
 SAM syntax gets transformed into CloudFormation during the deployment process.
@@ -119,7 +119,7 @@ HelloWorldFunction:
           Method: get
 ```
 
-This details the location of the [handler function](/Lambda_handler_function.md)
+This details the location of the [handler function](Lambda_handler_function.md)
 which is contained at the path `hello-world/app.js`:
 
 ```js
@@ -239,7 +239,7 @@ receive one file as an input. The packaging process consists in creating that
 single file.
 
 The packaging proces will first archive all of the project artefacts into a zip
-file and then upload that to [S3](zk/AWS_S3.md). A reference to this S3 entity
+file and then upload that to [S3](AWS_S3.md). A reference to this S3 entity
 is then provided to CloudFormation.
 
 ![](static/s3-package-again.svg)
@@ -261,7 +261,7 @@ to add my own naming but it doesn't comply.)
 In order to work with your application locally without actually sending requests
 to AWS and using credit, you can run a local instance.
 
-See [Local AWS Development with SAM](zk/Local_AWS_development_with_SAM.md).
+See [Local AWS Development with SAM](Local_AWS_development_with_SAM.md).
 
 ### Deploy
 

@@ -11,6 +11,8 @@ tags: [python, data-types]
 - The alternative is the native `pip` but you have to create virtual
   environments (`venv`) to manage packages at different versions.
 
+## venv
+
 To make use of virtual environments in `pip` you have to create the virtual
 environment before installing anything:
 
@@ -35,6 +37,20 @@ Now you can install packages:
 
 ```
 pip [library_name]
+```
+
+### Using venv after a system upgrade
+
+If you update your system's version of Python, this can cause `venv` to stop
+working. Resolve as follows:
+
+```
+deactivate  # leave venv env if in it
+rm -rf venv  # remove venv
+python -m venv venv # reinstall venv
+source venv/bin/activate
+python -m ensurepip --upgrade # explicitly install pip
+pip install - e.
 ```
 
 ## requirements.txt

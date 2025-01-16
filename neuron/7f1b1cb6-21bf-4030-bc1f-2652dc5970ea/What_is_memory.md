@@ -14,7 +14,7 @@ the program's **instructions** and **related data**. This is the role of memory.
 The data that comprises a program is a series of bits. The basic unit of memory
 storage is a **memory cell**: a circuit that can store a single bit.
 
-[RAM](./DRAM_and_SRAM_memory.md) memory is _volatile_ : the memory is only
+[RAM](DRAM_and_SRAM_memory.md) memory is _volatile_ : the memory is only
 retained whilst the computer has a power supply and is wiped when the computer
 is rebooted. This contrasts with the memory of the harddisk which is
 non-volatile and is retained after a reboot.

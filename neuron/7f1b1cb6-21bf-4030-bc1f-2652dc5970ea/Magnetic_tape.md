@@ -6,7 +6,7 @@ created: Monday, September 23, 2024
 # Magnetic tape
 
 Used for data storage in early digital computers (broadly from the
-[UNIVAC](./The_History_of_Computing_Swade.md)) era until the mini-computer era.
+[UNIVAC](The_History_of_Computing_Swade.md)) era until the mini-computer era.
 
 While the UNIVAC was not the first to use magnetic tape, it popularised the
 method due to its success and high profile.

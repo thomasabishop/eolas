@@ -18,7 +18,7 @@ The Internet Layer utilises the **Internet Protocol** to determine how devices
 will be publicly identified to devices on other networks and how different
 devices on the same local network will be distinguished from outside of this
 network. This is achieved through
-[Internet Protocol (IP) addresses](./IP_addresses.md).
+[Internet Protocol (IP) addresses](IP_addresses.md).
 
 ## Packets
 

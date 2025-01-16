@@ -8,9 +8,9 @@ tags:
 
 # The kernel
 
-Within the [hierarchy of the OS](./Basic_model_of_the_operating_system.md), the
+Within the [hierarchy of the OS](Basic_model_of_the_operating_system.md), the
 kernel acts as the primary mediator between the hardware (CPU, memory) and
-[user](./User_Space.md) [processes](Processes.md). Let's look at each of its
+[user](User_Space.md) [processes](Processes.md). Let's look at each of its
 responsibilities in greater depth:
 
 - process management

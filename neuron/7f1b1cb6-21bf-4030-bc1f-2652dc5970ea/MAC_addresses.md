@@ -8,7 +8,7 @@ created: Tuesday, August 06, 2024
 A Media Access Control (MAC) address is a physical address in contrast to, say,
 an IP address which is logical.
 
-Each device on a [local network](./Link_Layer_of_Internet_Protocol.md) has a MAC
+Each device on a [local network](Link_Layer_of_Internet_Protocol.md) has a MAC
 as a unique identifier. It is a hardware-based, physical attribute of the
 device, typically permanently encoded onto a non-volatile memory chip attached
 to the ![network_card](static/Network_card.md).

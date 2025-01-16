@@ -5,7 +5,7 @@ created: Friday, July 12, 2024
 
 # DRAM and SRAM memory
 
-There are two types of RAM memory: [SRAM and DRAM](./DRAM_and_SRAM_memory.md).
+There are two types of RAM memory: [SRAM and DRAM](DRAM_and_SRAM_memory.md).
 
 ### DRAM
 

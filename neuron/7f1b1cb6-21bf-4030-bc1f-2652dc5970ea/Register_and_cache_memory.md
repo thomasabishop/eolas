@@ -36,4 +36,4 @@ principle that what has been previously used by the CPU will be requested again
 soon. If the CPU has just asked for an instruction at memory location 555 it's
 very likely that it will next ask for the one at 556, and after that the one at
 557 and so on. The cache's controller circuits therefore go ahead and fetch
-these from slow [DRAM to fast SRAM](./DRAM_and_SRAM_memory.md).
+these from slow [DRAM to fast SRAM](DRAM_and_SRAM_memory.md).

@@ -13,12 +13,13 @@ computer science.
 
 ![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
  
-**Build ID:** cd5cdd66-905b-4f1f-b8e8-3a11ad507325
+**Build ID:** 7f1b1cb6-21bf-4030-bc1f-2652dc5970ea
 
-**Published:** Mon 13 Jan 2025 20:54:48
+**Published:** Thu 16 Jan 2025 07:08:08
 
 ### Recent edits 
 
+- [[Python_package_management]] 
 - [[Ping]] 
 - [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[ICMP_Protocol]] 
@@ -30,7 +31,6 @@ computer science.
 - [[Weaving_the_Web_Berners_Lee]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[Audio_file_formats]] 
-- [[Binary_encoding_of_sound]] 
 
 
 ### All notes (517) 

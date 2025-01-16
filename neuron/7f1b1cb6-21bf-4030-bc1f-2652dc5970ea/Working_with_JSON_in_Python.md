@@ -12,7 +12,7 @@ Equivalent to `JSON.parse()` in JavaScript.
 
 Will error if the input string is not properly formatted JSON. This will be
 `json.JSONDecodeError`, a subclass of the `ValueError`
-[exception](./Error_handling_in_Python.md)
+[exception](Error_handling_in_Python.md)
 
 ## `json.dumps()`
 

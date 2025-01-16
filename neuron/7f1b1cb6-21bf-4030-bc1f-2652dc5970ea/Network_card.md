@@ -10,12 +10,12 @@ _network adapter_ is the hardware device that allows a computer to connect to a
 network.
 
 They are the physical interface between the computer and the network
-[link](./Link_Layer_of_Internet_Protocol.md), e.g. WiFi or ethernet.
+[link](Link_Layer_of_Internet_Protocol.md), e.g. WiFi or ethernet.
 
-They can be internal and built into the [motherboard](./Motherboard.md) or
+They can be internal and built into the [motherboard](Motherboard.md) or
 external as in the case of USB adaptors.
 
-Each network card has a unique [MAC address](./MAC_addresses.md) to identify the
+Each network card has a unique [MAC address](MAC_addresses.md) to identify the
 device on the network.
 
 Network cards on consumer-grade devices typically utilise the devices resources

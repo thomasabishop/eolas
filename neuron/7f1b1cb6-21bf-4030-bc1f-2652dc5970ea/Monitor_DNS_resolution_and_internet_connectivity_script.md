@@ -17,7 +17,7 @@ created: Monday, January 13, 2025
 done
 ```
 
-See [ping](./Ping.md) for more details on what this is doing.
+See [ping](Ping.md) for more details on what this is doing.
 
 The `host` command contacts a DNS server and does a reverse lookup for the
 IP-address of the human-readable domain name.

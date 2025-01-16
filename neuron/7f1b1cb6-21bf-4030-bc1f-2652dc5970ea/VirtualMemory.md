@@ -11,10 +11,10 @@ Virtual memory is an abstracted and idealised representation of the physical
 memory capacity of a machine that is presented to user space for its memory
 operations.
 
-When an OS implements virtual memory, [processes](./Processes.md) in
-[user space](./User_Space.md) cannot directly read or write to the physical
+When an OS implements virtual memory, [processes](Processes.md) in
+[user space](User_Space.md) cannot directly read or write to the physical
 memory. Instead they execute memory operations against virtual memory and the
-[kernel](./The_kernel.md) translates these into the actual operations against
+[kernel](The_kernel.md) translates these into the actual operations against
 the memory hardware.
 
 The main benefits:
@@ -25,9 +25,9 @@ The main benefits:
   that memory cannot be accidentally corrupted by other processes in user space.
 
 Because the physical memory is abstracted, it can be the case that the physical
-[memory addresses](./Memory_addresses.md) are non-contiguous or even distributed
+[memory addresses](Memory_addresses.md) are non-contiguous or even distributed
 accross different hardware components (such as the
-[cache](./Register_and_cache_memory.md) and [swap](./Swap_space.md)). Despite
+[cache](Register_and_cache_memory.md) and [swap](Swap_space.md)). Despite
 this, the memory addresses will appear contiguous in virtual memory. Each user
 space process is presented with the same range of available memory addresses and
 the same total capacity.

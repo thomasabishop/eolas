@@ -21,5 +21,5 @@ print("%d", age)
 
 ```
 
-The `%d` is an example of a [format specifier](./zk/format-specifiers-in-c.md).
+The `%d` is an example of a [format specifier](format-specifiers-in-c.md).
 It is the decimal integer format specifier.

@@ -91,7 +91,7 @@ formatted_datetime = some_datetime.strftime('%Y-%m-%d %H:%M:%S')
 print("Formatted datetime:", formatted_datetime)
 ```
 
-Express a [unix timestamp](./Time_and_computers.md) as DD-MM-YYYY:
+Express a [unix timestamp](Time_and_computers.md) as DD-MM-YYYY:
 
 ```py
 def convert_timestamp(timestamp):

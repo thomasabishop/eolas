@@ -5,7 +5,7 @@ created: Friday, December 20, 2024
 
 # a4601796_trapdoor_functions
 
-How does [public key cryptography](./bbdcb54f_public_key_cryptography.md)
+How does [public key cryptography](bbdcb54f_public_key_cryptography.md)
 achieve the feat of making the encyrpted data only decipherable in one
 direction. In other words how come the same data can be encrypted with one key
 but only decryptable by another?

@@ -8,7 +8,7 @@ created: Saturday, November 16, 2024
 ## Authentication
 
 Terraform will default to the currently active AWS user providing you have your
-[AWS credentials](/zk/AWS_CLI.md) set-up.
+[AWS credentials](AWS_CLI.md) set-up.
 
 ## Creating resources
 

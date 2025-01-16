@@ -6,7 +6,7 @@ created: Monday, January 13, 2025
 # Ping
 
 `ping` is perhaps the most basic network debugging tool. It sends
-[ICMP](./ICMP_Protocol.md) echo request packets to a recipient host.
+[ICMP](ICMP_Protocol.md) echo request packets to a recipient host.
 
 If the recipient receives the packet and is configured to reply, it sends an
 ICMP echo response packet in return.
