@@ -27,5 +27,19 @@ external packages and local imports.
 It outpute to `/dist`. Say the app is called `hello`, run the executable thus:
 
 ```sh
-/my-python-application/dist/app
+/my-python-application/dist/my-app
 ```
+
+To run this as the package name (e.g. `my-app --option`):
+
+```
+sudo mv /my-python-application/dist/app /usr/local/bin
+```
+
+When overwriting/ publishing a new version:
+
+```
+sudo rm -rf /usr/local/bin/my-app
+```
+
+and repeat above.

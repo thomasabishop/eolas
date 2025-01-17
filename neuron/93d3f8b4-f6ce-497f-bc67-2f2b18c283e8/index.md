@@ -11,14 +11,17 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
-![not-by-ai-badge](static/not-by-ai-alternative--light.svg)
+**[View tags](./tags.html)**
  
-**Build ID:** 7f1b1cb6-21bf-4030-bc1f-2652dc5970ea
+**Build ID:** 93d3f8b4-f6ce-497f-bc67-2f2b18c283e8
 
-**Published:** Thu 16 Jan 2025 07:08:08
+**Published:** Fri 17 Jan 2025 17:51:56
 
 ### Recent edits 
 
+- [[Compile_Python_app_to_single_executable]] 
+- [[Sorting_lists_in_Python]] 
+- [[Algebra_key_terms]] 
 - [[Python_package_management]] 
 - [[Ping]] 
 - [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
@@ -28,12 +31,9 @@ computer science.
 - [[747589ad_effects_of_privacy_violation]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
-- [[Weaving_the_Web_Berners_Lee]] 
-- [[738d0481_sound_recording_as_wave_phenomena]] 
-- [[Audio_file_formats]] 
 
 
-### All notes (517) 
+### All notes (518) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -550,4 +550,5 @@ computer science.
 - [[python_advent_learnings]] 
 - [[systemd]] 
 - [[systemd_status]] 
+- [[tags]] 
 - [[v8]] 

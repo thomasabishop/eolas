@@ -23,6 +23,8 @@ sorted_list_desc = sorted(my_list, reverse=True)
 print(sorted_list_desc)  # Output: [9, 6, 5, 5, 4, 3, 2, 1, 1]
 ```
 
+> This method is best used for sorting a list of string values
+
 ### Using `.sort()` Method:
 
 The `.sort()` method sorts the elements of a list in-place and returns `None`.
@@ -39,6 +41,12 @@ For sorting in descending order:
 ```python
 my_list.sort(reverse=True)
 print(my_list)  # Output: [9, 6, 5, 5, 4, 3, 2, 1, 1]
+```
+
+### Combine sorting with comprehension
+
+```python
+tags = sorted([tag[0] for tag in tags])
 ```
 
 ### Using a Custom Key Function:
