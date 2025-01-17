@@ -7,7 +7,7 @@ created: Friday, July 12, 2024
 
 The CPU has its own memory devices in the form of registers and cache memory.
 
-[Registers](./CPU_architecture.md#Registers) are a form of memory that are
+[Registers](CPU_architecture.md#Registers) are a form of memory that are
 positioned on the same chip as the CPU. They are very fast but can only store a
 small amount of data. They are used to store the results of calculations and the
 addresses of the next instructions to be processed.

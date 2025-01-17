@@ -35,7 +35,7 @@ fi
 # pointless comment
 
 #neuron-zk-generator
-/home/thomas/repos/neuron-zk-generator/dist/app
+/home/thomas/repos/neuron-zk-generator/dist/neuron-zk-generator
 
 echo "Changes exist. Updating remote..."
 git pull >/dev/null 2>&1

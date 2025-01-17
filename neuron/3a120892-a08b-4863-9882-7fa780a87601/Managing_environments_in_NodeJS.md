@@ -42,7 +42,7 @@ In Express, there is a built in method for retrieving the current envrionment:
 
 ## Configuring environments
 
-We use the third-party [Config](node-config)
+We use the third-party [Config](static/node-config)
 package to manage different configurations based on the environment.
 
 Once installed we set up a dedicated config directory with a structure as

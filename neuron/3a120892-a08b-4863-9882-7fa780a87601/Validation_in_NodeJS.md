@@ -14,7 +14,7 @@ validate the data that we receive from any HTTP requests where the client sends
 a body to the endpoint.
 
 One of the most popular schema validators for NodeJS is
-[joi](joi).
+[joi](static/joi).
 
 ## Demonstration
 

@@ -19,7 +19,7 @@ a container in which a program runs. This container includes:
 - other information about the state of the process
 
 Other than the `init` process started by the kernel (PID1) (see
-![systemd](static/systemd.md)), every process has a parent process that started it.
+![systemd](systemd.md)), every process has a parent process that started it.
 This parent-child relationship creates a tree of processes.
 
 It is possible that a parent process will terminate before one of its child
@@ -49,8 +49,8 @@ _processID_ or just _PID_.
 
 ## Related notes
 
-![systemd](static/systemd.md)
+![systemd](systemd.md)
 
-![ps](static/ps.md)
+![ps](ps.md)
 
-![Monitoring processes and resources](static/Monitoring_processes_and_resources.md)
+![Monitoring processes and resources](Monitoring_processes_and_resources.md)

@@ -65,5 +65,5 @@ nameserver fded:2060:8671:0:681:9bff:fe9b:37f0
 
 ## Related notes
 
-![Network scanning](static/Network_scanning.md)
-![Network debugging](static/Network_debugging.md)
+![Network scanning](Network_scanning.md)
+![Network debugging](Network_debugging.md)

@@ -41,4 +41,4 @@ if __name__ == "__main__":
 
 ## Related notes
 
-![Python modules and imports](static/Python_modules_and_imports.md)
+![Python modules and imports](Python_modules_and_imports.md)

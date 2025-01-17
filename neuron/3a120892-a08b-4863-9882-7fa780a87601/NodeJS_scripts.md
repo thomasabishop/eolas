@@ -26,7 +26,7 @@ if (require.main === module) {
 
 Basically we have a function that contains the main actions of the script. This
 is then invoked within `main` in the manner of a Bash or
-![Python script](static/Single_file_Python_scripts.md)
+![Python script](Single_file_Python_scripts.md)
 
 This obviously requires the Node binary to be in your path and the script must
 be run with executable privileges.

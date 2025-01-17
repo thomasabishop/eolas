@@ -125,4 +125,4 @@ This asserts that B is not a superset of A.
 
 ## Resources
 
-[Set symbols](symbols.html)
+[Set symbols](static/symbols.html)

@@ -6,7 +6,7 @@ created: Wednesday, June 26, 2024
 
 # Threads
 
-A ![process](static/Processes.md) is a running instance of a given program. A program
+A ![process](Processes.md) is a running instance of a given program. A program
 runs sequentially handling one task at a time, however we may need to run
 certain tasks in parallel.
 
@@ -39,4 +39,4 @@ by the process that the thread belongs to.
 
 ## Related notes
 
-![Processes](static/Processes.md)
+![Processes](Processes.md)

@@ -149,4 +149,4 @@ sudo e2label /dev/sda1 my_human_name
 
 ## Related notes
 
-![Linux disk partitions](static/Linux_disk_partitions.md)
+![Linux disk partitions](Linux_disk_partitions.md)

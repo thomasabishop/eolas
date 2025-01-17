@@ -62,7 +62,7 @@ is:
 If you are working solo and not with group access to files, you can disregard
 assigning the other numerals, by putting zeros in as placeholders.
 
-[Permission codes](685254916b2642f189e6316b876e09c9)
+[Permission codes](static/685254916b2642f189e6316b876e09c9)
 
 ### Example
 

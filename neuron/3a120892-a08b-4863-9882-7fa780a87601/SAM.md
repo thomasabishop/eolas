@@ -38,12 +38,12 @@ the command-line.
 ### AWS SAM CLI
 
 See
-[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
+[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html](static/install-sam-cli.html)
 
 ## Setting up credentials for the AWS CLI
 
 You require an access key for the given
-[IAM user](zk/AWS_User_management_and_roles.md#iam). You should create an IAM
+[IAM user](AWS_User_management_and_roles.md#iam). You should create an IAM
 account specific to the project with bounded permissions.
 
 ```
@@ -55,7 +55,7 @@ Default output format [None]:
 ```
 
 This information can be found in the Security Credentials section of the given
-[IAM](zk/AWS_User_management_and_roles.md#iam) user:
+[IAM](AWS_User_management_and_roles.md#iam) user:
 
 ![](static/access-key-aws.png)
 

@@ -26,7 +26,7 @@ instructions to make calculations.
 
 ### Early computing (_Crash Course Computer Science)_
 
-[Early Computing: Crash Course Computer Science #1](watch?v=O5nskjZ_GoI)
+[Early Computing: Crash Course Computer Science #1](static/watch?v=O5nskjZ_GoI)
 
 - The abacus was created because the scale of society had become greater than
   what a single person could create and manipulate in their mind.

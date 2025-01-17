@@ -154,7 +154,7 @@ export default FormHookAbstracted;
 
 Note that instead of individual variables `email` , `phone`, `age` , this
 approach returns a single object `formValues` . We could therefore access the
-individual values with e.g `[formValues.email](formvalues.email)` .
+individual values with e.g `[formValues.email](static/formvalues.email)` .
 
 As it is an object, it makes resetting to the original state very easy, viz:
 

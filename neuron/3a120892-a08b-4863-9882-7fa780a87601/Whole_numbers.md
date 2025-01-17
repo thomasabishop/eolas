@@ -28,9 +28,9 @@ $$ a + b = b + a $$
 ### Multiplication
 
 When **multiplying** whole numbers the placement of the
-[multiplicands](Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd)
+[multiplicands](static/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd)
 does not affect the
-[product](Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd).
+[product](static/Symbols-and-formal-conventions-80aeaf1872f94a0d97a2e8d07e3855bd).
 
 Let **a, b** represent whole numbers, then:
 

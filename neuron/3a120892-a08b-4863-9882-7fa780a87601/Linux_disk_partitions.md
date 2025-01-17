@@ -174,4 +174,4 @@ In our example above:
 
 ## Related notes
 
-![Creating a Linux partition table](static/Creating_a_Linux_partition_table.md)
+![Creating a Linux partition table](Creating_a_Linux_partition_table.md)

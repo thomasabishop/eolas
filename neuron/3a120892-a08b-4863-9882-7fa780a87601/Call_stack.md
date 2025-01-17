@@ -34,4 +34,4 @@ console.log("Bye");
 
 ## Related notes
 
-![Stack memory](static/Stack_memory.md)
+![Stack memory](Stack_memory.md)
