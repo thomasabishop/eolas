@@ -11,11 +11,11 @@ is a [Zettelkasten](static/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
-**[View tags](static/tags.html)**
+<a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 4cb21421-93ca-410e-845e-22eb2c92aa5a
+**Build ID:** 9c5035d3-e1c9-40cd-a4b3-9d550f2b7fb6
 
-**Published:** Fri 17 Jan 2025 18:00:03
+**Published:** Fri 17 Jan 2025 18:06:54
 
 ### Recent edits 
 

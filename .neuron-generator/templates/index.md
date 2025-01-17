@@ -11,4 +11,4 @@ is a [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
-**[View tags](https://thomasabishop.github.io/eolas/tags.html)**
+<a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
