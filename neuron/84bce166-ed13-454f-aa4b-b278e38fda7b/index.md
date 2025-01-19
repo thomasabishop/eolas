@@ -5,17 +5,17 @@ unlisted: true
 
 # Eòlas
 
-Hi, I'm [Thomas](https://systemsobscure.blog/). This is the frontend of
-[Eòlas](static/eolas), my personal knowledge base. It
-is a [Zettelkasten](static/Zettelkasten) work in progress
+Hi, I'm [Thomas](https://systemsobscure.blog/). This is the frontend of Eòlas,
+my personal knowledge base. It is a
+[Zettelkasten](static/Zettelkasten) work in progress
 comprising notes from my self-directed study of software engineering and
 computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 9c5035d3-e1c9-40cd-a4b3-9d550f2b7fb6
+**Build ID:** 84bce166-ed13-454f-aa4b-b278e38fda7b
 
-**Published:** Fri 17 Jan 2025 18:06:54
+**Published:** Sun 19 Jan 2025 18:00:55
 
 ### Recent edits 
 
