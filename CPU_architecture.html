@@ -1,14 +1,49 @@
-<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>CPU architecture - Zettelkasten</title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="static/favicon.ico" rel="icon" /><meta content="At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the system bus from the memory. The kernel, also residing in memory, sequences and schedules the sending of data to th" name="description" /><meta content="CPU architecture" property="og:title" /><meta content="Zettelkasten" property="og:site_name" /><meta content="article" property="og:type" /><meta content="CPU_architecture" property="neuron:zettel-id" /><meta content="CPU_architecture" property="neuron:zettel-slug" /><meta content="CPU" property="neuron:zettel-tag" /><meta content="computer-architecture" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!DOCTYPE html><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><meta content="width=device-width, initial-scale=1" name="viewport" /><!--replace-start-0--><!--replace-start-5--><!--replace-start-8--><title>CPU architecture - </title><!--replace-end-8--><!--replace-end-5--><!--replace-end-0--><link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Merriweather|Libre+Franklin|Roboto+Mono&amp;display=swap" rel="stylesheet" /><!--replace-start-1--><!--replace-start-4--><!--replace-start-7--><link href="static/favicon.ico" rel="icon" /><meta content="At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the system bus from the memory. The kernel, also residing in memory, sequences and schedules the sending of data to th" name="description" /><meta content="CPU architecture" property="og:title" /><meta content="" property="og:site_name" /><meta content="article" property="og:type" /><meta content="CPU_architecture" property="neuron:zettel-id" /><meta content="CPU_architecture" property="neuron:zettel-slug" /><meta content="CPU" property="neuron:zettel-tag" /><meta content="computer-architecture" property="neuron:zettel-tag" /><script type="application/ld+json">[]</script><style type="text/css">body{background-color:#eeeeee !important;font-family:"Libre Franklin", serif !important}body .ui.container{font-family:"Libre Franklin", serif !important}body h1, h2, h3, h4, h5, h6, .ui.header, .headerFont{font-family:"Merriweather", sans-serif !important}body code, pre, tt, .monoFont{font-family:"Roboto Mono","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New", monospace !important}body div.z-index p.info{color:#808080}body div.z-index ul{list-style-type:square;padding-left:1.5em}body div.z-index .uplinks{margin-left:0.29999em}body .zettel-content h1#title-h1{background-color:rgba(33,133,208,0.1)}body nav.bottomPane{background-color:rgba(33,133,208,2.0e-2)}body div#footnotes{border-top-color:#2185d0}body p{line-height:150%}body img{max-width:100%}body .deemphasized{font-size:0.94999em}body .deemphasized:hover{opacity:1}body .deemphasized:not(:hover){opacity:0.69999}body .deemphasized:not(:hover) a{color:#808080 !important}body div.container.universe{padding-top:1em}body div.zettel-view ul{padding-left:1.5em;list-style-type:square}body div.zettel-view .pandoc .highlight{background-color:#ffff00}body div.zettel-view .pandoc .ui.disabled.fitted.checkbox{margin-right:0.29999em;vertical-align:middle}body div.zettel-view .zettel-content .metadata{margin-top:1em}body div.zettel-view .zettel-content .metadata div.date{text-align:center;color:#808080}body div.zettel-view .zettel-content h1{padding-top:0.2em;padding-bottom:0.2em;text-align:center}body div.zettel-view .zettel-content h2{border-bottom:solid 1px #4682b4;margin-bottom:0.5em}body div.zettel-view .zettel-content h3{margin:0px 0px 0.4em 0px}body div.zettel-view .zettel-content h4{opacity:0.8}body div.zettel-view .zettel-content div#footnotes{margin-top:4em;border-top-style:groove;border-top-width:2px;font-size:0.9em}body div.zettel-view .zettel-content div#footnotes ol > li > p:only-of-type{display:inline;margin-right:0.5em}body div.zettel-view .zettel-content aside.footnote-inline{width:30%;padding-left:15px;margin-left:15px;float:right;background-color:#d3d3d3}body div.zettel-view .zettel-content .overflows{overflow:auto}body div.zettel-view .zettel-content code{margin:auto auto auto auto;font-size:100%}body div.zettel-view .zettel-content p code, li code, ol code{padding:0.2em 0.2em 0.2em 0.2em;background-color:#f5f2f0}body div.zettel-view .zettel-content pre{overflow:auto}body div.zettel-view .zettel-content dl dt{font-weight:bold}body div.zettel-view .zettel-content blockquote{background-color:#f9f9f9;border-left:solid 10px #cccccc;margin:1.5em 0px 1.5em 0px;padding:0.5em 10px 0.5em 10px}body div.zettel-view .zettel-content.raw{background-color:#dddddd}body .ui.label.zettel-tag{color:#000000}body .ui.label.zettel-tag a{color:#000000}body nav.bottomPane ul.backlinks > li{padding-bottom:0.4em;list-style-type:disc}body nav.bottomPane ul.context-list > li{list-style-type:lower-roman}body .footer-version img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%)}body .footer-version img:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}body .footer-version, .footer-version a, .footer-version a:visited{color:#808080}body .footer-version a{font-weight:bold}body .footer-version{margin-top:1em !important;font-size:0.69999em}@media only screen and (max-width: 768px){body div#zettel-container{margin-left:0.4em !important;margin-right:0.4em !important}}body span.zettel-link-container span.zettel-link a{color:#2185d0;font-weight:bold;text-decoration:none}body span.zettel-link-container span.zettel-link a:hover{background-color:rgba(33,133,208,0.1)}body span.zettel-link-container span.extra{color:auto}body span.zettel-link-container.errors{border:solid 1px #ff0000}body span.zettel-link-container.errors span.zettel-link a:hover{text-decoration:none !important;cursor:not-allowed}body [data-tooltip]:after{font-size:0.69999em}body div.tag-tree div.node{font-weight:bold}body div.tag-tree div.node a.inactive{color:#555555}body .tree.flipped{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}body .tree{overflow:auto}body .tree ul.root{padding-top:0px;margin-top:0px}body .tree ul{position:relative;padding:1em 0px 0px 0px;white-space:nowrap;margin:0px auto 0px auto;text-align:center}body .tree ul::after{content:"";display:table;clear:both}body .tree ul:last-child{padding-bottom:0.1em}body .tree li{display:inline-block;vertical-align:top;text-align:center;list-style-type:none;position:relative;padding:1em 0.5em 0em 0.5em}body .tree li::before{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{content:"";position:absolute;top:0px;right:50%;border-top:solid 2px #cccccc;width:50%;height:1.19999em}body .tree li::after{right:auto;left:50%;border-left:solid 2px #cccccc}body .tree li:only-child{padding-top:0em}body .tree li:only-child::after{display:none}body .tree li:only-child::before{display:none}body .tree li:first-child::before{border-style:none;border-width:0px}body .tree li:first-child::after{border-radius:5px 0px 0px 0px}body .tree li:last-child::after{border-style:none;border-width:0px}body .tree li:last-child::before{border-right:solid 2px #cccccc;border-radius:0px 5px 0px 0px}body .tree ul ul::before{content:"";position:absolute;top:0px;left:50%;border-left:solid 2px #cccccc;width:0px;height:1.19999em}body .tree li div.forest-link{border:solid 2px #cccccc;padding:0.2em 0.29999em 0.2em 0.29999em;text-decoration:none;display:inline-block;border-radius:5px 5px 5px 5px;color:#333333;position:relative;top:2px}body .tree.flipped li div.forest-link{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}</style><script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
 	href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 	rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+	rel="stylesheet" />
 <link href="https://hachyderm.io/@systemsobscure" rel="me" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
 <style>
+	:root {
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		--black: #282828;
+		--blacker: #1d2021;
+		--blackest: #141617;
+
+		--greyLightest: #a89984;
+		--greyLighter: #928374;
+		--greyLight: #665c54;
+		--grey: #504945;
+		--greyDark: #3c3836;
+		--greyDarkest: #32302f;
+
+		--white: #ddc7a1;
+		--whiter: #ebdbb2;
+
+		--blue: #7daea3;
+		--green: #a9b665;
+		--aqua: #8dc07c;
+		--yellow: #d8a657;
+		--orange: #e78a4e;
+		--red: #ea6962;
+		--purple: #d3869b;
+
+		--blueOriginal: #458588;
+		--greenOriginal: #98971a;
+		--orangeOriginal: #d65d0e;
+	}
+
 	body .ui.container,
 	body ul {
 		font-family: "IBM Plex Sans" !important;
@@ -21,8 +56,8 @@
 
 	body blockquote {
 		border-left-width: 3px !important;
-		border-left-color: #458588 !important;
-		background-color: #f2e5bc !important;
+		border-left-color: var(--orange) !important;
+		background-color: var(--blacker) !important;
 	}
 
 	.headerFont,
@@ -44,7 +79,7 @@
 	body code,
 	pre,
 	tt {
-		font-family: "IBM Plex Mono" !important;
+		font-family: "Jetbrains Mono" !important;
 		font-size: 12px !important;
 		/* line-height: 1.3 !important; */
 	}
@@ -54,7 +89,7 @@
 	}
 
 	#neuron-nav-bar {
-		background-color: #458588;
+		background-color: var(--orange);
 	}
 
 	#neuron-nav-bar a.right {
@@ -66,27 +101,27 @@
 	}
 
 	body {
-		background-color: #ebdbb2 !important;
-		color: #282828;
+		background-color: var(--blacker) !important;
+		color: var(--white);
 	}
 
 	.zettel-view article.zettel-content {
-		background-color: #f9f5d7 !important;
+		background-color: var(--black) !important;
 	}
 
 	a,
 	body span.zettel-link-container span.zettel-link a,
 	body .deemphasized:not(:hover) a {
-		color: #458588 !important;
+		color: var(--aqua) !important;
 	}
 
 	.deemphasized:not(:hover) a {
-		color: #458588 !important;
+		color: var(--aqua) !important;
 	}
 
 	body .zettel-content h1#title-h1 {
-		background-color: #458588;
-		color: #f9f5d7;
+		background-color: var(--orange);
+		color: var(--black);
 		word-wrap: break-word;
 	}
 
@@ -101,23 +136,23 @@
 
 	#neuron-backlinks-pane,
 	#neuron-tags-pane {
-		background-color: #3c3836;
+		background-color: var(--greyDark);
 		border: none;
 	}
 
 	#neuron-backlinks-pane h3.ui.header,
 	#neuron-backlinks-pane p,
 	#neuron-backlinks-pane>ul>li>ul>li>div {
-		color: #ebdbb2 !important;
+		color: var(--white) !important;
 	}
 
 	#neuron-backlinks-pane ul li::marker {
-		color: #ebdbb2 !important;
+		color: var(--white) !important;
 	}
 
 	#neuron-backlinks-pane>ul>li>ul>li>div>p>a,
 	#neuron-backlinks-pane ul li span.zettel-link a {
-		color: #83a598 !important;
+		color: var(--aqua) !important;
 	}
 
 	body .deemphasized:not(:hover),
@@ -130,10 +165,10 @@
 	}
 
 	.ui.basic.label.zettel-tag {
-		background-color: #458588;
+		background-color: var(--orange);
 		border-radius: 0;
 		border: none;
-		color: #f9f5c7;
+		color: var(--black);
 	}
 
 	body div.zettel-view .zettel-content p code,
@@ -150,50 +185,40 @@
 	}
 
 	.ui table {
-		background-color: #f9f5d7 !important;
+		background-color: var(--blacker) !important;
 		border-radius: 0 !important;
-		border-color: #3c3836 !important;
+		border-color: var(--greyDark) !important;
+		color: var(--white) !important;
 	}
 
 	.ui.table>thead>tr>th {
-		background-color: #3c3836 !important;
+		background-color: var(--greyDark) !important;
 		border-radius: 0 !important;
-		color: #f9f5d7 !important;
+		color: var(--white) !important;
 	}
 
 	body span.zettel-link-container.errors {
-		border-color: #cc241d;
+		border-color: var(--red);
 	}
 
 	body span.zettel-link-container.errors span.zettel-link a {
-		color: #cc241d !important;
+		color: var(--red) !important;
 	}
 
 	body span.zettel-link-container.errors span.zettel-link a:hover {
 		background-color: #fb483460 !important;
 	}
 
-	/**
- * Gruvbox light theme
- *
- * Based on Gruvbox: https://github.com/morhetz/gruvbox
- * Adapted from PrismJS gruvbox-dark theme: https://github.com/schnerring/prism-themes/blob/master/themes/prism-gruvbox-dark.css
- *
- * @author Michael Schnerring (https://schnerring.net)
- * @version 1.0
- */
-
 	code[class*="language-"],
 	pre[class*="language-"] {
-		color: #3c3836;
+		color: #ebdbb2;
 		/* fg1 / fg */
-		font-family: Consolas, Monaco, "Andale Mono", monospace;
 		direction: ltr;
 		text-align: left;
 		white-space: pre;
 		word-spacing: normal;
 		word-break: normal;
-		line-height: 1.5;
+		line-height: 1.2;
 
 		-moz-tab-size: 4;
 		-o-tab-size: 4;
@@ -209,9 +234,9 @@
 	pre[class*="language-"] ::-moz-selection,
 	code[class*="language-"]::-moz-selection,
 	code[class*="language-"] ::-moz-selection {
-		color: #282828;
+		color: #fbf1c7;
 		/* fg0 */
-		background: #fbf1c7;
+		background: #7c6f64;
 		/* bg4 */
 	}
 
@@ -219,37 +244,40 @@
 	pre[class*="language-"] ::selection,
 	code[class*="language-"]::selection,
 	code[class*="language-"] ::selection {
-		color: #282828;
+		color: #fbf1c7;
 		/* fg0 */
-
-		background: #fbf1c7;
+		background: #7c6f64;
 		/* bg4 */
 	}
 
 	/* Code blocks */
 	pre[class*="language-"] {
-		padding: 1em;
-		margin: 0.5em 0;
+		padding: 0.75rem;
+		margin: 0.5rem 0;
 		overflow: auto;
 	}
 
 	:not(pre)>code[class*="language-"],
 	pre[class*="language-"] {
-		background: #f9f5d7;
-		/* bg4 */
-		border: 1px solid #a89984;
+		background-color: #32302f;
+		/* border-width: 3px;
+  border-color: #665c54;
+  border-style: double; */
+		/* border: 1px solid #504945; */
 	}
 
 	/* Inline code */
 	:not(pre)>code[class*="language-"] {
 		padding: 0.1em;
-		border-radius: 0.3em;
+		border-radius: 0;
+		border-width: 1px;
+		background: transparent;
 	}
 
 	.token.comment,
 	.token.prolog,
 	.token.cdata {
-		color: #7c6f64;
+		color: #a89984;
 		/* fg4 / gray1 */
 	}
 
@@ -259,65 +287,64 @@
 	.token.selector,
 	.token.important,
 	.token.atrule {
-		color: #9d0006;
+		color: #ea6962;
 		/* red2 */
 	}
 
 	.token.operator,
 	.token.punctuation,
 	.token.attr-name {
-		color: #7c6f64;
+		color: #a89984;
 		/* fg4 / gray1 */
-		background: transparent;
 	}
 
 	.token.tag,
 	.token.tag .punctuation,
 	.token.doctype,
 	.token.builtin {
-		color: #b57614;
+		color: #d8a657;
 		/* yellow2 */
 	}
 
 	.token.entity,
 	.token.number,
 	.token.symbol {
-		color: #8f3f71;
+		color: #d3869b;
 		/* purple2 */
 	}
 
 	.token.property,
 	.token.constant,
 	.token.variable {
-		color: #9d0006;
+		color: #ea6962;
 		/* red2 */
 	}
 
 	.token.string,
 	.token.char {
-		color: #797403;
+		color: #89b482;
 		/* green2 */
 	}
 
 	.token.attr-value,
 	.token.attr-value .punctuation {
-		color: #7c6f64;
+		color: #a89984;
 		/* fg4 / gray1 */
 	}
 
 	.token.url {
-		color: #797403;
+		color: #89b482;
 		/* green2 */
 		text-decoration: underline;
 	}
 
 	.token.function {
-		color: #b57614;
+		color: #a9b665;
 		/* yellow2 */
 	}
 
 	.token.regex {
-		background: #797403;
+		background: #b8bb26;
 		/* green2 */
 	}
 
@@ -330,13 +357,17 @@
 	}
 
 	.token.inserted {
-		background: #7c6f64;
+		background: #a89984;
 		/* fg4 / gray1 */
 	}
 
 	.token.deleted {
-		background: #9d0006;
+		background: #ea6962;
 		/* red2 */
+	}
+
+	.token.operator {
+		background: transparent !important;
 	}
 </style>
 <!--replace-end-7--><!--replace-end-4--><!--replace-end-1--></head><body><div class="ui fluid container universe"><!--replace-start-2--><!--replace-start-3--><!--replace-start-6--><div class="ui text container" id="zettel-container" style="position: relative"><div class="zettel-view"><article class="ui raised attached segment zettel-content"><div class="pandoc"><h1 id="title-h1">CPU architecture</h1><p>At the core of a computer sits the Central Processing Unit. This is the assembly of chips that execute all computation. Instructions are passed to the CPU along the data bus part of the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Bus"><a href="Bus">system bus</a></span></span> from the memory. The <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span>, also residing in memory, sequences and schedules the sending of data to the CPU and manages requests from the CPU for data in memory.</p><p>The CPU comprises three core components:</p><ul><li>Registers (a type of memory positioned on the same chip as the CPU )</li><li>the Arithmetic Logic Unit (ALU)</li><li>the Control Unit (CU)</li></ul><p><img src="static/von_neumann_architecture.jpeg" /></p><blockquote><p>This method of putting together a computer is known as the <strong>Von Neumann Architecture</strong>. It was devised by John von Neumann in about 1945, well before any of the components that would be needed to produce it had actually been invented.</p></blockquote><h2 id="registers">Registers</h2><p>This is the part of the CPU that stores data. The memory cells that comprise it do not have <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Memory</a></span></span> (unlike RAM) so they cannot store very much data but they work faster, which is what is important. Because their memory capacity is so small, we measure the size of registers in bits rather than bytes.</p><p>In terms of speed, registers sit at the top part of the overall <a href="Memory.md#the-memory-hierarchy">memory hierarchy</a>.</p><p>There are five main types of register in the CPU:</p><table class="ui table"><thead><tr><th>Register type</th><th>What it stores</th></tr></thead><tbody><tr><td>Accumulator</td><td>The results of calculations</td></tr><tr><td>Instruction Register</td><td>The DRAM address of the <strong>instruction</strong> to be processed</td></tr><tr><td>Memory Address Register</td><td>The DRAM address of the <strong>data</strong> to be processed</td></tr><tr><td>Memory Data Register</td><td>The store of the data that is currently being processed</td></tr><tr><td>Program Counter</td><td>The RAM address of the <strong>next instruction</strong> to be processed</td></tr></tbody></table><h2 id="arithmetic-logic-unit">Arithmetic Logic Unit</h2><p>See <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Arithmetic Logic Unit (ALU)"><a href="Arithmetic_Logic_Unit">Arithmetic Logic Unit</a></span></span></p><h2 id="control-unit">Control Unit</h2><p>The CPU’s <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Chipset and controllers"><a href="Chipset_and_controllers">controller</a></span></span>. It takes the instructions in binary form from RAM memory (separate from the CPU, but connected) and then signals to the to ALU and memory registers what it is supposed to do to execute the instructions. Think of it as the overseer that gets the ALU and registers to work together to run program instructions.</p><h2 id="the-system-clock">The system clock</h2><p>Whilst modern CPUs and multithreading make it appear as though the CPU is capable of running multiple processes at once, access to the CPU is in fact sequential. The illusion of simultaneous computation is due to the fact the processor is so fast that we do not detect the sequential changes. For this to happen, the CPU needs to have a means of scheduling and sequencing processes. This is made possible through the system clock, hence when talking about the speed of the CPU we do so with reference to <em>clock speeds</em> and the <em>clock cycle</em>.</p><p>The clock’s circuitry is based on a quartz crystal system like that used in watches. At precisely timed intervals, the clock sends out pulses of electricity that cause bits to move from place to place within <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Logic gates"><a href="Logic_gates">logic gates</a></span></span> or between logic gates and <a href="CPU_architecture.md#registers">registers</a>. This is covered in greater detail in the discussion of <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Clock signals"><a href="Clock_signals">clock signals in digital circuits</a></span></span>.</p><p>Simple instructions such as add can often be executed in just one clock cycle, whilst complex operations such as divide will require a number of smaller steps, each using one cycle.</p><p>We measure the speed of a chip process within the CPU in <strong>Hertz (Hz)</strong>. One Hertz is equivalent to <em>1 cycle per second</em> where a “cycle” is equivalent to a single clock <strong>tick</strong>. Thus a tick covers a period of 1 second.</p><p>A speed of 2GHz for example means two billion cycles per second. This would mean that the clock was completing two billion cycles at each tick. It is clock speed that is being referred to when computers are marketed in terms of the number of Hz a processor possesses.</p><h2 id="processing-cycles">Processing cycles</h2><p>Each “cycle” is the execution of a process that commences once the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: The kernel"><a href="The_kernel">kernel</a></span></span> hands control to the CPU. Each cycle follows a sequence of events known as <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Fetch, decode, execute, store"><a href="Fetch_decode_execute">fetch, decode, and execute</a></span></span>.</p><h2 id="electromagnetism-broader-scientific-context">Electromagnetism: broader scientific context</h2><p>Hertz was the scientist who detected <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Electromagnetism"><a href="Electromagnetism">electromagentic waves</a></span></span>. We use Hertz as a measure of the frequency of electromatic wave cycles in a signal.</p><p><img src="static/hertz_wave_freq.gif" /></p><p>As the diagram above shows, a cycle is equal to one ascending and one descending crest. The more cycles per time unit, the greater the Hertz. We see the Hz increase as the number of cycles increases over time.</p><h2 id="processor-cores">Processor cores</h2><p>// TODO: add to dedicated file</p><p>// Add diagram The vast majority of general purpose computers are multi-core. This means that the CPU contains more than one processing unit. They are best thought of as mini-CPUs within the main CPU since they each have the same overall Von Neumann architecture.</p><p>With Intel processors the two main consumer processors are the i5 and i7. The latter has more cores than the former. Consequently it has faster clock speeds and greater concurrency due to increased threads.</p><h3 id="cache-access">Cache access</h3><p>// See pp.129</p><h3 id="history">History</h3><p>The development of multi-core processors emerged because practical limits began to be reached when trying to increase the clock speeds of processors. For a period, increased transistor density meant that there were steady increases in clock speeds. This meant that more instructions could be executed per second.</p><p>When the 3GHz level was reached it became clear that pushing a CPU beyond this led to excessive heat production and the logic gates not being able to keep up at those speeds. Instead of maxing out the clock rate, attention turned to running multiple instructions in parallel in order to increase performance.</p></div></article><nav class="ui attached segment deemphasized backlinksPane" id="neuron-backlinks-pane"><h3 class="ui header">Backlinks</h3><ul class="backlinks"><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="What_is_memory">What is memory ?</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>When a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU</a></span></span> executes a program, it needs a place to store the program’s <strong>instructions</strong> and <strong>related data</strong>. This is the role of memory.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Threads">Threads</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>Each <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">processor core</a></span></span> can only run one thread at a time so the number of cores that a device’s CPU has deterimines how many threads can run at once. In practice, then, the CPU shuffles between multiple threads in <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: Clock signals"><a href="Clock_signals">clock segments</a></span></span>. This is known as scheduling and is managed by the process that the thread belongs to.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="The_History_of_Computing_Swade">History of Computing (Swade, 2022 )</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>It more resembled modern computers in that Babbage used concepts that would later translate into the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">von Neumann architecture</a></span></span> There was a “mill” (CPU), “store” (memory) and input/output mechanisms. It also had a concept of looping and conditional branching.</p></div></li><li class="item"><div class="pandoc"><p>An experimental computer intended to create the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">von Neumann architecture</a></span></span> using <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Williams_Tube_RAM</a></span></span></p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Motherboard">Motherboard</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>The motherboard is the foundation of a computer. It allocates power and allows communication to and between the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU</a></span></span>, <span class="zettel-link-container errors"><span class="zettel-link" title="Wiki-link does not refer to any existing zettel"><a>Memory</a></span></span>, <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: What are disks?"><a href="What_are_disks">harddisk</a></span></span> and all other hardware components.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Machine_code">Machine code</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>No matter how a program was originally written, it eventually needs to execute on a <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU</a></span></span> as a series of machine language instructions.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Fetch_decode_execute">Fetch, decode, execute, store</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p><em>Fetch, decode, execute</em> is the operating cycle of the CPU. We will run through how this works with reference to the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU architecture</a></span></span>.</p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Assembly">Assembly</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p><span class="zettel-link-container cf"><span class="zettel-link"><a href="Hexadecimal_number_system">Hexadecimal number system</a></span></span>, <span class="zettel-link-container cf"><span class="zettel-link"><a href="Instruction_set_architectures">Instruction Set Architectures</a></span></span>, <span class="zettel-link-container cf"><span class="zettel-link"><a href="CPU_architecture">CPU architecture</a></span></span></p></div></li></ul></li><li><span class="zettel-link-container cf"><span class="zettel-link"><a href="Arithmetic_Logic_Unit">Arithmetic Logic Unit (ALU)</a></span></span><ul class="context-list" style="zoom: 85%;"><li class="item"><div class="pandoc"><p>The ALU is the centerpiece or core of the <span class="zettel-link-container cf"><span class="zettel-link" title="Zettel: CPU architecture"><a href="CPU_architecture">CPU</a></span></span> architecture, where the binary calculations occur. All the other components on the CPU chip are appendanges to the execution that occurs within the ALU.</p></div></li></ul></li></ul></nav><nav class="ui attached segment deemphasized bottomPane" id="neuron-tags-pane"><div><span class="ui basic label zettel-tag" title="Tag">CPU</span><span class="ui basic label zettel-tag" title="Tag">computer-architecture</span></div></nav><nav class="ui bottom attached icon compact inverted menu blue" id="neuron-nav-bar"><!--replace-start-9--><!--replace-end-9--><a class="right item" href="impulse" title="Open Impulse"><i class="wave square icon"></i></a></nav></div></div><!--replace-end-6--><!--replace-end-3--><!--replace-end-2--><div class="ui center aligned container footer-version"><div class="ui tiny image"><a href="https://neuron.zettel.page"><img alt="logo" src="https://raw.githubusercontent.com/srid/neuron/master/assets/neuron.svg" title="Generated by Neuron 1.9.35.3" /></a></div></div></div></body></html>
