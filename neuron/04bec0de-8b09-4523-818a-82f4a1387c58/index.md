@@ -13,12 +13,14 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 84bce166-ed13-454f-aa4b-b278e38fda7b
+**Build ID:** 04bec0de-8b09-4523-818a-82f4a1387c58
 
-**Published:** Sun 19 Jan 2025 18:00:55
+**Published:** Mon 20 Jan 2025 18:28:50
 
 ### Recent edits 
 
+- [[4dec6fe0_shadow_text]] 
+- [[c9d7492f_requerimiento]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[Sorting_lists_in_Python]] 
 - [[Algebra_key_terms]] 
@@ -29,11 +31,9 @@ computer science.
 - [[IP_addresses]] 
 - [[View_IP_addresses]] 
 - [[747589ad_effects_of_privacy_violation]] 
-- [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
-- [[f6564af9_AOL_and_early_internet_enclosure]] 
 
 
-### All notes (518) 
+### All notes (520) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -41,6 +41,7 @@ computer science.
 - [[3f1b9fe5_motivation_Berners_Lee]] 
 - [[4a3dc316_key_figures_ARPANET]] 
 - [[4da22434_from_ARPANET_to_Internet]] 
+- [[4dec6fe0_shadow_text]] 
 - [[653c0b1d_host_protocols_of_ARPANET]] 
 - [[738d0481_sound_recording_as_wave_phenomena]] 
 - [[747589ad_effects_of_privacy_violation]] 
@@ -536,6 +537,7 @@ computer science.
 - [[bbdcb54f_public_key_cryptography]] 
 - [[c301a0b3-1d8_Mosaic_Netscape_and_Browser_Wars]] 
 - [[c8173d17_TIMPs]] 
+- [[c9d7492f_requerimiento]] 
 - [[cfbef1c4_web_precursors]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
 - [[ecec56e6_precursors_to_search_engines]] 
