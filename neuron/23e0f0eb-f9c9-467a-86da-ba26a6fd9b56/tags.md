@@ -326,10 +326,12 @@ unlisted: true
 ### ecopolsoc 
 
 - [[0716531c_rewilding_the_internet]] 
+- [[4dec6fe0_shadow_text]] 
 - [[747589ad_effects_of_privacy_violation]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[Bauman_quote]] 
+- [[c9d7492f_requerimiento]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 - [[Weaving_the_Web_Berners_Lee]] 
@@ -438,11 +440,13 @@ unlisted: true
 - [[3f1b9fe5_motivation_Berners_Lee]] 
 - [[4a3dc316_key_figures_ARPANET]] 
 - [[4da22434_from_ARPANET_to_Internet]] 
+- [[4dec6fe0_shadow_text]] 
 - [[82f9c228_dissolution_of_ARPANET]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[a771a6d9_attributes_of_internet_enclosure]] 
 - [[Application_Layer_of_Internet_Protocol]] 
 - [[Architecture_of_the_World_Wide_Web]] 
+- [[c9d7492f_requerimiento]] 
 - [[cfbef1c4_web_precursors]] 
 - [[Example_scenario_internet_data_transfer]] 
 - [[f6564af9_AOL_and_early_internet_enclosure]] 
@@ -1078,9 +1082,11 @@ unlisted: true
 - [[Magnetic_tape]] 
 ### surveillance-capitalism 
 
+- [[4dec6fe0_shadow_text]] 
 - [[747589ad_effects_of_privacy_violation]] 
 - [[a247fa9b_surveillance_capitalism_not_necessary]] 
 - [[Bauman_quote]] 
+- [[c9d7492f_requerimiento]] 
 - [[fbbfbc32-political-accommodation-inveigelment-surveillance-capitalism]] 
 ### systemd 
 

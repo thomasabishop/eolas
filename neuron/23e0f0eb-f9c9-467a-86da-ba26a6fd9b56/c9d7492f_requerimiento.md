@@ -10,7 +10,7 @@ capitalists to the behaviour of the Conquistadores when they first arrived in
 South America.
 
 In order to legitimise their actions they were obliged to inform the native
-inhabitants of their intentions and tell them that they were no subordinates to
+inhabitants of their intentions and tell them that they were now subordinate to
 the Spanish crown.
 
 This provided supposed justification for the violence and brutality that would
