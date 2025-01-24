@@ -13,12 +13,13 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 23e0f0eb-f9c9-467a-86da-ba26a6fd9b56
+**Build ID:** 7c141533-1806-4f5c-a70e-7527be05b1c5
 
-**Published:** Tue 21 Jan 2025 17:10:07
+**Published:** Fri 24 Jan 2025 19:35:58
 
 ### Recent edits 
 
+- [[LineageOS_backup]] 
 - [[4dec6fe0_shadow_text]] 
 - [[c9d7492f_requerimiento]] 
 - [[Compile_Python_app_to_single_executable]] 
@@ -30,10 +31,9 @@ computer science.
 - [[ICMP_Protocol]] 
 - [[IP_addresses]] 
 - [[View_IP_addresses]] 
-- [[747589ad_effects_of_privacy_violation]] 
 
 
-### All notes (520) 
+### All notes (521) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -282,6 +282,7 @@ computer science.
 - [[Law_of_Non_Contradiction]] 
 - [[Law_of_the_Excluded_Middle]] 
 - [[Lifecycle_methods]] 
+- [[LineageOS_backup]] 
 - [[Link_Layer_of_Internet_Protocol]] 
 - [[Linux_disk_partitions]] 
 - [[List_comprehension_in_Python]] 
