@@ -13,12 +13,14 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 7c141533-1806-4f5c-a70e-7527be05b1c5
+**Build ID:** 3b3f3885-a969-4331-8766-b386e8dbd527
 
-**Published:** Fri 24 Jan 2025 19:35:58
+**Published:** Mon 03 Feb 2025 12:48:43
 
 ### Recent edits 
 
+- [[e383b8b3_nginx_vs_traefik]] 
+- [[Proxies]] 
 - [[LineageOS_backup]] 
 - [[4dec6fe0_shadow_text]] 
 - [[c9d7492f_requerimiento]] 
@@ -29,11 +31,9 @@ computer science.
 - [[Ping]] 
 - [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[ICMP_Protocol]] 
-- [[IP_addresses]] 
-- [[View_IP_addresses]] 
 
 
-### All notes (521) 
+### All notes (523) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -379,6 +379,7 @@ computer science.
 - [[Proper_shebang_syntax]] 
 - [[Props_in_React]] 
 - [[Prototypical_inheritance]] 
+- [[Proxies]] 
 - [[Push_buttons]] 
 - [[Python_application_structure]] 
 - [[Python_data_types]] 
@@ -540,6 +541,7 @@ computer science.
 - [[c8173d17_TIMPs]] 
 - [[c9d7492f_requerimiento]] 
 - [[cfbef1c4_web_precursors]] 
+- [[e383b8b3_nginx_vs_traefik]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
 - [[ecec56e6_precursors_to_search_engines]] 
 - [[f0f70a3c_ARPANET_motivations]] 
