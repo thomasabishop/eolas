@@ -42,3 +42,17 @@ process.
 
 Another usefule software is Fail2ban which can automatically configure your
 firewall to block brute force login attempts and DDOS attacks.
+
+## Difference from reverse proxies
+
+Whilst both reverse proxies and firewalls filter incoming traffic to a server,
+there are important differences.
+
+The firewall operates at the
+[Transport Layer](Transport_Layer_of_Internet_Protocol.md) wehreas proxies
+operate at the [Application Layer](Application_Layer_of_Internet_Protocol.md).
+
+The firewall is primarily concerned with security and precedes anything that
+happens with the incoming packets at the Appplication Layer. The packets first
+have to get through the firewall before the request can be routed to a specific
+service on the server.
