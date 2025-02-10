@@ -13,12 +13,14 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** f8981ab1-f587-4bd7-a1a8-aa934a221168
+**Build ID:** acc60df2-7719-47eb-91e2-341f930a4aea
 
-**Published:** Mon 10 Feb 2025 17:14:06
+**Published:** Mon 10 Feb 2025 20:44:49
 
 ### Recent edits 
 
+- [[Disk_size_utilities]] 
+- [[Setup encrypted harddrive]] 
 - [[Firewalls]] 
 - [[Let's_Encrypt]] 
 - [[Certificate_authorities]] 
@@ -29,11 +31,9 @@ computer science.
 - [[LineageOS_backup]] 
 - [[4dec6fe0_shadow_text]] 
 - [[c9d7492f_requerimiento]] 
-- [[Compile_Python_app_to_single_executable]] 
-- [[Sorting_lists_in_Python]] 
 
 
-### All notes (526) 
+### All notes (528) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -177,6 +177,7 @@ computer science.
 - [[Disjunction_Elimination]] 
 - [[Disjunction_Introduction]] 
 - [[Disk_info]] 
+- [[Disk_size_utilities]] 
 - [[Distributivity]] 
 - [[Dividing_fractions]] 
 - [[Docker_CLI]] 
@@ -436,6 +437,7 @@ computer science.
 - [[Set_DNS_settings]] 
 - [[Sets_in_Python]] 
 - [[Setting_up_and_configuring_TypeScript]] 
+- [[Setup encrypted harddrive]] 
 - [[Shell_sessions]] 
 - [[Signed_and_unsigned_numbers]] 
 - [[Signed_magnitude_representation]] 

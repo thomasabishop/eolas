@@ -302,6 +302,7 @@ unlisted: true
 - [[Disk_info]] 
 - [[Filesystems]] 
 - [[Linux_disk_partitions]] 
+- [[Setup encrypted harddrive]] 
 - [[Swap_space]] 
 - [[What_are_disks]] 
 ### docker 
@@ -369,6 +370,7 @@ unlisted: true
 - [[bbdcb54f_public_key_cryptography]] 
 - [[HTTPS]] 
 - [[Let's_Encrypt]] 
+- [[Setup encrypted harddrive]] 
 - [[What_can_the_ISP_see]] 
 ### exponents 
 
@@ -532,6 +534,7 @@ unlisted: true
 - [[VirtualMemory]] 
 ### linux 
 
+- [[Disk_size_utilities]] 
 - [[LineageOS_backup]] 
 ### literature 
 
@@ -840,6 +843,7 @@ unlisted: true
 - [[Create_timed_systemd_job]] 
 - [[Cron]] 
 - [[Disk_info]] 
+- [[Disk_size_utilities]] 
 - [[Effective_logging_in_Git]] 
 - [[File_operations_in_Python]] 
 - [[File_system_error_handling_in_Python]] 
@@ -858,6 +862,7 @@ unlisted: true
 - [[Rename_a_branch]] 
 - [[Reset_to_remote_version]] 
 - [[Save_readonly_Vim_file]] 
+- [[Setup encrypted harddrive]] 
 - [[Symlinks]] 
 - [[systemd]] 
 - [[systemd_status]] 
