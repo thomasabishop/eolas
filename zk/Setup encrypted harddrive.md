@@ -5,8 +5,8 @@ created: Monday, February 10, 2025
 
 # Setup an encrypted harddrive
 
-Firstly [create a new partition](./Linux_disk_partitions.md) on the unencrypted
-drive.
+Firstly [create a new partition](./Creating_a_Linux_partition_table.md) on the
+unencrypted drive with `fdisk`.
 
 Create LUKs encryption:
 
@@ -71,11 +71,21 @@ sudo chown thomas:thomas /meda/my_device_name
 sudo chmod 755 /media/my_device_name
 ```
 
+Make sure it shows up with its intended name:
+
+```sh
+sudo e2label /dev/mapper/samsung-T3 samsung-T3
+```
+
+(Where second value is the name we want it to show as.)
+
 Test auto-mount and loading from crypttab:
 
 First reload `systemd`:
 
-`sh sudo systemctl daemon-reload `
+```sh
+sudo systemctl daemon-reload
+```
 
 Then, remount all disks.
 
@@ -85,3 +95,18 @@ sudo mount -a
 
 Should be prompted for password and disk decrypts and mounts to specified mount
 point.
+
+## Additional points
+
+Close LUKS (if you make a mistake):
+
+```sh
+sudo cryptsetup luksClose device_name
+
+```
+
+Remove vendor data to unlock more space:
+
+```sh
+sudo tune2fs -m 0 /dev/mapper/samsung-T3
+```

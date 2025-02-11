@@ -13,14 +13,14 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** acc60df2-7719-47eb-91e2-341f930a4aea
+**Build ID:** 666a9949-2ad4-4228-a102-35f508a9db5d
 
-**Published:** Mon 10 Feb 2025 20:44:49
+**Published:** Tue 11 Feb 2025 18:11:45
 
 ### Recent edits 
 
-- [[Disk_size_utilities]] 
 - [[Setup encrypted harddrive]] 
+- [[Disk_size_utilities]] 
 - [[Firewalls]] 
 - [[Let's_Encrypt]] 
 - [[Certificate_authorities]] 
