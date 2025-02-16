@@ -13,15 +13,17 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 666a9949-2ad4-4228-a102-35f508a9db5d
+**Build ID:** 5ce25cd2-1b2b-459a-bb58-283daadf8753
 
-**Published:** Tue 11 Feb 2025 18:11:45
+**Published:** Sun 16 Feb 2025 15:17:20
 
 ### Recent edits 
 
+- [[UFW_firewall_management]] 
+- [[Firewalls]] 
+- [[Disable_non-root_ssh_access]] 
 - [[Setup encrypted harddrive]] 
 - [[Disk_size_utilities]] 
-- [[Firewalls]] 
 - [[Let's_Encrypt]] 
 - [[Certificate_authorities]] 
 - [[HTTPS]] 
@@ -29,11 +31,9 @@ computer science.
 - [[e383b8b3_nginx_vs_traefik]] 
 - [[Proxies]] 
 - [[LineageOS_backup]] 
-- [[4dec6fe0_shadow_text]] 
-- [[c9d7492f_requerimiento]] 
 
 
-### All notes (528) 
+### All notes (530) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -174,6 +174,7 @@ computer science.
 - [[Devices]] 
 - [[Dictionaries_in_Python]] 
 - [[Difference_between_remote_origin_and_head]] 
+- [[Disable_non-root_ssh_access]] 
 - [[Disjunction_Elimination]] 
 - [[Disjunction_Introduction]] 
 - [[Disk_info]] 
@@ -494,6 +495,7 @@ computer science.
 - [[Type_guarding_and_narrowing_in_TS]] 
 - [[Type_hinting]] 
 - [[Typing_built_in_React_hooks]] 
+- [[UFW_firewall_management]] 
 - [[Union_types_in_TS]] 
 - [[Unknown_type_in_TS]] 
 - [[Update_a_Mongo_document]] 

@@ -1,5 +1,5 @@
 ---
-tags: [networks, server-management]
+tags: [networks, server-management, firewalls]
 created: Sunday, February 09, 2025
 ---
 
@@ -40,7 +40,7 @@ IPTables is the standard Linux software for managing firewalls. There is also
 Uncomplicated Firewall (UWF) which attaches to IPTables and simplifies the
 process.
 
-Another usefule software is Fail2ban which can automatically configure your
+Another useful software is Fail2ban which can automatically configure your
 firewall to block brute force login attempts and DDOS attacks.
 
 ## Difference from reverse proxies
