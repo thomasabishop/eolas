@@ -14,6 +14,14 @@ if ! grep "pattern" file.txt; then
 fi
 ```
 
+This just checks the exit code. If you want the actual error too:
+
+```sh
+if ! ERROR=$(grep "pattern" file.txt 2>&1); then
+    echo "Pattern not found: $ERROR"
+fi
+```
+
 If you want to store the outcome of a command and refer to it later, use `$?`.
 This built-in variable captures the exit status of the last executed command (0
 for success, non-zero for failure):
@@ -40,5 +48,15 @@ status2=$?
 
 if [ $status1 -ne 0 ] || [ $status2 -ne 0 ]; then
     echo "One of the commands failed"
+fi
+```
+
+Again, this just checks the exit code, to capture the error:
+
+```sh
+error_msg=$(command 2>&1)
+status=$?
+if [ $status -ne 0 ]; then
+    echo "Failed: $error_msg"
 fi
 ```
