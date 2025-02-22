@@ -1034,12 +1034,15 @@ unlisted: true
 - [[Basic_properties_of_sets]] 
 ### shell 
 
+- [[Associative_arrays_maps_in_Bash]] 
 - [[Awk]] 
 - [[Bash_colour_output]] 
 - [[Bash_file_exists]] 
 - [[Bash_store_status_of_command_execution]] 
+- [[Capturing_program_error_in_Bash]] 
 - [[Capturing_user_input_in_Bash]] 
 - [[Case_statements_in_Bash]] 
+- [[Check_if_value_null_in_Bash]] 
 - [[Conditionals_in_Bash]] 
 - [[Cron]] 
 - [[Data_types_in_Bash]] 

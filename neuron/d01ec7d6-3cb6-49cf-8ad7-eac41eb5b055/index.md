@@ -13,12 +13,16 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 5ce25cd2-1b2b-459a-bb58-283daadf8753
+**Build ID:** d01ec7d6-3cb6-49cf-8ad7-eac41eb5b055
 
-**Published:** Sun 16 Feb 2025 15:17:20
+**Published:** Sat 22 Feb 2025 10:17:40
 
 ### Recent edits 
 
+- [[Capturing_program_error_in_Bash]] 
+- [[Check_if_value_null_in_Bash]] 
+- [[Associative_arrays_maps_in_Bash]] 
+- [[Case_statements_in_Bash]] 
 - [[UFW_firewall_management]] 
 - [[Firewalls]] 
 - [[Disable_non-root_ssh_access]] 
@@ -27,13 +31,9 @@ computer science.
 - [[Let's_Encrypt]] 
 - [[Certificate_authorities]] 
 - [[HTTPS]] 
-- [[Bash_colour_output]] 
-- [[e383b8b3_nginx_vs_traefik]] 
-- [[Proxies]] 
-- [[LineageOS_backup]] 
 
 
-### All notes (530) 
+### All notes (533) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -76,6 +76,7 @@ computer science.
 - [[Arrays]] 
 - [[Assembly]] 
 - [[Associative_Property_of_Addition_and_Multiplication]] 
+- [[Associative_arrays_maps_in_Bash]] 
 - [[Atomic_and_molecular_propositions]] 
 - [[Audio_file_formats]] 
 - [[Awk]] 
@@ -110,10 +111,12 @@ computer science.
 - [[Bus]] 
 - [[CPU_architecture]] 
 - [[Call_stack]] 
+- [[Capturing_program_error_in_Bash]] 
 - [[Capturing_user_input_in_Bash]] 
 - [[Case_statements_in_Bash]] 
 - [[Cells_and_batteries]] 
 - [[Certificate_authorities]] 
+- [[Check_if_value_null_in_Bash]] 
 - [[Cherry_picking]] 
 - [[Child_to_parent_data_flow_in_React]] 
 - [[Chipset_and_controllers]] 
