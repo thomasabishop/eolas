@@ -3,9 +3,9 @@
 # Automatically pull and commit changes to remote after generating Neuron static
 # site
 
-USER=thomas
-export XDG_RUNTIME_DIR=/run/user/1000
-source /home/thomas/.env
+# USER=thomas
+# export XDG_RUNTIME_DIR=/run/user/1000
+# source /home/thomas/.env
 
 SLACK_NOTIFIER="${HOME}/repos/utilities/slack_notifier.sh"
 NEURON_GENERATOR="${HOME}/repos/neuron-zk-generator/dist/neuron-zk-generator"
@@ -31,4 +31,4 @@ git add .
 git commit -q -m "Autosave: $(date +"%Y-%m-%d %H:%M:%S")"
 git push
 
-$SLACK_NOTIFIER 'success' 'eolas: auto-save executed'
+$SLACK_NOTIFIER "eolas" 'success' 'eolas: auto-save executed'
