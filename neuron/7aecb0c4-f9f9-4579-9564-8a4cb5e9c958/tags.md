@@ -4,7 +4,7 @@ unlisted: true
 ---
 
 # Tags
-[algebra](./tags#algebra), [algorithms](./tags#algorithms), [analogue](./tags#analogue), [android](./tags#android), [APIs](./tags#APIs), [arch-linux](./tags#arch-linux), [arithmetic](./tags#arithmetic), [ARPA](./tags#ARPA), [ARPANET](./tags#ARPANET), [awk](./tags#awk), [AWS](./tags#AWS), [aws-lambda](./tags#aws-lambda), [binary](./tags#binary), [bulletin-boards](./tags#bulletin-boards), [bus](./tags#bus), [C](./tags#C), [computer-architecture](./tags#computer-architecture), [computer-history](./tags#computer-history), [containerization](./tags#containerization), [CPU](./tags#CPU), [cryptography](./tags#cryptography), [csv](./tags#csv), [data-structures](./tags#data-structures), [data-types](./tags#data-types), [databases](./tags#databases), [design-patterns](./tags#design-patterns), [disks](./tags#disks), [docker](./tags#docker), [dynamodb](./tags#dynamodb), [ecopolsoc](./tags#ecopolsoc), [electricity](./tags#electricity), [electromagnetism](./tags#electromagnetism), [electronics](./tags#electronics), [encryption](./tags#encryption), [exponents](./tags#exponents), [file-system](./tags#file-system), [firewalls](./tags#firewalls), [fleeting](./tags#fleeting), [fractions](./tags#fractions), [git](./tags#git), [graphql](./tags#graphql), [hardware](./tags#hardware), [IaC](./tags#IaC), [internet](./tags#internet), [javascript](./tags#javascript), [jest](./tags#jest), [json](./tags#json), [JSON](./tags#JSON), [kernel](./tags#kernel), [Linux](./tags#Linux), [linux](./tags#linux), [literature](./tags#literature), [logic](./tags#logic), [logic-gates](./tags#logic-gates), [memory](./tags#memory), [Microsoft](./tags#Microsoft), [middleware](./tags#middleware), [modems](./tags#modems), [mongo-db](./tags#mongo-db), [mongoose](./tags#mongoose), [nand-to-tetris](./tags#nand-to-tetris), [network-protocols](./tags#network-protocols), [networks](./tags#networks), [node-js](./tags#node-js), [number-systems](./tags#number-systems), [number-theory](./tags#number-theory), [OOP](./tags#OOP), [operating-systems](./tags#operating-systems), [packet-switching](./tags#packet-switching), [physics](./tags#physics), [ports](./tags#ports), [prealgebra](./tags#prealgebra), [privacy](./tags#privacy), [procedural](./tags#procedural), [propositional-logic](./tags#propositional-logic), [proxies](./tags#proxies), [python](./tags#python), [question](./tags#question), [raspberry-pi](./tags#raspberry-pi), [react](./tags#react), [recursion](./tags#recursion), [regex](./tags#regex), [REST](./tags#REST), [S3](./tags#S3), [server-management](./tags#server-management), [set-theory](./tags#set-theory), [shell](./tags#shell), [SNS](./tags#SNS), [sound](./tags#sound), [SQL](./tags#SQL), [SQLite](./tags#SQLite), [SQS](./tags#SQS), [ssh](./tags#ssh), [storage](./tags#storage), [surveillance-capitalism](./tags#surveillance-capitalism), [systemd](./tags#systemd), [systems-programming](./tags#systems-programming), [testing](./tags#testing), [theorems](./tags#theorems), [theory-of-computation](./tags#theory-of-computation), [time](./tags#time), [TOR](./tags#TOR), [Turing](./tags#Turing), [typescript](./tags#typescript), [unix](./tags#unix), [VPN](./tags#VPN), [world-wide-web](./tags#world-wide-web), [yaml](./tags#yaml), 
+[algebra](./tags#algebra), [algorithms](./tags#algorithms), [analogue](./tags#analogue), [android](./tags#android), [APIs](./tags#APIs), [arch-linux](./tags#arch-linux), [arithmetic](./tags#arithmetic), [ARPA](./tags#ARPA), [ARPANET](./tags#ARPANET), [awk](./tags#awk), [AWS](./tags#AWS), [aws-lambda](./tags#aws-lambda), [binary](./tags#binary), [bulletin-boards](./tags#bulletin-boards), [bus](./tags#bus), [C](./tags#C), [computer-architecture](./tags#computer-architecture), [computer-history](./tags#computer-history), [containerization](./tags#containerization), [CPU](./tags#CPU), [cryptography](./tags#cryptography), [csv](./tags#csv), [data-structures](./tags#data-structures), [data-types](./tags#data-types), [databases](./tags#databases), [design-patterns](./tags#design-patterns), [disks](./tags#disks), [docker](./tags#docker), [dynamodb](./tags#dynamodb), [ecopolsoc](./tags#ecopolsoc), [electricity](./tags#electricity), [electromagnetism](./tags#electromagnetism), [electronics](./tags#electronics), [encryption](./tags#encryption), [exponents](./tags#exponents), [file-system](./tags#file-system), [firewalls](./tags#firewalls), [fleeting](./tags#fleeting), [fractions](./tags#fractions), [git](./tags#git), [graphql](./tags#graphql), [hardware](./tags#hardware), [IaC](./tags#IaC), [internet](./tags#internet), [javascript](./tags#javascript), [jest](./tags#jest), [json](./tags#json), [JSON](./tags#JSON), [kernel](./tags#kernel), [Linux](./tags#Linux), [linux](./tags#linux), [literature](./tags#literature), [logic](./tags#logic), [logic-gates](./tags#logic-gates), [memory](./tags#memory), [Microsoft](./tags#Microsoft), [middleware](./tags#middleware), [modems](./tags#modems), [mongo-db](./tags#mongo-db), [mongoose](./tags#mongoose), [nand-to-tetris](./tags#nand-to-tetris), [network-protocols](./tags#network-protocols), [networks](./tags#networks), [node-js](./tags#node-js), [number-systems](./tags#number-systems), [number-theory](./tags#number-theory), [OOP](./tags#OOP), [operating-systems](./tags#operating-systems), [packet-switching](./tags#packet-switching), [physics](./tags#physics), [ports](./tags#ports), [prealgebra](./tags#prealgebra), [privacy](./tags#privacy), [procedural](./tags#procedural), [propositional-logic](./tags#propositional-logic), [protocols](./tags#protocols), [proxies](./tags#proxies), [python](./tags#python), [question](./tags#question), [raspberry-pi](./tags#raspberry-pi), [react](./tags#react), [recursion](./tags#recursion), [regex](./tags#regex), [REST](./tags#REST), [S3](./tags#S3), [server-management](./tags#server-management), [set-theory](./tags#set-theory), [shell](./tags#shell), [SNS](./tags#SNS), [sound](./tags#sound), [SQL](./tags#SQL), [SQLite](./tags#SQLite), [SQS](./tags#SQS), [ssh](./tags#ssh), [storage](./tags#storage), [surveillance-capitalism](./tags#surveillance-capitalism), [systemd](./tags#systemd), [systems-programming](./tags#systems-programming), [testing](./tags#testing), [theorems](./tags#theorems), [theory-of-computation](./tags#theory-of-computation), [time](./tags#time), [TOR](./tags#TOR), [Turing](./tags#Turing), [typescript](./tags#typescript), [unix](./tags#unix), [USB](./tags#USB), [usb](./tags#usb), [VPN](./tags#VPN), [world-wide-web](./tags#world-wide-web), [yaml](./tags#yaml), 
 
 ### algebra 
 
@@ -371,6 +371,7 @@ unlisted: true
 - [[HTTPS]] 
 - [[Let's_Encrypt]] 
 - [[Setup encrypted harddrive]] 
+- [[SSH]] 
 - [[What_can_the_ISP_see]] 
 ### exponents 
 
@@ -440,6 +441,7 @@ unlisted: true
 - [[Machine_code]] 
 - [[Motherboard]] 
 - [[Network_card]] 
+- [[USB-C]] 
 ### IaC 
 
 - [[Terraform]] 
@@ -865,6 +867,7 @@ unlisted: true
 - [[Killing_processes]] 
 - [[LineageOS_backup]] 
 - [[Linux_disk_partitions]] 
+- [[lsof]] 
 - [[Monitor_DNS_resolution_and_internet_connectivity_script]] 
 - [[Monitoring_processes_and_resources]] 
 - [[Network_packet_analysis_tools]] 
@@ -919,6 +922,9 @@ unlisted: true
 - [[Truth_tables]] 
 - [[Truth_trees]] 
 - [[Validity_and_entailment]] 
+### protocols 
+
+- [[USB protocols and connectors]] 
 ### proxies 
 
 - [[e383b8b3_nginx_vs_traefik]] 
@@ -1033,6 +1039,7 @@ unlisted: true
 - [[Firewalls]] 
 - [[HTTPS]] 
 - [[Let's_Encrypt]] 
+- [[SSH]] 
 - [[UFW_firewall_management]] 
 ### set-theory 
 
@@ -1068,6 +1075,7 @@ unlisted: true
 - [[Listing_and_navigating_directories_in_the_Shell]] 
 - [[Lists_and_arrays_in_Bash]] 
 - [[Loops_in_bash]] 
+- [[lsof]] 
 - [[Passing_arguments_and_options_to_Bash_scripts]] 
 - [[Proper_shebang_syntax]] 
 - [[ps]] 
@@ -1077,6 +1085,7 @@ unlisted: true
 - [[Redirection_in_Bash]] 
 - [[Shell_sessions]] 
 - [[Split_into_array_in_Bash]] 
+- [[SSH]] 
 - [[Strings_in_Bash]] 
 - [[Substrings_in_Bash]] 
 - [[Symlinks]] 
@@ -1212,6 +1221,12 @@ unlisted: true
 ### unix 
 
 - [[Time_and_computers]] 
+### USB 
+
+- [[USB protocols and connectors]] 
+### usb 
+
+- [[USB-C]] 
 ### VPN 
 
 - [[How_tunneling_works_with_VPNs]] 

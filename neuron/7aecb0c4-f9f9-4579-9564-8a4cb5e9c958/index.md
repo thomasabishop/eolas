@@ -13,12 +13,16 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 5607f042-29e2-4baf-8022-e34dadc3ad0f
+**Build ID:** 7aecb0c4-f9f9-4579-9564-8a4cb5e9c958
 
-**Published:** Sun 02 Mar 2025 15:06:38
+**Published:** Fri 14 Mar 2025 17:01:53
 
 ### Recent edits 
 
+- [[USB-C]] 
+- [[USB protocols and connectors]] 
+- [[SSH]] 
+- [[lsof]] 
 - [[a0ab0bfb_network_layer_clarification]] 
 - [[b01fd836_Transport_Layer_clarification]] 
 - [[Transport_Layer_of_Internet_Protocol]] 
@@ -35,13 +39,9 @@ computer science.
 - [[Setup encrypted harddrive]] 
 - [[Disk_size_utilities]] 
 - [[Let's_Encrypt]] 
-- [[Certificate_authorities]] 
-- [[Bash_colour_output]] 
-- [[e383b8b3_nginx_vs_traefik]] 
-- [[Proxies]] 
 
 
-### All notes (537) 
+### All notes (541) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -444,6 +444,7 @@ computer science.
 - [[S3]] 
 - [[SAM]] 
 - [[SQLite]] 
+- [[SSH]] 
 - [[Save_readonly_Vim_file]] 
 - [[Schema_Definition_Language_in_GraphQL]] 
 - [[Secrets_or_env_vars_in_AWS]] 
@@ -509,6 +510,8 @@ computer science.
 - [[Type_hinting]] 
 - [[Typing_built_in_React_hooks]] 
 - [[UFW_firewall_management]] 
+- [[USB protocols and connectors]] 
+- [[USB-C]] 
 - [[Union_types_in_TS]] 
 - [[Unknown_type_in_TS]] 
 - [[Update_a_Mongo_document]] 
@@ -573,6 +576,7 @@ computer science.
 - [[http_in_Node]] 
 - [[journald]] 
 - [[jq]] 
+- [[lsof]] 
 - [[ps]] 
 - [[python_advent_learnings]] 
 - [[systemd]] 
