@@ -1,5 +1,5 @@
 ---
-tags: [internet, encryption, privacy, TOR]
+tags: [internet, encryption, privacy, Tor]
 created: Friday, December 13, 2024
 ---
 
