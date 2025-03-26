@@ -13,12 +13,16 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** 7aecb0c4-f9f9-4579-9564-8a4cb5e9c958
+**Build ID:** 2abd5c63-27cc-420e-b0df-76bdd7f8acb1
 
-**Published:** Fri 14 Mar 2025 17:01:53
+**Published:** Wed 26 Mar 2025 17:50:41
 
 ### Recent edits 
 
+- [[Code_Craft_The_Practice_Of_Writing_Excellent_Code]] 
+- [[Constructing paths in Python]] 
+- [[File_operations_in_Python]] 
+- [[Using a context manager in Python]] 
 - [[USB-C]] 
 - [[USB protocols and connectors]] 
 - [[SSH]] 
@@ -35,13 +39,9 @@ computer science.
 - [[Case_statements_in_Bash]] 
 - [[UFW_firewall_management]] 
 - [[Firewalls]] 
-- [[Disable_non-root_ssh_access]] 
-- [[Setup encrypted harddrive]] 
-- [[Disk_size_utilities]] 
-- [[Let's_Encrypt]] 
 
 
-### All notes (541) 
+### All notes (544) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -132,6 +132,7 @@ computer science.
 - [[Classes]] 
 - [[Classes_in_Python]] 
 - [[Clock_signals]] 
+- [[Code_Craft_The_Practice_Of_Writing_Excellent_Code]] 
 - [[Command_pattern]] 
 - [[Commutative_Property_of_Addition_and_Multiplication]] 
 - [[Comparing_React_classes_to_hooks]] 
@@ -148,6 +149,7 @@ computer science.
 - [[Conjunction_Introduction]] 
 - [[Connect_to_Mongo_database]] 
 - [[Connecting_a_frontend_to_a_Docker_backend]] 
+- [[Constructing paths in Python]] 
 - [[Containerization]] 
 - [[Controlled_components_in_React]] 
 - [[Corresponding_material_and_biconditional]] 
@@ -523,6 +525,7 @@ computer science.
 - [[User_agent]] 
 - [[User_management_in_Linux]] 
 - [[User_management_on_AWS]] 
+- [[Using a context manager in Python]] 
 - [[Using_GraphQL_with_Node]] 
 - [[Using_SQLite_with_Python]] 
 - [[Using_arguments_with_Apollo_Client]] 

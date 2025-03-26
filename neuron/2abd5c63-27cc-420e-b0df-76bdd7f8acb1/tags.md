@@ -548,6 +548,7 @@ unlisted: true
 - [[UFW_firewall_management]] 
 ### literature 
 
+- [[Code_Craft_The_Practice_Of_Writing_Excellent_Code]] 
 - [[The_History_of_Computing_Swade]] 
 - [[Weaving_the_Web_Berners_Lee]] 
 ### logic 
@@ -936,6 +937,7 @@ unlisted: true
 - [[Classes_in_Python]] 
 - [[Compile_Python_app_to_single_executable]] 
 - [[Conditional_statements_in_Python]] 
+- [[Constructing paths in Python]] 
 - [[Dates_in_Python]] 
 - [[Dictionaries_in_Python]] 
 - [[Error_handling_in_Python]] 
@@ -969,6 +971,7 @@ unlisted: true
 - [[Testing_Python_code]] 
 - [[Tuples_in_Python]] 
 - [[Type_hinting]] 
+- [[Using a context manager in Python]] 
 - [[Using_SQLite_with_Python]] 
 - [[With_open_in_Python]] 
 - [[Working_with_CSVs_in_Python]] 
