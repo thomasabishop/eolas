@@ -13,12 +13,13 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** d64aa559-4490-4b05-bfd9-4fd535f23109
+**Build ID:** 14b2609c-4c92-4980-96d4-543ba5a9d0be
 
-**Published:** Wed 26 Mar 2025 19:03:12
+**Published:** Thu 27 Mar 2025 17:52:51
 
 ### Recent edits 
 
+- [[d212acdb_from_free-software_to_open_source]] 
 - [[c8820974_Tor_prioritising_uptake]] 
 - [[What_can_the_ISP_see]] 
 - [[Code_Craft_The_Practice_Of_Writing_Excellent_Code]] 
@@ -38,10 +39,9 @@ computer science.
 - [[Capturing_program_error_in_Bash]] 
 - [[Check_if_value_null_in_Bash]] 
 - [[Associative_arrays_maps_in_Bash]] 
-- [[Case_statements_in_Bash]] 
 
 
-### All notes (545) 
+### All notes (546) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -570,6 +570,7 @@ computer science.
 - [[c8820974_Tor_prioritising_uptake]] 
 - [[c9d7492f_requerimiento]] 
 - [[cfbef1c4_web_precursors]] 
+- [[d212acdb_from_free-software_to_open_source]] 
 - [[e383b8b3_nginx_vs_traefik]] 
 - [[e470bf3d_IMPs_in_the_ARPANET]] 
 - [[ecec56e6_precursors_to_search_engines]] 
