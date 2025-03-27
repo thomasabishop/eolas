@@ -13,12 +13,13 @@ computer science.
 
 <a href="https://thomasabishop.github.io/eolas/tags">View tags</a>
  
-**Build ID:** d51b0102-d73a-44e4-ad82-a3be740837e0
+**Build ID:** 6d4cfb04-1e87-477a-91e9-34c360bfb8ad
 
-**Published:** Thu 27 Mar 2025 17:56:26
+**Published:** Thu 27 Mar 2025 19:06:00
 
 ### Recent edits 
 
+- [[Docker_cleanup]] 
 - [[d212acdb_from_free-software_to_open_source]] 
 - [[c8820974_Tor_prioritising_uptake]] 
 - [[What_can_the_ISP_see]] 
@@ -38,10 +39,9 @@ computer science.
 - [[Network_tunnels]] 
 - [[Capturing_program_error_in_Bash]] 
 - [[Check_if_value_null_in_Bash]] 
-- [[Associative_arrays_maps_in_Bash]] 
 
 
-### All notes (546) 
+### All notes (547) 
 
 - [[0716531c_rewilding_the_internet]] 
 - [[241fe1a3_the_Web_versus_modem_BBSs]] 
@@ -197,6 +197,7 @@ computer science.
 - [[Docker_CLI]] 
 - [[Docker_Compose]] 
 - [[Docker_architecture]] 
+- [[Docker_cleanup]] 
 - [[Docker_compose_and_Dockerfile_difference]] 
 - [[Docker_containers]] 
 - [[Docker_general_overview]] 
