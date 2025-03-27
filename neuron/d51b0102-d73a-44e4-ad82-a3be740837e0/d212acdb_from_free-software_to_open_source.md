@@ -41,3 +41,7 @@ So this is really the origin of hackers' antipathy to Microsoft and it's
 interesting to reflect on this today where Microsoft has very effectively
 subsumed "open source" into itself, realising it couldn't beat it on its own
 terms. Most notably with their acquisition of GitHub.
+
+## Source
+
+Gabriella Coleman, _Coding Freedom: The Ethics and Aesthetics of Hacking_ (2013)

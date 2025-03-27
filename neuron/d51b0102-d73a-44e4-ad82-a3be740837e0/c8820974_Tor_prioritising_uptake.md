@@ -24,3 +24,7 @@ use less viable.
 Broad uptake and a rich ecosystem including users who were not the main or
 target beneficiaries (spies, totalitarian subjects) was necessary in order to
 obscure the activities of the target users.
+
+## Source
+
+Ben Collier, _Tor: From the Dark Web to the Future of Privacy_ (2024)
